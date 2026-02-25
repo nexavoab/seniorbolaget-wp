@@ -12,11 +12,8 @@
 
 	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xl"}}},"textAlign":"center"} -->
 	<div class="wp-block-group" style="text-align:center">
-		<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.8rem"},"color":{"text":"var:preset|color|accent"}}} -->
-		<p class="has-accent-color has-text-color" style="font-size:0.8rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase">Våra tjänster</p>
-		<!-- /wp:paragraph -->
 		<!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"700"}}} -->
-		<h2 class="wp-block-heading">Vad vi erbjuder</h2>
+		<h2 class="wp-block-heading">Våra tjänster</h2>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"typography":{"fontSize":"var:preset|font-size|lg"}}} -->
 		<p class="has-textgra-color has-text-color" style="font-size:var(--wp--preset--font-size--lg)">Erfarna seniorer som utför vardagsarbeten med omsorg och precision.</p>
@@ -41,7 +38,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Regelbunden eller engångsstädning av hem och lägenheter. Noggrant och tillförlitligt av erfarna seniorer.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/hemstad" style="color:var(--wp--preset--color--accent);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:2rem"><a href="/privat/hemstad" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -62,7 +59,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/malning" style="color:var(--wp--preset--color--accent);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:2rem"><a href="/privat/malning" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -83,7 +80,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/snickeri" style="color:var(--wp--preset--color--accent);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:2rem"><a href="/privat/snickeri" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -104,7 +101,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats — vi sköter resten.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/tradgard" style="color:var(--wp--preset--color--accent);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:2rem"><a href="/privat/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
