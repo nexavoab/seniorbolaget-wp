@@ -18,7 +18,7 @@
         {
           "name": "Röd",
           "slug": "rod",
-          "color": "#b71c1c"
+          "color": "#D72828"
         },
         {
           "name": "Röd Mörk",
@@ -29,6 +29,11 @@
           "name": "Ljusrosa",
           "slug": "ljusrosa",
           "color": "#ffebee"
+        },
+        {
+          "name": "Ljus Rosa Beige",
+          "slug": "ljus-rosa-beige",
+          "color": "#FFF4F2"
         },
         {
           "name": "Mörk Text",
@@ -43,7 +48,7 @@
         {
           "name": "Accent",
           "slug": "accent",
-          "color": "#b71c1c"
+          "color": "#D72828"
         },
         {
           "name": "Kantgrå",

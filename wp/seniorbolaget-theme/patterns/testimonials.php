@@ -7,8 +7,8 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"color":{"background":"var:preset|color|ljusrosa"},"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|2xl"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-ljusrosa-background-color has-background">
+<!-- wp:group {"align":"full","style":{"color":{"background":"var:preset|color|ljus-rosa-beige"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-ljus-rosa-beige-background-color has-background">
 
 	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xl"}}},"textAlign":"center"} -->
 	<div class="wp-block-group" style="text-align:center">
@@ -72,24 +72,6 @@
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontSize":"0.9rem"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
 				<p style="font-weight:600;font-size:0.9rem;margin-top:2rem">Anna, 52 år — Helsingborg</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;padding:3rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:1.5rem">⭐⭐⭐⭐⭐</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
-				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats istället för att känna 'oj, det där måste vi fixa'. Senioren som kommer är kunnig, lyhörd och gör jobbet med ett leende. Rekommenderas varmt!"</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontSize":"0.9rem"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="font-weight:600;font-size:0.9rem;margin-top:2rem">Lars, 67 år — Trollhättan</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

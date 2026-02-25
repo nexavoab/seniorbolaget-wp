@@ -1,0 +1,345 @@
+🔍 Analyserar index...
+✅ Rapport sparad: comparison/diff_report_index.md
+
+============================================================
+Absolut! Här är en detaljerad visuell diff med fokus på konverteringsoptimering, CSS och tema-fixar för din migrering från Framer till WordPress.
+
+## KRITISKA KONVERTERINGSSKILLNADER
+
+Dessa skillnader har en direkt och stor inverkan på din förmåga att generera leads/bokningar:
+
+1.  **Avsaknad av Hero-bild (BILD 1):** Den ursprungliga bilden på en senior som skottar snö är **extremt kritisk**. Den kommunicerar omedelbart tjänstens natur, målgrupp och bygger förtroende/relaterbarhet. Att den saknas i WP Staging är den största konverteringsförlusten. Texten "Hemtjänster av erfarna seniorer" är ett dåligt substitut.
+2.  **Förändrad H1-text och Prominens:** Originalets H1 "Vi gör vardagen lite enklare" är mer förmånsorienterad och visuellt dominant. WP-stagingens H1 är mindre engagerande, mer beskrivande och visuellt mindre framträdande, vilket minskar dess förmåga att fånga besökarens uppmärksamhet och driva vidare.
+3.  **Avsaknad av den Nedre CTA-sektionen (BILD 1):** Den sista sektionen i originalet ("Få tiden tillbaka, vi fixar resten.") med sin starka rubrik, bild på en leende senior och tydliga CTA-knapp är en kraftfull sista push mot konvertering. Dess kompletta frånvaro i WP-staging är en massiv konverteringsförlust.
+4.  **Bredare Hero-CTA-fokus:** Originalet har en enda, klar primär CTA ("Boka hjälp idag"). WP-staging introducerar en sekundär CTA ("Lär känna oss"). Även om en sekundär CTA kan ha sin plats, kan den i Hero-sektionen späda ut fokus från det primära konverteringsmålet.
+5.  **Testimonial-sektionens bakgrund:** Originalets ljusrosa bakgrund för recensionerna får dem att sticka ut och förstärker varumärket. WP-stagingens vita bakgrund gör att sektionen smälter ihop med resten av sidan och förlorar sin visuella vikt, vilket minskar förtroende och trovärdighet.
+6.  **Avsaknad av kortskuggor:** Originalet använder subtila skuggor på servicekorten och recensionskorten. Detta ger djup, tydlighet och en premiumkänsla. WP-stagingen saknar dessa, vilket gör designen plattare och mindre inbjudande.
+7.  **Inkonsekvent varumärkeskänsla:** Sammantaget förlorar WP-stagingen den konsekventa, professionella och inbjudande känslan från originalet på grund av avsaknad av viktiga bilder, inkonsekventa färger och plattare designelement. Detta eroderar förtroendet och minskar sannolikheten för konvertering.
+
+## VISUELLA EXAKTA SKILLNADER
+
+Format: `Element: Original=[värde] → WP=[värde]`
+
+**Globala Stilar & Färger:**
+*   Primär varumärkesröd färg: Original=`#CE2828` → WP=`#b71c1c` (för primära knappar)
+*   Ljusrosa bakgrundsfärg: Original=`#FBE8E8` → WP=`vit` (för recensionssektionen)
+*   Textfärg (rubriker/brödtext): Original=`#333333` → WP=`#333333` (visuellt lika)
+*   Global sektionspadding (vertikal): Original=`~100px - 120px` → WP=`~64px - 80px` (WP har mindre padding)
+*   Global `border-radius`: Original=`~4px` → WP=`~4px` (visuellt lika)
+
+**1. Header (Toppfält & Navigation)**
+*   Primärknapp (`Kontakta oss`) färg: Original=`#CE2828` → WP=`#b71c1c`
+*   Primärknapp (`Kontakta oss`) padding: Original=`~10px 20px` → WP=`~12px 24px` (WP-knappen är visuellt något större i padding)
+
+**2. Hero-sektionen**
+*   Hero-bakgrund: Original=`vit` → WP=`vit`
+*   **Hero-bild:** Original=`img(senior-skottar-snö)` → WP=`saknas helt`
+*   **H1 textinnehåll:** Original=`Vi gör vardagen lite enklare` → WP=`Hemtjänster av erfarna seniorer – städning, trädgård & hantverk`
+*   **H1 storlek:** Original=`~64px` → WP=`~48px`
+*   **H1 vikt:** Original=`bold (~700)` → WP=`semi-bold (~600)`
+*   H2 (subtitle) textinnehåll: Original=`Behöver du hjälp med städning, målning, tapetsering, byggprojekt eller trädgård och snöskottning? Seniorbolaget kan! Vi levererar kvalitativa hemtjänster med trygga och erfarna seniorer.` → WP=`Behöver du hjälp med städning, målning, tapetsering, byggprojekt eller trädgård och snöskottning? Seniorbolaget kan! Vi levererar kvalitativa hemtjänster med trygga och erfarna seniorer.` (texten är identisk)
+*   H2 (subtitle) storlek: Original=`~20px` → WP=`~18px`
+*   Primärknapp (`Boka hjälp idag`) färg: Original=`#CE2828` → WP=`#b71c1c`
+*   Primärknapp (`Boka hjälp idag`) padding: Original=`~16px 32px` → WP=`~12px 24px` (WP-knappen är visuellt mindre)
+*   **Sekundärknapp (`Lär känna oss`):** Original=`saknas` → WP=`finns med grå outline: border: 1px solid #999; color: #333; background: transparent;` (nytt element)
+
+**3. Förtroende-bar (under Hero i WP)**
+*   **Element:** Original=`saknas` → WP=`Finns med telefonnummer, nöjda kunder, orter med röda ikoner` (nytt element)
+*   Ikonfärger: Original=`saknas` → WP=`#CE2828`
+
+**4. "Våra tjänster" Sektion (Servicekort)**
+*   Sektionsrubrik (`Våra tjänster`) storlek: Original=`~24px` → WP=`~32px`
+*   Sektionsrubrik (`Våra tjänster`) vikt: Original=`light (~300)` → WP=`bold (~700)`
+*   Kort bakgrund: Original=`vit` → WP=`vit`
+*   **Kort shadow:** Original=`box-shadow: 0 4px 10px rgba(0,0,0,0.1);` → WP=`saknas`
+*   Kort border: Original=`ingen` → WP=`1px solid #eee` (mycket ljus)
+*   "Läs mer" länk färg: Original=`#CE2828` → WP=`#b71c1c`
+*   "Läs mer" länk stil: Original=`ingen understrykning` → WP=`understrykning`
+*   Kort ikon storlek: Original=`~60px` → WP=`~50px` (WP-ikonerna är visuellt något mindre)
+*   Kort rubrik (t.ex. `Hemstäd`) vikt: Original=`semi-bold (~600)` → WP=`bold (~700)`
+
+**5. "Så enkelt fungerar det" Sektion (Process-steg)**
+*   **Element:** Original=`saknas` → WP=`Ny sektion med 3 steg och stora röda nummer` (nytt element)
+*   Nummer färg: Original=`saknas` → WP=`#CE2828`
+*   Nummer storlek: Original=`saknas` → WP=`~64px`
+
+**6. "Recensioner" Sektion**
+*   **Sektionsbakgrund:** Original=`#FBE8E8` (ljusrosa/röd) → WP=`vit`
+*   Sektionspadding (top/bottom): Original=`~100px` → WP=`~64px`
+*   Kort bakgrund: Original=`vit` → WP=`vit`
+*   **Kort shadow:** Original=`box-shadow: 0 4px 10px rgba(0,0,0,0.1);` → WP=`saknas`
+*   Kort border: Original=`ingen` → WP=`1px solid #eee` (mycket ljus)
+*   Kort layout: Original=`Carousel (visar 3.5 kort, antyder mer)` → WP=`Grid (visar 3 kort)`
+*   **Sektionsrubrik (`Recensioner`) och underrubrik:** Original=`saknas` → WP=`Finns med rubriker` (nytt element)
+
+**7. Statistik Sektion**
+*   **Element:** Original=`saknas` → WP=`Ny sektion med statistik (2 000+, 20+, 5+, 98%)` (nytt element)
+*   Tal färg: Original=`saknas` → WP=`#CE2828`
+*   Tal storlek: Original=`saknas` → WP=`~48px`
+
+**8. Mid-Page CTA ("Få hjälp av en erfaren senior idag" i WP)**
+*   **Element:** Original=`saknas` → WP=`Ny sektion med rubrik, text och två knappar` (nytt element, *ersätter* den kraftfulla nedre CTA:n från originalet)
+*   Primärknapp färg: Original=`saknas` → WP=`#CE2828` (denna matchar originalets färg, till skillnad från hero-knappen i WP)
+*   Sekundärknapp (`Ring oss`) färg: Original=`saknas` → WP=`border: 1px solid #CE2828; color: #CE2828; background: transparent;` (WP har röd outline här, inte grå)
+
+**9. Bottom CTA Section (Originalet)**
+*   **Element:** Original=`Hela sektionen "Få tiden tillbaka, vi fixar resten." med bild på senior, stor vit rubrik, brödtext, vit CTA-knapp med röd text och röd bakgrund.` → WP=`saknas helt`
+
+**10. Footer**
+*   Bakgrund: Original=`#CE2828` → WP=`#CE2828` (korrekt)
+*   Sociala ikoner bakgrund: Original=`#CE2828` (röd cirkel) → WP=`#F3F3F3` (grå cirkel)
+*   Sociala ikoner färg: Original=`#FFFFFF` → WP=`#333333`
+
+## SAKNADE ELEMENT (finns i original, saknas i WP)
+
+1.  **Hero-bilden:** Den framträdande bilden på en senior som skottar snö.
+2.  **Den nedre CTA-sektionen:** Hela den stora, engagerande sektionen nästan längst ner på sidan med den mörkröda bakgrunden, den vita rubriken ("Få tiden tillbaka, vi fixar resten."), brödtexten, den vita "Kontakta oss"-knappen och bilden av en leende senior till höger.
+3.  **Kortskuggor:** På alla "Våra tjänster"-kort och "Recensioner"-kort.
+
+## CSS/THEME-FIXES (kopierbara)
+
+Dessa fixar syftar till att återställa den visuella integriteten och konverteringsförmågan.
+
+```json
+// theme.json ändringar
+{
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "slug": "primary-red",
+          "color": "#CE2828",
+          "name": "Primary Red"
+        },
+        {
+          "slug": "light-pink",
+          "color": "#FBE8E8",
+          "name": "Light Pink (Testimonial BG)"
+        },
+        {
+          "slug": "dark-grey",
+          "color": "#333333",
+          "name": "Dark Grey (Text)"
+        },
+        {
+          "slug": "medium-grey",
+          "color": "#CCCCCC",
+          "name": "Medium Grey (Outline button)"
+        },
+        {
+          "slug": "light-grey",
+          "color": "#EEEEEE",
+          "name": "Light Grey (Borders)"
+        },
+        {
+          "slug": "white",
+          "color": "#FFFFFF",
+          "name": "White"
+        }
+      ]
+    },
+    "typography": {
+      "fontFamilies": [
+        // Antag att originalet använder en system-font eller en liknande sans-serif
+        {
+          "fontFamily": "var(--wp--preset--font-family--system-font, -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, Oxygen-Sans, Ubuntu, Cantarell, \"Helvetica Neue\", sans-serif)",
+          "name": "System Font",
+          "slug": "system-font"
+        }
+      ],
+      "fontSizes": [
+        { "name": "Small", "size": "0.875rem", "slug": "small" }, // 14px
+        { "name": "Medium", "size": "1.125rem", "slug": "medium" }, // 18px
+        { "name": "Large", "size": "1.25rem", "slug": "large" }, // 20px
+        { "name": "X-Large", "size": "1.5rem", "slug": "x-large" }, // 24px
+        { "name": "XX-Large", "size": "2rem", "slug": "xx-large" }, // 32px (Service h1)
+        { "name": "XXX-Large", "size": "3rem", "slug": "xxx-large" }, // 48px (WP hero H1)
+        { "name": "XXXX-Large", "size": "4rem", "slug": "xxxx-large" } // 64px (Original Hero H1)
+      ]
+    },
+    "spacing": {
+      "spacingSizes": [
+        { "name": "10", "size": "0.625rem", "slug": "10" },  // 10px
+        { "name": "20", "size": "1.25rem", "slug": "20" },  // 20px
+        { "name": "30", "size": "1.875rem", "slug": "30" },  // 30px
+        { "name": "40", "size": "2.5rem", "slug": "40" },  // 40px
+        { "name": "60", "size": "3.75rem", "slug": "60" },  // 60px
+        { "name": "80", "size": "5rem", "slug": "80" },    // 80px
+        { "name": "100", "size": "6.25rem", "slug": "100" }, // 100px
+        { "name": "120", "size": "7.5rem", "slug": "120" }  // 120px
+      ]
+    },
+    "border": {
+      "radius": "4px"
+    }
+  }
+}
+```
+
+```css
+/* style.css ändringar */
+
+/* Global Brand Red for buttons and links - säkerställ att detta är den primära accentfärgen */
+:root {
+  --wp--preset--color--primary-red: #CE2828;
+}
+
+/* Primära knappar (gäller alla .wp-block-button__link som inte har en outline-style) */
+.wp-block-button__link:not(.is-style-outline) {
+  background-color: var(--wp--preset--color--primary-red, #CE2828);
+  color: var(--wp--preset--color--white, #FFFFFF);
+  border-radius: var(--wp--preset--border-radius, 4px);
+  padding: 16px 32px; /* Matcha originalets större padding */
+  font-weight: 600; /* Semi-bold */
+  text-decoration: none;
+  border: none;
+}
+
+/* Sekundärknappar med outline (t.ex. "Lär känna oss") */
+.wp-block-button.is-style-outline .wp-block-button__link {
+    background-color: transparent;
+    color: var(--wp--preset--color--dark-grey, #333333);
+    border: 1px solid var(--wp--preset--color--medium-grey, #CCCCCC); /* Ljusare grå kant som WP-stagingens hero */
+    padding: 16px 32px; /* Matcha primärknappens padding */
+    font-weight: 600;
+}
+/* Om "Ring oss" i mid-page CTA ska vara röd outline */
+.wp-block-group.mid-page-cta .wp-block-button.is-style-outline .wp-block-button__link {
+  border: 1px solid var(--wp--preset--color--primary-red, #CE2828);
+  color: var(--wp--preset--color--primary-red, #CE2828);
+}
+
+
+/* Hero Section - KURSIV TEXT KRÄVER HTML/BLOCK STRUKTUR, INTE REN CSS */
+/* För H1 i Hero-sektionen (antag en specifik block-klass eller custom style) */
+.hero-section .wp-block-heading:first-of-type { /* Anpassa selektor efter din HTML-struktur */
+    font-size: var(--wp--preset--font-size--xxxx-large, 4rem); /* ~64px */
+    font-weight: 700; /* bold */
+    line-height: 1.1;
+    color: var(--wp--preset--color--dark-grey, #333333);
+    /* Innehållsfix måste göras i block-editorn: "Vi gör vardagen lite enklare" */
+}
+
+/* För H2 (subtitle) i Hero-sektionen */
+.hero-section .wp-block-heading:nth-of-type(2) { /* Anpassa selektor */
+    font-size: var(--wp--preset--font-size--large, 1.25rem); /* ~20px */
+    font-weight: 400; /* normal */
+    line-height: 1.5;
+    color: var(--wp--preset--color--dark-grey, #333333);
+}
+
+/* Hero Image (KRÄVER ÄVEN EN BILD-FIL UPPAD) */
+/* Detta kräver att du lägger till en bild via Block Editor/HTML */
+/* Om du har en container för hero-sektionen */
+/* .hero-section {
+    position: relative;
+    padding-bottom: 0; // Ta bort bottom padding för att bilden ska gå hela vägen ner
+}
+.hero-section__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%; // Eller justera efter behov
+    height: auto;
+    max-width: 700px; // Exempel
+    z-index: 1;
+} */
+
+
+/* Service Cards (Våra tjänster) */
+/* Antag att dina servicekort har en specifik klass, t.ex. .service-card */
+.service-card {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: none; /* Ta bort den ljusa kanten som WP har lagt till */
+    padding: 30px; /* Generösare padding */
+}
+.service-card .read-more-link { /* Anpassa selektor för dina "Läs mer"-länkar */
+    color: var(--wp--preset--color--primary-red, #CE2828);
+    text-decoration: none; /* Ta bort understrykning */
+    font-weight: 600;
+}
+.service-card h3 { /* Rubrikerna i servicekortet, t.ex. "Hemstäd" */
+    font-size: var(--wp--preset--font-size--x-large, 1.5rem); /* ~24px */
+    font-weight: 600; /* semi-bold */
+}
+.service-card svg { /* Ikonsstorlek */
+    width: 60px;
+    height: 60px;
+}
+
+/* Testimonial Section */
+.testimonial-section-container { /* Antag en container för denna sektion */
+    background-color: var(--wp--preset--color--light-pink, #FBE8E8);
+    padding-top: var(--wp--preset--spacing--100, 6.25rem); /* ~100px */
+    padding-bottom: var(--wp--preset--spacing--100, 6.25rem);
+}
+
+.testimonial-card { /* Antag en klass för recensionskort */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border: none; /* Ta bort den ljusa kanten */
+    padding: 30px;
+}
+
+/* Footer Social Icons */
+.site-footer .wp-social-links .wp-social-link { /* Anpassa selektor efter din footer-struktur */
+    background-color: var(--wp--preset--color--primary-red, #CE2828); /* Röd cirkel */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px; /* Lite mellanrum mellan ikonerna */
+}
+.site-footer .wp-social-links .wp-social-link svg {
+    color: var(--wp--preset--color--white, #FFFFFF); /* Vita ikoner */
+    width: 20px; /* Storlek på ikon */
+    height: 20px;
+}
+
+/* Sektionspadding generellt för att matcha originalet mer */
+/* Detta kan behöva justeras specifikt för varje block/grupp i block-editorn */
+.wp-block-group { /* Mer generell padding för grupper */
+    padding-top: var(--wp--preset--spacing--100, 6.25rem); /* ~100px */
+    padding-bottom: var(--wp--preset--spacing--100, 6.25rem);
+}
+/* Anpassa vid behov, t.ex. för Hero-sektionen om bilden sträcker sig */
+.hero-section {
+    padding-bottom: var(--wp--preset--spacing--60, 3.75rem); /* Mindre om bilden tar upp nedre delen */
+}
+
+/* Bottom CTA section (KRÄVER ÄVEN HTML/BLOCK STRUKTUR OCH BILD-FIL) */
+/* Denna sektion är komplex och kräver custom block/pattern */
+/* .bottom-cta-section {
+    background-color: var(--wp--preset--color--primary-red, #CE2828);
+    color: var(--wp--preset--color--white, #FFFFFF);
+    padding: var(--wp--preset--spacing--120, 7.5rem); // Mycket padding
+    position: relative;
+    overflow: hidden; // För att bilden ska kunna sticka ut lite
+}
+.bottom-cta-section h2 {
+    color: var(--wp--preset--color--white, #FFFFFF);
+    font-size: var(--wp--preset--font-size--xxxx-large, 4rem); // Större rubrik
+    font-weight: 700;
+}
+.bottom-cta-section .wp-block-button__link {
+    background-color: var(--wp--preset--color--white, #FFFFFF);
+    color: var(--wp--preset--color--primary-red, #CE2828);
+    border: none;
+}
+.bottom-cta-section__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 100%; // Bilden ska fylla höjden
+    width: auto;
+    max-width: 50%;
+} */
+```
+
+## BETYG
+
+**WP Staging: 3/10**
+
+**Kort motivering:**
+WP-stagingen har tappat bort centrala visuella element och, ännu viktigare, kritiska konverteringsdrivare från originalet. Avsaknaden av hero-bilden och den nedre CTA-sektionen (med dess specifika layout och bild) är oacceptabelt för en konverteringsoptimerad webbplats. Även om nya förtroendeskapande element har lagts till, är de inte konsekventa i sin visuella stil och kompenserar inte för de fundamentala bristerna. En hög prioritet måste läggas på att återställa originalets visuella identitet, speciellt de bildbaserade förtroendeelementen, och den konsekventa användningen av varumärkesfärger och typografi.
