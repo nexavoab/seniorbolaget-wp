@@ -33,7 +33,7 @@
 			<!-- /wp:buttons -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px"},"color":{"text":"#6B7280"}}} -->
-			<p style="font-size:13px;color:#6B7280;margin-top:8px;">✓ Svar inom 24h &nbsp;•&nbsp; ✓ Inga bindningstider</p>
+			<p style="font-size:13px;color:#6B7280;margin-top:8px;">✓ Svar inom 24h &nbsp;•&nbsp; ✓ Inga bindningstider &nbsp;•&nbsp; ✓ RUT-avdrag direkt på fakturan</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|lg"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","gap":"var:preset|spacing|lg"}} -->
@@ -49,6 +49,13 @@
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
+
+			<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"13px"},"color":{"text":"#6B7280"}}} -->
+			<p style="text-align:center;font-size:13px;color:#6B7280;margin-top:8px;">
+			⭐ <strong>4.8/5</strong> baserat på 500+ omdömen &nbsp;•&nbsp; 
+			<span style="color:var(--wp--preset--color--rod);font-weight:600;">Reco.se Rekommenderad</span>
+			</p>
+			<!-- /wp:paragraph -->
 
 		</div>
 		<!-- /wp:column -->
@@ -68,7 +75,7 @@
 <!-- /wp:group -->
 
 <!-- wp:group {"className":"floating-cta","style":{"spacing":{"padding":"0"}}} -->
-<div class="wp-block-group floating-cta">
+<div class="wp-block-group floating-cta" style="display:none;">
 <!-- wp:buttons -->
 <div class="wp-block-buttons">
 <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->

@@ -76,15 +76,38 @@ header.wp-block-template-part {
     display: block;
 }
 
-/* ===== FLYTANDE CTA (MOBIL) ===== */
+/* ===== FLYTANDE CTA — ENBART mobil, sticky bottom bar ===== */
+.floating-cta {
+    display: none; /* dold på desktop */
+}
 @media (max-width: 768px) {
     .floating-cta {
+        display: block;
         position: fixed;
-        bottom: 20px;
-        left: 50%;
-        transform: translateX(-50%);
+        bottom: 0;
+        left: 0;
+        right: 0;
         z-index: 999;
-        white-space: nowrap;
+        padding: 12px 20px;
+        background: rgba(255,255,255,0.97);
+        backdrop-filter: blur(8px);
+        box-shadow: 0 -2px 20px rgba(0,0,0,0.1);
+        text-align: center;
+        transform: none;
+    }
+    .floating-cta .wp-block-button__link {
+        width: 100%;
+        justify-content: center;
+    }
+    /* Hero på mobil: bild UNDER text (inte över) */
+    .hero-columns {
+        flex-direction: column !important;
+    }
+    .hero-columns .wp-block-column:first-child {
+        order: 1 !important;
+    }
+    .hero-columns .wp-block-column:last-child {
+        order: 2 !important;
     }
 }
 
