@@ -29,6 +29,14 @@
 			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
+				<div class="service-card-image-wrap">
+					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Hemstäd" class="service-card-image" />
+					<div class="service-card-overlay">
+						<a href="/privat/hemstad" class="service-card-cta">Boka Hemstäd →</a>
+					</div>
+				</div>
+				<!-- /wp:html -->
+				<!-- wp:html -->
 				<div style="margin-bottom:16px;color:#C91C22;">
 					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
 				</div>
@@ -51,6 +59,14 @@
 		<div class="wp-block-column" style="flex-basis:40%">
 			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
+				<!-- wp:html -->
+				<div class="service-card-image-wrap">
+					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Trädgård" class="service-card-image" />
+					<div class="service-card-overlay">
+						<a href="/privat/tradgard" class="service-card-cta">Boka Trädgård →</a>
+					</div>
+				</div>
+				<!-- /wp:html -->
 				<!-- wp:html -->
 				<div style="margin-bottom:16px;color:#C91C22;">
 					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
@@ -81,6 +97,14 @@
 			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
+				<div class="service-card-image-wrap">
+					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Målning" class="service-card-image" />
+					<div class="service-card-overlay">
+						<a href="/privat/malning" class="service-card-cta">Boka Målning →</a>
+					</div>
+				</div>
+				<!-- /wp:html -->
+				<!-- wp:html -->
 				<div style="margin-bottom:16px;color:#C91C22;">
 					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.28 7.86a2 2 0 0 0-2.83 0l-8.64 8.64a2 2 0 1 0 2.83 2.83l8.64-8.64a2 2 0 0 0 0-2.83z"></path><path d="M3.5 21.5a2 2 0 1 0 0-4 4 4 0 0 0 4 4z"></path></svg>
 				</div>
@@ -103,6 +127,14 @@
 		<div class="wp-block-column" style="flex-basis:60%">
 			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
+				<!-- wp:html -->
+				<div class="service-card-image-wrap">
+					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Snickeri" class="service-card-image" />
+					<div class="service-card-overlay">
+						<a href="/privat/snickeri" class="service-card-cta">Boka Snickeri →</a>
+					</div>
+				</div>
+				<!-- /wp:html -->
 				<!-- wp:html -->
 				<div style="margin-bottom:16px;color:#C91C22;">
 					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
