@@ -158,3 +158,35 @@ header.wp-block-template-part {
 :root {
     --sb-warm-bg: #FAFAF8;
 }
+
+/* ===== HOMEPAGE POLISH — MOBILE FIXES ===== */
+@media (max-width: 768px) {
+    /* 1. Trust badges: luftigare */
+    .hero-trust-badges {
+        line-height: 2;
+        gap: 12px;
+    }
+    .hero-trust-badges .wp-block-paragraph {
+        margin-bottom: 8px;
+    }
+
+    /* 2. CTA-bilden: border-radius fix */
+    .wp-block-group .cta-image img,
+    .cta-band img {
+        border-radius: 12px;
+        object-position: center top;
+    }
+
+    /* 3. Process-siffror: mindre */
+    .step-circle,
+    .wp-block-group[class*="step"] .step-number {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 22px !important;
+    }
+
+    /* 4. Footer: bottom spacing */
+    .wp-block-template-part footer .wp-block-group:last-child {
+        margin-bottom: 20px;
+    }
+}
