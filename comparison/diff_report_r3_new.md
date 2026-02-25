@@ -1,6 +1,5 @@
-# Gemini Diff — index
-Modell: gemini-3.1-pro-preview
-
+🔍 Kör diff med gemini-3.1-pro-preview...
+✅ Rapport sparad: comparison/diff_report_index.md (modell: gemini-3.1-pro-preview)
 Här är en systematisk analys och kirurgisk uppgradering av WP-implementationen. Huvudfokus ligger på att eliminera element som skadar tryggheten (som emojis) och återinföra den professionella, varumärkesbyggande designen från Framer-originalet.
 
 ### 1. Hero (`hero.php`)
@@ -229,3 +228,4 @@ WP-implementationen var strukturellt fantastisk och layouten (särskilt den nya 
 - Den responsiva mobila "Floating CTA":n är ett genidrag för konvertering.
 - Den tvåspaltiga Hero-lösningen (till skillnad från originalets centrerade rörighet) är överlägsen för att snabbt guida ögat.
 - Stats-bandet (2000+ seniorer) ger utmärkt social proof precis innan sista säljpitch.
+

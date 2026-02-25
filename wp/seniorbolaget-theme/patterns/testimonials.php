@@ -28,9 +28,15 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"testimonial-card","style":{"border":{"radius":"16px"},"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}}}} -->
 			<div class="wp-block-group testimonial-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"16px"}}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:16px">⭐⭐⭐⭐⭐</p>
-				<!-- /wp:paragraph -->
+				<!-- wp:html -->
+				<div style="color:#C91C22;margin-bottom:16px;display:flex;gap:4px;">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+				</div>
+				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
 				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Som fastighetsbolag uppskattar vi att ha ett ramavtal med Seniorbolaget: vi har kontakt och prislista klart, och kan ringa in hjälp när vi behöver utan lång väntan. Seniorbolaget levererar kvalitet och pålitlighet varje gång – ett riktigt bra val för oss."</p>
 				<!-- /wp:paragraph -->
@@ -39,9 +45,16 @@
 					<!-- wp:html -->
 					<div style="width:40px;height:40px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0;">M</div>
 					<!-- /wp:html -->
-					<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.9rem"},"color":{"text":"#1F2937"},"spacing":{"margin":{"left":"12px"}}}} -->
-					<p style="color:#1F2937;font-weight:700;font-size:0.9rem;margin-left:12px">Maria, 38 år — Malmö (fastighetsbolag)</p>
-					<!-- /wp:paragraph -->
+					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2px"}}} -->
+					<div class="wp-block-group" style="margin-left:12px">
+						<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.95rem"},"color":{"text":"#C91C22"}}} -->
+						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Maria, 38 år</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.85rem"},"color":{"text":"#6B7280"}}} -->
+						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Malmö (fastighetsbolag)</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
 				</div>
 				<!-- /wp:group -->
 			</div>
@@ -53,9 +66,15 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"testimonial-card","style":{"border":{"radius":"16px"},"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}}}} -->
 			<div class="wp-block-group testimonial-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"16px"}}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:16px">⭐⭐⭐⭐⭐</p>
-				<!-- /wp:paragraph -->
+				<!-- wp:html -->
+				<div style="color:#C91C22;margin-bottom:16px;display:flex;gap:4px;">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+				</div>
+				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
 				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Vi behövde snabbt fylla en vakanstjänst i fastighetsskötsel och kontaktade Seniorbolaget. De levererade en erfaren medarbetare på kort varsel och ordnade allt runt avtal och administration. Vi har redan inlett ett ramavtal för framtida behov – tryggt och smidigt."</p>
 				<!-- /wp:paragraph -->
@@ -64,9 +83,16 @@
 					<!-- wp:html -->
 					<div style="width:40px;height:40px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0;">B</div>
 					<!-- /wp:html -->
-					<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.9rem"},"color":{"text":"#1F2937"},"spacing":{"margin":{"left":"12px"}}}} -->
-					<p style="color:#1F2937;font-weight:700;font-size:0.9rem;margin-left:12px">Björn, 44 år — Göteborg (företag)</p>
-					<!-- /wp:paragraph -->
+					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2px"}}} -->
+					<div class="wp-block-group" style="margin-left:12px">
+						<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.95rem"},"color":{"text":"#C91C22"}}} -->
+						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Björn, 44 år</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.85rem"},"color":{"text":"#6B7280"}}} -->
+						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Göteborg (företag)</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
 				</div>
 				<!-- /wp:group -->
 			</div>
@@ -78,9 +104,15 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"className":"testimonial-card","style":{"border":{"radius":"16px"},"color":{"background":"#ffffff"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}}}} -->
 			<div class="wp-block-group testimonial-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"16px"}}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:16px">⭐⭐⭐⭐⭐</p>
-				<!-- /wp:paragraph -->
+				<!-- wp:html -->
+				<div style="color:#C91C22;margin-bottom:16px;display:flex;gap:4px;">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="1"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+				</div>
+				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
 				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Hej Seniorbolaget! Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägenheten så fin att jag nästan själv vill fortsätta städa ;) Tack för att ni gör vardagen enklare!"</p>
 				<!-- /wp:paragraph -->
@@ -89,9 +121,16 @@
 					<!-- wp:html -->
 					<div style="width:40px;height:40px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0;">A</div>
 					<!-- /wp:html -->
-					<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.9rem"},"color":{"text":"#1F2937"},"spacing":{"margin":{"left":"12px"}}}} -->
-					<p style="color:#1F2937;font-weight:700;font-size:0.9rem;margin-left:12px">Anna, 52 år — Helsingborg</p>
-					<!-- /wp:paragraph -->
+					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2px"}}} -->
+					<div class="wp-block-group" style="margin-left:12px">
+						<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.95rem"},"color":{"text":"#C91C22"}}} -->
+						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Anna, 52 år</p>
+						<!-- /wp:paragraph -->
+						<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.85rem"},"color":{"text":"#6B7280"}}} -->
+						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Helsingborg</p>
+						<!-- /wp:paragraph -->
+					</div>
+					<!-- /wp:group -->
 				</div>
 				<!-- /wp:group -->
 			</div>

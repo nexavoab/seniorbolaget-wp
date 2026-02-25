@@ -54,8 +54,8 @@ header.wp-block-template-part {
 /* ===== PREMIUM BOX SHADOWS ===== */
 .wp-block-group.testimonial-card,
 .wp-block-group.service-card {
-    box-shadow: 0 4px 24px -4px rgba(0,0,0,0.06) !important;
-    border: none !important;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05) !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
 }
 
 /* ===== HELA KORTET KLICKBART (Fitt's Law) ===== */
@@ -189,4 +189,29 @@ header.wp-block-template-part {
     .wp-block-template-part footer .wp-block-group:last-child {
         margin-bottom: 20px;
     }
+}
+
+/* ===== TRUST BADGES — hero ===== */
+.hero-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.hero-trust-badges > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1F2937;
+}
+
+/* ===== TESTIMONIAL STARS ===== */
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    color: #C91C22;
 }
