@@ -16,34 +16,34 @@
           "color": "#FFFFFF"
         },
         {
-          "name": "Mörk",
-          "slug": "mork",
+          "name": "Röd",
+          "slug": "rod",
+          "color": "#b71c1c"
+        },
+        {
+          "name": "Röd Mörk",
+          "slug": "rod-mork",
+          "color": "#c1292e"
+        },
+        {
+          "name": "Ljusrosa",
+          "slug": "ljusrosa",
+          "color": "#ffebee"
+        },
+        {
+          "name": "Mörk Text",
+          "slug": "mork-text",
           "color": "#1a1a1a"
-        },
-        {
-          "name": "Accent",
-          "slug": "accent",
-          "color": "#E8642A"
-        },
-        {
-          "name": "Accent Mörk",
-          "slug": "accent-mork",
-          "color": "#C4521E"
-        },
-        {
-          "name": "Ljusgrå",
-          "slug": "ljusgra",
-          "color": "#F5F5F0"
         },
         {
           "name": "Textgrå",
           "slug": "textgra",
-          "color": "#666666"
+          "color": "#667282"
         },
         {
-          "name": "Kantgrå",
-          "slug": "kantgra",
-          "color": "#E5E5E0"
+          "name": "Ljusgrå",
+          "slug": "ljusgra",
+          "color": "#f5f5f5"
         }
       ],
       "defaultPalette": false,
@@ -69,30 +69,128 @@
         }
       ],
       "fontSizes": [
-        { "name": "XS",  "slug": "xs",  "size": "0.75rem",  "fluid": false },
-        { "name": "SM",  "slug": "sm",  "size": "0.875rem", "fluid": false },
-        { "name": "MD",  "slug": "md",  "size": "1rem",     "fluid": false },
-        { "name": "LG",  "slug": "lg",  "size": "1.125rem", "fluid": false },
-        { "name": "XL",  "slug": "xl",  "size": "1.25rem",  "fluid": false },
-        { "name": "2XL", "slug": "2xl", "size": "1.5rem",   "fluid": false },
-        { "name": "3XL", "slug": "3xl", "size": "1.875rem", "fluid": false },
-        { "name": "4XL", "slug": "4xl", "size": "2.25rem",  "fluid": { "min": "1.75rem", "max": "2.25rem" } },
-        { "name": "5XL", "slug": "5xl", "size": "3rem",     "fluid": { "min": "2.25rem", "max": "3rem" } },
-        { "name": "6XL", "slug": "6xl", "size": "3.75rem",  "fluid": { "min": "2.5rem",  "max": "3.75rem" } }
+        {
+          "name": "XS",
+          "slug": "xs",
+          "size": "0.75rem",
+          "fluid": false
+        },
+        {
+          "name": "SM",
+          "slug": "sm",
+          "size": "0.875rem",
+          "fluid": false
+        },
+        {
+          "name": "MD",
+          "slug": "md",
+          "size": "1rem",
+          "fluid": false
+        },
+        {
+          "name": "LG",
+          "slug": "lg",
+          "size": "1.125rem",
+          "fluid": false
+        },
+        {
+          "name": "XL",
+          "slug": "xl",
+          "size": "1.25rem",
+          "fluid": false
+        },
+        {
+          "name": "2XL",
+          "slug": "2xl",
+          "size": "1.5rem",
+          "fluid": false
+        },
+        {
+          "name": "3XL",
+          "slug": "3xl",
+          "size": "1.875rem",
+          "fluid": false
+        },
+        {
+          "name": "4XL",
+          "slug": "4xl",
+          "size": "2.25rem",
+          "fluid": {
+            "min": "1.75rem",
+            "max": "2.25rem"
+          }
+        },
+        {
+          "name": "5XL",
+          "slug": "5xl",
+          "size": "3rem",
+          "fluid": {
+            "min": "2.25rem",
+            "max": "3rem"
+          }
+        },
+        {
+          "name": "6XL",
+          "slug": "6xl",
+          "size": "3.75rem",
+          "fluid": {
+            "min": "2.5rem",
+            "max": "3.75rem"
+          }
+        }
       ],
       "defaultFontSizes": false
     },
     "spacing": {
-      "units": ["px", "em", "rem", "%", "vw", "vh"],
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "%",
+        "vw",
+        "vh"
+      ],
       "spacingSizes": [
-        { "name": "2XS", "slug": "2xs", "size": "0.5rem"  },
-        { "name": "XS",  "slug": "xs",  "size": "1rem"    },
-        { "name": "SM",  "slug": "sm",  "size": "1.5rem"  },
-        { "name": "MD",  "slug": "md",  "size": "2rem"    },
-        { "name": "LG",  "slug": "lg",  "size": "3rem"    },
-        { "name": "XL",  "slug": "xl",  "size": "4rem"    },
-        { "name": "2XL", "slug": "2xl", "size": "6rem"    },
-        { "name": "3XL", "slug": "3xl", "size": "8rem"    }
+        {
+          "name": "2XS",
+          "slug": "2xs",
+          "size": "0.5rem"
+        },
+        {
+          "name": "XS",
+          "slug": "xs",
+          "size": "1rem"
+        },
+        {
+          "name": "SM",
+          "slug": "sm",
+          "size": "1.5rem"
+        },
+        {
+          "name": "MD",
+          "slug": "md",
+          "size": "2rem"
+        },
+        {
+          "name": "LG",
+          "slug": "lg",
+          "size": "3rem"
+        },
+        {
+          "name": "XL",
+          "slug": "xl",
+          "size": "4rem"
+        },
+        {
+          "name": "2XL",
+          "slug": "2xl",
+          "size": "6rem"
+        },
+        {
+          "name": "3XL",
+          "slug": "3xl",
+          "size": "8rem"
+        }
       ],
       "defaultSpacingSizes": false
     },
@@ -104,15 +202,29 @@
     },
     "shadow": {
       "presets": [
-        { "name": "SM",  "slug": "sm",  "shadow": "0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06)" },
-        { "name": "MD",  "slug": "md",  "shadow": "0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06)" },
-        { "name": "LG",  "slug": "lg",  "shadow": "0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05)" }
+        {
+          "name": "SM",
+          "slug": "sm",
+          "shadow": "0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06)"
+        },
+        {
+          "name": "MD",
+          "slug": "md",
+          "shadow": "0 4px 6px rgba(0,0,0,0.07), 0 2px 4px rgba(0,0,0,0.06)"
+        },
+        {
+          "name": "LG",
+          "slug": "lg",
+          "shadow": "0 10px 15px rgba(0,0,0,0.1), 0 4px 6px rgba(0,0,0,0.05)"
+        }
       ],
       "defaultPresets": false
     },
     "blocks": {
       "core/button": {
-        "border": { "radius": true }
+        "border": {
+          "radius": true
+        }
       }
     }
   },
@@ -165,9 +277,13 @@
         }
       },
       "link": {
-        "color": { "text": "var(--wp--preset--color--accent)" },
+        "color": {
+          "text": "var(--wp--preset--color--accent)"
+        },
         ":hover": {
-          "color": { "text": "var(--wp--preset--color--accent-mork)" }
+          "color": {
+            "text": "var(--wp--preset--color--accent-mork)"
+          }
         }
       },
       "button": {
@@ -191,7 +307,9 @@
           }
         },
         ":hover": {
-          "color": { "background": "var(--wp--preset--color--accent-mork)" }
+          "color": {
+            "background": "var(--wp--preset--color--accent-mork)"
+          }
         }
       }
     },
@@ -201,7 +319,9 @@
           "fontWeight": "700",
           "fontSize": "var(--wp--preset--font-size--xl)"
         },
-        "color": { "text": "var(--wp--preset--color--mork)" }
+        "color": {
+          "text": "var(--wp--preset--color--mork)"
+        }
       },
       "core/navigation": {
         "typography": {
@@ -216,8 +336,12 @@
         }
       },
       "core/separator": {
-        "color": { "text": "var(--wp--preset--color--kantgra)" },
-        "border": { "color": "var(--wp--preset--color--kantgra)" }
+        "color": {
+          "text": "var(--wp--preset--color--kantgra)"
+        },
+        "border": {
+          "color": "var(--wp--preset--color--kantgra)"
+        }
       }
     }
   },
@@ -225,12 +349,16 @@
     {
       "name": "front-page",
       "title": "Startsida",
-      "postTypes": ["page"]
+      "postTypes": [
+        "page"
+      ]
     },
     {
       "name": "page-no-title",
       "title": "Sida utan rubrik",
-      "postTypes": ["page"]
+      "postTypes": [
+        "page"
+      ]
     }
   ],
   "templateParts": [

@@ -1,0 +1,480 @@
+{
+  "title": "Seniorbolaget - Låt våra rutinerade seniorer göra jobbet!",
+  "styles": {
+    "body": {
+      "background-color": "rgb(255, 255, 255)",
+      "color": "rgb(0, 0, 0)",
+      "font-family": "sans-serif",
+      "font-size": "12px"
+    },
+    "h1": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "color": "rgb(183, 28, 28)",
+      "font-family": "Rubik, \"Rubik Placeholder\", sans-serif",
+      "font-size": "72px"
+    },
+    "h2": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "color": "rgb(183, 28, 28)",
+      "font-family": "Rubik, \"Rubik Placeholder\", sans-serif",
+      "font-size": "56px"
+    },
+    "h3": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "color": "rgb(183, 28, 28)",
+      "font-family": "Inter, \"Inter Placeholder\", sans-serif",
+      "font-size": "40px"
+    },
+    "p": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "color": "rgb(183, 28, 28)",
+      "font-family": "Rubik, \"Rubik Placeholder\", sans-serif",
+      "font-size": "18px"
+    },
+    "a": {
+      "background-color": "rgba(0, 0, 0, 0)",
+      "color": "rgb(0, 0, 238)",
+      "font-family": "sans-serif",
+      "font-size": "12px"
+    }
+  },
+  "sectionBackgrounds": [
+    "rgb(255, 255, 255)",
+    "rgb(255, 235, 238)",
+    "rgb(102, 114, 130)",
+    "rgb(255, 94, 21)"
+  ],
+  "textContent": [
+    {
+      "type": "heading1",
+      "text": "Vi gör vardagen lite enklare",
+      "tag": "H1"
+    },
+    {
+      "type": "heading2",
+      "text": "Vad säger våra kunder om oss",
+      "tag": "H2"
+    },
+    {
+      "type": "heading2",
+      "text": "Vår process i tre steg",
+      "tag": "H2"
+    },
+    {
+      "type": "heading2",
+      "text": "Fyra skäl att anlita en senior",
+      "tag": "H2"
+    },
+    {
+      "type": "heading2",
+      "text": "VAD VI ERBJUDER",
+      "tag": "H2"
+    },
+    {
+      "type": "heading2",
+      "text": "Vad kan vi underlätta för dig redan idag",
+      "tag": "H2"
+    },
+    {
+      "type": "heading2",
+      "text": "Få tiden tillbaka,",
+      "tag": "H2"
+    },
+    {
+      "type": "heading2",
+      "text": "vi fixar resten",
+      "tag": "H2"
+    },
+    {
+      "type": "heading3",
+      "text": "1.",
+      "tag": "H3"
+    },
+    {
+      "type": "heading3",
+      "text": "2.",
+      "tag": "H3"
+    },
+    {
+      "type": "heading3",
+      "text": "3.",
+      "tag": "H3"
+    },
+    {
+      "type": "paragraph",
+      "text": "Privat",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Företag",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Här finns vi",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Franchise",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jobba med oss",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Om oss",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Kontakta oss",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Boka hjälp idag",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Mer än hjälp i hemmet",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vi matchar privatpersoner med erfarna seniorer som gör vardagen tryggare. Samtidigt ger vi seniorer en gemenskap och en chans att fortsätta bidra efter pension. Det är därför vi kallar det dubbel nytta, stöd för dig och mening för oss.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hos oss hittar de också gemenskap, nya vänner och ett meningsfullt sammanhang.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Lär känna oss",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Ring oss",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Recensioner",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "“Som fastighetsbolag uppskattar vi att ha ett ramavtal med Seniorbolaget: vi har kontakt och prislista klart, och kan ringa in hjälp när vi behöver utan lång väntan. Seniorbolaget levererar kvalitet och pålitlighet varje gång – ett riktigt bra val för oss.”",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Malmö (fastighetsbolag)",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "“Vi behövde snabbt fylla en vakanstjänst i fastighetsskötsel och kontaktade Seniorbolaget. De levererade en erfaren medarbetare på kort varsel och ordnade allt runt avtal och administration. Vi har redan inlett ett ramavtal för framtida behov – tryggt och smidigt.”",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Göteborg (företag)",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "“Hej Seniorbolaget! Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägenheten så fin att jag nästan själv vill fortsätta städa ;) Tack för att ni gör vardagen enklare!”",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Helsingsborg",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "“Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats istället för att känna ‘oj, det där måste vi fixa’. Senioren som kommer är kunnig, lyhörd och gör jobbet med ett leende. Rekommenderas varmt!”",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trollhättan",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Så enkelt fungerar det",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vi träffar dig för att förstå vad du behöver hjälp med – tryggt och enkelt.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Utifrån dina behov väljer vi en senior med erfarenhet och rätt personlighet.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Senioren börjar hos dig och gör vardagen lättare, samtidigt som de själva får gemenskap och mening.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vår specialitet",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Din vardag blir enklare – samtidigt får seniorer gemenskap, vänner och mening efter pensionen.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "När du anlitar en senior skapar du värde för två. En lösning som gör gott för båda parter.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Behöver du städning, målning, trädgårdshjälp eller hantverk?",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vi matchar rätt senior och anpassar hjälpen efter dina behov – på dina villkor.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Skillnaden märks direkt: våra seniorer gör mer än att utföra ett arbete.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "De har tid, tålamod och ett varmt bemötande – en människa som lyssnar och gör din vardag lättare",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "98% av våra kunder får svar inom 24 timmar. Det betyder trygghet för dig – du får hjälp när du behöver det, utan väntan, oro eller krångel.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Vi finns där när vardagen kräver snabba lösningar.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "VÅRA TJÄNSTER",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Med ett team av erfarna tekniker och driftpersonal kan vi snabbt täcka era behov. Vi har redan levererat lösningar till hundratals projekt och byggt en arbetskultur där säkerhet och kvalitet alltid går först. Det betyder att ni kan räkna med samma nivå av engagemang oavsett uppdragets storlek.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "År av erfarenhet",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Med oss får ni en partner som kan ta hand om både fastighetsdrift och bemanning. Vi ser till att lokalerna fungerar som de ska, att rätt kompetens finns på plats och att ni slipper onödiga avbrott. Ni får en helhetslösning som sparar både tid och pengar, och ger er trygghet att fokusera på kärnverksamheten.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Platser över hela landet",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Din vardag behöver inte fler måsten. Våra seniora proffs tar hand om det praktiska med omsorg och precision, så att du kan lägga tiden där den gör mest nytta.",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Snabblänkar",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Hem",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Våra tjänster",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Städ",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Bemanning",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Snickeri",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Måleri",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Trädgård",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Box 2069, 436 02 Hovås",
+      "tag": "P"
+    },
+    {
+      "type": "paragraph",
+      "text": "Copyright © 2025 Seniorbolaget. All rights reserved.",
+      "tag": "P"
+    },
+    {
+      "type": "span",
+      "text": "20",
+      "tag": "SPAN"
+    },
+    {
+      "type": "span",
+      "text": "25",
+      "tag": "SPAN"
+    },
+    {
+      "type": "link",
+      "text": "010-175 19 00",
+      "tag": "A"
+    },
+    {
+      "type": "link",
+      "text": "info@seniorbolaget.se",
+      "tag": "A"
+    }
+  ],
+  "images": [
+    {
+      "src": "https://framerusercontent.com/images/A1HtipmuVvP8zyUI1ZtYhxDCK9A.png?width=2560&height=618",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/T9huALFi3NofdY1DajbSCuKO8mQ.jpg?width=3543&height=2632",
+      "alt": "Hero Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/FdBuyND3YU0M4jXBsHKOlZgMo.png?width=940&height=788",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/bQLSYgV23QluqpsJcOvnUFg8MM.svg?width=41&height=41",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/MXtnDN9eEswqpf4XMzJN4vBhpk.jpeg?width=832&height=1248",
+      "alt": "Work Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/kiEREUpE8Lw4aYwklzuRANED4E.svg?width=49&height=48",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/xvphRGcZCkTId2gu6rM7sNhhjlQ.svg?width=49&height=48",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/YLeS9fNGYKY1GcPuJl2aRvIrg4.svg?width=49&height=48",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/URBAV0Esn0FawGPGRXQrpgBW3o.svg?width=46&height=48",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/C3A3V5ZNwbNk5pJ4fbxf9Thl3XM.jpg?width=2560&height=1902",
+      "alt": "Service Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/mM1b2JnFPcybUrUr2zQR9IKDg.jpg?width=2362&height=1575",
+      "alt": "Service Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/NbfeDbB05XcHRZnKAAo4mjNoyCI.jpeg?width=1920&height=2560",
+      "alt": "Service Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/fKeur5V9cxagxuU1bHf3fWVlo.jpg?width=800&height=533",
+      "alt": "Service Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/tWRiPBUHNdi07gctLl4dFcp08.svg?width=81&height=80",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/GVEppN8FO0qdEjhBJwrMy4Uk.jpg?width=500&height=375",
+      "alt": "Work Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/MoPne9YsImjxDjwfHbEJTwGP15U.jpg?width=4997&height=2973",
+      "alt": "Work Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/3kBYi6nUnO0z5mR0zAg1kFnSsU.svg?width=75&height=80",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/lEfi2nq6gHlI3K5CTUKeZF9ykBc.svg?width=535&height=469",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/OxNnh0hXsFOuRXsLdsLfL8SXux8.png?width=705&height=1058",
+      "alt": "Cta Image"
+    },
+    {
+      "src": "https://framerusercontent.com/images/LHTO2QHzJcTCm6VOlHvcdCk7w.png?width=2560&height=618",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/FdU3Z7Q3bGdy1th6dvcKeb6FE5E.png?width=643&height=380",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/vX7mwuKfIgH4DzyIOJk9xS780.svg?width=24&height=24",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/PMAr0BmYFzM16gifIWk4obMHIJs.svg?width=24&height=24",
+      "alt": ""
+    },
+    {
+      "src": "https://framerusercontent.com/images/5dwL8l00o5Dqcpm0cCmCJfE7y3o.svg?width=24&height=24",
+      "alt": ""
+    }
+  ],
+  "url": "https://www.seniorbolaget.se/",
+  "path": "/",
+  "slug": "index"
+}

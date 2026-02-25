@@ -187,6 +187,21 @@ async def scrape_page(page, url: str, page_path: str, retries: int = 2) -> dict:
             
             # Extra wait for any late JS rendering
             await page.wait_for_timeout(2000)
+
+            # Scrolla igenom sidan för att trigga Framers scroll-animationer
+            # och lazy-load av innehåll (intersection observer)
+            await page.evaluate("""
+                async () => {
+                    const height = document.body.scrollHeight;
+                    const step = 300;
+                    for (let y = 0; y < height; y += step) {
+                        window.scrollTo(0, y);
+                        await new Promise(r => setTimeout(r, 80));
+                    }
+                    window.scrollTo(0, 0);
+                    await new Promise(r => setTimeout(r, 1000));
+                }
+            """)
             
             # Take full-page screenshot
             screenshot_path = os.path.join(OUT_DIR, f"{slug_name}.png")
