@@ -17,8 +17,8 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|2xs","padding":{"all":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="padding:2rem">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"var:preset|font-size|6xl","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
-				<h3 class="wp-block-heading" style="color:#ffffff;font-size:var(--wp--preset--font-size--6xl);font-weight:700;line-height:1">2 000+</h3>
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"56px","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:56px;font-weight:700;line-height:1">2 000+</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"500","fontSize":"var:preset|font-size|lg"},"color":{"text":"rgba(255,255,255,0.85)"}}} -->
 				<p style="color:rgba(255,255,255,0.85);font-size:var(--wp--preset--font-size--lg);font-weight:500">Erfarna seniorer</p>
@@ -32,8 +32,8 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"style":{"spacing":{"padding":{"all":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="padding:2rem">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"var:preset|font-size|6xl","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
-				<h3 class="wp-block-heading" style="color:#ffffff;font-size:var(--wp--preset--font-size--6xl);font-weight:700;line-height:1">20+</h3>
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"56px","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:56px;font-weight:700;line-height:1">20+</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"500","fontSize":"var:preset|font-size|lg"},"color":{"text":"rgba(255,255,255,0.85)"}}} -->
 				<p style="color:rgba(255,255,255,0.85);font-size:var(--wp--preset--font-size--lg);font-weight:500">Orter i Sverige</p>
@@ -47,8 +47,8 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"style":{"spacing":{"padding":{"all":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="padding:2rem">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"var:preset|font-size|6xl","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
-				<h3 class="wp-block-heading" style="color:#ffffff;font-size:var(--wp--preset--font-size--6xl);font-weight:700;line-height:1">5+</h3>
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"56px","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:56px;font-weight:700;line-height:1">5+</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"500","fontSize":"var:preset|font-size|lg"},"color":{"text":"rgba(255,255,255,0.85)"}}} -->
 				<p style="color:rgba(255,255,255,0.85);font-size:var(--wp--preset--font-size--lg);font-weight:500">År av erfarenhet</p>
@@ -62,8 +62,8 @@
 		<div class="wp-block-column">
 			<!-- wp:group {"style":{"spacing":{"padding":{"all":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="padding:2rem">
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"var:preset|font-size|6xl","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
-				<h3 class="wp-block-heading" style="color:#ffffff;font-size:var(--wp--preset--font-size--6xl);font-weight:700;line-height:1">98%</h3>
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"56px","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:56px;font-weight:700;line-height:1">98%</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"500","fontSize":"var:preset|font-size|lg"},"color":{"text":"rgba(255,255,255,0.85)"}}} -->
 				<p style="color:rgba(255,255,255,0.85);font-size:var(--wp--preset--font-size--lg);font-weight:500">Nöjda kunder</p>

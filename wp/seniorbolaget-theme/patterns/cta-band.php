@@ -7,8 +7,8 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"color":{"background":"var:preset|color|rod","text":"var:preset|color|vit"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-rod-background-color has-vit-color has-background has-text-color">
+<!-- wp:group {"align":"full","style":{"color":{"background":"#4A5568","text":"#ffffff"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background has-text-color" style="background-color:#4A5568;color:#ffffff">
 
 	<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|lg"}},"layout":{"type":"constrained","contentSize":"700px"},"textAlign":"center"} -->
 	<div class="wp-block-group" style="text-align:center">
@@ -23,8 +23,8 @@
 
 		<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|sm","margin":{"top":"var:preset|spacing|xl"}}}} -->
 		<div class="wp-block-buttons">
-			<!-- wp:button {"backgroundColor":"vit","textColor":"rod","style":{"border":{"radius":"8px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}}},"className":"is-style-fill"} -->
-			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-vit-background-color has-rod-color has-text-color has-background wp-element-button" href="/kontakt" style="border-radius:8px;padding:1rem 2.5rem">Kontakta oss</a></div>
+			<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}}},"className":"is-style-fill"} -->
+			<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/kontakt" style="border-radius:50px;padding:1rem 2.5rem">Kontakta oss</a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->

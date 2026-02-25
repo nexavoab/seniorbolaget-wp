@@ -1,0 +1,14 @@
+{
+  "hero": {
+    "id": 53,
+    "file": "hero.jpg",
+    "title": "Hero - Städerska med dammsugare",
+    "description": "Leende äldre kvinna med glasögon i Seniorbolaget-tröja håller dammsugare"
+  },
+  "cta": {
+    "id": 54,
+    "file": "cta-image.png",
+    "title": "CTA - Snöskottning",
+    "description": "Person skottar snö med röda grafiska Seniorbolaget-element"
+  }
+}

@@ -18,7 +18,7 @@
         {
           "name": "Röd",
           "slug": "rod",
-          "color": "#D72828"
+          "color": "#C91C22"
         },
         {
           "name": "Röd Mörk",
@@ -48,7 +48,7 @@
         {
           "name": "Accent",
           "slug": "accent",
-          "color": "#D72828"
+          "color": "#C91C22"
         },
         {
           "name": "Kantgrå",
@@ -361,6 +361,11 @@
         },
         "border": {
           "color": "var(--wp--preset--color--kantgra)"
+        }
+      },
+      "core/button": {
+        "border": {
+          "radius": "50px"
         }
       }
     }

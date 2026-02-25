@@ -26,16 +26,16 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;padding:3rem">
+			<!-- wp:group {"style":{"border":{"radius":"12px","width":"1px","color":"#E2E8F0"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"shadow":"none"},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-vit-background-color has-background has-border-color" style="border-color:#E2E8F0;border-width:1px;border-radius:12px;padding:3rem;box-shadow:none">
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
 				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:1.5rem">⭐⭐⭐⭐⭐</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
 				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Som fastighetsbolag uppskattar vi att ha ett ramavtal med Seniorbolaget: vi har kontakt och prislista klart, och kan ringa in hjälp när vi behöver utan lång väntan. Seniorbolaget levererar kvalitet och pålitlighet varje gång – ett riktigt bra val för oss."</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontSize":"0.9rem"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="font-weight:600;font-size:0.9rem;margin-top:2rem">Maria, 38 år — Malmö (fastighetsbolag)</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.9rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
+				<p class="has-rod-color has-text-color" style="color:var(--wp--preset--color--rod);font-weight:700;font-size:0.9rem;margin-top:2rem">Maria, 38 år — Malmö (fastighetsbolag)</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -44,16 +44,16 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;padding:3rem">
+			<!-- wp:group {"style":{"border":{"radius":"12px","width":"1px","color":"#E2E8F0"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"shadow":"none"},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-vit-background-color has-background has-border-color" style="border-color:#E2E8F0;border-width:1px;border-radius:12px;padding:3rem;box-shadow:none">
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
 				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:1.5rem">⭐⭐⭐⭐⭐</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
 				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Vi behövde snabbt fylla en vakanstjänst i fastighetsskötsel och kontaktade Seniorbolaget. De levererade en erfaren medarbetare på kort varsel och ordnade allt runt avtal och administration. Vi har redan inlett ett ramavtal för framtida behov – tryggt och smidigt."</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontSize":"0.9rem"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="font-weight:600;font-size:0.9rem;margin-top:2rem">Björn, 44 år — Göteborg (företag)</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.9rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
+				<p class="has-rod-color has-text-color" style="color:var(--wp--preset--color--rod);font-weight:700;font-size:0.9rem;margin-top:2rem">Björn, 44 år — Göteborg (företag)</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -62,16 +62,16 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;padding:3rem">
+			<!-- wp:group {"style":{"border":{"radius":"12px","width":"1px","color":"#E2E8F0"},"color":{"background":"var:preset|color|vit"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"shadow":"none"},"layout":{"type":"constrained"}} -->
+			<div class="wp-block-group has-vit-background-color has-background has-border-color" style="border-color:#E2E8F0;border-width:1px;border-radius:12px;padding:3rem;box-shadow:none">
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.5rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
 				<p class="has-rod-color has-text-color" style="font-size:1.5rem;margin-bottom:1.5rem">⭐⭐⭐⭐⭐</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
 				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Hej Seniorbolaget! Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägenheten så fin att jag nästan själv vill fortsätta städa ;) Tack för att ni gör vardagen enklare!"</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","fontSize":"0.9rem"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="font-weight:600;font-size:0.9rem;margin-top:2rem">Anna, 52 år — Helsingborg</p>
+				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.9rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
+				<p class="has-rod-color has-text-color" style="color:var(--wp--preset--color--rod);font-weight:700;font-size:0.9rem;margin-top:2rem">Anna, 52 år — Helsingborg</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
