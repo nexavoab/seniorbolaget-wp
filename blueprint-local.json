@@ -1,0 +1,52 @@
+{
+  "$schema": "https://playground.wordpress.net/blueprint-schema.json",
+  "landingPage": "/wp-admin/",
+  "login": true,
+  "preferredVersions": {
+    "php": "8.2",
+    "wp": "6.7"
+  },
+  "steps": [
+    {
+      "step": "mkdir",
+      "path": "/wordpress/wp-content/themes/seniorbolaget-theme"
+    },
+    {
+      "step": "cp",
+      "fromPath": "/theme",
+      "toPath": "/wordpress/wp-content/themes/seniorbolaget-theme"
+    },
+    {
+      "step": "activateTheme",
+      "themeFolderName": "seniorbolaget-theme"
+    },
+    {
+      "step": "importWxr",
+      "file": {
+        "resource": "literal",
+        "name": "seniorbolaget.wordpress.xml",
+        "contents": "WXRPLACEHOLDER"
+      }
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp option update blogname 'Seniorbolaget'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp option update blogdescription 'Låt våra rutinerade seniorer göra jobbet!'"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp option update show_on_front page"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp option update page_on_front $(wp post list --post_type=page --name=home-page --field=ID)"
+    },
+    {
+      "step": "wp-cli",
+      "command": "wp rewrite structure '/%postname%/' --hard"
+    }
+  ]
+}
