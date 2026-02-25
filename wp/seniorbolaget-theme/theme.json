@@ -36,6 +36,21 @@
           "color": "#1a1a1a"
         },
         {
+          "name": "Mörk",
+          "slug": "mork",
+          "color": "#1a1a1a"
+        },
+        {
+          "name": "Accent",
+          "slug": "accent",
+          "color": "#b71c1c"
+        },
+        {
+          "name": "Kantgrå",
+          "slug": "kantgra",
+          "color": "#e5e5e5"
+        },
+        {
           "name": "Textgrå",
           "slug": "textgra",
           "color": "#667282"
