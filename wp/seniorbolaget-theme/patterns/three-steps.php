@@ -7,8 +7,8 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"color":{"background":"var:preset|color|ljusgra"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-ljusgra-background-color has-background">
+<!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="background-color:#FAFAF8">
 
 	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xl"}}},"textAlign":"center"} -->
 	<div class="wp-block-group" style="text-align:center">
@@ -26,13 +26,13 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|sm"}},"layout":{"type":"constrained"}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"20px"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group">
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"4rem","lineHeight":"1"},"color":{"text":"var:preset|color|rod"}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:4rem;font-weight:700;line-height:1">1.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Vi lyssnar på dina behov</h3>
+				<!-- wp:html -->
+				<div style="width:64px;height:64px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">1</div>
+				<!-- /wp:html -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"20px"},"color":{"text":"#1F2937"}}} -->
+				<h3 class="wp-block-heading" style="color:#1F2937;font-size:20px;font-weight:700">Vi lyssnar på dina behov</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"}}} -->
 				<p class="has-textgra-color has-text-color">Vi träffar dig för att förstå vad du behöver hjälp med – tryggt och enkelt. Inga bindande avtal, bara ett samtal.</p>
@@ -44,13 +44,13 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|sm"}},"layout":{"type":"constrained"}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"20px"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group">
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"4rem","lineHeight":"1"},"color":{"text":"var:preset|color|rod"}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:4rem;font-weight:700;line-height:1">2.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Vi matchar rätt senior</h3>
+				<!-- wp:html -->
+				<div style="width:64px;height:64px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">2</div>
+				<!-- /wp:html -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"20px"},"color":{"text":"#1F2937"}}} -->
+				<h3 class="wp-block-heading" style="color:#1F2937;font-size:20px;font-weight:700">Vi matchar rätt senior</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"}}} -->
 				<p class="has-textgra-color has-text-color">Utifrån dina behov väljer vi en senior med rätt erfarenhet och rätt personlighet. Inte bara kompetens — utan också kemi.</p>
@@ -62,13 +62,13 @@
 
 		<!-- wp:column -->
 		<div class="wp-block-column">
-			<!-- wp:group {"style":{"spacing":{"blockGap":"var:preset|spacing|sm"}},"layout":{"type":"constrained"}} -->
+			<!-- wp:group {"style":{"spacing":{"blockGap":"20px"}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group">
-				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"4rem","lineHeight":"1"},"color":{"text":"var:preset|color|rod"}}} -->
-				<p class="has-rod-color has-text-color" style="font-size:4rem;font-weight:700;line-height:1">3.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Hjälpen är igång</h3>
+				<!-- wp:html -->
+				<div style="width:64px;height:64px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;font-size:28px;font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:20px;">3</div>
+				<!-- /wp:html -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"20px"},"color":{"text":"#1F2937"}}} -->
+				<h3 class="wp-block-heading" style="color:#1F2937;font-size:20px;font-weight:700">Hjälpen är igång</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"}}} -->
 				<p class="has-textgra-color has-text-color">Senioren börjar hos dig och gör vardagen lättare — samtidigt som de själva får gemenskap och mening. Dubbel nytta.</p>

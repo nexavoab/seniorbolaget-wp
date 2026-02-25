@@ -7,21 +7,21 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"color":{"background":"var:preset|color|ljus-rosa-beige"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-ljus-rosa-beige-background-color has-background">
+<!-- wp:group {"align":"full","className":"hero-section","style":{"color":{"background":"var:preset|color|ljus-rosa-beige"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull hero-section has-ljus-rosa-beige-background-color has-background">
 
-	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"60px"}}}} -->
-	<div class="wp-block-columns alignwide">
+	<!-- wp:columns {"align":"wide","className":"hero-columns","style":{"spacing":{"blockGap":{"left":"60px"}}}} -->
+	<div class="wp-block-columns alignwide hero-columns">
 
 		<!-- wp:column {"width":"55%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 
-			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2.5rem, 5vw, 3.75rem)"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"0"}}}} -->
-			<h1 class="wp-block-heading has-rod-color has-text-color" style="color:var(--wp--preset--color--rod);font-size:clamp(2.5rem, 5vw, 3.75rem);font-weight:700;line-height:1.1">Hemtjänster av erfarna seniorer – städning, trädgård &amp; hantverk</h1>
+			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(36px, 5vw, 60px)"},"spacing":{"margin":{"bottom":"0"}}}} -->
+			<h1 class="wp-block-heading" style="font-size:clamp(36px, 5vw, 60px);font-weight:700;line-height:1.1">Hemtjänster av<br><span style="color:var(--wp--preset--color--rod)">erfarna seniorer</span><br><span style="font-size:0.65em;color:#4B5563;font-weight:500;">– städning, trädgård &amp; hantverk</span></h1>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|lg","lineHeight":"1.6"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-			<p class="has-rod-color has-text-color" style="color:var(--wp--preset--color--rod);font-size:var(--wp--preset--font-size--lg);line-height:1.6;margin-top:2rem">Behöver du hjälp med städning, målning, tapetsering, byggprojekt eller trädgård och snöskottning? Seniorbolaget finns här för att göra vardagen enklare, tryggare och lite lättare.</p>
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|lg","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
+			<p style="color:#4B5563;font-size:var(--wp--preset--font-size--lg);line-height:1.6;margin-top:2rem">Behöver du hjälp med städning, målning, tapetsering, byggprojekt eller trädgård och snöskottning? Seniorbolaget finns här för att göra vardagen enklare, tryggare och lite lättare.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|sm","margin":{"top":"var:preset|spacing|lg"}}}} -->
@@ -31,6 +31,10 @@
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
+
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"13px"},"color":{"text":"#6B7280"}}} -->
+			<p style="font-size:13px;color:#6B7280;margin-top:8px;">✓ Svar inom 24h &nbsp;•&nbsp; ✓ Inga bindningstider</p>
+			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"style":{"spacing":{"margin":{"top":"var:preset|spacing|lg"}}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"left","gap":"var:preset|spacing|lg"}} -->
 			<div class="wp-block-group" style="margin-top:3rem;display:flex;flex-wrap:wrap;justify-content:flex-start;gap:2rem">
@@ -60,5 +64,17 @@
 	</div>
 	<!-- /wp:columns -->
 
+</div>
+<!-- /wp:group -->
+
+<!-- wp:group {"className":"floating-cta","style":{"spacing":{"padding":"0"}}} -->
+<div class="wp-block-group floating-cta">
+<!-- wp:buttons -->
+<div class="wp-block-buttons">
+<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"14px","bottom":"14px","left":"28px","right":"28px"}}}} -->
+<div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background" href="/intresse-anmalan" style="border-radius:50px;padding:14px 28px;">📞 Boka hjälp idag</a></div>
+<!-- /wp:button -->
+</div>
+<!-- /wp:buttons -->
 </div>
 <!-- /wp:group -->

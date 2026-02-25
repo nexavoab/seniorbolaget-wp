@@ -3,12 +3,12 @@
  * Title: Tjänste-grid
  * Slug: seniorbolaget/services-grid
  * Categories: seniorbolaget, featured
- * Description: Fyra tjänstekort i grid
+ * Description: Fyra tjänstekort i bento-grid layout
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull">
+<!-- wp:group {"align":"full","className":"services-grid","style":{"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}},"color":{"background":"#FAFAF8"}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull services-grid" style="background-color:#FAFAF8">
 
 	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xl"}}},"textAlign":"center"} -->
 	<div class="wp-block-group" style="text-align:center">
@@ -21,87 +21,93 @@
 	</div>
 	<!-- /wp:group -->
 
-	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|md"}}}} -->
-	<div class="wp-block-columns">
+	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"24px"},"margin":{"bottom":"24px"}}}} -->
+	<div class="wp-block-columns" style="margin-bottom:24px">
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px","color":"var:preset|color|kantgra","style":"solid","width":"1px"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"color":{"background":"var:preset|color|vit"}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;border:1px solid var(--wp--preset--color--kantgra);padding:3rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"2.5rem"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-				<p style="font-size:2.5rem;margin-bottom:1.5rem">🧹</p>
+		<!-- wp:column {"width":"60%"} -->
+		<div class="wp-block-column" style="flex-basis:60%">
+			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
+			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px"},"spacing":{"margin":{"bottom":"16px"}}}} -->
+				<p style="font-size:48px;margin-bottom:16px">🧹</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
 				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Hemstäd</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"var:preset|spacing|xs"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Regelbunden eller engångsstädning av hem och lägenheter. Noggrant och tillförlitligt av erfarna seniorer.</p>
+				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
+				<p class="has-textgra-color has-text-color" style="margin-top:12px">Regelbunden eller engångsstädning av hem och lägenheter. Noggrant och tillförlitligt av erfarna seniorer.</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/hemstad" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px","color":"var:preset|color|kantgra","style":"solid","width":"1px"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"color":{"background":"var:preset|color|vit"}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;border:1px solid var(--wp--preset--color--kantgra);padding:3rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"2.5rem"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-				<p style="font-size:2.5rem;margin-bottom:1.5rem">🖌️</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Målning &amp; tapetsering</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"var:preset|spacing|xs"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/malning" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
+				<p style="margin-top:20px"><a class="read-more-link" href="/privat/hemstad" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
 		</div>
 		<!-- /wp:column -->
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px","color":"var:preset|color|kantgra","style":"solid","width":"1px"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"color":{"background":"var:preset|color|vit"}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;border:1px solid var(--wp--preset--color--kantgra);padding:3rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"2.5rem"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-				<p style="font-size:2.5rem;margin-bottom:1.5rem">🔨</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Snickeri</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"var:preset|spacing|xs"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/snickeri" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"border":{"radius":"12px","color":"var:preset|color|kantgra","style":"solid","width":"1px"},"spacing":{"padding":{"all":"var:preset|spacing|lg"}},"color":{"background":"var:preset|color|vit"}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group has-vit-background-color has-background" style="border-radius:12px;border:1px solid var(--wp--preset--color--kantgra);padding:3rem">
-				<!-- wp:paragraph {"style":{"typography":{"fontSize":"2.5rem"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-				<p style="font-size:2.5rem;margin-bottom:1.5rem">🌿</p>
+		<!-- wp:column {"width":"40%"} -->
+		<div class="wp-block-column" style="flex-basis:40%">
+			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
+			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px"},"spacing":{"margin":{"bottom":"16px"}}}} -->
+				<p style="font-size:48px;margin-bottom:16px">🌿</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
 				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Trädgård</h3>
 				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"var:preset|spacing|xs"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:1rem">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats — vi sköter resten.</p>
+				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
+				<p class="has-textgra-color has-text-color" style="margin-top:12px">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats — vi sköter resten.</p>
 				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->
-				<p style="margin-top:2rem"><a href="/privat/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
+				<p style="margin-top:20px"><a class="read-more-link" href="/privat/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+	</div>
+	<!-- /wp:columns -->
+
+	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"24px"}}}} -->
+	<div class="wp-block-columns">
+
+		<!-- wp:column {"width":"40%"} -->
+		<div class="wp-block-column" style="flex-basis:40%">
+			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
+			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px"},"spacing":{"margin":{"bottom":"16px"}}}} -->
+				<p style="font-size:48px;margin-bottom:16px">🖌️</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
+				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Målning &amp; tapetsering</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
+				<p class="has-textgra-color has-text-color" style="margin-top:12px">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
+				<p style="margin-top:20px"><a class="read-more-link" href="/privat/malning" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<!-- /wp:paragraph -->
+			</div>
+			<!-- /wp:group -->
+		</div>
+		<!-- /wp:column -->
+
+		<!-- wp:column {"width":"60%"} -->
+		<div class="wp-block-column" style="flex-basis:60%">
+			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
+			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
+				<!-- wp:paragraph {"style":{"typography":{"fontSize":"48px"},"spacing":{"margin":{"bottom":"16px"}}}} -->
+				<p style="font-size:48px;margin-bottom:16px">🔨</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
+				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Snickeri</h3>
+				<!-- /wp:heading -->
+				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
+				<p class="has-textgra-color has-text-color" style="margin-top:12px">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
+				<!-- /wp:paragraph -->
+				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
+				<p style="margin-top:20px"><a class="read-more-link" href="/privat/snickeri" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

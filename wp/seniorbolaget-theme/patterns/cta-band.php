@@ -10,8 +10,8 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull">
 
-	<!-- wp:group {"align":"wide","style":{"color":{"background":"#4A5568","text":"#ffffff"},"border":{"radius":"24px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
-	<div class="wp-block-group alignwide has-background has-text-color" style="background-color:#4A5568;color:#ffffff;border-radius:24px;overflow:hidden">
+	<!-- wp:group {"align":"wide","style":{"border":{"radius":"24px"},"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}}},"layout":{"type":"default"}} -->
+	<div class="wp-block-group alignwide" style="background:radial-gradient(ellipse at 70% 50%, #5A6478 0%, #4A5568 60%);color:#ffffff;border-radius:24px;overflow:hidden">
 
 		<!-- wp:columns {"verticalAlignment":"stretch","style":{"spacing":{"blockGap":{"left":"0"}}}} -->
 		<div class="wp-block-columns are-vertically-aligned-stretch">
