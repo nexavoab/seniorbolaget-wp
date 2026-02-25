@@ -1,14 +1,10 @@
 {
-  "hero": {
-    "id": 53,
-    "file": "hero.jpg",
-    "title": "Hero - Städerska med dammsugare",
-    "description": "Leende äldre kvinna med glasögon i Seniorbolaget-tröja håller dammsugare"
-  },
-  "cta": {
-    "id": 54,
-    "file": "cta-image.png",
-    "title": "CTA - Snöskottning",
-    "description": "Person skottar snö med röda grafiska Seniorbolaget-element"
+  "hero": { "id": 53, "url": "http://localhost:8888/wp-content/uploads/hero.jpg" },
+  "cta": { "id": 54, "url": "http://localhost:8888/wp-content/uploads/cta-image.png" },
+  "services": {
+    "hemstad":  { "id": 56, "url": "http://localhost:8888/wp-content/uploads/service-hemstad.jpg" },
+    "tradgard": { "id": 57, "url": "http://localhost:8888/wp-content/uploads/service-tradgard.jpg" },
+    "malning":  { "id": 58, "url": "http://localhost:8888/wp-content/uploads/service-malning.jpg" },
+    "snickeri": { "id": 59, "url": "http://localhost:8888/wp-content/uploads/service-snickeri.jpg" }
   }
 }

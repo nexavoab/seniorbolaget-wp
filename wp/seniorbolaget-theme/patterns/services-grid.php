@@ -30,9 +30,9 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Hemstäd" class="service-card-image" />
+					<img src="http://localhost:8888/wp-content/uploads/service-hemstad.jpg" alt="Städning av hem" class="service-card-image" />
 					<div class="service-card-overlay">
-						<a href="/privat/hemstad" class="service-card-cta">Boka Hemstäd →</a>
+						<a href="/tjanster/hemstad" class="service-card-cta">Boka Hemstäd →</a>
 					</div>
 				</div>
 				<!-- /wp:html -->
@@ -48,7 +48,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:12px">Regelbunden eller engångsstädning av hem och lägenheter. Noggrant och tillförlitligt av erfarna seniorer.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/privat/hemstad" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/hemstad" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -61,9 +61,9 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Trädgård" class="service-card-image" />
+					<img src="http://localhost:8888/wp-content/uploads/service-tradgard.jpg" alt="Trädgårdsarbete" class="service-card-image" />
 					<div class="service-card-overlay">
-						<a href="/privat/tradgard" class="service-card-cta">Boka Trädgård →</a>
+						<a href="/tjanster/tradgard" class="service-card-cta">Boka Trädgård →</a>
 					</div>
 				</div>
 				<!-- /wp:html -->
@@ -79,7 +79,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:12px">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats — vi sköter resten.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/privat/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -98,9 +98,9 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Målning" class="service-card-image" />
+					<img src="http://localhost:8888/wp-content/uploads/service-malning.jpg" alt="Målning och tapetsering" class="service-card-image" />
 					<div class="service-card-overlay">
-						<a href="/privat/malning" class="service-card-cta">Boka Målning →</a>
+						<a href="/tjanster/malning-tapetsering" class="service-card-cta">Boka Målning →</a>
 					</div>
 				</div>
 				<!-- /wp:html -->
@@ -116,7 +116,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:12px">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/privat/malning" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/malning-tapetsering" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -129,9 +129,9 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Snickeri" class="service-card-image" />
+					<img src="http://localhost:8888/wp-content/uploads/service-snickeri.jpg" alt="Snickeri och hantverk" class="service-card-image" />
 					<div class="service-card-overlay">
-						<a href="/privat/snickeri" class="service-card-cta">Boka Snickeri →</a>
+						<a href="/tjanster/snickeri" class="service-card-cta">Boka Snickeri →</a>
 					</div>
 				</div>
 				<!-- /wp:html -->
@@ -147,7 +147,7 @@
 				<p class="has-textgra-color has-text-color" style="margin-top:12px">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/privat/snickeri" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
+				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/snickeri" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
