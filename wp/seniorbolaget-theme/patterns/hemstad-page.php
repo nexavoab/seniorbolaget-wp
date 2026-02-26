@@ -97,7 +97,7 @@
 <!-- /wp:group -->
 
 
-<!-- VAD INGÅR SECTION -->
+<!-- VAD INGÅR SECTION — Bento Grid -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FAFAF8;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
@@ -105,91 +105,67 @@
 	<h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-weight:700;margin-bottom:3rem">Vad ingår i hemstädningen?</h2>
 	<!-- /wp:heading -->
 
-	<!-- wp:columns {"align":"wide","style":{"spacing":{"blockGap":{"left":"2rem"}}}} -->
-	<div class="wp-block-columns alignwide">
+	<!-- wp:html -->
+	<div class="seniorbolaget-bento" style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:16px;max-width:1100px;margin:0 auto;">
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"border":{"radius":"12px"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group" style="background-color:#FFFFFF;border-radius:12px;padding:2rem 1.5rem">
-				<!-- wp:html -->
-				<div style="width:48px;height:48px;margin-bottom:1rem;color:#C91C22">
-					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-				<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600;margin-bottom:0.5rem">Dammtorkning &amp; dammsugning</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-				<p style="color:#4B5563;font-size:0.9375rem">Alla ytor, golv och möbler</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+	  <!-- Stort kort — Dammtorkning (2 kolumner) -->
+	  <div style="grid-column:span 2;background:#fff;border-radius:20px;padding:36px;box-shadow:0 2px 16px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:16px;">
+	    <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+	      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+	    </div>
+	    <div>
+	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.25rem;color:#1F2937;margin:0 0 8px;">Dammtorkning &amp; dammsugning</p>
+	      <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0;line-height:1.6;">Alla ytor, golv, möbler och svåråtkomliga ställen. Vi är noggranna — varje gång.</p>
+	    </div>
+	  </div>
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"border":{"radius":"12px"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group" style="background-color:#FFFFFF;border-radius:12px;padding:2rem 1.5rem">
-				<!-- wp:html -->
-				<div style="width:48px;height:48px;margin-bottom:1rem;color:#C91C22">
-					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-				<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600;margin-bottom:0.5rem">Badrum &amp; kök</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-				<p style="color:#4B5563;font-size:0.9375rem">Sanering, avkalkning, vitvaror</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+	  <!-- Litet kort — Badrum & kök -->
+	  <div style="background:#FFF4F2;border-radius:20px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:12px;">
+	    <div style="width:44px;height:44px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+	    </div>
+	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.05rem;color:#1F2937;margin:0;">Badrum &amp; kök</p>
+	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Sanering, avkalkning, vitvaror och kakel.</p>
+	  </div>
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"border":{"radius":"12px"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group" style="background-color:#FFFFFF;border-radius:12px;padding:2rem 1.5rem">
-				<!-- wp:html -->
-				<div style="width:48px;height:48px;margin-bottom:1rem;color:#C91C22">
-					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-				<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600;margin-bottom:0.5rem">Fönsterputs</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-				<p style="color:#4B5563;font-size:0.9375rem">Klara fönster in- och utsida</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+	  <!-- Litet kort — Fönsterputs -->
+	  <div style="background:#FAFAF8;border-radius:20px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:12px;">
+	    <div style="width:44px;height:44px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;">
+	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+	    </div>
+	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.05rem;color:#1F2937;margin:0;">Fönsterputs</p>
+	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Klara fönster — in- och utsida.</p>
+	  </div>
 
-		<!-- wp:column -->
-		<div class="wp-block-column">
-			<!-- wp:group {"style":{"color":{"background":"#FFFFFF"},"border":{"radius":"12px"},"spacing":{"padding":{"top":"2rem","bottom":"2rem","left":"1.5rem","right":"1.5rem"}}},"layout":{"type":"constrained"}} -->
-			<div class="wp-block-group" style="background-color:#FFFFFF;border-radius:12px;padding:2rem 1.5rem">
-				<!-- wp:html -->
-				<div style="width:48px;height:48px;margin-bottom:1rem;color:#C91C22">
-					<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10c0 1.1.9 2 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-				<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600;margin-bottom:0.5rem">Tvätt &amp; strykning</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-				<p style="color:#4B5563;font-size:0.9375rem">På begäran, vi hjälper gärna</p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+	  <!-- Bred rad — Tvätt & strykning (3 kolumner) -->
+	  <div style="grid-column:span 3;background:linear-gradient(135deg,#C91C22 0%,#a01519 100%);border-radius:20px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
+	    <div>
+	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 6px;">Tvätt &amp; strykning</p>
+	      <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.85);margin:0;">På begäran — vi hjälper gärna med det också.</p>
+	    </div>
+	    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+	  </div>
+
+	  <!-- Litet kort — Allt ingår-badge -->
+	  <div style="background:#1F2937;border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;">
+	    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:0.9375rem;color:#fff;margin:0;">Allt ingår</p>
+	    <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#9CA3AF;margin:0;">Städmaterial &amp; utrustning</p>
+	  </div>
 
 	</div>
-	<!-- /wp:columns -->
+	<style>
+	@media (max-width: 768px) {
+	  .seniorbolaget-bento { grid-template-columns: 1fr 1fr !important; }
+	  .seniorbolaget-bento > div[style*="span 2"],
+	  .seniorbolaget-bento > div[style*="span 3"] { grid-column: span 2 !important; }
+	}
+	@media (max-width: 480px) {
+	  .seniorbolaget-bento { grid-template-columns: 1fr !important; }
+	  .seniorbolaget-bento > div { grid-column: span 1 !important; }
+	}
+	</style>
+	<!-- /wp:html -->
 
 </div>
 <!-- /wp:group -->
@@ -440,3 +416,13 @@
 
 </div>
 <!-- /wp:group -->
+
+<!-- STICKY FLOATING CTA -->
+<!-- wp:html -->
+<div class="seniorbolaget-sticky-cta">
+  <a href="/intresse-anmalan">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+    Boka städning
+  </a>
+</div>
+<!-- /wp:html -->
