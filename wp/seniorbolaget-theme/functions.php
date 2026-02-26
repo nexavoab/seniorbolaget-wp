@@ -74,3 +74,6 @@ function seniorbolaget_register_pattern_categories() {
 	);
 }
 add_action( 'init', 'seniorbolaget_register_pattern_categories' );
+
+// Feature flags
+require_once get_template_directory() . '/inc/feature-flags.php';

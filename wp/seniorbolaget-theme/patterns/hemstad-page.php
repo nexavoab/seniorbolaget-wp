@@ -46,9 +46,38 @@
 			</div>
 			<!-- /wp:buttons -->
 
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem"},"color":{"text":"#4B5563"}}} -->
-			<p style="color:#4B5563;font-size:0.875rem">Svar inom 24h &bull; Inga bindningstider &bull; RUT direkt på fakturan</p>
+			<!-- wp:html -->
+			<p style="font-size:0.875rem;color:#6B7280;margin-top:0.75rem;margin-bottom:0;">
+				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+				Eller ring <strong style="color:#1F2937;">010-175 19 00</strong> — inget åtagande, bara ett samtal.
+			</p>
+			<!-- /wp:html -->
+
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem"},"color":{"text":"#4B5563"},"spacing":{"margin":{"top":"1rem"}}}} -->
+			<p style="color:#4B5563;font-size:0.875rem;margin-top:1rem">Svar inom 24h &bull; Inga bindningstider &bull; RUT direkt på fakturan</p>
 			<!-- /wp:paragraph -->
+
+			<?php if (defined('SENIORBOLAGET_FEATURE_POSTNUMMER') && SENIORBOLAGET_FEATURE_POSTNUMMER): ?>
+			<!-- wp:html -->
+			<div style="margin-top:1.5rem;display:flex;gap:8px;max-width:380px;">
+				<input type="text" placeholder="Ditt postnummer" maxlength="5" inputmode="numeric" style="flex:1;padding:14px 18px;border:2px solid #e5e7eb;border-radius:50px;font-size:1rem;font-family:Inter,sans-serif;color:#1F2937;outline:none;" aria-label="Ange postnummer för prisuppskattning" />
+				<button style="padding:14px 24px;background:#C91C22;color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:600;font-family:Rubik,sans-serif;cursor:pointer;white-space:nowrap;" type="button">Beräkna pris</button>
+			</div>
+			<!-- /wp:html -->
+			<?php endif; ?>
+
+			<!-- wp:html -->
+			<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
+				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+					<span>4,8/5 · 500+ omdömen</span>
+				</div>
+				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
+					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+					<span>Reco.se rekommenderad</span>
+				</div>
+			</div>
+			<!-- /wp:html -->
 
 		</div>
 		<!-- /wp:column -->
@@ -252,6 +281,26 @@
 				</div>
 				<!-- /wp:group -->
 
+				<!-- wp:html -->
+				<div style="margin-top:1.5rem;">
+					<p style="font-weight:600;font-size:1rem;color:#1F2937;margin-bottom:1rem;">Så fungerar RUT-avdraget i praktiken:</p>
+					<ol style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.75rem;">
+						<li style="display:flex;align-items:flex-start;gap:12px;">
+							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">1</span>
+							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Vi utför städningen och fakturerar dig <strong>halva priset</strong></span>
+						</li>
+						<li style="display:flex;align-items:flex-start;gap:12px;">
+							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">2</span>
+							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Vi ansöker om RUT-avdraget hos Skatteverket <strong>åt dig</strong></span>
+						</li>
+						<li style="display:flex;align-items:flex-start;gap:12px;">
+							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">3</span>
+							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Du behöver inte göra <strong>någonting</strong> — vi sköter hela processen</span>
+						</li>
+					</ol>
+				</div>
+				<!-- /wp:html -->
+
 			</div>
 			<!-- /wp:group -->
 
@@ -288,10 +337,10 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Lång erfarenhet</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Samma person varje gång</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Våra seniorer har arbetat länge och kan verkligen sitt hantverk</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Du lär känna din städare. Trygghet och förtroende som varar.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -312,10 +361,10 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Punktliga och trevliga</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Vi anpassar oss till dina tider</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Vi värderar din tid och ditt förtroende</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Du väljer dag och tid. Vi är flexibla — alltid.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -336,10 +385,10 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Snabbstartade</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Extra omtanke ingår alltid</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Vi kan börja nästan direkt. Testa oss!</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Våra seniorer förstår vad omsorg betyder. Det syns i jobbet.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
