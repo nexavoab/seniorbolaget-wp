@@ -44,6 +44,20 @@ header.wp-block-template-part {
     box-shadow: 0 1px 12px rgba(0,0,0,0.06);
 }
 
+/* ===== 65+ TILLGÄNGLIGHET — MIN FONTSTORLEK ===== */
+body {
+    font-size: 1rem; /* 16px minimum */
+    line-height: 1.7;
+}
+p, li, td, label, input, select, textarea {
+    font-size: max(1rem, 16px);
+}
+.wp-block-paragraph,
+.entry-content p {
+    font-size: clamp(1rem, 1.5vw, 1.125rem);
+    line-height: 1.75;
+}
+
 /* ===== GLOBAL BORDER-RADIUS 16px ===== */
 .wp-block-group.testimonial-card,
 .wp-block-group.service-card {
@@ -70,7 +84,7 @@ header.wp-block-template-part {
 
 /* ===== MIKRO-COPY UNDER CTA-KNAPP ===== */
 .hero-microcopy {
-    font-size: 13px;
+    font-size: 1rem; /* 16px */
     color: #6B7280;
     margin-top: 8px;
     display: block;
@@ -204,7 +218,7 @@ header.wp-block-template-part {
     align-items: center;
     gap: 8px;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 1rem;
     color: #1F2937;
 }
 
@@ -352,7 +366,7 @@ header.wp-block-template-part {
     padding: 14px 24px;
     font-family: Rubik, sans-serif;
     font-weight: 700;
-    font-size: 0.9375rem;
+    font-size: 1rem;
     text-decoration: none;
     box-shadow: 0 8px 24px rgba(201,28,34,0.35);
     transition: transform 0.2s, box-shadow 0.2s;
