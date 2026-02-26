@@ -54,8 +54,8 @@ header.wp-block-template-part {
 /* ===== PREMIUM BOX SHADOWS ===== */
 .wp-block-group.testimonial-card,
 .wp-block-group.service-card {
-    box-shadow: 0 4px 24px -4px rgba(0,0,0,0.06) !important;
-    border: none !important;
+    box-shadow: 0 10px 30px -10px rgba(0,0,0,0.05) !important;
+    border: 1px solid rgba(0,0,0,0.05) !important;
 }
 
 /* ===== HELA KORTET KLICKBART (Fitt's Law) ===== */
@@ -157,4 +157,164 @@ header.wp-block-template-part {
 /* ===== VARMARE BAKGRUNDER ===== */
 :root {
     --sb-warm-bg: #FAFAF8;
+}
+
+/* ===== HOMEPAGE POLISH — MOBILE FIXES ===== */
+@media (max-width: 768px) {
+    /* 1. Trust badges: luftigare */
+    .hero-trust-badges {
+        line-height: 2;
+        gap: 12px;
+    }
+    .hero-trust-badges .wp-block-paragraph {
+        margin-bottom: 8px;
+    }
+
+    /* 2. CTA-bilden: border-radius fix */
+    .wp-block-group .cta-image img,
+    .cta-band img {
+        border-radius: 12px;
+        object-position: center top;
+    }
+
+    /* 3. Process-siffror: mindre */
+    .step-circle,
+    .wp-block-group[class*="step"] .step-number {
+        width: 48px !important;
+        height: 48px !important;
+        font-size: 22px !important;
+    }
+
+    /* 4. Footer: bottom spacing */
+    .wp-block-template-part footer .wp-block-group:last-child {
+        margin-bottom: 20px;
+    }
+}
+
+/* ===== TRUST BADGES — hero ===== */
+.hero-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+    margin-top: 2rem;
+}
+.hero-trust-badges > div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #1F2937;
+}
+
+/* ===== TESTIMONIAL STARS ===== */
+.testimonial-stars {
+    display: flex;
+    gap: 4px;
+    margin-bottom: 16px;
+    color: #C91C22;
+}
+
+/* ===== SERVICE CARD — bild med hover-overlay ===== */
+.service-card-image-wrap {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px 16px 0 0;
+    height: 200px;
+    margin: -32px -32px 24px -32px;
+}
+.service-card-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 600ms ease;
+    display: block;
+}
+.service-card:hover .service-card-image {
+    transform: scale(1.08);
+}
+.service-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.65) 0%, transparent 60%);
+    display: flex;
+    align-items: flex-end;
+    padding: 20px 24px;
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.service-card:hover .service-card-overlay {
+    opacity: 1;
+}
+.service-card-cta {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transform: translateY(8px);
+    transition: transform 300ms ease;
+}
+.service-card:hover .service-card-cta {
+    transform: translateY(0);
+}
+.service-card-cta:hover {
+    color: #FFF4F2;
+}
+
+/* ===== MOBIL — sektioner behöver luft på sidorna ===== */
+@media (max-width: 768px) {
+    /* Alla fullbredd-sektioner: minst 24px luft */
+    .wp-block-group.alignfull {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* Rubriker i sektioner: inget overflow */
+    .wp-block-group.alignfull .wp-block-heading,
+    .wp-block-group.alignfull .wp-block-paragraph {
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    /* Kolumner: lite luft mellan korten */
+    .wp-block-columns {
+        gap: 16px !important;
+    }
+
+    /* Service cards: bild-wrappern matchar kortets nya padding */
+    .service-card-image-wrap {
+        margin: -24px -24px 20px -24px;
+    }
+}
+
+/* ===== GEMINI FIX: SEKTIONSLUFT + HIERARKI ===== */
+
+/* 1. Tvinga 100px luft på alla sektioner — överskriver block-inkonsekvenser */
+.wp-block-group.alignfull {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+/* 2. Sektionsrubriker (H2) ska vara tydliga kapitelavdelare */
+.wp-block-group.alignfull h2.wp-block-heading {
+    font-size: clamp(1.75rem, 4vw, 2.75rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+}
+
+/* 3. Ingress-text: mörkare för läsbarhet (viktigt för äldre) */
+.wp-block-group.alignfull p.has-textgra-color {
+    color: #4a4a4a !important;
+}
+
+/* Mobil: lite mindre luft men fortfarande generöst */
+@media (max-width: 781px) {
+    .wp-block-group.alignfull {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
 }
