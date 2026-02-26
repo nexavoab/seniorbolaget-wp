@@ -102,3 +102,36 @@ function seniorbolaget_register_stad_patterns() {
     }
 }
 add_action('init', 'seniorbolaget_register_stad_patterns', 20);
+
+// Manuell registrering av info-sidor (om oss, jobba, franchise, etc.)
+function seniorbolaget_register_info_patterns() {
+    $pattern_dir = get_template_directory() . '/patterns/';
+    $info_patterns = array(
+        'om-oss-page.php',
+        'jobba-med-oss-page.php',
+        'franchise-page.php',
+        'intresse-anmalan-page.php',
+        'kontakt-page.php',
+    );
+    foreach ($info_patterns as $filename) {
+        $file = $pattern_dir . $filename;
+        if (!file_exists($file)) continue;
+        $headers = get_file_data($file, array(
+            'title'       => 'Title',
+            'slug'        => 'Slug',
+            'description' => 'Description',
+            'categories'  => 'Categories',
+        ));
+        if (empty($headers['slug'])) continue;
+        ob_start();
+        include $file;
+        $content = ob_get_clean();
+        register_block_pattern($headers['slug'], array(
+            'title'       => $headers['title'],
+            'description' => $headers['description'],
+            'categories'  => array_map('trim', explode(',', $headers['categories'])),
+            'content'     => $content,
+        ));
+    }
+}
+add_action('init', 'seniorbolaget_register_info_patterns', 20);
