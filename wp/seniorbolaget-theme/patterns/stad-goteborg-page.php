@@ -2,9 +2,10 @@
 /**
  * Title: Göteborg - Stadssida
  * Slug: seniorbolaget/stad-goteborg-page
- * Categories: seniorbolaget, stad
+ * Categories: seniorbolaget, services
  * Description: SEO-landningssida för Göteborg
  * Viewport Width: 1440
+ * Inserter: true
  */
 ?>
 

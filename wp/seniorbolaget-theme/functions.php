@@ -77,3 +77,28 @@ add_action( 'init', 'seniorbolaget_register_pattern_categories' );
 
 // Feature flags
 require_once get_template_directory() . '/inc/feature-flags.php';
+
+// Manuell registrering av stadssida-mönster (bypass auto-scan)
+function seniorbolaget_register_stad_patterns() {
+    $pattern_dir = get_template_directory() . '/patterns/';
+    $stad_patterns = glob($pattern_dir . 'stad-*.php');
+    foreach ($stad_patterns as $file) {
+        $headers = get_file_data($file, array(
+            'title'       => 'Title',
+            'slug'        => 'Slug',
+            'description' => 'Description',
+            'categories'  => 'Categories',
+        ));
+        if (empty($headers['slug'])) continue;
+        ob_start();
+        include $file;
+        $content = ob_get_clean();
+        register_block_pattern($headers['slug'], array(
+            'title'       => $headers['title'],
+            'description' => $headers['description'],
+            'categories'  => array_map('trim', explode(',', $headers['categories'])),
+            'content'     => $content,
+        ));
+    }
+}
+add_action('init', 'seniorbolaget_register_stad_patterns', 20);
