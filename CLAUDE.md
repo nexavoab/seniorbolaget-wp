@@ -1,113 +1,175 @@
 # CLAUDE.md — seniorbolaget-wp
 
-Automatiserad Framer → WordPress-migrering för seniorbolaget.se.
-Pipeline: Playwright scrape → visuell diff (Gemini) → WordPress block theme → staging → Wasim godkänner.
+Framer → WordPress-migrering för seniorbolaget.se.
+Orkestratorn (Roberta/Sonnet) delegerar allt kodningsarbete till Opus-agenter.
+Gemini verifierar visuellt. Wasim godkänner via PR.
 
-## Quick Start
+---
 
+## Nuläge (2026-02-26)
+
+| Sida | Status | Betyg |
+|------|--------|-------|
+| Startsida | ✅ Mergad (PR #1) | — |
+| Hemstädning | ✅ Mergad (PR #2) | 8.5/10 |
+| Trädgård, Målning, Snickeri | 🔍 PR #3 (In Review) | 7-8/10 |
+| 26 stadssidor v3 | 🚧 Byggs nu (WAS-42) | — |
+| Info-sidor (om oss, kontakt, etc.) | ⏳ Nästa | — |
+
+---
+
+## Infrastruktur
+
+```
+Repo:     nexavoab/seniorbolaget-wp
+Lokal:    /home/exedev/seniorbolaget-wp/
+Branch:   feat/tjanstesidor-batch (PR #3 öppen)
+WP-ENV:   http://localhost:8888 (Docker)
+```
+
+### Docker-kommandon
 ```bash
-# Lokal WordPress (Docker via wp-env)
-npm run env:start     # Starta lokal WP på port 8888
-npm run env:stop      # Stoppa
-wp-cli ...            # WP CLI mot lokal instans
+# Deploy tema (patterns-mappen separat — hela temat ger EOF-fel)
+docker cp wp/seniorbolaget-theme/patterns/. \
+  cd86134e880f720743ac9376d8403e15-wordpress-1:/var/www/html/wp-content/themes/seniorbolaget-theme/patterns/
 
-# Scraping
-python3 scrape.py     # Playwright-scraper (renderar JS, tar screenshots)
+docker cp wp/seniorbolaget-theme/functions.php \
+  cd86134e880f720743ac9376d8403e15-wordpress-1:/var/www/html/wp-content/themes/seniorbolaget-theme/functions.php
 
-# Bygg tema-zip
-cd wp && zip -r ../seniorbolaget-theme.zip seniorbolaget-theme/
+docker exec cd86134e880f720743ac9376d8403e15-cli-1 wp cache flush --allow-root
 ```
 
-**Git branch-policy:** Base på `main`, PR → `main`. Wasim godkänner alltid.
+### WP Media IDs
+| ID | Fil | Används |
+|----|-----|---------|
+| 53 | hero.jpg | Stadssidor hero (kvinna + dammsugare) |
+| 54 | cta-image.png | CTA-band |
+| 56–62 | Tjänstebilder | Service-sidor |
 
-## Stack & Verktyg
+---
 
-- **Scraper:** Playwright (Python) — renderar Framer/JS, tar fullpage-screenshots, extraherar computed styles
-- **Visuell diff:** Gemini 3.1 Pro Preview — jämför screenshots, rapporterar avvikelser
-- **WordPress:** Block theme (FSE) + WXR-import + wp-env (lokal Docker)
-- **Kodningsagent:** Claude Opus 4.5 i tmux-session
-- **Analysagent:** Gemini 3.1 Pro i tmux-session
-
-## Projektstruktur
-
-```
-seniorbolaget-wp/
-  scrape.py              # Playwright-scraper (ALDRIG urllib — måste rendera JS)
-  generate_wxr.py        # Genererar WordPress XML (WXR) från scrapad data
-  seniorbolaget.wordpress.xml  # WXR-importfil
-  scraped/               # Scrapad data per sida (JSON + screenshots)
-    ├── home.json
-    ├── home.png          # Fullpage screenshot för visuell diff
-    └── ...
-  wp/
-    seniorbolaget-theme/ # WordPress block theme
-      style.css          # Tema-metadata + bas-CSS
-      theme.json         # Design tokens (FÄRGER, typsnitt, spacing)
-      functions.php      # PHP-funktioner
-      templates/         # Block templates (index, front-page, page, etc.)
-      parts/             # Template parts (header, footer)
-      patterns/          # Block patterns (hero, tjänster, steg, etc.)
-  seniorbolaget-theme.zip  # Zippad version för WP-import
-```
-
-## Pipeline — Automatiserat flöde
+## Pipeline
 
 ```
-1. scrape.py (Playwright)
-   → scraped/{sida}.json   (text, färger, fonter, bilder)
-   → scraped/{sida}.png    (fullpage screenshot)
-
-2. Gemini 3.1 Pro (tmux: gemini/diff)
-   → jämför scraped/*.png med WP staging screenshots
-   → diff-rapport: exakta avvikelser med CSS-förslag
-
-3. Claude Opus (tmux: wp/fix)
-   → läser diff-rapport → uppdaterar theme.json + CSS + patterns
-
-4. wp-env (lokal Docker)
-   → testar tema lokalt, tar nya screenshots
-
-5. Loop: Gemini verifierar → Opus fixar → tills godkänt
-
-6. PR → Wasim granskar → merge → deploy
+1. compare.py          → Playwright screenshots original + WP staging
+2. Gemini-scoring      → gemini -m gemini-2.5-flash --yolo -p "..." @bild.jpg
+3. ≥9/10               → PR → Wasim godkänner → merge
+4. <9/10               → Opus fixar → loop
 ```
 
-## Kritiska regler
+### Gemini-kommando (ALLTID denna struktur)
+```bash
+cd /home/exedev/seniorbolaget-wp
+
+# Komprimera bild ALLTID innan (undviker SIGTERM)
+.venv/bin/python3 -c "
+from PIL import Image
+img = Image.open('comparison/{slug}.png')
+img.resize((1200, int(img.height*1200/img.width))).save('comparison/{slug}_small.jpg','JPEG',quality=75)
+"
+
+# Kör Gemini
+gemini -m gemini-2.5-flash --yolo -p "
+ANALYSERA ENBART BILDEN. Inga verktyg.
+@comparison/{slug}_small.jpg
+[Utvärderingsprompt]
+TOTALBETYG: X/10
+" 2>&1 | tee comparison/eval_{slug}.md
+```
+
+---
+
+## Arkitektur — Block Theme
+
+```
+wp/seniorbolaget-theme/
+  functions.php          # Pattern-registrering (seniorbolaget_register_stad_patterns)
+  theme.json             # Design tokens
+  templates/
+    front-page.html      # Startsida
+    page-tjanst.html     # Tjänstesidor (hemstäd, trädgård, etc.)
+    page-stad.html       # Stadssidor → wp:post-content
+    page.html            # Generisk sida
+  patterns/
+    hero.php             # Startsida-hero
+    hemstad-page.php     # Hemstädning-tjänstesida
+    stad-*.php           # 26 stadssidor (genererade av generate_stad_pages.py)
+  inc/
+    feature-flags.php    # SENIORBOLAGET_FEATURE_POSTNUMMER = false
+```
+
+### Stadssidor — generate_stad_pages.py
+```bash
+# Regenerera alla 26
+.venv/bin/python3 generate_stad_pages.py
+
+# Deploy patterns
+docker cp wp/seniorbolaget-theme/patterns/. \
+  cd86134e880f720743ac9376d8403e15-wordpress-1:/var/www/html/wp-content/themes/seniorbolaget-theme/patterns/
+```
+
+CITY_DATA innehåller per stad: name, bio, story[], quote, since_year, customers, areas[], testimonials[]
+
+---
+
+## Brand & Design
+
+| Token | Värde |
+|-------|-------|
+| Primär röd | `#C91C22` |
+| Ljusrosa | `#FFF4F2` |
+| Varm off-white | `#FAFAF8` |
+| Textgrå | `#1F2937` |
+| Sekundär grå | `#6B7280` |
+| Pill-knappar | `border-radius: 50px` |
+| Rubrikfont | Rubik |
+| Brödtext | Inter |
+
+**Aldrig:** emojis i UI, markdown-tabeller i WhatsApp/Discord, framerusercontent-bilder i produktion.
+
+---
+
+## Kritiska Regler
+
+### Git
+```bash
+# ALDRIG detta (orsakade mass-deletion):
+git add -A
+
+# ALLTID specifika filer:
+git add wp/seniorbolaget-theme/patterns/stad-*.php generate_stad_pages.py
+git commit -m "feat: beskrivning (WAS-XX)"
+```
 
 ### Scraping
-- **ALDRIG urllib eller requests för att scrapa** — Framer renderar via JS, vi får bara skalet
-- Alltid Playwright med `await page.wait_for_load_state('networkidle')`
-- Ta alltid fullpage screenshot + extrahera `window.getComputedStyle` för färger
+- **ALDRIG** urllib/requests — Framer renderar via JS
+- Alltid Playwright med `wait_for_load_state('networkidle')`
 
-### Färger
-- Extrahera alltid via `window.getComputedStyle` i Playwright — inte från raw HTML/CSS
-- Verifiera mot Gemini visuell analys innan theme.json uppdateras
+### WordPress Pattern-registrering
+- Auto-scan funkar INTE för `stad-*` patterns — registreras manuellt via `seniorbolaget_register_stad_patterns()` i functions.php
+- `get_page_by_path()` hittar INTE barn-sidor med enkelt slug — använd `get_posts(post_name__in=[...])`
+- docker cp hela tema-mappen → EOF-fel — kopiera undermappar separat
 
-### WordPress tema
-- Alla designvärden i `theme.json` — aldrig hardkodade i CSS
-- Block patterns för alla återkommande sektioner
-- Testa alltid lokalt med wp-env innan PR
+### Gemini
+- Komprimera bilder ALLTID (PIL → JPEG max 1200px quality=75) — annars SIGTERM
+- `--yolo` flagga krävs — annars fastnar Gemini i agentic mode
+- OAuth credentials: `~/.gemini/oauth_creds.json`
 
-## Tmux-sessioner för detta projekt
+---
 
-```bash
-# Scraper (Playwright)
-tmux new-session -d -s "scrape/seniorbolaget" -c "/path/to/repo" \
-  "claude --model claude-opus-4-5 --dangerously-skip-permissions"
+## Linear — Aktiva Issues
 
-# Visuell diff (Gemini)
-tmux new-session -d -s "gemini/diff" -c "/path/to/repo" \
-  "GEMINI_API_KEY=$GEMINI_API_KEY gemini --model gemini-3.1-pro-preview --yolo"
+| Issue | Titel | Status |
+|-------|-------|--------|
+| WAS-17 | Stavfel 'Helsingsborg' | Todo |
+| WAS-18 | B2B template-text | Todo |
+| WAS-19 | 18 bilder saknar alt-text | Todo |
+| WAS-20 | Bilder på framerusercontent | Todo |
+| WAS-21 | Copyright-år 2025 | Todo |
+| WAS-30 | Migrera service+stadssidor | In Review (PR #3) |
+| WAS-37 | Postnummerfält (feature flag) | In Progress |
+| WAS-41 | Gemini 360° — alla 26 städer | Backlog |
+| WAS-42 | Stadssidor v3 — franchisetagarfokus | In Progress |
 
-# WP-fixes (Opus)
-tmux new-session -d -s "wp/fix" -c "/path/to/repo" \
-  "claude --model claude-opus-4-5 --dangerously-skip-permissions"
-```
-
-## Uppdelningsregler
-
-- En plan med fler än 3 filer MÅSTE köras med "manually approve edits"
-- Innan du tar bort ett block >50 rader: lista vad som BEHÅLLS vs TAS BORT, fråga
-- Vid refaktorering: EN fil i taget. Commita. Gå vidare.
-- Om en plan har fler än 5 steg: dela upp i max 3 steg per körning
-- Blanda aldrig "ta bort" och "flytta" i samma edit
+**Team ID:** `5c3a01a5-e813-42fc-9ca8-4fba7b07788d`
+**API-nyckel:** `$LINEAR_API_KEY` (miljövariabel — se ~/.bashrc)
