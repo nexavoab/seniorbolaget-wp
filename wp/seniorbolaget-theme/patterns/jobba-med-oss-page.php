@@ -24,6 +24,12 @@
 	<p style="color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:2rem">Genom ditt arbete underlättar du våra kunders vardag och möts ständigt av positiv respons för det arbete du utför.</p>
 	<!-- /wp:paragraph -->
 
+	<!-- wp:html -->
+	<p style="font-family:Inter,sans-serif;font-size:1.1rem;color:#1F2937;text-align:left;margin-bottom:12px;font-weight:500;">
+	  Gör skillnad, ha roligt och tjäna extra — anmäl dig idag!
+	</p>
+	<!-- /wp:html -->
+
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 	<div class="wp-block-buttons" style="margin-bottom:1.5rem">
 		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}}} -->

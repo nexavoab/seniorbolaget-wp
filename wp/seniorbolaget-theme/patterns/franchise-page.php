@@ -16,6 +16,14 @@
 	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Starta eget med Seniorbolaget — trygghet och frihet</h1>
 	<!-- /wp:heading -->
 
+	<!-- wp:html -->
+	<div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:left;margin:16px 0 24px;">
+	  <span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:6px 14px;border-radius:50px;font-size:0.875rem;font-weight:600;">✓ Låg startinvestering</span>
+	  <span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:6px 14px;border-radius:50px;font-size:0.875rem;font-weight:600;">✓ Stabil inkomst från dag 1</span>
+	  <span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:6px 14px;border-radius:50px;font-size:0.875rem;font-weight:600;">✓ Ditt eget tempo</span>
+	</div>
+	<!-- /wp:html -->
+
 	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
 	<p style="color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:1rem">Drömmer du om att starta eget med stöd och trygghet – samtidigt som du gör skillnad för människor i din region?</p>
 	<!-- /wp:paragraph -->

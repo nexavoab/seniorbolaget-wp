@@ -30,6 +30,13 @@
 			<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Målning & tapetsering av erfarna hantverkare</h1>
 			<!-- /wp:heading -->
 
+			<!-- wp:html -->
+			<div style="display:inline-flex;align-items:center;gap:8px;background:#FFF4F2;border:2px solid #C91C22;border-radius:50px;padding:8px 20px;margin:0 0 16px;">
+			  <span style="font-size:1.25rem;">💰</span>
+			  <span style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;font-size:1rem;">30% billigare med ROT-avdrag</span>
+			</div>
+			<!-- /wp:html -->
+
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","fontWeight":"500","lineHeight":"1.5"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
 			<p style="color:#4B5563;font-size:1.375rem;font-weight:500;line-height:1.5;margin-bottom:1rem">Färg som gör skillnad</p>
 			<!-- /wp:paragraph -->
@@ -53,9 +60,11 @@
 			</p>
 			<!-- /wp:html -->
 
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem"},"color":{"text":"#4B5563"},"spacing":{"margin":{"top":"1rem"}}}} -->
-			<p style="color:#4B5563;font-size:0.875rem;margin-top:1rem">✓ Svar inom 24h • ✓ Inga bindningstider • ✓ ROT direkt på fakturan</p>
-			<!-- /wp:paragraph -->
+			<!-- wp:html -->
+			<p style="font-family:Inter,sans-serif;font-size:0.8rem;color:#6B7280;margin:8px 0 0;text-align:left;">
+			  ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Kostnadsfri offert &nbsp;·&nbsp; ✓ Inga bindningstider
+			</p>
+			<!-- /wp:html -->
 
 			<!-- wp:html -->
 			<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
