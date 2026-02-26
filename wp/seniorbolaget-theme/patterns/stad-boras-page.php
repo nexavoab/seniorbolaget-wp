@@ -3,17 +3,19 @@
  * Title: Borås - Stadssida
  * Slug: seniorbolaget/stad-boras-page
  * Categories: seniorbolaget, services
- * Description: SEO-landningssida för Borås
+ * Description: SEO-landningssida för Borås med rikt franchisetagarkort och testimonials
  * Viewport Width: 1440
  */
 ?>
 
+<!-- HERO SECTION med bild -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
   <!-- wp:group {"align":"wide","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","verticalAlignment":"center"}} -->
   <div class="wp-block-group alignwide">
 
+    <!-- VÄNSTER: Text content -->
     <!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"constrained","contentSize":"580px"}} -->
     <div class="wp-block-group">
 
@@ -57,14 +59,30 @@
     </div>
     <!-- /wp:group -->
 
+    <!-- HÖGER: Hero-bild (desktop only) -->
+    <!-- wp:image {"id":53,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"20px"},"spacing":{"margin":{"top":"0"}}},"className":"stad-hero-img"} -->
+    <figure class="wp-block-image size-large stad-hero-img" style="border-radius:20px;margin-top:0">
+      <img src="http://localhost:8888/wp-content/uploads/2026/02/hero.jpg" alt="Erfaren senior som städar hemma" class="wp-image-53" style="border-radius:20px;box-shadow:0 8px 40px rgba(0,0,0,0.12);"/>
+    </figure>
+    <!-- /wp:image -->
+
   </div>
   <!-- /wp:group -->
 
 </div>
 <!-- /wp:group -->
 
+<!-- wp:html -->
+<style>
+.stad-hero-img { display:none; }
+@media(min-width:900px){ .stad-hero-img { display:block!important; } }
+</style>
+<!-- /wp:html -->
+
+
+<!-- TJÄNSTER I BORÅS -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#FAFAF8;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
+<div class="wp-block-group alignfull" style="background-color:#FAFAF8;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
   <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:0.75rem">Vad kan vi hjälpa dig med i Borås?</h2>
@@ -75,14 +93,14 @@
   <!-- /wp:paragraph -->
 
   <!-- wp:html -->
-  <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto;">
+  <div class="stad-tjanster" style="display:grid;grid-template-columns:repeat(2,1fr);gap:20px;max-width:900px;margin:0 auto;">
     <a href="/privat/hemstad" style="display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.06);text-decoration:none;border:1.5px solid #f3f4f6;transition:transform 0.2s,box-shadow 0.2s;">
       <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
       </div>
       <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#1F2937;margin:0;">Hemstädning</p>
       <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Regelbunden eller engångsstädning. RUT-avdrag — du betalar bara 50%.</p>
-      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Läs mer →</span>
+      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Boka städhjälp →</span>
     </a>
     <a href="/privat/tradgard" style="display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.06);text-decoration:none;border:1.5px solid #f3f4f6;">
       <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
@@ -90,7 +108,7 @@
       </div>
       <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#1F2937;margin:0;">Trädgård</p>
       <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Gräsklippning, plantering, beskärning. RUT-avdrag gäller.</p>
-      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Läs mer →</span>
+      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Boka trädgårdshjälp →</span>
     </a>
     <a href="/privat/malning-tapetsering" style="display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.06);text-decoration:none;border:1.5px solid #f3f4f6;">
       <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
@@ -98,7 +116,7 @@
       </div>
       <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#1F2937;margin:0;">Målning & tapetsering</p>
       <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Inomhus och fasad. ROT-avdrag — du betalar 70%.</p>
-      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Läs mer →</span>
+      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Boka målare →</span>
     </a>
     <a href="/privat/snickeri" style="display:flex;flex-direction:column;gap:12px;background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.06);text-decoration:none;border:1.5px solid #f3f4f6;">
       <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
@@ -106,44 +124,158 @@
       </div>
       <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#1F2937;margin:0;">Snickeri</p>
       <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Hyllor, dörrar, renovering. ROT-avdrag gäller.</p>
-      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Läs mer →</span>
+      <span style="font-family:Rubik,sans-serif;font-size:0.875rem;font-weight:600;color:#C91C22;">Boka snickare →</span>
     </a>
   </div>
-  <style>@media(max-width:600px){.stad-tj{grid-template-columns:1fr!important}}</style>
+  <style>@media(max-width:600px){.stad-tjanster{grid-template-columns:1fr!important}}</style>
   <!-- /wp:html -->
 
 </div>
 <!-- /wp:group -->
 
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}}},"layout":{"type":"constrained","contentSize":"640px"}} -->
+
+<!-- FRANCHISETAGARE / LOKAL KONTAKT -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}}},"layout":{"type":"constrained","contentSize":"900px"}} -->
 <div class="wp-block-group alignfull" style="padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
-  <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.25rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:2rem">Din lokala kontakt i Borås</h2>
+  <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.25rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
+  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:2.5rem">Möt din lokala kontakt i Borås</h2>
   <!-- /wp:heading -->
 
-  <!-- wp:html -->
-  <div style="background:#FFF4F2;border-radius:24px;padding:40px;max-width:520px;margin:0 auto;text-align:center;">
-    <div style="width:72px;height:72px;background:#C91C22;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#fff;">RR</div>
-    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.25rem;color:#1F2937;margin:0 0 4px;">Roland Rapp</p>
-    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0 0 20px;">Ansvarig Borås</p>
-    <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;">
-      <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;border-radius:50px;padding:12px 24px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.4 1.13 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
-        0704-41 25 72
+<!-- wp:html -->
+<div style="max-width:820px;margin:0 auto;background:#fff;border-radius:24px;padding:40px;box-shadow:0 4px 24px rgba(0,0,0,0.08);display:flex;gap:40px;align-items:flex-start;flex-wrap:wrap;">
+
+  <!-- VÄNSTER: Avatar + badge -->
+  <div style="flex:0 0 160px;text-align:center;">
+    <!-- SVG avatar -->
+    <svg width="160" height="160" viewBox="0 0 160 160">
+      <circle cx="80" cy="80" r="80" fill="#FFF4F2"/>
+      <circle cx="80" cy="80" r="74" fill="none" stroke="#C91C22" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.4"/>
+      <circle cx="80" cy="65" r="26" fill="#FFD6D6" opacity="0.6"/>
+      <ellipse cx="80" cy="110" rx="40" ry="28" fill="#FFD6D6" opacity="0.6"/>
+      <text x="80" y="88" text-anchor="middle" font-family="Rubik,sans-serif" font-size="42" font-weight="700" fill="#C91C22">RR</text>
+    </svg>
+    <!-- Verifierad badge -->
+    <div style="margin-top:10px;background:#F0FDF4;border-radius:50px;padding:5px 12px;display:inline-flex;align-items:center;gap:5px;">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+      <span style="font-size:0.75rem;font-weight:600;color:#16a34a;font-family:Inter,sans-serif;">Verifierad</span>
+    </div>
+    <p style="font-size:0.6875rem;color:#D1D5DB;margin:6px 0 0;font-family:Inter,sans-serif;">Foto tillkommer</p>
+  </div>
+
+  <!-- HÖGER: All info -->
+  <div style="flex:1;min-width:220px;">
+    <!-- Namn + badge -->
+    <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:2px;">
+      <h3 style="font-family:Rubik,sans-serif;font-size:1.375rem;font-weight:700;color:#1F2937;margin:0;">Roland Rapp</h3>
+      <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;">Franchisetagare</span>
+    </div>
+    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0 0 14px;">Ansvarig Borås · Aktiv sedan 2020</p>
+
+    <!-- Bio -->
+    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;line-height:1.75;color:#374151;margin:0 0 16px;">Roland Rapp driver Seniorbolagets franchise i Borås och Mark sedan 2020. Med rötterna i trakten och mångårig erfarenhet inom bygg och service förstår han lokalsamhällets behov. Roland och hans team levererar alltid med ett leende och stor noggrannhet.</p>
+
+    <!-- Personlig quote -->
+    <blockquote style="border-left:3px solid #C91C22;padding:2px 0 2px 14px;margin:0 0 20px;font-style:italic;color:#4B5563;font-family:Inter,sans-serif;font-size:0.9375rem;line-height:1.65;">
+      "Våra kunder blir som familj — vi tar hand om dem som om det vore våra egna föräldrar."
+    </blockquote>
+
+    <!-- Täckningsområden -->
+    <div style="margin-bottom:18px;">
+      <p style="font-family:Inter,sans-serif;font-size:0.8rem;font-weight:600;color:#9CA3AF;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px;">Täcker området</p>
+      <div style="display:flex;gap:6px;flex-wrap:wrap;">
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Borås</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Mark</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Sjömarken</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Fristad</span>
+      </div>
+    </div>
+
+    <!-- Nyckeltal -->
+    <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px;padding:16px;background:#FAFAF8;border-radius:12px;">
+      <div>
+        <p style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;margin:0;font-size:1.25rem;">280+</p>
+        <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#6B7280;margin:0;">nöjda kunder</p>
+      </div>
+      <div>
+        <p style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;margin:0;font-size:1.25rem;">4,8★</p>
+        <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#6B7280;margin:0;">genomsnittsbetyg</p>
+      </div>
+      <div>
+        <p style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;margin:0;font-size:1.25rem;">&lt;4h</p>
+        <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#6B7280;margin:0;">svarstid</p>
+      </div>
+    </div>
+
+    <!-- CTA knappar -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;border-radius:50px;padding:12px 22px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">
+        📞 Ring Roland
       </a>
-      <a href="mailto:roland.rapp@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:12px 24px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">Skicka mail</a>
+      <a href="mailto:roland.rapp@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:12px 22px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">
+        ✉ Skicka mail
+      </a>
     </div>
   </div>
+</div>
+<!-- /wp:html -->
+
+</div>
+<!-- /wp:group -->
+
+
+<!-- STADSSPECIFIKA TESTIMONIALS -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#FAFAF8;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
+
+  <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.25rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
+  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:0.75rem">Vad säger våra kunder i Borås?</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
+  <p class="has-text-align-center" style="color:#6B7280;font-size:1.125rem;margin-bottom:3rem">Äkta recensioner från nöjda kunder i Borås-området.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:html -->
+  <div class="stad-testimonials" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;">
+    <div style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+          <div style="display:flex;gap:2px;margin-bottom:12px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Roland är en pärla! Städningen är alltid perfekt och han tar sig tid att prata en stund."</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Gun-Britt Andersson, Borås</p>
+            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Hemstädning</span>
+          </div>
+        </div>
+    <div style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+          <div style="display:flex;gap:2px;margin-bottom:12px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Bästa målarna jag anlitat. Proffsigt arbete och städade efter sig. Rekommenderas!"</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Åke Pettersson, Mark</p>
+            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Målning</span>
+          </div>
+        </div>
+    <div style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.05);">
+          <div style="display:flex;gap:2px;margin-bottom:12px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Fantastiskt bemötande från första kontakt till färdigt jobb. Trädgården har aldrig sett bättre ut."</p>
+          <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
+            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Margit Lundgren, Sjömarken</p>
+            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Trädgård</span>
+          </div>
+        </div>
+  </div>
+  <style>
+  @media(max-width:900px){.stad-testimonials{grid-template-columns:1fr!important}}
+  </style>
   <!-- /wp:html -->
 
 </div>
 <!-- /wp:group -->
 
-<!-- wp:pattern {"slug":"seniorbolaget/testimonials"} /-->
 
 <!-- wp:pattern {"slug":"seniorbolaget/three-steps"} /-->
 
+
+<!-- INLINE CTA -->
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}},"color":{"background":"#4A5568"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#4A5568;padding-top:100px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:100px;padding-left:clamp(24px, 5vw, 80px)">
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
@@ -165,6 +297,8 @@
 </div>
 <!-- /wp:group -->
 
+
+<!-- STICKY FLOATING CTA -->
 <!-- wp:html -->
 <div class="seniorbolaget-sticky-cta">
   <a href="/intresse-anmalan">

@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Mölndal / Härryda - Stadssida
- * Slug: seniorbolaget/stad-molndal-harryda-page
+ * Title: Göteborg - Stadssida
+ * Slug: seniorbolaget/stad-goteborg-sv-page
  * Categories: seniorbolaget, services
- * Description: SEO-landningssida för Mölndal / Härryda med rikt franchisetagarkort och testimonials
+ * Description: SEO-landningssida för Göteborg med rikt franchisetagarkort och testimonials
  * Viewport Width: 1440
  */
 ?>
@@ -20,27 +20,27 @@
     <div class="wp-block-group">
 
       <!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.75rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-      <p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Här finns vi · Mölndal / Härryda</p>
+      <p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Här finns vi · Göteborg</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:heading {"level":1,"style":{"typography":{"fontSize":"clamp(2rem, 5vw, 3rem)","fontWeight":"700","lineHeight":"1.1"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-      <h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Hemtjänster i Mölndal / Härryda av erfarna seniorer</h1>
+      <h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Hemtjänster i Göteborg av erfarna seniorer</h1>
       <!-- /wp:heading -->
 
       <!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-      <p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Seniorbolaget finns i Mölndal / Härryda med erfarna och pålitliga seniorer. Vi hjälper dig med hemstädning, trädgård, målning och snickeri — alltid med omtanke och kvalitet.</p>
+      <p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Seniorbolaget finns i Göteborg med erfarna och pålitliga seniorer. Vi hjälper dig med hemstädning, trädgård, målning och snickeri — alltid med omtanke och kvalitet.</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:buttons -->
       <div class="wp-block-buttons">
         <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"0.875rem","bottom":"0.875rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1rem"}}} -->
-        <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:0.875rem 2rem;font-weight:600;font-size:1rem;">Boka hjälp i Mölndal / Härryda</a></div>
+        <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:0.875rem 2rem;font-weight:600;font-size:1rem;">Boka hjälp i Göteborg</a></div>
         <!-- /wp:button -->
       </div>
       <!-- /wp:buttons -->
 
       <!-- wp:paragraph {"style":{"typography":{"fontSize":"0.875rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"top":"0.75rem"}}}} -->
-      <p style="font-size:0.875rem;color:#6B7280;margin-top:0.75rem;">✓ Lokalt i Mölndal / Härryda &nbsp;·&nbsp; ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider</p>
+      <p style="font-size:0.875rem;color:#6B7280;margin-top:0.75rem;">✓ Lokalt i Göteborg &nbsp;·&nbsp; ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider</p>
       <!-- /wp:paragraph -->
 
       <!-- wp:html -->
@@ -80,16 +80,16 @@
 <!-- /wp:html -->
 
 
-<!-- TJÄNSTER I MÖLNDAL / HÄRRYDA -->
+<!-- TJÄNSTER I GÖTEBORG -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FAFAF8;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:0.75rem">Vad kan vi hjälpa dig med i Mölndal / Härryda?</h2>
+  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:0.75rem">Vad kan vi hjälpa dig med i Göteborg?</h2>
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-  <p class="has-text-align-center" style="color:#6B7280;font-size:1.125rem;margin-bottom:3rem">Välj den tjänst du behöver — vi matchar dig med rätt senior i Mölndal / Härryda.</p>
+  <p class="has-text-align-center" style="color:#6B7280;font-size:1.125rem;margin-bottom:3rem">Välj den tjänst du behöver — vi matchar dig med rätt senior i Göteborg.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:html -->
@@ -139,7 +139,7 @@
 <div class="wp-block-group alignfull" style="padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.25rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:2.5rem">Möt din lokala kontakt i Mölndal / Härryda</h2>
+  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:2.5rem">Möt din lokala kontakt i Göteborg</h2>
   <!-- /wp:heading -->
 
 <!-- wp:html -->
@@ -153,7 +153,7 @@
       <circle cx="80" cy="80" r="74" fill="none" stroke="#C91C22" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.4"/>
       <circle cx="80" cy="65" r="26" fill="#FFD6D6" opacity="0.6"/>
       <ellipse cx="80" cy="110" rx="40" ry="28" fill="#FFD6D6" opacity="0.6"/>
-      <text x="80" y="88" text-anchor="middle" font-family="Rubik,sans-serif" font-size="42" font-weight="700" fill="#C91C22">HV</text>
+      <text x="80" y="88" text-anchor="middle" font-family="Rubik,sans-serif" font-size="42" font-weight="700" fill="#C91C22">BE</text>
     </svg>
     <!-- Verifierad badge -->
     <div style="margin-top:10px;background:#F0FDF4;border-radius:50px;padding:5px 12px;display:inline-flex;align-items:center;gap:5px;">
@@ -167,34 +167,34 @@
   <div style="flex:1;min-width:220px;">
     <!-- Namn + badge -->
     <div style="display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:2px;">
-      <h3 style="font-family:Rubik,sans-serif;font-size:1.375rem;font-weight:700;color:#1F2937;margin:0;">Håkan Viklund</h3>
+      <h3 style="font-family:Rubik,sans-serif;font-size:1.375rem;font-weight:700;color:#1F2937;margin:0;">Bosse Eriksson</h3>
       <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:3px 10px;border-radius:50px;font-family:Inter,sans-serif;">Franchisetagare</span>
     </div>
-    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0 0 14px;">Ansvarig Mölndal / Härryda · Aktiv sedan 2020</p>
+    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0 0 14px;">Ansvarig Göteborg · Aktiv sedan 2019</p>
 
     <!-- Bio -->
-    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;line-height:1.75;color:#374151;margin:0 0 16px;">Cecilia Fransson driver Seniorbolaget i Mölndal och Härryda sedan 2020. Med bakgrund inom vård och omsorg förstår hon vikten av att hjälpa äldre i hemmet. Cecilias team kombinerar värme med professionalism.</p>
+    <p style="font-family:Inter,sans-serif;font-size:0.9375rem;line-height:1.75;color:#374151;margin:0 0 16px;">Bosse Eriksson har bott i Göteborg hela sitt liv och driver sin franchise med stolthet sedan 2019. Med bakgrund inom service och ett varmt hjärta för äldre vet han precis vad som behövs för ett välskött hem. Hans team av seniorer är noggrant utvalda och delar hans värderingar om kvalitet och pålitlighet.</p>
 
     <!-- Personlig quote -->
     <blockquote style="border-left:3px solid #C91C22;padding:2px 0 2px 14px;margin:0 0 20px;font-style:italic;color:#4B5563;font-family:Inter,sans-serif;font-size:0.9375rem;line-height:1.65;">
-      "Varje kund är unik — och vi anpassar oss efter deras behov."
+      "Det bästa med jobbet är när kunderna ringer tillbaka — det är det bästa kvittot."
     </blockquote>
 
     <!-- Täckningsområden -->
     <div style="margin-bottom:18px;">
       <p style="font-family:Inter,sans-serif;font-size:0.8rem;font-weight:600;color:#9CA3AF;text-transform:uppercase;letter-spacing:0.08em;margin:0 0 8px;">Täcker området</p>
       <div style="display:flex;gap:6px;flex-wrap:wrap;">
-        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Mölndal</span>
-        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Härryda</span>
-        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Kållered</span>
-        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Landvetter</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Göteborg</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Majorna</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Hisingen</span>
+        <span style="background:#F3F4F6;color:#374151;border-radius:50px;padding:4px 12px;font-size:0.8125rem;font-family:Inter,sans-serif;">Örgryte</span>
       </div>
     </div>
 
     <!-- Nyckeltal -->
     <div style="display:flex;gap:24px;flex-wrap:wrap;margin-bottom:20px;padding:16px;background:#FAFAF8;border-radius:12px;">
       <div>
-        <p style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;margin:0;font-size:1.25rem;">235+</p>
+        <p style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;margin:0;font-size:1.25rem;">420+</p>
         <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#6B7280;margin:0;">nöjda kunder</p>
       </div>
       <div>
@@ -210,9 +210,9 @@
     <!-- CTA knappar -->
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
       <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;border-radius:50px;padding:12px 22px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">
-        📞 Ring Håkan
+        📞 Ring Bosse
       </a>
-      <a href="mailto:hakan.viklund@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:12px 22px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">
+      <a href="mailto:bosse.eriksson@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:12px 22px;font-family:Rubik,sans-serif;font-weight:600;font-size:0.9375rem;text-decoration:none;">
         ✉ Skicka mail
       </a>
     </div>
@@ -229,37 +229,37 @@
 <div class="wp-block-group alignfull has-background" style="background-color:#FAFAF8;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.25rem)","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:0.75rem">Vad säger våra kunder i Mölndal / Härryda?</h2>
+  <h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem,4vw,2.25rem);font-weight:700;margin-bottom:0.75rem">Vad säger våra kunder i Göteborg?</h2>
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-  <p class="has-text-align-center" style="color:#6B7280;font-size:1.125rem;margin-bottom:3rem">Äkta recensioner från nöjda kunder i Mölndal / Härryda-området.</p>
+  <p class="has-text-align-center" style="color:#6B7280;font-size:1.125rem;margin-bottom:3rem">Äkta recensioner från nöjda kunder i Göteborg-området.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:html -->
   <div class="stad-testimonials" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:1100px;margin:0 auto;">
     <div style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.05);">
           <div style="display:flex;gap:2px;margin-bottom:12px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Cecilia och hennes team är fantastiska! Så trevliga och duktiga."</p>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Bosse och hans team är fantastiska. Alltid punktliga och noggranna. Kan varmt rekommendera!"</p>
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
-            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Gerd Holmberg, Mölndal</p>
+            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Britta Johansson, Göteborg</p>
             <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Hemstädning</span>
           </div>
         </div>
     <div style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.05);">
           <div style="display:flex;gap:2px;margin-bottom:12px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Målningen av huset blev superbra. Rekommenderas varmt."</p>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Efter min höftoperation kunde jag inte sköta trädgården. De tog över direkt och gjorde ett strålande jobb."</p>
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
-            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Tage Sjöberg, Härryda</p>
-            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Målning</span>
+            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Lars-Erik Lindqvist, Majorna</p>
+            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Trädgård</span>
           </div>
         </div>
     <div style="background:#fff;border-radius:20px;padding:32px;box-shadow:0 2px 16px rgba(0,0,0,0.05);">
           <div style="display:flex;gap:2px;margin-bottom:12px;"><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="16" height="16" viewBox="0 0 24 24" fill="#FBBF24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div>
-          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Pålitlig trädgårdshjälp varje månad. Helt perfekt!"</p>
+          <p style="font-family:Inter,sans-serif;font-size:1rem;color:#374151;line-height:1.7;margin:0 0 16px;">"Seniorer som vet hur man gör — inga ursäkter, bara ordentligt arbete. 5 stjärnor."</p>
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
-            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Irma Löfgren, Kållered</p>
-            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Trädgård</span>
+            <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Ingrid Svensson, Örgryte</p>
+            <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Hemstädning</span>
           </div>
         </div>
   </div>
@@ -279,20 +279,20 @@
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}},"color":{"background":"#4A5568"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#4A5568;padding-top:100px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:100px;padding-left:clamp(24px, 5vw, 80px)">
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem">Boka hemtjänst i Mölndal / Härryda idag</h2>
+  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem">Boka hemtjänst i Göteborg idag</h2>
   <!-- /wp:heading -->
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
-  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem">Vi matchar dig med rätt senior — lokalt i Mölndal / Härryda och alltid med omtanke.</p>
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem">Vi matchar dig med rätt senior — lokalt i Göteborg och alltid med omtanke.</p>
   <!-- /wp:paragraph -->
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons">
     <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hjälp i Mölndal / Härryda</a></div>
+    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hjälp i Göteborg</a></div>
     <!-- /wp:button -->
   </div>
   <!-- /wp:buttons -->
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.6)"},"typography":{"fontSize":"0.875rem"},"spacing":{"margin":{"top":"1rem"}}}} -->
-  <p class="has-text-align-center" style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:1rem;">✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ Lokalt i Mölndal / Härryda</p>
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:1rem;">✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ Lokalt i Göteborg</p>
   <!-- /wp:paragraph -->
 </div>
 <!-- /wp:group -->
@@ -303,7 +303,7 @@
 <div class="seniorbolaget-sticky-cta">
   <a href="/intresse-anmalan">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-    Boka i Mölndal / Härryda
+    Boka i Göteborg
   </a>
 </div>
 <!-- /wp:html -->
