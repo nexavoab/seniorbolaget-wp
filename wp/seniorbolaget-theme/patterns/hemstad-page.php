@@ -84,8 +84,8 @@
 
 		<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
-			<!-- wp:image {"id":56,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
-			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/service-hemstad.jpg" alt="Hemstädning av Seniorbolaget" class="wp-image-56" style="border-radius:16px"/></figure>
+			<!-- wp:image {"id":62,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
+			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/hemstad-hero.jpg" alt="Hemstädning av Seniorbolaget" class="wp-image-62" style="border-radius:16px"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->
@@ -386,8 +386,32 @@
 <!-- RECENSIONER -->
 <!-- wp:pattern {"slug":"seniorbolaget/testimonials"} /-->
 
-<!-- CTA-BAND -->
-<!-- wp:pattern {"slug":"seniorbolaget/cta-band"} /-->
+<!-- CTA-BAND (hemstäd-specifik) -->
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px"}},"color":{"background":"#4A5568"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
+<div class="wp-block-group alignfull has-background" style="background-color:#4A5568;padding-top:100px;padding-bottom:100px;">
+
+  <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
+  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Få tiden tillbaka — vi fixar städningen</h2>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem;">Boka hemstädning idag. Vi matchar dig med rätt senior — och RUT-avdraget sköter vi åt dig.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
+  <div class="wp-block-buttons">
+    <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
+    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hemstädning</a></div>
+    <!-- /wp:button -->
+  </div>
+  <!-- /wp:buttons -->
+
+  <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.6)"},"typography":{"fontSize":"0.875rem"},"spacing":{"margin":{"top":"1rem"}}}} -->
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:1rem;">✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT direkt på fakturan</p>
+  <!-- /wp:paragraph -->
+
+</div>
+<!-- /wp:group -->
 
 <!-- KONTAKTBLOCK — Har du frågor? -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"ljusgra","layout":{"type":"constrained","contentSize":"640px"}} -->
