@@ -12,13 +12,31 @@ get_header();
         
         <div class="wizard-container" x-data="wizardApp()" x-cloak>
             <div class="wizard-inner">
-                <div class="progress-dots">
-                    <div class="progress-dot" :class="{ 'active': step === 1, 'completed': step > 1 }"></div>
-                    <div class="progress-dot" :class="{ 'active': step === 2, 'completed': step > 2 }"></div>
-                    <div class="progress-dot" :class="{ 'active': step === 3, 'completed': step > 3 }"></div>
-                    <div class="progress-dot" :class="{ 'active': step === 4, 'completed': step > 4 }"></div>
+                <!-- Förbättrad stegindikator med stegnamn -->
+                <div class="stepper">
+                    <div class="stepper-steps">
+                        <div class="stepper-step" :class="{ 'active': step === 1, 'completed': step > 1 }">
+                            <div class="stepper-dot"></div>
+                            <span class="stepper-name">Tjänst</span>
+                        </div>
+                        <div class="stepper-line" :class="{ 'completed': step > 1 }"></div>
+                        <div class="stepper-step" :class="{ 'active': step === 2, 'completed': step > 2 }">
+                            <div class="stepper-dot"></div>
+                            <span class="stepper-name">Ort</span>
+                        </div>
+                        <div class="stepper-line" :class="{ 'completed': step > 2 }"></div>
+                        <div class="stepper-step" :class="{ 'active': step === 3, 'completed': step > 3 }">
+                            <div class="stepper-dot"></div>
+                            <span class="stepper-name">Detaljer</span>
+                        </div>
+                        <div class="stepper-line" :class="{ 'completed': step > 3 }"></div>
+                        <div class="stepper-step" :class="{ 'active': step === 4, 'completed': step > 4 }">
+                            <div class="stepper-dot"></div>
+                            <span class="stepper-name">Kontakt</span>
+                        </div>
+                    </div>
+                    <p class="step-counter" x-show="step < 5">Steg <span x-text="step"></span> av 4</p>
                 </div>
-                <p class="step-label" x-show="step < 5">Steg <span x-text="step"></span> av 4</p>
                 
                 <div x-show="step === 1" x-transition>
                     <div class="wizard-header">
@@ -32,6 +50,10 @@ get_header();
                                 <p class="service-name">Hemstädning</p>
                                 <p class="service-desc">Regelbunden eller engångsstädning</p>
                             </div>
+                            <span class="service-indicator">
+                                <span class="service-arrow" :class="{ 'hidden': formData.service === 'hemstadning' }">→</span>
+                                <span class="service-check" :class="{ 'visible': formData.service === 'hemstadning' }">✓</span>
+                            </span>
                         </div>
                         <div class="service-card" @click="selectService('tradgard')" :class="{ 'selected': formData.service === 'tradgard' }">
                             <span class="service-icon">🌿</span>
@@ -39,6 +61,10 @@ get_header();
                                 <p class="service-name">Trädgård</p>
                                 <p class="service-desc">Gräsklippning, häck, ogräs och mer</p>
                             </div>
+                            <span class="service-indicator">
+                                <span class="service-arrow" :class="{ 'hidden': formData.service === 'tradgard' }">→</span>
+                                <span class="service-check" :class="{ 'visible': formData.service === 'tradgard' }">✓</span>
+                            </span>
                         </div>
                         <div class="service-card" @click="selectService('snickeri')" :class="{ 'selected': formData.service === 'snickeri' }">
                             <span class="service-icon">🔨</span>
@@ -46,6 +72,10 @@ get_header();
                                 <p class="service-name">Snickeri</p>
                                 <p class="service-desc">Allt från hyllor till större projekt</p>
                             </div>
+                            <span class="service-indicator">
+                                <span class="service-arrow" :class="{ 'hidden': formData.service === 'snickeri' }">→</span>
+                                <span class="service-check" :class="{ 'visible': formData.service === 'snickeri' }">✓</span>
+                            </span>
                         </div>
                         <div class="service-card" @click="selectService('malning')" :class="{ 'selected': formData.service === 'malning' }">
                             <span class="service-icon">🎨</span>
@@ -53,12 +83,19 @@ get_header();
                                 <p class="service-name">Målning</p>
                                 <p class="service-desc">Inomhus och utomhus</p>
                             </div>
+                            <span class="service-indicator">
+                                <span class="service-arrow" :class="{ 'hidden': formData.service === 'malning' }">→</span>
+                                <span class="service-check" :class="{ 'visible': formData.service === 'malning' }">✓</span>
+                            </span>
                         </div>
                     </div>
                 </div>
                 
                 <div x-show="step === 2" x-transition>
-                    <button class="back-btn" @click="step = 1" type="button">← Tillbaka</button>
+                    <button class="back-btn" @click="step = 1" type="button">
+                        <span class="back-icon">←</span>
+                        <span>Tillbaka</span>
+                    </button>
                     <div class="wizard-header">
                         <h2 class="wizard-title">Var finns du?</h2>
                         <p class="wizard-subtitle">Välj din ort</p>
@@ -68,7 +105,10 @@ get_header();
                 </div>
                 
                 <div x-show="step === 3" x-transition>
-                    <button class="back-btn" @click="step = 2" type="button">← Tillbaka</button>
+                    <button class="back-btn" @click="step = 2" type="button">
+                        <span class="back-icon">←</span>
+                        <span>Tillbaka</span>
+                    </button>
                     <div class="wizard-header">
                         <h2 class="wizard-title">Berätta mer om uppdraget</h2>
                         <p class="wizard-subtitle" x-text="getServiceName()"></p>
@@ -158,7 +198,10 @@ get_header();
                 </div>
                 
                 <div x-show="step === 4" x-transition>
-                    <button class="back-btn" @click="step = 3" type="button">← Tillbaka</button>
+                    <button class="back-btn" @click="step = 3" type="button">
+                        <span class="back-icon">←</span>
+                        <span>Tillbaka</span>
+                    </button>
                     <div class="wizard-header">
                         <h2 class="wizard-title">Dina uppgifter</h2>
                         <p class="wizard-subtitle">Så vi kan kontakta dig</p>
@@ -210,12 +253,18 @@ get_header();
                     </div>
                 </div>
                 
-                <div class="trust-bar" x-show="step < 5">
-                    <span class="trust-item"><span class="trust-check">✓</span> Svar inom 24h</span>
-                    <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfri offert</span>
-                    <span class="trust-item"><span class="trust-check">✓</span> Inga bindningstider</span>
+                <!-- Trust-signaler + telefonnummer — visas på mobil och desktop -->
+                <div class="trust-section" x-show="step < 5">
+                    <div class="trust-bar">
+                        <span class="trust-item"><span class="trust-check">✓</span> Svar inom 24h</span>
+                        <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfri offert</span>
+                        <span class="trust-item"><span class="trust-check">✓</span> Inga bindningstider</span>
+                    </div>
+                    <div class="phone-banner">
+                        <span class="phone-label">Ring oss:</span>
+                        <a href="tel:0101751900">010-175 19 00</a>
+                    </div>
                 </div>
-                <div class="phone-banner" x-show="step < 5">Föredrar du att ringa? <a href="tel:0101751900">010-175 19 00</a></div>
             </div>
         </div>
     </div>

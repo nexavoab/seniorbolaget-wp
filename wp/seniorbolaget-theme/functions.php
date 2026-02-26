@@ -71,19 +71,45 @@ function seniorbolaget_wizard_css() {
 	.wizard-header{text-align:center!important;margin-bottom:32px!important;display:block!important;width:100%!important;max-width:100%!important}
 	.wizard-title{font-family:Rubik,sans-serif!important;font-size:clamp(1.5rem,4vw,2rem)!important;font-weight:700!important;color:#1F2937!important;margin:0 0 8px!important;line-height:1.2!important;text-align:center!important;width:100%!important;max-width:100%!important}
 	.wizard-subtitle{font-size:1rem!important;color:#6B7280!important;margin:0!important;text-align:center!important;width:100%!important;max-width:100%!important}
-	.progress-dots{display:flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:12px!important;margin-bottom:24px!important}
-	.progress-dot{width:12px!important;height:12px!important;min-width:12px!important;min-height:12px!important;border-radius:50%!important;background:#e5e7eb!important;transition:background .3s!important}
-	.progress-dot.active,.progress-dot.completed{background:#C91C22!important}
-	.step-label{text-align:center!important;font-size:.875rem!important;color:#6B7280!important;margin-bottom:24px!important;width:100%!important;max-width:100%!important}
-	.back-btn{display:inline-flex;align-items:center;gap:6px;color:#6B7280;font-size:.9375rem;font-weight:500;background:none;border:none;cursor:pointer;padding:8px 0;margin-bottom:16px;transition:color .2s}
-	.back-btn:hover{color:#1F2937}
+	
+	/* ===== FÖRBÄTTRAD STEPPER (med stegnamn) ===== */
+	.stepper{margin-bottom:32px!important;width:100%!important}
+	.stepper-steps{display:flex!important;justify-content:center!important;align-items:flex-start!important;gap:0!important;margin-bottom:12px!important}
+	.stepper-step{display:flex!important;flex-direction:column!important;align-items:center!important;gap:8px!important;min-width:60px!important}
+	.stepper-dot{width:14px!important;height:14px!important;border-radius:50%!important;background:#e5e7eb!important;transition:all .3s!important;border:2px solid transparent!important}
+	.stepper-step.active .stepper-dot{background:#C91C22!important;border-color:#C91C22!important;box-shadow:0 0 0 4px rgba(201,28,34,0.15)!important}
+	.stepper-step.completed .stepper-dot{background:#C91C22!important;border-color:#C91C22!important}
+	.stepper-name{font-size:12px!important;color:#9CA3AF!important;font-weight:500!important;text-align:center!important;transition:color .3s!important}
+	.stepper-step.active .stepper-name,.stepper-step.completed .stepper-name{color:#1F2937!important;font-weight:600!important}
+	.stepper-line{flex:1!important;height:2px!important;background:#e5e7eb!important;margin:7px 8px 0!important;max-width:40px!important;transition:background .3s!important}
+	.stepper-line.completed{background:#C91C22!important}
+	.step-counter{text-align:center!important;font-size:14px!important;color:#6B7280!important;margin:0!important;font-weight:500!important}
+	@media(max-width:480px){
+		.stepper-step{min-width:50px!important}
+		.stepper-name{font-size:11px!important}
+		.stepper-line{max-width:24px!important;margin:7px 4px 0!important}
+	}
+	
+	/* ===== TILLBAKA-KNAPP (pill med ikon) ===== */
+	.back-btn{display:inline-flex!important;align-items:center!important;gap:8px!important;color:#4B5563!important;font-size:.9375rem!important;font-weight:600!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:50px!important;cursor:pointer!important;padding:10px 20px!important;margin-bottom:20px!important;transition:all .2s!important}
+	.back-btn:hover{border-color:#C91C22!important;color:#C91C22!important;background:#FFF4F2!important}
+	.back-icon{font-size:1rem!important;line-height:1!important}
+	
+	/* ===== SERVICE CARDS (med pil + checkmark) ===== */
 	.service-cards{display:grid!important;grid-template-columns:1fr!important;gap:16px!important;width:100%!important;max-width:100%!important}
-	.service-card{display:flex!important;flex-direction:row!important;align-items:center!important;gap:16px!important;padding:20px 24px!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:16px!important;cursor:pointer!important;transition:all .2s!important;min-height:80px!important;width:100%!important;max-width:100%!important}
-	.service-card:hover,.service-card.selected{border-color:#C91C22!important;background:#FFF4F2!important}
+	.service-card{display:flex!important;flex-direction:row!important;align-items:center!important;gap:16px!important;padding:20px 24px!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:16px!important;cursor:pointer!important;transition:all .2s ease!important;min-height:80px!important;width:100%!important;max-width:100%!important;position:relative!important}
+	.service-card:hover{border-color:#C91C22!important;background:#FFF4F2!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px -8px rgba(201,28,34,0.15)!important}
+	.service-card.selected{border-color:#C91C22!important;background:#FFF4F2!important;border-width:3px!important}
 	.service-icon{font-size:2rem!important;width:48px!important;text-align:center!important;flex-shrink:0!important}
 	.service-info{flex:1!important;text-align:left!important}
 	.service-name{font-family:Rubik,sans-serif!important;font-size:1.125rem!important;font-weight:600!important;color:#1F2937!important;margin:0 0 4px!important;text-align:left!important}
 	.service-desc{font-size:.875rem!important;color:#6B7280!important;margin:0!important;text-align:left!important}
+	.service-indicator{position:relative!important;width:32px!important;height:32px!important;flex-shrink:0!important;display:flex!important;align-items:center!important;justify-content:center!important}
+	.service-arrow{font-size:1.25rem!important;color:#9CA3AF!important;transition:transform .2s, color .2s, opacity .2s!important;position:absolute!important}
+	.service-arrow.hidden{opacity:0!important;transform:translateX(8px)!important}
+	.service-card:hover .service-arrow:not(.hidden){color:#C91C22!important;transform:translateX(4px)!important}
+	.service-check{display:flex!important;align-items:center!important;justify-content:center!important;width:28px!important;height:28px!important;background:#C91C22!important;color:#fff!important;border-radius:50%!important;font-size:1rem!important;font-weight:bold!important;opacity:0!important;transform:scale(0.5)!important;transition:opacity .2s, transform .2s!important;position:absolute!important}
+	.service-check.visible{opacity:1!important;transform:scale(1)!important}
 	.city-search{width:100%;padding:14px 18px;border:2px solid #e5e7eb;border-radius:50px;font-size:1rem;margin-bottom:16px;background:#fff;box-sizing:border-box}
 	.city-search:focus{outline:none;border-color:#C91C22}
 	.city-list{display:grid;gap:8px;max-height:400px;overflow-y:auto;padding:4px}
@@ -113,12 +139,21 @@ function seniorbolaget_wizard_css() {
 	.gdpr-check input{width:22px;height:22px;accent-color:#C91C22;margin-top:2px;flex-shrink:0}
 	.gdpr-text{font-size:.875rem;color:#4B5563;line-height:1.5}
 	.gdpr-text a{color:#C91C22}
-	.trust-bar{display:flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:24px!important;flex-wrap:wrap!important;margin-top:32px!important;padding-top:24px!important;border-top:1px solid #e5e7eb!important;width:100%!important;max-width:100%!important}
+	/* ===== TRUST SECTION (visas alltid, även mobil) ===== */
+	.trust-section{margin-top:32px!important;padding-top:24px!important;border-top:1px solid #e5e7eb!important;width:100%!important}
+	.trust-bar{display:flex!important;flex-direction:row!important;justify-content:center!important;align-items:center!important;gap:20px!important;flex-wrap:wrap!important;width:100%!important;max-width:100%!important;margin-bottom:16px!important}
 	.trust-item{display:inline-flex!important;flex-direction:row!important;align-items:center!important;gap:6px!important;font-size:.875rem!important;color:#4B5563!important;white-space:nowrap!important}
-	.trust-check{color:#C91C22!important;font-weight:bold!important}
-	.phone-banner{text-align:center!important;padding:16px!important;background:#fff!important;border-radius:12px!important;margin-top:24px!important;font-size:.9375rem!important;color:#4B5563!important;width:100%!important;max-width:100%!important}
-	.phone-banner a{color:#C91C22!important;font-weight:600!important;text-decoration:none!important}
+	.trust-check{color:#C91C22!important;font-weight:bold!important;font-size:1rem!important}
+	.phone-banner{text-align:center!important;padding:16px 20px!important;background:#fff!important;border-radius:50px!important;font-size:1rem!important;color:#4B5563!important;width:100%!important;max-width:100%!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important;box-shadow:0 2px 8px rgba(0,0,0,0.05)!important}
+	.phone-label{color:#6B7280!important;font-weight:500!important}
+	.phone-banner a{color:#C91C22!important;font-weight:700!important;text-decoration:none!important;font-size:1.125rem!important}
 	.phone-banner a:hover{text-decoration:underline!important}
+	@media(max-width:480px){
+		.trust-bar{flex-direction:column!important;gap:10px!important;align-items:center!important}
+		.trust-item{font-size:.8125rem!important}
+		.phone-banner{flex-direction:column!important;gap:4px!important;padding:14px 16px!important}
+		.phone-banner a{font-size:1.25rem!important}
+	}
 	.thank-you{text-align:center;padding:48px 24px;background:#fff;border-radius:20px}
 	.thank-icon{width:80px;height:80px;background:#d4edda;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 24px;font-size:2.5rem}
 	.thank-title{font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#1F2937;margin:0 0 12px}
