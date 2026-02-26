@@ -264,3 +264,29 @@ header.wp-block-template-part {
 .service-card-cta:hover {
     color: #FFF4F2;
 }
+
+/* ===== MOBIL — sektioner behöver luft på sidorna ===== */
+@media (max-width: 768px) {
+    /* Alla fullbredd-sektioner: minst 24px luft */
+    .wp-block-group.alignfull {
+        padding-left: 24px !important;
+        padding-right: 24px !important;
+    }
+
+    /* Rubriker i sektioner: inget overflow */
+    .wp-block-group.alignfull .wp-block-heading,
+    .wp-block-group.alignfull .wp-block-paragraph {
+        max-width: 100%;
+        word-break: break-word;
+    }
+
+    /* Kolumner: lite luft mellan korten */
+    .wp-block-columns {
+        gap: 16px !important;
+    }
+
+    /* Service cards: bild-wrappern matchar kortets nya padding */
+    .service-card-image-wrap {
+        margin: -24px -24px 20px -24px;
+    }
+}
