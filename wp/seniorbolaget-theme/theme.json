@@ -384,6 +384,13 @@
       "postTypes": [
         "page"
       ]
+    },
+    {
+      "name": "page-tjanst",
+      "title": "Tjänstesida",
+      "postTypes": [
+        "page"
+      ]
     }
   ],
   "templateParts": [
