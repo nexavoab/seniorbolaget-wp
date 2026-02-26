@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Anders Lindström jobbade på Volvo i 30 år innan han hittade sin andra karriär. Han ville göra något meningsfullt med sin erfarenhet.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Sedan 2019 driver han Seniorbolaget Eskilstuna med samma precision som på verkstadsgolvet — fast med betydligt mer mänsklig värme.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Anders filosofi är enkel: gör det rätt första gången, och gör det med respekt för kundens hem.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år på Volvos monteringslinje i Eskilstuna lärde mig att detaljer avgör allt. En skruv som sitter fel kan förstöra en hel bil — och en städning som görs slarvigt kan förstöra en hel dag för en senior som räknar med att komma hem till ett rent hus.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2019 tog jag med mig Volvo-andan och startade Seniorbolaget här i Rekordstaden. Idag har vi 310 nöjda kunder från villorna i Torshälla till lägenheterna vid Fristadstorg. Mitt team på tolv erfarna seniorer delar min besatthet av kvalitet.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje måndag morgon samlas vi vid Rademachersmedjorna och går igenom veckans uppdrag. Det är en tradition som startade dag ett — och den påminner oss om att vi representerar något större än oss själva. Eskilstuna förtjänar det bästa.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Varje hem vi hjälper blir lite som vårt eget — vi gör inget halvdant."
+      "Samma precision som byggde Volvo — nu i ditt hem."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Isa Gemmel, Eskilstuna

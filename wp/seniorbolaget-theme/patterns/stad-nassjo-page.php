@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Född och uppvuxen vid järnvägsknuten Nässjö. Jag har sett staden förändras genom åren — tågen kommer och går, men folket stannar. Efter 30 år som hantverkare kände jag varje gata, varje granne.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 startade jag Seniorbolaget för att ge vår småstad samma kvalitet som storstäderna. Idag har vi 125 nöjda kunder från Bodafors till Forserum, och vi växer för varje månad.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">I Nässjö sprids ryktet snabbt. Folk ringer inte för att klaga — de ringer för att tacka och för att boka mer. Förra veckan ringde tre nya kunder som fått tips av sina grannar. Bättre marknadsföring finns inte.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Nässjö har alltid varit en korsväg — här möts tågen från alla håll. Jag växte upp vid Stationsplan och såg godsvagnar rulla förbi mitt sovrumsfönster. 30 år som snickare lärde mig varje gathörn, varje trappa som knarrar, varje fönsterkarm som behöver lagas.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 insåg jag att Nässjös äldre förtjänade bättre än halvmesyrer. Kommunens hemtjänst räckte inte till, och de privata alternativen var opersonliga. Så jag startade Seniorbolaget med fyra kollegor — alla med rötter i bygden. Idag har vi 125 nöjda kunder från Bodafors stolsfabriker till Forsserums villaområden.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Småstadsryktet är vår bästa marknadsföring. Förra månaden fick jag tre nya kunder bara genom mun-till-mun på ICA. En av dem, en 89-årig änka, berättade att grannen sagt: 'Ring Lennart — han gör det ordentligt.' Det är det finaste betyg jag kan få.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "I Nässjö känner vi varandra — och det syns i vårt arbete."
+      "I Nässjö sprids ryktet snabbt — vi levererar så att folk vill berätta vidare."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Lennart Ljungdahl, Nässjö

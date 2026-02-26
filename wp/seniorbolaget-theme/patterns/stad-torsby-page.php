@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Finnskogare i själ och hjärta — jag har vandrat varje stig från Sysslebäck till Sunne. När unga flyttar till storstäderna blir det svårare för de äldre som blir kvar. Inte alla har barnbarn i närheten som kan hjälpa.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 startade jag Seniorbolaget här uppe för att bygden behövde det. Med 85 nöjda kunder spridda över mil av skog och sjöar har vi bevisat att kvalitet fungerar även där avstånden är stora.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Vi kör gärna den extra milen — bokstavligen. Förra vintern skottade vi snö åt en 88-åring i Likenäs tre gånger i veckan. Hon sa att vi var enda anledningen att hon kunde bo kvar hemma. Det är därför vi finns.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Finnskogen bär på 400 år av historia — finska nybyggare som röjde skog, byggde torp och skapade en kultur av självförsörjning och sammanhållning. Jag växte upp med den traditionen vid Klarälvens strand, där min farfar hade sin gård i tre generationer.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 startade jag Seniorbolaget för att skogen skulle ha kvar sina äldre. Med 85 nöjda kunder spridda från Sysslebäcks fjäll till Sunnes stadscentrum kör vi gärna mil av grusvägar för att nå dem som behöver oss. Avstånden är stora — men omtanken är större.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra vintern hjälpte vi en 91-årig finnskogare i Likenäs med snöskottning tre gånger i veckan. En morgon när det var -28°C sa hon: 'Utan er hade jag fått flytta till stan.' Hon har bott i samma stuga i 65 år. Det är för henne vi gör det här — för att traditioner ska leva vidare.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "I Finnskogen tar vi hand om varandra — det är vår tradition."
+      "Finnskogstraditionen lever — vi tar hand om de som tog hand om skogen."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Rolf Nilsson, Torsby

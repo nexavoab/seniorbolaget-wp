@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år sedan flyttade jag till Kungälv för ett jobb. Jag stannade för människorna, för Bohusläns karga skönhet, för Nordre älv som glittrar i kvällssolen vid Fästningsholmen.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 tog jag steget och startade Seniorbolaget här. Med 165 nöjda kunder från Ytterby till Marstrand har vi bevisat att kvalitet fungerar även i en liten stad.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Häromdagen mötte jag en gammal kund på ICA i centrum. Hon kramade mig och sa att vi räddade hennes jul förra året. Sådana möten gör allt värt det.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år sedan kom jag till Kungälv som ung ingenjör på Volvo Lastvagnar. Jag skulle bara stanna några år — men Bohuskusten fångade mig. Klipporna vid Marstrand, tystnaden i Kärna, gemenskapen som bara finns i en mindre stad. Jag byggde mitt liv här.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">När jag gick i pension 2021 kunde jag inte sitta still. Istället startade jag Seniorbolaget med sex av mina närmaste vänner — alla med decenniers erfarenhet av hantverk. Idag har vi 165 nöjda kunder från Ytterby till Marstrand och vår väntelista växer varje månad.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra julen skottade vi snö åt en 91-årig änka i centrum som inte hade någon familj kvar. Hon bjöd på kaffe och pepparkakor efteråt och berättade om sitt liv. Det är sådana stunder som påminner mig om varför vi finns — inte bara för att städa och fixa, utan för att bygga gemenskap.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Kungälv är en liten stad med stora hjärtan — vi passar perfekt in."
+      "I Kungälv känner alla varandra — det är därför vi aldrig slarvar."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Michael Adielson, Kungälv

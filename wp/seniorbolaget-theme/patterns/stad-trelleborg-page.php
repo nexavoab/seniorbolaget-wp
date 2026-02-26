@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Magnus Jönsson jobbade med fastighetsförvaltning i Trelleborg i 20 år. Han kände varje hus i stan — och visste vilka som behövde hjälp.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2020 startade han Seniorbolaget Trelleborg för att fylla ett gap. Staden förtjänade bättre alternativ.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Magnus säger att Trelleborgarna är rättframma — om de inte är nöjda så hör man det. Det har han aldrig fått höra.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år förvaltade jag över 400 lägenheter och hus runt Trelleborg. Jag kände varje fastighet, varje hyresgäst, varje trädgård som behövde hjälp. Jag såg hur de äldre kämpade — och hur de befintliga alternativen ofta svek dem.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2020 startade jag Seniorbolaget för att ge Trelleborg något bättre. Idag har vi 195 nöjda kunder från hamnen till Smygehuk — Sveriges sydligaste punkt. Mitt team på åtta erfarna seniorer delar min passion för att göra det rätt.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Skåningar är rättframma — om något inte fungerar så hör man det. På fyra år har jag aldrig fått ett klagomål. Däremot har jag fått kaffe och hembakat bröd fler gånger än jag kan räkna. Det är så Trelleborg fungerar — vi tar hand om varandra.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Trelleborg är Sveriges pärla i söder — vi tar hand om den."
+      "Från hamnen till Smygehuk — vi finns där Trelleborg behöver oss."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Peter Lindquist, Trelleborg

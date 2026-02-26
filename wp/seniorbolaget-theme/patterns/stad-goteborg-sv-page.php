@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Bosse Eriksson har bott i Göteborg hela sitt liv. När han gick i pension 2018 ville han fortsätta bidra — och hittade Seniorbolaget.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag driver han sitt team av erfarna seniorer med stolthet. Varje kund behandlas som en granne, inte ett uppdrag.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">För Bosse är det enkelt: om hans egen mor skulle bo kvar hemma, hur hade han velat att det sköttes? Det är den frågan som styr allt.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Göteborg är min stad — från Slottsskogen till Saltholmen, från Landala till Läppstiftet. Jag växte upp i Majorna när fiskekungarna fortfarande bodde i sina sekelskifteshus. 40 år som hantverkare lärde mig varje gathörn, varje trappuppgång, varje trädgård som behövde kärlek.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2019 gick jag i pension men kunde inte sluta. Istället startade jag Seniorbolaget med sex gamla kollegor. Idag har vi 420 nöjda kunder från Hisingens industriområden till Örgrytes villor. Mitt team på femton erfarna seniorer delar min kärlek till staden och dess invånare.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra månaden hjälpte vi en 88-årig sjökapten i Långedrag med målningen av hans segelbåt. Han hade seglat världen runt men orkade inte längre själv. När vi var klara sa han med tårar i ögonen: 'Nu kan jag dö lycklig.' Han menade det. Det är för sådana stunder jag aldrig kommer sluta.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Det bästa med jobbet är när kunderna ringer tillbaka — det är det bästa kvittot."
+      "Göteborg förtjänar omtanke — från Hisingen till Örgryte, vi finns där du behöver oss."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Bosse Eriksson, Göteborg

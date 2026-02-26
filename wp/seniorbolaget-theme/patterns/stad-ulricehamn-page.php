@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Bengt Andersson är ulricehamnare sedan födseln. Han känner varje gata, varje granne, varje historia.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Efter 35 år som egenföretagare startade han Seniorbolaget 2021. Han ville använda sitt nätverk för att hjälpa de som behövde det.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Bengt säger att i Ulricehamn handlar det om tillit. Folk anlitar någon de känner — och nu känner de honom.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år drev jag mitt snickeriföretag vid Åsundens strand. Jag har byggt altaner, renoverat kök och satt fönster i halva staden. När jag gick i pension 2021 visste jag att jag inte kunde sluta helt — händerna ville arbeta, hjärtat ville hjälpa.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på sex erfarna hantverkare som tillsammans har 105 nöjda kunder från Hökerum till Gällstad. Vi känner varje villagata, varje flerfamiljshus, varje trädgård som behöver lite extra kärlek.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan hjälpte vi en 87-årig änka i Vegby att äntligen få ordning på trädgården efter att hennes man gått bort. Hon grät av tacksamhet. Sådana stunder påminner mig om varför jag aldrig kommer sluta — Ulricehamn är mitt hem, och här tar vi hand om varandra.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Ulricehamn är litet men starkt — precis som vårt team."
+      "I Ulricehamn känner vi varandra — det är både vårt ansvar och vår styrka."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Ann-Sofie Käll, Ulricehamn

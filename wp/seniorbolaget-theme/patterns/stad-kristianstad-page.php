@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år i servicebranschen här i Kristianstad lärde mig vem som levererar och vem som bara pratar. När jag startade Seniorbolaget 2020 visste jag precis vilka jag skulle ringa.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Inom tre månader hade jag ett team av de bästa hantverkarna i nordöstra Skåne. Idag har vi 245 nöjda kunder från Åhus sandstränder till Degebergas kullar.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Skåningar är kräsna — och det ska vi vara. När fru Svensson vid Heliga Trefaldighetskyrkan berättar för sina väninnor om oss, då vet jag att vi gör rätt.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Kristianstad grundades av danska kungen Christian IV för 400 år sedan — en stad byggd på precision och stolthet. 20 år i servicebranschen här lärde mig att den traditionen lever kvar. Skåningar accepterar inte halvmesyrer, och det ska de inte behöva.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2020 samlade jag nordöstra Skånes bästa hantverkare och startade Seniorbolaget. Idag har vi 245 nöjda kunder från Åhus vitlöksfestival till Bäckaskogs slott. Mitt team på tolv erfarna seniorer delar min besatthet av att göra det ordentligt — varje gång, utan undantag.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra sommaren hjälpte vi en 93-årig änka i Åhus att förbereda sommarhuset inför barnbarnens besök. När allt var klart grät hon av glädje och sa: 'Nu vågar jag bjuda hem dem igen.' Hennes man hade gått bort året innan och hon orkade inte själv. Sådana stunder påminner mig om varför vi finns.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Skåne förtjänar bästa service — och det är precis vad vi levererar."
+      "Christian IV byggde för framtiden — vi tar hand om det han lämnade efter sig."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Peter Lindquist, Kristianstad

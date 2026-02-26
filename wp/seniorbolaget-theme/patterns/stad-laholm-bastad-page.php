@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Ola Persson drev hotell på Bjärehalvön i 20 år. Han vet allt om service och att möta höga förväntningar.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">När han startade Seniorbolaget i Laholm och Båstad 2020 tog han med sig den inställningen. Kunderna märker skillnaden.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Ola säger att Bjäre-borna är vana vid kvalitet — och att han aldrig skulle leverera något annat.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år drev jag Hotel & Spa på Bjärehalvön — där lärde jag mig vad verklig service betyder. Stockholmsgäster med höga förväntningar, internationella affärsmän som krävde perfektion. När hotellet såldes 2020 kunde jag inte sluta helt — jag ville använda det jag lärt mig på ett nytt sätt.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag Seniorbolaget längs hela kusten från Laholm till Båstad. Med 185 nöjda kunder och ett team på tio erfarna seniorer levererar vi samma hotellstandard — fast hemma hos dig. Från sommarstugorna i Mellbystrand till villorna vid Norrvikens trädgårdar.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Bjäre-borna är kräsna — och det ska de vara. När jag ser familjer komma tillbaka år efter år till sina sommarhus och hitta allting perfekt förberett, då vet jag att vi gör något rätt. Vi säljer inte bara städning — vi säljer sinnesfrid.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Här på Bjäre är vi vana vid höga krav — och vi uppfyller dem."
+      "Hotellkvalitet i ditt hem — det är Bjäre-standarden."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Jenny Skogh, Laholm / Båstad

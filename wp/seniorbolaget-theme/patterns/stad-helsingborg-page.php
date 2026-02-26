@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">15 år inom hemtjänsten visade mig hur systemet ofta sviker de äldre — för lite tid, för lite omtanke, för mycket stress. Det var oacceptabelt. 2019 bestämde jag mig för att göra något åt det.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på tolv erfarna seniorer som hjälpt över 350 familjer i nordvästra Skåne. Från Sofiero i norr till Råå fiskeläge i söder — vi finns där du behöver oss.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje fredag tar jag en promenad längs Sundspromenaden och tänker på veckans uppdrag. De tacksamhetsbrev vi får, de leenden vi möts av — det är därför jag aldrig kommer sluta.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">15 år inom hemtjänsten vid Helsingborgs lasarett visade mig sanningen: systemet sviker de äldre. 15 minuter för att städa, hjälpa med medicin och prata lite — det går inte. Jag såg ensamheten i deras ögon, frustrationen hos anhöriga som visste att mamma inte fick tillräckligt. 2019 sa jag upp mig för att göra något bättre.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på tolv erfarna seniorer som hjälpt 350 familjer från Sofiero slotts trädgårdar till Råå fiskeläge. Vi tar den tid som behövs — inte för att vi måste, utan för att vi vill. Varje kund får mitt mobilnummer direkt.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan fick jag ett handskrivet brev från en dotter i Danmark. Hennes 94-åriga mamma i Helsingborg hade kunnat bo kvar hemma tack vare oss. Hon skrev: 'Ni gav mamma två extra år i sitt älskade hem.' Brevet hänger inramat på mitt kontor. Det är därför vi finns.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Att hjälpa äldre känna sig trygga i sitt hem — det är min drivkraft."
+      "15 minuter räckte aldrig — därför tar vi den tid som behövs."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Milliana Rosén, Helsingborg

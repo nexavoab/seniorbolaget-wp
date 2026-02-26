@@ -107,15 +107,15 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Niklas Wallin är uppvuxen i Skövde och har aldrig velat bo någon annanstans. Efter en karriär inom industrin ville han göra något lokalt.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Sedan 2020 driver han Seniorbolaget Skövde med fokus på Skaraborgsborna. Hans team av lokala seniorer delar hans engagemang.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Niklas säger att han älskar att se hur nöjda kunder blir — det är därför han går upp på morgonen.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år jobbade jag på Volvo Penta här i Skövde — från verkstadsgolvet till produktionsledare. Jag lärde mig att kvalitet inte är förhandlingsbart och att detaljer avgör allt. När jag gick i pension 2020 ville jag använda den kunskapen på ett nytt sätt.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på elva erfarna hantverkare som hjälpt 215 familjer i Skaraborg. Från domkyrkans skugga i Skara till möbelsnickerierna i Tibro — vi finns där du behöver oss, med samma precision som byggde Volvos motorer.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Skaraborgare är raka och ärliga — om något inte är bra så säger de det. Det är därför vi aldrig slarvar. Förra månaden fick jag ett samtal från en 94-åring i Tidaholm som tackade för att vi gjort det möjligt för henne att bo kvar hemma. Hon hade bott i samma hus i 60 år. Sådana samtal är anledningen till att jag gör det här.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Skaraborg är mitt hem — och jag tar hand om det."
+      "Volvo-precision i varje uppdrag — det är Skaraborg-standarden."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
       — Susanne Kinell, Skövde
