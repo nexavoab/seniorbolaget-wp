@@ -38,7 +38,7 @@
 				</div>
 				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
-				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Som fastighetsbolag uppskattar vi att ha ett ramavtal med Seniorbolaget: vi har kontakt och prislista klart, och kan ringa in hjälp när vi behöver utan lång väntan. Seniorbolaget levererar kvalitet och pålitlighet varje gång – ett riktigt bra val för oss."</p>
+				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Äntligen kan jag slappna av hemma. Städaren som kommer till mig är så noggrann och trevlig — det är verkligen skillnad mot att försöka hinna med allt själv."</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:group {"style":{"spacing":{"margin":{"top":"24px"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 				<div class="wp-block-group" style="margin-top:24px">
@@ -48,10 +48,10 @@
 					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2px"}}} -->
 					<div class="wp-block-group" style="margin-left:12px">
 						<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.95rem"},"color":{"text":"#C91C22"}}} -->
-						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Maria, 38 år</p>
+						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Maria S.</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.85rem"},"color":{"text":"#6B7280"}}} -->
-						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Malmö (fastighetsbolag)</p>
+						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Kund sedan 2 år</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
@@ -76,7 +76,7 @@
 				</div>
 				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
-				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Vi behövde snabbt fylla en vakanstjänst i fastighetsskötsel och kontaktade Seniorbolaget. De levererade en erfaren medarbetare på kort varsel och ordnade allt runt avtal och administration. Vi har redan inlett ett ramavtal för framtida behov – tryggt och smidigt."</p>
+				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Jag var tveksam i början, men efter första besöket var jag övertygad. Samma person kommer varje gång och känner redan till hur jag vill ha det. Varmt rekommenderat."</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:group {"style":{"spacing":{"margin":{"top":"24px"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 				<div class="wp-block-group" style="margin-top:24px">
@@ -86,10 +86,10 @@
 					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2px"}}} -->
 					<div class="wp-block-group" style="margin-left:12px">
 						<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.95rem"},"color":{"text":"#C91C22"}}} -->
-						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Björn, 44 år</p>
+						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Birgitta L.</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.85rem"},"color":{"text":"#6B7280"}}} -->
-						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Göteborg (företag)</p>
+						<p style="color:#6B7280;font-size:0.85rem;margin:0;">72 år, Stockholm</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
@@ -114,20 +114,20 @@
 				</div>
 				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
-				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Hej Seniorbolaget! Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägenheten så fin att jag nästan själv vill fortsätta städa ;) Tack för att ni gör vardagen enklare!"</p>
+				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Vi bokar städning åt varandra som present ibland. Seniorbolaget är pålitliga, punktliga och gör ett fantastiskt jobb. RUT-avdraget gör det dessutom väldigt rimligt."</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:group {"style":{"spacing":{"margin":{"top":"24px"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 				<div class="wp-block-group" style="margin-top:24px">
 					<!-- wp:html -->
-					<div style="width:40px;height:40px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0;">A</div>
+					<div style="width:40px;height:40px;border-radius:50%;background:var(--wp--preset--color--rod);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:16px;flex-shrink:0;">L</div>
 					<!-- /wp:html -->
 					<!-- wp:group {"layout":{"type":"flex","orientation":"vertical"},"style":{"spacing":{"blockGap":"2px"}}} -->
 					<div class="wp-block-group" style="margin-left:12px">
 						<!-- wp:paragraph {"style":{"typography":{"fontWeight":"700","fontSize":"0.95rem"},"color":{"text":"#C91C22"}}} -->
-						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Anna, 52 år</p>
+						<p class="has-rod-color has-text-color" style="font-weight:700;font-size:0.95rem;margin:0;">Lars & Kerstin A.</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.85rem"},"color":{"text":"#6B7280"}}} -->
-						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Helsingborg</p>
+						<p style="color:#6B7280;font-size:0.85rem;margin:0;">Pensionärer, Göteborg</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->

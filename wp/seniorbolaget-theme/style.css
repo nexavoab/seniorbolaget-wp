@@ -318,3 +318,57 @@ header.wp-block-template-part {
         padding-bottom: 64px !important;
     }
 }
+
+/* Tjänstesidor — sektionsluft */
+.page-template-page-tjanst .wp-block-group.alignfull {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+@media (max-width: 768px) {
+    .page-template-page-tjanst .wp-block-group.alignfull {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}
+
+/* Floating sticky CTA — tjänstesidor */
+.page-template-page-tjanst .seniorbolaget-sticky-cta {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    z-index: 999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 8px;
+}
+.page-template-page-tjanst .seniorbolaget-sticky-cta a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #C91C22;
+    color: #fff;
+    border-radius: 50px;
+    padding: 14px 24px;
+    font-family: Rubik, sans-serif;
+    font-weight: 700;
+    font-size: 0.9375rem;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(201,28,34,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.page-template-page-tjanst .seniorbolaget-sticky-cta a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 32px rgba(201,28,34,0.45);
+}
+@media (max-width: 768px) {
+    .page-template-page-tjanst .seniorbolaget-sticky-cta {
+        bottom: 16px;
+        right: 16px;
+        left: 16px;
+        align-items: stretch;
+    }
+    .page-template-page-tjanst .seniorbolaget-sticky-cta a {
+        justify-content: center;
+    }
+}

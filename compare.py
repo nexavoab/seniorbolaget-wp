@@ -15,7 +15,13 @@ OUT_DIR = Path("comparison")
 OUT_DIR.mkdir(exist_ok=True)
 
 PAGES = [
-    {"slug": "index", "original": "/", "staging": "/"},
+    {"slug": "index",           "original": "/",                    "staging": "/"},
+    {"slug": "hemstad",         "original": "/privat/hemstad",      "staging": "/privat/hemstad/"},
+    {"slug": "tradgard",        "original": "/privat/tradgard",     "staging": "/privat/tradgard/"},
+    {"slug": "malning",         "original": "/privat/malning",      "staging": "/privat/malning-tapetsering/"},
+    {"slug": "snickeri",        "original": "/privat/snickeri",     "staging": "/privat/snickeri/"},
+    {"slug": "om-oss",          "original": "/om-oss",              "staging": "/om-oss/"},
+    {"slug": "kontakt",         "original": "/kontakt",             "staging": "/kontakt/"},
 ]
 
 async def screenshot_page(page, url, out_path):
@@ -60,4 +66,12 @@ async def main():
         print(f"  {f.name}: {f.stat().st_size//1024}KB")
 
 if __name__ == "__main__":
+    import sys
+    # Kör specifik slug: python compare.py hemstad
+    if len(sys.argv) > 1:
+        slug_filter = sys.argv[1]
+        PAGES[:] = [p for p in PAGES if p["slug"] == slug_filter]
+        if not PAGES:
+            print(f"❌ Slug '{slug_filter}' finns inte. Tillgängliga: {[p['slug'] for p in PAGES]}")
+            sys.exit(1)
     asyncio.run(main())
