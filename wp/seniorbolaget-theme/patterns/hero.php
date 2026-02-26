@@ -7,7 +7,7 @@
  * Viewport Width: 1280
  */
 ?>
-<!-- wp:group {"align":"full","className":"hero-section","style":{"color":{"background":"var:preset|color|ljus-rosa-beige"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"20px","right":"20px"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:group {"align":"full","className":"hero-section","style":{"color":{"background":"var:preset|color|ljus-rosa-beige"},"spacing":{"padding":{"top":"100px","bottom":"100px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull hero-section has-ljus-rosa-beige-background-color has-background">
 
 	<!-- wp:columns {"align":"wide","className":"hero-columns","style":{"spacing":{"blockGap":{"left":"60px"}}}} -->
