@@ -8,52 +8,90 @@
  */
 ?>
 
-<!-- HERO SECTION -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
+<!-- CSS för att dölja dubbel sidtitel + förbättrad styling -->
+<!-- wp:html -->
+<style>
+/* Dölj dubbel sidtitel */
+.page-id-98 .wp-block-post-title,
+.page-id-98 .entry-header,
+body.page-id-98 main > h1.wp-block-post-title {
+    display: none !important;
+}
+/* Förbättrade nyckeltal-badges */
+.franchise-stat {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.franchise-stat:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(201,28,34,0.15);
+}
+</style>
+<!-- /wp:html -->
 
-	<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Starta eget med Seniorbolaget — trygghet och frihet</h1>
-	<!-- /wp:heading -->
-
-	<!-- wp:html -->
-	<div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:left;margin:16px 0 24px;">
-	  <span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:6px 14px;border-radius:50px;font-size:0.875rem;font-weight:600;">✓ Låg startinvestering</span>
-	  <span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:6px 14px;border-radius:50px;font-size:0.875rem;font-weight:600;">✓ Stabil inkomst från dag 1</span>
-	  <span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:6px 14px;border-radius:50px;font-size:0.875rem;font-weight:600;">✓ Ditt eget tempo</span>
-	</div>
-	<!-- /wp:html -->
-
-	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<p style="color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:1rem">Drömmer du om att starta eget med stöd och trygghet – samtidigt som du gör skillnad för människor i din region?</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-	<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Som franchisetagare i Seniorbolaget får du möjligheten att bygga ett eget företag med en etablerad modell, starkt varumärke och beprövade tjänster inom hem, trädgård, bygg och städ.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<div class="wp-block-buttons" style="margin-bottom:1.5rem">
-		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/kontakt" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Boka ett informationsmöte</a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
+<!-- HERO SECTION - FÖRBÄTTRAD -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"60px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
 	<!-- wp:html -->
-	<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-			<span>Etablerad affärsmodell</span>
+	<div style="display:flex;flex-wrap:wrap;gap:48px;align-items:center;max-width:1200px;margin:0 auto;">
+		<!-- Vänster kolumn: Text (förkortad) -->
+		<div style="flex:1.2;min-width:340px;">
+			<!-- Social proof badge -->
+			<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid rgba(201,28,34,0.15);border-radius:50px;padding:8px 16px;margin-bottom:20px;font-family:Inter,sans-serif;font-size:0.875rem;color:#1F2937;">
+				<span style="display:flex;gap:2px;">
+					<span style="color:#facc15;">★★★★★</span>
+				</span>
+				<span style="font-weight:600;">Anslut dig till 15+ framgångsrika franchisetagare</span>
+			</div>
+			
+			<h1 style="font-family:Rubik,sans-serif;color:#1F2937;font-size:clamp(2.25rem, 5vw, 3.25rem);font-weight:700;line-height:1.1;margin:0 0 1.25rem;">Starta eget med Seniorbolaget — trygghet och frihet</h1>
+			
+			<p style="font-family:Inter,sans-serif;color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:1.5rem;">Driv ditt eget företag med en etablerad affärsmodell, starkt varumärke och fullt stöd — gör skillnad för människor i din region.</p>
+			
+			<!-- CTA + Trust -->
+			<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:2rem;">
+				<a href="#franchise-form" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 6px 20px rgba(201,28,34,0.35);transition:transform 0.2s,box-shadow 0.2s;">
+					<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+					Boka informationsmöte
+				</a>
+				<span style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;">✓ Kostnadsfritt · Ingen bindning</span>
+			</div>
+			
+			<!-- NYCKELTAL-BADGES - STÖRRE -->
+			<div style="display:flex;flex-wrap:wrap;gap:16px;margin:24px 0;">
+				<div class="franchise-stat" style="background:#fff;border:2px solid rgba(201,28,34,0.15);border-radius:16px;padding:20px 28px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.06);">
+					<div style="font-family:Rubik,sans-serif;font-size:2.5rem;font-weight:800;color:#C91C22;line-height:1;">15+</div>
+					<div style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin-top:4px;">Franchisetagare</div>
+				</div>
+				<div class="franchise-stat" style="background:#fff;border:2px solid rgba(201,28,34,0.15);border-radius:16px;padding:20px 28px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.06);">
+					<div style="font-family:Rubik,sans-serif;font-size:2.5rem;font-weight:800;color:#C91C22;line-height:1;">26</div>
+					<div style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin-top:4px;">Orter i Sverige</div>
+				</div>
+				<div class="franchise-stat" style="background:#fff;border:2px solid rgba(201,28,34,0.15);border-radius:16px;padding:20px 28px;text-align:center;box-shadow:0 4px 12px rgba(0,0,0,0.06);">
+					<div style="font-family:Rubik,sans-serif;font-size:2.5rem;font-weight:800;color:#C91C22;line-height:1;">2008</div>
+					<div style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin-top:4px;">Grundat</div>
+				</div>
+			</div>
+			
+			<!-- Trust badges -->
+			<div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:16px;">
+				<span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:8px 16px;border-radius:50px;font-size:0.9rem;font-weight:600;">✓ Låg startinvestering</span>
+				<span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:8px 16px;border-radius:50px;font-size:0.9rem;font-weight:600;">✓ Stabil inkomst från dag 1</span>
+				<span style="background:#F0FDF4;border:1px solid #86efac;color:#15803d;padding:8px 16px;border-radius:50px;font-size:0.9rem;font-weight:600;">✓ Ditt eget tempo</span>
+			</div>
 		</div>
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			<span>Rikstäckande varumärke</span>
-		</div>
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-			<span>Full support</span>
-		</div>
+		
+		<!-- Höger kolumn: Hero-bild - STÖRRE -->
+		<figure style="flex:1;min-width:320px;max-width:520px;border-radius:20px;overflow:hidden;margin:0;box-shadow:0 16px 48px rgba(0,0,0,0.15);position:relative;">
+			<img src="http://localhost:8888/wp-content/uploads/2026/02/cta-image.png" 
+				 alt="Franchisetagare hos Seniorbolaget hjälper senior" 
+				 style="width:100%;height:auto;display:block;object-fit:cover;min-height:400px;">
+			<!-- Overlay badge -->
+			<div style="position:absolute;bottom:20px;left:20px;background:rgba(255,255,255,0.95);border-radius:12px;padding:12px 16px;box-shadow:0 4px 12px rgba(0,0,0,0.1);">
+				<div style="font-family:Inter,sans-serif;font-size:0.75rem;color:#6B7280;text-transform:uppercase;letter-spacing:0.5px;">Seniorbolaget</div>
+				<div style="font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;">Hjälp som gör skillnad</div>
+			</div>
+		</figure>
 	</div>
 	<!-- /wp:html -->
 
@@ -393,10 +431,33 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"vit","textColor":"rod","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/kontakt" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka informationsmöte</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="#franchise-form" id="franchise-form" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka informationsmöte</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
 
 </div>
 <!-- /wp:group -->
+
+<!-- STICKY CTA-KNAPP -->
+<!-- wp:html -->
+<div style="position:fixed;bottom:20px;right:20px;z-index:999;">
+	<a href="#franchise-form" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-weight:700;font-size:1rem;padding:14px 24px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 6px 24px rgba(201,28,34,0.5)';" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(201,28,34,0.4)';">
+		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+		Boka informationsmöte
+	</a>
+</div>
+<style>
+@media (max-width: 640px) {
+	div[style*="position:fixed;bottom:20px;right:20px"] {
+		left: 20px;
+		right: 20px;
+		text-align: center;
+	}
+	div[style*="position:fixed;bottom:20px;right:20px"] a {
+		width: 100%;
+		justify-content: center;
+	}
+}
+</style>
+<!-- /wp:html -->

@@ -386,3 +386,11 @@ p, li, td, label, input, select, textarea {
         justify-content: center;
     }
 }
+
+/* ===== HIDE DUPLICATE PAGE TITLE ON FRANCHISE PAGE ===== */
+.page-id-98 .wp-block-post-title,
+.page-id-98 .entry-header,
+body.page-id-98 main > h1.wp-block-post-title {
+    display: none !important;
+}
+
