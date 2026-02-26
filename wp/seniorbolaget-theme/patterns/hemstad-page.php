@@ -18,6 +18,10 @@
 		<!-- wp:column {"width":"55%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 
+			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.75rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
+			<p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Privat · Hemstädning</p>
+			<!-- /wp:paragraph -->
+
 			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.05em","fontSize":"0.875rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
 			<p style="color:var(--wp--preset--color--rod);font-size:0.875rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem">RUT-avdrag — du betalar bara 50%</p>
 			<!-- /wp:paragraph -->
@@ -25,6 +29,10 @@
 			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 			<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Hemstädning av erfarna seniorer</h1>
 			<!-- /wp:heading -->
+
+			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","fontWeight":"500","lineHeight":"1.5"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
+			<p style="color:#4B5563;font-size:1.375rem;font-weight:500;line-height:1.5;margin-bottom:1rem">Vi gör vardagen enklare</p>
+			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
 			<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Professionell hemstädning med erfarenhet, noggrannhet och omtanke. Vi anpassar alltid städningen efter dina behov.</p>
