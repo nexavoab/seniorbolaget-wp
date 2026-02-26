@@ -49,10 +49,15 @@
           <svg width="14" height="14" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
           <span>4,8/5 · 500+ omdömen</span>
         </div>
-        <div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+        <a href="https://www.reco.se/foretag/seniorbolaget" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);text-decoration:none;">
+          <svg width="16" height="16" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="20" fill="#1B3F8B"/><text x="20" y="26" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="800" fill="#fff">R</text></svg>
           <span>Reco.se rekommenderad</span>
-        </div>
+        </a>
+      </div>
+      <!-- Urgency -->
+      <div style="margin-top:1rem;display:inline-flex;align-items:center;gap:8px;background:#FEF9EC;border:1px solid #FCD34D;border-radius:8px;padding:8px 14px;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#B45309" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <span style="font-size:0.8125rem;font-weight:600;color:#92400E;font-family:Inter,sans-serif;">Svarar normalt inom 4 timmar på vardagar</span>
       </div>
       <!-- /wp:html -->
 
@@ -147,20 +152,27 @@
 
   <!-- VÄNSTER: Avatar + badge -->
   <div style="flex:0 0 160px;text-align:center;">
-    <!-- SVG avatar -->
-    <svg width="160" height="160" viewBox="0 0 160 160">
-      <circle cx="80" cy="80" r="80" fill="#FFF4F2"/>
-      <circle cx="80" cy="80" r="74" fill="none" stroke="#C91C22" stroke-width="1.5" stroke-dasharray="6 3" opacity="0.4"/>
-      <circle cx="80" cy="65" r="26" fill="#FFD6D6" opacity="0.6"/>
-      <ellipse cx="80" cy="110" rx="40" ry="28" fill="#FFD6D6" opacity="0.6"/>
-      <text x="80" y="88" text-anchor="middle" font-family="Rubik,sans-serif" font-size="42" font-weight="700" fill="#C91C22">EB</text>
+    <!-- SVG avatar — warm professional placeholder -->
+    <svg width="160" height="160" viewBox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="bgGrad_EB" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0%" stop-color="#FFF4F2"/>
+          <stop offset="100%" stop-color="#FFE4E1"/>
+        </linearGradient>
+      </defs>
+      <circle cx="80" cy="80" r="80" fill="url(#bgGrad_EB)"/>
+      <circle cx="80" cy="80" r="77" fill="none" stroke="#C91C22" stroke-width="1.5" opacity="0.2"/>
+      <!-- Person silhouette -->
+      <circle cx="80" cy="62" r="27" fill="#C91C22" opacity="0.18"/>
+      <ellipse cx="80" cy="130" rx="48" ry="32" fill="#C91C22" opacity="0.18"/>
+      <!-- Large initials centered in silhouette -->
+      <text x="80" y="72" text-anchor="middle" font-family="Rubik,sans-serif" font-size="32" font-weight="700" fill="#C91C22" opacity="0.9">EB</text>
     </svg>
     <!-- Verifierad badge -->
     <div style="margin-top:10px;background:#F0FDF4;border-radius:50px;padding:5px 12px;display:inline-flex;align-items:center;gap:5px;">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-      <span style="font-size:0.75rem;font-weight:600;color:#16a34a;font-family:Inter,sans-serif;">Verifierad</span>
+      <span style="font-size:0.75rem;font-weight:600;color:#16a34a;font-family:Inter,sans-serif;">Verifierad partner</span>
     </div>
-    <p style="font-size:0.6875rem;color:#D1D5DB;margin:6px 0 0;font-family:Inter,sans-serif;">Foto tillkommer</p>
   </div>
 
   <!-- HÖGER: All info -->
