@@ -318,3 +318,15 @@ header.wp-block-template-part {
         padding-bottom: 64px !important;
     }
 }
+
+/* Tjänstesidor — sektionsluft */
+.page-template-page-tjanst .wp-block-group.alignfull {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+@media (max-width: 768px) {
+    .page-template-page-tjanst .wp-block-group.alignfull {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}

@@ -412,3 +412,31 @@
 
 <!-- CTA-BAND -->
 <!-- wp:pattern {"slug":"seniorbolaget/cta-band"} /-->
+
+<!-- KONTAKTBLOCK — Har du frågor? -->
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"ljusgra","layout":{"type":"constrained","contentSize":"640px"}} -->
+<div class="wp-block-group has-ljusgra-background-color has-background" style="padding-top:60px;padding-bottom:60px;">
+
+  <!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem","fontWeight":"700"},"color":{"text":"#1F2937"}}} -->
+  <h3 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:1.5rem;font-weight:700;">Har du frågor? Vi hjälper dig gärna.</h3>
+  <!-- /wp:heading -->
+
+  <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1rem"},"spacing":{"margin":{"top":"0.75rem","bottom":"2rem"}}}} -->
+  <p class="has-text-align-center" style="color:#6B7280;font-size:1rem;margin-top:0.75rem;margin-bottom:2rem;">Ring eller mejla oss — vi svarar snabbt och utan krångel.</p>
+  <!-- /wp:paragraph -->
+
+  <!-- wp:html -->
+  <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <a href="tel:0101751900" style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;border-radius:50px;padding:14px 28px;font-weight:600;font-size:1rem;font-family:Rubik,sans-serif;text-decoration:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+      010-175 19 00
+    </a>
+    <a href="mailto:info@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:14px 28px;font-weight:600;font-size:1rem;font-family:Rubik,sans-serif;text-decoration:none;">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
+      info@seniorbolaget.se
+    </a>
+  </div>
+  <!-- /wp:html -->
+
+</div>
+<!-- /wp:group -->
