@@ -290,3 +290,31 @@ header.wp-block-template-part {
         margin: -24px -24px 20px -24px;
     }
 }
+
+/* ===== GEMINI FIX: SEKTIONSLUFT + HIERARKI ===== */
+
+/* 1. Tvinga 100px luft på alla sektioner — överskriver block-inkonsekvenser */
+.wp-block-group.alignfull {
+    padding-top: 100px !important;
+    padding-bottom: 100px !important;
+}
+
+/* 2. Sektionsrubriker (H2) ska vara tydliga kapitelavdelare */
+.wp-block-group.alignfull h2.wp-block-heading {
+    font-size: clamp(1.75rem, 4vw, 2.75rem) !important;
+    font-weight: 700 !important;
+    line-height: 1.2 !important;
+}
+
+/* 3. Ingress-text: mörkare för läsbarhet (viktigt för äldre) */
+.wp-block-group.alignfull p.has-textgra-color {
+    color: #4a4a4a !important;
+}
+
+/* Mobil: lite mindre luft men fortfarande generöst */
+@media (max-width: 781px) {
+    .wp-block-group.alignfull {
+        padding-top: 64px !important;
+        padding-bottom: 64px !important;
+    }
+}
