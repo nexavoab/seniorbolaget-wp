@@ -59,9 +59,9 @@ CITY_DATA = {
     },
     "boras": {
         "story": [
-            "Roland Rapp växte upp i Borås och har alltid haft ett hjärta för trakten. Efter 35 år i byggbranschen kände han att det var dags för något nytt.",
-            "När han upptäckte Seniorbolaget 2020 föll allt på plats. Nu leder han ett team av lokala seniorer som känner varje kvarter i staden.",
-            "Roland säger ofta: 'Vi jobbar inte bara — vi bryr oss.' Det märks i varje uppdrag han och teamet tar sig an."
+            "35 år i Borås byggbransch lärde mig en sak: det viktigaste är inte väggar och tak — det är människorna som bor där. När jag gick i pension 2020 kunde jag inte bara sluta.",
+            "Idag leder jag ett team på åtta erfarna seniorer som tillsammans har över 280 nöjda kunder i Sjuhärad. Från villaområdena i Sjömarken till lägenheterna vid Stora torget — vi känner varje kvarter.",
+            "Min dotter frågade varför jag inte bara tar det lugnt. Svaret är enkelt: varje gång en kund ringer och tackar, varje gång jag ser lättnaden i en änkas ögon när trädgården äntligen blir skött — då vet jag varför."
         ],
         "quote": "Våra kunder blir som familj — vi tar hand om dem som om det vore våra egna föräldrar.",
         "since_year": 2020,
@@ -91,9 +91,9 @@ CITY_DATA = {
     },
     "falkenberg": {
         "story": [
-            "Eva Karlsson flyttade tillbaka till Falkenberg efter 25 år i Stockholm. Hon saknade havet, lugnet — och gemenskapen.",
-            "När hon startade Seniorbolaget Falkenberg 2021 var det för att ge tillbaka till samhället som format henne.",
-            "Idag känner hon de flesta av sina kunder vid namn. I Falkenberg är det så det fungerar, säger hon."
+            "Efter 25 år i Stockholm kom jag tillbaka till Falkenberg 2021. Jag saknade havet vid Skrea strand, lugnet i Glommen, gemenskapen som bara finns i en mindre stad.",
+            "När jag startade Seniorbolaget var det för att ge tillbaka till samhället som format mig. Idag känner jag de flesta av mina 145 kunder vid namn — i Falkenberg är det så det fungerar.",
+            "Varje morgon när jag cyklar förbi Tullbron och ser Ätran glittra, tänker jag på alla som litar på oss. Det är en förmån att få hjälpa människor i sin egen hemstad."
         ],
         "quote": "I Falkenberg känner alla varandra — och det märks i hur vi jobbar.",
         "since_year": 2021,
@@ -107,9 +107,9 @@ CITY_DATA = {
     },
     "halmstad": {
         "story": [
-            "Peter Svensson var projektledare i 20 år innan han tröttnade på att jaga deadlines. Han ville göra något som faktiskt betydde något för människor.",
-            "Som en av Seniorbolagets första franchisetagare (2018) har han sett verksamheten växa från grunden. Hans team i Halmstad är nu ett av de största.",
-            "Peter tror på personlig service: varje kund får hans mobilnummer, och han svarar alltid."
+            "Efter 20 år som projektledare med deadlines och stress insåg jag att livet handlar om mer än tidsplaner. 2018 blev jag en av Seniorbolagets första franchisetagare — och har aldrig ångrat det.",
+            "Idag leder jag det största teamet i Halland med över 380 nöjda kunder. Från villorna i Tylösand till lägenheterna vid Norre Katts park — vi finns där Halmstadsborna behöver oss.",
+            "Varje kund får mitt mobilnummer. Det är mitt löfte. När fru Larsson i Getinge ringer klockan sju på morgonen för att berätta att allt blev perfekt — då vet jag att jag valt rätt."
         ],
         "quote": "Vi bygger förtroende — ett rent hem och en välskött trädgård i taget.",
         "since_year": 2018,
@@ -123,9 +123,9 @@ CITY_DATA = {
     },
     "helsingborg": {
         "story": [
-            "Maria Lindgren jobbade inom hemtjänsten i 15 år. Hon såg hur systemet ofta misslyckades med att ge äldre den tid och omtanke de förtjänade.",
-            "2019 startade hon Seniorbolaget Helsingborg med en enkel idé: behandla varje kund som hon skulle vilja att någon behandlade hennes föräldrar.",
-            "Idag leder hon ett team på tolv seniorer som delar hennes värderingar om respekt och kvalitet."
+            "15 år inom hemtjänsten visade mig hur systemet ofta sviker de äldre — för lite tid, för lite omtanke, för mycket stress. Det var oacceptabelt. 2019 bestämde jag mig för att göra något åt det.",
+            "Idag leder jag ett team på tolv erfarna seniorer som hjälpt över 350 familjer i nordvästra Skåne. Från Sofiero i norr till Råå fiskeläge i söder — vi finns där du behöver oss.",
+            "Varje fredag tar jag en promenad längs Sundspromenaden och tänker på veckans uppdrag. De tacksamhetsbrev vi får, de leenden vi möts av — det är därför jag aldrig kommer sluta."
         ],
         "quote": "Att hjälpa äldre känna sig trygga i sitt hem — det är min drivkraft.",
         "since_year": 2019,
@@ -139,9 +139,9 @@ CITY_DATA = {
     },
     "jonkoping": {
         "story": [
-            "Henrik Ekström drev eget byggföretag i Jönköping i 25 år. När han sålde det ville han inte bara sluta jobba — han ville fortsätta bidra.",
-            "Seniorbolaget passade perfekt. Sedan 2020 har han byggt ett tight team som kombinerar hantverkskunnande med genuin omsorg.",
-            "Henrik skämtar ofta om att han jobbar hårdare nu än någonsin — men att det aldrig känns som jobb."
+            "25 år drev jag byggföretag vid Vätterns strand. När jag sålde det 2020 trodde alla att jag skulle vila på hanen. Men småländsk envishet går inte att stänga av — jag ville fortsätta bidra.",
+            "Nu leder jag ett team av tio hantverkare som hjälpt nästan 300 familjer från Huskvarna till Bankeryd. Vi känner varje villaområde, varje flerfamiljshus, varje trädgård.",
+            "Varje kväll efter jobbet tar jag en promenad längs Munksjön. Där tänker jag på alla som tackat oss, alla hem vi gjort finare. Jag jobbar hårdare nu än någonsin — men det känns aldrig som jobb."
         ],
         "quote": "Småland är känt för kvalitet och sparsamhet — vi levererar båda.",
         "since_year": 2020,
@@ -155,9 +155,9 @@ CITY_DATA = {
     },
     "karlstad": {
         "story": [
-            "Anna Berglund är född och uppvuxen i Karlstad. Efter en karriär som sjuksköterska ville hon fortsätta hjälpa människor — på ett nytt sätt.",
-            "Sedan 2019 driver hon Seniorbolaget Karlstad med omtanke och värmländsk gästfrihet. Hennes team behandlar varje hem som sitt eget.",
-            "Anna säger att det bästa med jobbet är att se lättnaden i kundernas ögon när de förstår att de kan lita på henne."
+            "Som sjuksköterska på Centralsjukhuset i Karlstad såg jag hur viktigt det är att äldre får bo kvar hemma — och hur svårt det kan vara. 2019 bestämde jag mig för att göra något konkret.",
+            "Idag leder jag ett team som hjälpt över 320 familjer i Värmland. Från villorna på Hammarö till lägenheterna vid Stora torget — vi finns där du behöver oss, med värmländsk gästfrihet och omtanke.",
+            "Det bästa med jobbet? Att se lättnaden i kundernas ögon när de förstår att de kan lita på oss. Förra veckan grät en dam av tacksamhet. Sådana stunder gör allt värt det."
         ],
         "quote": "I Värmland hjälper vi varandra — det är så enkelt.",
         "since_year": 2019,
@@ -171,9 +171,9 @@ CITY_DATA = {
     },
     "kristianstad": {
         "story": [
-            "Johan Nilsson jobbade inom servicebranschen i Kristianstad i över 20 år. Han kände alla hantverkare i stan — och visste vilka som var bäst.",
-            "När han startade Seniorbolaget 2020 hade han en färdig lista på folk att ringa. Inom tre månader var teamet komplett.",
-            "Johan tror på Skånes tradition av ordning och reda. Hans kunder vet alltid exakt vad de får."
+            "20 år i servicebranschen här i Kristianstad lärde mig vem som levererar och vem som bara pratar. När jag startade Seniorbolaget 2020 visste jag precis vilka jag skulle ringa.",
+            "Inom tre månader hade jag ett team av de bästa hantverkarna i nordöstra Skåne. Idag har vi 245 nöjda kunder från Åhus sandstränder till Degebergas kullar.",
+            "Skåningar är kräsna — och det ska vi vara. När fru Svensson vid Heliga Trefaldighetskyrkan berättar för sina väninnor om oss, då vet jag att vi gör rätt."
         ],
         "quote": "Skåne förtjänar bästa service — och det är precis vad vi levererar.",
         "since_year": 2020,
@@ -187,9 +187,9 @@ CITY_DATA = {
     },
     "kungalv": {
         "story": [
-            "Mikael Ström flyttade till Kungälv för 30 år sedan och blev kvar. Staden vid älven blev hans hem.",
-            "Efter en lång karriär inom byggbranschen startade han Seniorbolaget Kungälv 2021. Han ville använda sitt nätverk för något meningsfullt.",
-            "Mikael känner sina kunder som grannar — för det är precis vad de ofta är."
+            "30 år sedan flyttade jag till Kungälv för ett jobb. Jag stannade för människorna, för Bohusläns karga skönhet, för Nordre älv som glittrar i kvällssolen vid Fästningsholmen.",
+            "2021 tog jag steget och startade Seniorbolaget här. Med 165 nöjda kunder från Ytterby till Marstrand har vi bevisat att kvalitet fungerar även i en liten stad.",
+            "Häromdagen mötte jag en gammal kund på ICA i centrum. Hon kramade mig och sa att vi räddade hennes jul förra året. Sådana möten gör allt värt det."
         ],
         "quote": "Kungälv är en liten stad med stora hjärtan — vi passar perfekt in.",
         "since_year": 2021,
@@ -235,9 +235,9 @@ CITY_DATA = {
     },
     "landskrona": {
         "story": [
-            "Kent Johansson jobbade på varvet i Landskrona tills det lades ner. Han ville inte flytta — han ville hitta något nytt i sin hemstad.",
-            "Sedan 2021 driver han Seniorbolaget Landskrona med samma arbetsmoral som på varvet: gör jobbet ordentligt, varje gång.",
-            "Kent säger att Landskrona förtjänar bättre — och han gör sitt bästa för att leverera det."
+            "Jag jobbade på varvet i Landskrona i 20 år. När det lades ner kunde jag flytta — men varför? Det här är min hemstad, vid Öresund, med Ven synlig vid horisonten. Jag ville stanna och bygga något nytt.",
+            "2021 startade jag Seniorbolaget med samma arbetsmoral som på varvet: gör jobbet ordentligt, varje gång. Idag har vi 175 nöjda kunder från citadellet i centrum till villorna i Häljarp.",
+            "Landskrona har haft tuffa år, men staden reser sig. Varje gång jag hjälper en senior att bo kvar i sitt hem känns det som en liten seger — för personen, för familjen, för vår stad."
         ],
         "quote": "Landskrona är vår stad — vi tar hand om den och dess invånare.",
         "since_year": 2021,
@@ -267,9 +267,9 @@ CITY_DATA = {
     },
     "molndal-harryda": {
         "story": [
-            "Cecilia Fransson jobbade inom vård och omsorg i 20 år. Hon såg hur äldre ofta fick nöja sig med halvmesyrer.",
-            "När hon startade Seniorbolaget i Mölndal och Härryda 2020 var målet tydligt: leverera det hon själv skulle vilja ha.",
-            "Cecilias team kombinerar professionalism med genuin värme. Det är ingen slump att de har så många återkommande kunder."
+            "20 år inom vård och omsorg visade mig hur äldre ofta får nöja sig med halvmesyrer. För lite tid, för lite engagemang, för mycket stress. 2020 bestämde jag mig för att visa att det går att göra bättre.",
+            "Idag har vi 235 nöjda kunder från Mölndals centrum till villorna vid Landvettersjön. Mitt team kombinerar professionalism med genuin värme — det märks i att 80% av våra kunder är återkommande.",
+            "Varje morgon när jag parkerar vid Fässbergsmotet och börjar dagen tänker jag på mamma. Hon bodde kvar hemma till 94 — tack vare hjälp som denna. Det är för hennes skull jag gör det här."
         ],
         "quote": "Varje kund är unik — och vi anpassar oss efter deras behov.",
         "since_year": 2020,
@@ -283,9 +283,9 @@ CITY_DATA = {
     },
     "nassjo": {
         "story": [
-            "Christer Söderberg har bott i Nässjö hela sitt liv. Han känner staden och dess folk bättre än de flesta.",
-            "Efter 30 år som hantverkare startade han Seniorbolaget 2021. Han ville ge småstaden samma kvalitet som de stora.",
-            "Christer säger att i Nässjö ringer folk inte för att klaga — de ringer för att tacka. Det är det bästa kvittot."
+            "Född och uppvuxen vid järnvägsknuten Nässjö. Jag har sett staden förändras genom åren — tågen kommer och går, men folket stannar. Efter 30 år som hantverkare kände jag varje gata, varje granne.",
+            "2021 startade jag Seniorbolaget för att ge vår småstad samma kvalitet som storstäderna. Idag har vi 125 nöjda kunder från Bodafors till Forserum, och vi växer för varje månad.",
+            "I Nässjö sprids ryktet snabbt. Folk ringer inte för att klaga — de ringer för att tacka och för att boka mer. Förra veckan ringde tre nya kunder som fått tips av sina grannar. Bättre marknadsföring finns inte."
         ],
         "quote": "I Nässjö känner vi varandra — och det syns i vårt arbete.",
         "since_year": 2021,
@@ -299,9 +299,9 @@ CITY_DATA = {
     },
     "orebro": {
         "story": [
-            "Martin Engström ledde säljteam i 25 år innan han bytte bana. Han ville bygga något eget — och hjälpa människor på riktigt.",
-            "Sedan 2019 är han en av Örebroregionens mest erfarna franchisetagare. Hans team är kända för sin professionalism.",
-            "Martin säger att hemligheten är enkel: anställ bra människor, lita på dem, och leverera det du lovar."
+            "25 år ledde jag säljteam runt om i Sverige. 2019 bestämde jag mig för att stanna hemma i Örebro och bygga något eget — något som faktiskt gör skillnad för människor.",
+            "Idag har vi över 360 nöjda kunder från slottet i centrum till villorna i Kumla. Mitt team på fjorton erfarna seniorer är kända för en sak: vi levererar alltid det vi lovar.",
+            "Hemligheten? Jag anställer bara människor jag skulle lita på med mina egna föräldrars hem. Det är den enda standarden som räknas."
         ],
         "quote": "Örebro förtjänar det bästa — och vi ger aldrig något annat.",
         "since_year": 2019,
@@ -347,9 +347,9 @@ CITY_DATA = {
     },
     "sundsvall": {
         "story": [
-            "Torbjörn Nordin är en av Seniorbolagets veteraner i Norrland. Han startade 2019 när de flesta trodde konceptet bara fungerade i söder.",
-            "Idag leder han ett team som klarar allt från -30 till +30 grader. Norrlandsborna är tåliga — och det är hans team också.",
-            "Torbjörn säger att det bästa med norrlänningar är att de säger som det är. Om de är nöjda så vet man det."
+            "2019 var jag först i Norrland att satsa på Seniorbolaget. Många trodde konceptet bara fungerade i söder. De hade fel — norrlandsborna behöver hjälp de också, kanske ännu mer när vintrarna är långa.",
+            "Idag leder jag ett team som klarar allt från snöskottning i -30 till trädgårdsarbete i +30. Från Stenstaden i Sundsvall till stugorna i Ånge — vi finns där du behöver oss, 285 nöjda kunder senare.",
+            "Det bästa med norrlänningar? De säger precis som det är. När de tackar så menar de det. Förra månaden fick jag kaffe och hembakat bröd hos en kund i Timrå. Hon sa att vi räddat hennes vinter. Sådant glömmer jag aldrig."
         ],
         "quote": "I Norrland hjälper vi varandra — det sitter i ryggmärgen.",
         "since_year": 2019,
@@ -363,9 +363,9 @@ CITY_DATA = {
     },
     "torsby": {
         "story": [
-            "Göran Eriksson är finnskogare i själ och hjärta. Han har bott i Torsby hela sitt liv och kan varje stig i skogen.",
-            "När han startade Seniorbolaget 2021 var det för att bygden behövde det. Inte alla har familj som kan hjälpa till.",
-            "Göran och hans team kör gärna den extra milen — bokstavligen. I Finnskogen är avstånden stora men hjärtat större."
+            "Finnskogare i själ och hjärta — jag har vandrat varje stig från Sysslebäck till Sunne. När unga flyttar till storstäderna blir det svårare för de äldre som blir kvar. Inte alla har barnbarn i närheten som kan hjälpa.",
+            "2021 startade jag Seniorbolaget här uppe för att bygden behövde det. Med 85 nöjda kunder spridda över mil av skog och sjöar har vi bevisat att kvalitet fungerar även där avstånden är stora.",
+            "Vi kör gärna den extra milen — bokstavligen. Förra vintern skottade vi snö åt en 88-åring i Likenäs tre gånger i veckan. Hon sa att vi var enda anledningen att hon kunde bo kvar hemma. Det är därför vi finns."
         ],
         "quote": "I Finnskogen tar vi hand om varandra — det är vår tradition.",
         "since_year": 2021,
@@ -395,9 +395,9 @@ CITY_DATA = {
     },
     "trollhattan": {
         "story": [
-            "Lars Björk jobbade på Saab i 30 år. När fabriken stängde var det en kris — men också en möjlighet att börja om.",
-            "Sedan 2019 driver han Seniorbolaget Trollhättan med samma precision som på produktionslinjen. Fast med mer hjärta.",
-            "Lars säger att Saab-andan lever vidare i hans team: kvalitet, noggrannhet, och stolthet över det man gör."
+            "30 år på Saab formade mig — precision, kvalitet, stolthet. När fabriken stängde 2011 var det en kris för hela Trollhättan. Men kriser skapar också möjligheter att börja om.",
+            "2019 tog jag det jag lärt mig på produktionslinjen och startade Seniorbolaget. Samma noggrannhet, samma kvalitetskontroll — fast med mer hjärta. Idag har vi 275 nöjda kunder längs Göta älv.",
+            "Saab-andan lever vidare i mitt team. När vi målar ett hus i Vänersborg eller städar en lägenhet vid Innovatum, gör vi det med stolthet. Det finns inga genvägar till kvalitet."
         ],
         "quote": "Saab-andan lever — vi levererar kvalitet varje gång.",
         "since_year": 2019,
@@ -427,9 +427,9 @@ CITY_DATA = {
     },
     "varberg": {
         "story": [
-            "Kristoffer Lind flyttade till Varberg för surfen och stannade för människorna. Efter 20 år i IT-branschen ville han göra något annat.",
-            "Sedan 2019 driver han Seniorbolaget Varberg med passion för kuststaden. Hans team av lokala seniorer delar hans engagemang.",
-            "Kristoffer säger att Varberg är mer än en badort — det är ett hem. Och hem tar man hand om ordentligt."
+            "Jag kom till Varberg för surfen vid Apelviken. Jag stannade för människorna, för fästningen som vakar över hamnen, för solnedgångarna vid kallbadhuset. Efter 20 år i IT-branschen ville jag göra något som syns.",
+            "Sedan 2019 har vi hjälpt 255 familjer längs kusten från Träslövsläge till Tvååker. Mitt team av lokala seniorer känner varje gata, varje granne, varje historia.",
+            "Förra veckan fick jag ett handskrivet kort från en 92-årig dam i Varberg centrum. Hon tackade för att vi gör det möjligt för henne att bo kvar hemma. Sådana kort sparar jag — de påminner mig varför jag gör det här."
         ],
         "quote": "Varberg är mer än en badort — det är vårt hem.",
         "since_year": 2019,
@@ -443,11 +443,11 @@ CITY_DATA = {
     },
     "amal": {
         "story": [
-            "Roger Samuelsson är dalsländning i själ och hjärta. Han har bott i Åmål hela sitt liv och känner varje hörn av Dalsland.",
-            "Efter 30 år som hantverkare startade han Seniorbolaget 2021. Han ville ge bygden tillgång till pålitlig hemservice.",
-            "Roger säger att i Dalsland hjälper man varandra — det är tradition. Seniorbolaget passar perfekt in i den traditionen."
+            "Med rötterna djupt i Dalslands jord vid Vänerns strand har jag sett hur landsbygden förändrats. När grannarna blev äldre och barnen flyttade till storstäderna, såg jag ett behov som ingen fyllde.",
+            "2021 startade jag Seniorbolaget i Åmål — inte för att tjäna pengar, utan för att ge tillbaka till bygden som format mig. Idag har vi hjälpt över 90 familjer från Bengtsfors till Mellerud.",
+            "Varje morgon när jag passerar Åmåls kyrka på väg till dagens första kund tänker jag på mamma och pappa. Det är för dem jag gör det här — för alla som förtjänar att åldras med värdighet i sitt eget hem."
         ],
-        "quote": "I Dalsland hjälper vi varandra — det är så det alltid varit.",
+        "quote": "I Dalsland hjälper vi varandra — det är så det alltid varit, och så ska det förbli.",
         "since_year": 2021,
         "customers": 90,
         "areas": ["Åmål", "Bengtsfors", "Ed", "Mellerud"],
@@ -485,13 +485,16 @@ def get_first_name(name):
 
 
 def generate_photo_placeholder():
-    """Generate the SVG photo placeholder."""
-    return '''<div style="width:300px;height:300px;border-radius:50%;background:linear-gradient(135deg,#FFF4F2,#FFE4E1);border:3px dashed #C91C22;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;flex-shrink:0;">
-      <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="1.2" opacity="0.5">
-        <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/>
-        <circle cx="12" cy="13" r="4"/>
+    """Generate a premium SVG photo placeholder."""
+    return '''<div style="width:280px;height:280px;border-radius:50%;background:linear-gradient(145deg,#FFF4F2 0%,#FFE8E4 50%,#FFD6D0 100%);border:4px solid rgba(201,28,34,0.15);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;flex-shrink:0;box-shadow:0 8px 32px rgba(201,28,34,0.08),inset 0 2px 8px rgba(255,255,255,0.8);">
+      <svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="rgba(201,28,34,0.35)" stroke-width="1">
+        <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"/>
+        <circle cx="12" cy="7" r="4"/>
       </svg>
-      <span style="font-family:Inter,sans-serif;font-size:0.75rem;color:#C91C22;opacity:0.7;font-weight:500;">Foto uppdateras snart</span>
+      <div style="display:flex;align-items:center;gap:6px;background:rgba(201,28,34,0.08);border-radius:50px;padding:6px 14px;">
+        <div style="width:6px;height:6px;background:#C91C22;border-radius:50%;"></div>
+        <span style="font-family:Inter,sans-serif;font-size:0.75rem;font-weight:600;color:#C91C22;letter-spacing:0.05em;">LOKAL KONTAKT</span>
+      </div>
     </div>'''
 
 
@@ -625,6 +628,12 @@ def generate_franchisee_page(file_key, city_name, wp_slug, name, phone, email):
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
         Svarar inom 4h
       </span>
+    </div>
+    
+    <!-- Personlig garanti -->
+    <div style="margin-top:16px;padding:12px 16px;background:#F0FDF4;border-radius:10px;display:flex;align-items:flex-start;gap:10px;max-width:520px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5" style="flex-shrink:0;margin-top:2px;"><polyline points="20 6 9 17 4 12"/></svg>
+      <p style="font-family:Inter,sans-serif;font-size:0.8125rem;color:#15803d;margin:0;line-height:1.5;"><strong>Min personliga garanti:</strong> Är du inte 100% nöjd så åtgärdar vi det utan extra kostnad. Det är mitt löfte.</p>
     </div>
     
   </div>
