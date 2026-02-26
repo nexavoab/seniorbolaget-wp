@@ -5,3 +5,7 @@ __pycache__/
 scraped/
 node_modules/
 .DS_Store
+comparison/*.png
+comparison/*.jpg
+comparison/*.jpeg
+comparison/batch_eval_log*.txt
