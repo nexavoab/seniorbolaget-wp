@@ -65,7 +65,7 @@ function seniorbolaget_wizard_css() {
 	?>
 	<style id="seniorbolaget-wizard-css">
 	/* Hard reset for WP layout conflicts - break out completely */
-	.entry-content .wizard-container{all:initial!important;display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FAFAF8!important;min-height:80vh!important;padding:0!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
+	.entry-content .wizard-container{all:initial!important;display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FAFAF8!important;min-height:80vh!important;padding:110px 0 0!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
 	.wizard-container *,.wizard-container *::before,.wizard-container *::after{box-sizing:border-box!important}
 	.wizard-container .wizard-inner{display:block!important;max-width:700px!important;width:100%!important;margin:0 auto!important;padding:40px 48px 60px!important;background:#FAFAF8!important;border-radius:20px!important;box-shadow:0 20px 60px rgba(0,0,0,0.08)!important}
 	@media(max-width:600px){.wizard-container .wizard-inner{padding:24px 20px 40px!important;border-radius:0!important;box-shadow:none!important}}
@@ -342,7 +342,7 @@ function seniorbolaget_wizard_js() {
 			
 			canProceedStep3() {
 				if (this.formData.service === 'hemstadning') {
-					return this.formData.area && this.formData.frequency;
+					return this.formData.area && this.formData.frequency && this.formData.pets;
 				}
 				if (this.formData.service === 'tradgard') {
 					return this.formData.gardenServices.length > 0;
@@ -472,41 +472,75 @@ function seniorbolaget_wizard_shortcode() {
                 </div>
                 
                 <div x-show="formData.service === 'hemstadning'">
-                    <div class="form-group">
-                        <label class="form-label">Bostadsyta (kvm)</label>
-                        <input type="number" class="form-input" placeholder="T.ex. 85" x-model="formData.area" min="1">
-                    </div>
-                    <div class="form-group">
-                        <label class="form-label">Hur ofta vill du ha städning?</label>
-                        <div class="radio-group">
-                            <label class="radio-option" :class="{ 'selected': formData.frequency === 'varannan' }">
-                                <input type="radio" name="frequency" value="varannan" x-model="formData.frequency">
-                                <span class="option-label">Varannan vecka</span>
-                                <span class="option-badge">⭐ Populär</span>
-                            </label>
-                            <label class="radio-option" :class="{ 'selected': formData.frequency === 'varfjarde' }">
-                                <input type="radio" name="frequency" value="varfjarde" x-model="formData.frequency">
-                                <span class="option-label">Var fjärde vecka</span>
-                            </label>
-                            <label class="radio-option" :class="{ 'selected': formData.frequency === 'engangsstadning' }">
-                                <input type="radio" name="frequency" value="engangsstadning" x-model="formData.frequency">
-                                <span class="option-label">Engångsstädning</span>
-                            </label>
+                    <!-- Bostadsyta -->
+                    <div style="margin-bottom:32px;">
+                        <h3 style="font-family:Rubik,sans-serif;font-size:1.125rem;font-weight:700;color:#1F2937;margin:0 0 16px;">Bostadsyta (kvm)</h3>
+                        <div class="svc-grid">
+                            <div class="svc-card" :class="{selected: formData.area === 'under50'}" @click="formData.area = 'under50'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">🏠</div>
+                                <div class="svc-card-name">Under 50 kvm</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                            <div class="svc-card" :class="{selected: formData.area === '50-80'}" @click="formData.area = '50-80'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">🏡</div>
+                                <div class="svc-card-name">50–80 kvm</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                            <div class="svc-card" :class="{selected: formData.area === '80-120'}" @click="formData.area = '80-120'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">🏘️</div>
+                                <div class="svc-card-name">80–120 kvm</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                            <div class="svc-card" :class="{selected: formData.area === 'over120'}" @click="formData.area = 'over120'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">🏰</div>
+                                <div class="svc-card-name">Över 120 kvm</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
                         </div>
                     </div>
-                    <div class="form-group">
-                        <label class="form-label">Husdjur hemma?</label>
-                        <div class="radio-group" style="flex-direction: row; gap: 16px;">
-                            <label class="radio-option" style="flex: 1;" :class="{ 'selected': formData.pets === 'ja' }">
-                                <input type="radio" name="pets" value="ja" x-model="formData.pets">
-                                <span class="option-label">Ja</span>
-                            </label>
-                            <label class="radio-option" style="flex: 1;" :class="{ 'selected': formData.pets === 'nej' }">
-                                <input type="radio" name="pets" value="nej" x-model="formData.pets">
-                                <span class="option-label">Nej</span>
-                            </label>
+                    
+                    <!-- Hur ofta städning -->
+                    <div style="margin-bottom:32px;">
+                        <h3 style="font-family:Rubik,sans-serif;font-size:1.125rem;font-weight:700;color:#1F2937;margin:0 0 16px;">Hur ofta vill du ha städning?</h3>
+                        <div class="svc-grid">
+                            <div class="svc-card" :class="{selected: formData.frequency === 'varannan'}" @click="formData.frequency = 'varannan'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">🔄</div>
+                                <div class="svc-card-name">Varannan vecka</div>
+                                <div class="svc-card-desc" style="display:flex;align-items:center;justify-content:center;gap:6px;">
+                                    <span style="background:#C91C22;color:#fff;font-size:0.6875rem;font-weight:700;padding:2px 8px;border-radius:50px;">★ Populär</span>
+                                </div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                            <div class="svc-card" :class="{selected: formData.frequency === 'varfjarde'}" @click="formData.frequency = 'varfjarde'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">📅</div>
+                                <div class="svc-card-name">Var fjärde vecka</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                            <div class="svc-card" :class="{selected: formData.frequency === 'engangsstadning'}" @click="formData.frequency = 'engangsstadning'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">1️⃣</div>
+                                <div class="svc-card-name">Engångsstädning</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
                         </div>
                     </div>
+                    
+                    <!-- Husdjur hemma -->
+                    <div style="margin-bottom:32px;">
+                        <h3 style="font-family:Rubik,sans-serif;font-size:1.125rem;font-weight:700;color:#1F2937;margin:0 0 16px;">Husdjur hemma?</h3>
+                        <div class="svc-grid" style="grid-template-columns:1fr 1fr;">
+                            <div class="svc-card" :class="{selected: formData.pets === 'ja'}" @click="formData.pets = 'ja'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">🐾</div>
+                                <div class="svc-card-name">Ja</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                            <div class="svc-card" :class="{selected: formData.pets === 'nej'}" @click="formData.pets = 'nej'">
+                                <div class="svc-card-icon" style="width:48px;height:48px;font-size:2.5rem;display:flex;align-items:center;justify-content:center;">✨</div>
+                                <div class="svc-card-name">Nej</div>
+                                <div class="svc-card-check">✓</div>
+                            </div>
+                        </div>
+                    </div>
+                    
                     <div class="form-group">
                         <label class="form-label">Övrigt <span class="form-label-optional">(valfritt)</span></label>
                         <textarea class="form-input form-textarea" placeholder="Något mer vi bör veta?" x-model="formData.notes"></textarea>
