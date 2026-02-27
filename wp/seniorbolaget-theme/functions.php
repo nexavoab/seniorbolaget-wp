@@ -800,10 +800,10 @@ function seniorbolaget_wizard_submit() {
 // ===== INTENTIONS BAR (WAS-68) — inline script approach =====
 function sb_add_intentions_bar() {
     $html = '<style>
-.sb-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;display:flex;justify-content:center;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid rgba(0,0,0,.08);box-shadow:0 -4px 24px rgba(0,0,0,.08);padding:12px 16px;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.sb-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;display:flex;justify-content:center;background:transparent;border-top:none;box-shadow:none;padding:16px 16px 20px;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
 .sb-bar.show{transform:translateY(0);}
 .sb-bar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:600px;width:100%;}
-.sb-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;border:1.5px solid transparent;white-space:nowrap;transition:box-shadow .3s,border-color .3s;}
+.sb-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;border:1.5px solid transparent;white-space:nowrap;transition:box-shadow .3s,border-color .3s;box-shadow:0 4px 16px rgba(0,0,0,0.22);}
 .sb-btn-t,.sb-btn-f{display:inline-flex;align-items:center;gap:6px;}
 .sb-btn-t{position:relative;z-index:1;transition:transform .3s,opacity .3s;}
 .sb-btn-f{position:absolute;inset:0;justify-content:center;transform:translateY(100%);transition:transform .3s;border-radius:inherit;}
