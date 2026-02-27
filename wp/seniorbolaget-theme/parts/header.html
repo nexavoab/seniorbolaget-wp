@@ -177,6 +177,17 @@
   opacity: 1;
 }
 
+/* Wizard-sidor: nav flödar naturligt istället för att flyta */
+.is-wizard-page .card-nav-container {
+  position: relative !important;
+  top: auto !important;
+  left: auto !important;
+  transform: none !important;
+  margin: 20px auto !important;
+  width: 90% !important;
+  max-width: 960px !important;
+}
+
 @media (max-width: 768px) {
   .card-nav-container {
     width: calc(100vw - 32px) !important;
