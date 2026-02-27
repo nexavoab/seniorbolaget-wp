@@ -106,8 +106,8 @@
 }
 
 .card-nav-content {
-  position: absolute; left: 0; right: 0; top: 60px; bottom: 0;
-  padding: 8px; display: flex; align-items: stretch;
+  position: absolute; left: 0; right: 0; top: 60px;
+  padding: 8px 8px 12px; display: flex; align-items: stretch;
   gap: 8px; visibility: hidden; pointer-events: none; z-index: 1;
 }
 
@@ -116,47 +116,63 @@
 }
 
 .nav-card {
-  height: 100%; flex: 1 1 0; min-width: 0;
-  border-radius: 10px;
+  flex: 1 1 0; min-width: 0;
+  border-radius: 12px;
   position: relative; display: flex; flex-direction: column;
-  padding: 14px 16px 16px; gap: 6px; user-select: none;
-  border: 1px solid rgba(0,0,0,0.06);
+  justify-content: space-between;
+  padding: 20px 20px 20px; gap: 0; user-select: none;
+  background: #1F2937; min-height: 160px;
+  border: 1px solid rgba(255,255,255,0.08);
+  transition: background 0.2s ease;
 }
-
+.nav-card:hover {
+  background: #111827;
+}
 .nav-card-privat {
-  background-color: #FFCDD2;
-  color: #1F2937;
+  background: #1F2937;
 }
-
+.nav-card-privat::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: #C91C22; border-radius: 12px 12px 0 0;
+}
 .nav-card-foretag {
-  background-color: #BBDEFB;
-  color: #1F2937;
+  background: #1F2937;
 }
-
+.nav-card-foretag::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: #1565C0; border-radius: 12px 12px 0 0;
+}
 .nav-card-omoss {
-  background-color: #C8E6C9;
-  color: #1F2937;
+  background: #1F2937;
 }
-
+.nav-card-omoss::before {
+  content: ''; position: absolute; top: 0; left: 0; right: 0;
+  height: 3px; background: #2E7D32; border-radius: 12px 12px 0 0;
+}
 .nav-card-label {
-  font-weight: 600; font-size: 15px;
-  letter-spacing: 0; font-family: Rubik,sans-serif;
-  color: #1F2937; margin-bottom: 4px;
+  font-weight: 700; font-size: 18px;
+  letter-spacing: -0.3px; font-family: Rubik,sans-serif;
+  color: #FFFFFF; margin-bottom: 0;
 }
-
 .nav-card-links {
-  margin-top: 6px; display: flex; flex-direction: column; gap: 1px;
+  margin-top: 24px; display: flex; flex-direction: column; gap: 0;
 }
-
 .nav-card-link {
   font-size: 14px; cursor: pointer; text-decoration: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
+  transition: color 0.15s ease, opacity 0.15s ease;
   display: inline-flex; align-items: center; gap: 6px;
-  font-family: Inter,sans-serif; color: #374151; padding: 2px 0;
+  font-family: Inter,sans-serif; color: rgba(255,255,255,0.6);
+  padding: 5px 0; border-top: 1px solid rgba(255,255,255,0.06);
 }
-
+.nav-card-link::before {
+  content: '↗'; font-size: 11px; opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
 .nav-card-link:hover {
-  opacity: 0.75;
+  color: #FFFFFF;
+}
+.nav-card-link:hover::before {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
@@ -185,13 +201,13 @@
   }
 
   .card-nav-content {
-  position: absolute; left: 0; right: 0; top: 60px; bottom: 0;
-  padding: 8px; display: flex; align-items: stretch;
+  position: absolute; left: 0; right: 0; top: 60px;
+  padding: 8px 8px 12px; display: flex; align-items: stretch;
   gap: 8px; visibility: hidden; pointer-events: none; z-index: 1;
 }
 
   .nav-card {
-  height: 100%; flex: 1 1 0; min-width: 0;
+  flex: 1 1 0; min-width: 0;
   border-radius: 10px;
   position: relative; display: flex; flex-direction: column;
   padding: 14px 16px 16px; gap: 6px; user-select: none;
@@ -232,29 +248,29 @@
       <div class="nav-card nav-card-privat">
         <span class="nav-card-label">Privat</span>
         <div class="nav-card-links">
-          <a href="/hemstadning/" class="nav-card-link">🧹 Hemstädning</a>
-          <a href="/tradgard/" class="nav-card-link">🌿 Trädgård</a>
-          <a href="/snickeri/" class="nav-card-link">🔨 Snickeri</a>
-          <a href="/malning/" class="nav-card-link">🎨 Målning</a>
+          <a href="/hemstadning/" class="nav-card-link">Hemstädning</a>
+          <a href="/tradgard/" class="nav-card-link">Trädgård</a>
+          <a href="/snickeri/" class="nav-card-link">Snickeri</a>
+          <a href="/malning/" class="nav-card-link">Målning</a>
         </div>
       </div>
       
       <div class="nav-card nav-card-foretag">
         <span class="nav-card-label">Företag</span>
         <div class="nav-card-links">
-          <a href="/foretag/" class="nav-card-link">🏢 Företagstjänster</a>
-          <a href="/foretag/" class="nav-card-link">🏗️ BRF & Fastighet</a>
-          <a href="/foretag/" class="nav-card-link">👥 Bemanning</a>
+          <a href="/foretag/" class="nav-card-link">Företagstjänster</a>
+          <a href="/foretag/" class="nav-card-link">BRF & Fastighet</a>
+          <a href="/foretag/" class="nav-card-link">Bemanning</a>
         </div>
       </div>
       
       <div class="nav-card nav-card-omoss">
         <span class="nav-card-label">Om oss</span>
         <div class="nav-card-links">
-          <a href="/har-finns-vi/" class="nav-card-link">📍 Här finns vi</a>
-          <a href="/bli-franchisetagare/" class="nav-card-link">💼 Franchise</a>
-          <a href="/jobba-med-oss/" class="nav-card-link">👴 Jobba hos oss</a>
-          <a href="/om-oss/" class="nav-card-link">ℹ️ Om oss</a>
+          <a href="/har-finns-vi/" class="nav-card-link">Här finns vi</a>
+          <a href="/bli-franchisetagare/" class="nav-card-link">Franchise</a>
+          <a href="/jobba-med-oss/" class="nav-card-link">Jobba hos oss</a>
+          <a href="/om-oss/" class="nav-card-link">Om oss</a>
         </div>
       </div>
     </div>
@@ -275,7 +291,7 @@ document.addEventListener('DOMContentLoaded', function() {
       // Calculate height needed
       content.style.visibility = 'visible';
       var contentHeight = content.scrollHeight;
-      nav.style.height = (60 + Math.min(contentHeight, 200) + 16) + 'px';
+      nav.style.height = (60 + contentHeight + 20) + 'px';
       content.style.pointerEvents = 'auto';
     } else {
       nav.style.height = '60px';
