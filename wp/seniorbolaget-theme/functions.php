@@ -1154,7 +1154,7 @@ function sb_add_intentions_bar() {
 .sb-btn-o .sb-btn-f{background:#1F2937;color:#fff;}
 .sb-btn-o:hover{border-color:#1F2937;}
 .sb-x{background:none;border:none;cursor:pointer;color:#9CA3AF;font-size:1.25rem;padding:4px 8px;}
-body{padding-bottom:76px!important;}
+body{padding-bottom:110px!important;}
 </style>
 <div class="sb-bar" id="sbBar">
 <div class="sb-bar-inner">
