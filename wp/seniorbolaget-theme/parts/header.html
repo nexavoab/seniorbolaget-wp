@@ -7,7 +7,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 82%;
-  min-width: 480px;
+  min-width: min(480px, calc(100vw - 32px));
   max-width: 1000px;
   z-index: 9999;
   box-sizing: border-box;
@@ -116,7 +116,7 @@
   visibility: visible !important; pointer-events: auto !important;
 }
 .card-nav-container.open {
-  width: 82%;
+  width: 92%;
   max-width: 1000px;
 }
 

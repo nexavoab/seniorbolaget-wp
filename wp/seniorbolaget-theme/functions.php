@@ -1210,3 +1210,12 @@ add_action('template_redirect', function() {
         return $html;
     });
 });
+
+
+// ===== SITE TITLE =====
+add_theme_support('title-tag');
+add_filter('pre_get_document_title', function($title) {
+    $site_name = get_bloginfo('name', 'display');
+    $page_title = is_front_page() ? $site_name : (get_the_title() . ' — ' . $site_name);
+    return $page_title ?: $site_name;
+}, 20);
