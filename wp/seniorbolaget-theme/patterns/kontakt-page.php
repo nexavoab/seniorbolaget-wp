@@ -8,42 +8,27 @@
  */
 ?>
 
-<!-- HERO SECTION (förstärkt USP) -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"60px","bottom":"60px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained","contentSize":"800px"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:60px;padding-left:clamp(24px, 5vw, 80px)">
-
-	<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(1.75rem, 4vw, 2.5rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
-	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:0.75rem">Kontakta oss — vi svarar inom 24 timmar</h1>
-	<!-- /wp:heading -->
-
-	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#C91C22"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<p class="has-text-align-center" style="color:#C91C22;font-size:1.125rem;font-weight:600;margin-bottom:1rem">Erfarna seniorer hjälper dig med städ, trädgård, bygg och hantverk. RUT-avdrag direkt.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<p class="has-text-align-center" style="color:#4B5563;font-size:1.125rem;line-height:1.6;margin-bottom:1.5rem">Ring, maila eller fyll i en förfrågan — vi hjälper dig hitta rätt tjänst.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- Trust-rad direkt under hero -->
-	<!-- wp:html -->
-	<div style="display:flex;justify-content:center;gap:24px;flex-wrap:wrap;margin-top:0.5rem;">
-		<div style="display:flex;align-items:center;gap:8px;">
-			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-			<span style="font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;">Personlig service</span>
-		</div>
-		<div style="display:flex;align-items:center;gap:8px;">
-			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-			<span style="font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;">Svar inom 24h</span>
-		</div>
-		<div style="display:flex;align-items:center;gap:8px;">
-			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-			<span style="font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;">26 orter i Sverige</span>
-		</div>
-	</div>
-	<!-- /wp:html -->
-
+<!-- HERO SECTION -->
+<!-- wp:html -->
+<div style="position:relative;min-height:85vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg');background-size:cover;background-position:center;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%);"></div>
+  <div style="position:relative;z-index:2;max-width:720px;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
+      ⭐⭐⭐⭐⭐ Tusentals nöjda kunder i Sverige
+    </div>
+    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Kontakta oss</h1>
+    <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Vi svarar inom 24h — hitta ditt närmaste kontor eller skicka en förfrågan direkt</p>
+    <div style="margin-bottom:32px;">
+      <a href="tel:0101751900" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Ring oss →</a>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Svar inom 24h</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Kostnadsfritt</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Ingen bindning</span>
+    </div>
+  </div>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 
 <!-- SNABB BOKA CTA (flyttad högre upp) -->

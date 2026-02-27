@@ -9,54 +9,26 @@
 ?>
 
 <!-- HERO SECTION -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
-
-	<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Jobba med Seniorbolaget — aktiv vardag med mening</h1>
-	<!-- /wp:heading -->
-
-	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<p style="color:#4B5563;font-size:1.375rem;line-height:1.7;margin-bottom:1rem">Att arbeta hos Seniorbolaget är ett bra sätt att hålla igång kropp och själ. Förutom att du rör på kroppen får du ett socialt umgänge där du träffar andra seniorer och kunder.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-	<p style="color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:2rem">Genom ditt arbete underlättar du våra kunders vardag och möts ständigt av positiv respons för det arbete du utför.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:html -->
-	<p style="font-family:Rubik,sans-serif;font-size:1.25rem;color:#C91C22;text-align:left;margin-bottom:16px;font-weight:700;">
-	  Gör skillnad och tjäna extra – anmäl dig nu!
-	</p>
-	<!-- /wp:html -->
-
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<div class="wp-block-buttons" style="margin-bottom:1.5rem">
-		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Anmäl ditt intresse</a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
-
-	<!-- wp:html -->
-	<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:1rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-			<span>Alltid försäkrad</span>
-		</div>
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:1rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-			<span>Välj dina uppdrag</span>
-		</div>
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:1rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
-			<span>130–160 kr/timme</span>
-		</div>
-	</div>
-	<!-- /wp:html -->
-
+<!-- wp:html -->
+<div style="position:relative;min-height:85vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/work_senior.jpg');background-size:cover;background-position:center;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%);"></div>
+  <div style="position:relative;z-index:2;max-width:720px;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
+      ⭐⭐⭐⭐⭐ Tusentals nöjda kunder i Sverige
+    </div>
+    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Gör skillnad — jobba som senior</h1>
+    <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Använd din erfarenhet, bestäm dina tider och tjäna extra — vi matchar dig med rätt uppdrag</p>
+    <div style="margin-bottom:32px;">
+      <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Ansök här →</a>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Flexibla tider</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Välj dina uppdrag</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Erfarna kollegor</span>
+    </div>
+  </div>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 
 <!-- VI SÖKER NU SECTION (NYTT) -->
