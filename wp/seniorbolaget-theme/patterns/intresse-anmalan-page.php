@@ -12,50 +12,92 @@
 <div class="wizard-container" x-data="wizardApp()" x-cloak>
     <div class="wizard-inner">
         
-        <!-- Progress dots - simplified without x-for -->
-        <div class="progress-dots">
-            <div class="progress-dot" :class="{ 'active': step === 1, 'completed': step > 1 }"></div>
-            <div class="progress-dot" :class="{ 'active': step === 2, 'completed': step > 2 }"></div>
-            <div class="progress-dot" :class="{ 'active': step === 3, 'completed': step > 3 }"></div>
-            <div class="progress-dot" :class="{ 'active': step === 4, 'completed': step > 4 }"></div>
+        <!-- NEW: Progress stepper with labels and values -->
+        <div class="wiz-stepper" x-show="step < 5">
+            <div class="wiz-step" :class="{ active: step === 1, completed: step > 1 }">
+                <div class="wiz-step-circle" x-text="getStepNum(1)"></div>
+                <div class="wiz-step-label">Tjänst</div>
+                <div class="wiz-step-value" x-text="getStepVal(1)"></div>
+            </div>
+            <div class="wiz-step-line" :class="{ completed: step > 1 }"></div>
+            <div class="wiz-step" :class="{ active: step === 2, completed: step > 2 }">
+                <div class="wiz-step-circle" x-text="getStepNum(2)"></div>
+                <div class="wiz-step-label">Ort</div>
+                <div class="wiz-step-value" x-text="getStepVal(2)"></div>
+            </div>
+            <div class="wiz-step-line" :class="{ completed: step > 2 }"></div>
+            <div class="wiz-step" :class="{ active: step === 3, completed: step > 3 }">
+                <div class="wiz-step-circle" x-text="getStepNum(3)"></div>
+                <div class="wiz-step-label">Detaljer</div>
+                <div class="wiz-step-value"></div>
+            </div>
+            <div class="wiz-step-line" :class="{ completed: step > 3 }"></div>
+            <div class="wiz-step" :class="{ active: step === 4, completed: step > 4 }">
+                <div class="wiz-step-circle" x-text="getStepNum(4)"></div>
+                <div class="wiz-step-label">Kontakt</div>
+                <div class="wiz-step-value"></div>
+            </div>
         </div>
-        <p class="step-label" x-show="step < 5">Steg <span x-text="step"></span> av 4</p>
         
-        <!-- STEP 1: Choose service -->
+        <!-- STEP 1: Choose service — NEW 2×2 visual grid -->
         <div x-show="step === 1" x-transition>
             <div class="wizard-header">
                 <h1 class="wizard-title">Vad behöver du hjälp med?</h1>
                 <p class="wizard-subtitle">Välj en tjänst nedan</p>
             </div>
             
-            <div class="service-cards">
-                <div class="service-card" @click="selectService('hemstadning')" :class="{ 'selected': formData.service === 'hemstadning' }">
-                    <span class="service-icon">🧹</span>
-                    <div class="service-info">
-                        <p class="service-name">Hemstädning</p>
-                        <p class="service-desc">Regelbunden eller engångsstädning</p>
+            <div class="svc-grid">
+                <div class="svc-card" @click="selectService('hemstadning')" :class="{ 'selected': formData.service === 'hemstadning' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" fill="#FFF4F2"/>
+                            <path d="M30 22 L30 50 M30 50 L24 56 M30 50 L36 56 M30 50 L30 56 M44 30 L44 58 M44 58 L50 58 L56 40 L50 40 L50 30 L38 30 L38 40 L44 40" stroke="#C91C22" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
+                    <div class="svc-card-name">Hemstädning</div>
+                    <div class="svc-card-desc">Regelbunden eller engångsstädning med RUT-avdrag</div>
+                    <div class="svc-card-check">✓</div>
                 </div>
-                <div class="service-card" @click="selectService('tradgard')" :class="{ 'selected': formData.service === 'tradgard' }">
-                    <span class="service-icon">🌿</span>
-                    <div class="service-info">
-                        <p class="service-name">Trädgård</p>
-                        <p class="service-desc">Gräsklippning, häck, ogräs och mer</p>
+                
+                <div class="svc-card" @click="selectService('tradgard')" :class="{ 'selected': formData.service === 'tradgard' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" fill="#F0FDF4"/>
+                            <path d="M40 20 C40 20 28 32 28 44 C28 51 33 56 40 56 C47 56 52 51 52 44 C52 32 40 20 40 20Z" fill="#22C55E" opacity="0.3" stroke="#16A34A" stroke-width="2"/>
+                            <path d="M40 56 L40 68" stroke="#92400E" stroke-width="3" stroke-linecap="round"/>
+                            <path d="M33 48 C36 44 40 46 40 46 C40 46 40 42 44 40" stroke="#16A34A" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
                     </div>
+                    <div class="svc-card-name">Trädgård</div>
+                    <div class="svc-card-desc">Gräsklippning, häck, ogräs och mer</div>
+                    <div class="svc-card-check">✓</div>
                 </div>
-                <div class="service-card" @click="selectService('snickeri')" :class="{ 'selected': formData.service === 'snickeri' }">
-                    <span class="service-icon">🔨</span>
-                    <div class="service-info">
-                        <p class="service-name">Snickeri</p>
-                        <p class="service-desc">Allt från hyllor till större projekt</p>
+                
+                <div class="svc-card" @click="selectService('snickeri')" :class="{ 'selected': formData.service === 'snickeri' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" fill="#FFFBEB"/>
+                            <rect x="26" y="24" width="28" height="16" rx="4" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+                            <path d="M40 40 L34 60" stroke="#78350F" stroke-width="4" stroke-linecap="round"/>
+                        </svg>
                     </div>
+                    <div class="svc-card-name">Snickeri</div>
+                    <div class="svc-card-desc">Allt från hyllor till större projekt</div>
+                    <div class="svc-card-check">✓</div>
                 </div>
-                <div class="service-card" @click="selectService('malning')" :class="{ 'selected': formData.service === 'malning' }">
-                    <span class="service-icon">🎨</span>
-                    <div class="service-info">
-                        <p class="service-name">Målning</p>
-                        <p class="service-desc">Inomhus och utomhus</p>
+                
+                <div class="svc-card" @click="selectService('malning')" :class="{ 'selected': formData.service === 'malning' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="40" cy="40" r="38" fill="#EEF2FF"/>
+                            <rect x="22" y="28" width="32" height="18" rx="4" fill="#6366F1" stroke="#4338CA" stroke-width="1.5"/>
+                            <rect x="30" y="32" width="16" height="10" rx="2" fill="#E0E7FF"/>
+                            <path d="M42 46 L42 58 L50 58" stroke="#4338CA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
                     </div>
+                    <div class="svc-card-name">Målning</div>
+                    <div class="svc-card-desc">Inomhus och utomhus målning</div>
+                    <div class="svc-card-check">✓</div>
                 </div>
             </div>
         </div>
@@ -69,9 +111,16 @@
                 <p class="wizard-subtitle">Välj din ort</p>
             </div>
             
-            <input type="text" class="city-search" placeholder="Sök ort..." x-model="citySearch" @input="filterCities()">
+            <div style="position:relative;margin-bottom:16px;">
+                <span style="position:absolute;left:18px;top:50%;transform:translateY(-50%);font-size:1.1rem;color:#9CA3AF;pointer-events:none;">🔍</span>
+                <input type="text" class="city-search" style="padding-left:48px;" placeholder="Sök ort..." x-model="citySearch" @input="filterCities()">
+            </div>
             
             <div class="city-list" x-html="renderCities()"></div>
+            
+            <p style="text-align:center;font-size:0.875rem;color:#6B7280;margin-top:20px;">
+                Hittar du inte din ort? Ring <a href="tel:0101751900" style="color:#C91C22;font-weight:600;text-decoration:none;">010-175 19 00</a>
+            </p>
         </div>
         
         <!-- STEP 3: Service details (dynamic) -->
@@ -181,8 +230,8 @@
             <button class="back-btn" @click="step = 3" type="button">← Tillbaka</button>
             
             <div class="wizard-header">
-                <h1 class="wizard-title">Dina uppgifter</h1>
-                <p class="wizard-subtitle">Så vi kan kontakta dig</p>
+                <h1 class="wizard-title">Sista steget!</h1>
+                <p class="wizard-subtitle">Vi kontaktar dig inom 2h</p>
             </div>
             
             <div x-show="errorMsg" class="error-msg" x-text="errorMsg"></div>
@@ -222,6 +271,14 @@
                 <span x-show="isSubmitting" class="spinner"></span>
                 <span x-text="isSubmitting ? 'Skickar...' : 'Skicka förfrågan →'"></span>
             </button>
+            
+            <div style="display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap;margin-top:20px;font-size:0.8125rem;color:#6B7280;">
+                <span>🔒 Säker hantering</span>
+                <span style="color:#e5e7eb;">|</span>
+                <span>✓ Kostnadsfri offert</span>
+                <span style="color:#e5e7eb;">|</span>
+                <span>✓ Svar inom 2h</span>
+            </div>
         </div>
         
         <!-- STEP 5: Thank you -->

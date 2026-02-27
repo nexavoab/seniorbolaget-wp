@@ -67,27 +67,28 @@ function seniorbolaget_wizard_css() {
 	/* Hard reset for WP layout conflicts - break out completely */
 	.entry-content .wizard-container{all:initial!important;display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FAFAF8!important;min-height:80vh!important;padding:0!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
 	.wizard-container *,.wizard-container *::before,.wizard-container *::after{box-sizing:border-box!important}
-	.wizard-container .wizard-inner{display:block!important;max-width:640px!important;width:100%!important;margin:0 auto!important;padding:32px 24px 60px!important}
+	.wizard-container .wizard-inner{display:block!important;max-width:700px!important;width:100%!important;margin:0 auto!important;padding:40px 48px 60px!important;background:#FAFAF8!important;border-radius:20px!important;box-shadow:0 20px 60px rgba(0,0,0,0.08)!important}
+	@media(max-width:600px){.wizard-container .wizard-inner{padding:24px 20px 40px!important;border-radius:0!important;box-shadow:none!important}}
 	.wizard-header{text-align:center!important;margin-bottom:32px!important;display:block!important;width:100%!important;max-width:100%!important}
 	.wizard-title{font-family:Rubik,sans-serif!important;font-size:clamp(1.5rem,4vw,2rem)!important;font-weight:700!important;color:#1F2937!important;margin:0 0 8px!important;line-height:1.2!important;text-align:center!important;width:100%!important;max-width:100%!important}
 	.wizard-subtitle{font-size:1rem!important;color:#6B7280!important;margin:0!important;text-align:center!important;width:100%!important;max-width:100%!important}
 	
-	/* ===== FÖRBÄTTRAD STEPPER (med stegnamn) ===== */
-	.stepper{margin-bottom:32px!important;width:100%!important}
-	.stepper-steps{display:flex!important;justify-content:center!important;align-items:flex-start!important;gap:0!important;margin-bottom:12px!important}
-	.stepper-step{display:flex!important;flex-direction:column!important;align-items:center!important;gap:8px!important;min-width:60px!important}
-	.stepper-dot{width:14px!important;height:14px!important;border-radius:50%!important;background:#e5e7eb!important;transition:all .3s!important;border:2px solid transparent!important}
-	.stepper-step.active .stepper-dot{background:#C91C22!important;border-color:#C91C22!important;box-shadow:0 0 0 4px rgba(201,28,34,0.15)!important}
-	.stepper-step.completed .stepper-dot{background:#C91C22!important;border-color:#C91C22!important}
-	.stepper-name{font-size:12px!important;color:#9CA3AF!important;font-weight:500!important;text-align:center!important;transition:color .3s!important}
-	.stepper-step.active .stepper-name,.stepper-step.completed .stepper-name{color:#1F2937!important;font-weight:600!important}
-	.stepper-line{flex:1!important;height:2px!important;background:#e5e7eb!important;margin:7px 8px 0!important;max-width:40px!important;transition:background .3s!important}
-	.stepper-line.completed{background:#C91C22!important}
-	.step-counter{text-align:center!important;font-size:14px!important;color:#6B7280!important;margin:0!important;font-weight:500!important}
+	/* ===== NEW WIZARD STEPPER (horizontal with labels + values) ===== */
+	.wiz-stepper{display:flex!important;justify-content:center!important;align-items:flex-start!important;gap:0!important;margin-bottom:36px!important;padding:0 8px!important}
+	.wiz-step{display:flex!important;flex-direction:column!important;align-items:center!important;gap:6px!important;min-width:70px!important;position:relative!important}
+	.wiz-step-circle{width:36px!important;height:36px!important;border-radius:50%!important;border:2px solid #e5e7eb!important;background:#fff!important;color:#9CA3AF!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:14px!important;font-weight:600!important;transition:all .3s ease!important}
+	.wiz-step.active .wiz-step-circle{background:#C91C22!important;border-color:#C91C22!important;color:#fff!important;box-shadow:0 0 0 4px rgba(201,28,34,0.15)!important}
+	.wiz-step.completed .wiz-step-circle{background:#C91C22!important;border-color:#C91C22!important;color:#fff!important}
+	.wiz-step-label{font-size:12px!important;color:#9CA3AF!important;font-weight:500!important;text-align:center!important;transition:color .3s!important}
+	.wiz-step.active .wiz-step-label,.wiz-step.completed .wiz-step-label{color:#1F2937!important;font-weight:600!important}
+	.wiz-step-value{font-size:11px!important;color:#C91C22!important;font-weight:600!important;text-align:center!important;max-width:80px!important;overflow:hidden!important;text-overflow:ellipsis!important;white-space:nowrap!important;height:14px!important}
+	.wiz-step-line{flex:1!important;height:2px!important;background:#e5e7eb!important;margin:17px 8px 0!important;max-width:50px!important;transition:background .3s!important}
+	.wiz-step-line.completed{background:#C91C22!important}
 	@media(max-width:480px){
-		.stepper-step{min-width:50px!important}
-		.stepper-name{font-size:11px!important}
-		.stepper-line{max-width:24px!important;margin:7px 4px 0!important}
+		.wiz-step{min-width:55px!important}
+		.wiz-step-circle{width:32px!important;height:32px!important;font-size:12px!important}
+		.wiz-step-label{font-size:11px!important}
+		.wiz-step-line{max-width:30px!important;margin:15px 4px 0!important}
 	}
 	
 	/* ===== TILLBAKA-KNAPP (pill med ikon) ===== */
@@ -95,7 +96,26 @@ function seniorbolaget_wizard_css() {
 	.back-btn:hover{border-color:#C91C22!important;color:#C91C22!important;background:#FFF4F2!important}
 	.back-icon{font-size:1rem!important;line-height:1!important}
 	
-	/* ===== SERVICE CARDS (med pil + checkmark) ===== */
+	/* ===== SERVICE CARDS — 2×2 VISUAL GRID ===== */
+	.svc-grid{display:grid!important;grid-template-columns:1fr 1fr!important;gap:16px!important;width:100%!important}
+	.svc-card{position:relative!important;padding:28px 20px 24px!important;background:#fff!important;border:2px solid #F3F4F6!important;border-radius:16px!important;cursor:pointer!important;text-align:center!important;transition:all .2s cubic-bezier(.34,1.56,.64,1)!important;box-shadow:0 2px 8px rgba(0,0,0,0.04)!important}
+	.svc-card:hover{border-color:#C91C22!important;transform:translateY(-4px) scale(1.02)!important;box-shadow:0 12px 32px rgba(201,28,34,0.12)!important}
+	.svc-card.selected{border-color:#C91C22!important;border-width:3px!important;background:#FFF4F2!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px rgba(201,28,34,0.2)!important}
+	.svc-card-icon{width:80px!important;height:80px!important;margin:0 auto 16px!important}
+	.svc-card-icon svg{width:100%!important;height:100%!important}
+	.svc-card-name{font-family:Rubik,sans-serif!important;font-weight:700!important;font-size:18px!important;color:#1F2937!important;margin-bottom:6px!important}
+	.svc-card-desc{font-size:13px!important;color:#6B7280!important;line-height:1.4!important}
+	.svc-card-check{position:absolute!important;top:12px!important;right:12px!important;width:28px!important;height:28px!important;background:#C91C22!important;color:#fff!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;font-size:14px!important;font-weight:bold!important;opacity:0!important;transform:scale(0)!important;transition:all .25s cubic-bezier(.34,1.56,.64,1)!important}
+	.svc-card.selected .svc-card-check{opacity:1!important;transform:scale(1)!important}
+	@media(max-width:500px){
+		.svc-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
+		.svc-card{padding:20px 12px 16px!important}
+		.svc-card-icon{width:56px!important;height:56px!important;margin-bottom:12px!important}
+		.svc-card-name{font-size:15px!important}
+		.svc-card-desc{font-size:12px!important}
+	}
+	
+	/* Legacy service-cards (fallback, hidden if svc-grid exists) */
 	.service-cards{display:grid!important;grid-template-columns:1fr!important;gap:16px!important;width:100%!important;max-width:100%!important}
 	.service-card{display:flex!important;flex-direction:row!important;align-items:center!important;gap:16px!important;padding:20px 24px!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:16px!important;cursor:pointer!important;transition:all .2s ease!important;min-height:80px!important;width:100%!important;max-width:100%!important;position:relative!important}
 	.service-card:hover{border-color:#C91C22!important;background:#FFF4F2!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px -8px rgba(201,28,34,0.15)!important}
@@ -104,12 +124,6 @@ function seniorbolaget_wizard_css() {
 	.service-info{flex:1!important;text-align:left!important}
 	.service-name{font-family:Rubik,sans-serif!important;font-size:1.125rem!important;font-weight:600!important;color:#1F2937!important;margin:0 0 4px!important;text-align:left!important}
 	.service-desc{font-size:.875rem!important;color:#6B7280!important;margin:0!important;text-align:left!important}
-	.service-indicator{position:relative!important;width:32px!important;height:32px!important;flex-shrink:0!important;display:flex!important;align-items:center!important;justify-content:center!important}
-	.service-arrow{font-size:1.25rem!important;color:#9CA3AF!important;transition:transform .2s, color .2s, opacity .2s!important;position:absolute!important}
-	.service-arrow.hidden{opacity:0!important;transform:translateX(8px)!important}
-	.service-card:hover .service-arrow:not(.hidden){color:#C91C22!important;transform:translateX(4px)!important}
-	.service-check{display:flex!important;align-items:center!important;justify-content:center!important;width:28px!important;height:28px!important;background:#C91C22!important;color:#fff!important;border-radius:50%!important;font-size:1rem!important;font-weight:bold!important;opacity:0!important;transform:scale(0.5)!important;transition:opacity .2s, transform .2s!important;position:absolute!important}
-	.service-check.visible{opacity:1!important;transform:scale(1)!important}
 	.city-search{width:100%;padding:14px 18px;border:2px solid #e5e7eb;border-radius:50px;font-size:1rem;margin-bottom:16px;background:#fff;box-sizing:border-box}
 	.city-search:focus{outline:none;border-color:#C91C22}
 	.city-list{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0;max-height:320px;overflow-y:auto}
@@ -257,7 +271,8 @@ function seniorbolaget_wizard_js() {
 			
 			selectService(service) {
 				this.formData.service = service;
-				this.step = 2;
+				// Brief delay to show selection animation before advancing
+				setTimeout(() => { this.step = 2; }, 300);
 			},
 			
 			filterCities() {
@@ -312,6 +327,17 @@ function seniorbolaget_wizard_js() {
 			getCityName() {
 				const city = this.cities.find(c => c.value === this.formData.city);
 				return city ? city.name : '';
+			},
+			
+			getStepNum(n) {
+				return this.step > n ? '\u2713' : String(n);
+			},
+			
+			getStepVal(n) {
+				if (this.step <= n) return '';
+				if (n === 1) return this.getServiceName();
+				if (n === 2) return this.getCityName();
+				return '';
 			},
 			
 			canProceedStep3() {

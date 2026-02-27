@@ -1,0 +1,138 @@
+{
+  "total": 26,
+  "passed": 9,
+  "needs_fix": 17,
+  "all_pass": false,
+  "results": [
+    {
+      "city": "Åmål",
+      "slug": "amal",
+      "score": 7.0
+    },
+    {
+      "city": "Borås",
+      "slug": "boras",
+      "score": 7.0
+    },
+    {
+      "city": "Eskilstuna",
+      "slug": "eskilstuna",
+      "score": 9.0
+    },
+    {
+      "city": "Falkenberg",
+      "slug": "falkenberg",
+      "score": 8.4
+    },
+    {
+      "city": "Göteborg",
+      "slug": "goteborg",
+      "score": 9.4
+    },
+    {
+      "city": "Halmstad",
+      "slug": "halmstad",
+      "score": 7.0
+    },
+    {
+      "city": "Helsingborg",
+      "slug": "helsingborg",
+      "score": 7.0
+    },
+    {
+      "city": "Jönköping",
+      "slug": "jonkoping",
+      "score": 7.0
+    },
+    {
+      "city": "Karlstad",
+      "slug": "karlstad",
+      "score": 8.2
+    },
+    {
+      "city": "Kristianstad",
+      "slug": "kristianstad",
+      "score": 8.0
+    },
+    {
+      "city": "Kungälv",
+      "slug": "kungalv",
+      "score": 7.0
+    },
+    {
+      "city": "Kungsbacka",
+      "slug": "kungsbacka",
+      "score": 9.0
+    },
+    {
+      "city": "Laholm/Båstad",
+      "slug": "laholm",
+      "score": 9.0
+    },
+    {
+      "city": "Landskrona",
+      "slug": "landskrona",
+      "score": 8.8
+    },
+    {
+      "city": "Lerum/Partille",
+      "slug": "lerum",
+      "score": 9.0
+    },
+    {
+      "city": "Mölndal/Härryda",
+      "slug": "molndal",
+      "score": 8.0
+    },
+    {
+      "city": "Nässjö",
+      "slug": "nassjo",
+      "score": 8.0
+    },
+    {
+      "city": "Örebro",
+      "slug": "orebro",
+      "score": 7.0
+    },
+    {
+      "city": "Skövde",
+      "slug": "skovde",
+      "score": 9.0
+    },
+    {
+      "city": "Stenungsund",
+      "slug": "stenungsund",
+      "score": 9.0
+    },
+    {
+      "city": "Sundsvall",
+      "slug": "sundsvall",
+      "score": 7.8
+    },
+    {
+      "city": "Torsby",
+      "slug": "torsby",
+      "score": 8.6
+    },
+    {
+      "city": "Trelleborg",
+      "slug": "trelleborg",
+      "score": 9.0
+    },
+    {
+      "city": "Trollhättan",
+      "slug": "trollhattan",
+      "score": 8.0
+    },
+    {
+      "city": "Ulricehamn",
+      "slug": "ulricehamn",
+      "score": 9.0
+    },
+    {
+      "city": "Varberg",
+      "slug": "varberg",
+      "score": 7.0
+    }
+  ]
+}
