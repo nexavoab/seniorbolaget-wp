@@ -31,6 +31,212 @@
 <!-- /wp:html -->
 
 
+<!-- JOBBANSÖKAN WIZARD (WAS-74) -->
+<!-- wp:html -->
+<div class="job-wizard-container" x-data="jobWizardApp()" x-cloak>
+    <div class="job-wizard-inner">
+        
+        <!-- Progress bar - 4 steps -->
+        <div class="job-stepper">
+            <div class="job-stepper-steps">
+                <div class="job-stepper-step" :class="{ 'active': step === 1, 'completed': step > 1 }">
+                    <div class="job-stepper-dot"></div>
+                    <span class="job-stepper-name">Stad</span>
+                </div>
+                <div class="job-stepper-line" :class="{ 'completed': step > 1 }"></div>
+                <div class="job-stepper-step" :class="{ 'active': step === 2, 'completed': step > 2 }">
+                    <div class="job-stepper-dot"></div>
+                    <span class="job-stepper-name">Tjänst</span>
+                </div>
+                <div class="job-stepper-line" :class="{ 'completed': step > 2 }"></div>
+                <div class="job-stepper-step" :class="{ 'active': step === 3, 'completed': step > 3 }">
+                    <div class="job-stepper-dot"></div>
+                    <span class="job-stepper-name">Erfarenhet</span>
+                </div>
+                <div class="job-stepper-line" :class="{ 'completed': step > 3 }"></div>
+                <div class="job-stepper-step" :class="{ 'active': step === 4, 'completed': step > 4 }">
+                    <div class="job-stepper-dot"></div>
+                    <span class="job-stepper-name">Kontakt</span>
+                </div>
+            </div>
+            <p class="job-step-counter" x-show="step < 5">Steg <span x-text="step"></span> av 4</p>
+        </div>
+        
+        <!-- STEP 1: Choose city -->
+        <div x-show="step === 1" x-transition>
+            <div class="job-wizard-header">
+                <h2 class="job-wizard-title">Var vill du jobba?</h2>
+                <p class="job-wizard-subtitle">Välj den ort som passar dig bäst</p>
+            </div>
+            
+            <div class="job-city-select">
+                <select x-model="formData.city" @change="if(formData.city) step = 2" class="job-select-input">
+                    <option value="">Välj stad...</option>
+                    <template x-for="city in cities" :key="city.value">
+                        <option :value="city.value" x-text="city.name"></option>
+                    </template>
+                </select>
+            </div>
+        </div>
+        
+        <!-- STEP 2: Choose service -->
+        <div x-show="step === 2" x-transition>
+            <button class="job-back-btn" @click="step = 1" type="button">← Tillbaka</button>
+            
+            <div class="job-wizard-header">
+                <h2 class="job-wizard-title">Vad kan du hjälpa med?</h2>
+                <p class="job-wizard-subtitle">Välj en eller flera tjänster</p>
+            </div>
+            
+            <div class="job-service-cards">
+                <div class="job-service-card" @click="selectService('stadning')" :class="{ 'selected': formData.service === 'stadning' }">
+                    <span class="job-service-icon">🧹</span>
+                    <div class="job-service-info">
+                        <p class="job-service-name">Städning</p>
+                        <p class="job-service-desc">Hemstädning och liknande</p>
+                    </div>
+                </div>
+                <div class="job-service-card" @click="selectService('tradgard')" :class="{ 'selected': formData.service === 'tradgard' }">
+                    <span class="job-service-icon">🌿</span>
+                    <div class="job-service-info">
+                        <p class="job-service-name">Trädgård</p>
+                        <p class="job-service-desc">Gräsklippning, häck, ogräs</p>
+                    </div>
+                </div>
+                <div class="job-service-card" @click="selectService('snickeri')" :class="{ 'selected': formData.service === 'snickeri' }">
+                    <span class="job-service-icon">🔨</span>
+                    <div class="job-service-info">
+                        <p class="job-service-name">Snickeri</p>
+                        <p class="job-service-desc">Reparationer och bygge</p>
+                    </div>
+                </div>
+                <div class="job-service-card" @click="selectService('malning')" :class="{ 'selected': formData.service === 'malning' }">
+                    <span class="job-service-icon">🎨</span>
+                    <div class="job-service-info">
+                        <p class="job-service-name">Målning</p>
+                        <p class="job-service-desc">Invändigt och utvändigt</p>
+                    </div>
+                </div>
+                <div class="job-service-card" @click="selectService('flera')" :class="{ 'selected': formData.service === 'flera' }">
+                    <span class="job-service-icon">✨</span>
+                    <div class="job-service-info">
+                        <p class="job-service-name">Flera</p>
+                        <p class="job-service-desc">Jag kan hjälpa med flera saker</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STEP 3: Experience -->
+        <div x-show="step === 3" x-transition>
+            <button class="job-back-btn" @click="step = 2" type="button">← Tillbaka</button>
+            
+            <div class="job-wizard-header">
+                <h2 class="job-wizard-title">Hur länge har du jobbat med detta?</h2>
+                <p class="job-wizard-subtitle">Din erfarenhet inom <span x-text="getServiceName()"></span></p>
+            </div>
+            
+            <div class="job-experience-cards">
+                <div class="job-exp-card" @click="selectExperience('1-5')" :class="{ 'selected': formData.experience === '1-5' }">
+                    <span class="job-exp-years">1-5</span>
+                    <span class="job-exp-label">år</span>
+                </div>
+                <div class="job-exp-card" @click="selectExperience('5-10')" :class="{ 'selected': formData.experience === '5-10' }">
+                    <span class="job-exp-years">5-10</span>
+                    <span class="job-exp-label">år</span>
+                </div>
+                <div class="job-exp-card" @click="selectExperience('10+')" :class="{ 'selected': formData.experience === '10+' }">
+                    <span class="job-exp-years">10+</span>
+                    <span class="job-exp-label">år</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STEP 4: Contact info -->
+        <div x-show="step === 4" x-transition>
+            <button class="job-back-btn" @click="step = 3" type="button">← Tillbaka</button>
+            
+            <div class="job-wizard-header">
+                <h2 class="job-wizard-title">Dina kontaktuppgifter</h2>
+                <p class="job-wizard-subtitle">Så vi kan höra av oss till dig</p>
+            </div>
+            
+            <div x-show="errorMsg" class="job-error-msg" x-text="errorMsg"></div>
+            
+            <div class="job-form-group">
+                <label class="job-form-label">Namn</label>
+                <input type="text" class="job-form-input" placeholder="Ditt namn" x-model="formData.name" required>
+            </div>
+            
+            <div class="job-form-group">
+                <label class="job-form-label">Telefon</label>
+                <input type="tel" class="job-form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
+            </div>
+            
+            <div class="job-form-group">
+                <label class="job-form-label">E-post</label>
+                <input type="email" class="job-form-input" placeholder="din@email.se" x-model="formData.email" required>
+            </div>
+            
+            <div class="job-gdpr-check">
+                <input type="checkbox" id="job-gdpr" x-model="formData.gdprConsent">
+                <label for="job-gdpr" class="job-gdpr-text">
+                    Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy" target="_blank">integritetspolicy</a>.
+                </label>
+            </div>
+            
+            <button class="job-submit-btn" @click="submitForm()" :disabled="!canSubmit() || isSubmitting" type="button">
+                <span x-show="isSubmitting" class="job-spinner"></span>
+                <span x-text="isSubmitting ? 'Skickar...' : 'Skicka ansökan →'"></span>
+            </button>
+        </div>
+        
+        <!-- STEP 5: Thank you -->
+        <div x-show="step === 5" x-transition>
+            <div class="job-thank-you">
+                <div class="job-thank-icon">✓</div>
+                <h2 class="job-thank-title">Tack för din ansökan!</h2>
+                <p class="job-thank-text">Vi har tagit emot din ansökan och återkommer inom kort.</p>
+                
+                <div class="job-thank-summary">
+                    <div class="job-summary-row">
+                        <span class="job-summary-label">Stad</span>
+                        <span class="job-summary-value" x-text="getCityName()"></span>
+                    </div>
+                    <div class="job-summary-row">
+                        <span class="job-summary-label">Tjänst</span>
+                        <span class="job-summary-value" x-text="getServiceName()"></span>
+                    </div>
+                    <div class="job-summary-row">
+                        <span class="job-summary-label">Erfarenhet</span>
+                        <span class="job-summary-value" x-text="formData.experience + ' år'"></span>
+                    </div>
+                    <div class="job-summary-row">
+                        <span class="job-summary-label">Namn</span>
+                        <span class="job-summary-value" x-text="formData.name"></span>
+                    </div>
+                </div>
+                
+                <a href="/" class="job-back-home-btn">Tillbaka till startsidan</a>
+            </div>
+        </div>
+        
+        <!-- Trust bar -->
+        <div class="job-trust-bar" x-show="step < 5">
+            <span class="job-trust-item"><span class="job-trust-check">✓</span> Flexibla tider</span>
+            <span class="job-trust-item"><span class="job-trust-check">✓</span> Inga krav</span>
+            <span class="job-trust-item"><span class="job-trust-check">✓</span> Du bestämmer</span>
+        </div>
+        
+        <div class="job-phone-banner" x-show="step < 5">
+            Hellre ringa? <a href="tel:0101751900">010-175 19 00</a>
+        </div>
+        
+    </div>
+</div>
+<!-- /wp:html -->
+
+
 <!-- VI SÖKER NU SECTION (NYTT) -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#C91C22"},"spacing":{"padding":{"top":"40px","bottom":"40px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#C91C22;margin-top:0;padding-top:40px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:40px;padding-left:clamp(24px, 5vw, 80px)">

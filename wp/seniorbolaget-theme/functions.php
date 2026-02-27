@@ -797,6 +797,316 @@ function seniorbolaget_wizard_submit() {
 
 
 
+// ===== JOBBANSÖKAN WIZARD CSS (WAS-74) =====
+function seniorbolaget_job_wizard_css() {
+    ?>
+    <style id="seniorbolaget-job-wizard-css">
+    /* Job Wizard Container */
+    .job-wizard-container{all:initial!important;display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FFF4F2!important;padding:60px 24px!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
+    .job-wizard-container *,.job-wizard-container *::before,.job-wizard-container *::after{box-sizing:border-box!important}
+    .job-wizard-inner{display:block!important;max-width:560px!important;width:100%!important;margin:0 auto!important;padding:0!important}
+    
+    /* Header */
+    .job-wizard-header{text-align:center!important;margin-bottom:28px!important}
+    .job-wizard-title{font-family:Rubik,sans-serif!important;font-size:clamp(1.5rem,4vw,2rem)!important;font-weight:700!important;color:#1F2937!important;margin:0 0 8px!important;line-height:1.2!important}
+    .job-wizard-subtitle{font-size:1rem!important;color:#6B7280!important;margin:0!important}
+    
+    /* Stepper */
+    .job-stepper{margin-bottom:32px!important}
+    .job-stepper-steps{display:flex!important;justify-content:center!important;align-items:flex-start!important;gap:0!important;margin-bottom:12px!important}
+    .job-stepper-step{display:flex!important;flex-direction:column!important;align-items:center!important;gap:8px!important;min-width:60px!important}
+    .job-stepper-dot{width:14px!important;height:14px!important;border-radius:50%!important;background:#e5e7eb!important;transition:all .3s!important;border:2px solid transparent!important}
+    .job-stepper-step.active .job-stepper-dot{background:#C91C22!important;border-color:#C91C22!important;box-shadow:0 0 0 4px rgba(201,28,34,0.15)!important}
+    .job-stepper-step.completed .job-stepper-dot{background:#C91C22!important;border-color:#C91C22!important}
+    .job-stepper-name{font-size:12px!important;color:#9CA3AF!important;font-weight:500!important;text-align:center!important;transition:color .3s!important}
+    .job-stepper-step.active .job-stepper-name,.job-stepper-step.completed .job-stepper-name{color:#1F2937!important;font-weight:600!important}
+    .job-stepper-line{flex:1!important;height:2px!important;background:#e5e7eb!important;margin:7px 8px 0!important;max-width:40px!important;transition:background .3s!important}
+    .job-stepper-line.completed{background:#C91C22!important}
+    .job-step-counter{text-align:center!important;font-size:14px!important;color:#6B7280!important;margin:0!important;font-weight:500!important}
+    
+    /* Back button */
+    .job-back-btn{display:inline-flex!important;align-items:center!important;gap:8px!important;color:#4B5563!important;font-size:.9375rem!important;font-weight:600!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:50px!important;cursor:pointer!important;padding:10px 20px!important;margin-bottom:20px!important;transition:all .2s!important}
+    .job-back-btn:hover{border-color:#C91C22!important;color:#C91C22!important;background:#fff!important}
+    
+    /* City Select */
+    .job-city-select{margin-bottom:24px!important}
+    .job-select-input{width:100%!important;padding:16px 20px!important;border:2px solid #e5e7eb!important;border-radius:50px!important;font-size:1rem!important;font-family:Inter,sans-serif!important;color:#1F2937!important;background:#fff!important;cursor:pointer!important;appearance:none!important;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%236B7280' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E")!important;background-repeat:no-repeat!important;background-position:right 16px center!important;background-size:20px!important}
+    .job-select-input:focus{outline:none!important;border-color:#C91C22!important}
+    
+    /* Service Cards */
+    .job-service-cards{display:grid!important;grid-template-columns:1fr!important;gap:12px!important}
+    .job-service-card{display:flex!important;align-items:center!important;gap:16px!important;padding:18px 22px!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:16px!important;cursor:pointer!important;transition:all .2s!important}
+    .job-service-card:hover{border-color:#C91C22!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px -8px rgba(201,28,34,0.15)!important}
+    .job-service-card.selected{border-color:#C91C22!important;background:#fff!important;border-width:3px!important}
+    .job-service-icon{font-size:1.75rem!important;width:44px!important;text-align:center!important;flex-shrink:0!important}
+    .job-service-info{flex:1!important}
+    .job-service-name{font-family:Rubik,sans-serif!important;font-size:1.0625rem!important;font-weight:600!important;color:#1F2937!important;margin:0 0 2px!important}
+    .job-service-desc{font-size:.8125rem!important;color:#6B7280!important;margin:0!important}
+    
+    /* Experience Cards */
+    .job-experience-cards{display:grid!important;grid-template-columns:repeat(3,1fr)!important;gap:16px!important}
+    .job-exp-card{display:flex!important;flex-direction:column!important;align-items:center!important;justify-content:center!important;padding:28px 20px!important;background:#fff!important;border:2px solid #e5e7eb!important;border-radius:16px!important;cursor:pointer!important;transition:all .2s!important}
+    .job-exp-card:hover{border-color:#C91C22!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px -8px rgba(201,28,34,0.15)!important}
+    .job-exp-card.selected{border-color:#C91C22!important;background:#fff!important;border-width:3px!important}
+    .job-exp-years{font-family:Rubik,sans-serif!important;font-size:2rem!important;font-weight:700!important;color:#C91C22!important;line-height:1!important}
+    .job-exp-label{font-size:.875rem!important;color:#6B7280!important;margin-top:4px!important}
+    
+    /* Form inputs */
+    .job-form-group{margin-bottom:18px!important}
+    .job-form-label{display:block!important;font-family:Rubik,sans-serif!important;font-size:.9375rem!important;font-weight:600!important;color:#1F2937!important;margin-bottom:8px!important}
+    .job-form-input{width:100%!important;padding:14px 18px!important;border:2px solid #e5e7eb!important;border-radius:50px!important;font-size:1rem!important;font-family:Inter,sans-serif!important;color:#1F2937!important;background:#fff!important}
+    .job-form-input:focus{outline:none!important;border-color:#C91C22!important}
+    
+    /* GDPR */
+    .job-gdpr-check{display:flex!important;align-items:flex-start!important;gap:12px!important;padding:16px!important;background:#fff!important;border-radius:12px!important;margin-top:20px!important}
+    .job-gdpr-check input{width:22px!important;height:22px!important;accent-color:#C91C22!important;margin-top:2px!important;flex-shrink:0!important}
+    .job-gdpr-text{font-size:.875rem!important;color:#4B5563!important;line-height:1.5!important}
+    .job-gdpr-text a{color:#C91C22!important}
+    
+    /* Submit button */
+    .job-submit-btn{width:100%!important;padding:18px 32px!important;background:#C91C22!important;color:#fff!important;border:none!important;border-radius:50px!important;font-size:1.125rem!important;font-weight:700!important;font-family:Rubik,sans-serif!important;cursor:pointer!important;transition:background .2s!important;margin-top:16px!important;display:flex!important;align-items:center!important;justify-content:center!important;gap:8px!important}
+    .job-submit-btn:hover:not(:disabled){background:#a01519!important}
+    .job-submit-btn:disabled{background:#ccc!important;cursor:not-allowed!important}
+    
+    /* Error */
+    .job-error-msg{background:#fee2e2!important;color:#991b1b!important;padding:12px 16px!important;border-radius:8px!important;font-size:.875rem!important;margin-bottom:16px!important}
+    
+    /* Thank you */
+    .job-thank-you{text-align:center!important;padding:40px 24px!important;background:#fff!important;border-radius:20px!important}
+    .job-thank-icon{width:80px!important;height:80px!important;background:#d4edda!important;border-radius:50%!important;display:flex!important;align-items:center!important;justify-content:center!important;margin:0 auto 24px!important;font-size:2.5rem!important;color:#155724!important}
+    .job-thank-title{font-family:Rubik,sans-serif!important;font-size:1.5rem!important;font-weight:700!important;color:#1F2937!important;margin:0 0 12px!important}
+    .job-thank-text{font-size:1rem!important;color:#6B7280!important;margin:0 0 24px!important;line-height:1.6!important}
+    .job-thank-summary{background:#FAFAF8!important;border-radius:12px!important;padding:20px!important;text-align:left!important;margin-bottom:24px!important}
+    .job-summary-row{display:flex!important;justify-content:space-between!important;padding:8px 0!important;border-bottom:1px solid #e5e7eb!important;font-size:.9375rem!important}
+    .job-summary-row:last-child{border-bottom:none!important}
+    .job-summary-label{color:#6B7280!important}
+    .job-summary-value{color:#1F2937!important;font-weight:500!important}
+    .job-back-home-btn{display:inline-block!important;padding:14px 28px!important;background:#C91C22!important;color:#fff!important;border-radius:50px!important;font-weight:600!important;text-decoration:none!important}
+    .job-back-home-btn:hover{background:#a01519!important}
+    
+    /* Trust bar */
+    .job-trust-bar{display:flex!important;justify-content:center!important;gap:20px!important;flex-wrap:wrap!important;margin-top:32px!important;padding-top:24px!important;border-top:1px solid rgba(201,28,34,0.15)!important}
+    .job-trust-item{display:inline-flex!important;align-items:center!important;gap:6px!important;font-size:.875rem!important;color:#4B5563!important}
+    .job-trust-check{color:#C91C22!important;font-weight:bold!important}
+    .job-phone-banner{text-align:center!important;padding:16px!important;font-size:1rem!important;color:#4B5563!important;margin-top:16px!important}
+    .job-phone-banner a{color:#C91C22!important;font-weight:700!important;text-decoration:none!important}
+    
+    /* Spinner */
+    .job-spinner{display:inline-block!important;width:20px!important;height:20px!important;border:3px solid #fff!important;border-top-color:transparent!important;border-radius:50%!important;animation:jobspin .8s linear infinite!important}
+    @keyframes jobspin{to{transform:rotate(360deg)}}
+    
+    /* Responsive */
+    @media(max-width:480px){
+        .job-stepper-step{min-width:50px!important}
+        .job-stepper-name{font-size:11px!important}
+        .job-stepper-line{max-width:20px!important;margin:7px 4px 0!important}
+        .job-experience-cards{grid-template-columns:1fr!important}
+        .job-exp-card{flex-direction:row!important;justify-content:flex-start!important;gap:12px!important;padding:20px 24px!important}
+        .job-trust-bar{flex-direction:column!important;gap:10px!important;align-items:center!important}
+    }
+    </style>
+    <?php
+}
+add_action('wp_head', 'seniorbolaget_job_wizard_css');
+
+// ===== JOBBANSÖKAN WIZARD JS (WAS-74) =====
+function seniorbolaget_job_wizard_js() {
+    ?>
+    <script>
+    function jobWizardApp() {
+        return {
+            step: 1,
+            isSubmitting: false,
+            errorMsg: '',
+            
+            cities: [
+                { name: 'Åmål', value: 'amal' },
+                { name: 'Borås', value: 'boras' },
+                { name: 'Eskilstuna', value: 'eskilstuna' },
+                { name: 'Falkenberg', value: 'falkenberg' },
+                { name: 'Göteborg', value: 'goteborg' },
+                { name: 'Halmstad', value: 'halmstad' },
+                { name: 'Helsingborg', value: 'helsingborg' },
+                { name: 'Jönköping', value: 'jonkoping' },
+                { name: 'Karlstad', value: 'karlstad' },
+                { name: 'Kristianstad', value: 'kristianstad' },
+                { name: 'Kungsbacka', value: 'kungsbacka' },
+                { name: 'Kungälv', value: 'kungalv' },
+                { name: 'Laholm/Båstad', value: 'laholm-bastad' },
+                { name: 'Landskrona', value: 'landskrona' },
+                { name: 'Lerum/Partille', value: 'lerum-partille' },
+                { name: 'Mölndal/Härryda', value: 'molndal-harryda' },
+                { name: 'Nässjö', value: 'nassjo' },
+                { name: 'Örebro', value: 'orebro' },
+                { name: 'Skövde', value: 'skovde' },
+                { name: 'Stenungsund', value: 'stenungsund' },
+                { name: 'Sundsvall', value: 'sundsvall' },
+                { name: 'Torsby', value: 'torsby' },
+                { name: 'Trelleborg', value: 'trelleborg' },
+                { name: 'Trollhättan', value: 'trollhattan' },
+                { name: 'Ulricehamn', value: 'ulricehamn' },
+                { name: 'Varberg', value: 'varberg' }
+            ],
+            
+            formData: {
+                city: '',
+                service: '',
+                experience: '',
+                name: '',
+                phone: '',
+                email: '',
+                gdprConsent: false
+            },
+            
+            selectService(service) {
+                this.formData.service = service;
+                this.step = 3;
+            },
+            
+            selectExperience(exp) {
+                this.formData.experience = exp;
+                this.step = 4;
+            },
+            
+            getServiceName() {
+                const names = {
+                    'stadning': 'Städning',
+                    'tradgard': 'Trädgård',
+                    'snickeri': 'Snickeri',
+                    'malning': 'Målning',
+                    'flera': 'Flera tjänster'
+                };
+                return names[this.formData.service] || '';
+            },
+            
+            getCityName() {
+                const city = this.cities.find(c => c.value === this.formData.city);
+                return city ? city.name : '';
+            },
+            
+            canSubmit() {
+                return this.formData.name && 
+                       this.formData.phone && 
+                       this.formData.email && 
+                       this.formData.gdprConsent;
+            },
+            
+            async submitForm() {
+                if (!this.canSubmit()) return;
+                
+                this.isSubmitting = true;
+                this.errorMsg = '';
+                
+                const data = new FormData();
+                data.append('action', 'sb_job_application');
+                data.append('city', this.formData.city);
+                data.append('service', this.formData.service);
+                data.append('experience', this.formData.experience);
+                data.append('name', this.formData.name);
+                data.append('phone', this.formData.phone);
+                data.append('email', this.formData.email);
+                
+                try {
+                    const response = await fetch('/wp-admin/admin-ajax.php', {
+                        method: 'POST',
+                        body: data
+                    });
+                    const result = await response.json();
+                    
+                    if (result.success) {
+                        this.step = 5;
+                    } else {
+                        this.errorMsg = result.data?.message || 'Något gick fel. Försök igen eller ring oss.';
+                    }
+                } catch (error) {
+                    this.errorMsg = 'Kunde inte skicka ansökan. Kontrollera din internetanslutning.';
+                }
+                
+                this.isSubmitting = false;
+            }
+        }
+    }
+    </script>
+    <?php
+}
+add_action('wp_head', 'seniorbolaget_job_wizard_js', 99);
+
+// ===== JOBBANSÖKAN AJAX HANDLER (WAS-74) =====
+add_action('wp_ajax_sb_job_application', 'sb_job_application_handler');
+add_action('wp_ajax_nopriv_sb_job_application', 'sb_job_application_handler');
+
+function sb_job_application_handler() {
+    $city = sanitize_text_field($_POST['city'] ?? '');
+    $service = sanitize_text_field($_POST['service'] ?? '');
+    $experience = sanitize_text_field($_POST['experience'] ?? '');
+    $name = sanitize_text_field($_POST['name'] ?? '');
+    $phone = sanitize_text_field($_POST['phone'] ?? '');
+    $email = sanitize_email($_POST['email'] ?? '');
+    
+    if (empty($city) || empty($service) || empty($experience) || empty($name) || empty($phone) || empty($email)) {
+        wp_send_json_error(['message' => 'Vänligen fyll i alla fält.']);
+        return;
+    }
+    
+    // Map values to readable names
+    $service_names = [
+        'stadning' => 'Städning',
+        'tradgard' => 'Trädgård',
+        'snickeri' => 'Snickeri',
+        'malning' => 'Målning',
+        'flera' => 'Flera tjänster'
+    ];
+    $service_name = $service_names[$service] ?? $service;
+    
+    $city_names = [
+        'amal' => 'Åmål', 'boras' => 'Borås', 'eskilstuna' => 'Eskilstuna',
+        'falkenberg' => 'Falkenberg', 'goteborg' => 'Göteborg', 'halmstad' => 'Halmstad',
+        'helsingborg' => 'Helsingborg', 'jonkoping' => 'Jönköping', 'karlstad' => 'Karlstad',
+        'kristianstad' => 'Kristianstad', 'kungsbacka' => 'Kungsbacka', 'kungalv' => 'Kungälv',
+        'laholm-bastad' => 'Laholm/Båstad', 'landskrona' => 'Landskrona',
+        'lerum-partille' => 'Lerum/Partille', 'molndal-harryda' => 'Mölndal/Härryda',
+        'nassjo' => 'Nässjö', 'orebro' => 'Örebro', 'skovde' => 'Skövde',
+        'stenungsund' => 'Stenungsund', 'sundsvall' => 'Sundsvall', 'torsby' => 'Torsby',
+        'trelleborg' => 'Trelleborg', 'trollhattan' => 'Trollhättan',
+        'ulricehamn' => 'Ulricehamn', 'varberg' => 'Varberg'
+    ];
+    $city_name = $city_names[$city] ?? $city;
+    
+    // Build email
+    $body = "NY JOBBANSÖKAN FRÅN JOBBA MED OSS\n";
+    $body .= "==================================\n\n";
+    $body .= "SÖKANDE\n";
+    $body .= "-------\n";
+    $body .= "Namn: {$name}\n";
+    $body .= "Telefon: {$phone}\n";
+    $body .= "E-post: {$email}\n\n";
+    $body .= "UPPGIFTER\n";
+    $body .= "---------\n";
+    $body .= "Stad: {$city_name}\n";
+    $body .= "Tjänst: {$service_name}\n";
+    $body .= "Erfarenhet: {$experience} år\n\n";
+    $body .= "--------------------------------\n";
+    $body .= "Skickat från jobbansökan-wizard\n";
+    $body .= "Tidpunkt: " . current_time('Y-m-d H:i:s') . "\n";
+    
+    $to = 'info@seniorbolaget.se';
+    $subject = "[Jobbansökan] {$name} - {$city_name} ({$service_name})";
+    $headers = [
+        'Content-Type: text/plain; charset=UTF-8',
+        'From: Seniorbolaget <no-reply@seniorbolaget.se>',
+        'Reply-To: ' . $name . ' <' . $email . '>'
+    ];
+    
+    $sent = wp_mail($to, $subject, $body, $headers);
+    
+    if ($sent) {
+        wp_send_json_success(['message' => 'Ansökan skickad!']);
+    } else {
+        error_log('Seniorbolaget job wizard: Failed to send email for ' . $name . ' (' . $email . ')');
+        wp_send_json_error(['message' => 'Kunde inte skicka ansökan. Ring oss på 010-175 19 00.']);
+    }
+}
+
 // ===== INTENTIONS BAR (WAS-68) — inline script approach =====
 function sb_add_intentions_bar() {
     $html = '<style>
