@@ -58,17 +58,48 @@ function seniorbolaget_scripts() {
 }
 
 /**
- * Wizard CSS för intresseanmälan
+ * Wizard CSS för intresseanmälan (WAS-87: fullscreen)
  */
 function seniorbolaget_wizard_css() {
 	// Temporärt: ladda alltid för debugging
 	?>
 	<style id="seniorbolaget-wizard-css">
-	/* Hard reset for WP layout conflicts - break out completely */
-	.entry-content .wizard-container{all:initial!important;display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FAFAF8!important;min-height:80vh!important;padding:110px 0 0!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
+	/* ===== WAS-87: FULLSCREEN WIZARD ===== */
+	.entry-content .wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;height:100vh!important;padding-top:90px!important;padding-bottom:120px!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:hidden!important}
 	.wizard-container *,.wizard-container *::before,.wizard-container *::after{box-sizing:border-box!important}
-	.wizard-container .wizard-inner{display:block!important;max-width:700px!important;width:100%!important;margin:0 auto!important;padding:40px 48px 60px!important;background:#FAFAF8!important;border-radius:20px!important;box-shadow:0 20px 60px rgba(0,0,0,0.08)!important}
-	@media(max-width:600px){.wizard-container .wizard-inner{padding:24px 20px 40px!important;border-radius:0!important;box-shadow:none!important}}
+	.wizard-container .wizard-inner{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:16px 32px 0!important;background:transparent!important;border-radius:0!important;box-shadow:none!important}
+	/* Stepper compact */
+	.wizard-container .wiz-stepper{flex-shrink:0!important;margin-bottom:12px!important}
+	/* Wizard title compact */
+	.wizard-container .wizard-title{font-size:clamp(1.25rem,2.5vw,1.75rem)!important;margin-bottom:4px!important}
+	.wizard-container .wizard-subtitle{font-size:0.9375rem!important;margin-bottom:12px!important}
+	.wizard-container .wizard-header{margin-bottom:16px!important}
+	/* svc-grid + service-cards fills remaining space (2×2 grid) */
+	.wizard-container .svc-grid,.wizard-container .service-cards{display:grid!important;grid-template-columns:repeat(2,1fr)!important;grid-template-rows:repeat(2,1fr)!important;gap:14px!important;flex:1!important;min-height:0!important;width:100%!important}
+	/* svc-card + service-card fills cell */
+	.wizard-container .svc-card,.wizard-container .service-card{height:100%!important;min-height:0!important;display:flex!important;flex-direction:column!important;justify-content:center!important;align-items:center!important;padding:24px 16px!important;border-radius:16px!important;background:#fff!important;border:2px solid #e5e7eb!important;cursor:pointer!important;transition:all 0.2s ease!important;animation:sb-card-in 0.5s ease both!important;text-align:center!important}
+	.wizard-container .svc-card.active,.wizard-container .svc-card:hover,.wizard-container .service-card.active,.wizard-container .service-card:hover{border-color:#C91C22!important;background:#FFF4F2!important;transform:scale(1.02)!important}
+	.wizard-container .svc-card.selected,.wizard-container .service-card.selected{border-color:#C91C22!important;background:#FFF4F2!important;border-width:3px!important;transform:scale(1.02)!important}
+	/* Service-card inner elements centered */
+	.wizard-container .service-card .service-icon{font-size:2.5rem!important;margin-bottom:12px!important;width:auto!important}
+	.wizard-container .service-card .service-info{text-align:center!important;flex:none!important}
+	.wizard-container .service-card .service-name{text-align:center!important;font-size:1.125rem!important;margin-bottom:4px!important}
+	.wizard-container .service-card .service-desc{text-align:center!important;font-size:0.875rem!important}
+	/* Staggered animation */
+	@keyframes sb-card-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+	.wizard-container .svc-card:nth-child(1),.wizard-container .service-card:nth-child(1){animation-delay:0.05s!important}
+	.wizard-container .svc-card:nth-child(2),.wizard-container .service-card:nth-child(2){animation-delay:0.12s!important}
+	.wizard-container .svc-card:nth-child(3),.wizard-container .service-card:nth-child(3){animation-delay:0.19s!important}
+	.wizard-container .svc-card:nth-child(4),.wizard-container .service-card:nth-child(4){animation-delay:0.26s!important}
+	/* Buttons sticky at bottom */
+	.wizard-container .next-btn,.wizard-container .back-btn{flex-shrink:0!important;margin-top:12px!important}
+	/* Mobile */
+	@media(max-width:768px){
+		.entry-content .wizard-container{height:auto!important;min-height:100vh!important;overflow-y:auto!important;padding-top:100px!important}
+		.wizard-container .wizard-inner{padding:12px 16px 0!important}
+		.wizard-container .svc-grid,.wizard-container .service-cards{grid-template-rows:auto!important;flex:none!important}
+		.wizard-container .service-card{flex-direction:column!important}
+	}
 	.wizard-header{text-align:center!important;margin-bottom:32px!important;display:block!important;width:100%!important;max-width:100%!important}
 	.wizard-title{font-family:Rubik,sans-serif!important;font-size:clamp(1.5rem,4vw,2rem)!important;font-weight:700!important;color:#1F2937!important;margin:0 0 8px!important;line-height:1.2!important;text-align:center!important;width:100%!important;max-width:100%!important}
 	.wizard-subtitle{font-size:1rem!important;color:#6B7280!important;margin:0!important;text-align:center!important;width:100%!important;max-width:100%!important}
@@ -261,6 +292,8 @@ function seniorbolaget_wizard_js() {
 				notes: '',
 				name: '',
 				phone: '',
+				email: '',
+				address: '',
 				contactMethod: 'ring',
 				gdprConsent: false
 			},
@@ -269,10 +302,25 @@ function seniorbolaget_wizard_js() {
 				this.filteredCities = this.cities;
 			},
 			
+			resetCardAnimations() {
+				this.$nextTick(() => {
+					document.querySelectorAll('.wizard-container .svc-card, .wizard-container .city-item, .wizard-container .service-card').forEach(el => {
+						el.style.animation = 'none';
+						el.offsetHeight; // force reflow
+						el.style.animation = null;
+					});
+				});
+			},
+			
+			goToStep(n) {
+				this.step = n;
+				this.resetCardAnimations();
+			},
+			
 			selectService(service) {
 				this.formData.service = service;
 				// Brief delay to show selection animation before advancing
-				setTimeout(() => { this.step = 2; }, 300);
+				setTimeout(() => { this.step = 2; this.resetCardAnimations(); }, 300);
 			},
 			
 			filterCities() {
@@ -285,6 +333,7 @@ function seniorbolaget_wizard_js() {
 			selectCity(city) {
 				this.formData.city = city.value;
 				this.step = 3;
+				this.resetCardAnimations();
 			},
 			
 			renderCities() {
@@ -356,6 +405,8 @@ function seniorbolaget_wizard_js() {
 			canSubmit() {
 				return this.formData.name && 
 					   this.formData.phone && 
+					   this.formData.email && 
+					   this.formData.address && 
 					   this.formData.contactMethod && 
 					   this.formData.gdprConsent;
 			},
@@ -372,6 +423,8 @@ function seniorbolaget_wizard_js() {
 				data.append('city', this.formData.city);
 				data.append('name', this.formData.name);
 				data.append('phone', this.formData.phone);
+				data.append('email', this.formData.email);
+				data.append('address', this.formData.address);
 				data.append('contact_method', this.formData.contactMethod);
 				
 				if (this.formData.service === 'hemstadning') {
@@ -429,6 +482,13 @@ function seniorbolaget_wizard_shortcode() {
             </div>
             <p class="step-label" x-show="step < 5">Steg <span x-text="step"></span> av 4</p>
             
+            <div class="trust-bar" x-show="step < 5">
+                <span class="trust-item"><span class="trust-check">✓</span> Svar inom 24h</span>
+                <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfri offert</span>
+                <span class="trust-item"><span class="trust-check">✓</span> Inga bindningstider</span>
+            </div>
+            <div class="phone-banner" x-show="step < 5">Föredrar du att ringa? <a href="tel:0101751900">010-175 19 00</a></div>
+            
             <div x-show="step === 1" x-transition>
                 <div class="wizard-header">
                     <h1 class="wizard-title">Vad behöver du hjälp med?</h1>
@@ -455,7 +515,7 @@ function seniorbolaget_wizard_shortcode() {
             </div>
             
             <div x-show="step === 2" x-transition>
-                <button class="back-btn" @click="step = 1" type="button">← Tillbaka</button>
+                <button class="back-btn" @click="goToStep(1)" type="button">← Tillbaka</button>
                 <div class="wizard-header">
                     <h1 class="wizard-title">Var finns du?</h1>
                     <p class="wizard-subtitle">Välj din ort</p>
@@ -465,7 +525,7 @@ function seniorbolaget_wizard_shortcode() {
             </div>
             
             <div x-show="step === 3" x-transition>
-                <button class="back-btn" @click="step = 2" type="button">← Tillbaka</button>
+                <button class="back-btn" @click="goToStep(2)" type="button">← Tillbaka</button>
                 <div class="wizard-header">
                     <h1 class="wizard-title">Berätta mer om uppdraget</h1>
                     <p class="wizard-subtitle" x-text="getServiceName()"></p>
@@ -585,23 +645,31 @@ function seniorbolaget_wizard_shortcode() {
                         <textarea class="form-input form-textarea" placeholder="Något mer vi bör veta?" x-model="formData.notes"></textarea>
                     </div>
                 </div>
-                <button class="next-btn" @click="step = 4" :disabled="!canProceedStep3()" type="button">Nästa steg →</button>
+                <button class="next-btn" @click="goToStep(4)" :disabled="!canProceedStep3()" type="button">Nästa steg →</button>
             </div>
             
             <div x-show="step === 4" x-transition>
-                <button class="back-btn" @click="step = 3" type="button">← Tillbaka</button>
+                <button class="back-btn" @click="goToStep(3)" type="button">← Tillbaka</button>
                 <div class="wizard-header">
                     <h1 class="wizard-title">Dina uppgifter</h1>
                     <p class="wizard-subtitle">Så vi kan kontakta dig</p>
                 </div>
                 <div x-show="errorMsg" class="error-msg" x-text="errorMsg"></div>
                 <div class="form-group">
-                    <label class="form-label">Förnamn</label>
+                    <label class="form-label">Förnamn <span style="color:#C91C22;font-weight:700;">*</span></label>
                     <input type="text" class="form-input" placeholder="Ditt förnamn" x-model="formData.name" required>
                 </div>
                 <div class="form-group">
-                    <label class="form-label">Telefonnummer</label>
+                    <label class="form-label">Telefonnummer <span style="color:#C91C22;font-weight:700;">*</span></label>
                     <input type="tel" class="form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">E-postadress <span style="color:#C91C22;font-weight:700;">*</span></label>
+                    <input type="email" class="form-input" placeholder="din@email.se" x-model="formData.email" required>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">Adress <span style="color:#C91C22;font-weight:700;">*</span></label>
+                    <input type="text" class="form-input" placeholder="Gatuadress, stad" x-model="formData.address" required>
                 </div>
                 <div class="form-group">
                     <label class="form-label">Hur vill du bli kontaktad?</label>
@@ -640,13 +708,6 @@ function seniorbolaget_wizard_shortcode() {
                     <a href="/" style="display:inline-block;padding:14px 28px;background:#C91C22;color:#fff;border-radius:50px;font-weight:600;text-decoration:none;">Tillbaka till startsidan</a>
                 </div>
             </div>
-            
-            <div class="trust-bar" x-show="step < 5">
-                <span class="trust-item"><span class="trust-check">✓</span> Svar inom 24h</span>
-                <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfri offert</span>
-                <span class="trust-item"><span class="trust-check">✓</span> Inga bindningstider</span>
-            </div>
-            <div class="phone-banner" x-show="step < 5">Föredrar du att ringa? <a href="tel:0101751900">010-175 19 00</a></div>
         </div>
     </div>
     <?php
