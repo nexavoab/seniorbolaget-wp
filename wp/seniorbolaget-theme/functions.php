@@ -64,8 +64,10 @@ function seniorbolaget_wizard_css() {
 	// Temporärt: ladda alltid för debugging
 	?>
 	<style id="seniorbolaget-wizard-css">
+	/* ===== WAS-90: CSS Variables ===== */
+	:root{--sb-nav-height:90px;--sb-bottom-bar:110px}
 	/* ===== WAS-87: FULLSCREEN WIZARD ===== */
-	.entry-content .wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;height:100vh!important;padding-top:90px!important;padding-bottom:120px!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:hidden!important}
+	.entry-content .wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;height:100vh!important;padding-top:var(--sb-nav-height)!important;padding-bottom:calc(var(--sb-bottom-bar) + 10px)!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:hidden!important}
 	.wizard-container *,.wizard-container *::before,.wizard-container *::after{box-sizing:border-box!important}
 	.wizard-container .wizard-inner{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:16px 32px 0!important;background:transparent!important;border-radius:0!important;box-shadow:none!important}
 	/* Stepper compact */
@@ -95,7 +97,7 @@ function seniorbolaget_wizard_css() {
 	.wizard-container .next-btn,.wizard-container .back-btn{flex-shrink:0!important;margin-top:12px!important}
 	/* Mobile */
 	@media(max-width:768px){
-		.entry-content .wizard-container{height:auto!important;min-height:100vh!important;overflow-y:auto!important;padding-top:100px!important}
+		.entry-content .wizard-container{height:auto!important;min-height:100vh!important;overflow-y:auto!important;padding-top:calc(var(--sb-nav-height) + 10px)!important}
 		.wizard-container .wizard-inner{padding:12px 16px 0!important}
 		.wizard-container .svc-grid,.wizard-container .service-cards{grid-template-rows:auto!important;flex:none!important}
 		.wizard-container .service-card{flex-direction:column!important}
@@ -312,6 +314,11 @@ function seniorbolaget_wizard_js() {
 				});
 			},
 			
+			// WAS-88: Alias for animation reset
+			resetAnims() {
+				this.resetCardAnimations();
+			},
+			
 			goToStep(n) {
 				this.step = n;
 				this.resetCardAnimations();
@@ -450,6 +457,7 @@ function seniorbolaget_wizard_js() {
 					
 					if (result.success) {
 						this.step = 5;
+						this.resetAnims();
 					} else {
 						this.errorMsg = result.data?.message || 'Något gick fel. Försök igen eller ring oss.';
 					}
@@ -1249,7 +1257,7 @@ function sb_add_intentions_bar() {
 .sb-btn-o .sb-btn-f{background:#1F2937;color:#fff;}
 .sb-btn-o:hover{border-color:#1F2937;}
 .sb-x{background:none;border:none;cursor:pointer;color:#9CA3AF;font-size:1.25rem;padding:4px 8px;}
-body{padding-bottom:110px!important;}
+body{padding-bottom:var(--sb-bottom-bar)!important;}
 </style>
 <div class="sb-bar" id="sbBar">
 <div class="sb-bar-inner">
