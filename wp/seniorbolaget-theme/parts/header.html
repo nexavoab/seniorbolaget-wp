@@ -7,7 +7,7 @@
   left: 50%;
   transform: translateX(-50%);
   width: 82%;
-  min-width: min(480px, calc(100vw - 32px));
+  min-width: 380px;
   max-width: 1000px;
   z-index: 9999;
   box-sizing: border-box;
@@ -179,8 +179,13 @@
 
 @media (max-width: 768px) {
   .card-nav-container {
-    width: 90%;
-    top: 1.2em;
+    width: calc(100vw - 32px) !important;
+    min-width: unset !important;
+    max-width: calc(100vw - 32px) !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    top: 10px;
   }
 
   .card-nav-top {
