@@ -1267,3 +1267,192 @@ add_filter('pre_get_document_title', function($title) {
     $page_title = is_front_page() ? $site_name : (get_the_title() . ' — ' . $site_name);
     return $page_title ?: $site_name;
 }, 20);
+
+
+// ===== WAS-54: SEO META TITLES & DESCRIPTIONS =====
+function sb_seo_meta() {
+    global $post;
+    if (!is_singular() || !$post) return;
+    
+    $slug = $post->post_name;
+    
+    $seo = [
+        // Huvudsidor
+        'hem' => ['Seniorbolaget — Hemtjänster av erfarna seniorer 55+', 'Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.'],
+        'hemstadning' => ['Hemstädning med RUT-avdrag — Seniorbolaget', 'Boka hemstädning av erfarna seniorer 55+. Du betalar bara 50% efter RUT-avdrag. Regelbunden eller engångsstädning. Svar inom 2h.'],
+        'tradgard' => ['Trädgårdshjälp av erfarna seniorer — Seniorbolaget', 'Gräsklippning, häck, ogräs och trädgårdsskötsel. Erfarna seniorer 55+ nära dig. RUT-avdrag. Boka idag.'],
+        'malning' => ['Målning inomhus & utomhus — Seniorbolaget', 'Professionell målning av erfarna hantverkare 55+. Inomhus och utomhus. ROT-avdrag. Kostnadsfri offert.'],
+        'snickeri' => ['Snickeri & byggtjänster — Seniorbolaget', 'Erfarna snickare 55+ för allt från hyllor till renoveringar. ROT-avdrag. Kostnadsfri offert. Svar inom 2h.'],
+        'privat' => ['Hemtjänster för privatpersoner — Seniorbolaget', 'Städning, trädgård, snickeri och målning av erfarna seniorer. RUT/ROT-avdrag. Verifierade franchisetagare. Boka idag.'],
+        'foretag' => ['Företagstjänster & B2B — Seniorbolaget', 'Pålitlig bemanning, städning och underhåll för företag och BRF. Erfarna seniorer 55+. Faktura 30 dagar.'],
+        'om-oss' => ['Om Seniorbolaget — Erfarna seniorer gör skillnad', 'Vi matchar erfarna seniorer 55+ med hushåll och företag som behöver pålitlig hjälp. Läs om vår historia och vision.'],
+        'jobba-med-oss' => ['Jobba hos Seniorbolaget — Meningsfullt arbete för seniorer 55+', 'Älskar du att hjälpa andra? Jobba som hemtjänstpersonal hos Seniorbolaget. Flexibla tider, bra betalt, meningsfullt.'],
+        'bli-franchisetagare' => ['Bli franchisetagare — Starta eget med Seniorbolaget', 'Starta din egen verksamhet under Seniorbolaget-varumärket. Beprövat koncept, stöd och utbildning ingår. Kostnadsfritt informationsmöte.'],
+        'har-finns-vi' => ['Hitta Seniorbolaget nära dig — 26 orter i Sverige', 'Seniorbolaget finns i 26 städer. Hitta din lokala franchisetagare och boka hemtjänst direkt.'],
+        'kontakt' => ['Kontakta Seniorbolaget — Ring eller boka online', 'Ring oss på 010-175 19 00 eller skicka en förfrågan. Vi svarar inom 2h på vardagar.'],
+        'intresseanmalan' => ['Boka hemtjänst — Seniorbolaget', 'Välj tjänst, ort och kontaktuppgifter. Vi återkommer inom 2h med offert. Kostnadsfritt och utan förbindelser.'],
+    ];
+    
+    // Stadssidor — generera dynamiskt
+    $city_names = [
+        'amal'=>'Åmål','boras'=>'Borås','eskilstuna'=>'Eskilstuna',
+        'falkenberg'=>'Falkenberg','goteborg'=>'Göteborg','halmstad'=>'Halmstad',
+        'helsingborg'=>'Helsingborg','jonkoping'=>'Jönköping','karlstad'=>'Karlstad',
+        'kristianstad'=>'Kristianstad','kungsbacka'=>'Kungsbacka','kungalv'=>'Kungälv',
+        'laholm-bastad'=>'Laholm/Båstad','landskrona'=>'Landskrona','lerum'=>'Lerum',
+        'molndal'=>'Mölndal','nassjo'=>'Nässjö','orebro'=>'Örebro',
+        'skovde'=>'Skövde','stenungsund'=>'Stenungsund','sundsvall'=>'Sundsvall',
+        'torsby'=>'Torsby','trelleborg'=>'Trelleborg','trollhattan'=>'Trollhättan',
+        'ulricehamn'=>'Ulricehamn','varberg'=>'Varberg',
+    ];
+    
+    foreach ($city_names as $city_slug => $city_name) {
+        $seo[$city_slug] = [
+            "Hemtjänst i {$city_name} — Seniorbolaget",
+            "Boka hemstädning, trädgård eller snickeri i {$city_name} av erfarna seniorer 55+. Lokal franchisetagare nära dig. RUT-avdrag. Svar inom 2h."
+        ];
+    }
+    
+    if (!isset($seo[$slug])) return;
+    [$title, $desc] = $seo[$slug];
+    
+    // Override title
+    add_filter('pre_get_document_title', function() use ($title) { return $title; }, 25);
+    
+    // Lägg till meta description
+    echo '<meta name="description" content="' . esc_attr($desc) . '">' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr($title) . '">' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr($desc) . '">' . "\n";
+    echo '<meta property="og:type" content="website">' . "\n";
+    echo '<meta name="robots" content="index, follow">' . "\n";
+}
+add_action('wp_head', 'sb_seo_meta', 1);
+
+
+// ===== WAS-55: SCHEMA MARKUP — LocalBusiness + Service + FAQ =====
+function sb_schema_markup() {
+    global $post;
+    if (!is_singular() || !$post) return;
+    $slug = $post->post_name;
+    $current_url = get_permalink();
+    
+    // Organization/LocalBusiness schema (alla sidor)
+    $org_schema = [
+        '@context' => 'https://schema.org',
+        '@type' => 'LocalBusiness',
+        'name' => 'Seniorbolaget',
+        'description' => 'Hemtjänster utförda av erfarna seniorer 55+',
+        'url' => 'https://seniorbolaget.se',
+        'telephone' => '+46101751900',
+        'email' => 'info@seniorbolaget.se',
+        'areaServed' => 'SE',
+        'priceRange' => '$$',
+        'hasOfferCatalog' => [
+            '@type' => 'OfferCatalog',
+            'name' => 'Hemtjänster',
+            'itemListElement' => [
+                ['@type'=>'Offer','itemOffered'=>['@type'=>'Service','name'=>'Hemstädning']],
+                ['@type'=>'Offer','itemOffered'=>['@type'=>'Service','name'=>'Trädgård']],
+                ['@type'=>'Offer','itemOffered'=>['@type'=>'Service','name'=>'Snickeri']],
+                ['@type'=>'Offer','itemOffered'=>['@type'=>'Service','name'=>'Målning']],
+            ]
+        ],
+        'sameAs' => ['https://seniorbolaget.se'],
+    ];
+    echo '<script type="application/ld+json">' . json_encode($org_schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+    
+    // Service schema per tjänstesida
+    $service_schemas = [
+        'hemstadning' => ['name'=>'Hemstädning','description'=>'Professionell hemstädning av erfarna seniorer 55+ med RUT-avdrag'],
+        'tradgard'    => ['name'=>'Trädgård','description'=>'Trädgårdshjälp av erfarna seniorer — gräsklippning, häck och mer'],
+        'malning'     => ['name'=>'Målning','description'=>'Inomhus och utomhus målning av erfarna hantverkare 55+'],
+        'snickeri'    => ['name'=>'Snickeri','description'=>'Snickeri och byggtjänster av erfarna hantverkare 55+'],
+    ];
+    
+    if (isset($service_schemas[$slug])) {
+        $s = $service_schemas[$slug];
+        $service_schema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'Service',
+            'name' => $s['name'],
+            'description' => $s['description'],
+            'url' => $current_url,
+            'provider' => ['@type'=>'Organization','name'=>'Seniorbolaget'],
+            'areaServed' => ['@type'=>'Country','name'=>'Sweden'],
+            'offers' => ['@type'=>'Offer','availability'=>'https://schema.org/InStock'],
+        ];
+        echo '<script type="application/ld+json">' . json_encode($service_schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+    }
+    
+    // Startsida — FAQ schema
+    if ($slug === 'hem' || is_front_page()) {
+        $faq_schema = [
+            '@context' => 'https://schema.org',
+            '@type' => 'FAQPage',
+            'mainEntity' => [
+                ['@type'=>'Question','name'=>'Vad är RUT-avdrag?','acceptedAnswer'=>['@type'=>'Answer','text'=>'RUT-avdrag är ett skatteavdrag för hushållstjänster. Du betalar bara 50% av arbetskostnaden, resten drar Seniorbolaget av direkt mot Skatteverket.']],
+                ['@type'=>'Question','name'=>'Hur snabbt kan ni komma?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Vi svarar på förfrågningar inom 2h och kan ofta boka tid redan samma vecka.']],
+                ['@type'=>'Question','name'=>'Vilka städer finns ni i?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Seniorbolaget finns i 26 städer i Sverige, från Sundsvall i norr till Trelleborg i söder.']],
+                ['@type'=>'Question','name'=>'Vem utför jobbet?','acceptedAnswer'=>['@type'=>'Answer','text'=>'Alla uppdrag utförs av erfarna seniorer 55+ som är anställda och försäkrade via Seniorbolaget.']],
+            ]
+        ];
+        echo '<script type="application/ld+json">' . json_encode($faq_schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
+    }
+}
+add_action('wp_head', 'sb_schema_markup', 2);
+
+
+// ===== WAS-56: INTERN LÄNKNING — stadssidor ↔ tjänstesidor =====
+function sb_internal_links() {
+    global $post;
+    if (!is_singular() || !$post) return;
+    $slug = $post->post_name;
+    
+    // Alla stadsslugs
+    $all_city_slugs = ['amal','boras','eskilstuna','falkenberg','goteborg','halmstad','helsingborg','jonkoping','karlstad','kristianstad','kungsbacka','kungalv','laholm-bastad','landskrona','lerum','molndal','nassjo','orebro','skovde','stenungsund','sundsvall','torsby','trelleborg','trollhattan','ulricehamn','varberg'];
+    $service_slugs = ['hemstadning','tradgard','snickeri','malning'];
+    
+    // På stadssidor: länka till tjänstesidor
+    if (in_array($slug, $all_city_slugs)) {
+        $city_name = get_the_title();
+        $services = [
+            ['hemstadning','🧹','Hemstädning'],
+            ['tradgard','🌿','Trädgård'],
+            ['snickeri','🔨','Snickeri'],
+            ['malning','🎨','Målning'],
+        ];
+        echo '<div style="background:#F9FAFB;padding:48px clamp(24px,5vw,80px);text-align:center;">
+            <h2 style="font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#1F2937;margin-bottom:8px;">Våra tjänster</h2>
+            <p style="color:#6B7280;margin-bottom:32px;font-family:Inter,sans-serif;">Välj tjänst — vi levererar till ' . esc_html($city_name) . '</p>
+            <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">';
+        foreach ($services as $svc) {
+            $s_slug = $svc[0];
+            $icon = $svc[1];
+            $name = $svc[2];
+            echo '<a href="/' . esc_attr($s_slug) . '/" style="display:flex;align-items:center;gap:8px;padding:14px 24px;background:#fff;border:2px solid #e5e7eb;border-radius:50px;text-decoration:none;color:#1F2937;font-family:Inter,sans-serif;font-weight:600;transition:all .2s;" onmouseover="this.style.borderColor=\'#C91C22\';this.style.color=\'#C91C22\'" onmouseout="this.style.borderColor=\'#e5e7eb\';this.style.color=\'#1F2937\'">' . $icon . ' ' . esc_html($name) . '</a>';
+        }
+        echo '</div></div>';
+    }
+    
+    // På tjänstesidor: länka till 6 populäraste städer
+    if (in_array($slug, $service_slugs)) {
+        $cities = [
+            ['goteborg','Göteborg'],['helsingborg','Helsingborg'],['varberg','Varberg'],
+            ['boras','Borås'],['orebro','Örebro'],['halmstad','Halmstad'],
+        ];
+        $service_name = get_the_title();
+        echo '<div style="background:#FFF4F2;padding:48px clamp(24px,5vw,80px);text-align:center;">
+            <h2 style="font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#1F2937;margin-bottom:8px;">Välj din ort</h2>
+            <p style="color:#6B7280;margin-bottom:32px;font-family:Inter,sans-serif;">' . esc_html($service_name) . ' finns i hela Sverige</p>
+            <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:16px;">';
+        foreach ($cities as $city) {
+            $c_slug = $city[0];
+            $c_name = $city[1];
+            echo '<a href="/' . esc_attr($c_slug) . '/" style="padding:10px 20px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;text-decoration:none;color:#1F2937;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;transition:all .15s;" onmouseover="this.style.borderColor=\'#C91C22\';this.style.color=\'#C91C22\'" onmouseout="this.style.borderColor=\'#e5e7eb\';this.style.color=\'#1F2937\'">' . esc_html($c_name) . '</a>';
+        }
+        echo '</div>
+            <a href="/har-finns-vi/" style="font-family:Inter,sans-serif;font-size:0.875rem;color:#C91C22;font-weight:600;text-decoration:none;">Se alla 26 orter →</a>
+            </div>';
+    }
+}
+add_action('wp_footer', 'sb_internal_links', 95);
