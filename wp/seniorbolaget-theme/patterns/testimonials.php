@@ -141,5 +141,17 @@
 	</div>
 	<!-- /wp:columns -->
 
+	<!-- CTA efter testimonials -->
+	<!-- wp:html -->
+	<div style="text-align:center;padding:48px 24px 0;background:#FAFAF8;">
+	  <p style="font-family:Inter,sans-serif;font-size:1.25rem;font-weight:600;color:#1F2937;margin:0 0 8px;">Vill du också ha en enklare vardag?</p>
+	  <p style="font-family:Inter,sans-serif;font-size:1rem;color:#667282;margin:0 0 24px;">Gör en kostnadsfri intresseanmälan — vi återkommer inom 24h</p>
+	  <a href="/intresseanmalan/" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.35);">
+	    Kom igång idag →
+	  </a>
+	  <p style="font-family:Inter,sans-serif;font-size:0.8125rem;color:#9CA3AF;margin:16px 0 0;">✓ Kostnadsfritt · ✓ Utan bindning · ✓ Svar inom 24h</p>
+	</div>
+	<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->

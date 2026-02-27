@@ -17,9 +17,9 @@
   <div style="position:relative;z-index:2;max-width:760px;padding:clamp(60px,10vw,120px) clamp(24px,5vw,80px);">
 
     <!-- Social proof badge -->
-    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 18px;margin-bottom:28px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;font-weight:500;">
+    <a href="https://www.reco.se/seniorbolaget" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 18px;margin-bottom:28px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;font-weight:500;text-decoration:none;transition:background 0.2s;">
       ⭐⭐⭐⭐⭐ &nbsp;4.8/5 baserat på 500+ omdömen · Reco.se Rekommenderad
-    </div>
+    </a>
 
     <!-- H1 -->
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.5rem,5.5vw,4rem);font-weight:800;color:#fff;line-height:1.1;margin:0 0 24px;">
@@ -43,9 +43,16 @@
     </div>
 
     <!-- Micro-copy -->
-    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.75);margin:0 0 32px;">
+    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.75);margin:0 0 16px;">
       ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT-avdrag direkt på fakturan
     </p>
+
+    <!-- Secondary CTA for job seekers -->
+    <div style="margin-top:0;margin-bottom:32px;">
+      <a href="/jobba-med-oss/" style="display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,0.85);font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.4);padding-bottom:2px;transition:color .15s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.85)'">
+        👴 Är du senior och vill jobba? →
+      </a>
+    </div>
 
     <!-- Stats -->
     <div style="display:flex;gap:24px;flex-wrap:wrap;">
