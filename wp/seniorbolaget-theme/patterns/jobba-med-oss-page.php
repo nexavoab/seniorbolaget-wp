@@ -92,22 +92,22 @@ function jobWizardApp() {
         <!-- Progress bar - 4 steps -->
         <div class="job-stepper">
             <div class="job-stepper-steps">
-                <div class="job-stepper-step" :class="{ 'active': step === 1, 'completed': step > 1 }">
+                <div class="job-stepper-step" :class="{ active: step === 1, completed: step > 1 }">
                     <div class="job-stepper-dot"></div>
                     <span class="job-stepper-name">Stad</span>
                 </div>
-                <div class="job-stepper-line" :class="{ 'completed': step > 1 }"></div>
-                <div class="job-stepper-step" :class="{ 'active': step === 2, 'completed': step > 2 }">
+                <div class="job-stepper-line" :class="{ completed: step > 1 }"></div>
+                <div class="job-stepper-step" :class="{ active: step === 2, completed: step > 2 }">
                     <div class="job-stepper-dot"></div>
                     <span class="job-stepper-name">Tjänst</span>
                 </div>
-                <div class="job-stepper-line" :class="{ 'completed': step > 2 }"></div>
-                <div class="job-stepper-step" :class="{ 'active': step === 3, 'completed': step > 3 }">
+                <div class="job-stepper-line" :class="{ completed: step > 2 }"></div>
+                <div class="job-stepper-step" :class="{ active: step === 3, completed: step > 3 }">
                     <div class="job-stepper-dot"></div>
                     <span class="job-stepper-name">Erfarenhet</span>
                 </div>
-                <div class="job-stepper-line" :class="{ 'completed': step > 3 }"></div>
-                <div class="job-stepper-step" :class="{ 'active': step === 4, 'completed': step > 4 }">
+                <div class="job-stepper-line" :class="{ completed: step > 3 }"></div>
+                <div class="job-stepper-step" :class="{ active: step === 4, completed: step > 4 }">
                     <div class="job-stepper-dot"></div>
                     <span class="job-stepper-name">Kontakt</span>
                 </div>
@@ -142,35 +142,35 @@ function jobWizardApp() {
             </div>
             
             <div class="job-service-cards">
-                <div class="job-service-card" @click="selectService('stadning')" :class="{ 'selected': formData.service === 'stadning' }">
+                <div class="job-service-card" data-service="stadning" @click="selectService($el.dataset.service)" :class="{ selected: formData.service === $el.dataset.service }">
                     <span class="job-service-icon">🧹</span>
                     <div class="job-service-info">
                         <p class="job-service-name">Städning</p>
                         <p class="job-service-desc">Hemstädning och liknande</p>
                     </div>
                 </div>
-                <div class="job-service-card" @click="selectService('tradgard')" :class="{ 'selected': formData.service === 'tradgard' }">
+                <div class="job-service-card" data-service="tradgard" @click="selectService($el.dataset.service)" :class="{ selected: formData.service === $el.dataset.service }">
                     <span class="job-service-icon">🌿</span>
                     <div class="job-service-info">
                         <p class="job-service-name">Trädgård</p>
                         <p class="job-service-desc">Gräsklippning, häck, ogräs</p>
                     </div>
                 </div>
-                <div class="job-service-card" @click="selectService('snickeri')" :class="{ 'selected': formData.service === 'snickeri' }">
+                <div class="job-service-card" data-service="snickeri" @click="selectService($el.dataset.service)" :class="{ selected: formData.service === $el.dataset.service }">
                     <span class="job-service-icon">🔨</span>
                     <div class="job-service-info">
                         <p class="job-service-name">Snickeri</p>
                         <p class="job-service-desc">Reparationer och bygge</p>
                     </div>
                 </div>
-                <div class="job-service-card" @click="selectService('malning')" :class="{ 'selected': formData.service === 'malning' }">
+                <div class="job-service-card" data-service="malning" @click="selectService($el.dataset.service)" :class="{ selected: formData.service === $el.dataset.service }">
                     <span class="job-service-icon">🎨</span>
                     <div class="job-service-info">
                         <p class="job-service-name">Målning</p>
                         <p class="job-service-desc">Invändigt och utvändigt</p>
                     </div>
                 </div>
-                <div class="job-service-card" @click="selectService('flera')" :class="{ 'selected': formData.service === 'flera' }">
+                <div class="job-service-card" data-service="flera" @click="selectService($el.dataset.service)" :class="{ selected: formData.service === $el.dataset.service }">
                     <span class="job-service-icon">✨</span>
                     <div class="job-service-info">
                         <p class="job-service-name">Flera</p>
@@ -190,15 +190,15 @@ function jobWizardApp() {
             </div>
             
             <div class="job-experience-cards">
-                <div class="job-exp-card" @click="selectExperience('1-5')" :class="{ 'selected': formData.experience === '1-5' }">
+                <div class="job-exp-card" data-exp="1-5" @click="selectExperience($el.dataset.exp)" :class="{ selected: formData.experience === $el.dataset.exp }">
                     <span class="job-exp-years">1-5</span>
                     <span class="job-exp-label">år</span>
                 </div>
-                <div class="job-exp-card" @click="selectExperience('5-10')" :class="{ 'selected': formData.experience === '5-10' }">
+                <div class="job-exp-card" data-exp="5-10" @click="selectExperience($el.dataset.exp)" :class="{ selected: formData.experience === $el.dataset.exp }">
                     <span class="job-exp-years">5-10</span>
                     <span class="job-exp-label">år</span>
                 </div>
-                <div class="job-exp-card" @click="selectExperience('10+')" :class="{ 'selected': formData.experience === '10+' }">
+                <div class="job-exp-card" data-exp="10+" @click="selectExperience($el.dataset.exp)" :class="{ selected: formData.experience === $el.dataset.exp }">
                     <span class="job-exp-years">10+</span>
                     <span class="job-exp-label">år</span>
                 </div>

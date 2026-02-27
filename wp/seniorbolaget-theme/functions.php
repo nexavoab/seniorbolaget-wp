@@ -1200,18 +1200,13 @@ function sb_global_button_animation() {
 add_action('wp_footer', 'sb_global_button_animation', 99);
 
 
-// ===== DISABLE WPTEXTURIZE ON HTML BLOCKS (fixes Alpine.js) =====
-add_filter('render_block', function($block_content, $block) {
-    // Restore texturized quotes in Alpine.js attributes within HTML blocks
-    if (isset($block['blockName']) && $block['blockName'] === 'core/html') {
-        $block_content = str_replace('\u201c', '"', $block_content); // left "
-        $block_content = str_replace('\u201d', '"', $block_content); // right "
-        $block_content = str_replace('\u2018', "'", $block_content); // left '
-        $block_content = str_replace('\u2019', "'", $block_content); // right '
-        $block_content = str_replace('&#8220;', '"', $block_content);
-        $block_content = str_replace('&#8221;', '"', $block_content);
-        $block_content = str_replace('&#8216;', "'", $block_content);
-        $block_content = str_replace('&#8217;', "'", $block_content);
-    }
-    return $block_content;
-}, 10, 2);
+// ===== FIX WPTEXTURIZE MANGLING ALPINE.JS ATTRIBUTES =====
+// Block themes don't use the_content for template output — use output buffering
+add_action('template_redirect', function() {
+    ob_start(function($html) {
+        // Restore &#8221; (right double quote) after } in Alpine :class bindings
+        $html = preg_replace('/}&#8221;/', '}"', $html);
+        $html = preg_replace('/}&#8220;/', '}"', $html);
+        return $html;
+    });
+});
