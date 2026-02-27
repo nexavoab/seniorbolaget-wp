@@ -112,9 +112,10 @@ function seniorbolaget_wizard_css() {
 	.service-check.visible{opacity:1!important;transform:scale(1)!important}
 	.city-search{width:100%;padding:14px 18px;border:2px solid #e5e7eb;border-radius:50px;font-size:1rem;margin-bottom:16px;background:#fff;box-sizing:border-box}
 	.city-search:focus{outline:none;border-color:#C91C22}
-	.city-list{display:grid;gap:8px;max-height:400px;overflow-y:auto;padding:4px}
-	.city-item{padding:16px 20px;background:#fff;border:2px solid #e5e7eb;border-radius:12px;cursor:pointer;font-size:1rem;font-weight:500;color:#1F2937;transition:all .2s}
-	.city-item:hover,.city-item.selected{border-color:#C91C22;background:#FFF4F2}
+	.city-list{display:flex;flex-wrap:wrap;gap:8px;padding:4px 0;max-height:320px;overflow-y:auto}
+	.city-item{padding:9px 18px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;cursor:pointer;font-size:0.92rem;font-weight:500;color:#1F2937;transition:all .15s;white-space:nowrap}
+	.city-item:hover{border-color:#C91C22;color:#C91C22;transform:scale(1.03)}.city-item.selected{border-color:#C91C22;background:#C91C22;color:#fff}
+	.city-list::-webkit-scrollbar{width:4px;height:4px}.city-list::-webkit-scrollbar-thumb{background:#e5e7eb;border-radius:99px}
 	.form-group{margin-bottom:20px}
 	.form-label{display:block;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;color:#1F2937;margin-bottom:8px}
 	.form-label-optional{font-weight:400;color:#6B7280}

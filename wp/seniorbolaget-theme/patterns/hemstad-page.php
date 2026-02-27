@@ -394,7 +394,7 @@
 
 <!-- STICKY FLOATING CTA -->
 <!-- wp:html -->
-<div id="floating-cta-hemstad" style="position:fixed;bottom:28px;right:28px;z-index:999;">
+<div id="floating-cta-hemstad" style="position:fixed;bottom:90px;right:28px;z-index:10001;transition:bottom 0.3s ease;">
   <a href="/intresseanmalan" class="btn-slide-cta" 
      style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:700;padding:14px 28px;border-radius:50px;text-decoration:none;box-shadow:0 8px 32px rgba(201,28,34,0.45);transition:transform 0.2s,box-shadow 0.2s;">
     📞 Boka hjälp →

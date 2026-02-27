@@ -446,7 +446,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 
 <!-- STICKY CTA-KNAPP -->
 <!-- wp:html -->
-<div style="position:fixed;bottom:20px;right:20px;z-index:999;">
+<div style="position:fixed;bottom:90px;right:28px;z-index:10001;">
 	<a href="#franchise-form" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-weight:700;font-size:1rem;padding:14px 24px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);transition:transform 0.2s,box-shadow 0.2s;" onmouseover="this.style.transform='scale(1.05)';this.style.boxShadow='0 6px 24px rgba(201,28,34,0.5)';" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 20px rgba(201,28,34,0.4)';">
 		<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
 		Boka informationsmöte
