@@ -642,29 +642,50 @@ body.page-id-98 main > h1.wp-block-post-title {
                 <button class="back-btn" @click="step = 2" type="button"><span class="back-icon">←</span> Tillbaka</button>
                 
                 <div class="wizard-header">
-                    <h2 class="wizard-title">Berätta om din bakgrund</h2>
-                    <p class="wizard-subtitle">Välj allt som stämmer</p>
+                    <h2 class="wizard-title">Vad är din bakgrund?</h2>
+                    <p class="wizard-subtitle">Välj allt som stämmer in på dig</p>
                 </div>
                 
-                <div class="checkbox-grid">
-                    <label class="checkbox-option" :class="{ selected: formData.background.includes('ledning') }">
-                        <input type="checkbox" @change="toggleBackground('ledning')" :checked="formData.background.includes('ledning')">
-                        <span class="option-label">👔 Ledarskap / chef</span>
-                    </label>
-                    <label class="checkbox-option" :class="{ selected: formData.background.includes('service') }">
-                        <input type="checkbox" @change="toggleBackground('service')" :checked="formData.background.includes('service')">
-                        <span class="option-label">🤝 Service / kundkontakt</span>
-                    </label>
-                    <label class="checkbox-option" :class="{ selected: formData.background.includes('eget_foretag') }">
-                        <input type="checkbox" @change="toggleBackground('eget_foretag')" :checked="formData.background.includes('eget_foretag')">
-                        <span class="option-label">🏢 Drivit eget företag</span>
-                    </label>
-                    <label class="checkbox-option" :class="{ selected: formData.background.includes('annat') }">
-                        <input type="checkbox" @change="toggleBackground('annat')" :checked="formData.background.includes('annat')">
-                        <span class="option-label">✨ Annan bakgrund</span>
-                    </label>
+                <div class="svc-grid">
+                    <div class="svc-card" 
+                         :class="{ active: formData.background.includes('ledning') }" 
+                         @click="toggleBackground('ledning')">
+                        <div class="svc-card-icon">👔</div>
+                        <div class="svc-card-name">Ledning & chefsroll</div>
+                        <div class="svc-card-desc">Management, teamledning</div>
+                        <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="svc-card" 
+                         :class="{ active: formData.background.includes('service') }" 
+                         @click="toggleBackground('service')">
+                        <div class="svc-card-icon">🤝</div>
+                        <div class="svc-card-name">Service & bemötande</div>
+                        <div class="svc-card-desc">Kundkontakt, vård, service</div>
+                        <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="svc-card" 
+                         :class="{ active: formData.background.includes('eget_foretag') }" 
+                         @click="toggleBackground('eget_foretag')">
+                        <div class="svc-card-icon">🏢</div>
+                        <div class="svc-card-name">Eget företag</div>
+                        <div class="svc-card-desc">Erfarenhet av eget bolag</div>
+                        <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <div class="svc-card" 
+                         :class="{ active: formData.background.includes('annat') }" 
+                         @click="toggleBackground('annat')">
+                        <div class="svc-card-icon">✨</div>
+                        <div class="svc-card-name">Annat</div>
+                        <div class="svc-card-desc">Annan relevant bakgrund</div>
+                        <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
                 </div>
-                <button class="next-btn" @click="step = 4" :disabled="!canProceedStep3()" type="button">Nästa steg →</button>
+                
+                <div style="margin-top:24px;text-align:center;">
+                    <button class="next-btn" @click="step = 4" :disabled="formData.background.length === 0" type="button">
+                        Nästa steg →
+                    </button>
+                </div>
             </div>
             
             <!-- STEG 4: Kontakt -->
@@ -688,25 +709,41 @@ body.page-id-98 main > h1.wp-block-post-title {
                     <input type="tel" class="form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
                 </div>
                 
-                <div class="form-group">
-                    <label class="form-label">Bästa tid att ringa</label>
-                    <div class="radio-group" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
-                        <label class="radio-option" :class="{ selected: formData.bestTime === 'morgon' }">
-                            <input type="radio" name="bestTime" value="morgon" x-model="formData.bestTime">
-                            <span class="option-label">☀️ Morgon (8–12)</span>
-                        </label>
-                        <label class="radio-option" :class="{ selected: formData.bestTime === 'middag' }">
-                            <input type="radio" name="bestTime" value="middag" x-model="formData.bestTime">
-                            <span class="option-label">🌤️ Middag (12–14)</span>
-                        </label>
-                        <label class="radio-option" :class="{ selected: formData.bestTime === 'eftermiddag' }">
-                            <input type="radio" name="bestTime" value="eftermiddag" x-model="formData.bestTime">
-                            <span class="option-label">🌇 Eftermiddag (14–18)</span>
-                        </label>
-                        <label class="radio-option" :class="{ selected: formData.bestTime === 'flexibel' }">
-                            <input type="radio" name="bestTime" value="flexibel" x-model="formData.bestTime">
-                            <span class="option-label">🔄 Flexibel</span>
-                        </label>
+                <div style="margin-bottom:24px;">
+                    <label class="form-label">Bästa tid att ringa dig</label>
+                    <div class="svc-grid" style="grid-template-columns:1fr 1fr;gap:12px;margin-top:8px;">
+                        <div class="svc-card" style="padding:16px 12px;" 
+                             :class="{ active: formData.bestTime === 'morgon' }" 
+                             @click="formData.bestTime = 'morgon'">
+                            <div class="svc-card-icon" style="font-size:1.5rem;margin-bottom:6px;">🌅</div>
+                            <div class="svc-card-name" style="font-size:0.9rem;">Morgon</div>
+                            <div class="svc-card-desc">8–12</div>
+                            <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="svc-card" style="padding:16px 12px;" 
+                             :class="{ active: formData.bestTime === 'middag' }" 
+                             @click="formData.bestTime = 'middag'">
+                            <div class="svc-card-icon" style="font-size:1.5rem;margin-bottom:6px;">☀️</div>
+                            <div class="svc-card-name" style="font-size:0.9rem;">Middag</div>
+                            <div class="svc-card-desc">12–14</div>
+                            <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="svc-card" style="padding:16px 12px;" 
+                             :class="{ active: formData.bestTime === 'eftermiddag' }" 
+                             @click="formData.bestTime = 'eftermiddag'">
+                            <div class="svc-card-icon" style="font-size:1.5rem;margin-bottom:6px;">🌤️</div>
+                            <div class="svc-card-name" style="font-size:0.9rem;">Eftermiddag</div>
+                            <div class="svc-card-desc">14–17</div>
+                            <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
+                        <div class="svc-card" style="padding:16px 12px;" 
+                             :class="{ active: formData.bestTime === 'flexibel' }" 
+                             @click="formData.bestTime = 'flexibel'">
+                            <div class="svc-card-icon" style="font-size:1.5rem;margin-bottom:6px;">🕐</div>
+                            <div class="svc-card-name" style="font-size:0.9rem;">Flexibel</div>
+                            <div class="svc-card-desc">Valfri tid</div>
+                            <svg class="svc-card-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                        </div>
                     </div>
                 </div>
                 
