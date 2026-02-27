@@ -39,9 +39,20 @@ function jobWizardApp() {
         step: 1,
         isSubmitting: false,
         errorMsg: '',
+        citySearch: '',
+        filteredJobCities: [],
         formData: {
             city: '', service: '', experience: '',
             name: '', phone: '', email: '', gdprConsent: false
+        },
+        init() {
+            this.filteredJobCities = this.cities;
+        },
+        filterJobCities() {
+            const q = this.citySearch.toLowerCase();
+            this.filteredJobCities = q 
+                ? this.cities.filter(c => c.name.toLowerCase().includes(q))
+                : this.cities;
         },
         cities: [
             {value:'amal',name:'Åmål'},{value:'boras',name:'Borås'},
@@ -123,12 +134,17 @@ function jobWizardApp() {
             </div>
             
             <div class="job-city-select">
-                <select x-model="formData.city" @change="if(formData.city) step = 2" class="job-select-input">
-                    <option value="">Välj stad...</option>
-                    <template x-for="city in cities" :key="city.value">
-                        <option :value="city.value" x-text="city.name"></option>
+                <input type="text" x-model="citySearch" @input="filterJobCities()"
+                    placeholder="🔍 Sök stad..." class="city-search" style="margin-bottom:16px;">
+                <div class="city-list" id="job-city-list">
+                    <template x-for="city in filteredJobCities" :key="city.value">
+                        <div class="city-item"
+                            :class="{ selected: formData.city === city.value }"
+                            @click="formData.city = city.value; step = 2;"
+                            x-text="city.name">
+                        </div>
                     </template>
-                </select>
+                </div>
             </div>
         </div>
         

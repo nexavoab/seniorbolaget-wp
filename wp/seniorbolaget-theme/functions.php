@@ -1239,6 +1239,27 @@ add_action('template_redirect', function() {
 });
 
 
+// ===== WAS-82: Stadssidor mobil overflow fix =====
+function sb_overflow_fix() {
+    echo '<style>
+    @media (max-width: 600px) {
+        body { overflow-x: hidden !important; }
+        .wp-block-group, section, article, .wp-block-html { max-width: 100vw !important; box-sizing: border-box !important; }
+        /* Hero bottom flex-rad */
+        div[style*="justify-content:space-between"][style*="flex-wrap:wrap"] {
+            flex-direction: column !important;
+            align-items: flex-start !important;
+        }
+        /* Badge-rader */
+        div[style*="display:flex"][style*="gap:12px"] {
+            flex-wrap: wrap !important;
+            max-width: 100% !important;
+        }
+    }
+    </style>';
+}
+add_action('wp_head', 'sb_overflow_fix', 5);
+
 // ===== SITE TITLE =====
 add_theme_support('title-tag');
 add_filter('pre_get_document_title', function($title) {

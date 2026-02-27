@@ -20,7 +20,7 @@
   <div style="position:relative;z-index:2;width:100%;padding:clamp(32px,5vw,60px) clamp(24px,5vw,80px);display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:24px;">
     <div>
       <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:6px 14px;margin-bottom:16px;color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;">📍 Seniorbolaget Trollhättan</div>
-      <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:800;color:#fff;line-height:1.1;margin:0 0 8px;">Ejvar Bolander</h1>
+      <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2rem,5vw,3.25rem);font-weight:800;color:#fff;line-height:1.1;margin:0 0 8px;">Ejvar Bolander · Trollhättan</h1>
       <p style="font-family:Inter,sans-serif;font-size:1.0625rem;color:rgba(255,255,255,0.85);margin:0 0 20px;">Franchisetagare · Trollhättan · Din lokala kontakt</p>
       <div style="display:flex;gap:12px;flex-wrap:wrap;">
         <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Verifierad partner</span>
