@@ -84,8 +84,8 @@
 
 		<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
-			<!-- wp:image {"id":59,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
-			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/snickeri-hero.jpg" alt="Snickeri och hantverk av Seniorbolaget" class="wp-image-59" style="border-radius:16px"/></figure>
+			<!-- wp:image {"id":127,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
+			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/2026/02/service_hantverk.jpg" alt="Snickeri och hantverk av Seniorbolaget" class="wp-image-127" style="border-radius:16px"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

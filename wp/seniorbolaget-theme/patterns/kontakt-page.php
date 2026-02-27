@@ -12,12 +12,16 @@
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"60px","bottom":"60px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained","contentSize":"800px"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:60px;padding-left:clamp(24px, 5vw, 80px)">
 
-	<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(1.75rem, 4vw, 2.5rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Kontakta oss — vi svarar inom 24 timmar</h1>
+	<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(1.75rem, 4vw, 2.5rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"0.75rem"}}}} -->
+	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:0.75rem">Kontakta oss — vi svarar inom 24 timmar</h1>
 	<!-- /wp:heading -->
 
-	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;line-height:1.6;margin-bottom:1.5rem">Hjälp av erfarna seniorer som förstår din vardag. Ring, maila eller fyll i en förfrågan — vi hjälper dig hitta rätt tjänst.</p>
+	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#C91C22"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
+	<p class="has-text-align-center" style="color:#C91C22;font-size:1.125rem;font-weight:600;margin-bottom:1rem">Erfarna seniorer hjälper dig med städ, trädgård, bygg och hantverk. RUT-avdrag direkt.</p>
+	<!-- /wp:paragraph -->
+
+	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
+	<p class="has-text-align-center" style="color:#4B5563;font-size:1.125rem;line-height:1.6;margin-bottom:1.5rem">Ring, maila eller fyll i en förfrågan — vi hjälper dig hitta rätt tjänst.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- Trust-rad direkt under hero -->

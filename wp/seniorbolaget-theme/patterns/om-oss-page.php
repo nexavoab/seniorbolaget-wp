@@ -70,10 +70,9 @@
 
 		<!-- wp:column {"width":"35%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:35%">
-			<!-- Premium avatar med initialer istället för "Foto tillkommer" -->
 			<!-- wp:html -->
-			<div style="width:280px;height:280px;background:linear-gradient(135deg, #C91C22 0%, #a01820 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-direction:column;margin:0 auto;box-shadow:0 8px 32px rgba(201,28,34,0.3);">
-				<span style="font-family:Rubik,sans-serif;font-size:5rem;font-weight:700;color:#fff;letter-spacing:-2px;">HB</span>
+			<div style="position:relative;width:280px;height:350px;border-radius:20px;overflow:hidden;margin:0 auto;box-shadow:0 8px 32px rgba(0,0,0,0.15);">
+				<img src="http://localhost:8888/wp-content/uploads/2026/02/henrik_ceo.jpg" alt="Henrik Bergeld, grundare och VD för Seniorbolaget" style="width:100%;height:100%;object-fit:cover;object-position:center top;" loading="lazy"/>
 			</div>
 			<!-- /wp:html -->
 		</div>

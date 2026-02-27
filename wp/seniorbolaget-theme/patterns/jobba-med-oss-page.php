@@ -25,8 +25,8 @@
 	<!-- /wp:paragraph -->
 
 	<!-- wp:html -->
-	<p style="font-family:Inter,sans-serif;font-size:1.1rem;color:#1F2937;text-align:left;margin-bottom:12px;font-weight:500;">
-	  Gör skillnad, ha roligt och tjäna extra — anmäl dig idag!
+	<p style="font-family:Rubik,sans-serif;font-size:1.25rem;color:#C91C22;text-align:left;margin-bottom:16px;font-weight:700;">
+	  Gör skillnad och tjäna extra – anmäl dig nu!
 	</p>
 	<!-- /wp:html -->
 

@@ -93,8 +93,8 @@
 
 		<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
-			<!-- wp:image {"id":62,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
-			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/hemstad-hero.jpg" alt="Hemstädning av Seniorbolaget" class="wp-image-62" style="border-radius:16px"/></figure>
+			<!-- wp:image {"id":125,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
+			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/2026/02/service_stad.jpg" alt="Hemstädning av Seniorbolaget" class="wp-image-125" style="border-radius:16px"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->
