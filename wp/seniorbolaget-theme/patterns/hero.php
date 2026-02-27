@@ -23,7 +23,7 @@
 
     <!-- H1 -->
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.5rem,5.5vw,4rem);font-weight:800;color:#fff;line-height:1.1;margin:0 0 24px;">
-      Hemtjänster av<br>
+      Hushållsnära tjänster av<br>
       <span style="color:#FF6B6B;">erfarna seniorer</span>
     </h1>
 

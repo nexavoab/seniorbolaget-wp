@@ -196,8 +196,8 @@
     <a href="/intresseanmalan/" class="sb-bento-card sb-bento-card--accent">
       <div>
         <div class="sb-card-icon">💰</div>
-        <p class="sb-card-title">50% rabatt med RUT/ROT</p>
-        <p class="sb-card-desc">Du betalar bara halva priset — vi hanterar avdraget direkt med Skatteverket.</p>
+        <p class="sb-card-title">RUT 50% · ROT 30%</p>
+        <p class="sb-card-desc">RUT-avdrag: du betalar 50%. ROT-avdrag: du betalar 70%. Vi hanterar avdragen direkt med Skatteverket.</p>
       </div>
       <span class="sb-card-link">Boka nu</span>
     </a>

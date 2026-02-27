@@ -1388,9 +1388,9 @@ function sb_seo_meta() {
     
     // Handle front page specially (may not have $post or may be posts page)
     if (is_front_page()) {
-        add_filter('pre_get_document_title', function() { return 'Seniorbolaget — Hemtjänster av erfarna seniorer 55+'; }, 25);
+        add_filter('pre_get_document_title', function() { return 'Seniorbolaget — Hushållsnära tjänster av erfarna seniorer 55+'; }, 25);
         echo '<meta name="description" content="Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.">' . "\n";
-        echo '<meta property="og:title" content="Seniorbolaget — Hemtjänster av erfarna seniorer 55+">' . "\n";
+        echo '<meta property="og:title" content="Seniorbolaget — Hushållsnära tjänster av erfarna seniorer 55+">' . "\n";
         echo '<meta property="og:description" content="Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.">' . "\n";
         echo '<meta property="og:type" content="website">' . "\n";
         echo '<meta name="robots" content="index, follow">' . "\n";
@@ -1407,7 +1407,7 @@ function sb_seo_meta() {
         'tradgard' => ['Trädgårdshjälp av erfarna seniorer — Seniorbolaget', 'Gräsklippning, häck, ogräs och trädgårdsskötsel. Erfarna seniorer 55+ nära dig. RUT-avdrag. Boka idag.'],
         'malning-tapetsering' => ['Målning inomhus & utomhus — Seniorbolaget', 'Professionell målning av erfarna hantverkare 55+. Inomhus och utomhus. ROT-avdrag. Kostnadsfri offert.'],
         'snickeri' => ['Snickeri & byggtjänster — Seniorbolaget', 'Erfarna snickare 55+ för allt från hyllor till renoveringar. ROT-avdrag. Kostnadsfri offert. Svar inom 2h.'],
-        'privat' => ['Hemtjänster för privatpersoner — Seniorbolaget', 'Städning, trädgård, snickeri och målning av erfarna seniorer. RUT/ROT-avdrag. Verifierade franchisetagare. Boka idag.'],
+        'privat' => ['Hushållsnära tjänster för privatpersoner — Seniorbolaget', 'Hushållsnära tjänster av erfarna seniorer. RUT/ROT-avdrag. Verifierade franchisetagare. Boka idag.'],
         'foretag' => ['Företagstjänster & B2B — Seniorbolaget', 'Pålitlig bemanning, städning och underhåll för företag och BRF. Erfarna seniorer 55+. Faktura 30 dagar.'],
         'om-oss' => ['Om Seniorbolaget — Erfarna seniorer gör skillnad', 'Vi matchar erfarna seniorer 55+ med hushåll och företag som behöver pålitlig hjälp. Läs om vår historia och vision.'],
         'jobba-med-oss' => ['Jobba hos Seniorbolaget — Meningsfullt arbete för seniorer 55+', 'Älskar du att hjälpa andra? Jobba som hemtjänstpersonal hos Seniorbolaget. Flexibla tider, bra betalt, meningsfullt.'],
@@ -1432,7 +1432,7 @@ function sb_seo_meta() {
     
     foreach ($city_names as $city_slug => $city_name) {
         $seo[$city_slug] = [
-            "Hemtjänst i {$city_name} — Seniorbolaget",
+            "Hushållsnära tjänster i {$city_name} — Seniorbolaget",
             "Boka hemstädning, trädgård eller snickeri i {$city_name} av erfarna seniorer 55+. Lokal franchisetagare nära dig. RUT-avdrag. Svar inom 2h."
         ];
     }
@@ -1465,7 +1465,7 @@ function sb_schema_markup() {
         '@context' => 'https://schema.org',
         '@type' => 'LocalBusiness',
         'name' => 'Seniorbolaget',
-        'description' => 'Hemtjänster utförda av erfarna seniorer 55+',
+        'description' => 'Hushållsnära tjänster utförda av erfarna seniorer 55+',
         'url' => 'https://seniorbolaget.se',
         'telephone' => '+46101751900',
         'email' => 'info@seniorbolaget.se',
@@ -1473,7 +1473,7 @@ function sb_schema_markup() {
         'priceRange' => '$$',
         'hasOfferCatalog' => [
             '@type' => 'OfferCatalog',
-            'name' => 'Hemtjänster',
+            'name' => 'Hushållsnära tjänster',
             'itemListElement' => [
                 ['@type'=>'Offer','itemOffered'=>['@type'=>'Service','name'=>'Hemstädning']],
                 ['@type'=>'Offer','itemOffered'=>['@type'=>'Service','name'=>'Trädgård']],
