@@ -33,6 +33,59 @@
 
 <!-- JOBBANSÖKAN WIZARD (WAS-74) -->
 <!-- wp:html -->
+<script>
+function jobWizardApp() {
+    return ({
+        step: 1,
+        isSubmitting: false,
+        errorMsg: '',
+        formData: {
+            city: '', service: '', experience: '',
+            name: '', phone: '', email: '', gdprConsent: false
+        },
+        cities: [
+            {value:'amal',name:'Åmål'},{value:'boras',name:'Borås'},
+            {value:'eskilstuna',name:'Eskilstuna'},{value:'falkenberg',name:'Falkenberg'},
+            {value:'goteborg',name:'Göteborg'},{value:'halmstad',name:'Halmstad'},
+            {value:'helsingborg',name:'Helsingborg'},{value:'jonkoping',name:'Jönköping'},
+            {value:'karlstad',name:'Karlstad'},{value:'kristianstad',name:'Kristianstad'},
+            {value:'kungsbacka',name:'Kungsbacka'},{value:'kungalv',name:'Kungälv'},
+            {value:'laholm',name:'Laholm/Båstad'},{value:'landskrona',name:'Landskrona'},
+            {value:'lerum',name:'Lerum/Partille'},{value:'molndal',name:'Mölndal/Härryda'},
+            {value:'nassjo',name:'Nässjö'},{value:'orebro',name:'Örebro'},
+            {value:'skovde',name:'Skövde'},{value:'stenungsund',name:'Stenungsund'},
+            {value:'sundsvall',name:'Sundsvall'},{value:'torsby',name:'Torsby'},
+            {value:'trelleborg',name:'Trelleborg'},{value:'trollhattan',name:'Trollhättan'},
+            {value:'ulricehamn',name:'Ulricehamn'},{value:'varberg',name:'Varberg'}
+        ],
+        selectService(val) { this.formData.service = val; this.step = 3; },
+        selectExperience(val) { this.formData.experience = val; this.step = 4; },
+        canSubmit() {
+            return this.formData.name && this.formData.phone &&
+                   this.formData.email && this.formData.gdprConsent;
+        },
+        submitForm() {
+            if (!this.canSubmit()) { this.errorMsg = 'Fyll i alla fält och godkänn villkoren.'; return; }
+            this.isSubmitting = true;
+            this.errorMsg = '';
+            fetch('/wp-admin/admin-post.php', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: new URLSearchParams({
+                    action: 'sb_job_application',
+                    ...this.formData
+                })
+            }).then(() => {
+                this.step = 5;
+                this.isSubmitting = false;
+            }).catch(() => {
+                this.errorMsg = 'Något gick fel. Försök igen eller ring oss.';
+                this.isSubmitting = false;
+            });
+        }
+    });
+}
+</script>
 <div class="job-wizard-container" x-data="jobWizardApp()" x-cloak>
     <div class="job-wizard-inner">
         

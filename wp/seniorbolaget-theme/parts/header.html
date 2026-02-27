@@ -1,8 +1,6 @@
 <!-- wp:html -->
 <style>
 /* Card Nav Styles */
-body { padding-top: 100px !important; }
-
 .card-nav-container {
   position: fixed;
   top: 2em;
@@ -108,77 +106,53 @@ body { padding-top: 100px !important; }
 }
 
 .card-nav-content {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 60px;
-  bottom: 0;
-  padding: 0.5rem;
-  display: flex;
-  align-items: flex-end;
-  gap: 12px;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: 1;
+  position: absolute; left: 0; right: 0; top: 60px; bottom: 0;
+  padding: 8px; display: flex; align-items: stretch;
+  gap: 8px; visibility: hidden; pointer-events: none; z-index: 1;
 }
 
 .card-nav.open .card-nav-content {
-  visibility: visible;
-  pointer-events: auto;
+  visibility: visible !important; pointer-events: auto !important;
 }
 
 .nav-card {
-  height: 100%;
-  flex: 1 1 0;
-  min-width: 0;
-  border-radius: calc(0.75rem - 0.2rem);
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 12px 16px;
-  gap: 8px;
-  user-select: none;
+  height: 100%; flex: 1 1 0; min-width: 0;
+  border-radius: 10px;
+  position: relative; display: flex; flex-direction: column;
+  padding: 14px 16px 16px; gap: 6px; user-select: none;
+  border: 1px solid rgba(0,0,0,0.06);
 }
 
 .nav-card-privat {
-  background-color: #FFD6D6;
+  background-color: #FFCDD2;
   color: #1F2937;
 }
 
 .nav-card-foretag {
-  background-color: #D6E4FF;
+  background-color: #BBDEFB;
   color: #1F2937;
 }
 
 .nav-card-omoss {
-  background-color: #D6F0E0;
+  background-color: #C8E6C9;
   color: #1F2937;
 }
 
 .nav-card-label {
-  font-weight: 400;
-  font-size: 22px;
-  letter-spacing: -0.5px;
-  font-family: Rubik, sans-serif;
+  font-weight: 600; font-size: 15px;
+  letter-spacing: 0; font-family: Rubik,sans-serif;
+  color: #1F2937; margin-bottom: 4px;
 }
 
 .nav-card-links {
-  margin-top: auto;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
+  margin-top: 6px; display: flex; flex-direction: column; gap: 1px;
 }
 
 .nav-card-link {
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: opacity 0.3s ease;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-family: Inter, sans-serif;
-  color: inherit;
+  font-size: 14px; cursor: pointer; text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: Inter,sans-serif; color: #374151; padding: 2px 0;
 }
 
 .nav-card-link:hover {
@@ -186,8 +160,6 @@ body { padding-top: 100px !important; }
 }
 
 @media (max-width: 768px) {
-  body { padding-top: 80px !important; }
-  
   .card-nav-container {
     width: 90%;
     top: 1.2em;
@@ -213,28 +185,31 @@ body { padding-top: 100px !important; }
   }
 
   .card-nav-content {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 8px;
-    padding: 0.5rem;
-    bottom: 0;
-    justify-content: flex-start;
-  }
+  position: absolute; left: 0; right: 0; top: 60px; bottom: 0;
+  padding: 8px; display: flex; align-items: stretch;
+  gap: 8px; visibility: hidden; pointer-events: none; z-index: 1;
+}
 
   .nav-card {
-    height: auto;
-    min-height: 60px;
-    flex: 1 1 auto;
-    max-height: none;
-  }
+  height: 100%; flex: 1 1 0; min-width: 0;
+  border-radius: 10px;
+  position: relative; display: flex; flex-direction: column;
+  padding: 14px 16px 16px; gap: 6px; user-select: none;
+  border: 1px solid rgba(0,0,0,0.06);
+}
 
   .nav-card-label {
-    font-size: 18px;
-  }
+  font-weight: 600; font-size: 15px;
+  letter-spacing: 0; font-family: Rubik,sans-serif;
+  color: #1F2937; margin-bottom: 4px;
+}
 
   .nav-card-link {
-    font-size: 15px;
-  }
+  font-size: 14px; cursor: pointer; text-decoration: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: Inter,sans-serif; color: #374151; padding: 2px 0;
+}
 }
 </style>
 
@@ -300,10 +275,12 @@ document.addEventListener('DOMContentLoaded', function() {
       // Calculate height needed
       content.style.visibility = 'visible';
       var contentHeight = content.scrollHeight;
-      content.style.visibility = '';
-      nav.style.height = (60 + contentHeight + 16) + 'px';
+      nav.style.height = (60 + Math.min(contentHeight, 200) + 16) + 'px';
+      content.style.pointerEvents = 'auto';
     } else {
       nav.style.height = '60px';
+      content.style.visibility = 'hidden';
+      content.style.pointerEvents = 'none';
     }
     nav.classList.toggle('open');
     hamburger.classList.toggle('open');
@@ -313,12 +290,26 @@ document.addEventListener('DOMContentLoaded', function() {
   document.addEventListener('click', function(e) {
     if (!nav.contains(e.target) && nav.classList.contains('open')) {
       nav.style.height = '60px';
+      content.style.visibility = 'hidden';
+      content.style.pointerEvents = 'none';
       nav.classList.remove('open');
       hamburger.classList.remove('open');
     }
   });
   
   // Scroll effect
+  // Add top padding on non-hero pages (prevents nav overlapping content)
+  (function() {
+    var first = document.querySelector('.wp-site-blocks > div:first-child, main > *:first-child');
+    if (first) {
+      var bg = window.getComputedStyle(first).backgroundImage;
+      var hasHero = bg && bg !== 'none';
+      if (!hasHero) {
+        document.querySelector('.wp-site-blocks').style.paddingTop = '90px';
+      }
+    }
+  })();
+
   window.addEventListener('scroll', function() {
     if (window.scrollY > 50) {
       container.style.top = '1em';
