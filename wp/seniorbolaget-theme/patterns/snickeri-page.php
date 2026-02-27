@@ -1,9 +1,9 @@
 <?php
 /**
- * Title: Hemstädning - Tjänstesida
- * Slug: seniorbolaget/hemstad-page
+ * Title: Snickeri - Tjänstesida
+ * Slug: seniorbolaget/snickeri-page
  * Categories: seniorbolaget, services
- * Description: Komplett tjänstesida för hemstädning
+ * Description: Komplett tjänstesida för snickeri och hantverk
  * Viewport Width: 1440
  */
 ?>
@@ -19,36 +19,36 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 
 			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.75rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-			<p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Privat · Hemstädning</p>
+			<p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Privat · Snickeri</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.05em","fontSize":"0.875rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:var(--wp--preset--color--rod);font-size:0.875rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem">RUT-avdrag — du betalar bara 50%</p>
+			<p style="color:var(--wp--preset--color--rod);font-size:0.875rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem">✓ ROT-avdrag — du betalar bara 70%</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-			<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Hemstädning av erfarna seniorer</h1>
+			<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Snickeri & hantverk av erfarna seniorer</h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:html -->
 			<div style="display:inline-flex;align-items:center;gap:8px;background:#FFF4F2;border:2px solid #C91C22;border-radius:50px;padding:8px 20px;margin:0 0 16px;">
 			  <span style="font-size:1.25rem;">💰</span>
-			  <span style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;font-size:1rem;">50% billigare med RUT-avdrag</span>
+			  <span style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;font-size:1rem;">30% billigare med ROT-avdrag</span>
 			</div>
 			<!-- /wp:html -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","fontWeight":"500","lineHeight":"1.5"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:#4B5563;font-size:1.375rem;font-weight:500;line-height:1.5;margin-bottom:1rem">Vi gör vardagen enklare</p>
+			<p style="color:#4B5563;font-size:1.375rem;font-weight:500;line-height:1.5;margin-bottom:1rem">Hantverk med precision</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-			<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Professionell hemstädning med erfarenhet, noggrannhet och omtanke. Vi anpassar alltid städningen efter dina behov.</p>
+			<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Behöver du hjälp med snickeriarbeten? Våra seniorer fixar allt från hyllor och möbler till enklare renoveringar med gedigen yrkeserfarenhet och noggrannhet.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 			<div class="wp-block-buttons" style="margin-bottom:1.5rem">
 				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Boka städning</a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Boka snickare</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -65,15 +65,6 @@
 			  ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Kostnadsfri offert &nbsp;·&nbsp; ✓ Inga bindningstider
 			</p>
 			<!-- /wp:html -->
-
-			<?php if (defined('SENIORBOLAGET_FEATURE_POSTNUMMER') && SENIORBOLAGET_FEATURE_POSTNUMMER): ?>
-			<!-- wp:html -->
-			<div style="margin-top:1.5rem;display:flex;gap:8px;max-width:380px;">
-				<input type="text" placeholder="Ditt postnummer" maxlength="5" inputmode="numeric" style="flex:1;padding:14px 18px;border:2px solid #e5e7eb;border-radius:50px;font-size:1rem;font-family:Inter,sans-serif;color:#1F2937;outline:none;" aria-label="Ange postnummer för prisuppskattning" />
-				<button style="padding:14px 24px;background:#C91C22;color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:600;font-family:Rubik,sans-serif;cursor:pointer;white-space:nowrap;" type="button">Beräkna pris</button>
-			</div>
-			<!-- /wp:html -->
-			<?php endif; ?>
 
 			<!-- wp:html -->
 			<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
@@ -93,8 +84,8 @@
 
 		<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
-			<!-- wp:image {"id":62,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
-			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/hemstad-hero.jpg" alt="Hemstädning av Seniorbolaget" class="wp-image-62" style="border-radius:16px"/></figure>
+			<!-- wp:image {"id":59,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
+			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/snickeri-hero.jpg" alt="Snickeri och hantverk av Seniorbolaget" class="wp-image-59" style="border-radius:16px"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->
@@ -111,55 +102,55 @@
 <div class="wp-block-group alignfull" style="background-color:#FAFAF8;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
 	<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-	<h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-weight:700;margin-bottom:3rem">Vad ingår i hemstädningen?</h2>
+	<h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-weight:700;margin-bottom:3rem">Vad ingår i snickeriarbetet?</h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:html -->
 	<div class="seniorbolaget-bento" style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:16px;max-width:1100px;margin:0 auto;">
 
-	  <!-- Stort kort — Dammtorkning (2 kolumner) -->
+	  <!-- Stort kort — Hyllor & förvaring (2 kolumner) -->
 	  <div style="grid-column:span 2;background:#fff;border-radius:20px;padding:36px;box-shadow:0 2px 16px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:16px;">
 	    <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-	      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+	      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M3 15h18M9 3v18"/></svg>
 	    </div>
 	    <div>
-	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.25rem;color:#1F2937;margin:0 0 8px;">Dammtorkning &amp; dammsugning</p>
-	      <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0;line-height:1.6;">Alla ytor, golv, möbler och svåråtkomliga ställen. Vi är noggranna — varje gång.</p>
+	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.25rem;color:#1F2937;margin:0 0 8px;">Hyllor &amp; förvaring</p>
+	      <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0;line-height:1.6;">Bygg- och montering av hyllsystem, garderober och skräddarsydda lösningar.</p>
 	    </div>
 	  </div>
 
-	  <!-- Litet kort — Badrum & kök -->
+	  <!-- Litet kort — Möbelmontering -->
 	  <div style="background:#FFF4F2;border-radius:20px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:12px;">
 	    <div style="width:44px;height:44px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M4 12h16M4 6h16M4 18h16"/></svg>
+	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M5 7V4a1 1 0 011-1h12a1 1 0 011 1v3"/></svg>
 	    </div>
-	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.05rem;color:#1F2937;margin:0;">Badrum &amp; kök</p>
-	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Sanering, avkalkning, vitvaror och kakel.</p>
+	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.05rem;color:#1F2937;margin:0;">Möbelmontering</p>
+	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Från platt till klart. Vi monterar all typ av möbler noggrant.</p>
 	  </div>
 
-	  <!-- Litet kort — Fönsterputs -->
+	  <!-- Litet kort — Dörrar & fönster -->
 	  <div style="background:#FAFAF8;border-radius:20px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:12px;">
 	    <div style="width:44px;height:44px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;">
-	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="3" x2="9" y2="21"/></svg>
+	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18M9 12h3"/></svg>
 	    </div>
-	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.05rem;color:#1F2937;margin:0;">Fönsterputs</p>
-	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Klara fönster — in- och utsida.</p>
+	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.05rem;color:#1F2937;margin:0;">Dörrar &amp; fönster</p>
+	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Byte, justering och tätning. Drag och skrällar försvinner.</p>
 	  </div>
 
-	  <!-- Bred rad — Tvätt & strykning (3 kolumner) -->
+	  <!-- Bred rad — Renovering & reparationer (3 kolumner) -->
 	  <div style="grid-column:span 3;background:linear-gradient(135deg,#C91C22 0%,#a01519 100%);border-radius:20px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
 	    <div>
-	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 6px;">Tvätt &amp; strykning</p>
-	      <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.85);margin:0;">På begäran — vi hjälper gärna med det också.</p>
+	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 6px;">Renovering &amp; reparationer</p>
+	      <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.85);margin:0;">Golv, lister, sparklar, målning — vi fixar det lilla som gör stor skillnad.</p>
 	    </div>
-	    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M8 12h8M12 8v8"/></svg>
+	    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3.77-3.77a6 6 0 01-7.94 7.94l-6.91 6.91a2.12 2.12 0 01-3-3l6.91-6.91a6 6 0 017.94-7.94l-3.76 3.76z"/></svg>
 	  </div>
 
-	  <!-- Litet kort — Allt ingår-badge -->
+	  <!-- Litet kort — ROT-avdrag badge -->
 	  <div style="background:#1F2937;border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;">
 	    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:0.9375rem;color:#fff;margin:0;">Allt ingår</p>
-	    <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#9CA3AF;margin:0;">Städmaterial &amp; utrustning</p>
+	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:0.9375rem;color:#fff;margin:0;">ROT-avdrag ✓</p>
+	    <p style="font-family:Inter,sans-serif;font-size:0.75rem;color:#9CA3AF;margin:0;">Du betalar bara 70%</p>
 	  </div>
 
 	</div>
@@ -180,7 +171,7 @@
 <!-- /wp:group -->
 
 
-<!-- RUT-AVDRAG SECTION -->
+<!-- ROT-AVDRAG SECTION -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FFFFFF"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FFFFFF;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
@@ -191,11 +182,11 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 
 			<!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-			<h2 class="wp-block-heading" style="color:#1F2937;font-weight:700;margin-bottom:1.5rem">Du betalar bara 50% med RUT-avdrag</h2>
+			<h2 class="wp-block-heading" style="color:#1F2937;font-weight:700;margin-bottom:1.5rem">Du betalar bara 70% med ROT-avdrag</h2>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:#4B5563;font-size:1rem;line-height:1.7;margin-bottom:1rem">RUT-avdraget innebär att du som privatperson kan få 50% skattereduktion på arbetskostnaden för hushållsnära tjänster som städning, tvätt och fönsterputs.</p>
+			<p style="color:#4B5563;font-size:1rem;line-height:1.7;margin-bottom:1rem">ROT-avdraget innebär att du som privatperson kan få 30% skattereduktion på arbetskostnaden för reparation, ombyggnad och tillbyggnad — inklusive snickeriarbeten.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
@@ -240,10 +231,10 @@
 					<!-- wp:group {"style":{"spacing":{"blockGap":"0"}},"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between"}} -->
 					<div class="wp-block-group">
 						<!-- wp:paragraph {"style":{"color":{"text":"#C91C22"}}} -->
-						<p style="color:#C91C22">RUT-avdrag (50%):</p>
+						<p style="color:#C91C22">ROT-avdrag (30%):</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"style":{"color":{"text":"#C91C22"},"typography":{"fontWeight":"600"}}} -->
-						<p style="color:#C91C22;font-weight:600">-250 kr</p>
+						<p style="color:#C91C22;font-weight:600">-150 kr</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
@@ -258,7 +249,7 @@
 						<p style="color:#1F2937;font-size:1.125rem;font-weight:700">Du betalar:</p>
 						<!-- /wp:paragraph -->
 						<!-- wp:paragraph {"style":{"color":{"text":"#C91C22"},"typography":{"fontWeight":"700","fontSize":"1.25rem"}}} -->
-						<p style="color:#C91C22;font-size:1.25rem;font-weight:700">250 kr/timme</p>
+						<p style="color:#C91C22;font-size:1.25rem;font-weight:700">350 kr/timme</p>
 						<!-- /wp:paragraph -->
 					</div>
 					<!-- /wp:group -->
@@ -268,15 +259,15 @@
 
 				<!-- wp:html -->
 				<div style="margin-top:1.5rem;">
-					<p style="font-weight:600;font-size:1rem;color:#1F2937;margin-bottom:1rem;">Så fungerar RUT-avdraget i praktiken:</p>
+					<p style="font-weight:600;font-size:1rem;color:#1F2937;margin-bottom:1rem;">Så fungerar ROT-avdraget i praktiken:</p>
 					<ol style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0.75rem;">
 						<li style="display:flex;align-items:flex-start;gap:12px;">
 							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">1</span>
-							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Vi utför städningen och fakturerar dig <strong>halva priset</strong></span>
+							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Vi utför snickeriarbetet och fakturerar dig <strong>70% av priset</strong></span>
 						</li>
 						<li style="display:flex;align-items:flex-start;gap:12px;">
 							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">2</span>
-							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Vi ansöker om RUT-avdraget hos Skatteverket <strong>åt dig</strong></span>
+							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Vi ansöker om ROT-avdraget hos Skatteverket <strong>åt dig</strong></span>
 						</li>
 						<li style="display:flex;align-items:flex-start;gap:12px;">
 							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">3</span>
@@ -322,10 +313,10 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Samma person varje gång</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Rätt gjort från start</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Du lär känna din städare. Trygghet och förtroende som varar.</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Gedigen yrkeserfarenhet — inga genvägar, inga kompromisser.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -346,10 +337,10 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Vi anpassar oss till dina tider</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Vi lyssnar på dina behov</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Du väljer dag och tid. Vi är flexibla — alltid.</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Varje uppdrag är unikt. Vi anpassar lösningen efter dig.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -370,10 +361,10 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Extra omtanke ingår alltid</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Snyggt och städat</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Våra seniorer förstår vad omsorg betyder. Det syns i jobbet.</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Vi lämnar aldrig ett jobb halvfärdigt eller ett rum ostädat.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
@@ -395,28 +386,28 @@
 <!-- RECENSIONER -->
 <!-- wp:pattern {"slug":"seniorbolaget/testimonials"} /-->
 
-<!-- CTA-BAND (hemstäd-specifik) -->
+<!-- CTA-BAND (snickeri-specifik) -->
 <!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px"}},"color":{"background":"#4A5568"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
 <div class="wp-block-group alignfull has-background" style="background-color:#4A5568;padding-top:100px;padding-bottom:100px;">
 
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Få tiden tillbaka — vi fixar städningen</h2>
+  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Snickerihjälp som håller — boka en erfaren hantverkare</h2>
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
-  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem;">Boka hemstädning idag. Vi matchar dig med rätt senior — och RUT-avdraget sköter vi åt dig.</p>
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem;">Boka snickare idag. Vi matchar dig med rätt senior — och ROT-avdraget sköter vi åt dig.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons">
     <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hemstädning</a></div>
+    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka snickare</a></div>
     <!-- /wp:button -->
   </div>
   <!-- /wp:buttons -->
 
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.6)"},"typography":{"fontSize":"0.875rem"},"spacing":{"margin":{"top":"1rem"}}}} -->
-  <p class="has-text-align-center" style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:1rem;">✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT direkt på fakturan</p>
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:1rem;">✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ ROT direkt på fakturan</p>
   <!-- /wp:paragraph -->
 
 </div>
@@ -455,7 +446,7 @@
 <div class="seniorbolaget-sticky-cta">
   <a href="/intresse-anmalan">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-    Boka städning
+    Boka snickare
   </a>
 </div>
 <!-- /wp:html -->
