@@ -794,3 +794,38 @@ function seniorbolaget_wizard_submit() {
         wp_send_json_error(['message' => 'Kunde inte skicka förfrågan. Ring oss på 010-175 19 00.']);
     }
 }
+
+
+
+// ===== INTENTIONS BAR (WAS-68) — inline script approach =====
+function sb_add_intentions_bar() {
+    $html = '<style>
+.sb-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;display:flex;justify-content:center;background:rgba(255,255,255,.96);backdrop-filter:blur(12px);border-top:1px solid rgba(0,0,0,.08);box-shadow:0 -4px 24px rgba(0,0,0,.08);padding:12px 16px;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.sb-bar.show{transform:translateY(0);}
+.sb-bar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:600px;width:100%;}
+.sb-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;border:1.5px solid transparent;white-space:nowrap;transition:box-shadow .3s,border-color .3s;}
+.sb-btn-t,.sb-btn-f{display:inline-flex;align-items:center;gap:6px;}
+.sb-btn-t{position:relative;z-index:1;transition:transform .3s,opacity .3s;}
+.sb-btn-f{position:absolute;inset:0;justify-content:center;transform:translateY(100%);transition:transform .3s;border-radius:inherit;}
+.sb-btn:hover .sb-btn-t{transform:translateY(-150%);opacity:0;}
+.sb-btn:hover .sb-btn-f{transform:translateY(0);}
+.sb-btn-r{background:#C91C22;color:#fff;}
+.sb-btn-r .sb-btn-f{background:#a01018;color:#fff;}
+.sb-btn-r:hover{box-shadow:0 4px 20px rgba(201,28,34,.35);}
+.sb-btn-o{background:transparent;color:#1F2937;border-color:#e5e7eb;}
+.sb-btn-o .sb-btn-f{background:#1F2937;color:#fff;}
+.sb-btn-o:hover{border-color:#1F2937;}
+.sb-x{background:none;border:none;cursor:pointer;color:#9CA3AF;font-size:1.25rem;padding:4px 8px;}
+body{padding-bottom:76px!important;}
+</style>
+<div class="sb-bar" id="sbBar">
+<div class="sb-bar-inner">
+<a href="/intresseanmalan/" class="sb-btn sb-btn-r"><span class="sb-btn-t">🧹 Boka hjälp</span><span class="sb-btn-f">🧹 Boka hjälp</span></a>
+<a href="/jobba-med-oss/" class="sb-btn sb-btn-o"><span class="sb-btn-t">👴 Jobba hos oss</span><span class="sb-btn-f">👴 Jobba hos oss</span></a>
+<a href="/bli-franchisetagare/" class="sb-btn sb-btn-o"><span class="sb-btn-t">🏢 Hör av dig</span><span class="sb-btn-f">🏢 Hör av dig</span></a>
+<button class="sb-x" onclick="document.getElementById(\'sbBar\').style.transform=\'translateY(100%)\';document.body.style.paddingBottom=\'0\';sessionStorage.setItem(\'sb_x\',1)">×</button>
+</div></div>
+<script>if(!sessionStorage.getItem(\'sb_x\')){var b=document.getElementById(\'sbBar\'),s=0;function sh(){if(s)return;s=1;b.classList.add(\'show\');}setTimeout(sh,4000);window.addEventListener(\'scroll\',function(){if(scrollY>300)sh();},{passive:true});}</script>';
+    echo $html;
+}
+add_action( 'wp_footer', 'sb_add_intentions_bar', 100 );
