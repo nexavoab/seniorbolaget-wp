@@ -829,3 +829,61 @@ body{padding-bottom:76px!important;}
     echo $html;
 }
 add_action( 'wp_footer', 'sb_add_intentions_bar', 100 );
+
+
+
+// ===== GLOBAL BUTTON SLIDE-REVEAL (WAS-71) =====
+function sb_global_button_animation() {
+    ?>
+<style>
+/* ButtonCreativeTop — global slide-reveal */
+.wp-block-button__link {
+    position: relative !important;
+    overflow: hidden !important;
+    isolation: isolate !important;
+}
+.wp-block-button__link .sb-btn-label {
+    display: block;
+    transition: transform 0.32s cubic-bezier(.16,1,.3,1), opacity 0.32s ease;
+    will-change: transform;
+}
+.wp-block-button__link:hover .sb-btn-label {
+    transform: translateY(-130%);
+    opacity: 0;
+}
+.wp-block-button__link .sb-btn-fill {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(110%);
+    transition: transform 0.32s cubic-bezier(.16,1,.3,1);
+    background: rgba(0,0,0,0.18);
+    border-radius: inherit;
+    will-change: transform;
+}
+.wp-block-button__link:hover .sb-btn-fill {
+    transform: translateY(0);
+}
+</style>
+<script>
+(function(){
+    var done = false;
+    function wrapBtns() {
+        if(done) return; done = true;
+        document.querySelectorAll('.wp-block-button__link').forEach(function(btn) {
+            if(btn.querySelector('.sb-btn-label')) return;
+            var label = btn.textContent.trim();
+            btn.innerHTML =
+                '<span class="sb-btn-label">' + label + '</span>' +
+                '<span class="sb-btn-fill" aria-hidden="true">' + label + '</span>';
+        });
+    }
+    if(document.readyState !== 'loading') { wrapBtns(); }
+    else { document.addEventListener('DOMContentLoaded', wrapBtns); }
+})();
+</script>
+<?php
+}
+add_action('wp_footer', 'sb_global_button_animation', 99);
