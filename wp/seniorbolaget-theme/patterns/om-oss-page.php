@@ -211,7 +211,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"16px"}}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hjälp</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresseanmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hjälp</a></div>
 		<!-- /wp:button -->
 		<!-- wp:button {"textColor":"vit","style":{"border":{"radius":"50px","width":"2px","color":"#ffffff"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"600"}},"className":"is-style-outline"} -->
 		<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-vit-color has-text-color wp-element-button" href="/jobba-med-oss" style="border-color:#ffffff;border-width:2px;border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:600;">Jobba med oss</a></div>

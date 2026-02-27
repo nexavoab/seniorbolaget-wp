@@ -147,7 +147,7 @@
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Räkna ut din kostnad</a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresseanmalan/" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Räkna ut din kostnad</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -352,7 +352,7 @@
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons">
     <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hemstädning</a></div>
+    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresseanmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hemstädning</a></div>
     <!-- /wp:button -->
   </div>
   <!-- /wp:buttons -->

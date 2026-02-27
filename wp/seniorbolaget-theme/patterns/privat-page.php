@@ -8,71 +8,33 @@
  */
 ?>
 
-<!-- HERO SECTION -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
-
-	<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"left":"60px"}}}} -->
-	<div class="wp-block-columns alignwide are-vertically-aligned-center">
-
-		<!-- wp:column {"width":"60%","verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:60%">
-
-			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.75rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-			<p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Privat</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-			<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Erfarna seniorer hjälper dig hemma</h1>
-			<!-- /wp:heading -->
-
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","fontWeight":"500","lineHeight":"1.5"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-			<p style="color:#4B5563;font-size:1.375rem;font-weight:500;line-height:1.5;margin-bottom:2rem">Städning, trädgård, målning &amp; snickeri – med RUT/ROT-avdrag</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-			<div class="wp-block-buttons" style="margin-bottom:1.5rem">
-				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresseanmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Boka hjälp</a></div>
-				<!-- /wp:button -->
-			</div>
-			<!-- /wp:buttons -->
-
-			<!-- wp:html -->
-			<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
-				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:0.9375rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-					<span>RUT-avdrag direkt</span>
-				</div>
-				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:0.9375rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-					<span>Erfarna 55+ år</span>
-				</div>
-				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:0.9375rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-					<span>Trygghetsgranskat</span>
-				</div>
-			</div>
-			<!-- /wp:html -->
-
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column {"width":"40%","verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%">
-			<!-- wp:html -->
-			<div style="position:relative;border-radius:20px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.12);">
-				<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_stad.jpg" alt="Senior hjälper till hemma" style="width:100%;height:auto;display:block;" loading="lazy"/>
-			</div>
-			<!-- /wp:html -->
-		</div>
-		<!-- /wp:column -->
-
-	</div>
-	<!-- /wp:columns -->
-
+<!-- HERO SECTION — Full-bleed background -->
+<!-- wp:html -->
+<div style="position:relative;min-height:85vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg');background-size:cover;background-position:center;overflow:hidden;">
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%);"></div>
+  <div style="position:relative;z-index:2;max-width:720px;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
+      ⭐⭐⭐⭐⭐ Tusentals nöjda kunder i Sverige
+    </div>
+    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">
+      Erfarna seniorer hjälper dig hemma
+    </h1>
+    <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">
+      Städning, trädgård, målning & snickeri — med RUT/ROT-avdrag
+    </p>
+    <div style="margin-bottom:32px;">
+      <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">
+        Boka hjälp →
+      </a>
+    </div>
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ RUT/ROT-avdrag</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Nöjd-garanti</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Erfarna 55+</span>
+    </div>
+  </div>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 
 <!-- TJÄNSTEGRID (4 kort) -->
@@ -406,3 +368,12 @@
 
 </div>
 <!-- /wp:group -->
+
+<!-- FLOATING STICKY CTA -->
+<!-- wp:html -->
+<div style="position:fixed;bottom:28px;right:28px;z-index:999;">
+  <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:700;padding:14px 28px;border-radius:50px;text-decoration:none;box-shadow:0 8px 32px rgba(201,28,34,0.45);">
+    📞 Boka hjälp →
+  </a>
+</div>
+<!-- /wp:html -->

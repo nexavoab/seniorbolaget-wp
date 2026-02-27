@@ -41,7 +41,7 @@
 			<h2 style="font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#fff;margin:0 0 4px;">Redo att boka?</h2>
 			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:0;">Skicka en förfrågan så kontaktar vi dig inom 24 timmar.</p>
 		</div>
-		<a href="/intresse-anmalan" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;font-family:Inter,sans-serif;font-size:1.125rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);transition:transform 0.2s;">
+		<a href="/intresseanmalan/" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;font-family:Inter,sans-serif;font-size:1.125rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);transition:transform 0.2s;">
 			Skicka förfrågan
 			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
 		</a>

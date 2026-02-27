@@ -41,7 +41,7 @@
 			<!-- wp:column {"width":"40%","verticalAlignment":"stretch"} -->
 			<div class="wp-block-column is-vertically-aligned-stretch" style="flex-basis:40%">
 				<!-- wp:image {"id":54,"sizeSlug":"large","linkDestination":"none","style":{"layout":{"selfStretch":"fill"}},"className":"is-style-default"} -->
-				<figure class="wp-block-image size-large is-style-default" style="height:100%"><img src="http://localhost:8888/wp-content/uploads/cta-image.png" alt="Senior skottar snö" class="wp-image-54" style="width:100%;height:100%;object-fit:cover"/></figure>
+				<figure class="wp-block-image size-large is-style-default" style="height:100%"><img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/cta-image.png" alt="Senior skottar snö" class="wp-image-54" style="width:100%;height:100%;object-fit:cover"/></figure>
 				<!-- /wp:image -->
 			</div>
 			<!-- /wp:column -->

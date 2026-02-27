@@ -307,7 +307,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"vit","textColor":"rod","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.25rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.25rem;font-weight:700;">Anmäl intresse</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/intresseanmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.25rem;font-weight:700;">Anmäl intresse</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

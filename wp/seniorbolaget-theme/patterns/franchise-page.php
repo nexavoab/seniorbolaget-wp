@@ -29,10 +29,10 @@ body.page-id-98 main > h1.wp-block-post-title {
 <!-- /wp:html -->
 
 <!-- HERO SECTION — full-width cover med overlay -->
-<!-- wp:cover {"url":"http://localhost:8888/wp-content/uploads/2026/02/cta-image.png","id":54,"dimRatio":60,"overlayColor":"dark","minHeight":580,"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"0","right":"0"}}}} -->
+<!-- wp:cover {"url":"https://staging.seniorbolaget.se/wp-content/uploads/2026/02/cta-image.png","id":54,"dimRatio":60,"overlayColor":"dark","minHeight":580,"align":"full","style":{"spacing":{"padding":{"top":"80px","bottom":"80px","left":"0","right":"0"}}}} -->
 <div class="wp-block-cover alignfull" style="min-height:580px;padding-top:80px;padding-bottom:80px;padding-left:0;padding-right:0;">
 	<span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background:linear-gradient(105deg,rgba(31,41,55,0.75) 0%,rgba(31,41,55,0.45) 100%);"></span>
-	<img class="wp-block-cover__image-background wp-image-54" alt="Bli franchisetagare" src="http://localhost:8888/wp-content/uploads/2026/02/cta-image.png" data-object-fit="cover" style="object-position:center;"/>
+	<img class="wp-block-cover__image-background wp-image-54" alt="Bli franchisetagare" src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/cta-image.png" data-object-fit="cover" style="object-position:center;"/>
 	<div class="wp-block-cover__inner-container" style="max-width:760px;padding:0 clamp(24px,6vw,120px);">
 
 		<!-- wp:html -->
@@ -403,7 +403,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 
 	<!-- wp:html -->
 	<div style="display:flex;align-items:center;gap:32px;flex-wrap:wrap;justify-content:center;">
-		<img src="http://localhost:8888/wp-content/uploads/2026/02/henrik_ceo.jpg" alt="Henrik Bergeld VD Seniorbolaget" style="width:120px;height:150px;object-fit:cover;object-position:center top;border-radius:16px;flex-shrink:0;" loading="lazy"/>
+		<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/henrik_ceo.jpg" alt="Henrik Bergeld VD Seniorbolaget" style="width:120px;height:150px;object-fit:cover;object-position:center top;border-radius:16px;flex-shrink:0;" loading="lazy"/>
 		<div style="flex:1;min-width:280px;">
 			<blockquote style="margin:0;padding:0;">
 				<p style="font-family:Inter,sans-serif;font-size:1.375rem;font-style:italic;color:#fff;line-height:1.6;margin:0 0 16px;">"Som franchisetagare hos Seniorbolaget får du chansen att driva eget, men aldrig ensam. Gör skillnad varje dag."</p>
