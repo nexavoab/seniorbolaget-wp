@@ -802,7 +802,8 @@ function seniorbolaget_job_wizard_css() {
     ?>
     <style id="seniorbolaget-job-wizard-css">
     /* Job Wizard Container */
-    .job-wizard-container{all:initial!important;display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FFF4F2!important;padding:60px 24px!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
+    .job-wizard-container[x-cloak]{display:none!important}
+    .job-wizard-container{display:block!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;background:#FFF4F2!important;padding:60px 24px!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;box-sizing:border-box!important}
     .job-wizard-container *,.job-wizard-container *::before,.job-wizard-container *::after{box-sizing:border-box!important}
     .job-wizard-inner{display:block!important;max-width:560px!important;width:100%!important;margin:0 auto!important;padding:0!important}
     
@@ -913,7 +914,7 @@ add_action('wp_head', 'seniorbolaget_job_wizard_css');
 function seniorbolaget_job_wizard_js() {
     ?>
     <script>
-    function jobWizardApp() {
+    window.jobWizardApp = function() {
         return {
             step: 1,
             isSubmitting: false,
@@ -1110,7 +1111,7 @@ function sb_job_application_handler() {
 // ===== INTENTIONS BAR (WAS-68) — inline script approach =====
 function sb_add_intentions_bar() {
     $html = '<style>
-.sb-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;display:flex;justify-content:center;background:transparent;border-top:none;box-shadow:none;padding:16px 16px 20px;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
+.sb-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;display:flex;justify-content:center;background:linear-gradient(to top,rgba(255,255,255,0.97) 0%,rgba(255,255,255,0.6) 65%,transparent 100%);border-top:none;box-shadow:none;padding:28px 16px 18px;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
 .sb-bar.show{transform:translateY(0);}
 .sb-bar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:600px;width:100%;}
 .sb-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;border:1.5px solid transparent;white-space:nowrap;transition:box-shadow .3s,border-color .3s;box-shadow:0 4px 16px rgba(0,0,0,0.22);}
