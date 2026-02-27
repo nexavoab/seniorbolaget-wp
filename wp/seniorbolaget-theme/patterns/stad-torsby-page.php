@@ -20,7 +20,7 @@
   <!-- FOTO - Rolf Nilsson -->
 <div class="franchisee-photo" style="flex:0 0 auto;">
     <div style="width:280px;height:340px;border-radius:24px;overflow:hidden;flex-shrink:0;border:3px solid rgba(201,28,34,0.12);box-shadow:0 8px 32px rgba(0,0,0,0.12);">
-      <img src="http://localhost:8888/wp-content/uploads/2026/02/franchisee_goteborg-sv.jpg" alt="Rolf Nilsson, franchisetagare Seniorbolaget Torsby" 
+      <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_goteborg-sv.jpg" alt="Rolf Nilsson, franchisetagare Seniorbolaget Torsby" 
            style="width:100%;height:100%;object-fit:cover;object-position:center top;" loading="lazy"/>
     </div>
   </div>

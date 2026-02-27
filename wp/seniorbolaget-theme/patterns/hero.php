@@ -65,7 +65,7 @@
 		<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
 			<!-- wp:image {"id":53,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"24px"}}} -->
-			<figure class="wp-block-image size-large has-custom-border"><img src="http://localhost:8888/wp-content/uploads/hero.jpg" alt="Glad senior som städar" class="wp-image-53" style="border-radius:24px"/></figure>
+			<figure class="wp-block-image size-large has-custom-border"><img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg" alt="Glad senior som städar" class="wp-image-53" style="border-radius:24px"/></figure>
 			<!-- /wp:image -->
 		</div>
 		<!-- /wp:column -->

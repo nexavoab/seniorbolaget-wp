@@ -30,7 +30,7 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/service-hemstad.jpg" alt="Städning av hem" class="service-card-image" />
+					<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_stad.jpg" alt="Städning av hem" class="service-card-image" />
 					<div class="service-card-overlay">
 						<a href="/tjanster/hemstad" class="service-card-cta">Boka Hemstäd →</a>
 					</div>
@@ -61,7 +61,7 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/service-tradgard.jpg" alt="Trädgårdsarbete" class="service-card-image" />
+					<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_tradgard.jpg" alt="Trädgårdsarbete" class="service-card-image" />
 					<div class="service-card-overlay">
 						<a href="/tjanster/tradgard" class="service-card-cta">Boka Trädgård →</a>
 					</div>
@@ -98,7 +98,7 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/service-malning.jpg" alt="Målning och tapetsering" class="service-card-image" />
+					<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_hantverk.jpg" alt="Målning och tapetsering" class="service-card-image" />
 					<div class="service-card-overlay">
 						<a href="/tjanster/malning-tapetsering" class="service-card-cta">Boka Målning →</a>
 					</div>
@@ -129,7 +129,7 @@
 			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
 				<!-- wp:html -->
 				<div class="service-card-image-wrap">
-					<img src="http://localhost:8888/wp-content/uploads/service-snickeri.jpg" alt="Snickeri och hantverk" class="service-card-image" />
+					<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_hantverk.jpg" alt="Snickeri och hantverk" class="service-card-image" />
 					<div class="service-card-overlay">
 						<a href="/tjanster/snickeri" class="service-card-cta">Boka Snickeri →</a>
 					</div>
