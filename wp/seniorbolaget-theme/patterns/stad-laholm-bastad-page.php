@@ -24,8 +24,6 @@
            style="width:100%;height:100%;object-fit:cover;object-position:center top;" loading="lazy"/>
     </div>
   </div>
-    </div>
-  </div>
 
   <!-- TEXT-INNEHÅLL -->
   <div style="flex:1;min-width:280px;">
