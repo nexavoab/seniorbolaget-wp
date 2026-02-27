@@ -177,6 +177,10 @@
   opacity: 1;
 }
 
+@media (max-width: 600px) {
+  .nav-phone-link { display: none !important; }
+}
+
 @media (max-width: 768px) {
   .card-nav-container {
     width: calc(100vw - 32px) !important;
@@ -246,6 +250,20 @@
       
       <a href="/" class="logo-container">
         <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/logo-seniorbolaget.jpg" alt="Seniorbolaget" class="logo">
+      </a>
+      
+      <!-- Telefonnummer — synligt desktop, dolt mobil under 600px -->
+      <a href="tel:0101751900" style="
+        display:flex;align-items:center;gap:6px;
+        font-family:Inter,sans-serif;font-size:0.875rem;font-weight:600;
+        color:#1F2937;text-decoration:none;white-space:nowrap;
+        transition:color .15s;
+      " onmouseover="this.style.color='#C91C22'" onmouseout="this.style.color='#1F2937'"
+         class="nav-phone-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2.5" stroke-linecap="round">
+          <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8 19.79 19.79 0 01.09 1.18 2 2 0 012.07 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/>
+        </svg>
+        010-175 19 00
       </a>
       
       <a href="/intresseanmalan/" class="card-nav-cta-button">Boka hjälp</a>

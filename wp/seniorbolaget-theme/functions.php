@@ -1272,16 +1272,27 @@ add_filter('pre_get_document_title', function($title) {
 // ===== WAS-54: SEO META TITLES & DESCRIPTIONS =====
 function sb_seo_meta() {
     global $post;
+    
+    // Handle front page specially (may not have $post or may be posts page)
+    if (is_front_page()) {
+        add_filter('pre_get_document_title', function() { return 'Seniorbolaget — Hemtjänster av erfarna seniorer 55+'; }, 25);
+        echo '<meta name="description" content="Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.">' . "\n";
+        echo '<meta property="og:title" content="Seniorbolaget — Hemtjänster av erfarna seniorer 55+">' . "\n";
+        echo '<meta property="og:description" content="Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.">' . "\n";
+        echo '<meta property="og:type" content="website">' . "\n";
+        echo '<meta name="robots" content="index, follow">' . "\n";
+        return;
+    }
+    
     if (!is_singular() || !$post) return;
     
     $slug = $post->post_name;
     
     $seo = [
-        // Huvudsidor
-        'hem' => ['Seniorbolaget — Hemtjänster av erfarna seniorer 55+', 'Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.'],
-        'hemstadning' => ['Hemstädning med RUT-avdrag — Seniorbolaget', 'Boka hemstädning av erfarna seniorer 55+. Du betalar bara 50% efter RUT-avdrag. Regelbunden eller engångsstädning. Svar inom 2h.'],
+        // Huvudsidor (correct slugs from WP database)
+        'hemstad' => ['Hemstädning med RUT-avdrag — Seniorbolaget', 'Boka hemstädning av erfarna seniorer 55+. Du betalar bara 50% efter RUT-avdrag. Regelbunden eller engångsstädning. Svar inom 2h.'],
         'tradgard' => ['Trädgårdshjälp av erfarna seniorer — Seniorbolaget', 'Gräsklippning, häck, ogräs och trädgårdsskötsel. Erfarna seniorer 55+ nära dig. RUT-avdrag. Boka idag.'],
-        'malning' => ['Målning inomhus & utomhus — Seniorbolaget', 'Professionell målning av erfarna hantverkare 55+. Inomhus och utomhus. ROT-avdrag. Kostnadsfri offert.'],
+        'malning-tapetsering' => ['Målning inomhus & utomhus — Seniorbolaget', 'Professionell målning av erfarna hantverkare 55+. Inomhus och utomhus. ROT-avdrag. Kostnadsfri offert.'],
         'snickeri' => ['Snickeri & byggtjänster — Seniorbolaget', 'Erfarna snickare 55+ för allt från hyllor till renoveringar. ROT-avdrag. Kostnadsfri offert. Svar inom 2h.'],
         'privat' => ['Hemtjänster för privatpersoner — Seniorbolaget', 'Städning, trädgård, snickeri och målning av erfarna seniorer. RUT/ROT-avdrag. Verifierade franchisetagare. Boka idag.'],
         'foretag' => ['Företagstjänster & B2B — Seniorbolaget', 'Pålitlig bemanning, städning och underhåll för företag och BRF. Erfarna seniorer 55+. Faktura 30 dagar.'],
@@ -1290,17 +1301,17 @@ function sb_seo_meta() {
         'bli-franchisetagare' => ['Bli franchisetagare — Starta eget med Seniorbolaget', 'Starta din egen verksamhet under Seniorbolaget-varumärket. Beprövat koncept, stöd och utbildning ingår. Kostnadsfritt informationsmöte.'],
         'har-finns-vi' => ['Hitta Seniorbolaget nära dig — 26 orter i Sverige', 'Seniorbolaget finns i 26 städer. Hitta din lokala franchisetagare och boka hemtjänst direkt.'],
         'kontakt' => ['Kontakta Seniorbolaget — Ring eller boka online', 'Ring oss på 010-175 19 00 eller skicka en förfrågan. Vi svarar inom 2h på vardagar.'],
-        'intresseanmalan' => ['Boka hemtjänst — Seniorbolaget', 'Välj tjänst, ort och kontaktuppgifter. Vi återkommer inom 2h med offert. Kostnadsfritt och utan förbindelser.'],
+        'intresse-anmalan' => ['Boka hemtjänst — Seniorbolaget', 'Välj tjänst, ort och kontaktuppgifter. Vi återkommer inom 2h med offert. Kostnadsfritt och utan förbindelser.'],
     ];
     
-    // Stadssidor — generera dynamiskt
+    // Stadssidor — generera dynamiskt (correct slugs from WP database)
     $city_names = [
         'amal'=>'Åmål','boras'=>'Borås','eskilstuna'=>'Eskilstuna',
         'falkenberg'=>'Falkenberg','goteborg'=>'Göteborg','halmstad'=>'Halmstad',
         'helsingborg'=>'Helsingborg','jonkoping'=>'Jönköping','karlstad'=>'Karlstad',
         'kristianstad'=>'Kristianstad','kungsbacka'=>'Kungsbacka','kungalv'=>'Kungälv',
-        'laholm-bastad'=>'Laholm/Båstad','landskrona'=>'Landskrona','lerum'=>'Lerum',
-        'molndal'=>'Mölndal','nassjo'=>'Nässjö','orebro'=>'Örebro',
+        'laholm-bastad'=>'Laholm/Båstad','landskrona'=>'Landskrona','lerum-partille'=>'Lerum/Partille',
+        'molndal-harryda'=>'Mölndal/Härryda','nassjo'=>'Nässjö','orebro'=>'Örebro',
         'skovde'=>'Skövde','stenungsund'=>'Stenungsund','sundsvall'=>'Sundsvall',
         'torsby'=>'Torsby','trelleborg'=>'Trelleborg','trollhattan'=>'Trollhättan',
         'ulricehamn'=>'Ulricehamn','varberg'=>'Varberg',
@@ -1361,12 +1372,12 @@ function sb_schema_markup() {
     ];
     echo '<script type="application/ld+json">' . json_encode($org_schema, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES) . '</script>' . "\n";
     
-    // Service schema per tjänstesida
+    // Service schema per tjänstesida (correct slugs from WP database)
     $service_schemas = [
-        'hemstadning' => ['name'=>'Hemstädning','description'=>'Professionell hemstädning av erfarna seniorer 55+ med RUT-avdrag'],
-        'tradgard'    => ['name'=>'Trädgård','description'=>'Trädgårdshjälp av erfarna seniorer — gräsklippning, häck och mer'],
-        'malning'     => ['name'=>'Målning','description'=>'Inomhus och utomhus målning av erfarna hantverkare 55+'],
-        'snickeri'    => ['name'=>'Snickeri','description'=>'Snickeri och byggtjänster av erfarna hantverkare 55+'],
+        'hemstad'            => ['name'=>'Hemstädning','description'=>'Professionell hemstädning av erfarna seniorer 55+ med RUT-avdrag'],
+        'tradgard'           => ['name'=>'Trädgård','description'=>'Trädgårdshjälp av erfarna seniorer — gräsklippning, häck och mer'],
+        'malning-tapetsering'=> ['name'=>'Målning','description'=>'Inomhus och utomhus målning av erfarna hantverkare 55+'],
+        'snickeri'           => ['name'=>'Snickeri','description'=>'Snickeri och byggtjänster av erfarna hantverkare 55+'],
     ];
     
     if (isset($service_schemas[$slug])) {
@@ -1408,18 +1419,19 @@ function sb_internal_links() {
     if (!is_singular() || !$post) return;
     $slug = $post->post_name;
     
-    // Alla stadsslugs
-    $all_city_slugs = ['amal','boras','eskilstuna','falkenberg','goteborg','halmstad','helsingborg','jonkoping','karlstad','kristianstad','kungsbacka','kungalv','laholm-bastad','landskrona','lerum','molndal','nassjo','orebro','skovde','stenungsund','sundsvall','torsby','trelleborg','trollhattan','ulricehamn','varberg'];
-    $service_slugs = ['hemstadning','tradgard','snickeri','malning'];
+    // Alla stadsslugs (correct from WP database)
+    $all_city_slugs = ['amal','boras','eskilstuna','falkenberg','goteborg','halmstad','helsingborg','jonkoping','karlstad','kristianstad','kungsbacka','kungalv','laholm-bastad','landskrona','lerum-partille','molndal-harryda','nassjo','orebro','skovde','stenungsund','sundsvall','torsby','trelleborg','trollhattan','ulricehamn','varberg'];
+    // Correct service slugs from WP database
+    $service_slugs = ['hemstad','tradgard','snickeri','malning-tapetsering'];
     
     // På stadssidor: länka till tjänstesidor
     if (in_array($slug, $all_city_slugs)) {
         $city_name = get_the_title();
         $services = [
-            ['hemstadning','🧹','Hemstädning'],
+            ['hemstad','🧹','Hemstädning'],
             ['tradgard','🌿','Trädgård'],
             ['snickeri','🔨','Snickeri'],
-            ['malning','🎨','Målning'],
+            ['malning-tapetsering','🎨','Målning'],
         ];
         echo '<div style="background:#F9FAFB;padding:48px clamp(24px,5vw,80px);text-align:center;">
             <h2 style="font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#1F2937;margin-bottom:8px;">Våra tjänster</h2>
@@ -1456,3 +1468,34 @@ function sb_internal_links() {
     }
 }
 add_action('wp_footer', 'sb_internal_links', 95);
+
+// WAS-58: RUT/ROT-avdrag badge above the fold på tjänstesidor
+function sb_rut_rot_badge() {
+    if (!is_singular()) return;
+    $slug = get_post_field('post_name', get_the_ID());
+    $rut_slugs = ['hemstadning','tradgard'];
+    $rot_slugs  = ['malning','snickeri'];
+    if (!in_array($slug, array_merge($rut_slugs, $rot_slugs))) return;
+    $label = in_array($slug, $rut_slugs) ? 'RUT-AVDRAG' : 'ROT-AVDRAG';
+    ?>
+    <script>
+    (function() {
+        function injectBadge() {
+            var h1 = document.querySelector('h1');
+            if (!h1 || document.querySelector('.sb-rut-badge')) return;
+            var badge = document.createElement('div');
+            badge.className = 'sb-rut-badge';
+            badge.style.cssText = 'display:inline-flex;align-items:center;gap:10px;background:rgba(201,28,34,0.08);border:1.5px solid rgba(201,28,34,0.25);border-radius:50px;padding:8px 18px;margin:12px 0 4px;flex-wrap:wrap;';
+            badge.innerHTML = '<span style="background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:0.75rem;font-weight:700;padding:4px 10px;border-radius:50px;letter-spacing:.5px;"><?php echo $label; ?></span><span style="font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;">Du betalar bara 50% — resten drar vi av direkt</span>';
+            h1.insertAdjacentElement('afterend', badge);
+        }
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', injectBadge);
+        } else {
+            injectBadge();
+        }
+    })();
+    </script>
+    <?php
+}
+add_action('wp_head', 'sb_rut_rot_badge', 5);
