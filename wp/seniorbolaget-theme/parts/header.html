@@ -3,14 +3,15 @@
 /* Card Nav Styles */
 .card-nav-container {
   position: fixed;
-  top: 2em;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90%;
-  max-width: 800px;
+  top: 16px;
+  right: 20px;
+  left: auto;
+  transform: none;
+  width: 380px;
+  max-width: calc(100vw - 40px);
   z-index: 9999;
   box-sizing: border-box;
-  transition: top 0.3s ease;
+  transition: top 0.3s ease, width 0.25s ease;
 }
 
 .card-nav {
@@ -81,14 +82,14 @@
 }
 
 .logo {
-  height: 28px;
+  height: 36px;
 }
 
 .card-nav-cta-button {
   background-color: #C91C22;
   color: white;
   border: none;
-  border-radius: calc(0.75rem - 0.35rem);
+  border-radius: 8px;
   padding: 0 1rem;
   height: calc(100% - 0.5rem);
   font-weight: 600;
@@ -114,6 +115,9 @@
 .card-nav.open .card-nav-content {
   visibility: visible !important; pointer-events: auto !important;
 }
+.card-nav-container.open {
+  width: 580px;
+}
 
 .nav-card {
   flex: 1 1 0; min-width: 0;
@@ -121,38 +125,35 @@
   position: relative; display: flex; flex-direction: column;
   justify-content: space-between;
   padding: 20px 20px 20px; gap: 0; user-select: none;
-  background: #1F2937; min-height: 160px;
-  border: 1px solid rgba(255,255,255,0.08);
+  min-height: 160px;
+  border: 1px solid rgba(0,0,0,0.06);
   transition: background 0.2s ease;
 }
 .nav-card:hover {
-  background: #111827;
+  filter: brightness(0.96);
 }
 .nav-card-privat {
-  background: #1F2937;
+  background: #C91C22;
 }
-.nav-card-privat::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0;
-  height: 3px; background: #C91C22; border-radius: 12px 12px 0 0;
-}
+.nav-card-privat .nav-card-label { color: #fff; }
+.nav-card-privat .nav-card-link { color: rgba(255,255,255,0.8); border-top-color: rgba(255,255,255,0.15); }
+.nav-card-privat .nav-card-link:hover { color: #fff; }
 .nav-card-foretag {
-  background: #1F2937;
+  background: #FFF0F0;
 }
-.nav-card-foretag::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0;
-  height: 3px; background: #1565C0; border-radius: 12px 12px 0 0;
-}
+.nav-card-foretag .nav-card-label { color: #1F2937; }
+.nav-card-foretag .nav-card-link { color: #4B5563; border-top-color: rgba(0,0,0,0.08); }
+.nav-card-foretag .nav-card-link:hover { color: #1F2937; }
 .nav-card-omoss {
-  background: #1F2937;
+  background: #FFFFFF;
 }
-.nav-card-omoss::before {
-  content: ''; position: absolute; top: 0; left: 0; right: 0;
-  height: 3px; background: #2E7D32; border-radius: 12px 12px 0 0;
-}
+.nav-card-omoss .nav-card-label { color: #1F2937; }
+.nav-card-omoss .nav-card-link { color: #4B5563; border-top-color: rgba(0,0,0,0.08); }
+.nav-card-omoss .nav-card-link:hover { color: #1F2937; }
 .nav-card-label {
   font-weight: 700; font-size: 18px;
   letter-spacing: -0.3px; font-family: Rubik,sans-serif;
-  color: #FFFFFF; margin-bottom: 0;
+  color: #1F2937; margin-bottom: 0;
 }
 .nav-card-links {
   margin-top: 24px; display: flex; flex-direction: column; gap: 0;
@@ -161,12 +162,12 @@
   font-size: 14px; cursor: pointer; text-decoration: none;
   transition: color 0.15s ease, opacity 0.15s ease;
   display: inline-flex; align-items: center; gap: 6px;
-  font-family: Inter,sans-serif; color: rgba(255,255,255,0.6);
+  font-family: Inter,sans-serif; color: #4B5563;
   padding: 5px 0; border-top: 1px solid rgba(255,255,255,0.06);
 }
 .nav-card-link::before {
-  content: '↗'; font-size: 11px; opacity: 0.5;
-  transition: opacity 0.15s ease;
+  content: '↗'; font-size: 11px; opacity: 0.4;
+  transition: opacity 0.15s ease; color: inherit;
 }
 .nav-card-link:hover {
   color: #FFFFFF;
@@ -300,6 +301,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     nav.classList.toggle('open');
     hamburger.classList.toggle('open');
+    var container = document.querySelector('.card-nav-container');
+    if(container) container.classList.toggle('open');
   });
   
   // Close on outside click
@@ -310,6 +313,8 @@ document.addEventListener('DOMContentLoaded', function() {
       content.style.pointerEvents = 'none';
       nav.classList.remove('open');
       hamburger.classList.remove('open');
+      var container2 = document.querySelector('.card-nav-container');
+      if(container2) container2.classList.remove('open');
     }
   });
   
