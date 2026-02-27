@@ -8,102 +8,44 @@
  */
 ?>
 
-<!-- HERO SECTION -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
-
-	<!-- wp:columns {"verticalAlignment":"center","align":"wide","style":{"spacing":{"blockGap":{"left":"60px"}}}} -->
-	<div class="wp-block-columns alignwide are-vertically-aligned-center">
-
-		<!-- wp:column {"width":"55%","verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
-
-			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.75rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-			<p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Privat · Hemstädning</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.05em","fontSize":"0.875rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:var(--wp--preset--color--rod);font-size:0.875rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem">RUT-avdrag — du betalar bara 50%</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-			<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Hemstädning av erfarna seniorer</h1>
-			<!-- /wp:heading -->
-
-			<!-- wp:html -->
-			<div style="display:inline-flex;align-items:center;gap:8px;background:#FFF4F2;border:2px solid #C91C22;border-radius:50px;padding:8px 20px;margin:0 0 16px;">
-			  <span style="font-size:1.25rem;">💰</span>
-			  <span style="font-family:Rubik,sans-serif;font-weight:700;color:#C91C22;font-size:1rem;">50% billigare med RUT-avdrag</span>
-			</div>
-			<!-- /wp:html -->
-
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","fontWeight":"500","lineHeight":"1.5"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:#4B5563;font-size:1.375rem;font-weight:500;line-height:1.5;margin-bottom:1rem">Vi gör vardagen enklare</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-			<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:2rem">Professionell hemstädning med erfarenhet, noggrannhet och omtanke. Vi anpassar alltid städningen efter dina behov.</p>
-			<!-- /wp:paragraph -->
-
-			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-			<div class="wp-block-buttons" style="margin-bottom:1.5rem">
-				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Boka städning</a></div>
-				<!-- /wp:button -->
-			</div>
-			<!-- /wp:buttons -->
-
-			<!-- wp:html -->
-			<p style="font-size:0.875rem;color:#6B7280;margin-top:0.75rem;margin-bottom:0;">
-				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-				Eller ring <strong style="color:#1F2937;">010-175 19 00</strong> — inget åtagande, bara ett samtal.
-			</p>
-			<!-- /wp:html -->
-
-			<!-- wp:html -->
-			<p style="font-family:Inter,sans-serif;font-size:0.8rem;color:#6B7280;margin:8px 0 0;text-align:left;">
-			  ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Kostnadsfri offert &nbsp;·&nbsp; ✓ Inga bindningstider
-			</p>
-			<!-- /wp:html -->
-
-			<?php if (defined('SENIORBOLAGET_FEATURE_POSTNUMMER') && SENIORBOLAGET_FEATURE_POSTNUMMER): ?>
-			<!-- wp:html -->
-			<div style="margin-top:1.5rem;display:flex;gap:8px;max-width:380px;">
-				<input type="text" placeholder="Ditt postnummer" maxlength="5" inputmode="numeric" style="flex:1;padding:14px 18px;border:2px solid #e5e7eb;border-radius:50px;font-size:1rem;font-family:Inter,sans-serif;color:#1F2937;outline:none;" aria-label="Ange postnummer för prisuppskattning" />
-				<button style="padding:14px 24px;background:#C91C22;color:#fff;border:none;border-radius:50px;font-size:1rem;font-weight:600;font-family:Rubik,sans-serif;cursor:pointer;white-space:nowrap;" type="button">Beräkna pris</button>
-			</div>
-			<!-- /wp:html -->
-			<?php endif; ?>
-
-			<!-- wp:html -->
-			<div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:1.5rem;">
-				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-					<span>4,8/5 · 500+ omdömen</span>
-				</div>
-				<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:8px 16px;font-size:0.875rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-					<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
-					<span>Reco.se rekommenderad</span>
-				</div>
-			</div>
-			<!-- /wp:html -->
-
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column {"width":"45%","verticalAlignment":"center"} -->
-		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:45%">
-			<!-- wp:image {"id":125,"sizeSlug":"large","linkDestination":"none","style":{"border":{"radius":"16px"}},"className":"is-style-default"} -->
-			<figure class="wp-block-image size-large is-style-default"><img src="http://localhost:8888/wp-content/uploads/2026/02/service_stad.jpg" alt="Hemstädning av Seniorbolaget" class="wp-image-125" style="border-radius:16px"/></figure>
-			<!-- /wp:image -->
-		</div>
-		<!-- /wp:column -->
-
-	</div>
-	<!-- /wp:columns -->
-
+<!-- HERO SECTION - Full-bleed med bakgrundsbild -->
+<!-- wp:html -->
+<div style="position:relative;min-height:85vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_stad.jpg');background-size:cover;background-position:center;overflow:hidden;">
+  <!-- Gradient overlay -->
+  <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%);"></div>
+  
+  <!-- Content -->
+  <div style="position:relative;z-index:2;max-width:720px;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
+    <!-- Social proof badge -->
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
+      ⭐⭐⭐⭐⭐ Tusentals nöjda kunder i Sverige
+    </div>
+    
+    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">
+      Professionell hemstädning<br>av erfarna seniorer
+    </h1>
+    
+    <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">
+      Regelbunden eller engångsstädning med RUT-avdrag. Erfarna 55+ med omtanke och noggrannhet — alltid samma person.
+    </p>
+    
+    <!-- CTA -->
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:32px;">
+      <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">
+        Boka hemstädning →
+      </a>
+    </div>
+    
+    <!-- Trust badges -->
+    <div style="display:flex;gap:12px;flex-wrap:wrap;">
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ RUT-avdrag 50%</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Nöjd-garanti</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Erfarna 55+</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Alltid samma städare</span>
+    </div>
+  </div>
 </div>
-<!-- /wp:group -->
+<!-- /wp:html -->
 
 
 <!-- VAD INGÅR SECTION — Bento Grid -->
@@ -452,10 +394,10 @@
 
 <!-- STICKY FLOATING CTA -->
 <!-- wp:html -->
-<div class="seniorbolaget-sticky-cta">
-  <a href="/intresse-anmalan">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-    Boka städning
+<div id="floating-cta-hemstad" style="position:fixed;bottom:28px;right:28px;z-index:999;">
+  <a href="/intresseanmalan" class="btn-slide-cta" 
+     style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:700;padding:14px 28px;border-radius:50px;text-decoration:none;box-shadow:0 8px 32px rgba(201,28,34,0.45);transition:transform 0.2s,box-shadow 0.2s;">
+    📞 Boka hjälp →
   </a>
 </div>
 <!-- /wp:html -->
