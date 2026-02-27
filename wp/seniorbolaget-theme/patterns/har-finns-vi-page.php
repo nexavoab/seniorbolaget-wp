@@ -8,367 +8,340 @@
  */
 ?>
 
-<!-- HERO SECTION -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FFF4F2"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
+<!-- wp:html -->
+<style>
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 60px clamp(24px,5vw,80px);
+  background: #FAFAF8;
+}
+@media (max-width: 1024px) { .team-grid { grid-template-columns: repeat(3, 1fr); } }
+@media (max-width: 640px) { .team-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; } }
 
-	<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.1em","fontSize":"0.75rem"},"color":{"text":"#6B7280"},"spacing":{"margin":{"bottom":"0.5rem"}}}} -->
-	<p style="color:#6B7280;font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:0.5rem">Våra orter</p>
-	<!-- /wp:paragraph -->
+.team-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  aspect-ratio: 4/5;
+  cursor: pointer;
+  background: #e5e7eb;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.team-card.visible { opacity: 1; transform: translateY(0); }
+.team-card img {
+  width: 100%; height: 100%;
+  object-fit: cover; object-position: center top;
+  transition: transform 0.5s ease;
+}
+.team-card:hover img { transform: scale(1.08); }
+.team-card-overlay {
+  position: absolute; inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.75) 0%, rgba(0,0,0,0) 50%);
+  transition: background 0.3s;
+}
+.team-card:hover .team-card-overlay {
+  background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.1) 60%);
+}
+.team-card-info {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 20px 16px 16px;
+  color: #fff;
+}
+.team-card-city {
+  font-family: Rubik, sans-serif;
+  font-size: 1rem; font-weight: 700;
+  margin: 0 0 2px;
+}
+.team-card-name {
+  font-family: Inter, sans-serif;
+  font-size: 0.8125rem; color: rgba(255,255,255,0.8);
+  margin: 0;
+}
+.team-card-arrow {
+  position: absolute; top: 12px; right: 12px;
+  background: rgba(255,255,255,0.15); backdrop-filter: blur(8px);
+  border: 1px solid rgba(255,255,255,0.3);
+  border-radius: 50%; width: 32px; height: 32px;
+  display: flex; align-items: center; justify-content: center;
+  color: #fff; font-size: 0.875rem;
+  opacity: 0; transform: translateY(-4px);
+  transition: opacity 0.3s, transform 0.3s;
+}
+.team-card:hover .team-card-arrow { opacity: 1; transform: translateY(0); }
+</style>
 
-	<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Här finns vi</h1>
-	<!-- /wp:heading -->
-
-	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","lineHeight":"1.5"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<p style="color:#4B5563;font-size:1.375rem;line-height:1.5;margin-bottom:1.5rem">26 orter i Sverige – hitta din lokala franchisetagare</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:html -->
-	<div style="display:flex;gap:12px;flex-wrap:wrap;">
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:0.9375rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			<span>26 orter</span>
-		</div>
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:0.9375rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-			<span>Lokala franchisetagare</span>
-		</div>
-		<div style="display:inline-flex;align-items:center;gap:8px;background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 18px;font-size:0.9375rem;font-weight:600;color:#1F2937;box-shadow:0 1px 4px rgba(0,0,0,0.06);">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
-			<span>Personlig service</span>
-		</div>
-	</div>
-	<!-- /wp:html -->
-
+<!-- Hero section -->
+<div style="background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%),url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg') center/cover;min-height:50vh;display:flex;align-items:center;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
+  <div style="max-width:720px;">
+    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
+      📍 26 orter i Sverige
+    </div>
+    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 16px;">Här finns vi</h1>
+    <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:rgba(255,255,255,0.9);margin:0;">Hitta din lokala franchisetagare — personlig service nära dig</p>
+  </div>
 </div>
-<!-- /wp:group -->
 
-
-<!-- STAD-GRID (26 städer) -->
-<!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull" style="background-color:#FAFAF8;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
-
-	<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontWeight":"700","fontSize":"2rem"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:2rem;font-weight:700;margin-bottom:1rem">Våra franchisetagare</h2>
-	<!-- /wp:heading -->
-
-	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-	<p class="has-text-align-center" style="color:#4B5563;font-size:1.125rem;margin-bottom:3rem">Klicka på en ort för att läsa mer och komma i kontakt med din lokala franchisetagare</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:html -->
-	<div class="seniorbolaget-city-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1200px;margin:0 auto;">
-
-		<!-- Åmål -->
-		<a href="/amal" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Åmål</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Monica Lindstrand</p>
-		</a>
-
-		<!-- Borås -->
-		<a href="/boras" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Borås</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Roland Rapp</p>
-		</a>
-
-		<!-- Eskilstuna -->
-		<a href="/eskilstuna" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Eskilstuna</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Isa Gemmel</p>
-		</a>
-
-		<!-- Falkenberg -->
-		<a href="/falkenberg" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Falkenberg</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Stefan Nilsson</p>
-		</a>
-
-		<!-- Göteborg -->
-		<a href="/goteborg" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Göteborg</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Bosse Eriksson</p>
-		</a>
-
-		<!-- Halmstad -->
-		<a href="/halmstad" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Halmstad</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Jenny Skogh</p>
-		</a>
-
-		<!-- Helsingborg -->
-		<a href="/helsingborg" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Helsingborg</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Milliana Rosén</p>
-		</a>
-
-		<!-- Jönköping -->
-		<a href="/jonkoping" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Jönköping</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Roland Rapp</p>
-		</a>
-
-		<!-- Karlstad -->
-		<a href="/karlstad" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Karlstad</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Runar Skoglund</p>
-		</a>
-
-		<!-- Kristianstad -->
-		<a href="/kristianstad" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Kristianstad</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Peter Lindquist</p>
-		</a>
-
-		<!-- Kungsbacka -->
-		<a href="/kungsbacka" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Kungsbacka</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Janette Rosén</p>
-		</a>
-
-		<!-- Kungälv -->
-		<a href="/kungalv" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Kungälv</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Michael Adielson</p>
-		</a>
-
-		<!-- Laholm/Båstad -->
-		<a href="/laholm" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Laholm/Båstad</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Jenny Skogh</p>
-		</a>
-
-		<!-- Landskrona -->
-		<a href="/landskrona" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Landskrona</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Milliana Rosén</p>
-		</a>
-
-		<!-- Lerum/Partille -->
-		<a href="/lerum" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Lerum/Partille</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Jens Hendar</p>
-		</a>
-
-		<!-- Mölndal/Härryda -->
-		<a href="/molndal" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Mölndal/Härryda</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Håkan Viklund</p>
-		</a>
-
-		<!-- Nässjö -->
-		<a href="/nassjo" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Nässjö</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Lennart Ljungdahl</p>
-		</a>
-
-		<!-- Örebro -->
-		<a href="/orebro" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Örebro</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Andreas Persson</p>
-		</a>
-
-		<!-- Skövde -->
-		<a href="/skovde" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Skövde</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Susanne Kinell</p>
-		</a>
-
-		<!-- Stenungsund -->
-		<a href="/stenungsund" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Stenungsund</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Mikael Styrmark</p>
-		</a>
-
-		<!-- Sundsvall -->
-		<a href="/sundsvall" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Sundsvall</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Eva Skog</p>
-		</a>
-
-		<!-- Torsby -->
-		<a href="/torsby" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Torsby</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Rolf Nilsson</p>
-		</a>
-
-		<!-- Trelleborg -->
-		<a href="/trelleborg" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Trelleborg</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Peter Lindquist</p>
-		</a>
-
-		<!-- Trollhättan -->
-		<a href="/trollhattan" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Trollhättan</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Ejvar Bolander</p>
-		</a>
-
-		<!-- Ulricehamn -->
-		<a href="/ulricehamn" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Ulricehamn</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Ann-Sofie Käll</p>
-		</a>
-
-		<!-- Varberg -->
-		<a href="/varberg" style="text-decoration:none;background:#fff;border-radius:16px;padding:24px 20px;box-shadow:0 2px 12px rgba(0,0,0,0.06);display:flex;flex-direction:column;align-items:center;text-align:center;transition:transform 0.2s, box-shadow 0.2s;border:2px solid transparent;">
-			<div style="width:48px;height:48px;background:#FFF4F2;border-radius:50%;display:flex;align-items:center;justify-content:center;margin-bottom:12px;">
-				<svg width="20" height="20" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></svg>
-			</div>
-			<p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.125rem;color:#1F2937;margin:0 0 4px;">Varberg</p>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;">Stefan Nilsson</p>
-		</a>
-
-	</div>
-	<style>
-	.seniorbolaget-city-grid a:hover {
-		transform: translateY(-4px);
-		box-shadow: 0 8px 24px rgba(0,0,0,0.12);
-		border-color: #C91C22;
-	}
-	@media (max-width: 1000px) {
-		.seniorbolaget-city-grid { grid-template-columns: repeat(3, 1fr) !important; }
-	}
-	@media (max-width: 700px) {
-		.seniorbolaget-city-grid { grid-template-columns: repeat(2, 1fr) !important; }
-	}
-	@media (max-width: 450px) {
-		.seniorbolaget-city-grid { grid-template-columns: 1fr !important; }
-	}
-	</style>
-	<!-- /wp:html -->
-
+<!-- Team grid -->
+<div class="team-grid" id="teamGrid">
+  <a href="/amal/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_amal.jpg" alt="Monica Lindstrand, Åmål" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Åmål</p>
+      <p class="team-card-name">Monica Lindstrand</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/boras/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_boras.jpg" alt="Roland Rapp, Borås" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Borås</p>
+      <p class="team-card-name">Roland Rapp</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/eskilstuna/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_eskilstuna.jpg" alt="Isa Gemmel, Eskilstuna" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Eskilstuna</p>
+      <p class="team-card-name">Isa Gemmel</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/falkenberg/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_falkenberg.jpg" alt="Stefan Nilsson, Falkenberg" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Falkenberg</p>
+      <p class="team-card-name">Stefan Nilsson</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/goteborg/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_goteborg-sv.jpg" alt="Bosse Eriksson, Göteborg" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Göteborg</p>
+      <p class="team-card-name">Bosse Eriksson</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/halmstad/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_halmstad.jpg" alt="Jenny Skogh, Halmstad" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Halmstad</p>
+      <p class="team-card-name">Jenny Skogh</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/helsingborg/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_helsingborg.jpg" alt="Milliana Rosén, Helsingborg" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Helsingborg</p>
+      <p class="team-card-name">Milliana Rosén</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/jonkoping/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_jonkoping.jpg" alt="Roland Rapp, Jönköping" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Jönköping</p>
+      <p class="team-card-name">Roland Rapp</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/karlstad/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_karlstad.jpg" alt="Runar Skoglund, Karlstad" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Karlstad</p>
+      <p class="team-card-name">Runar Skoglund</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/kristianstad/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_kristianstad.jpg" alt="Peter Lindquist, Kristianstad" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Kristianstad</p>
+      <p class="team-card-name">Peter Lindquist</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/kungsbacka/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_kungsbacka.jpg" alt="Janette Rosén, Kungsbacka" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Kungsbacka</p>
+      <p class="team-card-name">Janette Rosén</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/kungalv/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_kungalv.jpg" alt="Michael Adielson, Kungälv" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Kungälv</p>
+      <p class="team-card-name">Michael Adielson</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/laholm/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg" alt="Jenny Skogh, Laholm/Båstad" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Laholm/Båstad</p>
+      <p class="team-card-name">Jenny Skogh</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/landskrona/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg" alt="Milliana Rosén, Landskrona" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Landskrona</p>
+      <p class="team-card-name">Milliana Rosén</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/lerum/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_lerum-partille.jpg" alt="Jens Hendar, Lerum/Partille" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Lerum/Partille</p>
+      <p class="team-card-name">Jens Hendar</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/molndal/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_molndal-harryda.jpg" alt="Håkan Viklund, Mölndal" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Mölndal</p>
+      <p class="team-card-name">Håkan Viklund</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/nassjo/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg" alt="Lennart Ljungdahl, Nässjö" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Nässjö</p>
+      <p class="team-card-name">Lennart Ljungdahl</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/orebro/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_orebro.jpg" alt="Andreas Persson, Örebro" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Örebro</p>
+      <p class="team-card-name">Andreas Persson</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/skovde/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_skovde.jpg" alt="Susanne Kinell, Skövde" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Skövde</p>
+      <p class="team-card-name">Susanne Kinell</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/stenungsund/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_stenungsund.jpg" alt="Mikael Styrmark, Stenungsund" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Stenungsund</p>
+      <p class="team-card-name">Mikael Styrmark</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/sundsvall/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg" alt="Eva Skog, Sundsvall" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Sundsvall</p>
+      <p class="team-card-name">Eva Skog</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/torsby/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg" alt="Rolf Nilsson, Torsby" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Torsby</p>
+      <p class="team-card-name">Rolf Nilsson</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/trelleborg/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg" alt="Peter Lindquist, Trelleborg" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Trelleborg</p>
+      <p class="team-card-name">Peter Lindquist</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/trollhattan/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg" alt="Ejvar Bolander, Trollhättan" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Trollhättan</p>
+      <p class="team-card-name">Ejvar Bolander</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/ulricehamn/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_ulricehamn.jpg" alt="Ann-Sofie Käll, Ulricehamn" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Ulricehamn</p>
+      <p class="team-card-name">Ann-Sofie Käll</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/varberg/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_varberg.jpg" alt="Stefan Nilsson, Varberg" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Varberg</p>
+      <p class="team-card-name">Stefan Nilsson</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
 </div>
-<!-- /wp:group -->
 
+<!-- Scroll animation -->
+<script>
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry, i) => {
+    if (entry.isIntersecting) {
+      setTimeout(() => entry.target.classList.add('visible'), i * 60);
+      observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+document.querySelectorAll('.team-card').forEach(card => observer.observe(card));
+</script>
 
-<!-- CTA-SEKTION: Bli franchisetagare -->
-<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"100px","bottom":"100px"}},"color":{"background":"#1F2937"}},"layout":{"type":"constrained","contentSize":"700px"}} -->
-<div class="wp-block-group alignfull has-background" style="background-color:#1F2937;padding-top:100px;padding-bottom:100px;">
-
-	<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Finns vi inte i din stad än?</h2>
-	<!-- /wp:heading -->
-
-	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.9)"},"typography":{"fontSize":"1.25rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
-	<p class="has-text-align-center" style="color:rgba(255,255,255,0.9);font-size:1.25rem;margin-bottom:2.5rem;">Vi söker alltid engagerade franchisetagare som vill bygga något meningsfullt i sin stad.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
-	<div class="wp-block-buttons">
-		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/bli-franchisetagare" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Bli franchisetagare</a></div>
-		<!-- /wp:button -->
-	</div>
-	<!-- /wp:buttons -->
-
-	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.6)"},"typography":{"fontSize":"0.875rem"},"spacing":{"margin":{"top":"1rem"}}}} -->
-	<p class="has-text-align-center" style="color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:1rem;">✓ Beprövat koncept &nbsp;·&nbsp; ✓ Stöd och utbildning &nbsp;·&nbsp; ✓ Meningsfullt arbete</p>
-	<!-- /wp:paragraph -->
-
+<!-- CTA sektion -->
+<div style="background:#fff;padding:60px clamp(24px,5vw,80px);text-align:center;border-top:1px solid #f3f4f6;">
+  <h2 style="font-family:Rubik,sans-serif;font-size:1.75rem;font-weight:700;color:#1F2937;margin:0 0 12px;">Finns vi inte i din stad än?</h2>
+  <p style="font-family:Inter,sans-serif;color:#6B7280;margin:0 0 24px;">Vi expanderar ständigt — bli franchisetagare och ta din region.</p>
+  <a href="/bli-franchisetagare/" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-weight:700;padding:14px 32px;border-radius:50px;text-decoration:none;">
+    Hör av dig →
+  </a>
 </div>
-<!-- /wp:group -->
-
-
-<!-- KONTAKTBLOCK -->
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"ljusgra","layout":{"type":"constrained","contentSize":"640px"}} -->
-<div class="wp-block-group has-ljusgra-background-color has-background" style="padding-top:60px;padding-bottom:60px;">
-
-	<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem","fontWeight":"700"},"color":{"text":"#1F2937"}}} -->
-	<h3 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:1.5rem;font-weight:700;">Hittar du inte din ort?</h3>
-	<!-- /wp:heading -->
-
-	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1rem"},"spacing":{"margin":{"top":"0.75rem","bottom":"2rem"}}}} -->
-	<p class="has-text-align-center" style="color:#6B7280;font-size:1rem;margin-top:0.75rem;margin-bottom:2rem;">Kontakta oss så hjälper vi dig hitta närmaste franchisetagare.</p>
-	<!-- /wp:paragraph -->
-
-	<!-- wp:html -->
-	<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-		<a href="tel:0101751900" style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;border-radius:50px;padding:14px 28px;font-weight:600;font-size:1rem;font-family:Rubik,sans-serif;text-decoration:none;">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-			010-175 19 00
-		</a>
-		<a href="mailto:info@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:14px 28px;font-weight:600;font-size:1rem;font-family:Rubik,sans-serif;text-decoration:none;">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-			info@seniorbolaget.se
-		</a>
-	</div>
-	<!-- /wp:html -->
-
-</div>
-<!-- /wp:group -->
+<!-- /wp:html -->
