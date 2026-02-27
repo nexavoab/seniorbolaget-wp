@@ -1,45 +1,331 @@
-<!-- wp:group {"tagName":"header","className":"site-header","style":{"color":{"background":"#ffffff"},"border":{"bottom":{"color":"var:preset|color|kantgra","style":"solid","width":"1px"}},"spacing":{"padding":{"top":"var:preset|spacing|sm","bottom":"var:preset|spacing|sm"}}},"layout":{"type":"constrained"}} -->
-<header class="wp-block-group site-header">
+<!-- wp:html -->
+<style>
+/* Card Nav Styles */
+body { padding-top: 100px !important; }
 
-	<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"space-between","alignItems":"center"}} -->
-	<div class="wp-block-group">
+.card-nav-container {
+  position: fixed;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90%;
+  max-width: 800px;
+  z-index: 9999;
+  box-sizing: border-box;
+  transition: top 0.3s ease;
+}
 
-		<!-- wp:group {"layout":{"type":"flex","flexWrap":"nowrap","alignItems":"center"},"style":{"spacing":{"blockGap":"var:preset|spacing|xs"}}} -->
-		<div class="wp-block-group">
-			<!-- 
-				Logotyp: Sätt logotyp-URL via WP Admin → Utseende → Anpassa → Webbplatsidentitet
-				eller direkt i Site Editor under Header → Site Logo
-			-->
-			<!-- wp:site-logo {"width":180,"isLink":true,"linkTarget":"_self"} /-->
-		</div>
-		<!-- /wp:group -->
+.card-nav {
+  display: block;
+  height: 60px;
+  padding: 0;
+  background-color: white;
+  border: 0.5px solid rgba(255,255,255,0.1);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  will-change: height;
+  transition: height 0.3s ease;
+}
 
-		<!-- wp:navigation {"ref":null,"overlayMenu":"mobile","icon":"menu","layout":{"type":"flex","flexWrap":"nowrap","justifyContent":"flex-end"},"style":{"spacing":{"blockGap":"var:preset|spacing|sm"}}} -->
-			<!-- wp:navigation-link {"label":"Privat","url":"/privat"} -->
-				<!-- wp:navigation-submenu-item {"label":"Hemstäd","url":"/privat/hemstad"} /-->
-				<!-- wp:navigation-submenu-item {"label":"Målning & tapetsering","url":"/privat/malning"} /-->
-				<!-- wp:navigation-submenu-item {"label":"Snickeri","url":"/privat/snickeri"} /-->
-				<!-- wp:navigation-submenu-item {"label":"Trädgård","url":"/privat/tradgard"} /-->
-			<!-- /wp:navigation-link -->
-			<!-- wp:navigation-link {"label":"Företag","url":"/foretag"} -->
-				<!-- wp:navigation-submenu-item {"label":"Bemanning","url":"/foretag/bemanning"} /-->
-				<!-- wp:navigation-submenu-item {"label":"För bostadsrättsföreningar","url":"/foretag/for-brfer"} /-->
-				<!-- wp:navigation-submenu-item {"label":"Företagstjänster","url":"/foretag/foretagstjanster"} /-->
-			<!-- /wp:navigation-link -->
-			<!-- wp:navigation-link {"label":"Här finns vi","url":"/har-finns-vi"} /-->
-			<!-- wp:navigation-link {"label":"Franchise","url":"/bli-franchisetagare"} /-->
-			<!-- wp:navigation-link {"label":"Om oss","url":"/om-oss"} /-->
-			<!-- wp:buttons -->
-			<div class="wp-block-buttons">
-				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"0.625rem","bottom":"0.625rem","left":"1.5rem","right":"1.5rem"}},"typography":{"fontWeight":"600"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresseanmalan/" style="background-color:#C91C22;color:#fff;border-radius:50px;padding-top:0.625rem;padding-bottom:0.625rem;padding-left:1.5rem;padding-right:1.5rem;font-weight:600">Boka hjälp</a></div>
-				<!-- /wp:button -->
-			</div>
-			<!-- /wp:buttons -->
-		<!-- /wp:navigation -->
+.card-nav-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 0.45rem 0.55rem 1.1rem;
+  z-index: 2;
+}
 
-	</div>
-	<!-- /wp:group -->
+.hamburger-menu {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 6px;
+  padding: 0 0.5rem;
+}
 
+.hamburger-menu:hover .hamburger-line {
+  opacity: 0.75;
+}
+
+.hamburger-line {
+  width: 30px;
+  height: 2px;
+  background-color: currentColor;
+  transition: transform 0.25s ease, opacity 0.2s ease, margin 0.3s ease;
+  transform-origin: 50% 50%;
+}
+
+.hamburger-menu.open .hamburger-line:first-child {
+  transform: translateY(4px) rotate(45deg);
+}
+
+.hamburger-menu.open .hamburger-line:last-child {
+  transform: translateY(-4px) rotate(-45deg);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  height: 28px;
+}
+
+.card-nav-cta-button {
+  background-color: #C91C22;
+  color: white;
+  border: none;
+  border-radius: calc(0.75rem - 0.35rem);
+  padding: 0 1rem;
+  height: calc(100% - 0.5rem);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Rubik, sans-serif;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.card-nav-cta-button:hover {
+  background-color: #a01018;
+}
+
+.card-nav-content {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 60px;
+  bottom: 0;
+  padding: 0.5rem;
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.card-nav.open .card-nav-content {
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.nav-card {
+  height: 100%;
+  flex: 1 1 0;
+  min-width: 0;
+  border-radius: calc(0.75rem - 0.2rem);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 16px;
+  gap: 8px;
+  user-select: none;
+}
+
+.nav-card-privat {
+  background-color: #FFF4F2;
+  color: #1F2937;
+}
+
+.nav-card-foretag {
+  background-color: #F0F4FF;
+  color: #1F2937;
+}
+
+.nav-card-omoss {
+  background-color: #F5F5F0;
+  color: #1F2937;
+}
+
+.nav-card-label {
+  font-weight: 400;
+  font-size: 22px;
+  letter-spacing: -0.5px;
+  font-family: Rubik, sans-serif;
+}
+
+.nav-card-links {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nav-card-link {
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: Inter, sans-serif;
+  color: inherit;
+}
+
+.nav-card-link:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 768px) {
+  body { padding-top: 80px !important; }
+  
+  .card-nav-container {
+    width: 90%;
+    top: 1.2em;
+  }
+
+  .card-nav-top {
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+  }
+
+  .hamburger-menu {
+    order: 2;
+  }
+
+  .logo-container {
+    position: static;
+    transform: none;
+    order: 1;
+  }
+
+  .card-nav-cta-button {
+    display: none;
+  }
+
+  .card-nav-content {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 0.5rem;
+    bottom: 0;
+    justify-content: flex-start;
+  }
+
+  .nav-card {
+    height: auto;
+    min-height: 60px;
+    flex: 1 1 auto;
+    max-height: none;
+  }
+
+  .nav-card-label {
+    font-size: 18px;
+  }
+
+  .nav-card-link {
+    font-size: 15px;
+  }
+}
+</style>
+
+<header class="card-nav-container">
+  <nav class="card-nav">
+    <div class="card-nav-top">
+      <div class="hamburger-menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </div>
+      
+      <a href="/" class="logo-container">
+        <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/logo-seniorbolaget.jpg" alt="Seniorbolaget" class="logo">
+      </a>
+      
+      <a href="/intresseanmalan/" class="card-nav-cta-button">Boka hjälp</a>
+    </div>
+    
+    <div class="card-nav-content">
+      <div class="nav-card nav-card-privat">
+        <span class="nav-card-label">Privat</span>
+        <div class="nav-card-links">
+          <a href="/hemstadning/" class="nav-card-link">🧹 Hemstädning</a>
+          <a href="/tradgard/" class="nav-card-link">🌿 Trädgård</a>
+          <a href="/snickeri/" class="nav-card-link">🔨 Snickeri</a>
+          <a href="/malning/" class="nav-card-link">🎨 Målning</a>
+        </div>
+      </div>
+      
+      <div class="nav-card nav-card-foretag">
+        <span class="nav-card-label">Företag</span>
+        <div class="nav-card-links">
+          <a href="/foretag/" class="nav-card-link">🏢 Företagstjänster</a>
+          <a href="/foretag/" class="nav-card-link">🏗️ BRF & Fastighet</a>
+          <a href="/foretag/" class="nav-card-link">👥 Bemanning</a>
+        </div>
+      </div>
+      
+      <div class="nav-card nav-card-omoss">
+        <span class="nav-card-label">Om oss</span>
+        <div class="nav-card-links">
+          <a href="/har-finns-vi/" class="nav-card-link">📍 Här finns vi</a>
+          <a href="/bli-franchisetagare/" class="nav-card-link">💼 Franchise</a>
+          <a href="/jobba-med-oss/" class="nav-card-link">👴 Jobba hos oss</a>
+          <a href="/om-oss/" class="nav-card-link">ℹ️ Om oss</a>
+        </div>
+      </div>
+    </div>
+  </nav>
 </header>
-<!-- /wp:group -->
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var nav = document.querySelector('.card-nav');
+  var hamburger = document.querySelector('.hamburger-menu');
+  var content = document.querySelector('.card-nav-content');
+  var container = document.querySelector('.card-nav-container');
+  
+  hamburger.addEventListener('click', function(e) {
+    e.stopPropagation();
+    var isOpen = nav.classList.contains('open');
+    if (!isOpen) {
+      // Calculate height needed
+      content.style.visibility = 'visible';
+      var contentHeight = content.scrollHeight;
+      content.style.visibility = '';
+      nav.style.height = (60 + contentHeight + 16) + 'px';
+    } else {
+      nav.style.height = '60px';
+    }
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('open');
+  });
+  
+  // Close on outside click
+  document.addEventListener('click', function(e) {
+    if (!nav.contains(e.target) && nav.classList.contains('open')) {
+      nav.style.height = '60px';
+      nav.classList.remove('open');
+      hamburger.classList.remove('open');
+    }
+  });
+  
+  // Scroll effect
+  window.addEventListener('scroll', function() {
+    if (window.scrollY > 50) {
+      container.style.top = '1em';
+    } else {
+      container.style.top = '2em';
+    }
+  });
+});
+</script>
+<!-- /wp:html -->
