@@ -444,6 +444,344 @@ body.page-id-98 main > h1.wp-block-post-title {
 </div>
 <!-- /wp:group -->
 
+<!-- FRANCHISE WIZARD SEKTION (WAS-83) -->
+<!-- wp:html -->
+<div style="background:#FAFAF8;padding:80px clamp(24px,5vw,80px);">
+    <div style="max-width:700px;margin:0 auto;text-align:center;margin-bottom:48px;">
+        <h2 style="font-family:Rubik,sans-serif;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:800;color:#1F2937;margin-bottom:16px;">Ta första steget idag</h2>
+        <p style="font-family:Inter,sans-serif;font-size:1.0625rem;color:#4B5563;">Besvara 4 korta frågor så bokar vi ett kostnadsfritt informationsmöte</p>
+    </div>
+    
+    <script>
+    function franchiseWizardApp() {
+        return {
+            step: 1,
+            isSubmitting: false,
+            errorMsg: '',
+            citySearch: '',
+            filteredCities: [],
+            formData: {
+                interest: '',
+                city: '',
+                background: [],
+                name: '',
+                phone: '',
+                bestTime: '',
+                gdprConsent: false
+            },
+            init() { this.filteredCities = this.cities; },
+            cities: [
+                {value:'amal',name:'Åmål'},{value:'boras',name:'Borås'},
+                {value:'eskilstuna',name:'Eskilstuna'},{value:'falkenberg',name:'Falkenberg'},
+                {value:'goteborg',name:'Göteborg'},{value:'halmstad',name:'Halmstad'},
+                {value:'helsingborg',name:'Helsingborg'},{value:'jonkoping',name:'Jönköping'},
+                {value:'karlstad',name:'Karlstad'},{value:'kristianstad',name:'Kristianstad'},
+                {value:'kungsbacka',name:'Kungsbacka'},{value:'kungalv',name:'Kungälv'},
+                {value:'laholm',name:'Laholm/Båstad'},{value:'landskrona',name:'Landskrona'},
+                {value:'lerum',name:'Lerum/Partille'},{value:'molndal',name:'Mölndal/Härryda'},
+                {value:'nassjo',name:'Nässjö'},{value:'orebro',name:'Örebro'},
+                {value:'skovde',name:'Skövde'},{value:'stenungsund',name:'Stenungsund'},
+                {value:'sundsvall',name:'Sundsvall'},{value:'torsby',name:'Torsby'},
+                {value:'trelleborg',name:'Trelleborg'},{value:'trollhattan',name:'Trollhättan'},
+                {value:'ulricehamn',name:'Ulricehamn'},{value:'varberg',name:'Varberg'}
+            ],
+            filterCities() {
+                const q = this.citySearch.toLowerCase();
+                this.filteredCities = q ? this.cities.filter(c => c.name.toLowerCase().includes(q)) : this.cities;
+            },
+            selectInterest(val) { this.formData.interest = val; setTimeout(() => this.step = 2, 300); },
+            selectCity(val) { this.formData.city = val; setTimeout(() => this.step = 3, 300); },
+            toggleBackground(val) {
+                const idx = this.formData.background.indexOf(val);
+                if (idx >= 0) this.formData.background.splice(idx, 1);
+                else this.formData.background.push(val);
+            },
+            getStepNum(s) { return this.step > s ? '✓' : String(s); },
+            getStepVal(s) {
+                if (s === 1) return this.formData.interest === 'starta' ? 'Starta franchise' : this.formData.interest === 'utoka' ? 'Utöka verksamhet' : this.formData.interest === 'nyfiken' ? 'Bara nyfiken' : '';
+                if (s === 2) return this.formData.city ? this.cities.find(c => c.value === this.formData.city)?.name || '' : '';
+                return '';
+            },
+            getCityName() { return this.cities.find(c => c.value === this.formData.city)?.name || this.formData.city; },
+            getInterestName() {
+                if (this.formData.interest === 'starta') return 'Starta franchise';
+                if (this.formData.interest === 'utoka') return 'Utöka verksamhet';
+                if (this.formData.interest === 'nyfiken') return 'Bara nyfiken';
+                return '';
+            },
+            getBestTimeName() {
+                const times = {'morgon':'Morgon (8–12)','middag':'Middag (12–14)','eftermiddag':'Eftermiddag (14–18)','flexibel':'Flexibel'};
+                return times[this.formData.bestTime] || '';
+            },
+            canProceedStep3() { return this.formData.background.length > 0; },
+            canSubmit() { return this.formData.name && this.formData.phone && this.formData.bestTime && this.formData.gdprConsent; },
+            submitForm() {
+                if (!this.canSubmit()) { this.errorMsg = 'Fyll i alla fält och godkänn villkoren.'; return; }
+                this.isSubmitting = true;
+                this.errorMsg = '';
+                fetch('/wp-admin/admin-post.php', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                    body: new URLSearchParams({
+                        action: 'sb_franchise_inquiry',
+                        interest: this.formData.interest,
+                        city: this.formData.city,
+                        background: this.formData.background.join(','),
+                        name: this.formData.name,
+                        phone: this.formData.phone,
+                        bestTime: this.formData.bestTime
+                    })
+                }).then(() => { this.step = 5; this.isSubmitting = false; })
+                  .catch(() => { this.errorMsg = 'Något gick fel. Försök igen eller ring oss.'; this.isSubmitting = false; });
+            }
+        };
+    }
+    </script>
+    
+    <div class="wizard-container" id="franchise-form" x-data="franchiseWizardApp()" x-cloak>
+        <div class="wizard-inner">
+            
+            <!-- Stepper (4 steg) -->
+            <div class="wiz-stepper" x-show="step < 5">
+                <div class="wiz-step" :class="{ active: step === 1, completed: step > 1 }">
+                    <div class="wiz-step-circle" x-text="getStepNum(1)"></div>
+                    <div class="wiz-step-label">Intresse</div>
+                    <div class="wiz-step-value" x-text="getStepVal(1)"></div>
+                </div>
+                <div class="wiz-step-line" :class="{ completed: step > 1 }"></div>
+                <div class="wiz-step" :class="{ active: step === 2, completed: step > 2 }">
+                    <div class="wiz-step-circle" x-text="getStepNum(2)"></div>
+                    <div class="wiz-step-label">Ort</div>
+                    <div class="wiz-step-value" x-text="getStepVal(2)"></div>
+                </div>
+                <div class="wiz-step-line" :class="{ completed: step > 2 }"></div>
+                <div class="wiz-step" :class="{ active: step === 3, completed: step > 3 }">
+                    <div class="wiz-step-circle" x-text="getStepNum(3)"></div>
+                    <div class="wiz-step-label">Bakgrund</div>
+                    <div class="wiz-step-value"></div>
+                </div>
+                <div class="wiz-step-line" :class="{ completed: step > 3 }"></div>
+                <div class="wiz-step" :class="{ active: step === 4, completed: step > 4 }">
+                    <div class="wiz-step-circle" x-text="getStepNum(4)"></div>
+                    <div class="wiz-step-label">Kontakt</div>
+                    <div class="wiz-step-value"></div>
+                </div>
+            </div>
+            
+            <!-- STEG 1: Typ av intresse -->
+            <div x-show="step === 1" x-transition>
+                <div class="wizard-header">
+                    <h2 class="wizard-title">Vad intresserar dig?</h2>
+                    <p class="wizard-subtitle">Välj det alternativ som stämmer bäst</p>
+                </div>
+                
+                <div class="svc-grid" style="grid-template-columns: repeat(3, 1fr);">
+                    <div class="svc-card" @click="selectInterest('starta')" :class="{ selected: formData.interest === 'starta' }">
+                        <div class="svc-card-icon">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="38" fill="#FFFBEB"/>
+                                <rect x="20" y="35" width="40" height="26" rx="3" fill="#D97706" stroke="#92400E" stroke-width="1.5"/>
+                                <path d="M20 35 L40 20 L60 35" stroke="#92400E" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <rect x="32" y="45" width="16" height="16" rx="2" fill="#FFFBEB"/>
+                            </svg>
+                        </div>
+                        <div class="svc-card-name">Starta franchise</div>
+                        <div class="svc-card-desc">Bli din egen chef under Seniorbolaget-varumärket</div>
+                        <div class="svc-card-check">✓</div>
+                    </div>
+                    <div class="svc-card" @click="selectInterest('utoka')" :class="{ selected: formData.interest === 'utoka' }">
+                        <div class="svc-card-icon">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="38" fill="#F0FDF4"/>
+                                <path d="M25 55 L40 30 L55 40 L65 20" stroke="#16A34A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                                <circle cx="65" cy="20" r="5" fill="#16A34A"/>
+                            </svg>
+                        </div>
+                        <div class="svc-card-name">Utöka verksamhet</div>
+                        <div class="svc-card-desc">Lägg till Seniorbolaget till din befintliga affär</div>
+                        <div class="svc-card-check">✓</div>
+                    </div>
+                    <div class="svc-card" @click="selectInterest('nyfiken')" :class="{ selected: formData.interest === 'nyfiken' }">
+                        <div class="svc-card-icon">
+                            <svg viewBox="0 0 80 80" fill="none">
+                                <circle cx="40" cy="40" r="38" fill="#EEF2FF"/>
+                                <text x="40" y="52" text-anchor="middle" font-size="36" font-family="serif" fill="#6366F1">?</text>
+                            </svg>
+                        </div>
+                        <div class="svc-card-name">Jag är nyfiken</div>
+                        <div class="svc-card-desc">Vill lära mig mer utan förbindelser</div>
+                        <div class="svc-card-check">✓</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- STEG 2: Ort -->
+            <div x-show="step === 2" x-transition>
+                <button class="back-btn" @click="step = 1" type="button"><span class="back-icon">←</span> Tillbaka</button>
+                
+                <div class="wizard-header">
+                    <h2 class="wizard-title">Vilken region vill du verka i?</h2>
+                    <p class="wizard-subtitle">Välj den ort som passar dig bäst</p>
+                </div>
+                
+                <input type="text" x-model="citySearch" @input="filterCities()"
+                    placeholder="🔍 Sök stad..." class="city-search">
+                <div class="city-list">
+                    <template x-for="city in filteredCities" :key="city.value">
+                        <div class="city-item"
+                            :class="{ selected: formData.city === city.value }"
+                            @click="selectCity(city.value)"
+                            x-text="city.name">
+                        </div>
+                    </template>
+                </div>
+            </div>
+            
+            <!-- STEG 3: Bakgrund (flerval) -->
+            <div x-show="step === 3" x-transition>
+                <button class="back-btn" @click="step = 2" type="button"><span class="back-icon">←</span> Tillbaka</button>
+                
+                <div class="wizard-header">
+                    <h2 class="wizard-title">Berätta om din bakgrund</h2>
+                    <p class="wizard-subtitle">Välj allt som stämmer</p>
+                </div>
+                
+                <div class="checkbox-grid">
+                    <label class="checkbox-option" :class="{ selected: formData.background.includes('ledning') }">
+                        <input type="checkbox" @change="toggleBackground('ledning')" :checked="formData.background.includes('ledning')">
+                        <span class="option-label">👔 Ledarskap / chef</span>
+                    </label>
+                    <label class="checkbox-option" :class="{ selected: formData.background.includes('service') }">
+                        <input type="checkbox" @change="toggleBackground('service')" :checked="formData.background.includes('service')">
+                        <span class="option-label">🤝 Service / kundkontakt</span>
+                    </label>
+                    <label class="checkbox-option" :class="{ selected: formData.background.includes('eget_foretag') }">
+                        <input type="checkbox" @change="toggleBackground('eget_foretag')" :checked="formData.background.includes('eget_foretag')">
+                        <span class="option-label">🏢 Drivit eget företag</span>
+                    </label>
+                    <label class="checkbox-option" :class="{ selected: formData.background.includes('annat') }">
+                        <input type="checkbox" @change="toggleBackground('annat')" :checked="formData.background.includes('annat')">
+                        <span class="option-label">✨ Annan bakgrund</span>
+                    </label>
+                </div>
+                <button class="next-btn" @click="step = 4" :disabled="!canProceedStep3()" type="button">Nästa steg →</button>
+            </div>
+            
+            <!-- STEG 4: Kontakt -->
+            <div x-show="step === 4" x-transition>
+                <button class="back-btn" @click="step = 3" type="button"><span class="back-icon">←</span> Tillbaka</button>
+                
+                <div class="wizard-header">
+                    <h2 class="wizard-title">Boka ditt informationsmöte</h2>
+                    <p class="wizard-subtitle">Kostnadsfritt och utan förbindelser — 30 min</p>
+                </div>
+                
+                <div x-show="errorMsg" class="error-msg" x-text="errorMsg"></div>
+                
+                <div class="form-group">
+                    <label class="form-label">Förnamn</label>
+                    <input type="text" class="form-input" placeholder="Ditt namn" x-model="formData.name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Telefonnummer</label>
+                    <input type="tel" class="form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label class="form-label">Bästa tid att ringa</label>
+                    <div class="radio-group" style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+                        <label class="radio-option" :class="{ selected: formData.bestTime === 'morgon' }">
+                            <input type="radio" name="bestTime" value="morgon" x-model="formData.bestTime">
+                            <span class="option-label">☀️ Morgon (8–12)</span>
+                        </label>
+                        <label class="radio-option" :class="{ selected: formData.bestTime === 'middag' }">
+                            <input type="radio" name="bestTime" value="middag" x-model="formData.bestTime">
+                            <span class="option-label">🌤️ Middag (12–14)</span>
+                        </label>
+                        <label class="radio-option" :class="{ selected: formData.bestTime === 'eftermiddag' }">
+                            <input type="radio" name="bestTime" value="eftermiddag" x-model="formData.bestTime">
+                            <span class="option-label">🌇 Eftermiddag (14–18)</span>
+                        </label>
+                        <label class="radio-option" :class="{ selected: formData.bestTime === 'flexibel' }">
+                            <input type="radio" name="bestTime" value="flexibel" x-model="formData.bestTime">
+                            <span class="option-label">🔄 Flexibel</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="gdpr-check">
+                    <input type="checkbox" id="franchise-gdpr" x-model="formData.gdprConsent">
+                    <label for="franchise-gdpr" class="gdpr-text">
+                        Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy" target="_blank">integritetspolicy</a>.
+                    </label>
+                </div>
+                
+                <button class="submit-btn" @click="submitForm()" :disabled="!canSubmit() || isSubmitting" type="button">
+                    <span x-show="isSubmitting" class="spinner"></span>
+                    <span x-text="isSubmitting ? 'Skickar...' : 'Boka informationsmöte →'"></span>
+                </button>
+                
+                <div class="trust-bar" style="margin-top:24px;">
+                    <span class="trust-item"><span class="trust-check">🔒</span> Konfidentiellt</span>
+                    <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfritt</span>
+                    <span class="trust-item"><span class="trust-check">✓</span> Utan förbindelser</span>
+                </div>
+            </div>
+            
+            <!-- STEG 5: Tack -->
+            <div x-show="step === 5" x-transition>
+                <div class="thank-you">
+                    <div class="thank-icon">✓</div>
+                    <h2 class="thank-title">Vi hörs snart!</h2>
+                    <p class="thank-text">Vi ringer dig under ditt valda tidsslot för ett kostnadsfritt 30-minuters informationsmöte.</p>
+                    
+                    <div class="thank-summary">
+                        <div class="summary-row">
+                            <span class="summary-label">Intresse</span>
+                            <span class="summary-value" x-text="getInterestName()"></span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Ort</span>
+                            <span class="summary-value" x-text="getCityName()"></span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Namn</span>
+                            <span class="summary-value" x-text="formData.name"></span>
+                        </div>
+                        <div class="summary-row">
+                            <span class="summary-label">Tid att ringa</span>
+                            <span class="summary-value" x-text="getBestTimeName()"></span>
+                        </div>
+                    </div>
+                    
+                    <div class="trust-bar">
+                        <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfritt möte</span>
+                        <span class="trust-item"><span class="trust-check">✓</span> Ingen förbindelse</span>
+                        <span class="trust-item"><span class="trust-check">✓</span> Vi hör av oss inom 24h</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Trust + telefon (visas på alla steg utom tack) -->
+            <div class="trust-section" x-show="step < 5 && step !== 4">
+                <div class="trust-bar">
+                    <span class="trust-item"><span class="trust-check">✓</span> Kostnadsfritt</span>
+                    <span class="trust-item"><span class="trust-check">✓</span> Ingen bindning</span>
+                    <span class="trust-item"><span class="trust-check">✓</span> Svar inom 24h</span>
+                </div>
+                <div class="phone-banner">
+                    <span class="phone-label">Hellre ringa?</span>
+                    <a href="tel:0101751900">010-175 19 00</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<!-- /wp:html -->
+
+
 <!-- STICKY CTA-KNAPP -->
 <!-- wp:html -->
 <div style="position:fixed;bottom:90px;right:28px;z-index:10001;">
