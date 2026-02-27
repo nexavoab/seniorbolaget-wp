@@ -471,23 +471,68 @@ body.page-id-98 main > h1.wp-block-post-title {
             },
             init() { this.filteredCities = this.cities; },
             cities: [
-                {value:'amal',name:'Åmål'},{value:'boras',name:'Borås'},
-                {value:'eskilstuna',name:'Eskilstuna'},{value:'falkenberg',name:'Falkenberg'},
+                {value:'alingsas',name:'Alingsås'},{value:'angelholm',name:'Ängelholm'},
+                {value:'arvika',name:'Arvika'},{value:'amal',name:'Åmål'},
+                {value:'astorp',name:'Åstorp'},{value:'bastad',name:'Båstad'},
+                {value:'boden',name:'Boden'},{value:'borlange',name:'Borlänge'},
+                {value:'boras',name:'Borås'},{value:'bromma',name:'Bromma'},
+                {value:'danderyd',name:'Danderyd'},{value:'ekero',name:'Ekerö'},
+                {value:'eksjo',name:'Eksjö'},{value:'enkoping',name:'Enköping'},
+                {value:'eskilstuna',name:'Eskilstuna'},{value:'eslov',name:'Eslöv'},
+                {value:'falkenberg',name:'Falkenberg'},{value:'falkoping',name:'Falköping'},
+                {value:'falun',name:'Falun'},{value:'gavle',name:'Gävle'},
                 {value:'goteborg',name:'Göteborg'},{value:'halmstad',name:'Halmstad'},
-                {value:'helsingborg',name:'Helsingborg'},{value:'jonkoping',name:'Jönköping'},
-                {value:'karlstad',name:'Karlstad'},{value:'kristianstad',name:'Kristianstad'},
-                {value:'kungsbacka',name:'Kungsbacka'},{value:'kungalv',name:'Kungälv'},
-                {value:'laholm',name:'Laholm/Båstad'},{value:'landskrona',name:'Landskrona'},
-                {value:'lerum',name:'Lerum/Partille'},{value:'molndal',name:'Mölndal/Härryda'},
-                {value:'nassjo',name:'Nässjö'},{value:'orebro',name:'Örebro'},
-                {value:'skovde',name:'Skövde'},{value:'stenungsund',name:'Stenungsund'},
+                {value:'haninge',name:'Haninge'},{value:'harnosand',name:'Härnösand'},
+                {value:'hassleholm',name:'Hässleholm'},{value:'helsingborg',name:'Helsingborg'},
+                {value:'hoganas',name:'Höganäs'},{value:'hudiksvall',name:'Hudiksvall'},
+                {value:'huddinge',name:'Huddinge'},{value:'jonkoping',name:'Jönköping'},
+                {value:'kalmar',name:'Kalmar'},{value:'karlshamn',name:'Karlshamn'},
+                {value:'karlskoga',name:'Karlskoga'},{value:'karlskrona',name:'Karlskrona'},
+                {value:'karlstad',name:'Karlstad'},{value:'katrineholm',name:'Katrineholm'},
+                {value:'kavlinge',name:'Kävlinge'},{value:'kiruna',name:'Kiruna'},
+                {value:'kristianstad',name:'Kristianstad'},{value:'kungsbacka',name:'Kungsbacka'},
+                {value:'kungalv',name:'Kungälv'},{value:'laholm',name:'Laholm'},
+                {value:'landskrona',name:'Landskrona'},{value:'lerum',name:'Lerum'},
+                {value:'lidkoping',name:'Lidköping'},{value:'linkoping',name:'Linköping'},
+                {value:'ljungby',name:'Ljungby'},{value:'ludvika',name:'Ludvika'},
+                {value:'lulea',name:'Luleå'},{value:'lund',name:'Lund'},
+                {value:'malmo',name:'Malmö'},{value:'mariestad',name:'Mariestad'},
+                {value:'molndal',name:'Mölndal'},{value:'motala',name:'Motala'},
+                {value:'nacka',name:'Nacka'},{value:'nassjo',name:'Nässjö'},
+                {value:'norrköping',name:'Norrköping'},{value:'norrtälje',name:'Norrtälje'},
+                {value:'nykoping',name:'Nyköping'},{value:'orebro',name:'Örebro'},
+                {value:'ornskoldsvik',name:'Örnsköldsvik'},{value:'ostersund',name:'Östersund'},
+                {value:'partille',name:'Partille'},{value:'pitea',name:'Piteå'},
+                {value:'ronneby',name:'Ronneby'},{value:'sandviken',name:'Sandviken'},
+                {value:'sigtuna',name:'Sigtuna'},{value:'sjobo',name:'Sjöbo'},
+                {value:'skara',name:'Skara'},{value:'skelleftea',name:'Skellefteå'},
+                {value:'skovde',name:'Skövde'},{value:'smedjebacken',name:'Smedjebacken'},
+                {value:'sodertälje',name:'Södertälje'},{value:'solvesborg',name:'Sölvesborg'},
+                {value:'staffanstorp',name:'Staffanstorp'},{value:'stenungsund',name:'Stenungsund'},
+                {value:'stockholm',name:'Stockholm'},{value:'strangnas',name:'Strängnäs'},
                 {value:'sundsvall',name:'Sundsvall'},{value:'torsby',name:'Torsby'},
                 {value:'trelleborg',name:'Trelleborg'},{value:'trollhattan',name:'Trollhättan'},
-                {value:'ulricehamn',name:'Ulricehamn'},{value:'varberg',name:'Varberg'}
+                {value:'tumba',name:'Tumba/Botkyrka'},{value:'taby',name:'Täby'},
+                {value:'uddevalla',name:'Uddevalla'},{value:'ulricehamn',name:'Ulricehamn'},
+                {value:'umea',name:'Umeå'},{value:'upplands-vasby',name:'Upplands Väsby'},
+                {value:'uppsala',name:'Uppsala'},{value:'vargarda',name:'Vårgårda'},
+                {value:'varberg',name:'Varberg'},{value:'varnamo',name:'Värnamo'},
+                {value:'vasteras',name:'Västerås'},{value:'vastervik',name:'Västervik'},
+                {value:'vaxjo',name:'Växjö'},{value:'vellinge',name:'Vellinge'},
+                {value:'vetlanda',name:'Vetlanda'},{value:'visby',name:'Visby'},
+                {value:'ystad',name:'Ystad'},{value:'orebro',name:'Örebro'},
+                {value:'ostra-goinge',name:'Östra Göinge'}
             ],
             filterCities() {
-                const q = this.citySearch.toLowerCase();
-                this.filteredCities = q ? this.cities.filter(c => c.name.toLowerCase().includes(q)) : this.cities;
+                const q = this.citySearch.toLowerCase().trim();
+                if (!q) { this.filteredCities = this.cities; return; }
+                const matches = this.cities.filter(c => c.name.toLowerCase().includes(q));
+                // Om ingen träff — visa "Välj [typed]" som alternativ
+                if (matches.length === 0) {
+                    this.filteredCities = [{value: 'custom_' + q, name: this.citySearch + ' (annan ort)'}];
+                } else {
+                    this.filteredCities = matches;
+                }
             },
             selectInterest(val) { this.formData.interest = val; setTimeout(() => this.step = 2, 300); },
             selectCity(val) { this.formData.city = val; setTimeout(() => this.step = 3, 300); },
@@ -502,7 +547,13 @@ body.page-id-98 main > h1.wp-block-post-title {
                 if (s === 2) return this.formData.city ? this.cities.find(c => c.value === this.formData.city)?.name || '' : '';
                 return '';
             },
-            getCityName() { return this.cities.find(c => c.value === this.formData.city)?.name || this.formData.city; },
+            getCityName() {
+                if (!this.formData.city) return '';
+                const found = this.cities.find(c => c.value === this.formData.city);
+                if (found) return found.name;
+                // Fritext-ort (custom_xxx)
+                return this.citySearch || this.formData.city.replace('custom_','');
+            },
             getInterestName() {
                 if (this.formData.interest === 'starta') return 'Starta franchise';
                 if (this.formData.interest === 'utoka') return 'Utöka verksamhet';
