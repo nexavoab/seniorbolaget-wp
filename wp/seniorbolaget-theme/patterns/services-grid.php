@@ -1,129 +1,236 @@
 <?php
 /**
- * Title: Tjänste-grid
+ * Title: Tjänster – Bento Grid
  * Slug: seniorbolaget/services-grid
- * Categories: seniorbolaget, featured
- * Description: Fyra tjänstekort i bento-grid layout
- * Viewport Width: 1280
+ * Categories: seniorbolaget, services
+ * Description: Magic bento-grid med glow-effekt för tjänstesektionen
+ * Viewport Width: 1440
  */
 ?>
-<!-- wp:group {"align":"full","className":"services-grid","style":{"spacing":{"padding":{"top":"100px","bottom":"100px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"}},"color":{"background":"#FAFAF8"}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group alignfull services-grid" style="background-color:#FAFAF8">
+<!-- wp:html -->
+<style>
+.sb-services-section {
+  padding: 80px clamp(24px,5vw,80px);
+  background: #FAFAF8;
+  text-align: center;
+}
+.sb-services-title {
+  font-family: Rubik, sans-serif;
+  font-size: clamp(1.75rem,3vw,2.5rem);
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 12px;
+}
+.sb-services-sub {
+  font-family: Inter, sans-serif;
+  font-size: 1.125rem;
+  color: #6B7280;
+  margin: 0 0 48px;
+}
 
-	<!-- wp:group {"style":{"spacing":{"margin":{"bottom":"var:preset|spacing|xl"}}},"textAlign":"center"} -->
-	<div class="wp-block-group" style="text-align:center">
-		<!-- wp:heading {"level":2,"style":{"typography":{"fontWeight":"700"}}} -->
-		<h2 class="wp-block-heading">Våra tjänster</h2>
-		<!-- /wp:heading -->
-		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"typography":{"fontSize":"var:preset|font-size|lg"}}} -->
-		<p class="has-textgra-color has-text-color" style="font-size:var(--wp--preset--font-size--lg)">Erfarna seniorer som utför vardagsarbeten med omsorg och precision.</p>
-		<!-- /wp:paragraph -->
-	</div>
-	<!-- /wp:group -->
+/* Bento grid */
+.sb-card-grid {
+  display: grid;
+  gap: 12px;
+  max-width: 1100px;
+  margin: 0 auto;
+  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.25rem);
+}
+@media (min-width: 600px) {
+  .sb-card-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .sb-card-grid { grid-template-columns: repeat(4, 1fr); }
+  .sb-card-grid .sb-bento-card:nth-child(3) { grid-column: span 2; grid-row: span 2; }
+  .sb-card-grid .sb-bento-card:nth-child(4) { grid-column: 1 / span 2; grid-row: 2 / span 2; }
+  .sb-card-grid .sb-bento-card:nth-child(6) { grid-column: 4; grid-row: 3; }
+}
 
-	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"24px"},"margin":{"bottom":"24px"}}}} -->
-	<div class="wp-block-columns" style="margin-bottom:24px">
+/* Card base */
+.sb-bento-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 200px;
+  padding: 1.5em;
+  border-radius: 20px;
+  border: 1px solid #e5e7eb;
+  background: #ffffff;
+  overflow: hidden;
+  text-decoration: none;
+  color: #1F2937;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  --glow-x: 50%;
+  --glow-y: 50%;
+  --glow-intensity: 0;
+  --glow-radius: 220px;
+}
+.sb-bento-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 32px rgba(201,28,34,0.12);
+  border-color: rgba(201,28,34,0.25);
+}
 
-		<!-- wp:column {"width":"60%"} -->
-		<div class="wp-block-column" style="flex-basis:60%">
-			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
-			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:html -->
-				<div style="margin-bottom:16px;color:#C91C22;">
-					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Hemstäd</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:12px">Regelbunden eller engångsstädning av hem och lägenheter. Noggrant och tillförlitligt av erfarna seniorer.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/hemstad" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+/* Glow border effect */
+.sb-bento-card::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  background: radial-gradient(
+    var(--glow-radius) circle at var(--glow-x) var(--glow-y),
+    rgba(201,28,34,calc(var(--glow-intensity)*0.9)) 0%,
+    rgba(201,28,34,calc(var(--glow-intensity)*0.4)) 30%,
+    transparent 65%
+  );
+  border-radius: inherit;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: 1;
+}
 
-		<!-- wp:column {"width":"40%"} -->
-		<div class="wp-block-column" style="flex-basis:40%">
-			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
-			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:html -->
-				<div style="margin-bottom:16px;color:#C91C22;">
-					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Trädgård</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:12px">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats — vi sköter resten.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+/* Card content */
+.sb-card-icon {
+  font-size: 2.25em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+.sb-card-title {
+  font-family: Rubik, sans-serif;
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #1F2937;
+  margin: 0 0 0.4em;
+}
+.sb-card-desc {
+  font-family: Inter, sans-serif;
+  font-size: 0.875em;
+  color: #6B7280;
+  line-height: 1.5;
+  margin: 0;
+  flex: 1;
+}
+.sb-card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 1em;
+  font-family: Rubik, sans-serif;
+  font-size: 0.875em;
+  font-weight: 600;
+  color: #C91C22;
+  text-decoration: none;
+}
+.sb-card-link::after { content: '→'; transition: transform 0.2s; }
+.sb-bento-card:hover .sb-card-link::after { transform: translateX(4px); }
 
-	</div>
-	<!-- /wp:columns -->
+/* Large card (3rd) special styling */
+.sb-bento-card--large .sb-card-icon { font-size: 3em; }
+.sb-bento-card--large .sb-card-title { font-size: 1.4em; }
+.sb-bento-card--large .sb-card-desc { font-size: 1em; }
 
-	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"24px"}}}} -->
-	<div class="wp-block-columns">
+/* RUT badge card */
+.sb-bento-card--accent {
+  background: linear-gradient(135deg, #C91C22 0%, #a01018 100%);
+  border-color: transparent;
+  color: #fff;
+}
+.sb-bento-card--accent .sb-card-title,
+.sb-bento-card--accent .sb-card-desc { color: rgba(255,255,255,0.92); }
+.sb-bento-card--accent .sb-card-link { color: #fff; }
+.sb-bento-card--accent:hover { box-shadow: 0 8px 32px rgba(201,28,34,0.4); border-color: transparent; }
+</style>
 
-		<!-- wp:column {"width":"40%"} -->
-		<div class="wp-block-column" style="flex-basis:40%">
-			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
-			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:html -->
-				<div style="margin-bottom:16px;color:#C91C22;">
-					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21.28 7.86a2 2 0 0 0-2.83 0l-8.64 8.64a2 2 0 1 0 2.83 2.83l8.64-8.64a2 2 0 0 0 0-2.83z"></path><path d="M3.5 21.5a2 2 0 1 0 0-4 4 4 0 0 0 4 4z"></path></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Målning &amp; tapetsering</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:12px">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/malning-tapetsering" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+<section class="sb-services-section">
+  <h2 class="sb-services-title">Våra tjänster</h2>
+  <p class="sb-services-sub">Erfarna seniorer som utför vardagsarbeten med omsorg och precision</p>
 
-		<!-- wp:column {"width":"60%"} -->
-		<div class="wp-block-column" style="flex-basis:60%">
-			<!-- wp:group {"className":"service-card","style":{"border":{"radius":"16px"},"spacing":{"padding":{"top":"32px","bottom":"32px","left":"32px","right":"32px"}},"color":{"background":"#ffffff"},"boxShadow":"0 4px 24px -4px rgba(0,0,0,0.06)"}} -->
-			<div class="wp-block-group service-card has-background" style="background-color:#ffffff;border-radius:16px;padding:32px;box-shadow:0 4px 24px -4px rgba(0,0,0,0.06)">
-				<!-- wp:html -->
-				<div style="margin-bottom:16px;color:#C91C22;">
-					<svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
-				</div>
-				<!-- /wp:html -->
-				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"600","fontSize":"var:preset|font-size|xl"}}} -->
-				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Snickeri</h3>
-				<!-- /wp:heading -->
-				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:12px">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
-				<!-- /wp:paragraph -->
-				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
-				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/snickeri" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>
-				<!-- /wp:paragraph -->
-			</div>
-			<!-- /wp:group -->
-		</div>
-		<!-- /wp:column -->
+  <div class="sb-card-grid" id="sbCardGrid">
 
-	</div>
-	<!-- /wp:columns -->
+    <!-- 1. Hemstädning -->
+    <a href="/hemstadning/" class="sb-bento-card">
+      <div>
+        <div class="sb-card-icon">🧹</div>
+        <p class="sb-card-title">Hemstädning</p>
+        <p class="sb-card-desc">Regelbunden eller engångsstädning. Noggrant och tillförlitligt av erfarna seniorer.</p>
+      </div>
+      <span class="sb-card-link">Läs mer</span>
+    </a>
 
-</div>
-<!-- /wp:group -->
+    <!-- 2. Trädgård -->
+    <a href="/tradgard/" class="sb-bento-card">
+      <div>
+        <div class="sb-card-icon">🌿</div>
+        <p class="sb-card-title">Trädgård</p>
+        <p class="sb-card-desc">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats.</p>
+      </div>
+      <span class="sb-card-link">Läs mer</span>
+    </a>
+
+    <!-- 3. Målning — STOR (span 2×2) -->
+    <a href="/malning/" class="sb-bento-card sb-bento-card--large">
+      <div>
+        <div class="sb-card-icon">🖌️</div>
+        <p class="sb-card-title">Målning & tapetsering</p>
+        <p class="sb-card-desc">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början — med ROT-avdrag.</p>
+      </div>
+      <span class="sb-card-link">Läs mer</span>
+    </a>
+
+    <!-- 4. Snickeri — BRED (span 2 cols × 2 rows) -->
+    <a href="/snickeri/" class="sb-bento-card sb-bento-card--large">
+      <div>
+        <div class="sb-card-icon">🔨</div>
+        <p class="sb-card-title">Snickeri</p>
+        <p class="sb-card-desc">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
+      </div>
+      <span class="sb-card-link">Läs mer</span>
+    </a>
+
+    <!-- 5. RUT/ROT badge -->
+    <a href="/intresseanmalan/" class="sb-bento-card sb-bento-card--accent">
+      <div>
+        <div class="sb-card-icon">💰</div>
+        <p class="sb-card-title">50% rabatt med RUT/ROT</p>
+        <p class="sb-card-desc">Du betalar bara halva priset — vi hanterar avdraget direkt med Skatteverket.</p>
+      </div>
+      <span class="sb-card-link">Boka nu</span>
+    </a>
+
+    <!-- 6. Alla orter -->
+    <a href="/har-finns-vi/" class="sb-bento-card">
+      <div>
+        <div class="sb-card-icon">📍</div>
+        <p class="sb-card-title">26 orter</p>
+        <p class="sb-card-desc">Hitta din lokala franchisetagare.</p>
+      </div>
+      <span class="sb-card-link">Se alla</span>
+    </a>
+
+  </div>
+</section>
+
+<script>
+(function() {
+  const cards = document.querySelectorAll('#sbCardGrid .sb-bento-card');
+  cards.forEach(card => {
+    card.addEventListener('mousemove', (e) => {
+      const rect = card.getBoundingClientRect();
+      const x = ((e.clientX - rect.left) / rect.width) * 100;
+      const y = ((e.clientY - rect.top) / rect.height) * 100;
+      card.style.setProperty('--glow-x', x + '%');
+      card.style.setProperty('--glow-y', y + '%');
+      card.style.setProperty('--glow-intensity', '1');
+    });
+    card.addEventListener('mouseleave', () => {
+      card.style.setProperty('--glow-intensity', '0');
+    });
+  });
+})();
+</script>
+<!-- /wp:html -->
