@@ -48,7 +48,7 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:40%">
 			<!-- wp:html -->
 			<div style="position:relative;border-radius:20px;overflow:hidden;box-shadow:0 8px 32px rgba(0,0,0,0.12);">
-				<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_malning.jpg" alt="Erfaren hantverkare på uppdrag" style="width:100%;height:auto;display:block;" loading="lazy"/>
+				<img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_hantverk.jpg" alt="Erfaren hantverkare på uppdrag" style="width:100%;height:auto;display:block;" loading="lazy"/>
 			</div>
 			<!-- /wp:html -->
 		</div>
