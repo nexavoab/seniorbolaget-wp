@@ -1,94 +1,235 @@
-<!-- wp:group {"tagName":"footer","className":"site-footer","style":{"color":{"background":"var:preset|color|rod","text":"#ffffff"},"spacing":{"padding":{"top":"var:preset|spacing|2xl","bottom":"var:preset|spacing|lg"}}},"layout":{"type":"constrained"}} -->
-<footer class="wp-block-group site-footer has-rod-background-color has-background" style="background-color:var(--wp--preset--color--rod);color:#ffffff">
+<!-- wp:html -->
+<style>
+.sb-footer {
+  background: #ffffff;
+  border-top: 1px solid #E5E7EB;
+  padding: 48px 24px 24px;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.sb-footer-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.sb-footer-grid {
+  display: flex;
+  gap: 48px;
+}
+.sb-footer-col-brand {
+  flex: 0 0 35%;
+}
+.sb-footer-col-links {
+  flex: 0 0 30%;
+}
+.sb-footer-col-contact {
+  flex: 0 0 35%;
+}
+.sb-footer-logo {
+  height: 36px;
+  width: auto;
+  margin-bottom: 16px;
+}
+.sb-footer-tagline {
+  font-size: 0.875rem;
+  color: #6B7280;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+}
+.sb-footer-social {
+  display: flex;
+  gap: 12px;
+}
+.sb-footer-social a {
+  color: #9CA3AF;
+  transition: color 0.2s;
+}
+.sb-footer-social a:hover {
+  color: #1F2937;
+}
+.sb-footer-social svg {
+  width: 18px;
+  height: 18px;
+}
+.sb-footer-heading {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #9CA3AF;
+  font-weight: 600;
+  margin: 0 0 12px 0;
+}
+.sb-footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.sb-footer-links li {
+  margin-bottom: 8px;
+}
+.sb-footer-links a {
+  font-size: 0.875rem;
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sb-footer-links a:hover {
+  color: #1F2937;
+}
+.sb-footer-section {
+  margin-top: 24px;
+}
+.sb-footer-phone {
+  font-family: Rubik, Inter, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1F2937;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.2s;
+}
+.sb-footer-phone:hover {
+  color: #C91C22;
+}
+.sb-footer-hours {
+  font-size: 0.8rem;
+  color: #9CA3AF;
+  margin: 4px 0 12px 0;
+}
+.sb-footer-email {
+  font-size: 0.875rem;
+  color: #6B7280;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sb-footer-email:hover {
+  color: #1F2937;
+}
+.sb-footer-address {
+  font-size: 0.8rem;
+  color: #9CA3AF;
+  margin: 8px 0 0 0;
+}
+.sb-footer-badge {
+  display: inline-block;
+  background: #FFF0EC;
+  color: #C91C22;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 4px 10px;
+  border-radius: 50px;
+  margin-top: 16px;
+}
+.sb-footer-bottom {
+  border-top: 1px solid #E5E7EB;
+  padding-top: 20px;
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.sb-footer-legal {
+  font-size: 0.8rem;
+  color: #9CA3AF;
+}
+.sb-footer-legal a {
+  color: #9CA3AF;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.sb-footer-legal a:hover {
+  color: #1F2937;
+}
+.sb-footer-trust {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.sb-footer-trust span {
+  font-size: 0.75rem;
+  color: #9CA3AF;
+  font-family: Inter, sans-serif;
+}
+@media (max-width: 768px) {
+  .sb-footer-grid {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .sb-footer-col-brand,
+  .sb-footer-col-links,
+  .sb-footer-col-contact {
+    flex: 1 1 100%;
+  }
+  .sb-footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+</style>
 
-	<!-- wp:columns {"style":{"spacing":{"blockGap":{"left":"var:preset|spacing|2xl"},"margin":{"bottom":"var:preset|spacing|xl"}}}} -->
-	<div class="wp-block-columns">
-
-		<!-- wp:column {"width":"35%"} -->
-		<div class="wp-block-column" style="flex-basis:35%">
-			<!-- wp:site-title {"level":0,"isLink":true,"style":{"typography":{"fontWeight":"700","fontSize":"1.25rem"},"color":{"text":"#ffffff"}}} /-->
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9rem"},"color":{"text":"rgba(255,255,255,0.85)"},"spacing":{"margin":{"top":"var:preset|spacing|sm"}}}} -->
-			<p class="has-text-color" style="color:rgba(255,255,255,0.85);font-size:0.9rem;margin-top:1.5rem">Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta — hjälp för dig, mening för dem.</p>
-			<!-- /wp:paragraph -->
-			<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"var:preset|spacing|sm"}}}} -->
-			<p style="margin-top:1.5rem"><a href="https://www.instagram.com/seniorbolagetsverige/" style="color:#ffffff;text-decoration:none;">Instagram →</a></p>
-			<!-- /wp:paragraph -->
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column {"width":"25%"} -->
-		<div class="wp-block-column" style="flex-basis:25%">
-			<!-- wp:heading {"level":5,"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.08em","fontSize":"0.75rem"},"color":{"text":"rgba(255,255,255,0.7)"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-			<h5 class="wp-block-heading" style="color:rgba(255,255,255,0.7);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem">Snabblänkar</h5>
-			<!-- /wp:heading -->
-			<!-- wp:list {"style":{"typography":{"fontSize":"0.9rem"}},"className":"footer-links"} -->
-			<ul class="wp-block-list footer-links" style="font-size:0.9rem">
-				<li><a href="/privat" style="color:rgba(255,255,255,0.9);text-decoration:none;">Privat</a></li>
-				<li><a href="/foretag" style="color:rgba(255,255,255,0.9);text-decoration:none;">Företag</a></li>
-				<li><a href="/har-finns-vi" style="color:rgba(255,255,255,0.9);text-decoration:none;">Här finns vi</a></li>
-				<li><a href="/bli-franchisetagare" style="color:rgba(255,255,255,0.9);text-decoration:none;">Franchise</a></li>
-				<li><a href="/jobba-med-oss" style="color:rgba(255,255,255,0.9);text-decoration:none;">Jobba med oss</a></li>
-				<li><a href="/om-oss" style="color:rgba(255,255,255,0.9);text-decoration:none;">Om oss</a></li>
-			</ul>
-			<!-- /wp:list -->
-		</div>
-		<!-- /wp:column -->
-
-		<!-- wp:column {"width":"25%"} -->
-		<div class="wp-block-column" style="flex-basis:25%">
-			<!-- wp:heading {"level":5,"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.08em","fontSize":"0.75rem"},"color":{"text":"rgba(255,255,255,0.7)"},"spacing":{"margin":{"bottom":"var:preset|spacing|sm"}}}} -->
-			<h5 class="wp-block-heading" style="color:rgba(255,255,255,0.7);font-size:0.75rem;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:1.5rem">Kontakt</h5>
-			<!-- /wp:heading -->
-			<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.9rem"},"color":{"text":"rgba(255,255,255,0.9)"}}} -->
-			<p class="has-text-color" style="color:rgba(255,255,255,0.9);font-size:0.9rem"><a href="tel:0101751900" style="color:#ffffff;text-decoration:none;">010-175 19 00</a><br/><a href="mailto:info@seniorbolaget.se" style="color:rgba(255,255,255,0.9);text-decoration:none;">info@seniorbolaget.se</a><br/>Box 2069<br/>436 02 Hovås</p>
-			<!-- /wp:paragraph -->
-		</div>
-		<!-- /wp:column -->
-
-	</div>
-	<!-- /wp:columns -->
-
-	<!-- Trust-logotyper -->
-	<!-- wp:html -->
-	<div style="border-top:1px solid rgba(255,255,255,0.2);margin-top:32px;padding-top:24px;display:flex;align-items:center;justify-content:center;gap:32px;flex-wrap:wrap;">
-	  <!-- Skatteverket/RUT -->
-	  <div style="display:flex;align-items:center;gap:8px;opacity:0.8;">
-	    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
-	    <span style="font-family:Inter,sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.85);font-weight:500;">Godkänd för RUT/ROT</span>
-	  </div>
-	  <!-- Reco -->
-	  <div style="display:flex;align-items:center;gap:8px;opacity:0.8;">
-	    <span style="color:#D4AF37;font-size:1rem;">★★★★★</span>
-	    <span style="font-family:Inter,sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.85);font-weight:500;">4.8/5 på Reco.se</span>
-	  </div>
-	  <!-- Kollektivavtal -->
-	  <div style="display:flex;align-items:center;gap:8px;opacity:0.8;">
-	    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
-	    <span style="font-family:Inter,sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.85);font-weight:500;">Kollektivavtal</span>
-	  </div>
-	  <!-- Försäkring -->
-	  <div style="display:flex;align-items:center;gap:8px;opacity:0.8;">
-	    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-	    <span style="font-family:Inter,sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.85);font-weight:500;">Ansvarsförsäkrade</span>
-	  </div>
-	</div>
-	<!-- /wp:html -->
-
-	<!-- wp:separator {"style":{"color":{"background":"rgba(255,255,255,0.2)"},"spacing":{"margin":{"top":"var:preset|spacing|md","bottom":"var:preset|spacing|md"}}}} -->
-	<hr class="wp-block-separator has-alpha-channel-opacity has-background" style="background-color:rgba(255,255,255,0.2)"/>
-	<!-- /wp:separator -->
-
-	<!-- wp:group {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between","alignItems":"center"}} -->
-	<div class="wp-block-group">
-		<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"},"color":{"text":"rgba(255,255,255,0.7)"}}} -->
-		<p class="has-text-color" style="color:rgba(255,255,255,0.7);font-size:0.8rem">Copyright © 2026 Seniorbolaget. All rights reserved.</p>
-		<!-- /wp:paragraph -->
-		<!-- wp:paragraph {"style":{"typography":{"fontSize":"0.8rem"},"color":{"text":"rgba(255,255,255,0.7)"}}} -->
-		<p class="has-text-color" style="color:rgba(255,255,255,0.7);font-size:0.8rem"><a href="/integritetspolicy" style="color:rgba(255,255,255,0.7);text-decoration:none;">Integritetspolicy</a></p>
-		<!-- /wp:paragraph -->
-	</div>
-	<!-- /wp:group -->
-
+<footer class="sb-footer">
+  <div class="sb-footer-inner">
+    <div class="sb-footer-grid">
+      
+      <!-- Kolumn 1: Brand -->
+      <div class="sb-footer-col-brand">
+        <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/logo-seniorbolaget.jpg" alt="Seniorbolaget" class="sb-footer-logo">
+        <p class="sb-footer-tagline">Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta — hjälp för dig, mening för dem.</p>
+        <div class="sb-footer-social">
+          <a href="https://www.instagram.com/seniorbolagetsverige/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://www.facebook.com/seniorbolaget" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+        </div>
+      </div>
+      
+      <!-- Kolumn 2: Tjänster & Sidor -->
+      <div class="sb-footer-col-links">
+        <h4 class="sb-footer-heading">Tjänster</h4>
+        <ul class="sb-footer-links">
+          <li><a href="/hemstadning">Hemstädning</a></li>
+          <li><a href="/tradgard">Trädgård</a></li>
+          <li><a href="/malning-och-tapetsering">Målning &amp; tapetsering</a></li>
+          <li><a href="/snickeri">Snickeri</a></li>
+        </ul>
+        
+        <div class="sb-footer-section">
+          <h4 class="sb-footer-heading">Sidor</h4>
+          <ul class="sb-footer-links">
+            <li><a href="/om-oss">Om oss</a></li>
+            <li><a href="/bli-franchisetagare">Franchise</a></li>
+            <li><a href="/jobba-med-oss">Jobba med oss</a></li>
+            <li><a href="/kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <!-- Kolumn 3: Kontakt -->
+      <div class="sb-footer-col-contact">
+        <h4 class="sb-footer-heading">Kontakt</h4>
+        <a href="tel:0101751900" class="sb-footer-phone">010-175 19 00</a>
+        <p class="sb-footer-hours">Mån–Fre 08:00–17:00</p>
+        <a href="mailto:info@seniorbolaget.se" class="sb-footer-email">info@seniorbolaget.se</a>
+        <p class="sb-footer-address">Box 2069, 436 02 Hovås</p>
+        <span class="sb-footer-badge">Godkänd för RUT &amp; ROT</span>
+      </div>
+      
+    </div>
+    
+    <!-- Bottom bar -->
+    <div class="sb-footer-bottom">
+      <div class="sb-footer-legal">
+        © 2026 Seniorbolaget. · <a href="/integritetspolicy">Integritetspolicy</a> · <a href="/cookies">Cookies</a>
+      </div>
+      <div class="sb-footer-trust">
+        <span>✓ Ansvarsförsäkrade</span>
+        <span>★ 4.8/5 Reco.se</span>
+        <span>✓ Kollektivavtal</span>
+      </div>
+    </div>
+    
+  </div>
 </footer>
-<!-- /wp:group -->
-
+<!-- /wp:html -->
