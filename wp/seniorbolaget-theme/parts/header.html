@@ -1,360 +1,594 @@
 <!-- wp:html -->
 <style>
-/* Card Nav Styles */
-.card-nav-container {
+/* ============================================
+   SENIORBOLAGET STICKY HEADER
+   ============================================ */
+
+/* Body padding for sticky header */
+.wp-site-blocks { padding-top: 70px !important; }
+
+/* Header bar */
+.sb-header {
   position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 82%;
-  min-width: 380px;
-  max-width: 1000px;
-  z-index: 9999;
-  box-sizing: border-box;
-  transition: top 0.3s ease, width 0.25s ease;
-}
-
-.card-nav {
-  display: block;
-  height: 60px;
-  padding: 0;
-  background-color: white;
-  border: 0.5px solid rgba(255,255,255,0.1);
-  border-radius: 0.75rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  position: relative;
-  overflow: hidden;
-  will-change: height;
-  transition: height 0.3s ease;
-}
-
-.card-nav-top {
-  position: absolute;
   top: 0;
   left: 0;
-  right: 0;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1rem;
-  z-index: 2;
+  width: 100%;
+  height: 70px;
+  background: #ffffff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  z-index: 9999;
 }
 
-.hamburger-menu {
+.sb-header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
   height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 6px;
-  padding: 0 0.5rem;
-}
-
-.hamburger-menu:hover .hamburger-line {
-  opacity: 0.75;
-}
-
-.hamburger-line {
-  width: 22px;
-  height: 2px;
-  background-color: currentColor;
-  transition: transform 0.25s ease, opacity 0.2s ease, margin 0.3s ease;
-  transform-origin: 50% 50%;
-}
-
-.hamburger-menu.open .hamburger-line:first-child {
-  transform: translateY(4px) rotate(45deg);
-}
-
-.hamburger-menu.open .hamburger-line:last-child {
-  transform: translateY(-4px) rotate(-45deg);
-}
-
-.logo-container {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.logo {
-  height: 36px;
-}
-
-.card-nav-cta-button {
-  background-color: #C91C22;
-  color: white;
-  border: none;
-  border-radius: 50px;
-  padding: 0 1rem;
-  height: 38px;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: Rubik, sans-serif;
-  transition: background-color 0.3s ease;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  font-size: 14px;
-}
-
-.card-nav-cta-button:hover {
-  background-color: #a01018;
-}
-
-.card-nav-content {
-  position: absolute; left: 0; right: 0; top: 60px;
-  padding: 8px 8px 12px; display: flex; align-items: stretch;
-  gap: 8px; visibility: hidden; pointer-events: none; z-index: 1;
-}
-
-.card-nav.open .card-nav-content {
-  visibility: visible !important; pointer-events: auto !important;
-}
-.card-nav-container.open {
-  width: 92%;
-  max-width: 1000px;
-}
-
-.nav-card {
-  flex: 1 1 0; min-width: 0;
-  border-radius: 12px;
-  position: relative; display: flex; flex-direction: column;
   justify-content: space-between;
-  padding: 20px 20px 20px; gap: 0; user-select: none;
-  min-height: 160px;
-  border: 1px solid rgba(0,0,0,0.06);
-  transition: background 0.2s ease;
 }
-.nav-card:hover {
-  filter: brightness(0.96);
+
+/* Logo */
+.sb-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
-.nav-card-privat {
+
+.sb-logo img {
+  height: 40px;
+  width: auto;
+}
+
+/* Desktop Nav */
+.sb-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sb-nav-item {
+  position: relative;
+}
+
+.sb-nav-btn {
+  background: none;
+  border: none;
+  font-family: Rubik, sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1F2937;
+  padding: 12px 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sb-nav-btn:hover,
+.sb-nav-item:hover .sb-nav-btn {
+  color: #C91C22;
+}
+
+.sb-nav-btn::after {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 4px solid currentColor;
+  opacity: 0.5;
+  transition: transform 0.2s ease;
+}
+
+.sb-nav-item:hover .sb-nav-btn::after {
+  transform: rotate(180deg);
+}
+
+/* Dropdown panels */
+.sb-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  min-width: 220px;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.sb-nav-item:hover .sb-dropdown {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
+
+/* Privat dropdown - röd */
+.sb-dropdown-privat {
   background: #C91C22;
 }
-.nav-card-privat .nav-card-label { color: #fff; }
-.nav-card-privat .nav-card-link { color: rgba(255,255,255,0.8); border-top-color: rgba(255,255,255,0.15); }
-.nav-card-privat .nav-card-link:hover { color: #fff; }
-.nav-card-foretag {
+
+.sb-dropdown-privat .sb-dropdown-label {
+  color: #fff;
+}
+
+.sb-dropdown-privat .sb-dropdown-link {
+  color: rgba(255,255,255,0.85);
+  border-top-color: rgba(255,255,255,0.15);
+}
+
+.sb-dropdown-privat .sb-dropdown-link:hover {
+  color: #fff;
+}
+
+/* Företag dropdown - ljusrosa */
+.sb-dropdown-foretag {
   background: #FFF0F0;
 }
-.nav-card-foretag .nav-card-label { color: #1F2937; }
-.nav-card-foretag .nav-card-link { color: #4B5563; border-top-color: rgba(0,0,0,0.08); }
-.nav-card-foretag .nav-card-link:hover { color: #1F2937; }
-.nav-card-omoss {
+
+.sb-dropdown-foretag .sb-dropdown-label {
+  color: #1F2937;
+}
+
+.sb-dropdown-foretag .sb-dropdown-link {
+  color: #4B5563;
+  border-top-color: rgba(0,0,0,0.08);
+}
+
+.sb-dropdown-foretag .sb-dropdown-link:hover {
+  color: #C91C22;
+}
+
+/* Om oss dropdown - vit */
+.sb-dropdown-omoss {
   background: #FFFFFF;
+  border: 1px solid rgba(0,0,0,0.08);
 }
-.nav-card-omoss .nav-card-label { color: #1F2937; }
-.nav-card-omoss .nav-card-link { color: #4B5563; border-top-color: rgba(0,0,0,0.08); }
-.nav-card-omoss .nav-card-link:hover { color: #1F2937; }
-.nav-card-label {
-  font-weight: 700; font-size: 18px;
-  letter-spacing: -0.3px; font-family: Rubik,sans-serif;
-  color: #1F2937; margin-bottom: 0;
+
+.sb-dropdown-omoss .sb-dropdown-label {
+  color: #1F2937;
 }
-.nav-card-links {
-  margin-top: 24px; display: flex; flex-direction: column; gap: 0;
+
+.sb-dropdown-omoss .sb-dropdown-link {
+  color: #4B5563;
+  border-top-color: rgba(0,0,0,0.08);
 }
-.nav-card-link {
-  font-size: 14px; cursor: pointer; text-decoration: none;
-  transition: color 0.15s ease, opacity 0.15s ease;
-  display: inline-flex; align-items: center; gap: 6px;
-  font-family: Inter,sans-serif; color: #4B5563;
-  padding: 5px 0; border-top: 1px solid rgba(255,255,255,0.06);
+
+.sb-dropdown-omoss .sb-dropdown-link:hover {
+  color: #C91C22;
 }
-.nav-card-link::before {
-  content: '↗'; font-size: 11px; opacity: 0.4;
-  transition: opacity 0.15s ease; color: inherit;
+
+.sb-dropdown-label {
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 12px;
+  display: block;
 }
-.nav-card-link:hover {
-  color: #FFFFFF;
+
+.sb-dropdown-links {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
-.nav-card-link:hover::before {
+
+.sb-dropdown-link {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 8px 0;
+  border-top: 1px solid transparent;
+  transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.sb-dropdown-link::before {
+  content: '↗';
+  font-size: 11px;
+  opacity: 0.5;
+  transition: opacity 0.15s ease;
+}
+
+.sb-dropdown-link:hover::before {
   opacity: 1;
 }
 
-/* Wizard-sidor: nav flödar naturligt istället för att flyta */
-.is-wizard-page .card-nav-container {
-  position: relative !important;
-  top: auto !important;
-  left: auto !important;
-  transform: none !important;
-  margin: 20px auto !important;
-  width: 90% !important;
-  max-width: 960px !important;
+/* CTA Button */
+.sb-cta {
+  background: #C91C22;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 50px;
+  font-family: Rubik, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  transition: background 0.2s ease;
 }
 
+.sb-cta:hover {
+  background: #a01018;
+  color: white;
+}
+
+/* Hamburger (desktop hidden) */
+.sb-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.sb-hamburger-line {
+  width: 24px;
+  height: 2px;
+  background: #1F2937;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Mobile Overlay */
+.sb-mobile-overlay {
+  position: fixed;
+  inset: 0;
+  background: white;
+  z-index: 10000;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  overflow-y: auto;
+}
+
+.sb-mobile-overlay.open {
+  transform: translateX(0);
+}
+
+.sb-mobile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 24px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.sb-mobile-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px 10px;
+  color: #1F2937;
+}
+
+.sb-mobile-nav {
+  padding: 20px 0;
+}
+
+.sb-mobile-section {
+  border-bottom: 1px solid rgba(0,0,0,0.06);
+}
+
+.sb-mobile-section-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 18px 24px;
+  font-family: Rubik, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background 0.2s ease;
+}
+
+.sb-mobile-section-btn::after {
+  content: '+';
+  font-size: 24px;
+  font-weight: 400;
+  transition: transform 0.3s ease;
+}
+
+.sb-mobile-section.open .sb-mobile-section-btn::after {
+  content: '−';
+}
+
+/* Privat section - röd bakgrund */
+.sb-mobile-section-privat .sb-mobile-section-btn {
+  background: #C91C22;
+  color: white;
+}
+
+.sb-mobile-section-privat.open .sb-mobile-section-btn {
+  background: #C91C22;
+}
+
+/* Företag & Om oss sections */
+.sb-mobile-section-foretag .sb-mobile-section-btn,
+.sb-mobile-section-omoss .sb-mobile-section-btn {
+  color: #1F2937;
+}
+
+.sb-mobile-section-foretag .sb-mobile-section-btn:hover,
+.sb-mobile-section-omoss .sb-mobile-section-btn:hover {
+  background: rgba(0,0,0,0.03);
+}
+
+.sb-mobile-links {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: rgba(0,0,0,0.02);
+}
+
+.sb-mobile-section.open .sb-mobile-links {
+  max-height: 500px;
+}
+
+.sb-mobile-link {
+  display: block;
+  padding: 14px 24px 14px 40px;
+  font-family: Inter, sans-serif;
+  font-size: 16px;
+  color: #4B5563;
+  text-decoration: none;
+  border-top: 1px solid rgba(0,0,0,0.04);
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.sb-mobile-link:hover {
+  color: #C91C22;
+  background: rgba(0,0,0,0.02);
+}
+
+/* Privat mobile links */
+.sb-mobile-section-privat .sb-mobile-links {
+  background: #b31920;
+}
+
+.sb-mobile-section-privat .sb-mobile-link {
+  color: rgba(255,255,255,0.9);
+  border-top-color: rgba(255,255,255,0.1);
+}
+
+.sb-mobile-section-privat .sb-mobile-link:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.1);
+}
+
+.sb-mobile-cta {
+  margin: 30px 24px;
+}
+
+.sb-mobile-cta .sb-cta {
+  display: block;
+  text-align: center;
+  padding: 16px 24px;
+  font-size: 16px;
+}
+
+/* ============================================
+   MOBILE STYLES
+   ============================================ */
 @media (max-width: 768px) {
-  .card-nav-container {
-    width: calc(100vw - 32px) !important;
-    min-width: unset !important;
-    max-width: calc(100vw - 32px) !important;
-    left: 50% !important;
-    right: auto !important;
-    transform: translateX(-50%) !important;
-    top: 10px;
-  }
-
-  .card-nav-top {
-    padding: 0.5rem 1rem;
-    justify-content: space-between;
-  }
-
-  .hamburger-menu {
-    order: 2;
-  }
-
-  .logo-container {
-    position: static;
-    transform: none;
-    order: 1;
-  }
-
-  .card-nav-cta-button {
+  .sb-nav {
     display: none;
   }
-
-  .card-nav-content {
-  position: absolute; left: 0; right: 0; top: 60px;
-  padding: 8px 8px 12px; display: flex; align-items: stretch;
-  gap: 8px; visibility: hidden; pointer-events: none; z-index: 1;
+  
+  .sb-cta-desktop {
+    display: none;
+  }
+  
+  .sb-hamburger {
+    display: flex;
+  }
+  
+  /* Hamburger X animation */
+  .sb-hamburger.open .sb-hamburger-line:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+  }
+  
+  .sb-hamburger.open .sb-hamburger-line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .sb-hamburger.open .sb-hamburger-line:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+  }
 }
 
-  .nav-card {
-  flex: 1 1 0; min-width: 0;
-  border-radius: 10px;
-  position: relative; display: flex; flex-direction: column;
-  padding: 14px 16px 16px; gap: 6px; user-select: none;
-  border: 1px solid rgba(0,0,0,0.06);
+/* ============================================
+   WIZARD PAGE EXCEPTION
+   ============================================ */
+.is-wizard-page .sb-header {
+  position: relative;
 }
 
-  .nav-card-label {
-  font-weight: 600; font-size: 15px;
-  letter-spacing: 0; font-family: Rubik,sans-serif;
-  color: #1F2937; margin-bottom: 4px;
-}
-
-  .nav-card-link {
-  font-size: 14px; cursor: pointer; text-decoration: none;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-  display: inline-flex; align-items: center; gap: 6px;
-  font-family: Inter,sans-serif; color: #374151; padding: 2px 0;
-}
+.is-wizard-page .wp-site-blocks {
+  padding-top: 0 !important;
 }
 </style>
 
-<header class="card-nav-container">
-  <nav class="card-nav">
-    <div class="card-nav-top">
-      <div class="hamburger-menu">
-        <span class="hamburger-line"></span>
-        <span class="hamburger-line"></span>
+<header class="sb-header">
+  <div class="sb-header-inner">
+    <!-- Logo -->
+    <a href="/" class="sb-logo">
+      <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/logo-seniorbolaget.jpg" alt="Seniorbolaget">
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <nav class="sb-nav">
+      <!-- Privat -->
+      <div class="sb-nav-item" data-nav-item="privat">
+        <button type="button" class="sb-nav-btn">Privat</button>
+        <div class="sb-dropdown sb-dropdown-privat">
+          <span class="sb-dropdown-label">Privat</span>
+          <div class="sb-dropdown-links">
+            <a href="/hemstadning/" class="sb-dropdown-link">Hemstädning</a>
+            <a href="/tradgard/" class="sb-dropdown-link">Trädgård</a>
+            <a href="/snickeri/" class="sb-dropdown-link">Snickeri</a>
+            <a href="/malning-och-tapetsering/" class="sb-dropdown-link">Målning & tapetsering</a>
+            <a href="/omsorg/" class="sb-dropdown-link">Omsorg</a>
+          </div>
+        </div>
       </div>
       
-      <a href="/" class="logo-container">
-        <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/logo-seniorbolaget.jpg" alt="Seniorbolaget" class="logo">
-      </a>
+      <!-- Företag -->
+      <div class="sb-nav-item" data-nav-item="foretag">
+        <button type="button" class="sb-nav-btn">Företag</button>
+        <div class="sb-dropdown sb-dropdown-foretag">
+          <span class="sb-dropdown-label">Företag</span>
+          <div class="sb-dropdown-links">
+            <a href="/foretagstjanster/" class="sb-dropdown-link">Företagstjänster</a>
+            <a href="/brf/" class="sb-dropdown-link">BRF & Fastighet</a>
+            <a href="/bemanning/" class="sb-dropdown-link">Bemanning</a>
+          </div>
+        </div>
+      </div>
       
-      <a href="/intresseanmalan/" class="card-nav-cta-button">Boka hjälp</a>
+      <!-- Om oss -->
+      <div class="sb-nav-item" data-nav-item="omoss">
+        <button type="button" class="sb-nav-btn">Om oss</button>
+        <div class="sb-dropdown sb-dropdown-omoss">
+          <span class="sb-dropdown-label">Om oss</span>
+          <div class="sb-dropdown-links">
+            <a href="/har-finns-vi/" class="sb-dropdown-link">Här finns vi</a>
+            <a href="/bli-franchisetagare/" class="sb-dropdown-link">Franchise</a>
+            <a href="/jobba-med-oss/" class="sb-dropdown-link">Jobba hos oss</a>
+            <a href="/om-oss/" class="sb-dropdown-link">Om oss</a>
+            <a href="/kontakt/" class="sb-dropdown-link">Kontakt</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- CTA Button (desktop) -->
+    <a href="/intresseanmalan/" class="sb-cta sb-cta-desktop">Boka hjälp</a>
+    
+    <!-- Hamburger (mobile) -->
+    <button type="button" class="sb-hamburger" data-mobile-toggle aria-label="Öppna meny">
+      <span class="sb-hamburger-line"></span>
+      <span class="sb-hamburger-line"></span>
+      <span class="sb-hamburger-line"></span>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile Overlay -->
+<div class="sb-mobile-overlay" data-mobile-overlay>
+  <div class="sb-mobile-header">
+    <a href="/" class="sb-logo">
+      <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/logo-seniorbolaget.jpg" alt="Seniorbolaget">
+    </a>
+    <button type="button" class="sb-mobile-close" data-mobile-close aria-label="Stäng meny">&times;</button>
+  </div>
+  
+  <nav class="sb-mobile-nav">
+    <!-- Privat Section -->
+    <div class="sb-mobile-section sb-mobile-section-privat" data-accordion-section>
+      <button type="button" class="sb-mobile-section-btn" data-accordion-toggle>Privat</button>
+      <div class="sb-mobile-links">
+        <a href="/hemstadning/" class="sb-mobile-link">Hemstädning</a>
+        <a href="/tradgard/" class="sb-mobile-link">Trädgård</a>
+        <a href="/snickeri/" class="sb-mobile-link">Snickeri</a>
+        <a href="/malning-och-tapetsering/" class="sb-mobile-link">Målning & tapetsering</a>
+        <a href="/omsorg/" class="sb-mobile-link">Omsorg</a>
+      </div>
     </div>
     
-    <div class="card-nav-content">
-      <div class="nav-card nav-card-privat">
-        <span class="nav-card-label">Privat</span>
-        <div class="nav-card-links">
-          <a href="/hemstadning/" class="nav-card-link">Hemstädning</a>
-          <a href="/tradgard/" class="nav-card-link">Trädgård</a>
-          <a href="/snickeri/" class="nav-card-link">Snickeri</a>
-          <a href="/malning/" class="nav-card-link">Målning</a>
-        </div>
+    <!-- Företag Section -->
+    <div class="sb-mobile-section sb-mobile-section-foretag" data-accordion-section>
+      <button type="button" class="sb-mobile-section-btn" data-accordion-toggle>Företag</button>
+      <div class="sb-mobile-links">
+        <a href="/foretagstjanster/" class="sb-mobile-link">Företagstjänster</a>
+        <a href="/brf/" class="sb-mobile-link">BRF & Fastighet</a>
+        <a href="/bemanning/" class="sb-mobile-link">Bemanning</a>
       </div>
-      
-      <div class="nav-card nav-card-foretag">
-        <span class="nav-card-label">Företag</span>
-        <div class="nav-card-links">
-          <a href="/foretag/" class="nav-card-link">Företagstjänster</a>
-          <a href="/foretag/" class="nav-card-link">BRF & Fastighet</a>
-          <a href="/foretag/" class="nav-card-link">Bemanning</a>
-        </div>
-      </div>
-      
-      <div class="nav-card nav-card-omoss">
-        <span class="nav-card-label">Om oss</span>
-        <div class="nav-card-links">
-          <a href="/har-finns-vi/" class="nav-card-link">Här finns vi</a>
-          <a href="/bli-franchisetagare/" class="nav-card-link">Franchise</a>
-          <a href="/jobba-med-oss/" class="nav-card-link">Jobba hos oss</a>
-          <a href="/om-oss/" class="nav-card-link">Om oss</a>
-        </div>
+    </div>
+    
+    <!-- Om oss Section -->
+    <div class="sb-mobile-section sb-mobile-section-omoss" data-accordion-section>
+      <button type="button" class="sb-mobile-section-btn" data-accordion-toggle>Om oss</button>
+      <div class="sb-mobile-links">
+        <a href="/har-finns-vi/" class="sb-mobile-link">Här finns vi</a>
+        <a href="/bli-franchisetagare/" class="sb-mobile-link">Franchise</a>
+        <a href="/jobba-med-oss/" class="sb-mobile-link">Jobba hos oss</a>
+        <a href="/om-oss/" class="sb-mobile-link">Om oss</a>
+        <a href="/kontakt/" class="sb-mobile-link">Kontakt</a>
       </div>
     </div>
   </nav>
-</header>
+  
+  <div class="sb-mobile-cta">
+    <a href="/intresseanmalan/" class="sb-cta">Boka hjälp</a>
+  </div>
+</div>
 
 <script>
-document.addEventListener('DOMContentLoaded', function() {
-  var nav = document.querySelector('.card-nav');
-  var hamburger = document.querySelector('.hamburger-menu');
-  var content = document.querySelector('.card-nav-content');
-  var container = document.querySelector('.card-nav-container');
-  
-  hamburger.addEventListener('click', function(e) {
-    e.stopPropagation();
-    var isOpen = nav.classList.contains('open');
-    if (!isOpen) {
-      // Calculate height needed
-      content.style.visibility = 'visible';
-      var contentHeight = content.scrollHeight;
-      nav.style.height = (60 + contentHeight + 20) + 'px';
-      content.style.pointerEvents = 'auto';
-    } else {
-      nav.style.height = '60px';
-      content.style.visibility = 'hidden';
-      content.style.pointerEvents = 'none';
+(function() {
+  document.addEventListener('DOMContentLoaded', function() {
+    var hamburger = document.querySelector('[data-mobile-toggle]');
+    var overlay = document.querySelector('[data-mobile-overlay]');
+    var closeBtn = document.querySelector('[data-mobile-close]');
+    var accordionToggles = document.querySelectorAll('[data-accordion-toggle]');
+    
+    // Open mobile menu
+    if (hamburger && overlay) {
+      hamburger.addEventListener('click', function() {
+        hamburger.classList.add('open');
+        overlay.classList.add('open');
+        document.body.style.overflow = 'hidden';
+      });
     }
-    nav.classList.toggle('open');
-    hamburger.classList.toggle('open');
-    var container = document.querySelector('.card-nav-container');
-    if(container) container.classList.toggle('open');
-  });
-  
-  // Close on outside click
-  document.addEventListener('click', function(e) {
-    if (!nav.contains(e.target) && nav.classList.contains('open')) {
-      nav.style.height = '60px';
-      content.style.visibility = 'hidden';
-      content.style.pointerEvents = 'none';
-      nav.classList.remove('open');
-      hamburger.classList.remove('open');
-      var container2 = document.querySelector('.card-nav-container');
-      if(container2) container2.classList.remove('open');
+    
+    // Close mobile menu
+    function closeMobileMenu() {
+      if (hamburger) hamburger.classList.remove('open');
+      if (overlay) overlay.classList.remove('open');
+      document.body.style.overflow = '';
     }
-  });
-  
-  // Scroll effect
-  // Add top padding on non-hero pages (prevents nav overlapping content)
-  (function() {
-    var first = document.querySelector('.wp-site-blocks > div:first-child, main > *:first-child');
-    if (first) {
-      var bg = window.getComputedStyle(first).backgroundImage;
-      var hasHero = bg && bg !== 'none';
-      if (!hasHero) {
-        document.querySelector('.wp-site-blocks').style.paddingTop = '90px';
+    
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeMobileMenu);
+    }
+    
+    // Close on link click
+    if (overlay) {
+      var mobileLinks = overlay.querySelectorAll('.sb-mobile-link, .sb-mobile-cta .sb-cta');
+      mobileLinks.forEach(function(link) {
+        link.addEventListener('click', closeMobileMenu);
+      });
+    }
+    
+    // Accordion toggles
+    accordionToggles.forEach(function(toggle) {
+      toggle.addEventListener('click', function() {
+        var section = toggle.closest('[data-accordion-section]');
+        if (section) {
+          section.classList.toggle('open');
+        }
+      });
+    });
+    
+    // Close overlay on escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && overlay && overlay.classList.contains('open')) {
+        closeMobileMenu();
       }
-    }
-  })();
-
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 50) {
-      container.style.top = '1em';
-    } else {
-      container.style.top = '2em';
-    }
+    });
   });
-});
+})();
 </script>
 <!-- /wp:html -->
