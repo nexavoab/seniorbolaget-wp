@@ -1639,6 +1639,11 @@ add_action('wp_head', 'sb_rut_rot_badge', 5);
 function sb_jobba_wizard() {
     if (!is_page('jobba-med-oss')) return;
     ?>
+<style>
+/* Hide old inline wizard (without id) and show new one */
+.wizard-container:not(#jobba-wizard-rendered) { display: none !important; }
+#jobba-wizard-rendered { display: flex !important; }
+</style>
 <script>
 function jobWizardApp() {
     return ({
