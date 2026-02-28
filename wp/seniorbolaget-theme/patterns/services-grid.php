@@ -121,7 +121,9 @@
     max-width: 560px;
     width: 100%;
     max-height: 90vh;
+    overflow-x: hidden;
     overflow-y: auto;
+    box-sizing: border-box;
     position: relative;
     padding: 48px 40px 40px;
     animation: sb-modal-in 0.3s cubic-bezier(0.16,1,0.3,1) both;
@@ -210,6 +212,8 @@
     color: #9CA3AF;
     text-align: center;
     margin: 12px 0 0;
+    white-space: normal;
+    word-break: break-word;
 }
 
 @media (max-width: 600px) {
