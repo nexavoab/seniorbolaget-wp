@@ -322,6 +322,41 @@ $foretag_services = [
     ],
 ];
 
+$brf_services = [
+    [
+        'icon'  => '🏢',
+        'name'  => 'Fastighetsskötsel',
+        'badge'   => 'BRF-avtal',
+        'desc'  => 'Löpande fastighetsskötsel för bostadsrättsföreningar. Vi tar hand om gemensamma ytor, entréer och utemiljöer med noggrannhet och omtanke.',
+        'slug'  => 'brf-fastighetsskotsel',
+        'cta_link' => '/brf/?service=brf-fastighetsskotsel',
+    ],
+    [
+        'icon'  => '🧹',
+        'name'  => 'Trappstädning',
+        'badge'   => 'BRF-avtal',
+        'desc'  => 'Regelbunden städning av trapphus, entréer och gemensamma utrymmen. Erfarna seniorer som håller hög standard vecka efter vecka.',
+        'slug'  => 'brf-trappstadning',
+        'cta_link' => '/brf/?service=brf-trappstadning',
+    ],
+    [
+        'icon'  => '❄️',
+        'name'  => 'Snöröjning',
+        'badge'   => 'BRF-avtal',
+        'desc'  => 'Pålitlig snöröjning och sandning för bostadsrättsföreningar. Vi säkerställer säkra gångvägar och parkeringar under hela vintern.',
+        'slug'  => 'brf-snorojning',
+        'cta_link' => '/brf/?service=brf-snorojning',
+    ],
+    [
+        'icon'  => '🌿',
+        'name'  => 'Trädgårdsskötsel',
+        'badge'   => 'BRF-avtal',
+        'desc'  => 'Skötsel av föreningens grönytor, rabatter och planteringar. Gräsklippning, beskärning och säsongsanpassad trädgårdsvård.',
+        'slug'  => 'brf-tradgardsskotsel',
+        'cta_link' => '/brf/?service=brf-tradgardsskotsel',
+    ],
+];
+
 // Combine all services for modal generation
 $all_services = [];
 foreach ($privat_services as $i => $s) {
@@ -330,6 +365,10 @@ foreach ($privat_services as $i => $s) {
 }
 foreach ($foretag_services as $i => $s) {
     $s['modal_id'] = 'svc-foretag-' . $i;
+    $all_services[] = $s;
+}
+foreach ($brf_services as $i => $s) {
+    $s['modal_id'] = 'svc-brf-' . $i;
     $all_services[] = $s;
 }
 ?>
@@ -341,6 +380,7 @@ foreach ($foretag_services as $i => $s) {
     <div class="sb-tab-container">
         <button class="sb-tab-button active" data-category="privat">Privat</button>
         <button class="sb-tab-button" data-category="foretag">Företag</button>
+        <button class="sb-tab-button" data-category="brf">BRF</button>
     </div>
 
     <div id="sb-privat-grid" class="sb-svc-grid sb-svc-category">
@@ -364,6 +404,20 @@ foreach ($foretag_services as $i => $s) {
              role="button"
              aria-haspopup="dialog"
              data-modal="svc-foretag-<?php echo $i; ?>">
+            <span class="sb-svc-icon"><?php echo $s['icon']; ?></span>
+            <p class="sb-svc-name"><?php echo esc_html($s['name']); ?></p>
+            <span class="sb-svc-plus" aria-hidden="true">+</span>
+        </div>
+        <?php endforeach; ?>
+    </div>
+
+    <div id="sb-brf-grid" class="sb-svc-grid sb-svc-category" style="display: none;">
+        <?php foreach ($brf_services as $i => $s): ?>
+        <div class="sb-svc-card"
+             tabindex="0"
+             role="button"
+             aria-haspopup="dialog"
+             data-modal="svc-brf-<?php echo $i; ?>">
             <span class="sb-svc-icon"><?php echo $s['icon']; ?></span>
             <p class="sb-svc-name"><?php echo esc_html($s['name']); ?></p>
             <span class="sb-svc-plus" aria-hidden="true">+</span>

@@ -14,7 +14,7 @@
   <div style="position:absolute;inset:0;background:linear-gradient(110deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.45) 55%,rgba(0,0,0,0.15) 100%);"></div>
 
   <!-- Content -->
-  <div style="position:relative;z-index:2;max-width:760px;padding:clamp(60px,10vw,120px) clamp(24px,5vw,80px);">
+  <div style="position:relative;z-index:2;max-width:760px;padding:clamp(60px,10vw,120px) clamp(24px,5vw,80px);margin-top:70px;">
 
     <!-- Social proof badge -->
     <a href="https://www.reco.se/seniorbolaget" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 18px;margin-bottom:28px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;font-weight:500;text-decoration:none;transition:background 0.2s;">

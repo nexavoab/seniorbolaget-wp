@@ -538,53 +538,53 @@
 
 <script>
 (function() {
-  document.addEventListener('DOMContentLoaded', function() {
-    var hamburger = document.querySelector('[data-mobile-toggle]');
-    var overlay = document.querySelector('[data-mobile-overlay]');
-    var closeBtn = document.querySelector('[data-mobile-close]');
-    var accordionToggles = document.querySelectorAll('[data-accordion-toggle]');
+  document.addEventListener("DOMContentLoaded", function() {
+    var hamburger = document.querySelector("[data-mobile-toggle]");
+    var overlay = document.querySelector("[data-mobile-overlay]");
+    var closeBtn = document.querySelector("[data-mobile-close]");
+    var accordionToggles = document.querySelectorAll("[data-accordion-toggle]");
     
     // Open mobile menu
     if (hamburger && overlay) {
-      hamburger.addEventListener('click', function() {
-        hamburger.classList.add('open');
-        overlay.classList.add('open');
-        document.body.style.overflow = 'hidden';
+      hamburger.addEventListener("click", function() {
+        hamburger.classList.add("open");
+        overlay.classList.add("open");
+        document.body.style.overflow = "hidden";
       });
     }
     
     // Close mobile menu
     function closeMobileMenu() {
-      if (hamburger) hamburger.classList.remove('open');
-      if (overlay) overlay.classList.remove('open');
-      document.body.style.overflow = '';
+      if (hamburger) hamburger.classList.remove("open");
+      if (overlay) overlay.classList.remove("open");
+      document.body.style.overflow = "";
     }
     
     if (closeBtn) {
-      closeBtn.addEventListener('click', closeMobileMenu);
+      closeBtn.addEventListener("click", closeMobileMenu);
     }
     
     // Close on link click
     if (overlay) {
-      var mobileLinks = overlay.querySelectorAll('.sb-mobile-link, .sb-mobile-cta .sb-cta');
+      var mobileLinks = overlay.querySelectorAll(".sb-mobile-link, .sb-mobile-cta .sb-cta");
       mobileLinks.forEach(function(link) {
-        link.addEventListener('click', closeMobileMenu);
+        link.addEventListener("click", closeMobileMenu);
       });
     }
     
     // Accordion toggles
     accordionToggles.forEach(function(toggle) {
-      toggle.addEventListener('click', function() {
-        var section = toggle.closest('[data-accordion-section]');
+      toggle.addEventListener("click", function() {
+        var section = toggle.closest("[data-accordion-section]");
         if (section) {
-          section.classList.toggle('open');
+          section.classList.toggle("open");
         }
       });
     });
     
     // Close overlay on escape key
-    document.addEventListener('keydown', function(e) {
-      if (e.key === 'Escape' && overlay && overlay.classList.contains('open')) {
+    document.addEventListener("keydown", function(e) {
+      if (e.key === "Escape" && overlay && overlay.classList.contains("open")) {
         closeMobileMenu();
       }
     });
