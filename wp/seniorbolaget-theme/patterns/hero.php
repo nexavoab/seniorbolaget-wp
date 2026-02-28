@@ -8,7 +8,7 @@
  */
 ?>
 <!-- wp:html -->
-<div style="position:relative;min-height:92vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg');background-size:cover;background-position:center top;overflow:hidden;">
+<div class="sb-hero-section" style="position:relative;min-height:92vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg');background-size:cover;background-position:center top;overflow:hidden;">
 
   <!-- Gradient overlay -->
   <div style="position:absolute;inset:0;background:linear-gradient(110deg,rgba(0,0,0,0.72) 0%,rgba(0,0,0,0.45) 55%,rgba(0,0,0,0.15) 100%);"></div>

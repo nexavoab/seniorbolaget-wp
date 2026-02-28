@@ -55,6 +55,24 @@ function seniorbolaget_scripts() {
 	);
 
 	// Alpine.js laddas via seniorbolaget_alpine_direct()
+
+	// Anime.js v3 (scroll-animationer)
+	wp_enqueue_script(
+		'animejs',
+		'https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js',
+		array(),
+		'3.2.1',
+		true
+	);
+
+	// Seniorbolaget scroll-animationer
+	wp_enqueue_script(
+		'sb-animations',
+		get_template_directory_uri() . '/js/sb-animations.js',
+		array( 'animejs' ),
+		SENIORBOLAGET_VERSION,
+		true
+	);
 }
 
 /**
