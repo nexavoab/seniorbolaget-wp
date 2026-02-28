@@ -98,6 +98,36 @@
     color: #fff;
 }
 
+/* ── Tabs ────────────────────────────────────────────────── */
+.sb-tab-container {
+    display: inline-flex;
+    border-bottom: 1px solid #E5E7EB;
+    margin-bottom: 40px;
+    gap: 0;
+}
+.sb-tab-button {
+    padding: 12px 32px;
+    font-family: Inter, sans-serif;
+    font-size: 0.9375rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    transition: 0.2s ease;
+    color: #6B7280;
+    white-space: nowrap; /* Prevent wrapping for tab names */
+    position: relative;
+    top: 1px; /* Align border with container's bottom border */
+}
+.sb-tab-button:hover {
+    color: #1F2937;
+}
+.sb-tab-button.active {
+    background: #ffffff;
+    border-bottom: 2px solid #C91C22;
+    font-weight: 700;
+    color: #1F2937;
+}
+
 /* ── Backdrop ────────────────────────────────────────────── */
 .sb-modal-backdrop {
     display: none;
@@ -166,7 +196,7 @@
     margin: 0 0 16px;
     text-align: center;
 }
-.sb-modal-rut {
+.sb-modal-badge { /* Renamed from sb-modal-rut for general use */
     display: inline-block;
     background: #FFF0EC;
     color: #C91C22;
@@ -222,49 +252,118 @@
 </style>
 
 <?php
-$services = [
+$privat_services = [
     [
         'icon'  => '🧹',
         'name'  => 'Hemstädning',
-        'rut'   => 'RUT-avdrag — du betalar 50%',
+        'badge'   => 'RUT-avdrag — du betalar 50%',
         'desc'  => 'Regelbunden eller engångsstädning, alltid utförd av en erfaren senior. Vi tar med utrustning och rengöringsmedel. Noggrannt, pålitligt och med omtanke — du märker skillnaden direkt. Med RUT-avdraget betalar du bara hälften av arbetskostnaden, vi sköter resten mot Skatteverket.',
         'slug'  => 'hemstadning',
+        'cta_link' => '/intresseanmalan/?service=hemstadning',
     ],
     [
         'icon'  => '🌿',
         'name'  => 'Trädgård',
-        'rut'   => 'RUT-avdrag — du betalar 50%',
+        'badge'   => 'RUT-avdrag — du betalar 50%',
         'desc'  => 'Gräsklippning, häckklippning, ogräsrensning, plantering och snöskottning. En senior med gröna fingrar och känsla för detaljer tar hand om din utomhusmiljö — så du kan njuta av trädgården istället för att arbeta i den. RUT-avdrag gäller.',
         'slug'  => 'tradgard',
+        'cta_link' => '/intresseanmalan/?service=tradgard',
     ],
     [
         'icon'  => '🎨',
         'name'  => 'Målning & tapetsering',
-        'rut'   => 'ROT-avdrag — du betalar 70%',
+        'badge'   => 'ROT-avdrag — du betalar 70%',
         'desc'  => 'Inomhus- och utomhusmålning, tapetsering och ytbehandling. Våra hantverkare har decennier av erfarenhet och gör jobbet rätt från börja — noggrant förarbete, rena linjer och städigt efterarbete. ROT-avdraget ger dig 30% direkt på fakturan.',
         'slug'  => 'malning',
+        'cta_link' => '/intresseanmalan/?service=malning',
     ],
     [
         'icon'  => '🔨',
         'name'  => 'Snickeri',
-        'rut'   => 'ROT-avdrag — du betalar 70%',
+        'badge'   => 'ROT-avdrag — du betalar 70%',
         'desc'  => 'Från att sätta upp hyllor och fixa dörrhandtag till större snickeriarbeten och renoveringar. Erfarna hantverkare med lång erfarenhet och känsla för detaljer. ROT-avdrag gäller — du betalar 70% av arbetskostnaden.',
         'slug'  => 'snickeri',
+        'cta_link' => '/intresseanmalan/?service=snickeri',
     ],
 ];
+
+$foretag_services = [
+    [
+        'icon'  => '🏢',
+        'name'  => 'Kontorsservice',
+        'badge'   => 'Företagsavtal',
+        'desc'  => 'Regelbunden städning och service för kontor och arbetsplatser. Erfarna seniorer som är pålitliga, diskreta och noggranna. Avtalas månadsvis.',
+        'slug'  => 'foretag-kontorsservice',
+        'cta_link' => '/foretag/?service=foretag-kontorsservice',
+    ],
+    [
+        'icon'  => '🌳',
+        'name'  => 'Fastighetsskötsel',
+        'badge'   => 'Företagsavtal',
+        'desc'  => 'Löpande skötsel av fastigheter, utemiljöer och gemensamma ytor. Vi tar hand om det praktiska så era hyresgäster trivs.',
+        'slug'  => 'foretag-fastighetsskotsel',
+        'cta_link' => '/foretag/?service=foretag-fastighetsskotsel',
+    ],
+    [
+        'icon'  => '🔧',
+        'name'  => 'Underhållsservice',
+        'badge'   => 'Företagsavtal',
+        'desc'  => 'Löpande småreparationer, montering och underhåll. En senior hantverkare på plats när ni behöver — utan att anlita en heltidsvakt.',
+        'slug'  => 'foretag-underhallsservice',
+        'cta_link' => '/foretag/?service=foretag-underhallsservice',
+    ],
+    [
+        'icon'  => '📦',
+        'name'  => 'Lager & logistik',
+        'badge'   => 'Företagsavtal',
+        'desc'  => 'Plockning, packning och enklare lagerarbete utfört av erfarna seniorer med hög noggrannhet och låg frånvaro.',
+        'slug'  => 'foretag-lager-logistik',
+        'cta_link' => '/foretag/?service=foretag-lager-logistik',
+    ],
+];
+
+// Combine all services for modal generation
+$all_services = [];
+foreach ($privat_services as $i => $s) {
+    $s['modal_id'] = 'svc-privat-' . $i;
+    $all_services[] = $s;
+}
+foreach ($foretag_services as $i => $s) {
+    $s['modal_id'] = 'svc-foretag-' . $i;
+    $all_services[] = $s;
+}
 ?>
 
 <section class="sb-svc-section">
     <h2>Våra tjänster</h2>
     <p class="sb-svc-sub">Erfarna seniorer som utför vardagsarbeten med omsorg och precision</p>
 
-    <div class="sb-svc-grid">
-        <?php foreach ($services as $i => $s): ?>
+    <div class="sb-tab-container">
+        <button class="sb-tab-button active" data-category="privat">Privat</button>
+        <button class="sb-tab-button" data-category="foretag">Företag</button>
+    </div>
+
+    <div id="sb-privat-grid" class="sb-svc-grid sb-svc-category">
+        <?php foreach ($privat_services as $i => $s): ?>
         <div class="sb-svc-card"
              tabindex="0"
              role="button"
              aria-haspopup="dialog"
-             data-modal="svc-<?php echo $i; ?>">
+             data-modal="svc-privat-<?php echo $i; ?>">
+            <span class="sb-svc-icon"><?php echo $s['icon']; ?></span>
+            <p class="sb-svc-name"><?php echo esc_html($s['name']); ?></p>
+            <span class="sb-svc-plus" aria-hidden="true">+</span>
+        </div>
+        <?php endforeach; ?>
+    </div>
+
+    <div id="sb-foretag-grid" class="sb-svc-grid sb-svc-category" style="display: none;">
+        <?php foreach ($foretag_services as $i => $s): ?>
+        <div class="sb-svc-card"
+             tabindex="0"
+             role="button"
+             aria-haspopup="dialog"
+             data-modal="svc-foretag-<?php echo $i; ?>">
             <span class="sb-svc-icon"><?php echo $s['icon']; ?></span>
             <p class="sb-svc-name"><?php echo esc_html($s['name']); ?></p>
             <span class="sb-svc-plus" aria-hidden="true">+</span>
@@ -275,14 +374,14 @@ $services = [
 
 <!-- Backdrop + modaler -->
 <div class="sb-modal-backdrop" id="sbModalBackdrop" role="dialog" aria-modal="true" aria-label="Tjänst">
-    <?php foreach ($services as $i => $s): ?>
-    <div class="sb-modal" id="svc-<?php echo $i; ?>" style="display:none;">
+    <?php foreach ($all_services as $s): ?>
+    <div class="sb-modal" id="<?php echo $s['modal_id']; ?>" style="display:none;">
         <button class="sb-modal-close" aria-label="Stäng">&#x2715;</button>
         <span class="sb-modal-icon"><?php echo $s['icon']; ?></span>
         <h3><?php echo esc_html($s['name']); ?></h3>
-        <span class="sb-modal-rut"><?php echo esc_html($s['rut']); ?></span>
+        <span class="sb-modal-badge"><?php echo esc_html($s['badge']); ?></span>
         <p><?php echo esc_html($s['desc']); ?></p>
-        <a class="sb-modal-cta" href="/intresseanmalan/?service=<?php echo $s['slug']; ?>">
+        <a class="sb-modal-cta" href="<?php echo esc_url($s['cta_link']); ?>">
             Boka <?php echo esc_html($s['name']); ?> →
         </a>
         <p class="sb-modal-micro">✓ Kostnadsfritt · ✓ Utan bindning · ✓ Svar inom 24h</p>
@@ -293,28 +392,64 @@ $services = [
 <script>
 (function() {
     var backdrop = document.getElementById('sbModalBackdrop');
-    var current  = null;
+    var currentModal = null;
+    var currentActiveTabButton = null;
 
     function openModal(id) {
         var modal = document.getElementById(id);
         if (!modal) return;
-        if (current) current.style.display = 'none';
+        if (currentModal) currentModal.style.display = 'none';
         modal.style.display = 'block';
         // Restart animation
         modal.style.animation = 'none';
-        modal.offsetHeight;
+        modal.offsetHeight; // Trigger reflow
         modal.style.animation = '';
-        current = modal;
+        currentModal = modal;
         backdrop.classList.add('open');
         document.body.style.overflow = 'hidden';
     }
 
     function closeModal() {
         backdrop.classList.remove('open');
-        if (current) current.style.display = 'none';
-        current = null;
+        if (currentModal) currentModal.style.display = 'none';
+        currentModal = null;
         document.body.style.overflow = '';
     }
+
+    function openTab(category) {
+        // Hide all service grids
+        document.querySelectorAll('.sb-svc-category').forEach(function(grid) {
+            grid.style.display = 'none';
+        });
+
+        // Deactivate all tab buttons
+        document.querySelectorAll('.sb-tab-button').forEach(function(button) {
+            button.classList.remove('active');
+        });
+
+        // Show the selected grid
+        var selectedGrid = document.getElementById('sb-' + category + '-grid');
+        if (selectedGrid) {
+            selectedGrid.style.display = 'grid'; // Assuming grid display for .sb-svc-grid
+        }
+
+        // Activate the selected tab button
+        var selectedTabButton = document.querySelector('.sb-tab-button[data-category="' + category + '"]');
+        if (selectedTabButton) {
+            selectedTabButton.classList.add('active');
+            currentActiveTabButton = selectedTabButton;
+        }
+    }
+
+    // Initial load: Open 'privat' tab
+    openTab('privat');
+
+    // Attach event listeners for tab buttons
+    document.querySelectorAll('.sb-tab-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            openTab(button.dataset.category);
+        });
+    });
 
     // Öppna vid klick på kort
     document.querySelectorAll('.sb-svc-card').forEach(function(card) {
