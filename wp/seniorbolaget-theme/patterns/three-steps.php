@@ -146,8 +146,13 @@
     /* SVG Base Styles */
     .sb-svg-illustration {
         margin-bottom: 24px;
-        max-width: 100%;
-        height: auto;
+        width: 100%;
+        display: block;
+    }
+    .sb-svg-illustration svg {
+        width: 100%;
+        height: 180px;
+        display: block;
     }
     .sb-svg-illustration path,
     .sb-svg-illustration line,
