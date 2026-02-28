@@ -1,236 +1,344 @@
 <?php
 /**
- * Title: Tjänster – Bento Grid
+ * Title: Tjänster – Kort med modal
  * Slug: seniorbolaget/services-grid
  * Categories: seniorbolaget, services
- * Description: Magic bento-grid med glow-effekt för tjänstesektionen
+ * Description: Tjänstekort med klickbar modal — ikon, förklaring, boka-CTA
  * Viewport Width: 1440
  */
 ?>
 <!-- wp:html -->
 <style>
-.sb-services-section {
-  padding: 80px clamp(24px,5vw,80px);
-  background: #FAFAF8;
-  text-align: center;
+/* ── Sektion ─────────────────────────────────────────────── */
+.sb-svc-section {
+    padding: 80px clamp(24px,5vw,80px);
+    background: #FAFAF8;
+    text-align: center;
 }
-.sb-services-title {
-  font-family: Rubik, sans-serif;
-  font-size: clamp(1.75rem,3vw,2.5rem);
-  font-weight: 700;
-  color: #1F2937;
-  margin: 0 0 12px;
+.sb-svc-section h2 {
+    font-family: Rubik, sans-serif;
+    font-size: clamp(1.75rem,3vw,2.5rem);
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0 0 12px;
 }
-.sb-services-sub {
-  font-family: Inter, sans-serif;
-  font-size: 1.125rem;
-  color: #6B7280;
-  margin: 0 0 48px;
-}
-
-/* Bento grid */
-.sb-card-grid {
-  display: grid;
-  gap: 12px;
-  max-width: 1100px;
-  margin: 0 auto;
-  font-size: clamp(1rem, 0.9rem + 0.3vw, 1.25rem);
-}
-@media (min-width: 600px) {
-  .sb-card-grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (min-width: 1024px) {
-  .sb-card-grid { grid-template-columns: repeat(4, 1fr); }
-  .sb-card-grid .sb-bento-card:nth-child(3) { grid-column: span 2; grid-row: span 2; }
-  .sb-card-grid .sb-bento-card:nth-child(4) { grid-column: 1 / span 2; grid-row: 2 / span 2; }
-  .sb-card-grid .sb-bento-card:nth-child(6) { grid-column: 4; grid-row: 3; }
+.sb-svc-sub {
+    font-family: Inter, sans-serif;
+    font-size: 1.125rem;
+    color: #6B7280;
+    margin: 0 0 48px;
 }
 
-/* Card base */
-.sb-bento-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-height: 200px;
-  padding: 1.5em;
-  border-radius: 20px;
-  border: 1px solid #e5e7eb;
-  background: #ffffff;
-  overflow: hidden;
-  text-decoration: none;
-  color: #1F2937;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  cursor: pointer;
-  --glow-x: 50%;
-  --glow-y: 50%;
-  --glow-intensity: 0;
-  --glow-radius: 220px;
+/* ── Grid ────────────────────────────────────────────────── */
+.sb-svc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    max-width: 1100px;
+    margin: 0 auto;
 }
-.sb-bento-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 32px rgba(201,28,34,0.12);
-  border-color: rgba(201,28,34,0.25);
+@media (min-width: 768px) {
+    .sb-svc-grid { grid-template-columns: repeat(4, 1fr); }
 }
 
-/* Glow border effect */
-.sb-bento-card::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  background: radial-gradient(
-    var(--glow-radius) circle at var(--glow-x) var(--glow-y),
-    rgba(201,28,34,calc(var(--glow-intensity)*0.9)) 0%,
-    rgba(201,28,34,calc(var(--glow-intensity)*0.4)) 30%,
-    transparent 65%
-  );
-  border-radius: inherit;
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask-composite: exclude;
-  pointer-events: none;
-  z-index: 1;
+/* ── Kort ────────────────────────────────────────────────── */
+.sb-svc-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #E5E7EB;
+    padding: 32px 20px 20px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
+    text-align: center;
+    outline: none;
+}
+.sb-svc-card:hover,
+.sb-svc-card:focus {
+    box-shadow: 0 12px 40px -8px rgba(0,0,0,0.12);
+    transform: translateY(-4px);
+    border-color: #C91C22;
+}
+.sb-svc-icon {
+    font-size: 3rem;
+    line-height: 1;
+    display: block;
+}
+.sb-svc-name {
+    font-family: Rubik, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0;
+    line-height: 1.3;
+}
+.sb-svc-plus {
+    position: absolute;
+    bottom: 14px;
+    right: 14px;
+    width: 32px;
+    height: 32px;
+    background: #F3F4F6;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;
+    font-weight: 300;
+    color: #6B7280;
+    transition: background 0.2s, color 0.2s;
+    line-height: 1;
+}
+.sb-svc-card:hover .sb-svc-plus {
+    background: #C91C22;
+    color: #fff;
 }
 
-/* Card content */
-.sb-card-icon {
-  font-size: 2.25em;
-  line-height: 1;
-  margin-bottom: 0.5em;
+/* ── Backdrop ────────────────────────────────────────────── */
+.sb-modal-backdrop {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.45);
+    backdrop-filter: blur(4px);
+    z-index: 9000;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
 }
-.sb-card-title {
-  font-family: Rubik, sans-serif;
-  font-size: 1.1em;
-  font-weight: 700;
-  color: #1F2937;
-  margin: 0 0 0.4em;
+.sb-modal-backdrop.open {
+    display: flex;
 }
-.sb-card-desc {
-  font-family: Inter, sans-serif;
-  font-size: 0.875em;
-  color: #6B7280;
-  line-height: 1.5;
-  margin: 0;
-  flex: 1;
-}
-.sb-card-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin-top: 1em;
-  font-family: Rubik, sans-serif;
-  font-size: 0.875em;
-  font-weight: 600;
-  color: #C91C22;
-  text-decoration: none;
-}
-.sb-card-link::after { content: '→'; transition: transform 0.2s; }
-.sb-bento-card:hover .sb-card-link::after { transform: translateX(4px); }
 
-/* Large card (3rd) special styling */
-.sb-bento-card--large .sb-card-icon { font-size: 3em; }
-.sb-bento-card--large .sb-card-title { font-size: 1.4em; }
-.sb-bento-card--large .sb-card-desc { font-size: 1em; }
-
-/* RUT badge card */
-.sb-bento-card--accent {
-  background: linear-gradient(135deg, #C91C22 0%, #a01018 100%);
-  border-color: transparent;
-  color: #fff;
+/* ── Modal ───────────────────────────────────────────────── */
+.sb-modal {
+    background: #fff;
+    border-radius: 24px;
+    max-width: 560px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    padding: 48px 40px 40px;
+    animation: sb-modal-in 0.3s cubic-bezier(0.16,1,0.3,1) both;
 }
-.sb-bento-card--accent .sb-card-title,
-.sb-bento-card--accent .sb-card-desc { color: rgba(255,255,255,0.92); }
-.sb-bento-card--accent .sb-card-link { color: #fff; }
-.sb-bento-card--accent:hover { box-shadow: 0 8px 32px rgba(201,28,34,0.4); border-color: transparent; }
+@keyframes sb-modal-in {
+    from { opacity: 0; transform: translateY(24px) scale(0.97); }
+    to   { opacity: 1; transform: translateY(0)    scale(1); }
+}
+.sb-modal-close {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    background: #F3F4F6;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    color: #6B7280;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s;
+    line-height: 1;
+}
+.sb-modal-close:hover { background: #E5E7EB; }
+
+.sb-modal-icon {
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.sb-modal h3 {
+    font-family: Rubik, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1F2937;
+    margin: 0 0 16px;
+    text-align: center;
+}
+.sb-modal-rut {
+    display: inline-block;
+    background: #FFF0EC;
+    color: #C91C22;
+    font-family: Inter, sans-serif;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 5px 12px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.sb-modal p {
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: #4B5563;
+    margin: 0 0 32px;
+    text-align: left;
+}
+.sb-modal-cta {
+    display: block;
+    width: 100%;
+    background: #C91C22;
+    color: #fff;
+    font-family: Rubik, sans-serif;
+    font-size: 1.0625rem;
+    font-weight: 700;
+    text-align: center;
+    padding: 16px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    box-shadow: 0 4px 20px rgba(201,28,34,0.35);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.sb-modal-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(201,28,34,0.45);
+}
+.sb-modal-micro {
+    font-family: Inter, sans-serif;
+    font-size: 0.8125rem;
+    color: #9CA3AF;
+    text-align: center;
+    margin: 12px 0 0;
+}
+
+@media (max-width: 600px) {
+    .sb-modal { padding: 40px 24px 32px; }
+}
 </style>
 
-<section class="sb-services-section">
-  <h2 class="sb-services-title">Våra tjänster</h2>
-  <p class="sb-services-sub">Erfarna seniorer som utför vardagsarbeten med omsorg och precision</p>
+<?php
+$services = [
+    [
+        'icon'  => '🧹',
+        'name'  => 'Hemstädning',
+        'rut'   => 'RUT-avdrag — du betalar 50%',
+        'desc'  => 'Regelbunden eller engångsstädning, alltid utförd av en erfaren senior. Vi tar med utrustning och rengöringsmedel. Noggrannt, pålitligt och med omtanke — du märker skillnaden direkt. Med RUT-avdraget betalar du bara hälften av arbetskostnaden, vi sköter resten mot Skatteverket.',
+        'slug'  => 'hemstadning',
+    ],
+    [
+        'icon'  => '🌿',
+        'name'  => 'Trädgård',
+        'rut'   => 'RUT-avdrag — du betalar 50%',
+        'desc'  => 'Gräsklippning, häckklippning, ogräsrensning, plantering och snöskottning. En senior med gröna fingrar och känsla för detaljer tar hand om din utomhusmiljö — så du kan njuta av trädgården istället för att arbeta i den. RUT-avdrag gäller.',
+        'slug'  => 'tradgard',
+    ],
+    [
+        'icon'  => '🎨',
+        'name'  => 'Målning & tapetsering',
+        'rut'   => 'ROT-avdrag — du betalar 70%',
+        'desc'  => 'Inomhus- och utomhusmålning, tapetsering och ytbehandling. Våra hantverkare har decennier av erfarenhet och gör jobbet rätt från börja — noggrant förarbete, rena linjer och städigt efterarbete. ROT-avdraget ger dig 30% direkt på fakturan.',
+        'slug'  => 'malning',
+    ],
+    [
+        'icon'  => '🔨',
+        'name'  => 'Snickeri',
+        'rut'   => 'ROT-avdrag — du betalar 70%',
+        'desc'  => 'Från att sätta upp hyllor och fixa dörrhandtag till större snickeriarbeten och renoveringar. Erfarna hantverkare med lång erfarenhet och känsla för detaljer. ROT-avdrag gäller — du betalar 70% av arbetskostnaden.',
+        'slug'  => 'snickeri',
+    ],
+];
+?>
 
-  <div class="sb-card-grid" id="sbCardGrid">
+<section class="sb-svc-section">
+    <h2>Våra tjänster</h2>
+    <p class="sb-svc-sub">Erfarna seniorer som utför vardagsarbeten med omsorg och precision</p>
 
-    <!-- 1. Hemstädning -->
-    <a href="/hemstadning/" class="sb-bento-card">
-      <div>
-        <div class="sb-card-icon">🧹</div>
-        <p class="sb-card-title">Hemstädning</p>
-        <p class="sb-card-desc">Regelbunden eller engångsstädning. Noggrant och tillförlitligt av erfarna seniorer.</p>
-      </div>
-      <span class="sb-card-link">Läs mer</span>
-    </a>
-
-    <!-- 2. Trädgård -->
-    <a href="/tradgard/" class="sb-bento-card">
-      <div>
-        <div class="sb-card-icon">🌿</div>
-        <p class="sb-card-title">Trädgård</p>
-        <p class="sb-card-desc">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats.</p>
-      </div>
-      <span class="sb-card-link">Läs mer</span>
-    </a>
-
-    <!-- 3. Målning — STOR (span 2×2) -->
-    <a href="/malning/" class="sb-bento-card sb-bento-card--large">
-      <div>
-        <div class="sb-card-icon">🖌️</div>
-        <p class="sb-card-title">Målning & tapetsering</p>
-        <p class="sb-card-desc">Inomhus- och utomhusmålning, tapetsering och ytbehandling. Proffs som gör jobbet rätt från början — med ROT-avdrag.</p>
-      </div>
-      <span class="sb-card-link">Läs mer</span>
-    </a>
-
-    <!-- 4. Snickeri — BRED (span 2 cols × 2 rows) -->
-    <a href="/snickeri/" class="sb-bento-card sb-bento-card--large">
-      <div>
-        <div class="sb-card-icon">🔨</div>
-        <p class="sb-card-title">Snickeri</p>
-        <p class="sb-card-desc">Allt från hyllor och dörrar till större byggprojekt. Hantverkare med lång erfarenhet och känsla för detaljer.</p>
-      </div>
-      <span class="sb-card-link">Läs mer</span>
-    </a>
-
-    <!-- 5. RUT/ROT badge -->
-    <a href="/intresseanmalan/" class="sb-bento-card sb-bento-card--accent">
-      <div>
-        <div class="sb-card-icon">💰</div>
-        <p class="sb-card-title">RUT 50% · ROT 30%</p>
-        <p class="sb-card-desc">RUT-avdrag: du betalar 50%. ROT-avdrag: du betalar 70%. Vi hanterar avdragen direkt med Skatteverket.</p>
-      </div>
-      <span class="sb-card-link">Boka nu</span>
-    </a>
-
-    <!-- 6. Alla orter -->
-    <a href="/har-finns-vi/" class="sb-bento-card">
-      <div>
-        <div class="sb-card-icon">📍</div>
-        <p class="sb-card-title">26 orter</p>
-        <p class="sb-card-desc">Hitta din lokala franchisetagare.</p>
-      </div>
-      <span class="sb-card-link">Se alla</span>
-    </a>
-
-  </div>
+    <div class="sb-svc-grid">
+        <?php foreach ($services as $i => $s): ?>
+        <div class="sb-svc-card"
+             tabindex="0"
+             role="button"
+             aria-haspopup="dialog"
+             data-modal="svc-<?php echo $i; ?>">
+            <span class="sb-svc-icon"><?php echo $s['icon']; ?></span>
+            <p class="sb-svc-name"><?php echo esc_html($s['name']); ?></p>
+            <span class="sb-svc-plus" aria-hidden="true">+</span>
+        </div>
+        <?php endforeach; ?>
+    </div>
 </section>
+
+<!-- Backdrop + modaler -->
+<div class="sb-modal-backdrop" id="sbModalBackdrop" role="dialog" aria-modal="true" aria-label="Tjänst">
+    <?php foreach ($services as $i => $s): ?>
+    <div class="sb-modal" id="svc-<?php echo $i; ?>" style="display:none;">
+        <button class="sb-modal-close" aria-label="Stäng">&#x2715;</button>
+        <span class="sb-modal-icon"><?php echo $s['icon']; ?></span>
+        <h3><?php echo esc_html($s['name']); ?></h3>
+        <span class="sb-modal-rut"><?php echo esc_html($s['rut']); ?></span>
+        <p><?php echo esc_html($s['desc']); ?></p>
+        <a class="sb-modal-cta" href="/intresseanmalan/?service=<?php echo $s['slug']; ?>">
+            Boka <?php echo esc_html($s['name']); ?> →
+        </a>
+        <p class="sb-modal-micro">✓ Kostnadsfritt · ✓ Utan bindning · ✓ Svar inom 24h</p>
+    </div>
+    <?php endforeach; ?>
+</div>
 
 <script>
 (function() {
-  const cards = document.querySelectorAll('#sbCardGrid .sb-bento-card');
-  cards.forEach(card => {
-    card.addEventListener('mousemove', (e) => {
-      const rect = card.getBoundingClientRect();
-      const x = ((e.clientX - rect.left) / rect.width) * 100;
-      const y = ((e.clientY - rect.top) / rect.height) * 100;
-      card.style.setProperty('--glow-x', x + '%');
-      card.style.setProperty('--glow-y', y + '%');
-      card.style.setProperty('--glow-intensity', '1');
+    var backdrop = document.getElementById('sbModalBackdrop');
+    var current  = null;
+
+    function openModal(id) {
+        var modal = document.getElementById(id);
+        if (!modal) return;
+        if (current) current.style.display = 'none';
+        modal.style.display = 'block';
+        // Restart animation
+        modal.style.animation = 'none';
+        modal.offsetHeight;
+        modal.style.animation = '';
+        current = modal;
+        backdrop.classList.add('open');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        backdrop.classList.remove('open');
+        if (current) current.style.display = 'none';
+        current = null;
+        document.body.style.overflow = '';
+    }
+
+    // Öppna vid klick på kort
+    document.querySelectorAll('.sb-svc-card').forEach(function(card) {
+        card.addEventListener('click', function() {
+            openModal(card.dataset.modal);
+        });
+        card.addEventListener('keydown', function(e) {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                openModal(card.dataset.modal);
+            }
+        });
     });
-    card.addEventListener('mouseleave', () => {
-      card.style.setProperty('--glow-intensity', '0');
+
+    // Stäng via X-knapp
+    backdrop.querySelectorAll('.sb-modal-close').forEach(function(btn) {
+        btn.addEventListener('click', closeModal);
     });
-  });
+
+    // Stäng via backdrop-klick
+    backdrop.addEventListener('click', function(e) {
+        if (e.target === backdrop) closeModal();
+    });
+
+    // Stäng via Escape
+    document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') closeModal();
+    });
 })();
 </script>
 <!-- /wp:html -->
