@@ -37,8 +37,8 @@
       <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:17px 36px;border-radius:50px;text-decoration:none;box-shadow:0 4px 24px rgba(201,28,34,0.5);transition:transform 0.2s;">
         Boka hjälp idag →
       </a>
-      <a href="/har-finns-vi" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,0.5);color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;padding:16px 28px;border-radius:50px;text-decoration:none;">
-        Se alla orter
+      <a href="/jobba-med-oss" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,0.5);color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;padding:16px 28px;border-radius:50px;text-decoration:none;">
+        👴 Jobba som senior
       </a>
     </div>
 
