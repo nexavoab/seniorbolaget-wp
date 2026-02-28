@@ -47,13 +47,6 @@
       ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT-avdrag direkt på fakturan
     </p>
 
-    <!-- Secondary CTA for job seekers -->
-    <div style="margin-top:0;margin-bottom:32px;">
-      <a href="/jobba-med-oss/" style="display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,0.85);font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;text-decoration:none;border-bottom:1px solid rgba(255,255,255,0.4);padding-bottom:2px;transition:color .15s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,0.85)'">
-        👴 Är du senior och vill jobba? →
-      </a>
-    </div>
-
     <!-- Stats -->
     <div style="display:flex;gap:24px;flex-wrap:wrap;">
       <div style="text-align:left;">
