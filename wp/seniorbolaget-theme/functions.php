@@ -67,7 +67,7 @@ function seniorbolaget_wizard_css() {
 	/* ===== WAS-90: CSS Variables ===== */
 	:root{--sb-nav-height:90px;--sb-bottom-bar:110px}
 	/* ===== WAS-87: FULLSCREEN WIZARD ===== */
-	.entry-content .wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;height:calc(100vh - 100px)!important;padding-top:0!important;padding-bottom:var(--sb-bottom-bar)!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:hidden!important}
+	.entry-content .wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;height:calc(100vh - 100px)!important;padding-top:0!important;padding-bottom:0!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:hidden!important}
 	.wizard-container *,.wizard-container *::before,.wizard-container *::after{box-sizing:border-box!important}
 	.wizard-container .wizard-inner{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:16px 32px 0!important;background:transparent!important;border-radius:0!important;box-shadow:none!important}
 	/* Stepper compact */
@@ -1249,37 +1249,57 @@ function sb_job_application_handler() {
 }
 
 // ===== INTENTIONS BAR (WAS-68) — inline script approach =====
-function sb_add_intentions_bar() {
-    $html = '<style>
-.sb-bar{position:fixed;bottom:0;left:0;right:0;z-index:9999;display:flex;justify-content:center;background:linear-gradient(to top,rgba(255,255,255,0.97) 0%,rgba(255,255,255,0.6) 65%,transparent 100%);border-top:none;box-shadow:none;padding:28px 16px 18px;transform:translateY(100%);transition:transform .4s cubic-bezier(.16,1,.3,1);}
-.sb-bar.show{transform:translateY(0);}
-.sb-bar-inner{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:center;max-width:600px;width:100%;}
-.sb-btn{position:relative;overflow:hidden;display:inline-flex;align-items:center;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;border:1.5px solid transparent;white-space:nowrap;transition:box-shadow .3s,border-color .3s;box-shadow:0 4px 16px rgba(0,0,0,0.22);}
-.sb-btn-t,.sb-btn-f{display:inline-flex;align-items:center;gap:6px;}
-.sb-btn-t{position:relative;z-index:1;transition:transform .3s,opacity .3s;}
-.sb-btn-f{position:absolute;inset:0;justify-content:center;transform:translateY(100%);transition:transform .3s;border-radius:inherit;}
-.sb-btn:hover .sb-btn-t{transform:translateY(-150%);opacity:0;}
-.sb-btn:hover .sb-btn-f{transform:translateY(0);}
-.sb-btn-r{background:#C91C22;color:#fff;}
-.sb-btn-r .sb-btn-f{background:#a01018;color:#fff;}
-.sb-btn-r:hover{box-shadow:0 4px 20px rgba(201,28,34,.35);}
-.sb-btn-o{background:transparent;color:#1F2937;border-color:#e5e7eb;}
-.sb-btn-o .sb-btn-f{background:#1F2937;color:#fff;}
-.sb-btn-o:hover{border-color:#1F2937;}
-.sb-x{background:none;border:none;cursor:pointer;color:#9CA3AF;font-size:1.25rem;padding:4px 8px;}
-body{padding-bottom:var(--sb-bottom-bar)!important;}
+function sb_add_fab() {
+    echo '<style>
+#sb-fab{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;}
+#sb-fab-menu{display:flex;flex-direction:column;gap:8px;align-items:flex-end;opacity:0;transform:translateY(12px);transition:opacity .25s,transform .3s cubic-bezier(.16,1,.3,1);pointer-events:none;}
+#sb-fab-menu.open{opacity:1;transform:translateY(0);pointer-events:all;}
+.sb-fab-opt{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.18);transition:transform .15s,box-shadow .15s;}
+.sb-fab-opt:hover{transform:translateY(-2px);box-shadow:0 6px 22px rgba(0,0,0,0.25);}
+.sb-fab-opt-r{background:#C91C22;color:#fff;}
+.sb-fab-opt-o{background:#fff;color:#1F2937;border:1.5px solid #e5e7eb;}
+#sb-fab-btn{display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:700;padding:14px 26px;border-radius:50px;border:none;cursor:pointer;box-shadow:0 4px 24px rgba(201,28,34,.5);transition:transform .15s,box-shadow .15s,background .2s;}
+#sb-fab-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,28,34,.55);}
+#sb-fab-btn.open{background:#1F2937;box-shadow:0 4px 20px rgba(0,0,0,.3);}
+@media(max-width:480px){#sb-fab{bottom:16px;right:16px;}.sb-fab-opt,#sb-fab-btn{font-size:.875rem;padding:11px 18px;}}
 </style>
-<div class="sb-bar" id="sbBar">
-<div class="sb-bar-inner">
-<a href="/intresseanmalan/" class="sb-btn sb-btn-r"><span class="sb-btn-t">🧹 Boka hjälp</span><span class="sb-btn-f">🧹 Boka hjälp</span></a>
-<a href="/jobba-med-oss/" class="sb-btn sb-btn-o"><span class="sb-btn-t">👴 Jobba hos oss</span><span class="sb-btn-f">👴 Jobba hos oss</span></a>
-<a href="/bli-franchisetagare/" class="sb-btn sb-btn-o"><span class="sb-btn-t">🏢 Bli franchisetagare</span><span class="sb-btn-f">🏢 Bli franchisetagare</span></a>
-<button class="sb-x" onclick="document.getElementById(\'sbBar\').style.transform=\'translateY(100%)\';document.body.style.paddingBottom=\'0\';sessionStorage.setItem(\'sb_x\',1)">×</button>
-</div></div>
-<script>if(!sessionStorage.getItem(\'sb_x\')){var b=document.getElementById(\'sbBar\'),s=0;function sh(){if(s)return;s=1;b.classList.add(\'show\');}setTimeout(sh,4000);window.addEventListener(\'scroll\',function(){if(scrollY>300)sh();},{passive:true});}</script>';
-    echo $html;
+<div id="sb-fab">
+  <div id="sb-fab-menu">
+    <a href="/bli-franchisetagare/" class="sb-fab-opt sb-fab-opt-o">🏢 Bli franchisetagare</a>
+    <a href="/jobba-med-oss/" class="sb-fab-opt sb-fab-opt-o">👴 Jobba hos oss</a>
+    <a href="/intresseanmalan/" class="sb-fab-opt sb-fab-opt-r">🧹 Boka hjälp</a>
+  </div>
+  <button id="sb-fab-btn" onclick="sbFab()" aria-expanded="false" aria-label="Öppna meny">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.11 6.11l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Boka hjälp
+  </button>
+</div>
+<script>
+(function(){
+  var CLOSE_SVG=\'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg> Stäng\';
+  var OPEN_SVG=\'<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="flex-shrink:0"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.89 9.11a19.79 19.79 0 01-3.07-8.67A2 2 0 012.81 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 9.91a16 16 0 006.11 6.11l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg> Boka hjälp\';
+  function sbFab(){
+    var m=document.getElementById("sb-fab-menu"),b=document.getElementById("sb-fab-btn");
+    var o=m.classList.toggle("open");
+    b.classList.toggle("open",o);
+    b.setAttribute("aria-expanded",o);
+    b.innerHTML=o?CLOSE_SVG:OPEN_SVG;
+  }
+  window.sbFab=sbFab;
+  document.addEventListener("click",function(e){
+    var fab=document.getElementById("sb-fab");
+    if(fab&&!fab.contains(e.target)){
+      var m=document.getElementById("sb-fab-menu"),b=document.getElementById("sb-fab-btn");
+      if(m.classList.contains("open")){
+        m.classList.remove("open");b.classList.remove("open");
+        b.setAttribute("aria-expanded","false");b.innerHTML=OPEN_SVG;
+      }
+    }
+  });
+})();
+</script>';
 }
-add_action( 'wp_footer', 'sb_add_intentions_bar', 100 );
+add_action( 'wp_footer', 'sb_add_fab', 100 );
 
 
 
