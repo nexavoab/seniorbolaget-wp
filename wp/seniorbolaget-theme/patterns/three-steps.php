@@ -67,22 +67,6 @@
         }
     }
 
-    .sb-horizontal-line {
-        display: none;
-        position: absolute;
-        top: 220px; /* Adjust based on badge position */
-        left: 0;
-        right: 0;
-        height: 2px;
-        background-color: var(--sb-red);
-        z-index: 5; /* Behind cards */
-    }
-
-    @media (min-width: 768px) {
-        .sb-horizontal-line {
-            display: block;
-        }
-    }
 
     .sb-step-card {
         background-color: var(--sb-card-bg);
@@ -214,7 +198,7 @@
         </div>
 
         <div class="sb-card-grid">
-            <div class="sb-horizontal-line" aria-hidden="true"></div>
+
 
             <!-- Card 1: Vi lyssnar på dina behov -->
             <div class="sb-step-card" data-step="1">
