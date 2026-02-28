@@ -134,7 +134,7 @@ function seniorbolaget_wizard_css() {
 	.svc-card{position:relative!important;padding:28px 20px 24px!important;background:#fff!important;border:2px solid #F3F4F6!important;border-radius:16px!important;cursor:pointer!important;text-align:center!important;transition:all .2s cubic-bezier(.34,1.56,.64,1)!important;box-shadow:0 2px 8px rgba(0,0,0,0.04)!important}
 	.svc-card:hover{border-color:#C91C22!important;transform:translateY(-4px) scale(1.02)!important;box-shadow:0 12px 32px rgba(201,28,34,0.12)!important}
 	.svc-card.selected{border-color:#C91C22!important;border-width:3px!important;background:#FFF4F2!important;transform:translateY(-2px)!important;box-shadow:0 8px 24px rgba(201,28,34,0.2)!important}
-	.svc-card-icon{width:80px!important;height:80px!important;margin:0 auto 16px!important}
+	.svc-card-icon{width:80px!important;height:80px!important;margin:0 auto 16px!important;font-size:3rem!important;display:flex!important;align-items:center!important;justify-content:center!important;line-height:1!important}
 	.svc-card-icon svg{width:100%!important;height:100%!important}
 	.svc-card-name{font-family:Rubik,sans-serif!important;font-weight:700!important;font-size:18px!important;color:#1F2937!important;margin-bottom:6px!important}
 	.svc-card-desc{font-size:13px!important;color:#6B7280!important;line-height:1.4!important}
@@ -143,7 +143,7 @@ function seniorbolaget_wizard_css() {
 	@media(max-width:500px){
 		.svc-grid{grid-template-columns:1fr 1fr!important;gap:12px!important}
 		.svc-card{padding:20px 12px 16px!important}
-		.svc-card-icon{width:56px!important;height:56px!important;margin-bottom:12px!important}
+		.svc-card-icon{width:60px!important;height:60px!important;font-size:2.5rem!important;margin-bottom:12px!important}
 		.svc-card-name{font-size:15px!important}
 		.svc-card-desc{font-size:12px!important}
 	}
