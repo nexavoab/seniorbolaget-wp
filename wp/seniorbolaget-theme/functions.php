@@ -67,7 +67,7 @@ function seniorbolaget_wizard_css() {
 	/* ===== WAS-90: CSS Variables ===== */
 	:root{--sb-nav-height:90px;--sb-bottom-bar:110px}
 	/* ===== WAS-87: FULLSCREEN WIZARD ===== */
-	.wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;height:calc(100vh - 100px)!important;padding-top:0!important;padding-bottom:0!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:hidden!important}
+	.wizard-container{all:initial!important;display:flex!important;flex-direction:column!important;min-height:100vh!important;height:auto!important;padding-top:0!important;padding-bottom:32px!important;box-sizing:border-box!important;width:100vw!important;max-width:none!important;margin:0!important;margin-left:calc(50% - 50vw)!important;background:#FAFAF8!important;font-family:Inter,-apple-system,BlinkMacSystemFont,sans-serif!important;overflow:visible!important}
 	.wizard-container *,.wizard-container *::before,.wizard-container *::after{box-sizing:border-box!important}
 	.wizard-container .wizard-inner{display:flex!important;flex-direction:column!important;flex:1!important;min-height:0!important;max-width:960px!important;width:100%!important;margin:0 auto!important;padding:16px 32px 0!important;background:transparent!important;border-radius:0!important;box-shadow:none!important}
 	/* Stepper compact */
@@ -1632,3 +1632,368 @@ function sb_rut_rot_badge() {
     <?php
 }
 add_action('wp_head', 'sb_rut_rot_badge', 5);
+
+/**
+ * Jobba-wizard via wp_footer (WAS-84 fix: flyttad från pattern för att undvika &gt; encoding)
+ */
+function sb_jobba_wizard() {
+    if (!is_page('jobba-med-oss')) return;
+    ?>
+<script>
+function jobWizardApp() {
+    return ({
+        step: 1,
+        isSubmitting: false,
+        errorMsg: '',
+        citySearch: '',
+        filteredJobCities: [],
+        formData: {
+            city: '', service: '', experience: '',
+            name: '', phone: '', email: '', gdprConsent: false
+        },
+        // Helper functions to avoid > < in HTML attributes
+        stepIcon(n) { return this.step > n ? '✓' : String(n); },
+        stepDone(n) { return this.step > n; },
+        stepBelow(n) { return this.step < n; },
+        stepVal(n) { 
+            if (this.step <= n) return '';
+            if (n === 1) return this.getCityName();
+            if (n === 2) return this.getServiceName();
+            return '';
+        },
+        init() {
+            this.filteredJobCities = this.cities;
+        },
+        filterJobCities() {
+            const q = this.citySearch.toLowerCase();
+            this.filteredJobCities = q 
+                ? this.cities.filter(c => c.name.toLowerCase().includes(q))
+                : this.cities;
+        },
+        cities: [
+            {value:'amal',name:'Åmål'},{value:'boras',name:'Borås'},
+            {value:'eskilstuna',name:'Eskilstuna'},{value:'falkenberg',name:'Falkenberg'},
+            {value:'goteborg',name:'Göteborg'},{value:'halmstad',name:'Halmstad'},
+            {value:'helsingborg',name:'Helsingborg'},{value:'jonkoping',name:'Jönköping'},
+            {value:'karlstad',name:'Karlstad'},{value:'kristianstad',name:'Kristianstad'},
+            {value:'kungsbacka',name:'Kungsbacka'},{value:'kungalv',name:'Kungälv'},
+            {value:'laholm',name:'Laholm/Båstad'},{value:'landskrona',name:'Landskrona'},
+            {value:'lerum',name:'Lerum/Partille'},{value:'molndal',name:'Mölndal/Härryda'},
+            {value:'nassjo',name:'Nässjö'},{value:'orebro',name:'Örebro'},
+            {value:'skovde',name:'Skövde'},{value:'stenungsund',name:'Stenungsund'},
+            {value:'sundsvall',name:'Sundsvall'},{value:'torsby',name:'Torsby'},
+            {value:'trelleborg',name:'Trelleborg'},{value:'trollhattan',name:'Trollhättan'},
+            {value:'ulricehamn',name:'Ulricehamn'},{value:'varberg',name:'Varberg'}
+        ],
+        selectCity(val) { this.formData.city = val; setTimeout(() => this.step = 2, 200); },
+        selectService(val) { this.formData.service = val; setTimeout(() => this.step = 3, 200); },
+        selectExperience(val) { this.formData.experience = val; setTimeout(() => this.step = 4, 200); },
+        getCityName() { return this.cities.find(c => c.value === this.formData.city)?.name || this.formData.city; },
+        getServiceName() {
+            const services = {'stadning':'Städning','tradgard':'Trädgård','snickeri':'Snickeri','malning':'Målning','flera':'Flera tjänster'};
+            return services[this.formData.service] || this.formData.service;
+        },
+        getExperienceName() {
+            const exp = {'nybörjare':'Ny i branschen','erfaren':'Erfaren (1–5 år)','veteran':'Veteran (5+ år)'};
+            return exp[this.formData.experience] || this.formData.experience;
+        },
+        canSubmit() {
+            return this.formData.name && this.formData.phone &&
+                   this.formData.email && this.formData.gdprConsent;
+        },
+        submitForm() {
+            if (!this.canSubmit()) { this.errorMsg = 'Fyll i alla fält och godkänn villkoren.'; return; }
+            this.isSubmitting = true;
+            this.errorMsg = '';
+            fetch('/wp-admin/admin-post.php', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/x-www-form-urlencoded'},
+                body: new URLSearchParams({
+                    action: 'sb_job_application',
+                    ...this.formData
+                })
+            }).then(() => {
+                this.step = 5;
+                this.isSubmitting = false;
+            }).catch(() => {
+                this.errorMsg = 'Något gick fel. Försök igen eller ring oss.';
+                this.isSubmitting = false;
+            });
+        }
+    });
+}
+</script>
+<div id="jobba-wizard-rendered" class="wizard-container" x-data="jobWizardApp()" x-cloak>
+    <div class="wizard-inner">
+        
+        <!-- Stepper (fixed: using helper functions) -->
+        <div class="wiz-stepper" x-show="stepBelow(5)">
+            <div class="wiz-step" :class="{ active: step === 1, completed: stepDone(1) }">
+                <div class="wiz-step-circle" x-text="stepIcon(1)"></div>
+                <div class="wiz-step-label">Stad</div>
+                <div class="wiz-step-value" x-text="stepVal(1)"></div>
+            </div>
+            <div class="wiz-step-line" :class="{ completed: stepDone(1) }"></div>
+            <div class="wiz-step" :class="{ active: step === 2, completed: stepDone(2) }">
+                <div class="wiz-step-circle" x-text="stepIcon(2)"></div>
+                <div class="wiz-step-label">Tjänst</div>
+                <div class="wiz-step-value" x-text="stepVal(2)"></div>
+            </div>
+            <div class="wiz-step-line" :class="{ completed: stepDone(2) }"></div>
+            <div class="wiz-step" :class="{ active: step === 3, completed: stepDone(3) }">
+                <div class="wiz-step-circle" x-text="stepIcon(3)"></div>
+                <div class="wiz-step-label">Erfarenhet</div>
+                <div class="wiz-step-value"></div>
+            </div>
+            <div class="wiz-step-line" :class="{ completed: stepDone(3) }"></div>
+            <div class="wiz-step" :class="{ active: step === 4, completed: stepDone(4) }">
+                <div class="wiz-step-circle" x-text="stepIcon(4)"></div>
+                <div class="wiz-step-label">Kontakt</div>
+                <div class="wiz-step-value"></div>
+            </div>
+        </div>
+        
+        <!-- STEG 1: Välj stad -->
+        <div x-show="step === 1" x-transition>
+            <div class="wizard-header">
+                <h2 class="wizard-title">Var vill du jobba?</h2>
+                <p class="wizard-subtitle">Välj den ort som passar dig bäst</p>
+            </div>
+            
+            <input type="text" x-model="citySearch" @input="filterJobCities()"
+                placeholder="🔍 Sök stad..." class="city-search">
+            <div class="city-list">
+                <template x-for="city in filteredJobCities" :key="city.value">
+                    <div class="city-item"
+                        :class="{ selected: formData.city === city.value }"
+                        @click="selectCity(city.value)"
+                        x-text="city.name">
+                    </div>
+                </template>
+            </div>
+        </div>
+        
+        <!-- STEG 2: Välj tjänst -->
+        <div x-show="step === 2" x-transition>
+            <button class="back-btn" @click="step = 1" type="button"><span class="back-icon">←</span> Tillbaka</button>
+            
+            <div class="wizard-header">
+                <h2 class="wizard-title">Vad kan du hjälpa med?</h2>
+                <p class="wizard-subtitle">Välj den tjänst du vill jobba med</p>
+            </div>
+            
+            <div class="svc-grid">
+                <!-- Städning -->
+                <div class="svc-card" @click="selectService('stadning')" :class="{ selected: formData.service === 'stadning' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#FFF4F2"/>
+                            <rect x="36" y="20" width="8" height="36" rx="2" fill="#C91C22"/>
+                            <ellipse cx="40" cy="58" rx="14" ry="6" fill="#C91C22" opacity="0.6"/>
+                            <path d="M28 58 Q40 50 52 58" stroke="#C91C22" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Städning</div>
+                    <div class="svc-card-desc">Hemstädning och liknande</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+                <!-- Trädgård -->
+                <div class="svc-card" @click="selectService('tradgard')" :class="{ selected: formData.service === 'tradgard' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#F0FDF4"/>
+                            <path d="M40 55 L40 35" stroke="#16A34A" stroke-width="3" stroke-linecap="round"/>
+                            <ellipse cx="40" cy="28" rx="12" ry="10" fill="#16A34A"/>
+                            <path d="M32 50 Q28 42 35 38" stroke="#16A34A" stroke-width="2" fill="none"/>
+                            <path d="M48 50 Q52 42 45 38" stroke="#16A34A" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Trädgård</div>
+                    <div class="svc-card-desc">Gräsklippning, häck, ogräs</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+                <!-- Snickeri -->
+                <div class="svc-card" @click="selectService('snickeri')" :class="{ selected: formData.service === 'snickeri' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#FFFBEB"/>
+                            <rect x="35" y="22" width="10" height="32" rx="2" fill="#D97706"/>
+                            <rect x="28" y="18" width="24" height="8" rx="2" fill="#92400E"/>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Snickeri</div>
+                    <div class="svc-card-desc">Reparationer och bygge</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+                <!-- Målning -->
+                <div class="svc-card" @click="selectService('malning')" :class="{ selected: formData.service === 'malning' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#EEF2FF"/>
+                            <rect x="32" y="25" width="16" height="24" rx="3" fill="#6366F1"/>
+                            <rect x="38" y="49" width="4" height="12" fill="#6366F1"/>
+                            <rect x="30" y="20" width="20" height="8" rx="2" fill="#4F46E5"/>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Målning</div>
+                    <div class="svc-card-desc">Invändigt och utvändigt</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STEG 3: Erfarenhet -->
+        <div x-show="step === 3" x-transition>
+            <button class="back-btn" @click="step = 2" type="button"><span class="back-icon">←</span> Tillbaka</button>
+            
+            <div class="wizard-header">
+                <h2 class="wizard-title">Hur lång erfarenhet har du?</h2>
+                <p class="wizard-subtitle">Din erfarenhet inom <span x-text="getServiceName()"></span></p>
+            </div>
+            
+            <div class="svc-grid" style="grid-template-columns: repeat(3, 1fr);">
+                <!-- Ny i branschen -->
+                <div class="svc-card" @click="selectExperience('nybörjare')" :class="{ selected: formData.experience === 'nybörjare' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#F0FDF4"/>
+                            <path d="M25 55 Q40 30 55 55" stroke="#16A34A" stroke-width="3" fill="none"/>
+                            <text x="40" y="42" text-anchor="middle" font-size="22" fill="#16A34A">★</text>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Ny i branschen</div>
+                    <div class="svc-card-desc">Under 1 år</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+                <!-- Erfaren -->
+                <div class="svc-card" @click="selectExperience('erfaren')" :class="{ selected: formData.experience === 'erfaren' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#FFFBEB"/>
+                            <text x="40" y="48" text-anchor="middle" font-size="20" fill="#D97706">★★★</text>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Erfaren</div>
+                    <div class="svc-card-desc">1–5 år</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+                <!-- Veteran -->
+                <div class="svc-card" @click="selectExperience('veteran')" :class="{ selected: formData.experience === 'veteran' }">
+                    <div class="svc-card-icon">
+                        <svg viewBox="0 0 80 80" fill="none">
+                            <circle cx="40" cy="40" r="38" fill="#FFF4F2"/>
+                            <circle cx="40" cy="36" r="14" fill="#C91C22" opacity="0.15" stroke="#C91C22" stroke-width="2"/>
+                            <text x="40" y="41" text-anchor="middle" font-size="18" fill="#C91C22">★</text>
+                            <rect x="35" y="50" width="10" height="14" rx="2" fill="#C91C22" opacity="0.6"/>
+                        </svg>
+                    </div>
+                    <div class="svc-card-name">Veteran</div>
+                    <div class="svc-card-desc">5+ år</div>
+                    <div class="svc-card-check">✓</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- STEG 4: Kontaktuppgifter -->
+        <div x-show="step === 4" x-transition>
+            <button class="back-btn" @click="step = 3" type="button"><span class="back-icon">←</span> Tillbaka</button>
+            
+            <div class="wizard-header">
+                <h2 class="wizard-title">Dina kontaktuppgifter</h2>
+                <p class="wizard-subtitle">Så vi kan höra av oss till dig</p>
+            </div>
+            
+            <div x-show="errorMsg" class="error-msg" x-text="errorMsg"></div>
+            
+            <div class="form-group">
+                <label class="form-label">Namn</label>
+                <input type="text" class="form-input" placeholder="Ditt namn" x-model="formData.name" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Telefon</label>
+                <input type="tel" class="form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">E-post</label>
+                <input type="email" class="form-input" placeholder="din@email.se" x-model="formData.email" required>
+            </div>
+            
+            <div class="gdpr-check">
+                <input type="checkbox" id="job-gdpr" x-model="formData.gdprConsent">
+                <label for="job-gdpr" class="gdpr-text">
+                    Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy" target="_blank">integritetspolicy</a>.
+                </label>
+            </div>
+            
+            <button class="submit-btn" @click="submitForm()" :disabled="!canSubmit() || isSubmitting" type="button">
+                <span x-show="isSubmitting" class="spinner"></span>
+                <span x-text="isSubmitting ? 'Skickar...' : 'Skicka ansökan →'"></span>
+            </button>
+            
+            <div class="trust-bar" style="margin-top:24px;">
+                <span class="trust-item"><span class="trust-check">✓</span> Flexibla tider</span>
+                <span class="trust-item"><span class="trust-check">✓</span> Inga krav</span>
+                <span class="trust-item"><span class="trust-check">✓</span> Du bestämmer</span>
+            </div>
+        </div>
+        
+        <!-- STEG 5: Tack -->
+        <div x-show="step === 5" x-transition>
+            <div class="thank-you">
+                <div class="thank-icon">✓</div>
+                <h2 class="thank-title">Tack för din ansökan!</h2>
+                <p class="thank-text">Vi har tagit emot din ansökan och återkommer inom kort.</p>
+                
+                <div class="thank-summary">
+                    <div class="summary-row">
+                        <span class="summary-label">Stad</span>
+                        <span class="summary-value" x-text="getCityName()"></span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Tjänst</span>
+                        <span class="summary-value" x-text="getServiceName()"></span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Erfarenhet</span>
+                        <span class="summary-value" x-text="getExperienceName()"></span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-label">Namn</span>
+                        <span class="summary-value" x-text="formData.name"></span>
+                    </div>
+                </div>
+                
+                <a href="/" style="display:inline-block;margin-top:16px;color:#C91C22;font-weight:600;text-decoration:none;">← Tillbaka till startsidan</a>
+            </div>
+        </div>
+        
+        <!-- Trust + telefon -->
+        <div class="trust-section" x-show="stepBelow(4)">
+            <div class="trust-bar">
+                <span class="trust-item"><span class="trust-check">✓</span> Flexibla tider</span>
+                <span class="trust-item"><span class="trust-check">✓</span> Inga krav</span>
+                <span class="trust-item"><span class="trust-check">✓</span> Du bestämmer</span>
+            </div>
+            <div class="phone-banner">
+                <span class="phone-label">Hellre ringa?</span>
+                <a href="tel:0101751900">010-175 19 00</a>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<script>
+// Mount the wizard into the placeholder div
+document.addEventListener('DOMContentLoaded', function() {
+    var mount = document.getElementById('jobba-wizard-mount');
+    var wizard = document.getElementById('jobba-wizard-rendered');
+    if (mount && wizard) {
+        mount.appendChild(wizard);
+    }
+});
+</script>
+    <?php
+}
+add_action('wp_footer', 'sb_jobba_wizard', 10);
