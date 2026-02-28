@@ -36,11 +36,11 @@
 
     targets.forEach(function(el) { el.style.opacity = '0'; });
 
-    anime.timeline({ easing: 'easeOutExpo' })
-      .add({ targets: badge,    opacity: [0,1], translateY: [-12,0], duration: 500 }, 200)
-      .add({ targets: h1,       opacity: [0,1], translateY: [24,0],  duration: 700 }, 400)
-      .add({ targets: subtitle, opacity: [0,1], translateY: [16,0],  duration: 600 }, 700)
-      .add({ targets: ctaWrap,  opacity: [0,1], translateY: [16,0],  duration: 600 }, 950);
+    anime.timeline({ easing: 'easeOutCubic' })
+      .add({ targets: badge,    opacity: [0,1], translateY: [-20,0], duration: 700 }, 200)
+      .add({ targets: h1,       opacity: [0,1], translateY: [30,0],  duration: 900 }, 450)
+      .add({ targets: subtitle, opacity: [0,1], translateY: [20,0],  duration: 800 }, 800)
+      .add({ targets: ctaWrap,  opacity: [0,1], translateY: [20,0],  duration: 800 }, 1100);
   }
 
   /* ============================================================
@@ -79,8 +79,10 @@
           targets: el,
           opacity: [0, 1],
           translateY: [28, 0],
-          duration: 700,
-          easing: 'easeOutExpo'
+          scale: [0.98, 1],
+          filter: ['blur(4px)', 'blur(0px)'],
+          duration: 1000,
+          easing: 'easeOutSine'
         });
         el.dataset.animated = 'done';
         observer.unobserve(el);
@@ -116,8 +118,8 @@
         anime({
           targets: obj,
           val: target,
-          duration: 1800,
-          easing: 'easeOutExpo',
+          duration: 2000,
+          easing: 'easeOutQuart',
           round: 1,
           update: function() {
             var formatted = obj.val >= 1000
@@ -163,9 +165,9 @@
           targets: columns,
           opacity: [0, 1],
           translateY: [32, 0],
-          duration: 700,
-          delay: anime.stagger(200),
-          easing: 'easeOutExpo'
+          duration: 900,
+          delay: anime.stagger(300, { start: 150 }),
+          easing: 'easeOutCubic'
         });
         observer.disconnect();
       });
@@ -208,11 +210,11 @@
             height: [0, targetHeight],
             opacity: [0, 1],
             marginTop: [0, 12],
-            duration: 350,
+            duration: 450,
             easing: 'easeOutQuad',
             complete: function() { content.style.height = 'auto'; }
           });
-          if (plusIcon) anime({ targets: plusIcon, rotate: 45, duration: 300, easing: 'easeOutQuad' });
+          if (plusIcon) anime({ targets: plusIcon, rotate: 45, duration: 350, easing: 'easeOutQuad' });
         } else {
           // Stäng
           content.style.height = content.scrollHeight + 'px';
@@ -221,11 +223,11 @@
             height: 0,
             opacity: 0,
             marginTop: 0,
-            duration: 300,
+            duration: 400,
             easing: 'easeInQuad',
             complete: function() { detail.removeAttribute('open'); content.style.height = ''; }
           });
-          if (plusIcon) anime({ targets: plusIcon, rotate: 0, duration: 300, easing: 'easeOutQuad' });
+          if (plusIcon) anime({ targets: plusIcon, rotate: 0, duration: 350, easing: 'easeOutQuad' });
         }
       });
     });
