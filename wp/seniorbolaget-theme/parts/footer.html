@@ -1,10 +1,14 @@
-<!-- wp:html -->
+<!-- wp:html {"align":"full"} -->
 <style>
 .sb-footer {
-  background: #ffffff;
-  border-top: 1px solid #E5E7EB;
-  padding: 48px 24px 24px;
+  background: #C91C22;
+  border-top: none;
+  padding: 56px 24px 24px;
   font-family: Inter, -apple-system, BlinkMacSystemFont, sans-serif;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .sb-footer-inner {
   max-width: 1200px;
@@ -30,7 +34,7 @@
 }
 .sb-footer-tagline {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: rgba(255,255,255,0.75);
   line-height: 1.6;
   margin: 0 0 20px 0;
 }
@@ -39,23 +43,23 @@
   gap: 12px;
 }
 .sb-footer-social a {
-  color: #9CA3AF;
+  color: rgba(255,255,255,0.7);
   transition: color 0.2s;
 }
 .sb-footer-social a:hover {
-  color: #1F2937;
+  color: #ffffff;
 }
 .sb-footer-social svg {
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
 }
 .sb-footer-heading {
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #9CA3AF;
-  font-weight: 600;
-  margin: 0 0 12px 0;
+  color: rgba(255,255,255,0.55);
+  font-weight: 700;
+  margin: 0 0 14px 0;
 }
 .sb-footer-links {
   list-style: none;
@@ -63,63 +67,66 @@
   margin: 0;
 }
 .sb-footer-links li {
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 .sb-footer-links a {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
   transition: color 0.2s;
 }
 .sb-footer-links a:hover {
-  color: #1F2937;
+  color: #ffffff;
 }
 .sb-footer-section {
-  margin-top: 24px;
+  margin-top: 28px;
 }
 .sb-footer-phone {
   font-family: Rubik, Inter, sans-serif;
   font-size: 1.5rem;
   font-weight: 700;
-  color: #1F2937;
+  color: #ffffff;
   text-decoration: none;
   display: inline-block;
-  transition: color 0.2s;
+  transition: opacity 0.2s;
 }
 .sb-footer-phone:hover {
-  color: #C91C22;
+  opacity: 0.85;
 }
 .sb-footer-hours {
   font-size: 0.8rem;
-  color: #9CA3AF;
+  color: rgba(255,255,255,0.6);
   margin: 4px 0 12px 0;
 }
 .sb-footer-email {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: rgba(255,255,255,0.85);
   text-decoration: none;
   transition: color 0.2s;
+  display: block;
+  margin-bottom: 4px;
 }
 .sb-footer-email:hover {
-  color: #1F2937;
+  color: #ffffff;
 }
 .sb-footer-address {
   font-size: 0.8rem;
-  color: #9CA3AF;
+  color: rgba(255,255,255,0.6);
   margin: 8px 0 0 0;
 }
 .sb-footer-badge {
   display: inline-block;
-  background: #FFF0EC;
-  color: #C91C22;
+  background: rgba(255,255,255,0.15);
+  color: #ffffff;
+  border: 1px solid rgba(255,255,255,0.3);
   font-size: 0.75rem;
   font-weight: 600;
-  padding: 4px 10px;
+  padding: 4px 12px;
   border-radius: 50px;
   margin-top: 16px;
 }
 .sb-footer-bottom {
-  border-top: 1px solid #E5E7EB;
+  border-top: 1px solid rgba(255,255,255,0.2);
   padding-top: 20px;
   margin-top: 48px;
   display: flex;
@@ -130,15 +137,15 @@
 }
 .sb-footer-legal {
   font-size: 0.8rem;
-  color: #9CA3AF;
+  color: rgba(255,255,255,0.55);
 }
 .sb-footer-legal a {
-  color: #9CA3AF;
+  color: rgba(255,255,255,0.55);
   text-decoration: none;
   transition: color 0.2s;
 }
 .sb-footer-legal a:hover {
-  color: #1F2937;
+  color: #ffffff;
 }
 .sb-footer-trust {
   display: flex;
@@ -147,10 +154,13 @@
 }
 .sb-footer-trust span {
   font-size: 0.75rem;
-  color: #9CA3AF;
+  color: rgba(255,255,255,0.6);
   font-family: Inter, sans-serif;
 }
 @media (max-width: 768px) {
+  .sb-footer {
+    padding: 40px 20px 20px;
+  }
   .sb-footer-grid {
     flex-direction: column;
     gap: 32px;
