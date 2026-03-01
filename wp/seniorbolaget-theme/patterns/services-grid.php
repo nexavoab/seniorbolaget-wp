@@ -154,12 +154,20 @@
     max-width: 560px;
     width: 100%;
     max-height: 90vh;
-    overflow-x: hidden;
-    overflow-y: auto;
     box-sizing: border-box;
     position: relative;
-    padding: 48px 40px 56px;
+    display: none;
+    flex-direction: column;
+    overflow: hidden;
     animation: sb-modal-in 0.3s cubic-bezier(0.16,1,0.3,1) both;
+}
+/* Inre scrollbar-behållare — innehållet scrollar, stäng-knappen sitter kvar */
+.sb-modal-content {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 48px 40px 56px;
+    width: 100%;
+    box-sizing: border-box;
 }
 @keyframes sb-modal-in {
     from { opacity: 0; transform: translateY(24px) scale(0.97); }
@@ -182,6 +190,7 @@
     justify-content: center;
     transition: background 0.2s;
     line-height: 1;
+    z-index: 10;
 }
 .sb-modal-close:hover { background: #E5E7EB; }
 
@@ -253,7 +262,7 @@
 }
 
 @media (max-width: 600px) {
-    .sb-modal { padding: 40px 24px 32px; }
+    .sb-modal-content { padding: 40px 24px 32px; }
 }
 </style>
 
@@ -435,16 +444,18 @@ foreach ($brf_services as $i => $s) {
 <!-- Backdrop + modaler -->
 <div class="sb-modal-backdrop" id="sbModalBackdrop" role="dialog" aria-modal="true" aria-label="Tjänst">
     <?php foreach ($all_services as $s): ?>
-    <div class="sb-modal" id="<?php echo $s['modal_id']; ?>" style="display:none;">
+    <div class="sb-modal" id="<?php echo $s['modal_id']; ?>">
         <button class="sb-modal-close" aria-label="Stäng">&#x2715;</button>
-        <span class="sb-modal-icon"><?php echo $s['icon']; ?></span>
-        <h3><?php echo esc_html($s['name']); ?></h3>
-        <span class="sb-modal-badge"><?php echo esc_html($s['badge']); ?></span>
-        <p><?php echo esc_html($s['desc']); ?></p>
-        <a class="sb-modal-cta" href="<?php echo esc_url($s['cta_link']); ?>">
-            Boka <?php echo esc_html($s['name']); ?> →
-        </a>
-        <p class="sb-modal-micro">✓ Kostnadsfritt · ✓ Utan bindning · ✓ Svar inom 24h</p>
+        <div class="sb-modal-content">
+            <span class="sb-modal-icon"><?php echo $s['icon']; ?></span>
+            <h3><?php echo esc_html($s['name']); ?></h3>
+            <span class="sb-modal-badge"><?php echo esc_html($s['badge']); ?></span>
+            <p><?php echo esc_html($s['desc']); ?></p>
+            <a class="sb-modal-cta" href="<?php echo esc_url($s['cta_link']); ?>">
+                Boka <?php echo esc_html($s['name']); ?> →
+            </a>
+            <p class="sb-modal-micro">✓ Kostnadsfritt · ✓ Utan bindning · ✓ Svar inom 24h</p>
+        </div>
     </div>
     <?php endforeach; ?>
 </div>
@@ -456,10 +467,15 @@ foreach ($brf_services as $i => $s) {
     var currentActiveTabButton = null;
 
     function openModal(id) {
+        if (!id) return;
+        // Göm alla modaler i backdropen
+        backdrop.querySelectorAll('.sb-modal').forEach(function(m) {
+            m.style.display = 'none';
+        });
         var modal = document.getElementById(id);
         if (!modal) return;
-        if (currentModal) currentModal.style.display = 'none';
-        modal.style.display = 'block';
+        // Visa med flex så column-layouten håller ihop
+        modal.style.display = 'flex';
         // Restart animation
         modal.style.animation = 'none';
         modal.offsetHeight; // Trigger reflow
