@@ -50,6 +50,8 @@
 </div>
 <!-- /wp:html -->
 
+<!-- STATISTIK-BAR (WAS-159) -->
+<!-- wp:pattern {"slug":"seniorbolaget/stats-band"} /-->
 
 <!-- VAD INGÅR SECTION — Bento Grid -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->

@@ -13,10 +13,15 @@
 <div style="position:relative;min-height:85vh;display:flex;align-items:center;background-image:url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/service_hantverk.jpg');background-size:cover;background-position:center;overflow:hidden;">
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.7) 0%,rgba(0,0,0,0.4) 100%);"></div>
   <div style="position:relative;z-index:2;max-width:720px;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
-    <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,28,34,0.9);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;font-weight:600;">
-      🏢 För bostadsrättsföreningar
+    <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:24px;">
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
+        ⭐⭐⭐⭐⭐ 500+ nöjda kunder på Reco.se
+      </div>
+      <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(201,28,34,0.9);border-radius:50px;padding:8px 16px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;font-weight:600;">
+        🏢 För bostadsrättsföreningar
+      </div>
     </div>
-    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Professionell skötsel av er förening</h1>
+    <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Professionell <span class="accent" style="color:#FF6B6B;">skötsel</span> av er förening</h1>
     <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Från trappstädning till snöröjning — erfarna seniorer tar hand om er fastighet med omsorg och kompetens.</p>
     <div style="margin-bottom:32px;">
       <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Begär offert för er BRF →</a>
@@ -30,6 +35,8 @@
 </div>
 <!-- /wp:html -->
 
+<!-- STATISTIK-BAR (WAS-159) -->
+<!-- wp:pattern {"slug":"seniorbolaget/stats-band"} /-->
 
 <!-- TJÄNSTER (4 kort) -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->

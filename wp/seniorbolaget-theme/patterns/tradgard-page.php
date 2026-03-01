@@ -14,21 +14,24 @@
   <div style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%);"></div>
   <div style="position:relative;z-index:2;max-width:720px;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);padding-top:70px;">
     <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
-      ⭐⭐⭐⭐⭐ Tusentals nöjda kunder i Sverige
+      ⭐⭐⭐⭐⭐ 500+ nöjda kunder på Reco.se
     </div>
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">
-      Trädgårdsskötsel av erfarna seniorer
+      <span class="accent" style="color:#FF6B6B;">Trädgårdsskötsel</span> av erfarna seniorer
     </h1>
     <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">
-      Gräsklippning, plantering, beskärning och snöskottning — med ROT-avdrag
+      Gräsklippning, plantering, beskärning och snöskottning — med RUT-avdrag
     </p>
-    <div style="margin-bottom:32px;">
+    <div style="display:flex;gap:16px;flex-wrap:wrap;align-items:center;margin-bottom:32px;">
       <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">
         Boka hjälp →
       </a>
+      <a href="/bli-franchisetagare" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,0.5);color:#fff;font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:600;padding:15px 24px;border-radius:50px;text-decoration:none;">
+        🏢 Bli franchisetagare
+      </a>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ RUT/ROT-avdrag</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ RUT-avdrag 50%</span>
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Nöjd-garanti</span>
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Erfarna 55+</span>
     </div>
@@ -36,6 +39,8 @@
 </div>
 <!-- /wp:html -->
 
+<!-- STATISTIK-BAR (WAS-159) -->
+<!-- wp:pattern {"slug":"seniorbolaget/stats-band"} /-->
 
 <!-- VAD INGÅR SECTION — Bento Grid -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
