@@ -831,3 +831,79 @@ div[style*="grid-template-columns:repeat(auto-fit,minmax(300px"] {
         font-size: 14px;
     }
 }
+
+/* ===== WAS-156: H1 accent — konsistent på alla sidor ===== */
+.entry-content h1 .accent,
+.wp-block-cover h1 .accent,
+h1 .accent,
+h1 span.accent,
+h1 em {
+    color: #C91C22 !important;
+    font-style: normal;
+}
+/* På mörka hero-sektioner: ljusare röd för läsbarhet */
+.sb-hero-section h1 .accent,
+[style*="background-image"] h1 .accent,
+[style*="background:linear-gradient"] h1 .accent {
+    color: #FF6B6B !important;
+}
+
+/* ===== WAS-157: USP-bar pills — standardisering ===== */
+.sb-usp-bar, .usp-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 16px;
+}
+.sb-usp-item, .usp-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ===== WAS-160: RUT/ROT-badges — standardiserade CSS-klasser ===== */
+.rut-badge, .rot-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: Rubik, sans-serif;
+    font-size: 0.8125rem;
+    font-weight: 700;
+    padding: 4px 12px;
+    border-radius: 50px;
+    text-decoration: none;
+}
+.rut-badge {
+    background: #FFF4F2;
+    color: #C91C22;
+}
+.rot-badge {
+    background: #F0FDF4;
+    color: #16a34a;
+}
+
+/* ===== WAS-163: Wizard knappar — matcha primärknappar (8px radius) ===== */
+.wizard-btn,
+.sb-wizard .wp-block-button__link,
+[data-wizard] .wp-block-button__link,
+.wiz-btn,
+.wizard-container .btn-primary,
+.wizard-container button[type="submit"],
+.wizard-container .wiz-next,
+.wizard-container .wiz-submit {
+    border-radius: 8px !important;
+}
+
+/* ===== WAS-164: FAB — synlig på intresseanmalan ===== */
+body.page-slug-intresseanmalan #sb-fab,
+body.page-slug-intresse-anmalan #sb-fab,
+.page-id-intresseanmalan #sb-fab {
+    display: flex !important;
+    z-index: 99999 !important;
+}

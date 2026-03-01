@@ -72,6 +72,34 @@ add_action( 'init', function () {
 } );
 
 /**
+ * WAS-170: One-time setup — create Användarvillkor page.
+ */
+add_action( 'init', function () {
+	if ( get_option( 'sb_pages_created_v2' ) ) {
+		return;
+	}
+
+	$pages = array(
+		array(
+			'post_title'   => 'Användarvillkor',
+			'post_name'    => 'anvandarvillkor',
+			'post_content' => '<h1>Användarvillkor</h1><p>Dessa användarvillkor gäller för användning av Seniorbolaget ABs webbplats och tjänster.</p><h2>Tjänstebeskrivning</h2><p>Seniorbolaget AB erbjuder hushållsnära tjänster utförda av erfarna seniorer.</p><h2>Boknings- och betalningsvillkor</h2><p>Bokning sker via webbformulär eller telefon. Betalning sker efter utfört arbete.</p><h2>Ansvarsbegränsning</h2><p>Seniorbolaget AB ansvarar för korrekt utförda tjänster enligt avtalad specifikation.</p><h2>Ändringar och avbokning</h2><p>Avbokning ska ske senast 24 timmar innan bokad tid. Vid senare avbokning kan en avgift tillkomma.</p><h2>Kontakt</h2><p>Seniorbolaget AB<br>E-post: info@seniorbolaget.se</p>',
+			'post_status'  => 'publish',
+			'post_type'    => 'page',
+		),
+	);
+
+	foreach ( $pages as $page ) {
+		$existing = get_page_by_path( $page['post_name'], OBJECT, 'page' );
+		if ( ! $existing ) {
+			wp_insert_post( $page );
+		}
+	}
+
+	update_option( 'sb_pages_created_v2', true );
+} );
+
+/**
  * Theme setup.
  */
 function seniorbolaget_setup() {
