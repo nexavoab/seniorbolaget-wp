@@ -9,6 +9,33 @@
 define( 'SENIORBOLAGET_VERSION', '1.0.0' );
 
 /**
+ * 301 Redirects for missing/renamed pages.
+ */
+add_action( 'init', function () {
+	$uri = $_SERVER['REQUEST_URI'] ?? '';
+
+	if ( $uri === '/franchise/' || $uri === '/franchise' ) {
+		wp_redirect( '/bli-franchisetagare/', 301 );
+		exit;
+	}
+
+	if ( strpos( $uri, '/foretagstjanster' ) === 0 ) {
+		wp_redirect( '/brf/', 301 );
+		exit;
+	}
+
+	if ( strpos( $uri, '/malning-och-tapetsering' ) === 0 ) {
+		wp_redirect( '/snickeri/', 301 );
+		exit;
+	}
+
+	if ( strpos( $uri, '/omsorg' ) === 0 ) {
+		wp_redirect( '/hemstadning/', 301 );
+		exit;
+	}
+} );
+
+/**
  * Theme setup.
  */
 function seniorbolaget_setup() {
