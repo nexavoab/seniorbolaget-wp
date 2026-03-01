@@ -29,7 +29,7 @@
 
     <!-- Subtext -->
     <p style="font-family:Inter,sans-serif;font-size:clamp(1.0625rem,1.5vw,1.25rem);color:rgba(255,255,255,0.92);line-height:1.7;margin:0 0 36px;max-width:580px;">
-      Städning, trädgård, målning &amp; snickeri — med RUT/ROT-avdrag direkt på fakturan. Alltid erfarna 55+ med omtanke och kvalitet.
+      Städning, trädgård, målning &amp; snickeri — med RUT/ROT-avdrag direkt på fakturan. Alltid 55+ med omtanke och kvalitet.
     </p>
 
     <!-- CTAs -->
@@ -44,7 +44,7 @@
 
     <!-- Micro-copy -->
     <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.75);margin:0 0 8px;">
-      ✓ Vi ringer inom 4h på vardagar &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT-avdrag direkt på fakturan
+      ✓ Vi ringer inom 4h på vardagar &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ Nöjd-garanti
     </p>
     <p style="font-family:Inter,sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.6);margin:0 0 16px;">
       Städning från 149 kr/tim &nbsp;·&nbsp; <a href="/kontakt/" style="color:rgba(255,255,255,0.7);text-decoration:underline;">Inte nöjd? Vi löser det.</a>

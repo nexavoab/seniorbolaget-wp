@@ -26,14 +26,11 @@
       <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">
         Boka hjälp →
       </a>
-      <a href="/bli-franchisetagare" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1.5px solid rgba(255,255,255,0.5);color:#fff;font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:600;padding:15px 24px;border-radius:50px;text-decoration:none;">
-        🏢 Bli franchisetagare
-      </a>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ ROT-avdrag 30%</span>
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Nöjd-garanti</span>
-      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Erfarna 55+</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Alltid 55+</span>
     </div>
   </div>
 </div>
@@ -386,11 +383,4 @@
 </div>
 <!-- /wp:group -->
 
-<!-- FLOATING STICKY CTA -->
-<!-- wp:html -->
-<div style="position:fixed;bottom:90px;right:28px;z-index:10001;transition:bottom 0.3s ease;">
-  <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:700;padding:14px 28px;border-radius:50px;text-decoration:none;box-shadow:0 8px 32px rgba(201,28,34,0.45);">
-    📞 Boka hjälp →
-  </a>
-</div>
-<!-- /wp:html -->
+

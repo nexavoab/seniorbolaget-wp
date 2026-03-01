@@ -17,7 +17,7 @@
       ⭐⭐⭐⭐⭐ Tusentals nöjda kunder i Sverige
     </div>
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Vi ger seniorer ett meningsfullt arbete</h1>
-    <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Seniorbolaget grundades 2008 med en enkel idé — ge seniorer meningsfullt arbete och kunder trygg hjälp</p>
+    <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Sedan 2008 matchar vi erfarna seniorer med uppdrag där deras kunskap gör verklig skillnad — för både kunder och samhället</p>
     <div style="margin-bottom:32px;">
       <a href="/privat" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Se våra tjänster →</a>
     </div>

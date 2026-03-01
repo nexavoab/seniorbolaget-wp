@@ -95,7 +95,7 @@
                             <path d="M42 46 L42 58 L50 58" stroke="#4338CA" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <div class="svc-card-name">Målning</div>
+                    <div class="svc-card-name">Målning &amp; tapetsering</div>
                     <div class="svc-card-desc">Inomhus och utomhus målning</div>
                     <div class="svc-card-check">✓</div>
                 </div>

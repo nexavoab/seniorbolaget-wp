@@ -19,7 +19,7 @@
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Seniorbolaget för företag</h1>
     <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Erfarna seniorer som bemanning, BRF-tjänster eller rekrytering. Snabb leverans, kollektivavtal och professionellt utförande.</p>
     <div style="margin-bottom:32px;">
-      <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Begär offert →</a>
+      <a href="/intresseanmalan" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Boka hjälp →</a>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ 50+ företagskunder</span>
@@ -240,29 +240,43 @@
 <!-- /wp:group -->
 
 
-<!-- KONTAKTBLOCK -->
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"ljusgra","layout":{"type":"constrained","contentSize":"640px"}} -->
-<div class="wp-block-group has-ljusgra-background-color has-background" style="padding-top:60px;padding-bottom:60px;">
+<!-- VARFÖR VÄLJA OSS FÖR FÖRETAG -->
+<!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"60px","bottom":"60px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignfull" style="background-color:#FAFAF8;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:60px;padding-left:clamp(24px, 5vw, 80px)">
 
-	<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem","fontWeight":"700"},"color":{"text":"#1F2937"}}} -->
-	<h3 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:1.5rem;font-weight:700;">Frågor? Vi hjälper er gärna.</h3>
+	<!-- wp:heading {"textAlign":"center","level":3,"style":{"typography":{"fontSize":"1.5rem","fontWeight":"700"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
+	<h3 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:1.5rem;font-weight:700;margin-bottom:2rem">Så här fungerar det</h3>
 	<!-- /wp:heading -->
 
-	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1rem"},"spacing":{"margin":{"top":"0.75rem","bottom":"2rem"}}}} -->
-	<p class="has-text-align-center" style="color:#6B7280;font-size:1rem;margin-top:0.75rem;margin-bottom:2rem;">Ring eller mejla oss – vi svarar snabbt och personligt.</p>
-	<!-- /wp:paragraph -->
-
 	<!-- wp:html -->
-	<div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-		<a href="tel:0101751900" style="display:inline-flex;align-items:center;gap:10px;background:#C91C22;color:#fff;border-radius:50px;padding:14px 28px;font-weight:600;font-size:1rem;font-family:Rubik,sans-serif;text-decoration:none;">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-			010-175 19 00
-		</a>
-		<a href="mailto:info@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:10px;background:#fff;color:#C91C22;border:2px solid #C91C22;border-radius:50px;padding:14px 28px;font-weight:600;font-size:1rem;font-family:Rubik,sans-serif;text-decoration:none;">
-			<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>
-			info@seniorbolaget.se
-		</a>
+	<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;max-width:900px;margin:0 auto;">
+		<div style="text-align:center;">
+			<div style="width:56px;height:56px;background:#C91C22;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+				<span style="font-family:Rubik,sans-serif;font-size:1.25rem;font-weight:700;color:#fff;">1</span>
+			</div>
+			<h4 style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;color:#1F2937;margin:0 0 8px;">Beskriv ert behov</h4>
+			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:0;line-height:1.5;">Fyll i formuläret eller ring oss direkt.</p>
+		</div>
+		<div style="text-align:center;">
+			<div style="width:56px;height:56px;background:#C91C22;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+				<span style="font-family:Rubik,sans-serif;font-size:1.25rem;font-weight:700;color:#fff;">2</span>
+			</div>
+			<h4 style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;color:#1F2937;margin:0 0 8px;">Få skräddarsydd offert</h4>
+			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:0;line-height:1.5;">Vi återkommer inom 24h med förslag.</p>
+		</div>
+		<div style="text-align:center;">
+			<div style="width:56px;height:56px;background:#16a34a;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
+				<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+			</div>
+			<h4 style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;color:#1F2937;margin:0 0 8px;">Vi levererar</h4>
+			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:0;line-height:1.5;">Erfarna seniorer på plats, ofta inom 48h.</p>
+		</div>
 	</div>
+	<style>
+	@media (max-width: 768px) {
+		div[style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
+	}
+	</style>
 	<!-- /wp:html -->
 
 </div>

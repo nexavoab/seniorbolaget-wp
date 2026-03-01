@@ -17,7 +17,7 @@
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.875rem;padding:8px 16px;border-radius:50px;">✓ RUT: du betalar 50%</span>
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.875rem;padding:8px 16px;border-radius:50px;">✓ ROT: du betalar 70%</span>
-      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.875rem;padding:8px 16px;border-radius:50px;">✓ Vi hanterar avdraget</span>
+      <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.875rem;padding:8px 16px;border-radius:50px;">✓ Avdrag direkt på fakturan</span>
     </div>
   </div>
 </div>

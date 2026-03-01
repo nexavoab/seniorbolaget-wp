@@ -47,7 +47,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 		<!-- /wp:heading -->
 
 		<!-- wp:paragraph {"textColor":"white","style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-		<p class="has-white-color has-text-color" style="font-size:1.125rem;line-height:1.7;margin-bottom:1.5rem;opacity:0.9;text-shadow:0 1px 4px rgba(0,0,0,0.3);">Etablerad affärsmodell, starkt varumärke och fullt stöd. Gör skillnad för människor i din region — på dina villkor.</p>
+		<p class="has-white-color has-text-color" style="font-size:1.125rem;line-height:1.7;margin-bottom:1.5rem;opacity:0.9;text-shadow:0 1px 4px rgba(0,0,0,0.3);">Starkt varumärke och fullt stöd från dag ett. Gör skillnad för människor i din region — på dina villkor.</p>
 		<!-- /wp:paragraph -->
 
 		<!-- wp:html -->
@@ -61,16 +61,16 @@ body.page-id-98 main > h1.wp-block-post-title {
 		<!-- Nyckeltal under CTA -->
 		<div style="display:flex;flex-wrap:wrap;gap:16px;">
 			<div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);border-radius:16px;padding:14px 22px;text-align:center;">
-				<div style="font-family:Rubik,sans-serif;font-size:1.875rem;font-weight:800;color:#fff;line-height:1;text-shadow:0 2px 4px rgba(0,0,0,0.2);">15+</div>
-				<div style="font-size:0.8125rem;color:rgba(255,255,255,0.8);margin-top:4px;">Franchisetagare</div>
-			</div>
-			<div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);border-radius:16px;padding:14px 22px;text-align:center;">
 				<div style="font-family:Rubik,sans-serif;font-size:1.875rem;font-weight:800;color:#fff;line-height:1;text-shadow:0 2px 4px rgba(0,0,0,0.2);">26</div>
 				<div style="font-size:0.8125rem;color:rgba(255,255,255,0.8);margin-top:4px;">Orter i Sverige</div>
 			</div>
 			<div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);border-radius:16px;padding:14px 22px;text-align:center;">
 				<div style="font-family:Rubik,sans-serif;font-size:1.875rem;font-weight:800;color:#fff;line-height:1;text-shadow:0 2px 4px rgba(0,0,0,0.2);">2008</div>
 				<div style="font-size:0.8125rem;color:rgba(255,255,255,0.8);margin-top:4px;">Grundat</div>
+			</div>
+			<div style="background:rgba(255,255,255,0.12);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.25);border-radius:16px;padding:14px 22px;text-align:center;">
+				<div style="font-family:Rubik,sans-serif;font-size:1.875rem;font-weight:800;color:#fff;line-height:1;text-shadow:0 2px 4px rgba(0,0,0,0.2);">500+</div>
+				<div style="font-size:0.8125rem;color:rgba(255,255,255,0.8);margin-top:4px;">Aktiva seniorer</div>
 			</div>
 		</div>
 		<!-- /wp:html -->
