@@ -2127,10 +2127,14 @@ document.addEventListener('DOMContentLoaded', function() {
 add_action('wp_footer', 'sb_jobba_wizard', 10);
 
 
-// ===== WAS-137/166/140: HTTP SECURITY HEADERS =====
+// ===== WAS-140: Ta bort X-Powered-By header så tidigt som möjligt =====
+add_action('init', function() {
+    header_remove('X-Powered-By');
+}, 1);
+
+// ===== WAS-137/166: HTTP SECURITY HEADERS =====
 add_action('send_headers', function() {
     if (!is_admin()) {
-        // WAS-140: Ta bort X-Powered-By (exponerar PHP-version)
         header_remove('X-Powered-By');
         header('X-Frame-Options: SAMEORIGIN');
         header('X-Content-Type-Options: nosniff');
