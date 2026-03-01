@@ -396,3 +396,180 @@ body.page-id-98 main > h1.wp-block-post-title {
     display: none !important;
 }
 
+
+/* ===== UI-POLISH FIXES — WAS-102,103,108,115,116,117,118,119,213-223 ===== */
+
+/* WAS-102: Vit yta ovanför header — spacing-bugg */
+body, .wp-site-blocks {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
+.wp-block-template-part[data-type="core/template-part"] {
+    margin: 0 !important;
+}
+header, .site-header {
+    margin-top: 0 !important;
+}
+
+/* WAS-103: ROT/RUT-badge — dålig kontrast mot hero-bakgrundsbild */
+.wp-block-cover .sb-discount-badge,
+.wp-block-cover .rut-badge,
+.wp-block-cover .rot-badge {
+    background: rgba(255,255,255,0.95) !important;
+    color: #1F2937 !important;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* WAS-108 + WAS-115: Footer läsbarhet — vit text på röd/mörk bakgrund */
+footer, .site-footer, .wp-block-group.is-style-footer {
+    color: #ffffff !important;
+}
+footer a, .site-footer a {
+    color: rgba(255,255,255,0.85) !important;
+}
+footer a:hover, .site-footer a:hover {
+    color: #ffffff !important;
+}
+footer p, footer li, footer span, .site-footer p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+@media (max-width: 768px) {
+    footer p, footer li, .site-footer p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+/* WAS-116: H1 radbrytning och rytm */
+h1 {
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    word-break: break-word;
+    overflow-wrap: break-word;
+}
+@media (max-width: 768px) {
+    h1 {
+        font-size: clamp(28px, 7vw, 48px) !important;
+        line-height: 1.2 !important;
+    }
+}
+
+/* WAS-117: Micro-copy under hero-CTA för liten */
+.sb-micro-copy, .hero-micro-copy, .wp-block-cover .micro-copy {
+    font-size: 13px !important;
+    opacity: 0.9;
+    margin-top: 8px;
+}
+@media (max-width: 768px) {
+    .sb-micro-copy {
+        font-size: 12px !important;
+    }
+}
+
+/* WAS-118: CTA-pilar inkonsekvent — standardisera */
+.wp-block-button__link[class*="primary"]::after,
+.sb-cta-primary::after {
+    content: " →";
+}
+
+/* WAS-119: Services-kort saknar hover-effekt */
+.sb-service-card,
+.services-grid .wp-block-group,
+.service-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+.sb-service-card:hover,
+.services-grid .wp-block-group:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.12);
+}
+
+/* WAS-214: Dubbla floating CTAs — göm duplicat på /hemstadning/ */
+body.page-hemstadning .sb-fab + .sb-fab,
+body.page-hemstadning .floating-cta + .floating-cta {
+    display: none !important;
+}
+
+/* WAS-215: Textkontrast röd H1 på hero-bild */
+.wp-block-cover h1,
+.wp-block-cover h1 span,
+.wp-block-cover h1 .accent {
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+}
+
+/* WAS-216: H1 radbrytning mobil */
+@media (max-width: 480px) {
+    .wp-block-cover h1 {
+        font-size: clamp(26px, 6.5vw, 36px) !important;
+        line-height: 1.2 !important;
+    }
+}
+
+/* WAS-217: Dubbla CTA i hero på mobil */
+@media (max-width: 768px) {
+    .wp-block-cover .wp-block-buttons .wp-block-button:nth-child(n+2) {
+        display: none !important;
+    }
+}
+
+/* WAS-218: Stats-bar trångpackad desktop */
+@media (min-width: 1024px) {
+    .sb-stats-bar, .hero-stats {
+        gap: 40px !important;
+        padding: 16px 0 !important;
+    }
+}
+
+/* WAS-219: CTA-knappar tätt på /hemstadning/ mobil */
+@media (max-width: 768px) {
+    .wp-block-buttons {
+        gap: 12px !important;
+    }
+}
+
+/* WAS-220: Footer-text för liten på mobil */
+@media (max-width: 768px) {
+    footer .wp-block-paragraph,
+    footer p {
+        font-size: 13px;
+        line-height: 1.7;
+    }
+}
+
+/* WAS-221: Hero tag-badges svårläsliga */
+.wp-block-cover .wp-block-tag-cloud a,
+.hero-badges .badge {
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.4);
+    color: #fff;
+    padding: 3px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* WAS-222: Hero-innehåll trångpackat mobil */
+@media (max-width: 768px) {
+    .wp-block-cover__inner-container > * + * {
+        margin-top: 12px !important;
+    }
+    .wp-block-cover {
+        padding: 40px 20px !important;
+    }
+}
+
+/* WAS-223: Footer-kolumner obalanserade */
+@media (min-width: 1024px) {
+    footer .wp-block-columns {
+        align-items: start !important;
+    }
+    footer .wp-block-column {
+        flex-basis: auto !important;
+    }
+    footer .wp-block-column:first-child {
+        flex: 2 !important;
+    }
+}
