@@ -2317,13 +2317,20 @@ add_action('wp_head', function() {
 // ===== WAS-113: Fix wptexturize Alpine.js encoding =====
 add_action('template_redirect', function() {
     ob_start(function($html) {
-        // Fix > operator i Alpine x-text, x-bind, :class, x-show attribut
-        $html = preg_replace('/x-text="([^"]*?)&gt;([^"]*?)"/', 'x-text="$1>$2"', $html);
-        $html = preg_replace('/:class="([^"]*?)&gt;([^"]*?)"/', ':class="$1>$2"', $html);
-        $html = preg_replace('/x-bind:class="([^"]*?)&gt;([^"]*?)"/', 'x-bind:class="$1>$2"', $html);
-        $html = preg_replace('/x-show="([^"]*?)&gt;([^"]*?)"/', 'x-show="$1>$2"', $html);
-        // Fix &#8221; i Alpine attribut (wptexturize " → &#8221;)
-        $html = preg_replace('/(:class|x-bind|x-text|x-show|@click)="([^"]*?)&#8221;/', '$1="$2"', $html);
+        // Lista över Alpine-attribut som behöver fixas
+        $alpine_attrs = ['x-text', 'x-show', 'x-bind', 'x-if', 'x-for', ':class', '@click', '@change', 'x-init', 'x-data'];
+        
+        foreach ($alpine_attrs as $attr) {
+            // Fix &gt; (>) operator
+            $html = preg_replace('/' . preg_quote($attr, '/') . '="([^"]*?)&gt;([^"]*?)"/s', $attr . '="$1>$2"', $html);
+            // Fix &lt; (<) operator
+            $html = preg_replace('/' . preg_quote($attr, '/') . '="([^"]*?)&lt;([^"]*?)"/s', $attr . '="$1<$2"', $html);
+            // Fix &#8221; (curly quote) — wptexturize
+            $html = preg_replace('/' . preg_quote($attr, '/') . '="([^"]*?)&#8221;/s', $attr . '="$1"', $html);
+            // Fix &amp; (&)
+            $html = preg_replace('/' . preg_quote($attr, '/') . '="([^"]*?)&amp;&amp;([^"]*?)"/s', $attr . '="$1&&$2"', $html);
+        }
+        
         return $html;
     });
 }, 1);

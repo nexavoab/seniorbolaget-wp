@@ -201,37 +201,73 @@
     text-align: center;
     margin-bottom: 20px;
 }
+/* Modal header med badge inline */
+.sb-modal-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 16px;
+}
 .sb-modal h3 {
     font-family: Rubik, sans-serif;
     font-size: 1.75rem;
     font-weight: 700;
     color: #1F2937;
-    margin: 0 0 16px;
+    margin: 0;
     text-align: center;
 }
-.sb-modal-badge { /* Renamed from sb-modal-rut for general use */
-    display: inline-block;
-    max-width: 100%;
-    white-space: normal;
-    word-break: break-word;
-    background: #FFF0EC;
-    color: #C91C22;
+.sb-modal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: #dcfce7;
+    color: #166534;
     font-family: Inter, sans-serif;
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 700;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 5px 12px;
+    padding: 4px 10px;
     border-radius: 50px;
-    margin-bottom: 20px;
+    white-space: nowrap;
+}
+.sb-modal-badge.rot-badge {
+    background: #fef3c7;
+    color: #92400e;
 }
 .sb-modal p {
     font-family: Inter, sans-serif;
     font-size: 1rem;
     line-height: 1.75;
     color: #4B5563;
-    margin: 0 0 32px;
+    margin: 0 0 20px;
     text-align: left;
+}
+/* Gröna checkmarks för fördelar */
+.sb-modal-features {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+.sb-modal-features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 8px 0;
+    font-family: Inter, sans-serif;
+    font-size: 0.9375rem;
+    color: #374151;
+    border-bottom: 1px solid #f3f4f6;
+}
+.sb-modal-features li:last-child {
+    border-bottom: none;
+}
+.sb-modal-features li::before {
+    content: "✅";
+    flex-shrink: 0;
+    font-size: 1rem;
 }
 .sb-modal-cta {
     display: block;
@@ -273,32 +309,40 @@ $privat_services = [
     [
         'icon'  => '🧹',
         'name'  => 'Hemstädning',
-        'badge'   => 'RUT-avdrag — du betalar 50%',
-        'desc'  => 'Regelbunden eller engångsstädning, alltid utförd av en erfaren senior. Vi tar med utrustning och rengöringsmedel. Noggrannt, pålitligt och med omtanke — du märker skillnaden direkt. Med RUT-avdraget betalar du bara hälften av arbetskostnaden, vi sköter resten mot Skatteverket.',
+        'badge' => 'RUT 50%',
+        'badge_type' => 'rut',
+        'desc'  => 'Regelbunden eller engångsstädning utförd av erfarna seniorer.',
+        'features' => ['Vi tar med utrustning och rengöringsmedel', 'Noggrannt och pålitligt', 'Skatteverket hanterar avdraget'],
         'slug'  => 'hemstadning',
         'cta_link' => '/intresseanmalan/?service=hemstadning',
     ],
     [
         'icon'  => '🌿',
         'name'  => 'Trädgård',
-        'badge'   => 'RUT-avdrag — du betalar 50%',
-        'desc'  => 'Gräsklippning, häckklippning, ogräsrensning, plantering och snöskottning. En senior med gröna fingrar och känsla för detaljer tar hand om din utomhusmiljö — så du kan njuta av trädgården istället för att arbeta i den. RUT-avdrag gäller.',
+        'badge' => 'RUT 50%',
+        'badge_type' => 'rut',
+        'desc'  => 'Gräsklippning, häckklippning, ogräsrensning och plantering.',
+        'features' => ['Erfarna seniorer med gröna fingrar', 'Säsongsanpassad skötsel', 'Även snöskottning'],
         'slug'  => 'tradgard',
         'cta_link' => '/intresseanmalan/?service=tradgard',
     ],
     [
         'icon'  => '🎨',
         'name'  => 'Målning & tapetsering',
-        'badge'   => 'ROT-avdrag — du betalar 70%',
-        'desc'  => 'Inomhus- och utomhusmålning, tapetsering och ytbehandling. Våra hantverkare har decennier av erfarenhet och gör jobbet rätt från börja — noggrant förarbete, rena linjer och städigt efterarbete. ROT-avdraget ger dig 30% direkt på fakturan.',
+        'badge' => 'ROT 30%',
+        'badge_type' => 'rot',
+        'desc'  => 'Inomhus- och utomhusmålning, tapetsering och ytbehandling.',
+        'features' => ['Noggrant förarbete', 'Erfarna hantverkare', 'Rena linjer och städat efter'],
         'slug'  => 'malning',
         'cta_link' => '/intresseanmalan/?service=malning',
     ],
     [
         'icon'  => '🔨',
         'name'  => 'Snickeri',
-        'badge'   => 'ROT-avdrag — du betalar 70%',
-        'desc'  => 'Från att sätta upp hyllor och fixa dörrhandtag till större snickeriarbeten och renoveringar. Erfarna hantverkare med lång erfarenhet och känsla för detaljer. ROT-avdrag gäller — du betalar 70% av arbetskostnaden.',
+        'badge' => 'ROT 30%',
+        'badge_type' => 'rot',
+        'desc'  => 'Från att sätta upp hyllor till större renoveringar.',
+        'features' => ['Lång erfarenhet', 'Känsla för detaljer', 'Små och stora jobb'],
         'slug'  => 'snickeri',
         'cta_link' => '/intresseanmalan/?service=snickeri',
     ],
@@ -308,32 +352,40 @@ $foretag_services = [
     [
         'icon'  => '🏢',
         'name'  => 'Kontorsservice',
-        'badge'   => 'Företagsavtal',
-        'desc'  => 'Regelbunden städning och service för kontor och arbetsplatser. Erfarna seniorer som är pålitliga, diskreta och noggranna. Avtalas månadsvis.',
+        'badge' => 'Företag',
+        'badge_type' => 'foretag',
+        'desc'  => 'Regelbunden städning och service för kontor.',
+        'features' => ['Pålitliga och diskreta', 'Avtalas månadsvis', 'Erfarna seniorer'],
         'slug'  => 'foretag-kontorsservice',
         'cta_link' => '/foretag/?service=foretag-kontorsservice',
     ],
     [
         'icon'  => '🌳',
         'name'  => 'Fastighetsskötsel',
-        'badge'   => 'Företagsavtal',
-        'desc'  => 'Löpande skötsel av fastigheter, utemiljöer och gemensamma ytor. Vi tar hand om det praktiska så era hyresgäster trivs.',
+        'badge' => 'Företag',
+        'badge_type' => 'foretag',
+        'desc'  => 'Löpande skötsel av fastigheter och utemiljöer.',
+        'features' => ['Gemensamma ytor', 'Era hyresgäster trivs', 'Kontinuerlig service'],
         'slug'  => 'foretag-fastighetsskotsel',
         'cta_link' => '/foretag/?service=foretag-fastighetsskotsel',
     ],
     [
         'icon'  => '🔧',
         'name'  => 'Underhållsservice',
-        'badge'   => 'Företagsavtal',
-        'desc'  => 'Löpande småreparationer, montering och underhåll. En senior hantverkare på plats när ni behöver — utan att anlita en heltidsvakt.',
+        'badge' => 'Företag',
+        'badge_type' => 'foretag',
+        'desc'  => 'Småreparationer, montering och underhåll.',
+        'features' => ['Hantverkare på plats', 'Ingen heltidsanställning', 'Flexibel bemanning'],
         'slug'  => 'foretag-underhallsservice',
         'cta_link' => '/foretag/?service=foretag-underhallsservice',
     ],
     [
         'icon'  => '📦',
         'name'  => 'Lager & logistik',
-        'badge'   => 'Företagsavtal',
-        'desc'  => 'Plockning, packning och enklare lagerarbete utfört av erfarna seniorer med hög noggrannhet och låg frånvaro.',
+        'badge' => 'Företag',
+        'badge_type' => 'foretag',
+        'desc'  => 'Plockning, packning och enklare lagerarbete.',
+        'features' => ['Hög noggrannhet', 'Låg frånvaro', 'Erfarna medarbetare'],
         'slug'  => 'foretag-lager-logistik',
         'cta_link' => '/foretag/?service=foretag-lager-logistik',
     ],
@@ -343,32 +395,40 @@ $brf_services = [
     [
         'icon'  => '🏢',
         'name'  => 'Fastighetsskötsel',
-        'badge'   => 'BRF-avtal',
-        'desc'  => 'Löpande fastighetsskötsel för bostadsrättsföreningar. Vi tar hand om gemensamma ytor, entréer och utemiljöer med noggrannhet och omtanke.',
+        'badge' => 'BRF',
+        'badge_type' => 'brf',
+        'desc'  => 'Löpande fastighetsskötsel för bostadsrättsföreningar.',
+        'features' => ['Gemensamma ytor', 'Entréer och utemiljöer', 'Noggrannhet och omtanke'],
         'slug'  => 'brf-fastighetsskotsel',
         'cta_link' => '/brf/?service=brf-fastighetsskotsel',
     ],
     [
         'icon'  => '🧹',
         'name'  => 'Trappstädning',
-        'badge'   => 'BRF-avtal',
-        'desc'  => 'Regelbunden städning av trapphus, entréer och gemensamma utrymmen. Erfarna seniorer som håller hög standard vecka efter vecka.',
+        'badge' => 'BRF',
+        'badge_type' => 'brf',
+        'desc'  => 'Regelbunden städning av trapphus och entréer.',
+        'features' => ['Hög standard vecka efter vecka', 'Gemensamma utrymmen', 'Erfarna seniorer'],
         'slug'  => 'brf-trappstadning',
         'cta_link' => '/brf/?service=brf-trappstadning',
     ],
     [
         'icon'  => '❄️',
         'name'  => 'Snöröjning',
-        'badge'   => 'BRF-avtal',
-        'desc'  => 'Pålitlig snöröjning och sandning för bostadsrättsföreningar. Vi säkerställer säkra gångvägar och parkeringar under hela vintern.',
+        'badge' => 'BRF',
+        'badge_type' => 'brf',
+        'desc'  => 'Pålitlig snöröjning och sandning.',
+        'features' => ['Säkra gångvägar', 'Parkeringar', 'Hela vintersäsongen'],
         'slug'  => 'brf-snorojning',
         'cta_link' => '/brf/?service=brf-snorojning',
     ],
     [
         'icon'  => '🌿',
         'name'  => 'Trädgårdsskötsel',
-        'badge'   => 'BRF-avtal',
-        'desc'  => 'Skötsel av föreningens grönytor, rabatter och planteringar. Gräsklippning, beskärning och säsongsanpassad trädgårdsvård.',
+        'badge' => 'BRF',
+        'badge_type' => 'brf',
+        'desc'  => 'Skötsel av grönytor, rabatter och planteringar.',
+        'features' => ['Gräsklippning', 'Beskärning', 'Säsongsanpassad vård'],
         'slug'  => 'brf-tradgardsskotsel',
         'cta_link' => '/brf/?service=brf-tradgardsskotsel',
     ],
@@ -445,14 +505,28 @@ foreach ($brf_services as $i => $s) {
 
 <!-- Backdrop + modaler -->
 <div class="sb-modal-backdrop" id="sbModalBackdrop" role="dialog" aria-modal="true" aria-label="Tjänst">
-    <?php foreach ($all_services as $s): ?>
+    <?php foreach ($all_services as $s): 
+        $badge_class = 'sb-modal-badge';
+        if (isset($s['badge_type']) && $s['badge_type'] === 'rot') {
+            $badge_class .= ' rot-badge';
+        }
+    ?>
     <div class="sb-modal" id="<?php echo $s['modal_id']; ?>">
         <button class="sb-modal-close" aria-label="Stäng">&#x2715;</button>
         <div class="sb-modal-content">
             <span class="sb-modal-icon"><?php echo $s['icon']; ?></span>
-            <h3><?php echo esc_html($s['name']); ?></h3>
-            <span class="sb-modal-badge"><?php echo esc_html($s['badge']); ?></span>
+            <div class="sb-modal-header">
+                <h3><?php echo esc_html($s['name']); ?></h3>
+                <span class="<?php echo $badge_class; ?>"><?php echo esc_html($s['badge']); ?></span>
+            </div>
             <p><?php echo esc_html($s['desc']); ?></p>
+            <?php if (!empty($s['features'])): ?>
+            <ul class="sb-modal-features">
+                <?php foreach ($s['features'] as $feature): ?>
+                <li><?php echo esc_html($feature); ?></li>
+                <?php endforeach; ?>
+            </ul>
+            <?php endif; ?>
             <a class="sb-modal-cta" href="<?php echo esc_url($s['cta_link']); ?>">
                 Boka <?php echo esc_html($s['name']); ?> →
             </a>
