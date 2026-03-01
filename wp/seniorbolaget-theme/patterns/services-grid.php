@@ -154,11 +154,10 @@
     max-width: 560px;
     width: 100%;
     max-height: 90vh;
-    overflow-x: hidden;
     overflow-y: auto;
     box-sizing: border-box;
     position: relative;
-    padding: 48px 40px 40px;
+    padding: 48px 40px 52px;
     animation: sb-modal-in 0.3s cubic-bezier(0.16,1,0.3,1) both;
 }
 @keyframes sb-modal-in {
