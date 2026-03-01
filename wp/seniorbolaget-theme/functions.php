@@ -36,6 +36,42 @@ add_action( 'init', function () {
 } );
 
 /**
+ * One-time setup: create Integritetspolicy and Cookiepolicy pages.
+ * Runs once after theme deploy, then marks itself done via option.
+ */
+add_action( 'init', function () {
+	if ( get_option( 'sb_pages_created_v1' ) ) {
+		return;
+	}
+
+	$pages = array(
+		array(
+			'post_title'   => 'Integritetspolicy',
+			'post_name'    => 'integritetspolicy',
+			'post_content' => '<h1>Integritetspolicy</h1><p>Seniorbolaget AB värnar om din personliga integritet.</p><h2>Personuppgiftsansvarig</h2><p>Seniorbolaget AB är personuppgiftsansvarig för behandlingen av dina personuppgifter.</p><h2>Vilka uppgifter samlar vi in?</h2><ul><li>Namn och kontaktuppgifter (vid förfrågan)</li><li>E-postadress (vid nyhetsbrev)</li><li>IP-adress (automatiskt via webbserver)</li></ul><h2>Varför behandlar vi dina uppgifter?</h2><p>Vi behandlar dina personuppgifter för att kunna hantera dina förfrågningar och leverera våra tjänster.</p><h2>Dina rättigheter</h2><p>Enligt GDPR har du rätt att begära tillgång till, rättelse av eller radering av dina personuppgifter. Kontakta oss på info@seniorbolaget.se.</p><h2>Kontakt</h2><p>Seniorbolaget AB<br>E-post: info@seniorbolaget.se</p>',
+			'post_status'  => 'publish',
+			'post_type'    => 'page',
+		),
+		array(
+			'post_title'   => 'Cookiepolicy',
+			'post_name'    => 'cookies',
+			'post_content' => '<h1>Cookiepolicy</h1><p>Seniorbolaget.se använder cookies för att förbättra din upplevelse.</p><h2>Vad är cookies?</h2><p>Cookies är små textfiler som lagras på din enhet när du besöker vår webbplats.</p><h2>Vilka cookies använder vi?</h2><ul><li><strong>Nödvändiga cookies:</strong> Krävs för att webbplatsen ska fungera korrekt.</li><li><strong>Analytiska cookies:</strong> Hjälper oss förstå hur besökare använder webbplatsen (Google Analytics).</li><li><strong>Marknadsföringscookies:</strong> Används för att visa relevanta annonser.</li></ul><h2>Hantera cookies</h2><p>Du kan när som helst ändra dina cookie-inställningar via din webbläsares inställningar eller via vår cookiebanner.</p><h2>Kontakt</h2><p>Frågor? Kontakta oss på info@seniorbolaget.se.</p>',
+			'post_status'  => 'publish',
+			'post_type'    => 'page',
+		),
+	);
+
+	foreach ( $pages as $page ) {
+		$existing = get_page_by_path( $page['post_name'], OBJECT, 'page' );
+		if ( ! $existing ) {
+			wp_insert_post( $page );
+		}
+	}
+
+	update_option( 'sb_pages_created_v1', true );
+} );
+
+/**
  * Theme setup.
  */
 function seniorbolaget_setup() {
@@ -1499,6 +1535,7 @@ function sb_seo_meta() {
     
     $seo = [
         // Huvudsidor (correct slugs from WP database)
+        'hemstadning' => ['Hemstädning med RUT-avdrag — Seniorbolaget', 'Professionell hemstädning utförd av erfarna seniorer. RUT-avdrag ger dig 50% rabatt. Boka idag — svar inom 24h.'], // WAS-145/179/211
         'hemstad' => ['Hemstädning med RUT-avdrag — Seniorbolaget', 'Boka hemstädning av erfarna seniorer 55+. Du betalar bara 50% efter RUT-avdrag. Regelbunden eller engångsstädning. Svar inom 2h.'],
         'tradgard' => ['Trädgårdshjälp av erfarna seniorer — Seniorbolaget', 'Gräsklippning, häck, ogräs och trädgårdsskötsel. Erfarna seniorer 55+ nära dig. RUT-avdrag. Boka idag.'],
         'malning-tapetsering' => ['Målning inomhus & utomhus — Seniorbolaget', 'Professionell målning av erfarna hantverkare 55+. Inomhus och utomhus. ROT-avdrag. Kostnadsfri offert.'],
@@ -1565,7 +1602,15 @@ function sb_schema_markup() {
         'url' => 'https://seniorbolaget.se',
         'telephone' => '+46101751900',
         'email' => 'info@seniorbolaget.se',
-        'areaServed' => 'SE',
+        'address' => [ // WAS-190
+            '@type' => 'PostalAddress',
+            'addressLocality' => 'Sverige',
+            'addressCountry' => 'SE',
+        ],
+        'areaServed' => [
+            '@type' => 'Country',
+            'name' => 'Sweden',
+        ],
         'priceRange' => '$$',
         'hasOfferCatalog' => [
             '@type' => 'OfferCatalog',
@@ -2199,3 +2244,35 @@ nav .is-active > a {
 }
 </style>' . "\n";
 }, 50);
+
+
+// ===== WAS-144/171: Aktivera WordPress core XML-sitemap =====
+add_filter('wp_sitemaps_enabled', '__return_true');
+
+
+// ===== WAS-147/172: robots.txt — lägg till Sitemap-direktiv =====
+add_filter('robots_txt', function($output) {
+    $output .= "\nSitemap: https://seniorbolaget.se/wp-sitemap.xml\n";
+    return $output;
+}, 10, 2);
+
+
+// ===== WAS-138/167: Dölj WordPress-version =====
+remove_action('wp_head', 'wp_generator');
+add_filter('the_generator', '__return_empty_string');
+add_filter('style_loader_src', function($src) {
+    return remove_query_arg('ver', $src);
+}, 9999);
+add_filter('script_loader_src', function($src) {
+    return remove_query_arg('ver', $src);
+}, 9999);
+
+
+// ===== WAS-207/208: Favicon — använd logotyp (media ID 78) =====
+add_action('wp_head', function() {
+    $logo_url = wp_get_attachment_url(78);
+    if ($logo_url) {
+        echo '<link rel="icon" type="image/jpeg" href="' . esc_url($logo_url) . '">' . "\n";
+        echo '<link rel="apple-touch-icon" href="' . esc_url($logo_url) . '">' . "\n";
+    }
+}, 1);
