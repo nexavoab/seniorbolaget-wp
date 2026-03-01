@@ -1346,6 +1346,8 @@ function sb_add_fab() {
 #sb-fab-btn.on-red:hover{box-shadow:0 8px 28px rgba(0,0,0,.28);}
 #sb-fab-btn.on-red svg{stroke:#C91C22;}
 @media(max-width:480px){#sb-fab{bottom:16px;right:16px;}.sb-fab-opt,#sb-fab-btn{font-size:.875rem;padding:11px 18px;}}
+/* Fix WAS-175: Ge mobilt innehåll utrymme under FAB */
+@media(max-width:768px){main,.wp-block-group.alignfull:last-of-type,.entry-content{padding-bottom:80px !important;}}
 </style>
 <div id="sb-fab">
   <div id="sb-fab-menu">
@@ -2125,9 +2127,11 @@ document.addEventListener('DOMContentLoaded', function() {
 add_action('wp_footer', 'sb_jobba_wizard', 10);
 
 
-// ===== WAS-137/166: HTTP SECURITY HEADERS =====
+// ===== WAS-137/166/140: HTTP SECURITY HEADERS =====
 add_action('send_headers', function() {
     if (!is_admin()) {
+        // WAS-140: Ta bort X-Powered-By (exponerar PHP-version)
+        header_remove('X-Powered-By');
         header('X-Frame-Options: SAMEORIGIN');
         header('X-Content-Type-Options: nosniff');
         header('Referrer-Policy: strict-origin-when-cross-origin');
