@@ -1058,3 +1058,38 @@ body.page-om-oss p,
     color: #4B5563;
     max-width: 70ch;
 }
+
+/* ===== WAS-127: Priser — visuell separation mellan prissektioner ===== */
+.sb-pricing-section + .sb-pricing-section,
+.pricing-cards + .pricing-info {
+    border-top: 2px solid #F3F4F6;
+    padding-top: 48px;
+    margin-top: 48px;
+}
+.sb-service-card {
+    border: 1px solid #E5E7EB;
+    border-radius: 12px;
+    padding: 24px;
+    background: #fff;
+}
+.sb-price-card {
+    border: 2px solid #C91C22;
+    border-radius: 12px;
+    padding: 24px;
+    background: #FFF5F5;
+}
+
+/* ===== WAS-124: Jobba med oss — ta bort tomrum efter stadsvalssektion ===== */
+body.page-jobba-med-oss .sb-city-section + .wp-block-spacer,
+body.page-jobba-med-oss .stad-taggar + * {
+    display: none;
+}
+body.page-jobba-med-oss .sb-city-section {
+    margin-bottom: 0 !important;
+    padding-bottom: 32px !important;
+}
+
+/* ===== WAS-161: Priser — standardisera ikonografi till emoji ===== */
+.sb-priser-icon svg {
+    display: none;
+}

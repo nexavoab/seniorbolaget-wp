@@ -328,8 +328,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <td style="font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:700;color:#1F2937;text-align:right;padding:10px 0;">~1 000 kr<span style="font-size:0.75rem;font-weight:400;color:#9CA3AF;margin-left:4px;">efter ROT</span></td>
           </tr>
           <tr>
-            <td style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;padding:10px 0;">Offert för större projekt</td>
-            <td style="font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:700;color:#C91C22;text-align:right;padding:10px 0;">Kostnadsfritt →</td>
+            <td colspan="2" style="padding:12px 0;">
+              <!-- wp:button {"className":"is-style-outline"} -->
+              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/intresseanmalan/" style="display:inline-flex;align-items:center;gap:6px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:700;padding:10px 24px;border-radius:50px;text-decoration:none;">Kostnadsfritt offertförfrågan →</a></div>
+              <!-- /wp:button -->
+            </td>
           </tr>
         </table>
       </div>
@@ -353,8 +356,11 @@ document.addEventListener('DOMContentLoaded', function() {
             <td style="font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:700;color:#1F2937;text-align:right;padding:10px 0;">~8 000 kr<span style="font-size:0.75rem;font-weight:400;color:#9CA3AF;margin-left:4px;">efter ROT</span></td>
           </tr>
           <tr>
-            <td style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;padding:10px 0;">Offert för hela hemmet</td>
-            <td style="font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:700;color:#C91C22;text-align:right;padding:10px 0;">Kostnadsfritt →</td>
+            <td colspan="2" style="padding:12px 0;">
+              <!-- wp:button {"className":"is-style-outline"} -->
+              <div class="wp-block-button is-style-outline"><a class="wp-block-button__link" href="/intresseanmalan/" style="display:inline-flex;align-items:center;gap:6px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:0.9375rem;font-weight:700;padding:10px 24px;border-radius:50px;text-decoration:none;">Kostnadsfritt offertförfrågan →</a></div>
+              <!-- /wp:button -->
+            </td>
           </tr>
         </table>
       </div>

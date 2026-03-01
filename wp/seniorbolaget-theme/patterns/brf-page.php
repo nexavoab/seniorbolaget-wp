@@ -38,6 +38,32 @@
 <!-- STATISTIK-BAR (WAS-159) -->
 <!-- wp:pattern {"slug":"seniorbolaget/stats-band"} /-->
 
+<!-- FÖRDELAR FÖR BRF (WAS-125) -->
+<!-- wp:group {"className":"sb-brf-benefits","style":{"spacing":{"padding":{"top":"48px","bottom":"48px"}}}} -->
+<div class="wp-block-group sb-brf-benefits" style="padding-top:48px;padding-bottom:48px;">
+<!-- wp:heading {"level":2,"textAlign":"center"} -->
+<h2 class="wp-block-heading has-text-align-center">Varför välja Seniorbolaget för er BRF?</h2>
+<!-- /wp:heading -->
+<!-- wp:columns {"className":"sb-benefits-grid"} -->
+<div class="wp-block-columns sb-benefits-grid">
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">✅ Pålitliga seniorer</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Erfarna och ansvarstagande medarbetare med lång yrkeserfarenhet.</p><!-- /wp:paragraph -->
+</div><!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">📋 Flexibel fakturering</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Faktura direkt till föreningen. Enkel hantering utan krångel.</p><!-- /wp:paragraph -->
+</div><!-- /wp:column -->
+<!-- wp:column -->
+<div class="wp-block-column">
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">🔧 Alla tjänster samlat</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Städ, trädgård, snickeri och fastighetsskötsel — ett ställe, ett avtal.</p><!-- /wp:paragraph -->
+</div><!-- /wp:column -->
+</div><!-- /wp:columns -->
+</div><!-- /wp:group -->
+
 <!-- TJÄNSTER (4 kort) -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FAFAF8;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">

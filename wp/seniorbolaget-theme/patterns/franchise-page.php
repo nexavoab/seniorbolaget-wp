@@ -80,6 +80,30 @@ body.page-id-98 main > h1.wp-block-post-title {
 <!-- /wp:cover -->
 
 
+<!-- USP-SEKTION EFTER HERO (WAS-128) -->
+<!-- wp:group {"className":"sb-franchise-usp","align":"full","style":{"color":{"background":"#F9FAFB"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group sb-franchise-usp alignfull" style="background-color:#F9FAFB;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px);">
+<!-- wp:heading {"level":2,"textAlign":"center","style":{"typography":{"fontWeight":"700","fontSize":"2rem"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
+<h2 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:2rem;font-weight:700;margin-bottom:3rem">Varför bli franchisetagare hos Seniorbolaget?</h2>
+<!-- /wp:heading -->
+<!-- wp:columns -->
+<div class="wp-block-columns">
+<!-- wp:column --><div class="wp-block-column">
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">🏪 Beprövat koncept</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Etablerat varumärke med hundratals nöjda kunder och dokumenterade processer.</p><!-- /wp:paragraph -->
+</div><!-- /wp:column -->
+<!-- wp:column --><div class="wp-block-column">
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">📈 Växande marknad</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Sveriges åldrande befolkning skapar ökad efterfrågan på hushållsnära tjänster.</p><!-- /wp:paragraph -->
+</div><!-- /wp:column -->
+<!-- wp:column --><div class="wp-block-column">
+<!-- wp:heading {"level":3} --><h3 class="wp-block-heading">🤝 Fullt stöd</h3><!-- /wp:heading -->
+<!-- wp:paragraph --><p>Utbildning, marknadsföring och löpande support från Seniorbolagets team.</p><!-- /wp:paragraph -->
+</div><!-- /wp:column -->
+</div><!-- /wp:columns -->
+</div><!-- /wp:group -->
+
+
 <!-- INTÄKTSPOTENTIAL SECTION (NYTT) -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#C91C22"},"spacing":{"padding":{"top":"60px","bottom":"60px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#C91C22;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:60px;padding-left:clamp(24px, 5vw, 80px)">
