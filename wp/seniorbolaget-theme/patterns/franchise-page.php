@@ -33,7 +33,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 <div class="wp-block-cover alignfull" style="min-height:580px;padding-top:80px;padding-bottom:80px;padding-left:0;padding-right:0;">
 	<span aria-hidden="true" class="wp-block-cover__background has-background-dim" style="background:linear-gradient(105deg,rgba(31,41,55,0.75) 0%,rgba(31,41,55,0.45) 100%);"></span>
 	<img class="wp-block-cover__image-background wp-image-54" alt="Bli franchisetagare" src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/cta-image.png" data-object-fit="cover" style="object-position:center;"/>
-	<div class="wp-block-cover__inner-container" style="max-width:760px;padding:0 clamp(24px,6vw,120px);">
+	<div class="wp-block-cover__inner-container" style="max-width:760px;padding:0 clamp(24px,6vw,120px);text-align:left;">
 
 		<!-- wp:html -->
 		<div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:20px;font-family:Inter,sans-serif;font-size:0.875rem;color:#fff;">
