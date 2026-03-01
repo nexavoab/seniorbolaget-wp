@@ -39,6 +39,7 @@ header.wp-block-template-part {
     position: sticky;
     top: 0;
     z-index: 100;
+    -webkit-backdrop-filter: blur(8px);
     backdrop-filter: blur(8px);
     background: rgba(255,255,255,0.95) !important;
     box-shadow: 0 1px 12px rgba(0,0,0,0.06);
@@ -104,6 +105,7 @@ p, li, td, label, input, select, textarea {
         z-index: 999;
         padding: 12px 20px;
         background: rgba(255,255,255,0.97);
+        -webkit-backdrop-filter: blur(8px);
         backdrop-filter: blur(8px);
         box-shadow: 0 -2px 20px rgba(0,0,0,0.1);
         text-align: center;

@@ -1438,15 +1438,7 @@ add_action('wp_footer', 'sb_global_button_animation', 99);
 
 
 // ===== FIX WPTEXTURIZE MANGLING ALPINE.JS ATTRIBUTES =====
-// Block themes don't use the_content for template output — use output buffering
-add_action('template_redirect', function() {
-    ob_start(function($html) {
-        // Restore &#8221; (right double quote) after } in Alpine :class bindings
-        $html = preg_replace('/}&#8221;/', '}"', $html);
-        $html = preg_replace('/}&#8220;/', '}"', $html);
-        return $html;
-    });
-});
+// Moved to WAS-200 template_redirect ob_start (combined with lazy loading)
 
 
 // ===== WAS-82: Stadssidor mobil overflow fix =====
@@ -1491,6 +1483,13 @@ function sb_seo_meta() {
         echo '<meta property="og:description" content="Boka hemstädning, trädgård, snickeri och målning av erfarna seniorer. RUT-avdrag direkt. Svar inom 2h. Verifierade franchisetagare nära dig.">' . "\n";
         echo '<meta property="og:type" content="website">' . "\n";
         echo '<meta name="robots" content="index, follow">' . "\n";
+        // WAS-188: og:image på startsidan (hero_main, media ID 10)
+        $hero_url = wp_get_attachment_url(10);
+        if ($hero_url) {
+            echo '<meta property="og:image" content="' . esc_url($hero_url) . '" />' . "\n";
+            echo '<meta property="og:image:width" content="1200" />' . "\n";
+            echo '<meta property="og:image:height" content="630" />' . "\n";
+        }
         return;
     }
     
@@ -2079,3 +2078,124 @@ document.addEventListener('DOMContentLoaded', function() {
     <?php
 }
 add_action('wp_footer', 'sb_jobba_wizard', 10);
+
+
+// ===== WAS-137/166: HTTP SECURITY HEADERS =====
+add_action('send_headers', function() {
+    if (!is_admin()) {
+        header('X-Frame-Options: SAMEORIGIN');
+        header('X-Content-Type-Options: nosniff');
+        header('Referrer-Policy: strict-origin-when-cross-origin');
+        header('Permissions-Policy: camera=(), microphone=(), geolocation=()');
+        // CSP — permissiv för nu (stramas åt successivt)
+        header("Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:");
+    }
+});
+
+
+// ===== WAS-198: DEFER JAVASCRIPT =====
+add_filter('script_loader_tag', function($tag, $handle, $src) {
+    // Defer alla scripts utom kritiska
+    $no_defer = ['jquery', 'jquery-core', 'jquery-migrate'];
+    if (!in_array($handle, $no_defer) && !is_admin()) {
+        // Undvik att dubbeldefera (t.ex. alpinejs som redan har defer)
+        if (strpos($tag, ' defer') === false) {
+            return str_replace(' src=', ' defer src=', $tag);
+        }
+    }
+    return $tag;
+}, 10, 3);
+
+
+// ===== WAS-200: LAZY LOADING PÅ BILDER =====
+add_filter('wp_lazy_loading_enabled', '__return_true');
+
+// Lägg till loading=lazy på alla img-taggar via output buffer
+add_action('template_redirect', function() {
+    ob_start(function($html) {
+        // Återställ Alpine.js-attribut (befintlig fix)
+        $html = preg_replace('/}&#8221;/', '}"', $html);
+        $html = preg_replace('/}&#8220;/', '}"', $html);
+        // Lazy loading — lägg till på bilder som saknar loading-attribut
+        $html = preg_replace(
+            '/<img(?![^>]*loading=)([^>]*?)>/i',
+            '<img loading="lazy"$1>',
+            $html
+        );
+        return $html;
+    });
+});
+
+
+// ===== WAS-201: GOOGLE FONTS — preconnect + dns-prefetch =====
+// Fonten laddas via wp_enqueue_style (extern URL) — lägg till preconnect för bättre prestanda
+add_action('wp_head', function() {
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>' . "\n";
+    echo '<link rel="dns-prefetch" href="https://fonts.googleapis.com">' . "\n";
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+}, 1);
+
+
+// ===== WAS-202: BACK-TO-TOP KNAPP =====
+add_action('wp_footer', function() {
+    ?>
+    <button id="sb-back-to-top" aria-label="Tillbaka till toppen" style="
+        position: fixed;
+        bottom: 90px;
+        right: 20px;
+        width: 44px;
+        height: 44px;
+        border-radius: 50%;
+        background: #C91C22;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 10000;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    ">↑</button>
+    <script>
+    (function() {
+        var btn = document.getElementById('sb-back-to-top');
+        window.addEventListener('scroll', function() {
+            btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
+        }, {passive: true});
+        btn.addEventListener('click', function() {
+            window.scrollTo({top: 0, behavior: 'smooth'});
+        });
+    })();
+    </script>
+    <?php
+}, 101);
+
+
+// ===== WAS-203: AKTIV MENYMARKERING =====
+add_filter('nav_menu_css_class', function($classes, $item, $args, $depth) {
+    if ($item->current || $item->current_item_ancestor || $item->current_item_parent) {
+        $classes[] = 'is-active';
+    }
+    return $classes;
+}, 10, 4);
+
+add_filter('nav_menu_link_attributes', function($atts, $item, $args, $depth) {
+    if ($item->current) {
+        $atts['aria-current'] = 'page';
+    }
+    return $atts;
+}, 10, 4);
+
+// CSS för aktiv menymarkering
+add_action('wp_head', function() {
+    echo '<style>
+/* WAS-203: Aktiv menymarkering */
+.wp-block-navigation-item.is-active > a,
+.wp-block-navigation-item[aria-current="page"] > a,
+nav .is-active > a {
+    color: #C91C22 !important;
+    font-weight: 600;
+}
+</style>' . "\n";
+}, 50);
