@@ -907,3 +907,58 @@ body.page-slug-intresse-anmalan #sb-fab,
     display: flex !important;
     z-index: 99999 !important;
 }
+
+/* ===== WAS-181: Tablet — hero-bild beskärs fel (ansikte kapas) ===== */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .wp-block-cover img,
+    .wp-block-cover .wp-block-cover__image-background {
+        object-position: center 20% !important;
+    }
+    .sb-hero-section img {
+        object-position: center top !important;
+    }
+}
+
+/* ===== WAS-206: Breadcrumbs på undersidor ===== */
+.sb-breadcrumbs {
+    padding: 8px 24px;
+    background: #F9FAFB;
+    border-bottom: 1px solid #E5E7EB;
+    font-size: 13px;
+    color: #6B7280;
+}
+.sb-breadcrumbs ol {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.sb-breadcrumbs a {
+    color: #C91C22;
+    text-decoration: none;
+}
+.sb-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+.sb-breadcrumbs .separator {
+    color: #D1D5DB;
+}
+
+/* ===== WAS-224: Hamburger-meny — visuell indikation för undersidor ===== */
+.wp-block-navigation-item.has-child > a::after,
+.wp-block-navigation-item[class*="has-child"] > a::after {
+    content: " ▾";
+    font-size: 10px;
+    opacity: 0.7;
+}
+@media (max-width: 768px) {
+    .wp-block-navigation__submenu-container {
+        padding-left: 16px;
+        border-left: 2px solid #C91C22;
+        margin-top: 4px;
+    }
+}

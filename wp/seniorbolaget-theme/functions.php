@@ -2340,3 +2340,131 @@ add_action('init', function() {
         }
     }
 }, 1);
+
+
+// ===== WAS-130: Sticky header-CTA vid scroll saknas på mobil =====
+add_action('wp_footer', function() {
+    ?>
+    <style>
+    @media (max-width: 768px) {
+        #sb-sticky-header-cta {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: #fff;
+            padding: 8px 16px;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            z-index: 9998;
+            border-bottom: 1px solid #E5E7EB;
+        }
+        #sb-sticky-header-cta.visible {
+            display: flex;
+        }
+        #sb-sticky-header-cta .logo {
+            font-size: 14px;
+            font-weight: 700;
+            color: #1F2937;
+        }
+        #sb-sticky-header-cta .cta-btn {
+            background: #C91C22;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            text-decoration: none;
+            white-space: nowrap;
+        }
+    }
+    </style>
+    <div id="sb-sticky-header-cta">
+        <span class="logo">Seniorbolaget</span>
+        <a href="/intresseanmalan/" class="cta-btn">Boka hjälp &rarr;</a>
+    </div>
+    <script>
+    (function() {
+        var bar = document.getElementById('sb-sticky-header-cta');
+        if (!bar) return;
+        var hero = document.querySelector('.wp-block-cover, .sb-hero-section');
+        window.addEventListener('scroll', function() {
+            if (hero && window.scrollY > hero.offsetHeight) {
+                bar.classList.add('visible');
+            } else {
+                bar.classList.remove('visible');
+            }
+        }, {passive: true});
+    })();
+    </script>
+    <?php
+}, 25);
+
+
+// ===== WAS-206: Breadcrumbs på undersidor =====
+add_action('wp_body_open', function() {
+    if (is_front_page() || is_home()) return;
+
+    $breadcrumbs  = '<nav class="sb-breadcrumbs" aria-label="Brödsmulor">';
+    $breadcrumbs .= '<ol itemscope itemtype="https://schema.org/BreadcrumbList">';
+    $breadcrumbs .= '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">';
+    $breadcrumbs .= '<a itemprop="item" href="' . esc_url(home_url()) . '"><span itemprop="name">Hem</span></a>';
+    $breadcrumbs .= '<meta itemprop="position" content="1" />';
+    $breadcrumbs .= '</li>';
+
+    if (!is_front_page()) {
+        $breadcrumbs .= '<li class="separator" aria-hidden="true">&rsaquo;</li>';
+        $breadcrumbs .= '<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">';
+        $breadcrumbs .= '<span itemprop="name">' . esc_html(get_the_title()) . '</span>';
+        $breadcrumbs .= '<meta itemprop="position" content="2" />';
+        $breadcrumbs .= '</li>';
+    }
+
+    $breadcrumbs .= '</ol></nav>';
+    echo $breadcrumbs;
+});
+
+
+// ===== WAS-142: WordPress REST API — begränsa exponering =====
+add_filter('rest_authentication_errors', function($result) {
+    if (!is_user_logged_in()) {
+        $request_uri = $_SERVER['REQUEST_URI'] ?? '';
+        $sensitive_endpoints = ['/wp-json/wp/v2/users', '/wp-json/wp/v2/settings'];
+        foreach ($sensitive_endpoints as $endpoint) {
+            if (strpos($request_uri, $endpoint) !== false) {
+                return new WP_Error('rest_not_logged_in', 'Du måste vara inloggad.', ['status' => 401]);
+            }
+        }
+    }
+    return $result;
+});
+
+
+// ===== WAS-146/194/199: WebP-bilder — serva WebP om tillgängligt =====
+add_action('init', function() {
+    if (isset($_SERVER['HTTP_ACCEPT']) && strpos($_SERVER['HTTP_ACCEPT'], 'image/webp') !== false) {
+        add_filter('wp_get_attachment_url', function($url) {
+            $webp_url  = preg_replace('/\.(jpe?g|png)$/i', '.webp', $url);
+            $webp_path = str_replace(WP_CONTENT_URL, WP_CONTENT_DIR, $webp_url);
+            if (file_exists($webp_path)) {
+                return $webp_url;
+            }
+            return $url;
+        });
+    }
+});
+
+
+// ===== WAS-195: srcset — säkerställ content_width =====
+add_action('after_setup_theme', function() {
+    global $content_width;
+    if (!isset($content_width)) {
+        $content_width = 1200;
+    }
+}, 5);
+
+add_filter('wp_calculate_image_sizes', function($sizes, $size, $image_src, $image_meta, $attachment_id) {
+    return $sizes; // WordPress hanterar srcset automatiskt
+}, 10, 5);
