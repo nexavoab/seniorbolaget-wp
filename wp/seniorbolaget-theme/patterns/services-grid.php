@@ -113,13 +113,16 @@
     border: none;
     background: transparent;
     transition: 0.2s ease;
-    color: #6B7280;
+    color: #4B5563;
+    font-weight: 500;
     white-space: nowrap; /* Prevent wrapping for tab names */
     position: relative;
     top: 1px; /* Align border with container's bottom border */
 }
 .sb-tab-button:hover {
     color: #1F2937;
+    background: #F3F4F6;
+    border-radius: 6px 6px 0 0;
 }
 .sb-tab-button.active {
     background: #ffffff;
@@ -229,12 +232,12 @@
     padding: 16px 24px;
     border-radius: 50px;
     text-decoration: none;
-    box-shadow: 0 4px 20px rgba(201,28,34,0.35);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     transition: transform 0.2s, box-shadow 0.2s;
 }
 .sb-modal-cta:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 28px rgba(201,28,34,0.45);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.20);
 }
 .sb-modal-micro {
     font-family: Inter, sans-serif;
