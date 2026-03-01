@@ -165,8 +165,9 @@
 .sb-modal-content {
     overflow-y: auto;
     overflow-x: hidden;
-    padding: 48px 40px 56px;
+    padding: 48px 40px 48px;
     width: 100%;
+    min-width: 0;
     box-sizing: border-box;
 }
 @keyframes sb-modal-in {
@@ -235,13 +236,14 @@
 .sb-modal-cta {
     display: block;
     width: 100%;
+    box-sizing: border-box;
     background: #C91C22;
     color: #fff;
     font-family: Rubik, sans-serif;
     font-size: 1.0625rem;
     font-weight: 700;
     text-align: center;
-    padding: 16px 24px;
+    padding: 15px 20px;
     border-radius: 50px;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.15);
