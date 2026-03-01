@@ -1279,6 +1279,9 @@ function sb_add_fab() {
 #sb-fab-btn{display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1rem;font-weight:700;padding:14px 26px;border-radius:50px;border:none;cursor:pointer;box-shadow:0 4px 24px rgba(201,28,34,.5);transition:transform .15s,box-shadow .15s,background .2s;}
 #sb-fab-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(201,28,34,.55);}
 #sb-fab-btn.open{background:#1F2937;box-shadow:0 4px 20px rgba(0,0,0,.3);}
+#sb-fab-btn.on-red{background:#fff;color:#C91C22;box-shadow:0 4px 24px rgba(0,0,0,.2);}
+#sb-fab-btn.on-red:hover{box-shadow:0 8px 28px rgba(0,0,0,.28);}
+#sb-fab-btn.on-red svg{stroke:#C91C22;}
 @media(max-width:480px){#sb-fab{bottom:16px;right:16px;}.sb-fab-opt,#sb-fab-btn{font-size:.875rem;padding:11px 18px;}}
 </style>
 <div id="sb-fab">
@@ -1304,6 +1307,35 @@ function sb_add_fab() {
     b.innerHTML=o?CLOSE_SVG:OPEN_SVG;
   }
   window.sbFab=sbFab;
+
+  // Byt FAB till vit när den rullar över röda sektioner
+  function sbFabColorCheck(){
+    var btn=document.getElementById("sb-fab-btn");
+    if(!btn||btn.classList.contains("open"))return;
+    var r=btn.getBoundingClientRect();
+    var cx=r.left+r.width/2, cy=r.top+r.height/2;
+    btn.style.visibility="hidden";
+    var el=document.elementFromPoint(cx,cy);
+    btn.style.visibility="";
+    if(!el)return;
+    var cur=el;
+    while(cur&&cur!==document.body){
+      var bg=window.getComputedStyle(cur).backgroundColor;
+      if(bg&&bg!=="rgba(0, 0, 0, 0)"&&bg!=="transparent"){
+        var m=bg.match(/\d+/g);
+        var isRed=m&&parseInt(m[0])>160&&parseInt(m[1])<60&&parseInt(m[2])<60;
+        btn.classList.toggle("on-red",!!isRed);
+        return;
+      }
+      cur=cur.parentElement;
+    }
+    btn.classList.remove("on-red");
+  }
+  window.addEventListener("scroll",sbFabColorCheck,{passive:true});
+  window.addEventListener("resize",sbFabColorCheck,{passive:true});
+  document.addEventListener("DOMContentLoaded",sbFabColorCheck);
+  setTimeout(sbFabColorCheck,300);
+
   document.addEventListener("click",function(e){
     var fab=document.getElementById("sb-fab");
     if(fab&&!fab.contains(e.target)){
