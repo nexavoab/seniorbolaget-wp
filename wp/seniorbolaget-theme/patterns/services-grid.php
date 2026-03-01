@@ -154,10 +154,11 @@
     max-width: 560px;
     width: 100%;
     max-height: 90vh;
+    overflow-x: hidden;
     overflow-y: auto;
     box-sizing: border-box;
     position: relative;
-    padding: 48px 40px 52px;
+    padding: 48px 40px 56px;
     animation: sb-modal-in 0.3s cubic-bezier(0.16,1,0.3,1) both;
 }
 @keyframes sb-modal-in {
@@ -200,6 +201,9 @@
 }
 .sb-modal-badge { /* Renamed from sb-modal-rut for general use */
     display: inline-block;
+    max-width: 100%;
+    white-space: normal;
+    word-break: break-word;
     background: #FFF0EC;
     color: #C91C22;
     font-family: Inter, sans-serif;
