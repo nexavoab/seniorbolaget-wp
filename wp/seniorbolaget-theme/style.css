@@ -962,3 +962,99 @@ body.page-slug-intresse-anmalan #sb-fab,
         margin-top: 4px;
     }
 }
+
+/* ===== WAS-101 + WAS-104: FAB-duplikat guard — säkerställ max 1 FAB synlig ===== */
+.sb-fab ~ .sb-fab,
+#sb-fab ~ #sb-fab,
+.floating-cta + .floating-cta {
+    display: none !important;
+}
+
+/* ===== WAS-107: BRF hero — textkontrast och overlay ===== */
+body.page-brf .wp-block-cover h1,
+body.page-brf .wp-block-cover h2,
+body.page-brf .wp-block-cover p {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+body.page-brf .wp-block-cover::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to right, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 100%);
+    z-index: 1;
+}
+body.page-brf .wp-block-cover__inner-container {
+    position: relative;
+    z-index: 2;
+}
+/* BRF hero är en vanlig div med background-image, inte wp-block-cover */
+body.page-brf [style*="background-image"] h1,
+body.page-brf [style*="background-image"] h2,
+body.page-brf [style*="background-image"] p {
+    text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+/* ===== WAS-109: Trust-bar CSS — förtroendesignaler i hero ===== */
+.sb-trust-bar {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+.sb-trust-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 13px;
+    color: rgba(255,255,255,0.9);
+    font-weight: 500;
+}
+
+/* ===== WAS-110: Priser/fliklayout — mobil tabs ===== */
+@media (max-width: 768px) {
+    .sb-tabs,
+    .sb-tab-nav,
+    [style*="display:flex"][style*="justify-content:center"][style*="gap:8px"]:has(.sb-tab) {
+        display: flex !important;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        white-space: nowrap;
+        gap: 8px;
+        padding-bottom: 4px;
+        justify-content: flex-start !important;
+    }
+    .sb-tab-btn,
+    .sb-tab {
+        flex-shrink: 0;
+        padding: 8px 16px !important;
+        white-space: nowrap;
+    }
+    .sb-tab-content {
+        padding: 16px !important;
+    }
+}
+
+/* ===== WAS-121: Om oss — typografisk hierarki ===== */
+body.page-om-oss h2,
+.page-template-om-oss h2 {
+    font-size: clamp(24px, 3vw, 36px);
+    font-weight: 700;
+    color: #1F2937;
+    margin-bottom: 16px;
+    line-height: 1.2;
+}
+body.page-om-oss h3,
+.page-template-om-oss h3 {
+    font-size: clamp(18px, 2vw, 24px);
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 12px;
+}
+body.page-om-oss p,
+.page-template-om-oss p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #4B5563;
+    max-width: 70ch;
+}
