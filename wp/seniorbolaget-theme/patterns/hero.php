@@ -43,8 +43,11 @@
     </div>
 
     <!-- Micro-copy -->
-    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.75);margin:0 0 16px;">
-      ✓ Svar inom 24h &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT-avdrag direkt på fakturan
+    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.75);margin:0 0 8px;">
+      ✓ Vi ringer inom 4h på vardagar &nbsp;·&nbsp; ✓ Inga bindningstider &nbsp;·&nbsp; ✓ RUT-avdrag direkt på fakturan
+    </p>
+    <p style="font-family:Inter,sans-serif;font-size:0.8125rem;color:rgba(255,255,255,0.6);margin:0 0 16px;">
+      Städning från 149 kr/tim &nbsp;·&nbsp; <a href="/kontakt/" style="color:rgba(255,255,255,0.7);text-decoration:underline;">Inte nöjd? Vi löser det.</a>
     </p>
 
     <!-- Stats -->

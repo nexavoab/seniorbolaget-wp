@@ -48,10 +48,10 @@
 			<!-- wp:group {"style":{"spacing":{"padding":{"all":"var:preset|spacing|md"}}},"layout":{"type":"constrained"}} -->
 			<div class="wp-block-group" style="padding:2rem">
 				<!-- wp:heading {"level":3,"style":{"typography":{"fontWeight":"700","fontSize":"56px","lineHeight":"1"},"color":{"text":"#ffffff"}}} -->
-				<h3 class="wp-block-heading" style="color:#ffffff;font-size:56px;font-weight:700;line-height:1">5+</h3>
+				<h3 class="wp-block-heading" style="color:#ffffff;font-size:56px;font-weight:700;line-height:1">2008</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"typography":{"fontWeight":"500","fontSize":"var:preset|font-size|lg"},"color":{"text":"rgba(255,255,255,0.85)"}}} -->
-				<p style="color:rgba(255,255,255,0.85);font-size:var(--wp--preset--font-size--lg);font-weight:500">År av erfarenhet</p>
+				<p style="color:rgba(255,255,255,0.85);font-size:var(--wp--preset--font-size--lg);font-weight:500">Sedan 2008</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
