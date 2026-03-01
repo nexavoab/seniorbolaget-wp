@@ -19,7 +19,7 @@
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 20px;">Vi ger seniorer ett meningsfullt arbete</h1>
     <p style="font-family:Inter,sans-serif;font-size:clamp(1rem,1.5vw,1.25rem);color:rgba(255,255,255,0.9);line-height:1.7;margin:0 0 32px;max-width:560px;">Seniorbolaget grundades 2008 med en enkel idé — ge seniorer meningsfullt arbete och kunder trygg hjälp</p>
     <div style="margin-bottom:32px;">
-      <a href="/bli-franchisetagare" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Hör av dig →</a>
+      <a href="/privat" style="display:inline-flex;align-items:center;gap:8px;background:#C91C22;color:#fff;font-family:Rubik,sans-serif;font-size:1.0625rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 20px rgba(201,28,34,0.4);">Se våra tjänster →</a>
     </div>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
       <span style="background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);color:#fff;font-family:Inter,sans-serif;font-size:0.8125rem;padding:6px 14px;border-radius:50px;">✓ Grundat 2008</span>

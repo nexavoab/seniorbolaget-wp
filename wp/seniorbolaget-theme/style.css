@@ -573,3 +573,261 @@ body.page-hemstadning .floating-cta + .floating-cta {
         flex: 2 !important;
     }
 }
+
+
+/* ===== WAS-111: Popup/Modal redesign — badge inline + gröna checks ===== */
+.sb-modal-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+.sb-modal-features li,
+.sb-modal-checklist li {
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+.sb-modal-features li::before,
+.sb-modal-checklist li::before {
+    content: "✅";
+    flex-shrink: 0;
+    font-size: 14px;
+}
+
+/* ===== WAS-129: Snickeri + Trädgård — header/footer mobil-fix ===== */
+@media (max-width: 768px) {
+    body.page-snickeri header,
+    body.page-tradgard header,
+    body.page-snickeri footer,
+    body.page-tradgard footer {
+        display: block !important;
+        width: 100% !important;
+        overflow: visible !important;
+    }
+}
+
+/* ===== WAS-131: Franchise navbar — z-index fix ===== */
+body.page-bli-franchisetagare header,
+body.page-franchise header {
+    position: relative;
+    z-index: 100;
+}
+body.page-bli-franchisetagare .wp-block-cover:first-child {
+    margin-top: -80px;
+    padding-top: 100px;
+}
+
+/* ===== WAS-162: Om-oss stats-sektion — standardiserad design ===== */
+.sb-stats-grid, .stats-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    text-align: center;
+}
+.sb-stats-item .number {
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 700;
+    color: #C91C22;
+    display: block;
+}
+.sb-stats-item .label {
+    font-size: 14px;
+    color: #6B7280;
+    margin-top: 4px;
+}
+@media (max-width: 768px) {
+    .sb-stats-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 24px;
+    }
+}
+
+/* ===== WAS-123: Jobba med oss — stadstaggar scrollbara på mobil ===== */
+@media (max-width: 768px) {
+    .city-tags, .stad-taggar, .sb-city-filter {
+        display: flex !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch !important;
+        scroll-snap-type: x mandatory !important;
+        gap: 8px !important;
+        padding-bottom: 8px !important;
+        white-space: nowrap !important;
+    }
+    .city-tags::-webkit-scrollbar {
+        display: none;
+    }
+    .city-tag, .stad-tag {
+        scroll-snap-align: start;
+        flex-shrink: 0 !important;
+    }
+}
+
+
+/* ============================================================
+   RESPONSIVITETS-FIXES — WAS-176,177,178,180,182,183,184,185,186,187,213
+   ============================================================ */
+
+/* WAS-176: Hero full-width fix */
+.sb-hero-section {
+    width: 100vw !important;
+    max-width: 100vw !important;
+    margin-left: calc(-1 * (100vw - 100%) / 2) !important;
+    box-sizing: border-box;
+}
+
+/* WAS-177 / WAS-213: Tom vit yta — säkra att innehåll alltid är synligt */
+[data-aos], [data-animate], .animate-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Fallback: inga dolda containers */
+.wp-block-group:not([style*="display:none"]):not([style*="display: none"]) {
+    min-height: 0 !important;
+}
+/* Ta bort ev. min-height som skapar tomrum */
+.wp-site-blocks > .wp-block-group:empty,
+.wp-block-group[class*="hero"] + .wp-block-group:empty {
+    display: none !important;
+}
+
+/* WAS-178: Handskrivet skript överlappar USP på mobil */
+@media (max-width: 768px) {
+    .sb-handwriting,
+    .heading-script,
+    [class*="script-heading"],
+    [class*="handwriting"] {
+        font-size: clamp(24px, 6vw, 40px) !important;
+        line-height: 1.2 !important;
+        position: relative !important;
+        z-index: 1;
+    }
+    .sb-usp-bar, .usp-pills {
+        position: relative !important;
+        z-index: 2;
+        margin-top: 8px !important;
+    }
+}
+
+/* WAS-180: Tablet — visa 'Boka hjälp' i nav vid 768px–1024px */
+@media (min-width: 768px) {
+    .sb-cta-desktop,
+    .header-cta,
+    .nav-cta-button {
+        display: inline-flex !important;
+    }
+}
+
+/* WAS-182: Footer saknar padding mot kanterna (mobil + tablet) */
+@media (max-width: 1024px) {
+    footer,
+    .wp-block-template-part footer,
+    .wp-block-group.is-style-footer,
+    .site-footer {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+        box-sizing: border-box;
+    }
+    footer .wp-block-columns {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}
+
+/* WAS-183: Dubbla sticky CTA — göm FAB på desktop (intentions-bar räcker) */
+@media (min-width: 769px) {
+    #sb-fab {
+        display: none !important;
+    }
+}
+/* Säkra att dubbelt floating-CTA aldrig syns */
+.floating-cta + .floating-cta,
+.seniorbolaget-sticky-cta + .seniorbolaget-sticky-cta {
+    display: none !important;
+}
+
+/* WAS-185: RUT-AVDRAG badge text överlappar på desktop */
+.sb-rut-badge, .rut-badge, .rot-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    white-space: nowrap !important;
+    padding: 4px 10px !important;
+    font-size: 13px !important;
+    line-height: 1.4 !important;
+}
+
+/* WAS-184: Standardisera discount badge */
+.sb-discount-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 600;
+    white-space: nowrap;
+    line-height: 1.4;
+}
+.sb-discount-badge--rut {
+    background: #dcfce7;
+    color: #166534;
+}
+.sb-discount-badge--rot {
+    background: #fef3c7;
+    color: #92400e;
+}
+
+/* WAS-186: Priser — Omsorg-kort ensamt på ny rad (auto-fit fix) */
+.sb-pricing-grid,
+.pricing-cards {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 24px !important;
+}
+@media (max-width: 1024px) {
+    .sb-pricing-grid,
+    .pricing-cards {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 768px) {
+    .sb-pricing-grid,
+    .pricing-cards {
+        grid-template-columns: 1fr !important;
+    }
+}
+/* auto-fit minmax(300px,1fr) → max 3 kolumner */
+div[style*="grid-template-columns:repeat(auto-fit,minmax(300px"] {
+    grid-template-columns: repeat(3, 1fr) !important;
+}
+@media (max-width: 960px) {
+    div[style*="grid-template-columns:repeat(auto-fit,minmax(300px"] {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+@media (max-width: 640px) {
+    div[style*="grid-template-columns:repeat(auto-fit,minmax(300px"] {
+        grid-template-columns: 1fr !important;
+    }
+}
+
+/* WAS-187: Footer touchmål för små på mobil */
+@media (max-width: 768px) {
+    footer a,
+    footer button,
+    .footer-link,
+    .site-footer a {
+        min-height: 44px;
+        display: inline-flex !important;
+        align-items: center;
+        font-size: 14px;
+    }
+}

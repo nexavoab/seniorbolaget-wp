@@ -2284,3 +2284,31 @@ add_action('wp_head', function() {
         echo '<link rel="apple-touch-icon" href="' . esc_url($logo_url) . '">' . "\n";
     }
 }, 1);
+
+
+// ===== WAS-113: Fix wptexturize Alpine.js encoding =====
+add_action('template_redirect', function() {
+    ob_start(function($html) {
+        // Fix > operator i Alpine x-text, x-bind, :class, x-show attribut
+        $html = preg_replace('/x-text="([^"]*?)&gt;([^"]*?)"/', 'x-text="$1>$2"', $html);
+        $html = preg_replace('/:class="([^"]*?)&gt;([^"]*?)"/', ':class="$1>$2"', $html);
+        $html = preg_replace('/x-bind:class="([^"]*?)&gt;([^"]*?)"/', 'x-bind:class="$1>$2"', $html);
+        $html = preg_replace('/x-show="([^"]*?)&gt;([^"]*?)"/', 'x-show="$1>$2"', $html);
+        // Fix &#8221; i Alpine attribut (wptexturize " → &#8221;)
+        $html = preg_replace('/(:class|x-bind|x-text|x-show|@click)="([^"]*?)&#8221;/', '$1="$2"', $html);
+        return $html;
+    });
+}, 1);
+
+
+// ===== WAS-139: Blockera direkt åtkomst till känsliga filer =====
+add_action('init', function() {
+    if (isset($_SERVER['REQUEST_URI'])) {
+        $blocked = ['/wp-config.php', '/wp-config.php.bak', '/.env'];
+        $uri = strtolower(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
+        if (in_array($uri, $blocked)) {
+            http_response_code(403);
+            die('Forbidden');
+        }
+    }
+}, 1);
