@@ -2217,42 +2217,6 @@ add_action('wp_head', function() {
 }, 1);
 
 
-// ===== WAS-202: BACK-TO-TOP KNAPP =====
-add_action('wp_footer', function() {
-    ?>
-    <button id="sb-back-to-top" aria-label="Tillbaka till toppen" style="
-        position: fixed;
-        bottom: 90px;
-        right: 20px;
-        width: 44px;
-        height: 44px;
-        border-radius: 50%;
-        background: #C91C22;
-        color: white;
-        border: none;
-        cursor: pointer;
-        font-size: 20px;
-        display: none;
-        align-items: center;
-        justify-content: center;
-        z-index: 10000;
-        box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    ">↑</button>
-    <script>
-    (function() {
-        var btn = document.getElementById('sb-back-to-top');
-        window.addEventListener('scroll', function() {
-            btn.style.display = window.scrollY > 400 ? 'flex' : 'none';
-        }, {passive: true});
-        btn.addEventListener('click', function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        });
-    })();
-    </script>
-    <?php
-}, 101);
-
-
 // ===== WAS-203: AKTIV MENYMARKERING =====
 add_filter('nav_menu_css_class', function($classes, $item, $args, $depth) {
     if ($item->current || $item->current_item_ancestor || $item->current_item_parent) {
@@ -2475,3 +2439,11 @@ add_action('after_setup_theme', function() {
 add_filter('wp_calculate_image_sizes', function($sizes, $size, $image_src, $image_meta, $attachment_id) {
     return $sizes; // WordPress hanterar srcset automatiskt
 }, 10, 5);
+
+
+// ===== WAS-SEO: Block search engine indexing on staging =====
+add_action('send_headers', function() {
+    if (str_contains($_SERVER['HTTP_HOST'] ?? '', 'staging')) {
+        header('X-Robots-Tag: noindex, nofollow');
+    }
+});
