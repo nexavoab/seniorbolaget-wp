@@ -755,12 +755,7 @@ body.page-franchise .wp-site-blocks {
     }
 }
 
-/* WAS-183: Dubbla sticky CTA — göm FAB på desktop (intentions-bar räcker) */
-@media (min-width: 769px) {
-    #sb-fab {
-        display: none !important;
-    }
-}
+/* WAS-183: FAB visas på alla skärmstorlekar */
 /* Säkra att dubbelt floating-CTA aldrig syns */
 .floating-cta + .floating-cta,
 .seniorbolaget-sticky-cta + .seniorbolaget-sticky-cta {
