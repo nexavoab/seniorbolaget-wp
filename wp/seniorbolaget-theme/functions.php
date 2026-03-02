@@ -1377,7 +1377,7 @@ function sb_add_fab() {
 /* Fix WAS-175: Ge mobilt innehåll utrymme under FAB */
 @media(max-width:768px){main,.wp-block-group.alignfull:last-of-type,.entry-content{padding-bottom:80px !important;}}
 </style>
-<div id="sb-fab">
+<div id="sb-fab" style="display:flex!important;position:fixed!important;bottom:24px;right:24px;z-index:99999;flex-direction:column;align-items:flex-end;gap:10px;">
   <div id="sb-fab-menu">
     <a href="/bli-franchisetagare/" class="sb-fab-opt sb-fab-opt-o">🏢 Bli franchisetagare</a>
     <a href="/jobba-med-oss/" class="sb-fab-opt sb-fab-opt-o">👴 Jobba hos oss</a>
