@@ -399,17 +399,21 @@ body.page-id-98 main > h1.wp-block-post-title {
 
 /* ===== UI-POLISH FIXES — WAS-102,103,108,115,116,117,118,119,213-223 ===== */
 
-/* WAS-102: Vit yta ovanför header — spacing-bugg */
+/* WAS-102: Vit yta ovanför header — komplett fix för alla sidor */
 /* OBS: Ta INTE bort padding-top på .wp-site-blocks - den behövs för sticky header (sätts i header.html) */
 html {
     margin-top: 0 !important;
+    padding-top: 0 !important;
 }
 body {
     margin-top: 0 !important;
-    /* Låt padding-top vara kvar på .wp-site-blocks */
+    padding-top: 0 !important;
 }
-.wp-block-template-part[data-type="core/template-part"] {
+/* Nollställ alla template-part margins */
+.wp-block-template-part[data-type="core/template-part"],
+.wp-block-template-part {
     margin: 0 !important;
+    margin-top: 0 !important;
 }
 header.sb-header, .site-header {
     margin-top: 0 !important;
@@ -417,6 +421,14 @@ header.sb-header, .site-header {
 /* Säkerställ att inget skapar gap mellan viewport och header */
 .wp-site-blocks > header:first-child,
 .wp-site-blocks > .wp-block-template-part:first-child {
+    margin-top: 0 !important;
+}
+/* Extra: nollställ wp-site-blocks margin-top men behåll padding */
+.wp-site-blocks {
+    margin-top: 0 !important;
+}
+/* Första child efter header — ingen extra margin */
+.wp-site-blocks > *:nth-child(2) {
     margin-top: 0 !important;
 }
 

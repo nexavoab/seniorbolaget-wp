@@ -366,6 +366,50 @@
 	</div>
 	<!-- /wp:html -->
 
+<!-- FAQPage JSON-LD Schema -->
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vilka tjänster erbjuder ni för privatpersoner?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi erbjuder hemstädning, trädgårdsskötsel, snickeri, målning och andra hantverkstjänster för privatbostäder."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad är RUT- och ROT-avdrag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "RUT-avdrag ger 50% rabatt på hushållstjänster som städning och trädgård. ROT-avdrag ger 50% rabatt på hantverksarbete som målning och snickeri."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur hanterar ni RUT/ROT-avdraget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi drar av det direkt på fakturan så du bara betalar halva priset. Skatteverket hanterar resten automatiskt."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Varför jobbar bara 55+ hos er?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi tror på erfarenhet och livserfarenhet. Våra medarbetare har decenniers yrkeserfarenhet och ger service med omtanke."
+      }
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->
 

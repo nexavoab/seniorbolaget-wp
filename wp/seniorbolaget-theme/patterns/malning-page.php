@@ -380,6 +380,50 @@
   </div>
   <!-- /wp:html -->
 
+<!-- FAQPage JSON-LD Schema -->
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad kostar målning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Med ROT-avdrag betalar du bara 50% av arbetskostnaden. Timpris från 495 kr/timme före avdrag, färg och material tillkommer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vilka målningsarbeten utför ni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Invändig och utvändig målning, tapetsering, fasadmålning, snickerimålning och lackering. Både privatbostäder och företag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hjälper ni med färgval?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, våra erfarna målare ger gärna råd om färgval och ytbehandlingar som passar din bostad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur lång tid tar en målning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ett vanligt rum tar ca 1-2 dagar inklusive spackling och två strykningar. Vi ger alltid en tidsuppskattning innan start."
+      }
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->
 

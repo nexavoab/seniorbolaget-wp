@@ -380,6 +380,50 @@
   </div>
   <!-- /wp:html -->
 
+<!-- FAQPage JSON-LD Schema -->
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad kostar trädgårdsskötsel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Med RUT-avdrag betalar du bara 50% av arbetskostnaden. Timpriser från 395 kr/timme före avdrag beroende på uppgift."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad ingår i trädgårdsskötsel?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Gräsklippning, häckklippning, ogräsrensning, beskärning, plantering och vårröjning. Vi anpassar efter säsong och dina behov."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur bokar jag trädgårdshjälp?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fyll i intresseanmälan på sajten så kontaktar vi dig inom 24 timmar för att planera arbetet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Tar ni med eget material?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi tar med de verktyg som behövs. Planteringsmaterial och jord kan vi hjälpa till att ordna mot kostnad."
+      }
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->
 

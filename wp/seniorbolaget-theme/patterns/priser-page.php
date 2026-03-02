@@ -75,11 +75,13 @@
     <h2 style="font-family:Rubik,sans-serif;font-size:2rem;font-weight:700;color:#1F2937;text-align:center;margin:0 0 16px;">Våra tjänster</h2>
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#4B5563;text-align:center;margin:0 0 40px;">Välj kundtyp för att se relevanta tjänster</p>
     
-    <!-- Tabs -->
-    <div style="display:flex;justify-content:center;gap:8px;margin-bottom:48px;">
-      <button data-tab="privat" class="sb-tab sb-tab-active" style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;padding:12px 32px;border-radius:50px;border:2px solid #C91C22;cursor:pointer;transition:all 0.3s ease;">Privat</button>
-      <button data-tab="foretag" class="sb-tab" style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;padding:12px 32px;border-radius:50px;border:2px solid #e5e7eb;cursor:pointer;transition:all 0.3s ease;">Företag</button>
-      <button data-tab="brf" class="sb-tab" style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;padding:12px 32px;border-radius:50px;border:2px solid #e5e7eb;cursor:pointer;transition:all 0.3s ease;">BRF</button>
+    <!-- Tabs — WAS-102: Snyggare design med card-känsla -->
+    <div style="display:flex;justify-content:center;margin-bottom:48px;">
+      <div class="sb-price-tabs">
+        <button data-tab="privat" class="sb-tab sb-tab-active">Privat</button>
+        <button data-tab="foretag" class="sb-tab">Företag</button>
+        <button data-tab="brf" class="sb-tab">BRF</button>
+      </div>
     </div>
     
     <!-- Tab: Privat -->
@@ -212,18 +214,40 @@
 </div>
 
 <style>
-.sb-tab {
+/* WAS-102: Snyggare tabbar — header-inspirerad card-känsla */
+.sb-price-tabs {
+  display: inline-flex;
   background: #fff;
+  border-radius: 12px;
+  padding: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+  gap: 4px;
+}
+.sb-tab {
+  padding: 10px 28px;
+  border-radius: 8px;
+  font-family: Rubik, sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
   color: #6B7280;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease;
 }
 .sb-tab:hover {
-  color: #C91C22;
-  border-color: #C91C22;
+  background: #F3F4F6;
+  color: #1F2937;
 }
-.sb-tab-active {
-  background: #C91C22 !important;
-  color: #fff !important;
-  border-color: #C91C22 !important;
+.sb-tab-active,
+.sb-tab.sb-tab-active {
+  background: #fff !important;
+  color: #1F2937 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+  border-bottom: 2px solid #C91C22 !important;
+  border-color: transparent !important;
 }
 .sb-tab-content {
   display: none;

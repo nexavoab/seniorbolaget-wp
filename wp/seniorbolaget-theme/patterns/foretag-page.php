@@ -279,5 +279,49 @@
 	</style>
 	<!-- /wp:html -->
 
+<!-- FAQPage JSON-LD Schema -->
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vilka företagstjänster erbjuder Seniorbolaget?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi erbjuder kontorsstädning, fastighetsskötsel, trädgårdsunderhåll, mindre reparationer och hantverksarbeten för företag och BRF:er."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur fungerar avtal för företag?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi skräddarsyr avtal efter era behov - från engångsuppdrag till löpande serviceavtal med fast månadskostnad."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Är era medarbetare försäkrade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, alla medarbetare är anställda hos oss med kollektivavtal, fullständig försäkring och ansvarsförsäkring."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur snabbt kan ni komma igång?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi återkommer inom 24 timmar med offert och kan ofta starta arbetet inom 48 timmar."
+      }
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->

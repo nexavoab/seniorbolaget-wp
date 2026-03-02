@@ -78,7 +78,7 @@
 <div style="background:linear-gradient(135deg,rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.35) 100%),url('https://staging.seniorbolaget.se/wp-content/uploads/2026/02/hero_main.jpg') center/cover;min-height:50vh;display:flex;align-items:center;padding:clamp(40px,8vw,100px) clamp(24px,5vw,80px);">
   <div style="max-width:720px;">
     <div style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,0.3);border-radius:50px;padding:8px 16px;margin-bottom:24px;color:#fff;font-size:0.875rem;font-family:Inter,sans-serif;">
-      📍 26 orter i Sverige
+      📍 27 orter i Sverige
     </div>
     <h1 style="font-family:Rubik,sans-serif;font-size:clamp(2.25rem,5vw,3.5rem);font-weight:800;color:#fff;line-height:1.15;margin:0 0 16px;">Här finns vi</h1>
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:rgba(255,255,255,0.9);margin:0;">Hitta din lokala franchisetagare — personlig service nära dig</p>
@@ -255,6 +255,15 @@
     <div class="team-card-info">
       <p class="team-card-city">Skövde</p>
       <p class="team-card-name">Susanne Kinell</p>
+    </div>
+    <div class="team-card-arrow">→</div>
+  </a>
+  <a href="/stockholm/" class="team-card" style="text-decoration:none;">
+    <img src="https://staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_stockholm.jpg" alt="Seniorbolaget Stockholm" loading="lazy"/>
+    <div class="team-card-overlay"></div>
+    <div class="team-card-info">
+      <p class="team-card-city">Stockholm</p>
+      <p class="team-card-name">Seniorbolaget Stockholm</p>
     </div>
     <div class="team-card-arrow">→</div>
   </a>

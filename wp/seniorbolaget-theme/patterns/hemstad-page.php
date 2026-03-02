@@ -391,6 +391,50 @@
   </div>
   <!-- /wp:html -->
 
+<!-- FAQPage JSON-LD Schema -->
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad kostar hemstädning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Med RUT-avdrag betalar du bara 50% av arbetskostnaden. Priset beror på bostadens storlek och städfrekvens."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vad ingår i hemstädning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dammsugning, moppning, badrum, kök, damning av ytor och fönsterputs ingår i grundstädning. Vi anpassar alltid efter dina behov."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Hur bokar jag hemstädning?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Fyll i intresseanmälan på sajten så kontaktar vi dig inom 24 timmar för att boka ett första besök."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Är städarna anställda hos er?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, alla våra städare är anställda hos oss med kollektivavtal. Du får alltid samma städare vid varje besök."
+      }
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->
 

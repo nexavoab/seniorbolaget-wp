@@ -379,6 +379,50 @@
   </div>
   <!-- /wp:html -->
 
+<!-- FAQPage JSON-LD Schema -->
+<!-- wp:html -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Vad kostar snickeriarbete?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Med ROT-avdrag betalar du bara 50% av arbetskostnaden (max 50 000 kr/år). Timpris från 495 kr/timme före avdrag."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vilka snickeriarbeten utför ni?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Allt från altanbyggen, trallbyten och staketbyggen till mindre reparationer, fönsterbyten och dörrinstallationer."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Har era snickare F-skatt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ja, alla våra snickare är anställda hos oss med kollektivavtal. Vi hanterar ROT-avdraget direkt på fakturan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kan ni hjälpa till med bygglov?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Vi ger råd om vilka arbeten som kräver bygglov och kan hjälpa dig med ansökan vid behov."
+      }
+    }
+  ]
+}
+</script>
+<!-- /wp:html -->
+
 </div>
 <!-- /wp:group -->
 

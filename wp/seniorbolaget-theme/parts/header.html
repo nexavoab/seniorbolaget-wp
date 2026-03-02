@@ -5,7 +5,13 @@
    ============================================ */
 
 /* Body padding for sticky header */
-.wp-site-blocks { padding-top: 70px !important; }
+.wp-site-blocks { padding-top: 70px !important; margin-top: 0 !important; }
+
+/* WAS-102: Ta bort all oönskad vit yta ovanför header */
+html, body { margin-top: 0 !important; padding-top: 0 !important; }
+body:not(.admin-bar) html { margin-top: 0 !important; }
+/* Nollställ eventuella WP-block margins */
+.wp-site-blocks > *:first-child { margin-top: 0 !important; }
 
 /* Header bar */
 .sb-header {
