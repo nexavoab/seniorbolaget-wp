@@ -1360,7 +1360,7 @@ function sb_job_application_handler() {
 // ===== INTENTIONS BAR (WAS-68) — inline script approach =====
 function sb_add_fab() {
     echo '<style>
-#sb-fab{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px;}
+#sb-fab{position:fixed !important;bottom:24px !important;right:24px !important;z-index:99999 !important;display:flex !important;flex-direction:column;align-items:flex-end;gap:10px;}
 #sb-fab-menu{display:flex;flex-direction:column;gap:8px;align-items:flex-end;opacity:0;transform:translateY(12px);transition:opacity .25s,transform .3s cubic-bezier(.16,1,.3,1);pointer-events:none;}
 #sb-fab-menu.open{opacity:1;transform:translateY(0);pointer-events:all;}
 .sb-fab-opt{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:50px;font-family:Rubik,sans-serif;font-size:.9375rem;font-weight:600;text-decoration:none;white-space:nowrap;box-shadow:0 4px 16px rgba(0,0,0,0.18);transition:transform .15s,box-shadow .15s;}
