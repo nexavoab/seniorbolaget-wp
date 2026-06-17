@@ -17,7 +17,7 @@
 		<div class="wp-block-column is-vertically-aligned-center" style="flex-basis:55%">
 
 			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(36px, 5vw, 60px)"},"spacing":{"margin":{"bottom":"0"}}}} -->
-			<h1 class="wp-block-heading" style="font-size:clamp(36px, 5vw, 60px);font-weight:700;line-height:1.1">Hemtjänster av<br><span style="color:var(--wp--preset--color--rod)">erfarna seniorer</span><br><span style="font-size:0.65em;color:#4B5563;font-weight:500;">– städning, trädgård &amp; hantverk</span></h1>
+			<h1 class="wp-block-heading" style="font-size:clamp(36px, 5vw, 60px);font-weight:700;line-height:1.1">Hushållsnära tjänster av<br><span style="color:var(--wp--preset--color--rod)">erfarna seniorer</span><br><span style="font-size:0.65em;color:#4B5563;font-weight:500;">– städning, trädgård &amp; hantverk</span></h1>
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|lg","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"top":"var:preset|spacing|md"}}}} -->

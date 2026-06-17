@@ -1,0 +1,128 @@
+# Rollbackplan
+
+Grundprincip: varje fixpaket ska kunna backas utan databasdestruktion och utan produktionsandring. Ingen staging-admin/WPCode/content-andring far goras utan fore-bevis.
+
+## Stop conditions
+
+Stoppa direkt och gor ingen fortsatt deploy om nagot av detta intraffar:
+
+- Det saknas fore-kopia/revision/export for den yta som ska andras.
+- WordPress admin visar ovantat miljo/domannamn eller produktionsdomän.
+- En verifiering efter fix misslyckas tva ganger: fixa en gang, om samma gate faller igen ska paketcommiten revertas och arbetet pausas.
+- Staging skiljer sig fran GitHub-koden pa ett satt som gor root cause oklar och rollbackvagen osaker.
+- Fakta saknas for recensioner, telefonnummer, statistik, SEO-prodpolicy, HSTS eller CSP-riskacceptans.
+- En andring skulle krava destruktiv DB-operation.
+
+## Git source rollback
+
+Galler theme/source-fixar i worktree.
+
+1. Gor sma commits per fixpaket.
+2. Spara commit-SHA i paketets bevisfil.
+3. Vid rollback:
+
+```powershell
+git revert <commit-sha>
+git status --short
+```
+
+4. Kor paketets verifiering igen.
+5. Om revert skapar konflikt: stoppa, dokumentera konflikt och fraga innan manuell losning.
+
+## WPCode rollback
+
+Galler staging-only CSS/JS/PHP-snippets eller header/footer-injektioner.
+
+Fore andring:
+
+- Exportera/kopiera aktuell WPCode-snippet eller Sidhuvud/Sidfot-falt till artefakt.
+- Dokumentera snippet/block-id, titel, status, plats och exakt fore-innehall.
+- Ta screenshot eller JSON/text dump som visar att kopian ar tagen.
+
+Rollback:
+
+1. Oppna WordPress admin pa staging.
+2. Kontrollera att domanen ar `staging.seniorbolaget.se`.
+3. Gå till WPCode/Kodblock eller WPCode Sidhuvud och sidfot.
+4. Aterstall fore-kopian exakt, eller toggla av den nya snippet som dokumenterats.
+5. Spara.
+6. Rensa One.com Performance Cache.
+7. Kor relevant post-check: sitemap/status, runtime console, screenshots och content-lint.
+
+Kanda tidigare staging-rollbackar:
+
+- Visual hotfix: ta bort block mellan `SENIORBOLAGET STAGING VISUAL HOTFIX START 2026-06-16` och `SENIORBOLAGET STAGING VISUAL HOTFIX END 2026-06-16`.
+- Sitemap hotfix: WPCode snippet ID `1734`, `SB staging sitemap hotfix - exclude deleted status drafts`, togglas inaktiv eller raderas efter godkand rollback.
+
+## WordPress content rollback
+
+Galler sidor, inlagg, Rank Math metadata, blockinnehall, ortsdata som finns i WP.
+
+Fore andring:
+
+- Exportera sidan/inlagget eller hela relevant content via WordPress export om omfattningen ar stor.
+- Spara revision-ID/timestamp och screenshot av revisionslistan.
+- Kopiera fore-innehall for block/meta som ska andras.
+
+Rollback:
+
+1. Oppna aktuell sida/inlagg i staging admin.
+2. Anvand WordPress Revisions och aterstall fore-revisionen, eller klistra tillbaka fore-kopian.
+3. Aterstall Rank Math/SEO-falt fran fore-kopia om metadata andrades.
+4. Spara.
+5. Rensa cache.
+6. Kor relevant URL-screenshot, DOM/content-lint och sitemap/status check.
+
+## Cache rollback/clear
+
+Efter varje staging-andring:
+
+1. Rensa One.com Performance Cache.
+2. Om WP/plugin-cache finns: rensa den.
+3. Gor hard reload/ny browser context for verifiering.
+4. Dokumentera cache-clear med screenshot eller admintext om mojligt.
+
+## Rollback per fixpaket
+
+### Paket 1: Launch Trust
+
+Ytor: recensioner, hemtjanst/omsorg-copy, statistik, ortsbilder, telefon/e-post.
+
+Rollback:
+
+- Git: revert av theme/pattern/CITY_DATA-commit.
+- WordPress content: revision/export fore andring.
+- SEO metadata: Rank Math fore-kopia for og:title/canonical/meta.
+- WPCode: fore-kopia om fixen ar staging-only snippet.
+
+### Paket 2: Conversion + Accessibility
+
+Ytor: logo-lank, form labels, kontrast, hjalppanel/CTA.
+
+Rollback:
+
+- Git revert for header/template/CSS/JS.
+- WPCode fore-kopia for staging-only CSS/JS.
+- Om plugin-installning for formular/CTA andras: screenshot/export fore och restore efter.
+
+### Paket 3: Content + SEO
+
+Ytor: markdown-tabell, 404 å/ä/ö, em dash/stilregler, canonical/noindex.
+
+Rollback:
+
+- WP revisions/export for artiklar och sidor.
+- Git revert for templates/import/generator.
+- SEO-plugin fore-kopia for canonical/noindex.
+
+### Paket 4: Mobile + Performance + Security Light
+
+Ytor: mobil footer, CLS/LCP, CSP-worker, HSTS.
+
+Rollback:
+
+- Git revert for CSS/JS/templates.
+- WPCode/header-snippet fore-kopia.
+- Hosting/server-header rollback bara efter dokumenterad fore-konfiguration.
+- HSTS ska inte aktiveras med preload i denna fas; prod-beslut kravs innan deploy.
+
