@@ -5,6 +5,26 @@
     return (element && element.textContent ? element.textContent : '').replace(/\s+/g, ' ').trim();
   }
 
+  function ensureLogoLinksHome() {
+    var candidates = Array.from(document.querySelectorAll('a.sb-logo, .custom-logo-link, .wp-block-site-logo a, header a'));
+    var homeHref = window.location.origin + '/';
+
+    candidates.forEach(function(link) {
+      var image = link.querySelector('img');
+      var label = ((image && image.getAttribute('alt')) || textOf(link) || '').toLowerCase();
+      var isLogo = link.classList.contains('sb-logo') ||
+        link.classList.contains('custom-logo-link') ||
+        Boolean(link.closest('.wp-block-site-logo')) ||
+        label.indexOf('seniorbolaget') !== -1;
+
+      if (!isLogo) return;
+      if (link.getAttribute('href')) return;
+
+      link.setAttribute('href', homeHref);
+      link.setAttribute('aria-label', 'Till startsidan');
+    });
+  }
+
   function colorRedHeadingOnDarkSections() {
     Array.from(document.querySelectorAll('h1,h2,h3')).forEach(function(heading) {
       var text = textOf(heading);
@@ -292,6 +312,7 @@
   }
 
   function run() {
+    ensureLogoLinksHome();
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
     normalizeServiceModalTargets();
