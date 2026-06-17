@@ -54,6 +54,14 @@ function seniorbolaget_scripts() {
 		SENIORBOLAGET_VERSION
 	);
 
+	wp_enqueue_script(
+		'seniorbolaget-design-cleanup',
+		get_template_directory_uri() . '/js/sb-design-cleanup.js',
+		array(),
+		SENIORBOLAGET_VERSION,
+		true
+	);
+
 	// Alpine.js laddas via seniorbolaget_alpine_direct()
 }
 
