@@ -5,6 +5,13 @@
     return (element && element.textContent ? element.textContent : '').replace(/\s+/g, ' ').trim();
   }
 
+  var FORETAG_TRUST_LABELS = [
+    '50+ aktiva företagskunder',
+    'Svarstid inom 24 h',
+    'Faktura 30 dagar',
+    'Kollektivavtal'
+  ];
+
   function ensureLogoLinksHome() {
     var candidates = Array.from(document.querySelectorAll('a.sb-logo, .custom-logo-link, .wp-block-site-logo a, header a'));
     var homeHref = window.location.origin + '/';
@@ -22,6 +29,40 @@
 
       link.setAttribute('href', homeHref);
       link.setAttribute('aria-label', 'Till startsidan');
+    });
+  }
+
+  function foretagTrustIconSvg() {
+    return [
+      '<svg class="sb-foretag-trust-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">',
+      '<circle cx="12" cy="12" r="10"></circle>',
+      '<path d="m9 12 2 2 4-4"></path>',
+      '</svg>'
+    ].join('');
+  }
+
+  function normalizeForetagTrustBand() {
+    Array.from(document.querySelectorAll('div')).forEach(function(row) {
+      if (row.getAttribute('data-sb-foretag-trust-fixed') === 'true') return;
+
+      var text = textOf(row);
+      if (text.length > 220) return;
+      if (!FORETAG_TRUST_LABELS.every(function(label) { return text.indexOf(label) !== -1; })) return;
+      if (row.children.length < 6 || row.children.length > 10) return;
+      if (window.getComputedStyle(row).display !== 'flex') return;
+
+      row.classList.add('sb-foretag-trust-row');
+      row.setAttribute('data-sb-foretag-trust-fixed', 'true');
+      row.innerHTML = FORETAG_TRUST_LABELS.map(function(label) {
+        return [
+          '<span class="sb-foretag-trust-item">',
+          foretagTrustIconSvg(),
+          '<span class="sb-foretag-trust-label">',
+          label,
+          '</span>',
+          '</span>'
+        ].join('');
+      }).join('');
     });
   }
 
@@ -313,6 +354,7 @@
 
   function run() {
     ensureLogoLinksHome();
+    normalizeForetagTrustBand();
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
     normalizeServiceModalTargets();
