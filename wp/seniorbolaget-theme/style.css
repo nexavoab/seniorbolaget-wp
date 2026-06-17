@@ -507,6 +507,38 @@ body {
     display: none !important;
 }
 
+.sb-foretag-trust-row {
+    align-items: center !important;
+    display: grid !important;
+    gap: clamp(18px, 3vw, 42px) !important;
+    grid-template-columns: repeat(4, minmax(0, auto)) !important;
+    justify-content: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 1120px !important;
+    text-align: center !important;
+}
+
+.sb-foretag-trust-item {
+    align-items: center !important;
+    color: #FFFFFF !important;
+    display: inline-flex !important;
+    font-size: 1rem !important;
+    font-weight: 800 !important;
+    gap: 10px !important;
+    justify-content: center !important;
+    line-height: 1.35 !important;
+    min-width: 0 !important;
+    white-space: nowrap !important;
+}
+
+.sb-foretag-trust-icon {
+    color: #FFFFFF !important;
+    flex: 0 0 22px !important;
+    height: 22px !important;
+    width: 22px !important;
+}
+
 #sb-bs-panel,
 .sb-bs-panel {
     display: none !important;
@@ -676,6 +708,25 @@ body {
     .sb-price-table td {
         overflow-wrap: anywhere !important;
         padding: 9px 7px !important;
+    }
+}
+
+@media (max-width: 900px) {
+    .sb-foretag-trust-row {
+        grid-template-columns: repeat(2, minmax(0, auto)) !important;
+    }
+}
+
+@media (max-width: 520px) {
+    .sb-foretag-trust-row {
+        grid-template-columns: 1fr !important;
+        justify-content: start !important;
+        text-align: left !important;
+    }
+
+    .sb-foretag-trust-item {
+        justify-content: flex-start !important;
+        white-space: normal !important;
     }
 }
 
