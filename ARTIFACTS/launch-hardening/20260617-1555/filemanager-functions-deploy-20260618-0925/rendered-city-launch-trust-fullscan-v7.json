@@ -1,0 +1,633 @@
+{
+  "generatedAt": "2026-06-18T08:21:56.149Z",
+  "total": 26,
+  "passed": 26,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "slug": "amal",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget"
+    },
+    {
+      "slug": "boras",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Borås – Seniorbolaget"
+    },
+    {
+      "slug": "eskilstuna",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Eskilstuna – Seniorbolaget"
+    },
+    {
+      "slug": "falkenberg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Falkenberg – Seniorbolaget"
+    },
+    {
+      "slug": "goteborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Göteborg – Seniorbolaget"
+    },
+    {
+      "slug": "halmstad",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Halmstad – Seniorbolaget"
+    },
+    {
+      "slug": "helsingborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Helsingborg – Seniorbolaget"
+    },
+    {
+      "slug": "jonkoping",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Jönköping – Seniorbolaget"
+    },
+    {
+      "slug": "karlstad",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Karlstad – Seniorbolaget"
+    },
+    {
+      "slug": "kristianstad",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Kristianstad – Seniorbolaget"
+    },
+    {
+      "slug": "kungalv",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Kungälv – Seniorbolaget"
+    },
+    {
+      "slug": "kungsbacka",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Kungsbacka – Seniorbolaget"
+    },
+    {
+      "slug": "laholm",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Laholm – Seniorbolaget"
+    },
+    {
+      "slug": "landskrona",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Landskrona – Seniorbolaget"
+    },
+    {
+      "slug": "lerum",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Lerum – Seniorbolaget"
+    },
+    {
+      "slug": "molndal",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Mölndal – Seniorbolaget"
+    },
+    {
+      "slug": "nassjo",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget"
+    },
+    {
+      "slug": "orebro",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Örebro – Seniorbolaget"
+    },
+    {
+      "slug": "skovde",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Skövde – Seniorbolaget"
+    },
+    {
+      "slug": "stenungsund",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Stenungsund – Seniorbolaget"
+    },
+    {
+      "slug": "sundsvall",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Sundsvall – Seniorbolaget"
+    },
+    {
+      "slug": "torsby",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget"
+    },
+    {
+      "slug": "trelleborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Trelleborg – Seniorbolaget"
+    },
+    {
+      "slug": "trollhattan",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Trollhättan – Seniorbolaget"
+    },
+    {
+      "slug": "ulricehamn",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Ulricehamn – Seniorbolaget"
+    },
+    {
+      "slug": "varberg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/?sb-city-v7-full=202606181020",
+      "ok": true,
+      "cityHotfix": "applied",
+      "failures": {
+        "any300": false,
+        "local300": false,
+        "missing24h": false,
+        "missingHundratals": false,
+        "missingSince2008": false,
+        "oldYears": false,
+        "rating": false,
+        "snittbetyg": false
+      },
+      "launchHotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen"
+      ],
+      "title": "Hushållsnära tjänster i Varberg – Seniorbolaget"
+    }
+  ]
+}

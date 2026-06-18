@@ -212,8 +212,8 @@
 			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:8px 0 0;">Städer</p>
 		</div>
 		<div>
-			<p style="font-family:Rubik,sans-serif;font-size:3rem;font-weight:700;color:#fff;margin:0;">17</p>
-			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:8px 0 0;">År i branschen</p>
+			<p style="font-family:Rubik,sans-serif;font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;color:#fff;margin:0;">Sedan 2008</p>
+			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:8px 0 0;">I branschen</p>
 		</div>
 	</div>
 	<style>

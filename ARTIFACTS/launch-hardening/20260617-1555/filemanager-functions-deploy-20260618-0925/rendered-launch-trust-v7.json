@@ -1,0 +1,97 @@
+{
+  "generatedAt": "2026-06-18T08:19:54.959Z",
+  "results": [
+    {
+      "b2bEmojis": [
+        "🏢"
+      ],
+      "cityHotfix": "applied",
+      "hits": {
+        "any300": false,
+        "local300": false,
+        "neutralHundratals": true,
+        "oldYears": false,
+        "rating": false,
+        "response24h": true,
+        "sedan2008": true,
+        "snittbetyg": false
+      },
+      "hotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen",
+        "🏢 Bli franchisetagare"
+      ],
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-v7-verify=202606181019"
+    },
+    {
+      "b2bEmojis": [
+        "🏢"
+      ],
+      "cityHotfix": "applied",
+      "hits": {
+        "any300": false,
+        "local300": false,
+        "neutralHundratals": true,
+        "oldYears": false,
+        "rating": false,
+        "response24h": true,
+        "sedan2008": true,
+        "snittbetyg": false
+      },
+      "hotfix": "applied",
+      "lines": [
+        "Hundratals",
+        "Hundratals nöjda kunder sedan 2008",
+        "24h svarstid",
+        "Sedan 2008 i branschen",
+        "🏢 Bli franchisetagare"
+      ],
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-v7-verify=202606181019"
+    },
+    {
+      "b2bEmojis": [],
+      "cityHotfix": null,
+      "hits": {
+        "any300": false,
+        "local300": false,
+        "neutralHundratals": false,
+        "oldYears": false,
+        "rating": false,
+        "response24h": false,
+        "sedan2008": false,
+        "snittbetyg": false
+      },
+      "hotfix": "applied",
+      "lines": [],
+      "title": "Företagstjänster & B2B – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/foretag/?sb-v7-verify=202606181019"
+    },
+    {
+      "b2bEmojis": [
+        "🏢"
+      ],
+      "cityHotfix": null,
+      "hits": {
+        "any300": false,
+        "local300": false,
+        "neutralHundratals": false,
+        "oldYears": false,
+        "rating": false,
+        "response24h": false,
+        "sedan2008": false,
+        "snittbetyg": false
+      },
+      "hotfix": "applied",
+      "lines": [
+        "🏢 Bli franchisetagare"
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-v7-verify=202606181019"
+    }
+  ]
+}

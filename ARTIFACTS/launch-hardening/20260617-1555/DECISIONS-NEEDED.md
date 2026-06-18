@@ -11,6 +11,8 @@ Inga av dessa far gissas. Om beslut saknas ska motsvarande MASTERLIST-rad vara `
 
 Berorda rader: `LH-P0-001`, `LH-P1-007`.
 
+2026-06-18 anvandarbeslut: recensionerna far ligga kvar pa staging tills vidare och byts precis fore launch. Launch-gate kvarstar: innan publik lansering ska recensionerna vara verifierade eller modulerna doljas.
+
 ## Ortstelefonnummer och e-post
 
 - Ar `070-441 25 72` ett avsiktligt centralnummer for 24 orter, eller felaktig data?
@@ -29,6 +31,11 @@ Berord rad: `LH-P1-008`.
 
 Berord rad: `LH-P1-010`.
 
+2026-06-18 anvandarbeslut:
+- Siffrorna ar verifierade av kund, men `4.9`/snittbetyg ska tas bort fran hela webbplatsen.
+- Erfarenhetscopy ska formuleras `Sedan 2008`, inte som "`2008`/`8` ar i branschen".
+- `300+` ar sant men kan upplevas lagt. Best practice ar att inte gissa hogre exakt siffra och inte formulera det som lokal ortssiffra om det ar bolagsniva. Rekommenderad copy tills officiell hogre siffra ar faststalld: `Hundratals nojda kunder sedan 2008`.
+
 ## Ortsbilder
 
 - Finns godkanda franchisetagarbilder per ort?
@@ -46,6 +53,8 @@ Berord rad: `LH-P1-006`.
 
 Berord rad: `LH-P1-002`.
 
+2026-06-18 policybeslut: flytande CTA far vara synlig eftersom den hjalper konvertering, men den ska vara aterhallen: en primar global CTA default, panel oppnas pa aktivt klick, stangd panel ska inte ligga i tangentbordsfokus, och den far inte tacker formular, cookieval eller kritisk mobilfooter.
+
 ## SEO-policy staging/prod
 
 - Staging: ska `noindex,nofollow` vara kvar? Rekommendation: ja.
@@ -54,6 +63,8 @@ Berord rad: `LH-P1-002`.
 - Ska staging ha self-canonical, ingen canonical, eller canonical till prod? Beslut kravs innan implementation.
 
 Berord rad: `LH-P2-004`.
+
+2026-06-18 policybeslut: staging ska fortsatta vara `noindex,nofollow`. Vid produktion/launch tas noindex bort och canonical ska peka konsekvent mot produktions-URL.
 
 ## HSTS/CSP-prodpolicy
 
@@ -64,6 +75,8 @@ Berord rad: `LH-P2-004`.
 
 Berorda rader: `LH-P2-005`, `LH-P2-006`.
 
+2026-06-18 policybeslut: kor best practice. HSTS aktiveras pa produktion forst efter verifierad HTTPS och med konservativ ramp; ingen preload forsta gangen. CSP bor forst koras konservativt/report-only eller smalt scoped sa WordPress/plugins inte bryts; `worker-src blob:` tillats bara om worker-kallan ar legitim och dokumenterad.
+
 ## Ikon- och emoji-policy
 
 - Ska site-wide UI anvanda ett enhetligt ikonbibliotek/stroke-system?
@@ -72,6 +85,8 @@ Berorda rader: `LH-P2-005`, `LH-P2-006`.
 
 Berorda rader: `LH-P2-013`, `LH-P3-004`.
 
+2026-06-18 policybeslut: ikoner/emoji ska vara konsekventa. B2B/foretag ska ha aterhallen ikonstil; synliga emoji i foretagsytans egna kort ersatts/doljs till enhetlig text-/ikonpresentation.
+
 ## Analytics/samtycke
 
 - Ska Google Analytics vara aktivt pa staging?
@@ -79,3 +94,5 @@ Berorda rader: `LH-P2-013`, `LH-P3-004`.
 - Ska GA vara helt blockerat fore aktivt samtycke? Rekommendation: ja, om statistik-cookies anvands.
 
 Berord rad: `LH-P3-006`.
+
+2026-06-18 policybeslut: kor best practice. Analytics ska inte satta icke-nodvandiga cookies fore aktivt samtycke; staging ska antingen ha analytics avstangt eller separat testproperty som inte blandas med produktion.

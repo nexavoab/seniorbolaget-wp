@@ -54,6 +54,25 @@ Kanda tidigare staging-rollbackar:
 - Visual hotfix: ta bort block mellan `SENIORBOLAGET STAGING VISUAL HOTFIX START 2026-06-16` och `SENIORBOLAGET STAGING VISUAL HOTFIX END 2026-06-16`.
 - Sitemap hotfix: WPCode snippet ID `1734`, `SB staging sitemap hotfix - exclude deleted status drafts`, togglas inaktiv eller raderas efter godkand rollback.
 
+## Staging File Manager rollback
+
+Galler direkt staging-only andringar i `seniorbolaget.se/staging/wp-content/themes/seniorbolaget-theme/functions.php` via One.com File Manager.
+
+Fore-kopia for 2026-06-18 finns i:
+
+`ARTIFACTS/launch-hardening/20260617-1555/filemanager-functions-deploy-20260618-0925/functions-before.php`
+
+Rollback:
+
+1. Oppna One.com File Manager for staging-theme `functions.php`.
+2. Kontrollera att sokvagen innehaller `/staging/wp-content/themes/seniorbolaget-theme/functions.php`.
+3. Ersatt filen med fore-kopian ovan, eller ta bort markerade hotfix-block:
+   - `SENIORBOLAGET STAGING CITY CONTACT HOTFIX START 2026-06-18` till `END`.
+   - `SENIORBOLAGET STAGING LAUNCH TRUST HOTFIX START 2026-06-18` till `END`.
+4. Spara.
+5. Rensa One.com Performance Cache/CDN.
+6. Kor post-check pa ortssidor, `/foretag/`, startsidan och 75-URL crawl.
+
 ## WordPress content rollback
 
 Galler sidor, inlagg, Rank Math metadata, blockinnehall, ortsdata som finns i WP.
@@ -125,4 +144,3 @@ Rollback:
 - WPCode/header-snippet fore-kopia.
 - Hosting/server-header rollback bara efter dokumenterad fore-konfiguration.
 - HSTS ska inte aktiveras med preload i denna fas; prod-beslut kravs innan deploy.
-
