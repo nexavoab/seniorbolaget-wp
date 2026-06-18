@@ -17,6 +17,7 @@ Berorda rader: `LH-P0-001`, `LH-P1-007`.
 - Ska "Din lokala kontakt i [ort]" visas om numret ar centralt?
 - Finns korrekt telefon/e-post per franchisetagare/ort?
 - Om korrekt data saknas: ska telefon/e-post eller lokal kontaktmodul doljas?
+- 2026-06-18: Kandidatdata finns fran publik produktion, se `PROD-CITY-CONTACTS.md`. Beslut kvar: far `https://www.seniorbolaget.se/har-finns-vi` anvandas som godkand faktakalla for staging/source?
 
 Berord rad: `LH-P1-008`.
 
@@ -78,4 +79,3 @@ Berorda rader: `LH-P2-013`, `LH-P3-004`.
 - Ska GA vara helt blockerat fore aktivt samtycke? Rekommendation: ja, om statistik-cookies anvands.
 
 Berord rad: `LH-P3-006`.
-
