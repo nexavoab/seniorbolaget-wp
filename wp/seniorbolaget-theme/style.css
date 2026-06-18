@@ -532,12 +532,27 @@ body {
 }
 
 .sb-footer a {
+    text-decoration-line: underline !important;
     text-decoration-thickness: 1px !important;
     text-underline-offset: 0.18em !important;
 }
 
 .sb-footer-bottom a {
     text-decoration: underline !important;
+}
+
+.entry-content a:not(.wp-block-button__link),
+.wp-block-post-content a:not(.wp-block-button__link),
+main a:not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.service-card-cta):not(.sb-mobile-link) {
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.18em !important;
+}
+
+.service-card a.read-more-link {
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.18em !important;
 }
 
 .sb-stats-section p,
@@ -547,6 +562,15 @@ body {
 .sb-service-strip p {
     color: var(--sb-red-readable-soft) !important;
     opacity: 1 !important;
+}
+
+.has-rod-background-color p,
+.has-rod-background-color span,
+.has-rod-background-color li,
+.has-rod-background-color h1,
+.has-rod-background-color h2,
+.has-rod-background-color h3 {
+    color: #FFFFFF !important;
 }
 
 .wiz-step-label,
