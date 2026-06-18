@@ -3,6 +3,10 @@
 Datum: 2026-06-17
 Branch: `codex/launch-hardening-20260617-1555`
 
+## Uppdatering 2026-06-18
+
+`LH-P1-006` ar nu genomfort och verifierat pa staging efter anvandarbeslut om neutral bild for saknade placeholders. Se `STAGING-NEUTRAL-CITY-IMAGES-PROOF.md`, `rendered-city-neutral-images-v9.json` och screenshots i `filemanager-functions-deploy-20260618-0925/screenshots-neutral-v9/`.
+
 ## Scope i denna korning
 
 Autonomt genomfort:
@@ -13,7 +17,7 @@ Autonomt genomfort:
 Inte genomfort utan beslut:
 
 - `LH-P0-001`: recensioner/exempelrecensioner.
-- `LH-P1-006`: ortsbilder eller "bild kommer snart".
+- `LH-P1-006`: ortsbilder eller "bild kommer snart". Senare lost 2026-06-18, se uppdatering ovan.
 - `LH-P1-007`: ortssidors omdomen.
 - `LH-P1-008`: ortstelefon/e-post.
 - `LH-P1-010`: statistikansprak.

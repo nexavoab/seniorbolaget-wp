@@ -45,6 +45,8 @@ Berord rad: `LH-P1-010`.
 
 Berord rad: `LH-P1-006`.
 
+2026-06-18 anvandarbeslut: ersatt saknade/placeholder-bilder med neutrala bilder. Publik text/alt/source som sager `bild kommer snart` eller motsvarande ska inte visas pa staging/launch.
+
 ## CTA/hjalppanel-policy
 
 - Ska global "Boka hjalp"-CTA vara enda flytande default-element?

@@ -69,9 +69,10 @@ Rollback:
 3. Ersatt filen med fore-kopian ovan, eller ta bort markerade hotfix-block:
    - `SENIORBOLAGET STAGING CITY CONTACT HOTFIX START 2026-06-18` till `END`.
    - `SENIORBOLAGET STAGING LAUNCH TRUST HOTFIX START 2026-06-18` till `END`.
+   - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v8.php` om bara neutralbildspatchen ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
-6. Kor post-check pa ortssidor, `/foretag/`, startsidan och 75-URL crawl.
+6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
 
 ## WordPress content rollback
 

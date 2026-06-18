@@ -32,7 +32,7 @@ Autonomt mojligt:
 Krav pa beslut innan fix:
 
 - Recensioner: verifierade omdomen eller dold modul.
-- Ortsbilder: riktiga bilder eller dold/neutral modul.
+- Ortsbilder: beslutat 2026-06-18 att saknade bilder ska ersattas av neutral modul; riktiga ortsbilder kan ersatta detta senare.
 - Telefon/e-post per ort.
 - Sanna statistiksiffror eller beslut att dolja.
 
@@ -42,6 +42,7 @@ Acceptans:
 - Ingen felaktig hemtjanst/omsorg-kontext utom godkand avgransning pa `/vardagshjalp/`.
 - Inga statclaims utan godkand faktalista.
 - Inga "bild kommer snart" eller overifierade lokala omdomen publikt.
+- 2026-06-18: `LH-P1-006` verifierad pa staging med neutral bildhotfix; recensioner/omdomen kvarstar som separat launch-gate.
 
 Verifiering:
 
@@ -202,4 +203,3 @@ Rollback:
 - Runtime technical sample: console errors, failed requests, mixed content, headers.
 - Rollbackbevis finns for varje staging/WPCode/content-andring.
 - Ingen merge utan grona gates eller dokumenterade blockerade beslut.
-

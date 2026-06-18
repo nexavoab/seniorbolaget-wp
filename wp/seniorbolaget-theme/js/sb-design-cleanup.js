@@ -291,6 +291,76 @@
     });
   }
 
+  function decodeImageValue(value) {
+    try {
+      return decodeURIComponent(String(value || ''));
+    } catch (error) {
+      return String(value || '');
+    }
+  }
+
+  function buildNeutralServiceSvg(variant) {
+    var accent = ['#C91C22', '#3F7D4F', '#D18A24'][variant % 3];
+    var foreground = [
+      '<path d="M72 162l78-62 78 62" fill="none" stroke="#C91C22" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
+      '<rect x="92" y="156" width="116" height="74" rx="10" fill="#ffffff" stroke="#E6D8CB" stroke-width="4"/>',
+      '<rect x="136" y="184" width="28" height="46" rx="4" fill="#EFE2D7"/>',
+      '<circle cx="286" cy="166" r="33" fill="#E7F1E6" stroke="#BFD7BD" stroke-width="4"/>',
+      '<path d="M286 137v90M256 168c23 3 43-5 60-24M258 190c24 1 44-5 62-22" fill="none" stroke="#3F7D4F" stroke-width="5" stroke-linecap="round"/>'
+    ];
+
+    if (variant % 3 === 1) {
+      foreground = [
+        '<path d="M92 212c34-62 68-88 104-78 32 9 45 43 30 78H92z" fill="#E7F1E6" stroke="#BFD7BD" stroke-width="4"/>',
+        '<path d="M128 204c22-38 52-58 90-62M158 218c-2-44 12-78 42-104" fill="none" stroke="#3F7D4F" stroke-width="7" stroke-linecap="round"/>',
+        '<rect x="246" y="134" width="72" height="88" rx="14" fill="#ffffff" stroke="#E6D8CB" stroke-width="4"/>',
+        '<path d="M262 178h40M282 158v40" stroke="#C91C22" stroke-width="8" stroke-linecap="round"/>'
+      ];
+    } else if (variant % 3 === 2) {
+      foreground = [
+        '<rect x="82" y="146" width="116" height="78" rx="12" fill="#ffffff" stroke="#E6D8CB" stroke-width="4"/>',
+        '<path d="M110 178h58M110 200h42" stroke="#C91C22" stroke-width="8" stroke-linecap="round"/>',
+        '<path d="M248 122l54 54M302 122l-54 54" stroke="#D18A24" stroke-width="12" stroke-linecap="round"/>',
+        '<circle cx="275" cy="199" r="28" fill="#E7F1E6" stroke="#BFD7BD" stroke-width="4"/>',
+        '<path d="M261 199l10 10 22-24" fill="none" stroke="#3F7D4F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'
+      ];
+    }
+
+    return [
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Seniorbolaget">',
+      '<rect width="400" height="300" fill="#FAF7F2"/>',
+      '<circle cx="338" cy="58" r="72" fill="' + accent + '" opacity="0.10"/>',
+      '<circle cx="62" cy="252" r="92" fill="#EFE7DC" opacity="0.72"/>',
+      '<path d="M0 242c46-16 82-17 130-4 63 17 116 15 178-7 39-14 70-17 92-12v81H0z" fill="#F0E8DD"/>',
+      foreground.join(''),
+      '</svg>'
+    ].join('');
+  }
+
+  function neutralServiceImageSrc(index) {
+    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(buildNeutralServiceSvg(index));
+  }
+
+  function improveComingSoonImages() {
+    var index = 0;
+    Array.from(document.querySelectorAll('img')).forEach(function(image) {
+      var haystack = [
+        image.getAttribute('alt') || '',
+        decodeImageValue(image.getAttribute('src') || ''),
+        decodeImageValue(image.getAttribute('srcset') || '')
+      ].join(' ');
+
+      if (!/(bild\s+kommer\s+snart|foto\s+(kommer|uppdateras)|uppdateras\s+snart)/i.test(haystack)) return;
+
+      image.src = neutralServiceImageSrc(index);
+      image.alt = 'Seniorbolaget, hushållsnära tjänster';
+      image.removeAttribute('srcset');
+      image.classList.add('sb-neutral-service-image');
+      image.setAttribute('data-sb-neutral-service-image', 'true');
+      index += 1;
+    });
+  }
+
   function run() {
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
@@ -300,6 +370,7 @@
     hideVisiblePlaceholderWarnings();
     convertPriceMarkdownTables();
     improveLocationPlaceholders();
+    improveComingSoonImages();
   }
 
   if (document.readyState === 'loading') {
