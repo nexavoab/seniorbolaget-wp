@@ -1,0 +1,178 @@
+{
+  "generatedAt": "2026-06-18T09:46:50.208Z",
+  "total": 4,
+  "passed": 4,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "controlIssueCount": 0,
+      "controlIssues": [],
+      "controls": [],
+      "conversionHotfix": "applied",
+      "gdprInputs": [],
+      "gdprOk": true,
+      "logoLinks": [
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        },
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        }
+      ],
+      "logoOk": true,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-conv-v10=202606181300",
+      "ok": true
+    },
+    {
+      "controlIssueCount": 0,
+      "controlIssues": [],
+      "controls": [],
+      "conversionHotfix": "applied",
+      "gdprInputs": [],
+      "gdprOk": true,
+      "logoLinks": [
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        },
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        }
+      ],
+      "logoOk": true,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-conv-v10=202606181300",
+      "ok": true
+    },
+    {
+      "controlIssueCount": 0,
+      "controlIssues": [],
+      "controls": [
+        {
+          "id": "boka-name",
+          "label": "Namn *",
+          "name": "name",
+          "ok": true,
+          "placeholder": "Ditt namn",
+          "tag": "input",
+          "type": "text"
+        },
+        {
+          "id": "boka-phone",
+          "label": "Telefon *",
+          "name": "phone",
+          "ok": true,
+          "placeholder": "070-123 45 67",
+          "tag": "input",
+          "type": "tel"
+        },
+        {
+          "id": "boka-service",
+          "label": "Tjänst",
+          "name": "service",
+          "ok": true,
+          "placeholder": "",
+          "tag": "select",
+          "type": ""
+        },
+        {
+          "id": "boka-stad",
+          "label": "Stad",
+          "name": "stad",
+          "ok": true,
+          "placeholder": "",
+          "tag": "select",
+          "type": ""
+        },
+        {
+          "id": "sb-gdpr-consent-0",
+          "label": "Jag godkänner behandling av personuppgifter",
+          "name": "sb_gdpr",
+          "ok": true,
+          "placeholder": "",
+          "tag": "input",
+          "type": "checkbox"
+        }
+      ],
+      "conversionHotfix": "applied",
+      "gdprInputs": [
+        {
+          "hidden": false,
+          "id": "sb-gdpr-consent-0",
+          "label": "Jag godkänner behandling av personuppgifter",
+          "parentTag": "DIV"
+        },
+        {
+          "hidden": true,
+          "id": "sb-gdpr-consent-1",
+          "label": "Jag godkänner behandling av personuppgifter",
+          "parentTag": "DIV"
+        },
+        {
+          "hidden": true,
+          "id": "sb-gdpr-consent-2",
+          "label": "Jag godkänner behandling av personuppgifter",
+          "parentTag": "DIV"
+        }
+      ],
+      "gdprOk": true,
+      "logoLinks": [
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        },
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        }
+      ],
+      "logoOk": true,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-conv-v10=202606181300",
+      "ok": true
+    },
+    {
+      "controlIssueCount": 0,
+      "controlIssues": [],
+      "controls": [],
+      "conversionHotfix": "applied",
+      "gdprInputs": [],
+      "gdprOk": true,
+      "logoLinks": [
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        },
+        {
+          "aria": "Seniorbolaget startsida",
+          "href": "/",
+          "imgAlt": "Seniorbolaget",
+          "text": ""
+        }
+      ],
+      "logoOk": true,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-conv-v10=202606181300",
+      "ok": true
+    }
+  ]
+}

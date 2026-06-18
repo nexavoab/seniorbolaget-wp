@@ -1,0 +1,271 @@
+{
+  "generatedAt": "2026-06-18T09:49:00.993Z",
+  "total": 26,
+  "passed": 26,
+  "failed": 0,
+  "totalBadImgs": 0,
+  "totalNeutralImgs": 12,
+  "failures": [],
+  "results": [
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "applied",
+      "neutralImgCount": 3,
+      "slug": "amal",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "boras",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "applied",
+      "neutralImgCount": 3,
+      "slug": "eskilstuna",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "falkenberg",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "applied",
+      "neutralImgCount": 3,
+      "slug": "goteborg",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "halmstad",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "helsingborg",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "jonkoping",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "applied",
+      "neutralImgCount": 3,
+      "slug": "karlstad",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "kristianstad",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "kungalv",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "kungsbacka",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "laholm",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "landskrona",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "lerum",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "molndal",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "nassjo",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "orebro",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "skovde",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "stenungsund",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "sundsvall",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "torsby",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "trelleborg",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "trollhattan",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "ulricehamn",
+      "ok": true
+    },
+    {
+      "badImgCount": 0,
+      "cityHotfix": "applied",
+      "conversionHotfix": "applied",
+      "launchHotfix": "applied",
+      "neutralHotfix": "ready",
+      "neutralImgCount": 0,
+      "slug": "varberg",
+      "ok": true
+    }
+  ]
+}

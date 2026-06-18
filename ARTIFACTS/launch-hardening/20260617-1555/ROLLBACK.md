@@ -70,6 +70,7 @@ Rollback:
    - `SENIORBOLAGET STAGING CITY CONTACT HOTFIX START 2026-06-18` till `END`.
    - `SENIORBOLAGET STAGING LAUNCH TRUST HOTFIX START 2026-06-18` till `END`.
    - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v8.php` om bara neutralbildspatchen ska backas.
+   - `SENIORBOLAGET STAGING CONVERSION A11Y HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v9.php` om bara logo/formlabel-patchen ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -123,6 +124,7 @@ Rollback:
 
 - Git revert for header/template/CSS/JS.
 - WPCode fore-kopia for staging-only CSS/JS.
+- File Manager: ta bort `SENIORBOLAGET STAGING CONVERSION A11Y HOTFIX` eller aterstall `functions-after-v9.php`.
 - Om plugin-installning for formular/CTA andras: screenshot/export fore och restore efter.
 
 ### Paket 3: Content + SEO

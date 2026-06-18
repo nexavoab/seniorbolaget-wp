@@ -361,6 +361,50 @@
     });
   }
 
+  function repairLogoHomeLinks() {
+    Array.from(document.querySelectorAll('a.sb-logo')).forEach(function(link) {
+      if (!link.getAttribute('href')) {
+        link.setAttribute('href', '/');
+      }
+      if (!link.getAttribute('aria-label')) {
+        link.setAttribute('aria-label', 'Seniorbolaget startsida');
+      }
+    });
+  }
+
+  function repairInjectedContactFormLabels() {
+    Array.from(document.querySelectorAll('input[type="checkbox"][name="sb_gdpr"]')).forEach(function(input, index) {
+      var label = input.closest('label');
+      if (label) return;
+
+      var id = input.getAttribute('id') || 'sb-gdpr-consent-' + index;
+      input.setAttribute('id', id);
+
+      var sibling = input.nextElementSibling;
+      if (sibling && sibling.tagName && sibling.tagName.toLowerCase() === 'span') {
+        var replacement = document.createElement('label');
+        replacement.setAttribute('for', id);
+        replacement.className = sibling.className || '';
+        replacement.setAttribute('style', sibling.getAttribute('style') || 'font-size:13px;line-height:1.4;color:#555;');
+        while (sibling.firstChild) replacement.appendChild(sibling.firstChild);
+        sibling.parentNode.replaceChild(replacement, sibling);
+        return;
+      }
+
+      if (!input.getAttribute('aria-label')) {
+        input.setAttribute('aria-label', 'Jag godkänner behandling av personuppgifter');
+      }
+    });
+
+    Array.from(document.querySelectorAll('input[name="sb_website"]')).forEach(function(input) {
+      input.setAttribute('tabindex', '-1');
+      input.setAttribute('aria-hidden', 'true');
+      if (input.parentElement) {
+        input.parentElement.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
   function run() {
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
@@ -371,6 +415,8 @@
     convertPriceMarkdownTables();
     improveLocationPlaceholders();
     improveComingSoonImages();
+    repairLogoHomeLinks();
+    repairInjectedContactFormLabels();
   }
 
   if (document.readyState === 'loading') {
