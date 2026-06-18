@@ -34,7 +34,7 @@ Berord rad: `LH-P1-010`.
 2026-06-18 anvandarbeslut:
 - Siffrorna ar verifierade av kund, men `4.9`/snittbetyg ska tas bort fran hela webbplatsen.
 - Erfarenhetscopy ska formuleras `Sedan 2008`, inte som "`2008`/`8` ar i branschen".
-- `300+` ar sant men kan upplevas lagt. Best practice ar att inte gissa hogre exakt siffra och inte formulera det som lokal ortssiffra om det ar bolagsniva. Rekommenderad copy tills officiell hogre siffra ar faststalld: `Hundratals nojda kunder sedan 2008`.
+- 2026-06-18 anvandarbeslut efter copyreview: anvand `Tusentals nojda kunder sedan 2008`. Undvik fortsatt lokal ortsformulering som `300+ nojda kunder i [ort]`.
 
 ## Ortsbilder
 
