@@ -72,6 +72,7 @@ Rollback:
    - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v8.php` om bara neutralbildspatchen ska backas.
    - `SENIORBOLAGET STAGING CONVERSION A11Y HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v9.php` om bara logo/formlabel-patchen ska backas.
    - `SENIORBOLAGET STAGING CARE CONTEXT COPY HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v10.php` om bara care-context-patchen ska backas.
+   - `SENIORBOLAGET STAGING 404 SWEDISH COPY HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v11.php` om bara 404-patchen ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -137,6 +138,7 @@ Rollback:
 
 - WP revisions/export for artiklar och sidor.
 - Git revert for templates/import/generator.
+- File Manager: ta bort `SENIORBOLAGET STAGING 404 SWEDISH COPY HOTFIX` eller aterstall `functions-after-v11.php`.
 - SEO-plugin fore-kopia for canonical/noindex.
 
 ### Paket 4: Mobile + Performance + Security Light

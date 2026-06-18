@@ -437,6 +437,41 @@
     });
   }
 
+  function repair404SwedishText() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+    var is404 = document.body.classList.contains('error404') || /404|sidan hittades inte/i.test(document.title || '');
+    if (!is404) return;
+
+    var replacements = [
+      [/soka istallet/g, 'söka istället'],
+      [/Sok/g, 'Sök'],
+      [/besok nagon/g, 'besök någon'],
+      [/vara populara/g, 'våra populära'],
+      [/Hemstadning/g, 'Hemstädning'],
+      [/Foretag/g, 'Företag'],
+      [/Vardagshjalp/g, 'Vardagshjälp'],
+      [/Tillbaka til /g, 'Tillbaka till ']
+    ];
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return /(soka istallet|Sok|besok nagon|vara populara|Hemstadning|Foretag|Vardagshjalp|Tillbaka til )/.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      var value = node.nodeValue || '';
+      replacements.forEach(function(pair) {
+        value = value.replace(pair[0], pair[1]);
+      });
+      node.nodeValue = value;
+    });
+  }
+
   function run() {
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
@@ -450,6 +485,7 @@
     repairLogoHomeLinks();
     repairInjectedContactFormLabels();
     repairCareContextCopy();
+    repair404SwedishText();
   }
 
   if (document.readyState === 'loading') {
