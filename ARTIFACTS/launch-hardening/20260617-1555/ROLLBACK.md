@@ -83,6 +83,7 @@ Rollback:
    - `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY V21 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v20.php` om bara v21 ska backas.
    - `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY V22 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v21.php` om bara v22 ska backas.
    - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES V23 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v22.php` om bara v23 ska backas.
+   - `SENIORBOLAGET STAGING CONTENT WORDING V24 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v23.php` om bara v24 ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -157,6 +158,7 @@ Rollback:
 - File Manager: ta bort `SENIORBOLAGET STAGING 404 SWEDISH COPY HOTFIX` eller aterstall `functions-after-v11.php`.
 - File Manager: ta bort `SENIORBOLAGET STAGING CONTENT SEO CLEANUP HOTFIX` eller aterstall `functions-after-v12.php`.
 - File Manager: ta bort `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES V23 HOTFIX` eller aterstall `functions-after-v22.php` for senaste neutralbildspasset.
+- File Manager: ta bort `SENIORBOLAGET STAGING CONTENT WORDING V24 HOTFIX` eller aterstall `functions-after-v23.php` for senaste wording-passet.
 - SEO-plugin fore-kopia for canonical/noindex.
 
 ### Paket 4: Mobile + Performance + Security Light

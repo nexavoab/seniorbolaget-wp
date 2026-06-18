@@ -115,7 +115,7 @@
 	    </div>
 	    <div>
 	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.25rem;color:#1F2937;margin:0 0 8px;">Hyllor &amp; förvaring</p>
-	      <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0;line-height:1.6;">Bygg- och montering av hyllsystem, garderober och skräddarsydda lösningar.</p>
+	      <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:0;line-height:1.6;">Bygg- och montering av hyllsystem, garderober och anpassade snickeriarbeten.</p>
 	    </div>
 	  </div>
 
@@ -340,7 +340,7 @@
 					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Vi lyssnar på dina behov</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Varje uppdrag är unikt. Vi anpassar lösningen efter dig.</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Varje uppdrag är unikt. Vi anpassar arbetet efter dig.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

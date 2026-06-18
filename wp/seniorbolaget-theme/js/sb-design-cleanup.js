@@ -461,6 +461,37 @@
     });
   }
 
+  function repairContentWording() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+
+    var replacements = [
+      [/skräddarsydda lösningar/g, 'anpassade snickeriarbeten'],
+      [/anpassada lösningar/g, 'anpassade snickeriarbeten'],
+      [/Vi anpassar lösningen efter dig\./g, 'Vi anpassar arbetet efter dig.'],
+      [/så hittar rätt lösning vi en lösning som passar dig perfekt\./g, 'så hittar vi rätt tjänst för ditt uppdrag.'],
+      [/så hittar vi rätt lösning som passar dig\./g, 'så hittar vi rätt tjänst som passar dig.']
+    ];
+
+    var matcher = /(skräddarsydda lösningar|anpassada lösningar|Vi anpassar lösningen efter dig\.|så hittar rätt lösning vi en lösning som passar dig perfekt\.|så hittar vi rätt lösning som passar dig\.)/;
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return matcher.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      var value = node.nodeValue || '';
+      replacements.forEach(function(pair) {
+        value = value.replace(pair[0], pair[1]);
+      });
+      node.nodeValue = value;
+    });
+  }
+
   function repairContactDuplicateHeading() {
     if (!/\/kontakt\/?$/i.test(window.location.pathname || '')) return;
 
@@ -622,6 +653,7 @@
     repairCtaFocusState();
     repairFabMenuHandler();
     normalizeDecorativeEmojiText();
+    repairContentWording();
     repair404SwedishText();
   }
 
