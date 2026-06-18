@@ -1,0 +1,48 @@
+{
+  "checkedAt": "2026-06-18T10:24:02.358Z",
+  "storageClear": {
+    "beforeLocal": [],
+    "beforeSession": []
+  },
+  "result": {
+    "analyticsCookies": [],
+    "banner": {
+      "cls": "cmplz-cookiebanner banner-1 banner-a optin cmplz-center cmplz-categories-type-view-preferences cmplz-dismissed",
+      "onscreen": false,
+      "rect": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper oss att förstå hur sajten används. Du väljer själv vad du godkänner. Läs mer i vår cookie-policy. F"
+    },
+    "cmplzCookies": [],
+    "cookies": [],
+    "horizontalOverflow": false,
+    "manageConsent": {
+      "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+      "onscreen": false,
+      "rect": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0,
+        "x": 0,
+        "y": 0
+      },
+      "text": "Hantera samtycke"
+    },
+    "url": "https://staging.seniorbolaget.se/?sb-cookie-localstorage=1781778235445",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "children": [],
+  "doc": {
+    "bodyScrollWidth": 415,
+    "clientWidth": 375,
+    "scrollWidth": 375
+  },
+  "footerRect": {
+    "bottom": 1240,
+    "height": 1151,
+    "left": 0,
+    "right": 375,
+    "top": 89,
+    "width": 375
+  },
+  "hasFooter": true,
+  "overflowingFooterChildren": [],
+  "url": "https://staging.seniorbolaget.se/?sb-footer-overflow-before-v19=202606181241-776043",
+  "viewport": {
+    "height": 844,
+    "width": 390
+  }
+}

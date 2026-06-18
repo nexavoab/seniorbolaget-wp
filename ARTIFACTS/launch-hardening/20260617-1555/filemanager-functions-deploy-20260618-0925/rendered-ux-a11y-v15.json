@@ -1,0 +1,5486 @@
+{
+  "checkedAt": "2026-06-18T10:22:12.893Z",
+  "environment": "staging",
+  "results": [
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 345,
+          "top": 0,
+          "width": 345,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 345,
+            "top": 0,
+            "width": 345,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1117,
+            "height": 376,
+            "left": 0,
+            "right": 345,
+            "top": 741,
+            "width": 345,
+            "x": 0,
+            "y": 741
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 717,
+            "height": 56,
+            "left": 265,
+            "right": 321,
+            "top": 661,
+            "width": 56,
+            "x": 265,
+            "y": 661
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 6674,
+          "height": 1151,
+          "left": 0,
+          "right": 345,
+          "top": 5523,
+          "width": 345,
+          "x": 0,
+          "y": 5523
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185,
+            "x": 373,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 714,
+            "height": 627,
+            "left": -8,
+            "right": 353,
+            "top": 86,
+            "width": 360,
+            "x": -8,
+            "y": 86
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2268,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2232,
+            "width": 36,
+            "x": -2,
+            "y": 2232
+          },
+          "tag": "div",
+          "text": "1"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2382,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2346,
+            "width": 36,
+            "x": -2,
+            "y": 2346
+          },
+          "tag": "div",
+          "text": "2"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2514,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2478,
+            "width": 36,
+            "x": -2,
+            "y": 2478
+          },
+          "tag": "div",
+          "text": "3"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 4021,
+            "height": 258,
+            "left": 352,
+            "right": 678,
+            "top": 3763,
+            "width": 326,
+            "x": 352,
+            "y": 3763
+          },
+          "tag": "div",
+          "text": "\"Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats iställ"
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 375,
+            "right": 655,
+            "top": 3786,
+            "width": 280,
+            "x": 375,
+            "y": 3786
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 375,
+            "right": 390,
+            "top": 3786,
+            "width": 15,
+            "x": 375,
+            "y": 3786
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3799,
+            "height": 12,
+            "left": 376,
+            "right": 388,
+            "top": 3788,
+            "width": 12,
+            "x": 376,
+            "y": 3788
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 393,
+            "right": 408,
+            "top": 3786,
+            "width": 15,
+            "x": 393,
+            "y": 3786
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3799,
+            "height": 12,
+            "left": 394,
+            "right": 406,
+            "top": 3788,
+            "width": 12,
+            "x": 394,
+            "y": 3788
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 411,
+            "right": 426,
+            "top": 3786,
+            "width": 15,
+            "x": 411,
+            "y": 3786
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3799,
+            "height": 12,
+            "left": 412,
+            "right": 424,
+            "top": 3788,
+            "width": 12,
+            "x": 412,
+            "y": 3788
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 429,
+            "right": 444,
+            "top": 3786,
+            "width": 15,
+            "x": 429,
+            "y": 3786
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3799,
+            "height": 12,
+            "left": 430,
+            "right": 442,
+            "top": 3788,
+            "width": 12,
+            "x": 430,
+            "y": 3788
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 447,
+            "right": 462,
+            "top": 3786,
+            "width": 15,
+            "x": 447,
+            "y": 3786
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3799,
+            "height": 12,
+            "left": 448,
+            "right": 460,
+            "top": 3788,
+            "width": 12,
+            "x": 448,
+            "y": 3788
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3948,
+            "height": 134,
+            "left": 375,
+            "right": 655,
+            "top": 3813,
+            "width": 280,
+            "x": 375,
+            "y": 3813
+          },
+          "tag": "blockquote",
+          "text": "\"Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats iställ"
+        }
+      ],
+      "scrollWidth": 345,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778095857-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 345,
+          "top": 0,
+          "width": 345,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1117,
+            "height": 376,
+            "left": 0,
+            "right": 345,
+            "top": 741,
+            "width": 345,
+            "x": 0,
+            "y": 741
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 717,
+            "height": 56,
+            "left": 265,
+            "right": 321,
+            "top": 661,
+            "width": 56,
+            "x": 265,
+            "y": 661
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 2214,
+          "height": 1151,
+          "left": 0,
+          "right": 345,
+          "top": 1063,
+          "width": 345,
+          "x": 0,
+          "y": 1063
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185,
+            "x": 373,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 1063,
+            "height": 993,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        },
+        {
+          "cls": "wizard-inner",
+          "id": "",
+          "rect": {
+            "bottom": 1031,
+            "height": 961,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1892,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123,
+            "x": 292,
+            "y": 1589
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 1604,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123,
+            "x": 292,
+            "y": 1589
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123,
+            "x": 292,
+            "y": 1618
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123,
+            "x": 292,
+            "y": 1618
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123,
+            "x": 292,
+            "y": 1618
+          },
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 1676,
+            "width": 123,
+            "x": 292,
+            "y": 1676
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 44,
+            "left": 292,
+            "right": 376,
+            "top": 1676,
+            "width": 84,
+            "x": 292,
+            "y": 1676
+          },
+          "tag": "a",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 345,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778099888-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 345,
+          "top": 0,
+          "width": 345,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 345,
+            "top": 0,
+            "width": 345,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1117,
+            "height": 376,
+            "left": 0,
+            "right": 345,
+            "top": 741,
+            "width": 345,
+            "x": 0,
+            "y": 741
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 717,
+            "height": 56,
+            "left": 265,
+            "right": 321,
+            "top": 661,
+            "width": 56,
+            "x": 265,
+            "y": 661
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 3703,
+          "height": 1151,
+          "left": 0,
+          "right": 345,
+          "top": 2552,
+          "width": 345,
+          "x": 0,
+          "y": 2552
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185,
+            "x": 373,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1317,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1289,
+            "width": 204,
+            "x": -9999,
+            "y": 1289
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1316,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1291,
+            "width": 204,
+            "x": -9999,
+            "y": 1291
+          },
+          "tag": "input",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3381,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 3078,
+            "width": 123,
+            "x": 292,
+            "y": 3078
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 3094,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 3078,
+            "width": 123,
+            "x": 292,
+            "y": 3078
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 3209,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 3108,
+            "width": 123,
+            "x": 292,
+            "y": 3108
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3155,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3108,
+            "width": 123,
+            "x": 292,
+            "y": 3108
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3155,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3108,
+            "width": 123,
+            "x": 292,
+            "y": 3108
+          },
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3209,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 3165,
+            "width": 123,
+            "x": 292,
+            "y": 3165
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3209,
+            "height": 44,
+            "left": 292,
+            "right": 376,
+            "top": 3165,
+            "width": 84,
+            "x": 292,
+            "y": 3165
+          },
+          "tag": "a",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 345,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778102893-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 345,
+          "top": 0,
+          "width": 345,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 345,
+            "top": 0,
+            "width": 345,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1117,
+            "height": 376,
+            "left": 0,
+            "right": 345,
+            "top": 741,
+            "width": 345,
+            "x": 0,
+            "y": 741
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 717,
+            "height": 56,
+            "left": 265,
+            "right": 321,
+            "top": 661,
+            "width": 56,
+            "x": 265,
+            "y": 661
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 6782,
+          "height": 1151,
+          "left": 0,
+          "right": 345,
+          "top": 5631,
+          "width": 345,
+          "x": 0,
+          "y": 5631
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185,
+            "x": 373,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 429,
+            "left": 206,
+            "right": 364,
+            "top": 2662,
+            "width": 158,
+            "x": 206,
+            "y": 2662
+          },
+          "tag": "div",
+          "text": "★★★★★ ”Bertil fixade hela terrassen på en dag. Ärlig prissättning och superb kvalitet.” Erik L. Mari"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 429,
+            "left": 388,
+            "right": 547,
+            "top": 2662,
+            "width": 158,
+            "x": 388,
+            "y": 2662
+          },
+          "tag": "div",
+          "text": "★★★★★ ”Visste inte att RUT gällde trädgård! Med avdraget kostar det nästan ingenting.” Maria K. Hjo"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2725,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2695,
+            "width": 92,
+            "x": 421,
+            "y": 2695
+          },
+          "tag": "div",
+          "text": "★★★★★"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2725,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2695,
+            "width": 92,
+            "x": 421,
+            "y": 2695
+          },
+          "tag": "span",
+          "text": "★★★★★"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2986,
+            "height": 245,
+            "left": 421,
+            "right": 514,
+            "top": 2741,
+            "width": 92,
+            "x": 421,
+            "y": 2741
+          },
+          "tag": "p",
+          "text": "”Visste inte att RUT gällde trädgård! Med avdraget kostar det nästan ingenting.”"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3058,
+            "height": 52,
+            "left": 421,
+            "right": 514,
+            "top": 3006,
+            "width": 92,
+            "x": 421,
+            "y": 3006
+          },
+          "tag": "div",
+          "text": "Maria K. Hjo"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3032,
+            "height": 26,
+            "left": 421,
+            "right": 514,
+            "top": 3006,
+            "width": 92,
+            "x": 421,
+            "y": 3006
+          },
+          "tag": "p",
+          "text": "Maria K."
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3058,
+            "height": 22,
+            "left": 421,
+            "right": 514,
+            "top": 3036,
+            "width": 92,
+            "x": 421,
+            "y": 3036
+          },
+          "tag": "p",
+          "text": "Hjo"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3704,
+            "height": 453,
+            "left": 24,
+            "right": 364,
+            "top": 3251,
+            "width": 340,
+            "x": 24,
+            "y": 3251
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3704,
+            "height": 453,
+            "left": 24,
+            "right": 364,
+            "top": 3251,
+            "width": 340,
+            "x": 24,
+            "y": 3251
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "sb-neutral-service-image",
+          "id": "",
+          "rect": {
+            "bottom": 3704,
+            "height": 453,
+            "left": 24,
+            "right": 364,
+            "top": 3251,
+            "width": 340,
+            "x": 24,
+            "y": 3251
+          },
+          "tag": "img",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6459,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 6156,
+            "width": 123,
+            "x": 292,
+            "y": 6156
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 6172,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 6156,
+            "width": 123,
+            "x": 292,
+            "y": 6156
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 6287,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 6186,
+            "width": 123,
+            "x": 292,
+            "y": 6186
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6234,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 6186,
+            "width": 123,
+            "x": 292,
+            "y": 6186
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6234,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 6186,
+            "width": 123,
+            "x": 292,
+            "y": 6186
+          },
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6287,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 6243,
+            "width": 123,
+            "x": 292,
+            "y": 6243
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6287,
+            "height": 44,
+            "left": 292,
+            "right": 376,
+            "top": 6243,
+            "width": 84,
+            "x": 292,
+            "y": 6243
+          },
+          "tag": "a",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 345,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778104934-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 375,
+          "top": 0,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "width": 375,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1220,
+            "height": 376,
+            "left": 0,
+            "right": 375,
+            "top": 844,
+            "width": 375,
+            "x": 0,
+            "y": 844
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 820,
+            "height": 56,
+            "left": 295,
+            "right": 351,
+            "top": 764,
+            "width": 56,
+            "x": 295,
+            "y": 764
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 6461,
+          "height": 1151,
+          "left": 0,
+          "right": 375,
+          "top": 5309,
+          "width": 375,
+          "x": 0,
+          "y": 5309
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185,
+            "x": 402,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 697,
+            "height": 594,
+            "left": -8,
+            "right": 382,
+            "top": 103,
+            "width": 390,
+            "x": -8,
+            "y": 103
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2239,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2203,
+            "width": 36,
+            "x": -2,
+            "y": 2203
+          },
+          "tag": "div",
+          "text": "1"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2353,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2317,
+            "width": 36,
+            "x": -2,
+            "y": 2317
+          },
+          "tag": "div",
+          "text": "2"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2485,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2449,
+            "width": 36,
+            "x": -2,
+            "y": 2449
+          },
+          "tag": "div",
+          "text": "3"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3854,
+            "height": 258,
+            "left": 362,
+            "right": 688,
+            "top": 3596,
+            "width": 326,
+            "x": 362,
+            "y": 3596
+          },
+          "tag": "div",
+          "text": "\"Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats iställ"
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 385,
+            "right": 665,
+            "top": 3619,
+            "width": 280,
+            "x": 385,
+            "y": 3619
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 385,
+            "right": 400,
+            "top": 3619,
+            "width": 15,
+            "x": 385,
+            "y": 3619
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3632,
+            "height": 12,
+            "left": 386,
+            "right": 398,
+            "top": 3620,
+            "width": 12,
+            "x": 386,
+            "y": 3620
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 403,
+            "right": 418,
+            "top": 3619,
+            "width": 15,
+            "x": 403,
+            "y": 3619
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3632,
+            "height": 12,
+            "left": 404,
+            "right": 416,
+            "top": 3620,
+            "width": 12,
+            "x": 404,
+            "y": 3620
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 421,
+            "right": 436,
+            "top": 3619,
+            "width": 15,
+            "x": 421,
+            "y": 3619
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3632,
+            "height": 12,
+            "left": 422,
+            "right": 434,
+            "top": 3620,
+            "width": 12,
+            "x": 422,
+            "y": 3620
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 439,
+            "right": 454,
+            "top": 3619,
+            "width": 15,
+            "x": 439,
+            "y": 3619
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3632,
+            "height": 12,
+            "left": 440,
+            "right": 452,
+            "top": 3620,
+            "width": 12,
+            "x": 440,
+            "y": 3620
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 457,
+            "right": 472,
+            "top": 3619,
+            "width": 15,
+            "x": 457,
+            "y": 3619
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3632,
+            "height": 12,
+            "left": 458,
+            "right": 470,
+            "top": 3620,
+            "width": 12,
+            "x": 458,
+            "y": 3620
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3780,
+            "height": 134,
+            "left": 385,
+            "right": 665,
+            "top": 3646,
+            "width": 280,
+            "x": 385,
+            "y": 3646
+          },
+          "tag": "blockquote",
+          "text": "\"Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats iställ"
+        }
+      ],
+      "scrollWidth": 375,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778107004-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 375,
+          "top": 0,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1220,
+            "height": 376,
+            "left": 0,
+            "right": 375,
+            "top": 844,
+            "width": 375,
+            "x": 0,
+            "y": 844
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 820,
+            "height": 56,
+            "left": 295,
+            "right": 351,
+            "top": 764,
+            "width": 56,
+            "x": 295,
+            "y": 764
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 2214,
+          "height": 1151,
+          "left": 0,
+          "right": 375,
+          "top": 1063,
+          "width": 375,
+          "x": 0,
+          "y": 1063
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185,
+            "x": 402,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 1063,
+            "height": 993,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        },
+        {
+          "cls": "wizard-inner",
+          "id": "",
+          "rect": {
+            "bottom": 1031,
+            "height": 961,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1892,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123,
+            "x": 292,
+            "y": 1589
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 1604,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123,
+            "x": 292,
+            "y": 1589
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123,
+            "x": 292,
+            "y": 1618
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123,
+            "x": 292,
+            "y": 1618
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123,
+            "x": 292,
+            "y": 1618
+          },
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 1676,
+            "width": 123,
+            "x": 292,
+            "y": 1676
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 375,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778109197-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 375,
+          "top": 0,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "width": 375,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1220,
+            "height": 376,
+            "left": 0,
+            "right": 375,
+            "top": 844,
+            "width": 375,
+            "x": 0,
+            "y": 844
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 820,
+            "height": 56,
+            "left": 295,
+            "right": 351,
+            "top": 764,
+            "width": 56,
+            "x": 295,
+            "y": 764
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 3639,
+          "height": 1151,
+          "left": 0,
+          "right": 375,
+          "top": 2488,
+          "width": 375,
+          "x": 0,
+          "y": 2488
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185,
+            "x": 402,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1305,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1277,
+            "width": 204,
+            "x": -9999,
+            "y": 1277
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1304,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1279,
+            "width": 204,
+            "x": -9999,
+            "y": 1279
+          },
+          "tag": "input",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3317,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 3013,
+            "width": 123,
+            "x": 292,
+            "y": 3013
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 3029,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 3013,
+            "width": 123,
+            "x": 292,
+            "y": 3013
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 3145,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 3043,
+            "width": 123,
+            "x": 292,
+            "y": 3043
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3043,
+            "width": 123,
+            "x": 292,
+            "y": 3043
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3043,
+            "width": 123,
+            "x": 292,
+            "y": 3043
+          },
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3145,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 3101,
+            "width": 123,
+            "x": 292,
+            "y": 3101
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 375,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778111276-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 375,
+          "top": 0,
+          "width": 375,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 375,
+            "top": 0,
+            "width": 375,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1220,
+            "height": 376,
+            "left": 0,
+            "right": 375,
+            "top": 844,
+            "width": 375,
+            "x": 0,
+            "y": 844
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 820,
+            "height": 56,
+            "left": 295,
+            "right": 351,
+            "top": 764,
+            "width": 56,
+            "x": 295,
+            "y": 764
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 6714,
+          "height": 1151,
+          "left": 0,
+          "right": 375,
+          "top": 5562,
+          "width": 375,
+          "x": 0,
+          "y": 5562
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185,
+            "x": 402,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3039,
+            "height": 429,
+            "left": 388,
+            "right": 547,
+            "top": 2611,
+            "width": 158,
+            "x": 388,
+            "y": 2611
+          },
+          "tag": "div",
+          "text": "★★★★★ ”Visste inte att RUT gällde trädgård! Med avdraget kostar det nästan ingenting.” Maria K. Hjo"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2674,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2644,
+            "width": 92,
+            "x": 421,
+            "y": 2644
+          },
+          "tag": "div",
+          "text": "★★★★★"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2674,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2644,
+            "width": 92,
+            "x": 421,
+            "y": 2644
+          },
+          "tag": "span",
+          "text": "★★★★★"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2935,
+            "height": 245,
+            "left": 421,
+            "right": 514,
+            "top": 2690,
+            "width": 92,
+            "x": 421,
+            "y": 2690
+          },
+          "tag": "p",
+          "text": "”Visste inte att RUT gällde trädgård! Med avdraget kostar det nästan ingenting.”"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3006,
+            "height": 52,
+            "left": 421,
+            "right": 514,
+            "top": 2955,
+            "width": 92,
+            "x": 421,
+            "y": 2955
+          },
+          "tag": "div",
+          "text": "Maria K. Hjo"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2980,
+            "height": 26,
+            "left": 421,
+            "right": 514,
+            "top": 2955,
+            "width": 92,
+            "x": 421,
+            "y": 2955
+          },
+          "tag": "p",
+          "text": "Maria K."
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3006,
+            "height": 22,
+            "left": 421,
+            "right": 514,
+            "top": 2984,
+            "width": 92,
+            "x": 421,
+            "y": 2984
+          },
+          "tag": "p",
+          "text": "Hjo"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6391,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 6088,
+            "width": 123,
+            "x": 292,
+            "y": 6088
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 6104,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 6088,
+            "width": 123,
+            "x": 292,
+            "y": 6088
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 6219,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 6118,
+            "width": 123,
+            "x": 292,
+            "y": 6118
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6165,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 6118,
+            "width": 123,
+            "x": 292,
+            "y": 6118
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6165,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 6118,
+            "width": 123,
+            "x": 292,
+            "y": 6118
+          },
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6219,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 6175,
+            "width": 123,
+            "x": 292,
+            "y": 6175
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 375,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778113333-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 753,
+          "top": 0,
+          "width": 753,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 46,
+            "height": 46,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 1059,
+            "height": 50,
+            "left": 576,
+            "right": 713,
+            "top": 1009,
+            "width": 137,
+            "x": 576,
+            "y": 1009
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1400,
+            "height": 376,
+            "left": 0,
+            "right": 753,
+            "top": 1024,
+            "width": 753,
+            "x": 0,
+            "y": 1024
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 1000,
+            "height": 230,
+            "left": 524,
+            "right": 729,
+            "top": 770,
+            "width": 206,
+            "x": 524,
+            "y": 770
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 6464,
+          "height": 750,
+          "left": 0,
+          "right": 753,
+          "top": 5714,
+          "width": 753,
+          "x": 0,
+          "y": 5714
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 781,
+            "right": 965,
+            "top": 14,
+            "width": 185,
+            "x": 781,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 582,
+            "height": 512,
+            "left": -8,
+            "right": 761,
+            "top": 70,
+            "width": 768,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 582,
+            "height": 512,
+            "left": -8,
+            "right": 761,
+            "top": 70,
+            "width": 768,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 571,
+            "height": 450,
+            "left": -8,
+            "right": 761,
+            "top": 121,
+            "width": 768,
+            "x": -8,
+            "y": 121
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "sb-marquee-track",
+          "id": "",
+          "rect": {
+            "bottom": 3981,
+            "height": 319,
+            "left": -80,
+            "right": 4795,
+            "top": 3662,
+            "width": 4874,
+            "x": -80,
+            "y": 3662
+          },
+          "tag": "div",
+          "text": "\"Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägen"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3957,
+            "height": 279,
+            "left": -3,
+            "right": 375,
+            "top": 3678,
+            "width": 378,
+            "x": -3,
+            "y": 3678
+          },
+          "tag": "div",
+          "text": "\"Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägen"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3957,
+            "height": 279,
+            "left": 399,
+            "right": 777,
+            "top": 3678,
+            "width": 378,
+            "x": 399,
+            "y": 3678
+          },
+          "tag": "div",
+          "text": "\"Efter att vi anlitade Seniorbolaget för trädgårdsskötsel har vi kunnat njuta av vår uteplats iställ"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3957,
+            "height": 279,
+            "left": 801,
+            "right": 1179,
+            "top": 3678,
+            "width": 378,
+            "x": 801,
+            "y": 3678
+          },
+          "tag": "div",
+          "text": "\"Som fastighetsbolag uppskattar vi ramavtalet med Seniorbolaget, vi ringer in hjälp när vi behöver, "
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3725,
+            "height": 18,
+            "left": 830,
+            "right": 1150,
+            "top": 3707,
+            "width": 320,
+            "x": 830,
+            "y": 3707
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3725,
+            "height": 18,
+            "left": 830,
+            "right": 848,
+            "top": 3707,
+            "width": 18,
+            "x": 830,
+            "y": 3707
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3723,
+            "height": 14,
+            "left": 831,
+            "right": 846,
+            "top": 3709,
+            "width": 15,
+            "x": 831,
+            "y": 3709
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3725,
+            "height": 18,
+            "left": 851,
+            "right": 869,
+            "top": 3707,
+            "width": 18,
+            "x": 851,
+            "y": 3707
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3723,
+            "height": 14,
+            "left": 852,
+            "right": 867,
+            "top": 3709,
+            "width": 15,
+            "x": 852,
+            "y": 3709
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3725,
+            "height": 18,
+            "left": 872,
+            "right": 890,
+            "top": 3707,
+            "width": 18,
+            "x": 872,
+            "y": 3707
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3723,
+            "height": 14,
+            "left": 873,
+            "right": 888,
+            "top": 3709,
+            "width": 15,
+            "x": 873,
+            "y": 3709
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3725,
+            "height": 18,
+            "left": 893,
+            "right": 911,
+            "top": 3707,
+            "width": 18,
+            "x": 893,
+            "y": 3707
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3723,
+            "height": 14,
+            "left": 894,
+            "right": 909,
+            "top": 3709,
+            "width": 15,
+            "x": 894,
+            "y": 3709
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3725,
+            "height": 18,
+            "left": 914,
+            "right": 932,
+            "top": 3707,
+            "width": 18,
+            "x": 914,
+            "y": 3707
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3723,
+            "height": 14,
+            "left": 915,
+            "right": 930,
+            "top": 3709,
+            "width": 15,
+            "x": 915,
+            "y": 3709
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3843,
+            "height": 102,
+            "left": 830,
+            "right": 1150,
+            "top": 3741,
+            "width": 320,
+            "x": 830,
+            "y": 3741
+          },
+          "tag": "blockquote",
+          "text": "\"Som fastighetsbolag uppskattar vi ramavtalet med Seniorbolaget, vi ringer in hjälp när vi behöver, "
+        }
+      ],
+      "scrollWidth": 753,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778115525-768",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 753,
+          "top": 0,
+          "width": 753,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 46,
+            "height": 46,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 1059,
+            "height": 50,
+            "left": 576,
+            "right": 713,
+            "top": 1009,
+            "width": 137,
+            "x": 576,
+            "y": 1009
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1400,
+            "height": 376,
+            "left": 0,
+            "right": 753,
+            "top": 1024,
+            "width": 753,
+            "x": 0,
+            "y": 1024
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 1000,
+            "height": 230,
+            "left": 524,
+            "right": 729,
+            "top": 770,
+            "width": 206,
+            "x": 524,
+            "y": 770
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 1587,
+          "height": 750,
+          "left": 0,
+          "right": 753,
+          "top": 836,
+          "width": 753,
+          "x": 0,
+          "y": 836
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 781,
+            "right": 965,
+            "top": 14,
+            "width": 185,
+            "x": 781,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 836,
+            "height": 766,
+            "left": -8,
+            "right": 761,
+            "top": 70,
+            "width": 768,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        },
+        {
+          "cls": "wizard-inner",
+          "id": "",
+          "rect": {
+            "bottom": 804,
+            "height": 734,
+            "left": -8,
+            "right": 761,
+            "top": 70,
+            "width": 768,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        }
+      ],
+      "scrollWidth": 753,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778117844-768",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 753,
+          "top": 0,
+          "width": 753,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 46,
+            "height": 46,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 1059,
+            "height": 50,
+            "left": 576,
+            "right": 713,
+            "top": 1009,
+            "width": 137,
+            "x": 576,
+            "y": 1009
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1400,
+            "height": 376,
+            "left": 0,
+            "right": 753,
+            "top": 1024,
+            "width": 753,
+            "x": 0,
+            "y": 1024
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 1000,
+            "height": 230,
+            "left": 524,
+            "right": 729,
+            "top": 770,
+            "width": 206,
+            "x": 524,
+            "y": 770
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 3205,
+          "height": 750,
+          "left": 0,
+          "right": 753,
+          "top": 2455,
+          "width": 753,
+          "x": 0,
+          "y": 2455
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 781,
+            "right": 965,
+            "top": 14,
+            "width": 185,
+            "x": 781,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1297,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1269,
+            "width": 204,
+            "x": -9999,
+            "y": 1269
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1296,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1271,
+            "width": 204,
+            "x": -9999,
+            "y": 1271
+          },
+          "tag": "input",
+          "text": ""
+        }
+      ],
+      "scrollWidth": 753,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778120042-768",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 753,
+          "top": 0,
+          "width": 753,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 46,
+            "height": 46,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 753,
+            "top": 0,
+            "width": 753,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 1059,
+            "height": 50,
+            "left": 576,
+            "right": 713,
+            "top": 1009,
+            "width": 137,
+            "x": 576,
+            "y": 1009
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1400,
+            "height": 376,
+            "left": 0,
+            "right": 753,
+            "top": 1024,
+            "width": 753,
+            "x": 0,
+            "y": 1024
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 1000,
+            "height": 230,
+            "left": 524,
+            "right": 729,
+            "top": 770,
+            "width": 206,
+            "x": 524,
+            "y": 770
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 4979,
+          "height": 750,
+          "left": 0,
+          "right": 753,
+          "top": 4229,
+          "width": 753,
+          "x": 0,
+          "y": 4229
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 781,
+            "right": 965,
+            "top": 14,
+            "width": 185,
+            "x": 781,
+            "y": 14
+          },
+          "tag": "span",
+          "text": "wasim.bitar@seniorbolaget.se"
+        }
+      ],
+      "scrollWidth": 753,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778122209-768",
+      "viewport": {
+        "height": 1024,
+        "width": 768
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 1265,
+          "top": 0,
+          "width": 1265,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 32,
+            "height": 32,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 935,
+            "height": 50,
+            "left": 1087,
+            "right": 1225,
+            "top": 885,
+            "width": 137,
+            "x": 1087,
+            "y": 885
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1276,
+            "height": 376,
+            "left": 0,
+            "right": 1265,
+            "top": 900,
+            "width": 1265,
+            "x": 0,
+            "y": 900
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 876,
+            "height": 230,
+            "left": 1035,
+            "right": 1241,
+            "top": 646,
+            "width": 206,
+            "x": 1035,
+            "y": 646
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 5555,
+          "height": 674,
+          "left": 0,
+          "right": 1265,
+          "top": 4880,
+          "width": 1265,
+          "x": 0,
+          "y": 4880
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 1273,
+            "top": 70,
+            "width": 1280,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 1273,
+            "top": 70,
+            "width": 1280,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 691,
+            "height": 581,
+            "left": -8,
+            "right": 880,
+            "top": 109,
+            "width": 888,
+            "x": -8,
+            "y": 109
+          },
+          "tag": "div",
+          "text": "RUT & ROT-avdrag Svar inom 24 h Erfarna seniorer Hushållsnära tjänster av erfarna seniorer Städning,"
+        },
+        {
+          "cls": "sb-marquee-track",
+          "id": "",
+          "rect": {
+            "bottom": 3545,
+            "height": 319,
+            "left": -74,
+            "right": 4851,
+            "top": 3226,
+            "width": 4925,
+            "x": -74,
+            "y": 3226
+          },
+          "tag": "div",
+          "text": "\"Ni gjorde ett toppenjobb med hemstädningen varje månad. Alltid punktliga, trevliga och lämnar lägen"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3521,
+            "height": 279,
+            "left": 1259,
+            "right": 1637,
+            "top": 3242,
+            "width": 378,
+            "x": 1259,
+            "y": 3242
+          },
+          "tag": "div",
+          "text": "\"Senioren som kom till mig var så omtänksam och noggrann. Det kändes tryggt att öppna dörren, inte a"
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1288,
+            "right": 1608,
+            "top": 3271,
+            "width": 320,
+            "x": 1288,
+            "y": 3271
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1288,
+            "right": 1306,
+            "top": 3271,
+            "width": 18,
+            "x": 1288,
+            "y": 3271
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1290,
+            "right": 1305,
+            "top": 3272,
+            "width": 15,
+            "x": 1290,
+            "y": 3272
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1309,
+            "right": 1327,
+            "top": 3271,
+            "width": 18,
+            "x": 1309,
+            "y": 3271
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1311,
+            "right": 1326,
+            "top": 3272,
+            "width": 15,
+            "x": 1311,
+            "y": 3272
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1330,
+            "right": 1348,
+            "top": 3271,
+            "width": 18,
+            "x": 1330,
+            "y": 3271
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1332,
+            "right": 1347,
+            "top": 3272,
+            "width": 15,
+            "x": 1332,
+            "y": 3272
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1351,
+            "right": 1369,
+            "top": 3271,
+            "width": 18,
+            "x": 1351,
+            "y": 3271
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1353,
+            "right": 1368,
+            "top": 3272,
+            "width": 15,
+            "x": 1353,
+            "y": 3272
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1372,
+            "right": 1390,
+            "top": 3271,
+            "width": 18,
+            "x": 1372,
+            "y": 3271
+          },
+          "tag": "svg",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1374,
+            "right": 1389,
+            "top": 3272,
+            "width": 15,
+            "x": 1374,
+            "y": 3272
+          },
+          "tag": "polygon",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3407,
+            "height": 102,
+            "left": 1288,
+            "right": 1608,
+            "top": 3305,
+            "width": 320,
+            "x": 1288,
+            "y": 3305
+          },
+          "tag": "blockquote",
+          "text": "\"Senioren som kom till mig var så omtänksam och noggrann. Det kändes tryggt att öppna dörren, inte a"
+        },
+        {
+          "cls": "sb-review-author",
+          "id": "",
+          "rect": {
+            "bottom": 3467,
+            "height": 40,
+            "left": 1288,
+            "right": 1608,
+            "top": 3427,
+            "width": 320,
+            "x": 1288,
+            "y": 3427
+          },
+          "tag": "div",
+          "text": "B Birgitta 71 år, Göteborg"
+        },
+        {
+          "cls": "sb-avatar",
+          "id": "",
+          "rect": {
+            "bottom": 3467,
+            "height": 40,
+            "left": 1288,
+            "right": 1328,
+            "top": 3427,
+            "width": 40,
+            "x": 1288,
+            "y": 3427
+          },
+          "tag": "div",
+          "text": "B"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3465,
+            "height": 37,
+            "left": 1340,
+            "right": 1433,
+            "top": 3428,
+            "width": 92,
+            "x": 1340,
+            "y": 3428
+          },
+          "tag": "div",
+          "text": "Birgitta 71 år, Göteborg"
+        }
+      ],
+      "scrollWidth": 1265,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778124385-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 1265,
+          "top": 0,
+          "width": 1265,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 32,
+            "height": 32,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 935,
+            "height": 50,
+            "left": 1087,
+            "right": 1225,
+            "top": 885,
+            "width": 137,
+            "x": 1087,
+            "y": 885
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1276,
+            "height": 376,
+            "left": 0,
+            "right": 1265,
+            "top": 900,
+            "width": 1265,
+            "x": 0,
+            "y": 900
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 876,
+            "height": 230,
+            "left": 1035,
+            "right": 1241,
+            "top": 646,
+            "width": 206,
+            "x": 1035,
+            "y": 646
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 1484,
+          "height": 674,
+          "left": 0,
+          "right": 1265,
+          "top": 809,
+          "width": 1265,
+          "x": 0,
+          "y": 809
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 809,
+            "height": 739,
+            "left": -8,
+            "right": 1273,
+            "top": 70,
+            "width": 1280,
+            "x": -8,
+            "y": 70
+          },
+          "tag": "div",
+          "text": "1 Tjänst 2 Ort 3 Detaljer 4 Kontakt Vad behöver du hjälp med? Välj en tjänst nedan Hemstädning Regel"
+        },
+        {
+          "cls": "sb-footer",
+          "id": "",
+          "rect": {
+            "bottom": 1447,
+            "height": 638,
+            "left": 0,
+            "right": 1313,
+            "top": 809,
+            "width": 1313,
+            "x": 0,
+            "y": 809
+          },
+          "tag": "footer",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig och mening f"
+        },
+        {
+          "cls": "sb-footer-col-links-wrapper",
+          "id": "",
+          "rect": {
+            "bottom": 1333,
+            "height": 467,
+            "left": 524,
+            "right": 1304,
+            "top": 865,
+            "width": 780,
+            "x": 524,
+            "y": 865
+          },
+          "tag": "div",
+          "text": "TJÄNSTER Vardagshjälp Hemstädning Trädgård Målning & tapetsering Snickeri SIDOR Om oss Intresseanmäl"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1333,
+            "height": 467,
+            "left": 1066,
+            "right": 1304,
+            "top": 865,
+            "width": 239,
+            "x": 1066,
+            "y": 865
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 881,
+            "height": 16,
+            "left": 1066,
+            "right": 1304,
+            "top": 865,
+            "width": 239,
+            "x": 1066,
+            "y": 865
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 950,
+            "height": 55,
+            "left": 1066,
+            "right": 1304,
+            "top": 895,
+            "width": 239,
+            "x": 1066,
+            "y": 895
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 917,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 895,
+            "width": 239,
+            "x": 1066,
+            "y": 895
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 950,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 927,
+            "width": 239,
+            "x": 1066,
+            "y": 927
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 1265,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778126521-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 1265,
+          "top": 0,
+          "width": 1265,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 32,
+            "height": 32,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 935,
+            "height": 50,
+            "left": 1087,
+            "right": 1225,
+            "top": 885,
+            "width": 137,
+            "x": 1087,
+            "y": 885
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1276,
+            "height": 376,
+            "left": 0,
+            "right": 1265,
+            "top": 900,
+            "width": 1265,
+            "x": 0,
+            "y": 900
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 876,
+            "height": 230,
+            "left": 1035,
+            "right": 1241,
+            "top": 646,
+            "width": 206,
+            "x": 1035,
+            "y": 646
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 3262,
+          "height": 674,
+          "left": 0,
+          "right": 1265,
+          "top": 2588,
+          "width": 1265,
+          "x": 0,
+          "y": 2588
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1244,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1217,
+            "width": 204,
+            "x": -9999,
+            "y": 1217
+          },
+          "tag": "div",
+          "text": ""
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1243,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1219,
+            "width": 204,
+            "x": -9999,
+            "y": 1219
+          },
+          "tag": "input",
+          "text": ""
+        },
+        {
+          "cls": "sb-footer",
+          "id": "",
+          "rect": {
+            "bottom": 3226,
+            "height": 638,
+            "left": 0,
+            "right": 1313,
+            "top": 2588,
+            "width": 1313,
+            "x": 0,
+            "y": 2588
+          },
+          "tag": "footer",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig och mening f"
+        },
+        {
+          "cls": "sb-footer-col-links-wrapper",
+          "id": "",
+          "rect": {
+            "bottom": 3111,
+            "height": 467,
+            "left": 524,
+            "right": 1304,
+            "top": 2644,
+            "width": 780,
+            "x": 524,
+            "y": 2644
+          },
+          "tag": "div",
+          "text": "TJÄNSTER Vardagshjälp Hemstädning Trädgård Målning & tapetsering Snickeri SIDOR Om oss Intresseanmäl"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3111,
+            "height": 467,
+            "left": 1066,
+            "right": 1304,
+            "top": 2644,
+            "width": 239,
+            "x": 1066,
+            "y": 2644
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 2659,
+            "height": 16,
+            "left": 1066,
+            "right": 1304,
+            "top": 2644,
+            "width": 239,
+            "x": 1066,
+            "y": 2644
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 2728,
+            "height": 55,
+            "left": 1066,
+            "right": 1304,
+            "top": 2673,
+            "width": 239,
+            "x": 1066,
+            "y": 2673
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2696,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 2673,
+            "width": 239,
+            "x": 1066,
+            "y": 2673
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2728,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 2706,
+            "width": 239,
+            "x": 1066,
+            "y": 2706
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 1265,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778128683-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    },
+    {
+      "cookie": {
+        "exists": true,
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 1265,
+          "top": 0,
+          "width": 1265,
+          "x": 0,
+          "y": 0
+        },
+        "text": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper",
+        "visible": false
+      },
+      "ctaPanel": {
+        "exists": true,
+        "focusables": [
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Boka hjälp",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Jobba med oss",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "a",
+            "text": "Bli franchisetagare",
+            "visible": true
+          },
+          {
+            "tabindex": null,
+            "tag": "button",
+            "text": "Stäng",
+            "visible": true
+          }
+        ],
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        },
+        "text": "Hur kan vi hjälpa dig? Boka hjälp Jobba med oss Bli franchisetagare Stäng",
+        "visible": true
+      },
+      "fixedVisible": [
+        {
+          "cls": "nojq",
+          "id": "wpadminbar",
+          "rect": {
+            "bottom": 32,
+            "height": 32,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "div",
+          "z": "99999"
+        },
+        {
+          "cls": "sb-header",
+          "id": "",
+          "rect": {
+            "bottom": 70,
+            "height": 70,
+            "left": 0,
+            "right": 1265,
+            "top": 0,
+            "width": 1265,
+            "x": 0,
+            "y": 0
+          },
+          "tag": "header",
+          "z": "9999"
+        },
+        {
+          "cls": "cmplz-btn cmplz-manage-consent manage-consent-1 cmplz-show",
+          "id": "",
+          "rect": {
+            "bottom": 935,
+            "height": 50,
+            "left": 1087,
+            "right": 1225,
+            "top": 885,
+            "width": 137,
+            "x": 1087,
+            "y": 885
+          },
+          "tag": "button",
+          "z": "9998"
+        },
+        {
+          "cls": "sb-bs-panel",
+          "id": "sb-bs-panel",
+          "rect": {
+            "bottom": 1276,
+            "height": 376,
+            "left": 0,
+            "right": 1265,
+            "top": 900,
+            "width": 1265,
+            "x": 0,
+            "y": 900
+          },
+          "tag": "div",
+          "z": "100001"
+        },
+        {
+          "cls": "",
+          "id": "sb-fab",
+          "rect": {
+            "bottom": 876,
+            "height": 230,
+            "left": 1035,
+            "right": 1241,
+            "top": 646,
+            "width": 206,
+            "x": 1035,
+            "y": 646
+          },
+          "tag": "div",
+          "z": "99999"
+        }
+      ],
+      "footer": {
+        "rect": {
+          "bottom": 4615,
+          "height": 674,
+          "left": 0,
+          "right": 1265,
+          "top": 3940,
+          "width": 1265,
+          "x": 0,
+          "y": 3940
+        },
+        "visible": true
+      },
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "sb-footer",
+          "id": "",
+          "rect": {
+            "bottom": 4578,
+            "height": 638,
+            "left": 0,
+            "right": 1313,
+            "top": 3940,
+            "width": 1313,
+            "x": 0,
+            "y": 3940
+          },
+          "tag": "footer",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig och mening f"
+        },
+        {
+          "cls": "sb-footer-col-links-wrapper",
+          "id": "",
+          "rect": {
+            "bottom": 4464,
+            "height": 467,
+            "left": 524,
+            "right": 1304,
+            "top": 3996,
+            "width": 780,
+            "x": 524,
+            "y": 3996
+          },
+          "tag": "div",
+          "text": "TJÄNSTER Vardagshjälp Hemstädning Trädgård Målning & tapetsering Snickeri SIDOR Om oss Intresseanmäl"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 4464,
+            "height": 467,
+            "left": 1066,
+            "right": 1304,
+            "top": 3996,
+            "width": 239,
+            "x": 1066,
+            "y": 3996
+          },
+          "tag": "div",
+          "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 4012,
+            "height": 16,
+            "left": 1066,
+            "right": 1304,
+            "top": 3996,
+            "width": 239,
+            "x": 1066,
+            "y": 3996
+          },
+          "tag": "h4",
+          "text": "FRANCHISETAGARE"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 4081,
+            "height": 55,
+            "left": 1066,
+            "right": 1304,
+            "top": 4026,
+            "width": 239,
+            "x": 1066,
+            "y": 4026
+          },
+          "tag": "ul",
+          "text": "Bli franchisetagare Kontakta HQ"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 4048,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 4026,
+            "width": 239,
+            "x": 1066,
+            "y": 4026
+          },
+          "tag": "li",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 4081,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 4058,
+            "width": 239,
+            "x": 1066,
+            "y": 4058
+          },
+          "tag": "li",
+          "text": "Kontakta HQ"
+        }
+      ],
+      "scrollWidth": 1265,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778130859-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    }
+  ],
+  "aggregate": {
+    "pagesChecked": 16,
+    "horizontalOverflow": [],
+    "missingFooter": [],
+    "visibleCookie": [],
+    "visibleCtaPanel": [
+      {
+        "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778095857-360",
+        "viewport": {
+          "height": 741,
+          "width": 360
+        },
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778099888-360",
+        "viewport": {
+          "height": 741,
+          "width": 360
+        },
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778102893-360",
+        "viewport": {
+          "height": 741,
+          "width": 360
+        },
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778104934-360",
+        "viewport": {
+          "height": 741,
+          "width": 360
+        },
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345,
+          "x": 0,
+          "y": 741
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778107004-390",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778109197-390",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778111276-390",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778113333-390",
+        "viewport": {
+          "height": 844,
+          "width": 390
+        },
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375,
+          "x": 0,
+          "y": 844
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778115525-768",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        },
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778117844-768",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        },
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778120042-768",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        },
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778122209-768",
+        "viewport": {
+          "height": 1024,
+          "width": 768
+        },
+        "rect": {
+          "bottom": 1400,
+          "height": 376,
+          "left": 0,
+          "right": 753,
+          "top": 1024,
+          "width": 753,
+          "x": 0,
+          "y": 1024
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/?sb-ux-v15=1781778124385-1280",
+        "viewport": {
+          "height": 900,
+          "width": 1280
+        },
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v15=1781778126521-1280",
+        "viewport": {
+          "height": 900,
+          "width": 1280
+        },
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v15=1781778128683-1280",
+        "viewport": {
+          "height": 900,
+          "width": 1280
+        },
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        }
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v15=1781778130859-1280",
+        "viewport": {
+          "height": 900,
+          "width": 1280
+        },
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265,
+          "x": 0,
+          "y": 900
+        }
+      }
+    ]
+  }
+}

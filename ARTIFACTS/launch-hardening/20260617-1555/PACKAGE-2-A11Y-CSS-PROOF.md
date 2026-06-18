@@ -36,6 +36,26 @@ Regression checks:
 - Run manual contrast checks on red cards/stat/footer/form.
 - Capture responsive screenshots for affected pages.
 
+## Live Update 2026-06-18 v19
+
+Staging is now deployed through One.com File Manager with `functions-after-v19.php`.
+
+Verified:
+
+- `rendered-a11y-css-v19.json`: 4/4 sampled pages, `linkFailurePages=[]`, `contrastFailurePages=[]`, footer contrast/link hotfix styles present.
+- `rendered-footer-mobile-layout-v19.json`: mobile footer layout hotfix present at 390px, footer link wrapper renders as `grid`, `overflowingCount=0`.
+- Screenshots:
+  - `filemanager-functions-deploy-20260618-0925/screenshots-ux-v18/footer-home-bottom-mobile-v19-390x844.png`
+  - `filemanager-functions-deploy-20260618-0925/screenshots-ux-v18/footer-kontakt-bottom-desktop-1280x900.png`
+
+Fresh gates after v19:
+
+- `node scripts\verify-a11y-css.mjs` -> `A11y CSS lint passed`
+- `node scripts\verify-conversion-a11y.mjs` -> `Conversion accessibility lint passed`
+- `node scripts\quality-gate-staging-crawl.mjs` -> 75/75 direct 200
+
+Broad axe/landmark review remains tracked separately in `LH-P2-012`.
+
 ## Rollback
 
 - Source rollback: `git revert <package-commit-sha>`.

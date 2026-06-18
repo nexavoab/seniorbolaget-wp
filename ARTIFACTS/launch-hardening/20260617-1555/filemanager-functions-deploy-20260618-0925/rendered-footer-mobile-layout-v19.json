@@ -1,0 +1,123 @@
+{
+  "bottom": {
+    "cls": "sb-footer-bottom",
+    "display": "flex",
+    "flexDirection": "column",
+    "gridTemplateColumns": "none",
+    "rect": {
+      "height": 194,
+      "left": 32,
+      "right": 343,
+      "top": 1781,
+      "width": 311
+    },
+    "tag": "div",
+    "text": "© 2026 Seniorbolaget. · Integritetspolicy · Cookies ✓ Ansvarsförsäkrade ★★★★★ Tusentals nöjda kunder"
+  },
+  "doc": {
+    "bodyScrollWidth": 382,
+    "scrollWidth": 375,
+    "scrollX": 0
+  },
+  "footer": {
+    "cls": "wp-block-template-part",
+    "display": "block",
+    "flexDirection": "row",
+    "gridTemplateColumns": "none",
+    "rect": {
+      "height": 1625,
+      "left": 0,
+      "right": 375,
+      "top": 430,
+      "width": 375
+    },
+    "tag": "footer",
+    "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig och mening f"
+  },
+  "grid": {
+    "cls": "sb-footer-grid",
+    "display": "grid",
+    "flexDirection": "column",
+    "gridTemplateColumns": "310.811px",
+    "rect": {
+      "height": 1262,
+      "left": 32,
+      "right": 343,
+      "top": 470,
+      "width": 311
+    },
+    "tag": "div",
+    "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig och mening f"
+  },
+  "hasFooter": true,
+  "hasMobileFooterHotfixStyle": true,
+  "overflowing": [],
+  "url": "https://staging.seniorbolaget.se/?sb-footer-layout-v19=202606181249-167840",
+  "viewport": {
+    "clientWidth": 375,
+    "height": 844,
+    "innerWidth": 390
+  },
+  "wrapper": {
+    "cls": "sb-footer-col-links-wrapper",
+    "display": "grid",
+    "flexDirection": "row",
+    "gridTemplateColumns": "310.811px",
+    "rect": {
+      "height": 785,
+      "left": 32,
+      "right": 343,
+      "top": 948,
+      "width": 311
+    },
+    "tag": "div",
+    "text": "TJÄNSTER Vardagshjälp Hemstädning Trädgård Målning & tapetsering Snickeri SIDOR Om oss Intresseanmäl"
+  },
+  "wrapperChildren": [
+    {
+      "cls": "",
+      "display": "block",
+      "flexDirection": "row",
+      "gridTemplateColumns": "none",
+      "rect": {
+        "height": 300,
+        "left": 32,
+        "right": 343,
+        "top": 948,
+        "width": 311
+      },
+      "tag": "div",
+      "text": "TJÄNSTER Vardagshjälp Hemstädning Trädgård Målning & tapetsering Snickeri"
+    },
+    {
+      "cls": "",
+      "display": "block",
+      "flexDirection": "row",
+      "gridTemplateColumns": "none",
+      "rect": {
+        "height": 300,
+        "left": 32,
+        "right": 343,
+        "top": 1271,
+        "width": 311
+      },
+      "tag": "div",
+      "text": "SIDOR Om oss Intresseanmälan Franchise Jobba med oss Kontakt"
+    },
+    {
+      "cls": "",
+      "display": "block",
+      "flexDirection": "row",
+      "gridTemplateColumns": "none",
+      "rect": {
+        "height": 138,
+        "left": 32,
+        "right": 343,
+        "top": 1595,
+        "width": 311
+      },
+      "tag": "div",
+      "text": "FRANCHISETAGARE Bli franchisetagare Kontakta HQ"
+    }
+  ]
+}

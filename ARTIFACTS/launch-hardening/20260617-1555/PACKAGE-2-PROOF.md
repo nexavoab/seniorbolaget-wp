@@ -61,6 +61,27 @@ Efter deploy till staging ska dessa gates koras innan raderna kan markeras fullt
 - axe sample pa `/intresseanmalan/` och `/kontakt/`.
 - Keyboard smoke for header, mobilmeny och formulär.
 
+## Live update 2026-06-18 v19
+
+Staging deployades via One.com File Manager med rollbackbara block upp till `functions-after-v19.php`.
+
+Verifierat nu:
+
+- `LH-P1-001`: fortsatt Verified fran `rendered-conversion-a11y-v10.json`.
+- `LH-P1-002`: Verified. `rendered-cta-focus-v16.json` visar stangd CTA/FAB utan fokusbara dolda lankar och oppen FAB med korrekt `aria-hidden=false`.
+- `LH-P1-003`: Verified for P1 kontrast/link scope. `rendered-a11y-css-v19.json` visar 4/4 sample utan footer contrast/link failures. Bred axe/landmark-review ligger kvar i `LH-P2-012`.
+- `LH-P1-004`: fortsatt Verified fran `rendered-conversion-a11y-v10.json`.
+- `LH-P2-001`: Verified. `rendered-footer-mobile-layout-v19.json` visar mobil footer wrapper som `grid`, 1 kolumn och `overflowingCount=0`.
+- `LH-P2-002`: Verified. `rendered-a11y-css-v19.json` visar `linkFailurePages=[]`.
+
+Bevis:
+
+- `STAGING-UX-A11Y-V19-PROOF.md`
+- `filemanager-functions-deploy-20260618-0925/rendered-a11y-css-v19.json`
+- `filemanager-functions-deploy-20260618-0925/rendered-footer-mobile-layout-v19.json`
+- `filemanager-functions-deploy-20260618-0925/screenshots-ux-v18/footer-home-bottom-mobile-v19-390x844.png`
+- `filemanager-functions-deploy-20260618-0925/screenshots-ux-v18/footer-kontakt-bottom-desktop-1280x900.png`
+
 ## Rollback
 
 Git rollback:
@@ -70,4 +91,3 @@ git revert <package-2-commit-sha>
 ```
 
 Ingen WordPress/WPCode/staging/cache/databasandring gjordes i denna korning.
-

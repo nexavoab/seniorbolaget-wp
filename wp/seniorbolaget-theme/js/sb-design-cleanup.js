@@ -469,6 +469,76 @@
     });
   }
 
+  function setFocusableState(container, enabled) {
+    Array.from(container.querySelectorAll('a, button, input, select, textarea, [tabindex]')).forEach(function(control) {
+      if (!control.hasAttribute('data-sb-original-tabindex')) {
+        control.setAttribute('data-sb-original-tabindex', control.getAttribute('tabindex') || '');
+      }
+
+      if (enabled) {
+        var original = control.getAttribute('data-sb-original-tabindex') || '';
+        if (original) control.setAttribute('tabindex', original);
+        else control.removeAttribute('tabindex');
+      } else {
+        control.setAttribute('tabindex', '-1');
+      }
+    });
+  }
+
+  function elementIntersectsViewport(element) {
+    var style = window.getComputedStyle(element);
+    var rect = element.getBoundingClientRect();
+    return style.display !== 'none' &&
+      style.visibility !== 'hidden' &&
+      Number(style.opacity || 1) !== 0 &&
+      rect.width > 0 &&
+      rect.height > 0 &&
+      rect.bottom > 0 &&
+      rect.top < window.innerHeight - 4 &&
+      rect.right > 0 &&
+      rect.left < window.innerWidth;
+  }
+
+  function repairCtaFocusState() {
+    Array.from(document.querySelectorAll('#sb-bs-panel, .sb-bs-panel')).forEach(function(panel) {
+      var open = elementIntersectsViewport(panel);
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      setFocusableState(panel, open);
+    });
+
+    Array.from(document.querySelectorAll('#sb-fab-menu')).forEach(function(menu) {
+      var open = menu.classList.contains('open');
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      setFocusableState(menu, open);
+    });
+  }
+
+  function repairFabMenuHandler() {
+    var menu = document.getElementById('sb-fab-menu');
+    var button = document.getElementById('sb-fab-btn');
+    if (!menu || !button) return;
+
+    if (!window.sbFab || !window.sbFab.__sbRepaired) {
+      window.sbFab = function() {
+        var open = !menu.classList.contains('open');
+        menu.classList.toggle('open', open);
+        button.classList.toggle('open', open);
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+        setFocusableState(menu, open);
+      };
+      window.sbFab.__sbRepaired = true;
+    }
+
+    if (!button.getAttribute('onclick') && button.getAttribute('data-sb-fab-click-repaired') !== 'true') {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.sbFab();
+      });
+      button.setAttribute('data-sb-fab-click-repaired', 'true');
+    }
+  }
+
   function repair404SwedishText() {
     if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
     var is404 = document.body.classList.contains('error404') || /404|sidan hittades inte/i.test(document.title || '');
@@ -519,6 +589,8 @@
     repairCareContextCopy();
     repairVisibleContentTypography();
     repairContactDuplicateHeading();
+    repairCtaFocusState();
+    repairFabMenuHandler();
     repair404SwedishText();
   }
 
@@ -529,4 +601,8 @@
   }
 
   window.addEventListener('load', run);
+  window.addEventListener('resize', run);
+  document.addEventListener('click', function() {
+    window.setTimeout(run, 0);
+  });
 })();

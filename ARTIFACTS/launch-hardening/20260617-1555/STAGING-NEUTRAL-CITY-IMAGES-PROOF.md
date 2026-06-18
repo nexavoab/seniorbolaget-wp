@@ -33,10 +33,23 @@ Anvandaren beslutade 2026-06-18 att saknade/placeholder-bilder ska ersattas med 
 - Tidigare hotfixar kvar: `sbCityContactHotfix=applied` och `sbLaunchTrustHotfix=applied`.
 - `4.9`/snittbetyg, `300+`, `Hundratals`, `8 ar i branschen` fortsatt borta i ortsscan.
 
+## Ny efter-verifiering v19
+
+Efter anvandarnoteringen om att `kommer snart` fortfarande syntes nagonstans kordes ett nytt live-svep efter v19-deploy och cache clear.
+
+`rendered-city-neutral-images-v19.json`:
+
+- 26/26 ortssidor passerade.
+- `totalBadImgs=0`.
+- `pagesWithComingSoonText=[]`.
+- 12 neutrala ersattningsbilder renderade.
+- Ingen `kommer snart`-traff i synlig text, `alt`, `src`, `currentSrc` eller `srcset`.
+
 ## Screenshots
 
 - `filemanager-functions-deploy-20260618-0925/screenshots-neutral-v9/amal-mobile-390x844.png`
 - `filemanager-functions-deploy-20260618-0925/screenshots-neutral-v9/amal-desktop-1280x900.png`
+- `filemanager-functions-deploy-20260618-0925/screenshots-neutral-v18/amal-neutral-mobile-390x844.png`
 
 ## Commands
 

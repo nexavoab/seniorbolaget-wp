@@ -1,0 +1,1417 @@
+{
+  "checkedAt": "2026-06-18T10:50:22.255Z",
+  "environment": "staging",
+  "pages": [
+    {
+      "contrastFailures": [],
+      "footerBackgroundColor": "rgb(31, 41, 55)",
+      "hasContrastHotfixStyle": true,
+      "hasFooter": true,
+      "hasLinkHotfixStyle": true,
+      "hasMobileFooterHotfixStyle": true,
+      "linkFailures": [],
+      "linkSamples": [
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "mailto:info@seniorbolaget.se",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.instagram.com/seniorbolagetsverige/",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.facebook.com/seniorbolaget",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/vardagshjalp",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/hemstadning",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/tradgard",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/malning",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/snickeri",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/om-oss",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/intresseanmalan",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/jobba-med-oss",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/integritetspolicy",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/cookies",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        }
+      ],
+      "textSamples": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig oc",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Mån–Fre 08:00–17:00",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Box 2069, 436 02 Hovås",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "Godkänd för RUT & ROT",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Hemstädning",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Trädgård",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Snickeri",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Om oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Franchise",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Jobba med oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakt",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Ansvarsförsäkrade",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "★★★★★ Tusentals nöjda kunder i Sverige",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Kollektivavtal",
+          "textDecorationLine": "none"
+        }
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-a11y-v19=202606181249-430727",
+      "worstContrast": 14.68
+    },
+    {
+      "contrastFailures": [],
+      "footerBackgroundColor": "rgb(31, 41, 55)",
+      "hasContrastHotfixStyle": true,
+      "hasFooter": true,
+      "hasLinkHotfixStyle": true,
+      "hasMobileFooterHotfixStyle": true,
+      "linkFailures": [],
+      "linkSamples": [
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "mailto:info@seniorbolaget.se",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.instagram.com/seniorbolagetsverige/",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.facebook.com/seniorbolaget",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/vardagshjalp",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/hemstadning",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/tradgard",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/malning",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/snickeri",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/om-oss",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/intresseanmalan",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/jobba-med-oss",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/integritetspolicy",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/cookies",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        }
+      ],
+      "textSamples": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig oc",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Mån–Fre 08:00–17:00",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Box 2069, 436 02 Hovås",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "Godkänd för RUT & ROT",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Hemstädning",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Trädgård",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Snickeri",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Om oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Franchise",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Jobba med oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakt",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Ansvarsförsäkrade",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "★★★★★ Tusentals nöjda kunder i Sverige",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Kollektivavtal",
+          "textDecorationLine": "none"
+        }
+      ],
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-a11y-v19=202606181249-133105",
+      "worstContrast": 14.68
+    },
+    {
+      "contrastFailures": [],
+      "footerBackgroundColor": "rgb(31, 41, 55)",
+      "hasContrastHotfixStyle": true,
+      "hasFooter": true,
+      "hasLinkHotfixStyle": true,
+      "hasMobileFooterHotfixStyle": true,
+      "linkFailures": [],
+      "linkSamples": [
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "mailto:info@seniorbolaget.se",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.instagram.com/seniorbolagetsverige/",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.facebook.com/seniorbolaget",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/vardagshjalp",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/hemstadning",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/tradgard",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/malning",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/snickeri",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/om-oss",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/intresseanmalan",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/jobba-med-oss",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/integritetspolicy",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/cookies",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        }
+      ],
+      "textSamples": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig oc",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Mån–Fre 08:00–17:00",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Box 2069, 436 02 Hovås",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "Godkänd för RUT & ROT",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Hemstädning",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Trädgård",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Snickeri",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Om oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Franchise",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Jobba med oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakt",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Ansvarsförsäkrade",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "★★★★★ Tusentals nöjda kunder i Sverige",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Kollektivavtal",
+          "textDecorationLine": "none"
+        }
+      ],
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-a11y-v19=202606181249-292711",
+      "worstContrast": 14.68
+    },
+    {
+      "contrastFailures": [],
+      "footerBackgroundColor": "rgb(31, 41, 55)",
+      "hasContrastHotfixStyle": true,
+      "hasFooter": true,
+      "hasLinkHotfixStyle": true,
+      "hasMobileFooterHotfixStyle": true,
+      "linkFailures": [],
+      "linkSamples": [
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "mailto:info@seniorbolaget.se",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.instagram.com/seniorbolagetsverige/",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "https://www.facebook.com/seniorbolaget",
+          "text": "",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/vardagshjalp",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/hemstadning",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/tradgard",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/malning",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/snickeri",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/om-oss",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/intresseanmalan",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/jobba-med-oss",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/bli-franchisetagare",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/kontakt",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/integritetspolicy",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "href": "/cookies",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        }
+      ],
+      "textSamples": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig oc",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "010-175 19 00",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Mån–Fre 08:00–17:00",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "info@seniorbolaget.se",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "p",
+          "text": "Box 2069, 436 02 Hovås",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "Godkänd för RUT & ROT",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Vardagshjälp",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Hemstädning",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Hemstädning",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Trädgård",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Trädgård",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Målning & tapetsering",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Snickeri",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Snickeri",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Om oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Om oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Intresseanmälan",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Franchise",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Franchise",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Jobba med oss",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Jobba med oss",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakt",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakt",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Bli franchisetagare",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "li",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Kontakta HQ",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Integritetspolicy",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "a",
+          "text": "Cookies",
+          "textDecorationLine": "underline"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Ansvarsförsäkrade",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "★★★★★ Tusentals nöjda kunder i Sverige",
+          "textDecorationLine": "none"
+        },
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 14.68,
+          "tag": "span",
+          "text": "✓ Kollektivavtal",
+          "textDecorationLine": "none"
+        }
+      ],
+      "title": "Vad kostar hemstädning 2026? – Priser per stad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/2026/03/02/vad-kostar-hemstadning-2026-priser-per-stad/?sb-a11y-v19=202606181249-157386",
+      "worstContrast": 14.68
+    }
+  ],
+  "aggregate": {
+    "pagesChecked": 4,
+    "missingFooterPages": [],
+    "missingHotfixPages": [],
+    "linkFailurePages": [],
+    "contrastFailurePages": []
+  }
+}

@@ -4,7 +4,25 @@ Date: 2026-06-18
 
 ## Current status
 
-Live staging is updated for city contact rendering through a staging-only File Manager patch.
+Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v19.php`.
+
+Current verified live scope:
+
+- city contact rendering
+- launch trust copy/stat cleanup
+- neutral city images, no public `kommer snart`
+- logo/form labels
+- care-context copy cleanup
+- 404 Swedish copy
+- content/SEO cleanup for markdown table, punctuation and staging noindex sample
+- CTA/FAB focus behavior
+- footer link affordance, contrast and mobile stacking
+
+Latest proof: `STAGING-UX-A11Y-V19-PROOF.md`
+
+Latest crawl: `STAGING-CRAWL-75.md`, 75/75 direct 200.
+
+## Earlier city-contact context
 
 Initial read-only checks against staging showed old city contact content still present:
 

@@ -74,6 +74,11 @@ Rollback:
    - `SENIORBOLAGET STAGING CARE CONTEXT COPY HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v10.php` om bara care-context-patchen ska backas.
    - `SENIORBOLAGET STAGING 404 SWEDISH COPY HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v11.php` om bara 404-patchen ska backas.
    - `SENIORBOLAGET STAGING CONTENT SEO CLEANUP HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v12.php` om bara content SEO cleanup-patchen ska backas.
+   - `SENIORBOLAGET STAGING CTA FOCUS HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v14.php` om bara CTA-focus-patchen ska backas.
+   - `SENIORBOLAGET STAGING FAB HANDLER HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v15.php` om bara FAB-handler-patchen ska backas.
+   - `SENIORBOLAGET STAGING FOOTER LINK AFFORDANCE HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v16.php` om bara footer-link-patchen ska backas.
+   - `SENIORBOLAGET STAGING FOOTER CONTRAST HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v17.php` om bara footer-contrast-patchen ska backas.
+   - `SENIORBOLAGET STAGING MOBILE FOOTER LAYOUT HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v18.php` om bara mobile-footer-patchen ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -129,6 +134,11 @@ Rollback:
 - Git revert for header/template/CSS/JS.
 - WPCode fore-kopia for staging-only CSS/JS.
 - File Manager: ta bort `SENIORBOLAGET STAGING CONVERSION A11Y HOTFIX` eller aterstall `functions-after-v9.php`.
+- File Manager: ta bort `SENIORBOLAGET STAGING CTA FOCUS HOTFIX` eller aterstall `functions-after-v14.php`.
+- File Manager: ta bort `SENIORBOLAGET STAGING FAB HANDLER HOTFIX` eller aterstall `functions-after-v15.php`.
+- File Manager: ta bort `SENIORBOLAGET STAGING FOOTER LINK AFFORDANCE HOTFIX` eller aterstall `functions-after-v16.php`.
+- File Manager: ta bort `SENIORBOLAGET STAGING FOOTER CONTRAST HOTFIX` eller aterstall `functions-after-v17.php`.
+- File Manager: ta bort `SENIORBOLAGET STAGING MOBILE FOOTER LAYOUT HOTFIX` eller aterstall `functions-after-v18.php`.
 - Om plugin-installning for formular/CTA andras: screenshot/export fore och restore efter.
 
 ### Paket 3: Content + SEO
@@ -151,5 +161,6 @@ Rollback:
 
 - Git revert for CSS/JS/templates.
 - WPCode/header-snippet fore-kopia.
+- File Manager: ta bort `SENIORBOLAGET STAGING MOBILE FOOTER LAYOUT HOTFIX` eller aterstall `functions-after-v18.php`.
 - Hosting/server-header rollback bara efter dokumenterad fore-konfiguration.
 - HSTS ska inte aktiveras med preload i denna fas; prod-beslut kravs innan deploy.

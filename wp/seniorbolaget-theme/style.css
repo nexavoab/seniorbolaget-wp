@@ -513,7 +513,14 @@ body {
 }
 
 .sb-footer,
-.sb-footer * {
+footer.wp-block-template-part {
+    background: #1F2937 !important;
+}
+
+.sb-footer,
+.sb-footer *,
+footer.wp-block-template-part,
+footer.wp-block-template-part * {
     opacity: 1 !important;
 }
 
@@ -527,17 +534,23 @@ body {
 .sb-footer-email,
 .sb-footer-badge,
 .sb-footer-bottom,
-.sb-footer-bottom a {
+.sb-footer-bottom a,
+footer.wp-block-template-part p,
+footer.wp-block-template-part a,
+footer.wp-block-template-part span,
+footer.wp-block-template-part li {
     color: #FFFFFF !important;
 }
 
-.sb-footer a {
+.sb-footer a,
+footer a:not(.wp-block-button__link) {
     text-decoration-line: underline !important;
     text-decoration-thickness: 1px !important;
     text-underline-offset: 0.18em !important;
 }
 
-.sb-footer-bottom a {
+.sb-footer-bottom a,
+footer a:not(.wp-block-button__link) {
     text-decoration: underline !important;
 }
 

@@ -37,6 +37,16 @@ Regression checks:
 - Deploy to staging only after backup/snapshot and rollback path are confirmed.
 - Run link crawl against staging and confirm normalized internal links do not create avoidable 301s.
 
+## Live Update 2026-06-18
+
+Live gate is now complete:
+
+- `node scripts\verify-internal-links.mjs` -> `Internal link lint passed`
+- `node scripts\quality-gate-staging-crawl.mjs` -> `Staging crawl passed: 75 URLs returned direct 200 responses`
+- Evidence: `STAGING-CRAWL-75.md` and `staging-crawl-75.json`
+
+`LH-P3-001` is marked `Verified` in `MASTERLIST.md`.
+
 ## Rollback
 
 - Source rollback: `git revert <package-commit-sha>`.
