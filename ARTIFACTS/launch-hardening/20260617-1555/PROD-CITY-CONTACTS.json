@@ -22,7 +22,8 @@
       "primaryPhone": "0721-511 834",
       "primaryEmails": [
         "roland.rapp@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Roland Rapp"
     },
     {
       "city": "Eskilstuna",
@@ -42,7 +43,8 @@
       "primaryPhone": "0721-511 815",
       "primaryEmails": [
         "ann-sofi.persson@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Ann-Sofi Persson"
     },
     {
       "city": "Falkenberg",
@@ -62,7 +64,8 @@
       "primaryPhone": "0721-511 827",
       "primaryEmails": [
         "stefan.nilsson@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Stefan Nilsson"
     },
     {
       "city": "Göteborg SV",
@@ -82,7 +85,8 @@
       "primaryPhone": "0704-41 25 72",
       "primaryEmails": [
         "bosse.eriksson@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Bosse Eriksson"
     },
     {
       "city": "Halmstad",
@@ -102,7 +106,8 @@
       "primaryPhone": "0707-25 24 47",
       "primaryEmails": [
         "halmstad@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Jenny Skogh"
     },
     {
       "city": "Helsingborg",
@@ -122,7 +127,8 @@
       "primaryPhone": "0721-511 805",
       "primaryEmails": [
         "milliana.rosen@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Milliana Rosén"
     },
     {
       "city": "Jönköping",
@@ -142,7 +148,8 @@
       "primaryPhone": "0721-511 834",
       "primaryEmails": [
         "roland.rapp@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Roland Rapp"
     },
     {
       "city": "Karlstad",
@@ -162,7 +169,8 @@
       "primaryPhone": "054-560 160",
       "primaryEmails": [
         "karlstad@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Runar Skoglund"
     },
     {
       "city": "Kristianstad",
@@ -182,7 +190,8 @@
       "primaryPhone": "0720-61 95 21",
       "primaryEmails": [
         "peter.lindquist@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Peter Lindquist"
     },
     {
       "city": "Kungsbacka",
@@ -202,7 +211,8 @@
       "primaryPhone": "0721-511 825",
       "primaryEmails": [
         "janette.rosen@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Janette Rosén"
     },
     {
       "city": "Kungälv",
@@ -222,7 +232,8 @@
       "primaryPhone": "0721-511 814",
       "primaryEmails": [
         "mikael.adielson@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Michael Adielson"
     },
     {
       "city": "Laholm / Båstad",
@@ -244,7 +255,8 @@
       "primaryEmails": [
         "laholm@seniorbolaget.se",
         "bastad@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Jenny Skogh"
     },
     {
       "city": "Landskrona",
@@ -264,7 +276,8 @@
       "primaryPhone": "0721-511 805",
       "primaryEmails": [
         "milliana.rosen@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Milliana Rosén"
     },
     {
       "city": "Lerum / Partille",
@@ -284,7 +297,8 @@
       "primaryPhone": "0707-25 23 72",
       "primaryEmails": [
         "jens.hendar@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Jens Hendar"
     },
     {
       "city": "Mölndal / Härryda",
@@ -304,7 +318,8 @@
       "primaryPhone": "0707-58 13 91",
       "primaryEmails": [
         "hakan.viklund@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Håkan Viklund"
     },
     {
       "city": "Nässjö",
@@ -324,7 +339,8 @@
       "primaryPhone": "0721-511 829",
       "primaryEmails": [
         "lennart.ljungdahl@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Lennart Ljungdahl"
     },
     {
       "city": "Skövde",
@@ -344,7 +360,8 @@
       "primaryPhone": "0720-61 95 09",
       "primaryEmails": [
         "susanne.kinell@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Susanne Kinell"
     },
     {
       "city": "Stenungsund",
@@ -364,7 +381,8 @@
       "primaryPhone": "0736-247 356",
       "primaryEmails": [
         "mikael.styrmark@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Mikael Styrmark"
     },
     {
       "city": "Sundsvall",
@@ -384,7 +402,8 @@
       "primaryPhone": "0721-511 806",
       "primaryEmails": [
         "eva.skog@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Eva Skog"
     },
     {
       "city": "Torsby",
@@ -404,7 +423,8 @@
       "primaryPhone": "054-560 160",
       "primaryEmails": [
         "karlstad@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Runar Skoglund"
     },
     {
       "city": "Trelleborg",
@@ -424,7 +444,8 @@
       "primaryPhone": "0721-511 826",
       "primaryEmails": [
         "peter.lindquist@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Peter Lindquist"
     },
     {
       "city": "Trollhättan",
@@ -444,7 +465,8 @@
       "primaryPhone": "0720-61 95 20",
       "primaryEmails": [
         "ejvar.bolander@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Ejvar Bolander"
     },
     {
       "city": "Ulricehamn",
@@ -464,7 +486,8 @@
       "primaryPhone": "0720-61 95 16",
       "primaryEmails": [
         "annsofie.kall@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Ann-Sofie Käll"
     },
     {
       "city": "Varberg",
@@ -484,7 +507,8 @@
       "primaryPhone": "0721-511 827",
       "primaryEmails": [
         "stefan.nilsson@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Stefan Nilsson"
     },
     {
       "city": "Åmål",
@@ -504,7 +528,8 @@
       "primaryPhone": "0721-511 812",
       "primaryEmails": [
         "monica.lindstrand@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Monica Lindstrand"
     },
     {
       "city": "Örebro",
@@ -524,7 +549,8 @@
       "primaryPhone": "0721-511 817",
       "primaryEmails": [
         "andreas.persson@seniorbolaget.se"
-      ]
+      ],
+      "contactName": "Andreas Persson"
     }
   ]
 }
