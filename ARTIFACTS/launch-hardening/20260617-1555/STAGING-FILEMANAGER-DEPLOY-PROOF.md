@@ -71,3 +71,28 @@ Rendered checks confirmed:
 - `#seniorbolaget-staging-city-contact-hotfix-20260618` exists on city pages.
 - `document.documentElement.dataset.sbCityContactHotfix` is `applied`.
 - Old shared phone `070-441 25 72` is not present in rendered city page text for the sampled pages.
+
+## V2 follow-up
+
+Initial full rendered scan found three edge cases:
+
+- `goteborg`: production source label was `Göteborg SV`, while the staging page text used `Göteborg`, so the local contact name was not replaced.
+- `kristianstad` and `skovde`: `tel:` links were correct, but visible phone text was normalized incorrectly as `072-061 ...`.
+
+The staging File Manager patch was updated in place at 2026-06-18 09:32 with:
+
+- page-label aliases per city slug, e.g. `goteborg` uses visible label `Göteborg`,
+- explicit visible phone normalization for contact `tel:` links.
+
+Additional local artifacts:
+
+- `filemanager-functions-deploy-20260618-0925/functions-after-v2.php`
+- `filemanager-functions-deploy-20260618-0925/functions-editor-v2-verification.php`
+- `filemanager-functions-deploy-20260618-0925/rendered-city-contact-fullscan.json`
+- `filemanager-functions-deploy-20260618-0925/rendered-city-contact-fullscan-v2.json`
+
+V2 full rendered scan:
+
+- 26 city pages checked.
+- 0 failures.
+- Each checked city page had the patch marker, `data-sb-city-contact-hotfix="applied"`, expected local contact name, expected local `tel:` link, phone digits visible in rendered text, and no rendered `070-441 25 72`.

@@ -37,6 +37,8 @@ Deploy proof:
 
 `ARTIFACTS/launch-hardening/20260617-1555/STAGING-FILEMANAGER-DEPLOY-PROOF.md`
 
+2026-06-18 09:32: patch v2 deployed after a full rendered city scan found three edge cases. V2 full rendered scan passed 26/26 city pages.
+
 ## Blocker
 
 Resolved: user logged in through One.com/WP admin and One.com File Manager was used for staging-only deployment.
