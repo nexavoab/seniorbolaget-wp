@@ -88,3 +88,12 @@ Fast rollback for the latest staging deploy:
 2. Restore `functions-after-v30.php` to roll back v31/v32 security, cookie, landmark and i18n package.
 3. Clear One.com/WordPress cache.
 4. Re-run HTTP, console, crawl and screenshot checks.
+
+## Production launch runbook
+
+Use `GO-LIVE-RUNBOOK.md` for the remaining production launch window:
+
+- Resolve the two review/testimonial decisions before merge/live launch.
+- Remove noindex/canonical staging policy only at production launch.
+- Enable HSTS only on production after HTTPS/header verification.
+- Save separate production evidence after launch.
