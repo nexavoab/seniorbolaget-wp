@@ -16,7 +16,7 @@
 		<h2 class="wp-block-heading">Våra tjänster</h2>
 		<!-- /wp:heading -->
 		<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"typography":{"fontSize":"var:preset|font-size|lg"}}} -->
-		<p class="has-textgra-color has-text-color" style="font-size:var(--wp--preset--font-size--lg)">Erfarna seniorer som utför vardagsarbeten med omsorg och precision.</p>
+		<p class="has-textgra-color has-text-color" style="font-size:var(--wp--preset--font-size--lg)">Erfarna seniorer som utför vardagsarbeten med omtanke och noggrannhet.</p>
 		<!-- /wp:paragraph -->
 	</div>
 	<!-- /wp:group -->

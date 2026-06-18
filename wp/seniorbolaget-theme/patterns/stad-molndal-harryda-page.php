@@ -107,7 +107,7 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år inom vård och omsorg visade mig hur äldre ofta får nöja sig med halvmesyrer. För lite tid, för lite engagemang, för mycket stress. 2020 bestämde jag mig för att visa att det går att göra bättre.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år inom service och kundnära arbete visade mig hur äldre ofta får nöja sig med halvmesyrer. För lite tid, för lite engagemang, för mycket stress. 2020 bestämde jag mig för att visa att det går att göra bättre.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag har vi 235 nöjda kunder från Mölndals centrum till villorna vid Landvettersjön. Mitt team kombinerar professionalism med genuin värme - det märks i att 80% av våra kunder är återkommande.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje morgon när jag parkerar vid Fässbergsmotet och börjar dagen tänker jag på mamma. Hon bodde kvar hemma till 94 - tack vare hjälp som denna. Det är för hennes skull jag gör det här.</p>
   </div>

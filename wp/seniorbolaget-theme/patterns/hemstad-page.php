@@ -373,7 +373,7 @@
 					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Extra omtanke ingår alltid</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
-					<p style="color:#4B5563;font-size:0.9375rem">Våra seniorer förstår vad omsorg betyder. Det syns i jobbet.</p>
+					<p style="color:#4B5563;font-size:0.9375rem">Våra seniorer arbetar med omtanke och noggrannhet. Det syns i jobbet.</p>
 					<!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->

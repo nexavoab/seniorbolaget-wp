@@ -108,7 +108,7 @@
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
     <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Nässjö har alltid varit en korsväg - här möts tågen från alla håll. Jag växte upp vid Stationsplan och såg godsvagnar rulla förbi mitt sovrumsfönster. 30 år som snickare lärde mig varje gathörn, varje trappa som knarrar, varje fönsterkarm som behöver lagas.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 insåg jag att Nässjös äldre förtjänade bättre än halvmesyrer. Kommunens hemtjänst räckte inte till, och de privata alternativen var opersonliga. Så jag startade Seniorbolaget med fyra kollegor - alla med rötter i bygden. Idag har vi 125 nöjda kunder från Bodafors stolsfabriker till Forsserums villaområden.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 insåg jag att Nässjös äldre förtjänade bättre än halvmesyrer. Många saknade praktisk hjälp i vardagen, och de privata alternativen var opersonliga. Så jag startade Seniorbolaget med fyra kollegor - alla med rötter i bygden. Idag hjälper vi kunder från Bodafors stolsfabriker till Forsserums villaområden.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Småstadsryktet är vår bästa marknadsföring. Förra månaden fick jag tre nya kunder bara genom mun-till-mun på ICA. En av dem, en 89-årig änka, berättade att grannen sagt: 'Ring Lennart - han gör det ordentligt.' Det är det finaste betyg jag kan få.</p>
   </div>
   

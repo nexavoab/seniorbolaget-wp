@@ -123,7 +123,7 @@ CITY_DATA = {
     },
     "helsingborg": {
         "story": [
-            "15 år inom hemtjänsten vid Helsingborgs lasarett visade mig sanningen: systemet sviker de äldre. 15 minuter för att städa, hjälpa med medicin och prata lite — det går inte. Jag såg ensamheten i deras ögon, frustrationen hos anhöriga som visste att mamma inte fick tillräckligt. 2019 sa jag upp mig för att göra något bättre.",
+            "15 år med service för äldre i Helsingborg visade mig sanningen: många äldre behöver mer tid, praktisk hjälp och mänsklig kontakt än systemen hinner ge. Jag såg ensamheten i deras ögon, frustrationen hos anhöriga som visste att mamma behövde mer stöd i vardagen. 2019 sa jag upp mig för att göra något bättre.",
             "Idag leder jag ett team på tolv erfarna seniorer som hjälpt 350 familjer från Sofiero slotts trädgårdar till Råå fiskeläge. Vi tar den tid som behövs — inte för att vi måste, utan för att vi vill. Varje kund får mitt mobilnummer direkt.",
             "Förra veckan fick jag ett handskrivet brev från en dotter i Danmark. Hennes 94-åriga mamma i Helsingborg hade kunnat bo kvar hemma tack vare oss. Hon skrev: 'Ni gav mamma två extra år i sitt älskade hem.' Brevet hänger inramat på mitt kontor. Det är därför vi finns."
         ],
@@ -203,7 +203,7 @@ CITY_DATA = {
     },
     "kungsbacka": {
         "story": [
-            "25 år förvaltade jag fastigheter längs hela Hallandskusten — från Säröhus till Onsala hamn. Jag såg hur de äldre hyresgästerna kämpade när de inte längre orkade sköta hemmet själva. Kommunens hemtjänst räckte aldrig till. Det var frustrerande att se.",
+            "25 år förvaltade jag fastigheter längs hela Hallandskusten — från Säröhus till Onsala hamn. Jag såg hur äldre hyresgäster kämpade när de inte längre orkade sköta hemmet själva och saknade praktisk hjälp i vardagen. Det var frustrerande att se.",
             "2019 sa jag upp mig och startade Seniorbolaget i Kungsbacka. Idag har vi 290 nöjda kunder från villorna vid Tjolöholm till stugorna på Gottskär. Mitt team på fjorton erfarna seniorer delar min frustration över hur äldre behandlas — och vår beslutsamhet att göra det bättre.",
             "Förra månaden fick jag ett samtal från en dotter i Stockholm. Hennes 89-åriga mamma i Åsa hade ramlat och kunde inte städa. Vi var där samma dag. Dottern grät i telefonen efteråt. Det är sådana samtal som gör att jag aldrig kommer sluta."
         ],
@@ -267,7 +267,7 @@ CITY_DATA = {
     },
     "molndal-harryda": {
         "story": [
-            "20 år inom vård och omsorg visade mig hur äldre ofta får nöja sig med halvmesyrer. För lite tid, för lite engagemang, för mycket stress. 2020 bestämde jag mig för att visa att det går att göra bättre.",
+            "20 år inom service och kundnära arbete visade mig hur äldre ofta får nöja sig med halvmesyrer. För lite tid, för lite engagemang, för mycket stress. 2020 bestämde jag mig för att visa att det går att göra bättre.",
             "Idag har vi 235 nöjda kunder från Mölndals centrum till villorna vid Landvettersjön. Mitt team kombinerar professionalism med genuin värme — det märks i att 80% av våra kunder är återkommande.",
             "Varje morgon när jag parkerar vid Fässbergsmotet och börjar dagen tänker jag på mamma. Hon bodde kvar hemma till 94 — tack vare hjälp som denna. Det är för hennes skull jag gör det här."
         ],
@@ -284,7 +284,7 @@ CITY_DATA = {
     "nassjo": {
         "story": [
             "Nässjö har alltid varit en korsväg — här möts tågen från alla håll. Jag växte upp vid Stationsplan och såg godsvagnar rulla förbi mitt sovrumsfönster. 30 år som snickare lärde mig varje gathörn, varje trappa som knarrar, varje fönsterkarm som behöver lagas.",
-            "2021 insåg jag att Nässjös äldre förtjänade bättre än halvmesyrer. Kommunens hemtjänst räckte inte till, och de privata alternativen var opersonliga. Så jag startade Seniorbolaget med fyra kollegor — alla med rötter i bygden. Idag har vi 125 nöjda kunder från Bodafors stolsfabriker till Forsserums villaområden.",
+            "2021 insåg jag att Nässjös äldre förtjänade bättre än halvmesyrer. Många saknade praktisk hjälp i vardagen, och de privata alternativen var opersonliga. Så jag startade Seniorbolaget med fyra kollegor — alla med rötter i bygden. Idag hjälper vi kunder från Bodafors stolsfabriker till Forsserums villaområden.",
             "Småstadsryktet är vår bästa marknadsföring. Förra månaden fick jag tre nya kunder bara genom mun-till-mun på ICA. En av dem, en 89-årig änka, berättade att grannen sagt: 'Ring Lennart — han gör det ordentligt.' Det är det finaste betyg jag kan få."
         ],
         "quote": "I Nässjö sprids ryktet snabbt — vi levererar så att folk vill berätta vidare.",

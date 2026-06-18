@@ -405,6 +405,38 @@
     });
   }
 
+  function repairCareContextCopy() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+
+    var replacements = [
+      [/Privat hemtjänst/g, 'Hemnära stöd'],
+      [/Ledsagning/g, 'Praktisk hjälp'],
+      [/Omsorg • Hemnära stöd • Praktisk hjälp/g, 'Vardagshjälp • Hemnära stöd • Praktisk hjälp'],
+      [/omsorg och precision/g, 'omtanke och noggrannhet'],
+      [/med omsorg och precision/g, 'med omtanke och noggrannhet'],
+      [/vård och omsorg/g, 'service och kundnära arbete'],
+      [/hjälpa med medicin/g, 'hjälpa med praktiska vardagsbestyr']
+    ];
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return /(Privat hemtjänst|Ledsagning|omsorg och precision|vård och omsorg|hjälpa med medicin)/i.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      var value = node.nodeValue || '';
+      replacements.forEach(function(pair) {
+        value = value.replace(pair[0], pair[1]);
+      });
+      node.nodeValue = value;
+    });
+  }
+
   function run() {
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
@@ -417,6 +449,7 @@
     improveComingSoonImages();
     repairLogoHomeLinks();
     repairInjectedContactFormLabels();
+    repairCareContextCopy();
   }
 
   if (document.readyState === 'loading') {

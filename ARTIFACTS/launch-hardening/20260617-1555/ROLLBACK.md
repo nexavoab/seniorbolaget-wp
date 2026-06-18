@@ -71,6 +71,7 @@ Rollback:
    - `SENIORBOLAGET STAGING LAUNCH TRUST HOTFIX START 2026-06-18` till `END`.
    - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v8.php` om bara neutralbildspatchen ska backas.
    - `SENIORBOLAGET STAGING CONVERSION A11Y HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v9.php` om bara logo/formlabel-patchen ska backas.
+   - `SENIORBOLAGET STAGING CARE CONTEXT COPY HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v10.php` om bara care-context-patchen ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -115,6 +116,7 @@ Rollback:
 - WordPress content: revision/export fore andring.
 - SEO metadata: Rank Math fore-kopia for og:title/canonical/meta.
 - WPCode: fore-kopia om fixen ar staging-only snippet.
+- File Manager: ta bort `SENIORBOLAGET STAGING CARE CONTEXT COPY HOTFIX` eller aterstall `functions-after-v10.php`.
 
 ### Paket 2: Conversion + Accessibility
 
