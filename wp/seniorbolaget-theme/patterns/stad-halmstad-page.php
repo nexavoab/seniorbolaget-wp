@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Jenny och driver Seniorbolaget i Halmstad. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Jenny och driver Seniorbolaget i Halmstad. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Efter 20 år som projektledare med deadlines och stress insåg jag att livet handlar om mer än tidsplaner. 2018 blev jag en av Seniorbolagets första franchisetagare — och har aldrig ångrat det.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag det största teamet i Halland med över 380 nöjda kunder. Från villorna i Tylösand till lägenheterna vid Norre Katts park — vi finns där Halmstadsborna behöver oss.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje kund får mitt mobilnummer. Det är mitt löfte. När fru Larsson i Getinge ringer klockan sju på morgonen för att berätta att allt blev perfekt — då vet jag att jag valt rätt.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Efter 20 år som projektledare med deadlines och stress insåg jag att livet handlar om mer än tidsplaner. 2018 blev jag en av Seniorbolagets första franchisetagare - och har aldrig ångrat det.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag det största teamet i Halland med över 380 nöjda kunder. Från villorna i Tylösand till lägenheterna vid Norre Katts park - vi finns där Halmstadsborna behöver oss.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje kund får mitt mobilnummer. Det är mitt löfte. När fru Larsson i Getinge ringer klockan sju på morgonen för att berätta att allt blev perfekt - då vet jag att jag valt rätt.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Vi bygger förtroende — ett rent hem och en välskött trädgård i taget."
+      "Vi bygger förtroende - ett rent hem och en välskött trädgård i taget."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Jenny Skogh, Halmstad
+      - Jenny Skogh, Halmstad
     </footer>
   </blockquote>
   <!-- /wp:html -->

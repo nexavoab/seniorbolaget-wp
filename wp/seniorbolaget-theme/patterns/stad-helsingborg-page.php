@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Milliana och driver Seniorbolaget i Helsingborg. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Milliana och driver Seniorbolaget i Helsingborg. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">15 år inom hemtjänsten vid Helsingborgs lasarett visade mig sanningen: systemet sviker de äldre. 15 minuter för att städa, hjälpa med medicin och prata lite — det går inte. Jag såg ensamheten i deras ögon, frustrationen hos anhöriga som visste att mamma inte fick tillräckligt. 2019 sa jag upp mig för att göra något bättre.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på tolv erfarna seniorer som hjälpt 350 familjer från Sofiero slotts trädgårdar till Råå fiskeläge. Vi tar den tid som behövs — inte för att vi måste, utan för att vi vill. Varje kund får mitt mobilnummer direkt.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">15 år inom hemtjänsten vid Helsingborgs lasarett visade mig sanningen: systemet sviker de äldre. 15 minuter för att städa, hjälpa med medicin och prata lite - det går inte. Jag såg ensamheten i deras ögon, frustrationen hos anhöriga som visste att mamma inte fick tillräckligt. 2019 sa jag upp mig för att göra något bättre.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på tolv erfarna seniorer som hjälpt 350 familjer från Sofiero slotts trädgårdar till Råå fiskeläge. Vi tar den tid som behövs - inte för att vi måste, utan för att vi vill. Varje kund får mitt mobilnummer direkt.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan fick jag ett handskrivet brev från en dotter i Danmark. Hennes 94-åriga mamma i Helsingborg hade kunnat bo kvar hemma tack vare oss. Hon skrev: 'Ni gav mamma två extra år i sitt älskade hem.' Brevet hänger inramat på mitt kontor. Det är därför vi finns.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "15 minuter räckte aldrig — därför tar vi den tid som behövs."
+      "15 minuter räckte aldrig - därför tar vi den tid som behövs."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Milliana Rosén, Helsingborg
+      - Milliana Rosén, Helsingborg
     </footer>
   </blockquote>
   <!-- /wp:html -->

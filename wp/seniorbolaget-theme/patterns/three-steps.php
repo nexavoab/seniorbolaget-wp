@@ -53,7 +53,7 @@
 				<h3 class="wp-block-heading" style="color:#1F2937;font-size:20px;font-weight:700">Vi matchar rätt senior</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"}}} -->
-				<p class="has-textgra-color has-text-color">Utifrån dina behov väljer vi en senior med rätt erfarenhet och rätt personlighet. Inte bara kompetens — utan också kemi.</p>
+				<p class="has-textgra-color has-text-color">Utifrån dina behov väljer vi en senior med rätt erfarenhet och rätt personlighet. Inte bara kompetens - utan också kemi.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -71,7 +71,7 @@
 				<h3 class="wp-block-heading" style="color:#1F2937;font-size:20px;font-weight:700">Hjälpen är igång</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"}}} -->
-				<p class="has-textgra-color has-text-color">Senioren börjar hos dig och gör vardagen lättare — samtidigt som de själva får gemenskap och mening. Dubbel nytta.</p>
+				<p class="has-textgra-color has-text-color">Senioren börjar hos dig och gör vardagen lättare - samtidigt som de själva får gemenskap och mening. Dubbel nytta.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->

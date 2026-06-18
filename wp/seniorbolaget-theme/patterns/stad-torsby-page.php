@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Rolf och driver Seniorbolaget i Torsby. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Rolf och driver Seniorbolaget i Torsby. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Finnskogen bär på 400 år av historia — finska nybyggare som röjde skog, byggde torp och skapade en kultur av självförsörjning och sammanhållning. Jag växte upp med den traditionen vid Klarälvens strand, där min farfar hade sin gård i tre generationer.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 startade jag Seniorbolaget för att skogen skulle ha kvar sina äldre. Med 85 nöjda kunder spridda från Sysslebäcks fjäll till Sunnes stadscentrum kör vi gärna mil av grusvägar för att nå dem som behöver oss. Avstånden är stora — men omtanken är större.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra vintern hjälpte vi en 91-årig finnskogare i Likenäs med snöskottning tre gånger i veckan. En morgon när det var -28°C sa hon: 'Utan er hade jag fått flytta till stan.' Hon har bott i samma stuga i 65 år. Det är för henne vi gör det här — för att traditioner ska leva vidare.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Finnskogen bär på 400 år av historia - finska nybyggare som röjde skog, byggde torp och skapade en kultur av självförsörjning och sammanhållning. Jag växte upp med den traditionen vid Klarälvens strand, där min farfar hade sin gård i tre generationer.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 startade jag Seniorbolaget för att skogen skulle ha kvar sina äldre. Med 85 nöjda kunder spridda från Sysslebäcks fjäll till Sunnes stadscentrum kör vi gärna mil av grusvägar för att nå dem som behöver oss. Avstånden är stora - men omtanken är större.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra vintern hjälpte vi en 91-årig finnskogare i Likenäs med snöskottning tre gånger i veckan. En morgon när det var -28°C sa hon: 'Utan er hade jag fått flytta till stan.' Hon har bott i samma stuga i 65 år. Det är för henne vi gör det här - för att traditioner ska leva vidare.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Finnskogstraditionen lever — vi tar hand om de som tog hand om skogen."
+      "Finnskogstraditionen lever - vi tar hand om de som tog hand om skogen."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Rolf Nilsson, Torsby
+      - Rolf Nilsson, Torsby
     </footer>
   </blockquote>
   <!-- /wp:html -->
@@ -251,7 +251,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
-          <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#374151;line-height:1.7;margin:16px 0;font-style:italic;">"Snöskottning och trädgård — de fixar allt!"</p>
+          <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#374151;line-height:1.7;margin:16px 0;font-style:italic;">"Snöskottning och trädgård - de fixar allt!"</p>
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
             <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Sigrid Berglund, Likenäs</p>
             <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Trädgård</span>

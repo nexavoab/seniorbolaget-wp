@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Jenny och driver Seniorbolaget i Laholm / Båstad. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Jenny och driver Seniorbolaget i Laholm / Båstad. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år drev jag Hotel & Spa på Bjärehalvön — där lärde jag mig vad verklig service betyder. Stockholmsgäster med höga förväntningar, internationella affärsmän som krävde perfektion. När hotellet såldes 2020 kunde jag inte sluta helt — jag ville använda det jag lärt mig på ett nytt sätt.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag Seniorbolaget längs hela kusten från Laholm till Båstad. Med 185 nöjda kunder och ett team på tio erfarna seniorer levererar vi samma hotellstandard — fast hemma hos dig. Från sommarstugorna i Mellbystrand till villorna vid Norrvikens trädgårdar.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Bjäre-borna är kräsna — och det ska de vara. När jag ser familjer komma tillbaka år efter år till sina sommarhus och hitta allting perfekt förberett, då vet jag att vi gör något rätt. Vi säljer inte bara städning — vi säljer sinnesfrid.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">20 år drev jag Hotel & Spa på Bjärehalvön - där lärde jag mig vad verklig service betyder. Stockholmsgäster med höga förväntningar, internationella affärsmän som krävde perfektion. När hotellet såldes 2020 kunde jag inte sluta helt - jag ville använda det jag lärt mig på ett nytt sätt.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag Seniorbolaget längs hela kusten från Laholm till Båstad. Med 185 nöjda kunder och ett team på tio erfarna seniorer levererar vi samma hotellstandard - fast hemma hos dig. Från sommarstugorna i Mellbystrand till villorna vid Norrvikens trädgårdar.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Bjäre-borna är kräsna - och det ska de vara. När jag ser familjer komma tillbaka år efter år till sina sommarhus och hitta allting perfekt förberett, då vet jag att vi gör något rätt. Vi säljer inte bara städning - vi säljer sinnesfrid.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Hotellkvalitet i ditt hem — det är Bjäre-standarden."
+      "Hotellkvalitet i ditt hem - det är Bjäre-standarden."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Jenny Skogh, Laholm / Båstad
+      - Jenny Skogh, Laholm / Båstad
     </footer>
   </blockquote>
   <!-- /wp:html -->

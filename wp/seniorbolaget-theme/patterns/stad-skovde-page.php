@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Susanne och driver Seniorbolaget i Skövde. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Susanne och driver Seniorbolaget i Skövde. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år jobbade jag på Volvo Penta här i Skövde — från verkstadsgolvet till produktionsledare. Jag lärde mig att kvalitet inte är förhandlingsbart och att detaljer avgör allt. När jag gick i pension 2020 ville jag använda den kunskapen på ett nytt sätt.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på elva erfarna hantverkare som hjälpt 215 familjer i Skaraborg. Från domkyrkans skugga i Skara till möbelsnickerierna i Tibro — vi finns där du behöver oss, med samma precision som byggde Volvos motorer.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Skaraborgare är raka och ärliga — om något inte är bra så säger de det. Det är därför vi aldrig slarvar. Förra månaden fick jag ett samtal från en 94-åring i Tidaholm som tackade för att vi gjort det möjligt för henne att bo kvar hemma. Hon hade bott i samma hus i 60 år. Sådana samtal är anledningen till att jag gör det här.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år jobbade jag på Volvo Penta här i Skövde - från verkstadsgolvet till produktionsledare. Jag lärde mig att kvalitet inte är förhandlingsbart och att detaljer avgör allt. När jag gick i pension 2020 ville jag använda den kunskapen på ett nytt sätt.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på elva erfarna hantverkare som hjälpt 215 familjer i Skaraborg. Från domkyrkans skugga i Skara till möbelsnickerierna i Tibro - vi finns där du behöver oss, med samma precision som byggde Volvos motorer.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Skaraborgare är raka och ärliga - om något inte är bra så säger de det. Det är därför vi aldrig slarvar. Förra månaden fick jag ett samtal från en 94-åring i Tidaholm som tackade för att vi gjort det möjligt för henne att bo kvar hemma. Hon hade bott i samma hus i 60 år. Sådana samtal är anledningen till att jag gör det här.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Volvo-precision i varje uppdrag — det är Skaraborg-standarden."
+      "Volvo-precision i varje uppdrag - det är Skaraborg-standarden."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Susanne Kinell, Skövde
+      - Susanne Kinell, Skövde
     </footer>
   </blockquote>
   <!-- /wp:html -->

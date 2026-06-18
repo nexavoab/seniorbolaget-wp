@@ -76,7 +76,7 @@
 				<h3 class="wp-block-heading" style="font-size:var(--wp--preset--font-size--xl);font-weight:600">Trädgård</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"var:preset|color|textgra"},"spacing":{"margin":{"top":"12px"}}}} -->
-				<p class="has-textgra-color has-text-color" style="margin-top:12px">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats — vi sköter resten.</p>
+				<p class="has-textgra-color has-text-color" style="margin-top:12px">Klippning, plantering, snöskottning och trädgårdsskötsel. Njut av din uteplats - vi sköter resten.</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:paragraph {"style":{"spacing":{"margin":{"top":"20px"}}}} -->
 				<p style="margin-top:20px"><a class="read-more-link" href="/tjanster/tradgard" style="color:var(--wp--preset--color--rod);font-weight:600;text-decoration:none;">Läs mer →</a></p>

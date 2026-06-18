@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Roland och driver Seniorbolaget i Borås. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Roland och driver Seniorbolaget i Borås. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år i Borås byggbransch lärde mig en sak: det viktigaste är inte väggar och tak — det är människorna som bor där. När jag gick i pension 2020 kunde jag inte bara sluta.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på åtta erfarna seniorer som tillsammans har över 280 nöjda kunder i Sjuhärad. Från villaområdena i Sjömarken till lägenheterna vid Stora torget — vi känner varje kvarter.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Min dotter frågade varför jag inte bara tar det lugnt. Svaret är enkelt: varje gång en kund ringer och tackar, varje gång jag ser lättnaden i en änkas ögon när trädgården äntligen blir skött — då vet jag varför.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år i Borås byggbransch lärde mig en sak: det viktigaste är inte väggar och tak - det är människorna som bor där. När jag gick i pension 2020 kunde jag inte bara sluta.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på åtta erfarna seniorer som tillsammans har över 280 nöjda kunder i Sjuhärad. Från villaområdena i Sjömarken till lägenheterna vid Stora torget - vi känner varje kvarter.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Min dotter frågade varför jag inte bara tar det lugnt. Svaret är enkelt: varje gång en kund ringer och tackar, varje gång jag ser lättnaden i en änkas ögon när trädgården äntligen blir skött - då vet jag varför.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Våra kunder blir som familj — vi tar hand om dem som om det vore våra egna föräldrar."
+      "Våra kunder blir som familj - vi tar hand om dem som om det vore våra egna föräldrar."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Roland Rapp, Borås
+      - Roland Rapp, Borås
     </footer>
   </blockquote>
   <!-- /wp:html -->

@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Ann-Sofie och driver Seniorbolaget i Ulricehamn. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Ann-Sofie och driver Seniorbolaget i Ulricehamn. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år drev jag mitt snickeriföretag vid Åsundens strand. Jag har byggt altaner, renoverat kök och satt fönster i halva staden. När jag gick i pension 2021 visste jag att jag inte kunde sluta helt — händerna ville arbeta, hjärtat ville hjälpa.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år drev jag mitt snickeriföretag vid Åsundens strand. Jag har byggt altaner, renoverat kök och satt fönster i halva staden. När jag gick i pension 2021 visste jag att jag inte kunde sluta helt - händerna ville arbeta, hjärtat ville hjälpa.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på sex erfarna hantverkare som tillsammans har 105 nöjda kunder från Hökerum till Gällstad. Vi känner varje villagata, varje flerfamiljshus, varje trädgård som behöver lite extra kärlek.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan hjälpte vi en 87-årig änka i Vegby att äntligen få ordning på trädgården efter att hennes man gått bort. Hon grät av tacksamhet. Sådana stunder påminner mig om varför jag aldrig kommer sluta — Ulricehamn är mitt hem, och här tar vi hand om varandra.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan hjälpte vi en 87-årig änka i Vegby att äntligen få ordning på trädgården efter att hennes man gått bort. Hon grät av tacksamhet. Sådana stunder påminner mig om varför jag aldrig kommer sluta - Ulricehamn är mitt hem, och här tar vi hand om varandra.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "I Ulricehamn känner vi varandra — det är både vårt ansvar och vår styrka."
+      "I Ulricehamn känner vi varandra - det är både vårt ansvar och vår styrka."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Ann-Sofie Käll, Ulricehamn
+      - Ann-Sofie Käll, Ulricehamn
     </footer>
   </blockquote>
   <!-- /wp:html -->

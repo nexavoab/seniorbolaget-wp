@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Peter och driver Seniorbolaget i Kristianstad. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Peter och driver Seniorbolaget i Kristianstad. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Kristianstad grundades av danska kungen Christian IV för 400 år sedan — en stad byggd på precision och stolthet. 20 år i servicebranschen här lärde mig att den traditionen lever kvar. Skåningar accepterar inte halvmesyrer, och det ska de inte behöva.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2020 samlade jag nordöstra Skånes bästa hantverkare och startade Seniorbolaget. Idag har vi 245 nöjda kunder från Åhus vitlöksfestival till Bäckaskogs slott. Mitt team på tolv erfarna seniorer delar min besatthet av att göra det ordentligt — varje gång, utan undantag.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Kristianstad grundades av danska kungen Christian IV för 400 år sedan - en stad byggd på precision och stolthet. 20 år i servicebranschen här lärde mig att den traditionen lever kvar. Skåningar accepterar inte halvmesyrer, och det ska de inte behöva.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2020 samlade jag nordöstra Skånes bästa hantverkare och startade Seniorbolaget. Idag har vi 245 nöjda kunder från Åhus vitlöksfestival till Bäckaskogs slott. Mitt team på tolv erfarna seniorer delar min besatthet av att göra det ordentligt - varje gång, utan undantag.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra sommaren hjälpte vi en 93-årig änka i Åhus att förbereda sommarhuset inför barnbarnens besök. När allt var klart grät hon av glädje och sa: 'Nu vågar jag bjuda hem dem igen.' Hennes man hade gått bort året innan och hon orkade inte själv. Sådana stunder påminner mig om varför vi finns.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Christian IV byggde för framtiden — vi tar hand om det han lämnade efter sig."
+      "Christian IV byggde för framtiden - vi tar hand om det han lämnade efter sig."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Peter Lindquist, Kristianstad
+      - Peter Lindquist, Kristianstad
     </footer>
   </blockquote>
   <!-- /wp:html -->

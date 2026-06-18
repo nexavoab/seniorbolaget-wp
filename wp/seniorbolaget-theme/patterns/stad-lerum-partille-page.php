@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Jens och driver Seniorbolaget i Lerum / Partille. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Jens och driver Seniorbolaget i Lerum / Partille. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år pendlade jag till Göteborg varje morgon — förbi Aspenäs herrgård, genom Sävedalens villakvarter, in mot Gamlestaden. Jag kände varje kurva, varje hållplats, varje granne som vinkade från trädgården. När jag gick i pension 2019 visste jag exakt var jag ville vara: hemma.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på nio erfarna hantverkare som hjälpt 265 familjer längs E20-korridoren. Från stugorna vid Aspen till villamattor i Sävedalen — vi finns där förortens äldre behöver oss. Många av våra kunder är gamla pendlarkollegor som äntligen har tid att njuta av sina hem.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år pendlade jag till Göteborg varje morgon - förbi Aspenäs herrgård, genom Sävedalens villakvarter, in mot Gamlestaden. Jag kände varje kurva, varje hållplats, varje granne som vinkade från trädgården. När jag gick i pension 2019 visste jag exakt var jag ville vara: hemma.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på nio erfarna hantverkare som hjälpt 265 familjer längs E20-korridoren. Från stugorna vid Aspen till villamattor i Sävedalen - vi finns där förortens äldre behöver oss. Många av våra kunder är gamla pendlarkollegor som äntligen har tid att njuta av sina hem.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan hjälpte vi en pensionerad lokförare i Gråbo med trädgården. Han hade kört Göteborgståget i 40 år men orkade inte längre med ogräset. När vi var klara sa han: 'Nu kan jag äntligen sitta på altanen och titta på tågen istället för att oroa mig.' Det är för sådana stunder vi finns.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Pendlartiden är över — nu tar vi hand om hemmen vi åkte ifrån varje dag."
+      "Pendlartiden är över - nu tar vi hand om hemmen vi åkte ifrån varje dag."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Jens Hendar, Lerum / Partille
+      - Jens Hendar, Lerum / Partille
     </footer>
   </blockquote>
   <!-- /wp:html -->

@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Stefan och driver Seniorbolaget i Varberg. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Stefan och driver Seniorbolaget i Varberg. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -109,16 +109,16 @@
   <div style="margin-bottom:2rem;">
     <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Jag kom till Varberg för surfen vid Apelviken. Jag stannade för människorna, för fästningen som vakar över hamnen, för solnedgångarna vid kallbadhuset. Efter 20 år i IT-branschen ville jag göra något som syns.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Sedan 2019 har vi hjälpt 255 familjer längs kusten från Träslövsläge till Tvååker. Mitt team av lokala seniorer känner varje gata, varje granne, varje historia.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan fick jag ett handskrivet kort från en 92-årig dam i Varberg centrum. Hon tackade för att vi gör det möjligt för henne att bo kvar hemma. Sådana kort sparar jag — de påminner mig varför jag gör det här.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra veckan fick jag ett handskrivet kort från en 92-årig dam i Varberg centrum. Hon tackade för att vi gör det möjligt för henne att bo kvar hemma. Sådana kort sparar jag - de påminner mig varför jag gör det här.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Varberg är mer än en badort — det är vårt hem."
+      "Varberg är mer än en badort - det är vårt hem."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Stefan Nilsson, Varberg
+      - Stefan Nilsson, Varberg
     </footer>
   </blockquote>
   <!-- /wp:html -->

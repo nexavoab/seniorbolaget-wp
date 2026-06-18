@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Janette och driver Seniorbolaget i Kungsbacka. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Janette och driver Seniorbolaget i Kungsbacka. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år förvaltade jag fastigheter längs hela Hallandskusten — från Säröhus till Onsala hamn. Jag såg hur de äldre hyresgästerna kämpade när de inte längre orkade sköta hemmet själva. Kommunens hemtjänst räckte aldrig till. Det var frustrerande att se.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2019 sa jag upp mig och startade Seniorbolaget i Kungsbacka. Idag har vi 290 nöjda kunder från villorna vid Tjolöholm till stugorna på Gottskär. Mitt team på fjorton erfarna seniorer delar min frustration över hur äldre behandlas — och vår beslutsamhet att göra det bättre.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år förvaltade jag fastigheter längs hela Hallandskusten - från Säröhus till Onsala hamn. Jag såg hur de äldre hyresgästerna kämpade när de inte längre orkade sköta hemmet själva. Kommunens hemtjänst räckte aldrig till. Det var frustrerande att se.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2019 sa jag upp mig och startade Seniorbolaget i Kungsbacka. Idag har vi 290 nöjda kunder från villorna vid Tjolöholm till stugorna på Gottskär. Mitt team på fjorton erfarna seniorer delar min frustration över hur äldre behandlas - och vår beslutsamhet att göra det bättre.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra månaden fick jag ett samtal från en dotter i Stockholm. Hennes 89-åriga mamma i Åsa hade ramlat och kunde inte städa. Vi var där samma dag. Dottern grät i telefonen efteråt. Det är sådana samtal som gör att jag aldrig kommer sluta.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Kungsbacka förtjänar mer än halvmesyrer — vi levererar kvalitet, varje gång."
+      "Kungsbacka förtjänar mer än halvmesyrer - vi levererar kvalitet, varje gång."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Janette Rosén, Kungsbacka
+      - Janette Rosén, Kungsbacka
     </footer>
   </blockquote>
   <!-- /wp:html -->

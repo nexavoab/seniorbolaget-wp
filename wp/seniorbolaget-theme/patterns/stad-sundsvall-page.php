@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Eva och driver Seniorbolaget i Sundsvall. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Eva och driver Seniorbolaget i Sundsvall. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2019 var jag först i Norrland att satsa på Seniorbolaget. Många trodde konceptet bara fungerade i söder. De hade fel — norrlandsborna behöver hjälp de också, kanske ännu mer när vintrarna är långa.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team som klarar allt från snöskottning i -30 till trädgårdsarbete i +30. Från Stenstaden i Sundsvall till stugorna i Ånge — vi finns där du behöver oss, 285 nöjda kunder senare.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2019 var jag först i Norrland att satsa på Seniorbolaget. Många trodde konceptet bara fungerade i söder. De hade fel - norrlandsborna behöver hjälp de också, kanske ännu mer när vintrarna är långa.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team som klarar allt från snöskottning i -30 till trädgårdsarbete i +30. Från Stenstaden i Sundsvall till stugorna i Ånge - vi finns där du behöver oss, 285 nöjda kunder senare.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Det bästa med norrlänningar? De säger precis som det är. När de tackar så menar de det. Förra månaden fick jag kaffe och hembakat bröd hos en kund i Timrå. Hon sa att vi räddat hennes vinter. Sådant glömmer jag aldrig.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "I Norrland hjälper vi varandra — det sitter i ryggmärgen."
+      "I Norrland hjälper vi varandra - det sitter i ryggmärgen."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Eva Skog, Sundsvall
+      - Eva Skog, Sundsvall
     </footer>
   </blockquote>
   <!-- /wp:html -->

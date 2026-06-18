@@ -13,11 +13,11 @@
 <div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:60px;padding-left:clamp(24px, 5vw, 80px)">
 
 	<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(1.75rem, 4vw, 2.5rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Kontakta oss — vi svarar inom 24 timmar</h1>
+	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Kontakta oss - vi svarar inom 24 timmar</h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;line-height:1.6;margin-bottom:1.5rem">Hjälp av erfarna seniorer som förstår din vardag. Ring, maila eller fyll i en förfrågan — vi hjälper dig hitta rätt tjänst.</p>
+	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;line-height:1.6;margin-bottom:1.5rem">Hjälp av erfarna seniorer som förstår din vardag. Ring, maila eller fyll i en förfrågan - vi hjälper dig hitta rätt tjänst.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- Trust-rad direkt under hero -->
@@ -195,7 +195,7 @@
 				Vilka tjänster erbjuder ni?
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
 			</summary>
-			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:16px 0 0;line-height:1.6;">Vi erbjuder hemstädning, trädgårdsskötsel, målning/tapetsering och snickeri — allt utfört av erfarna seniorer med yrkesstolthet.</p>
+			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:16px 0 0;line-height:1.6;">Vi erbjuder hemstädning, trädgårdsskötsel, målning/tapetsering och snickeri - allt utfört av erfarna seniorer med yrkesstolthet.</p>
 		</details>
 	</div>
 	<style>

@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Michael och driver Seniorbolaget i Kungälv. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Michael och driver Seniorbolaget i Kungälv. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år sedan kom jag till Kungälv som ung ingenjör på Volvo Lastvagnar. Jag skulle bara stanna några år — men Bohuskusten fångade mig. Klipporna vid Marstrand, tystnaden i Kärna, gemenskapen som bara finns i en mindre stad. Jag byggde mitt liv här.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">När jag gick i pension 2021 kunde jag inte sitta still. Istället startade jag Seniorbolaget med sex av mina närmaste vänner — alla med decenniers erfarenhet av hantverk. Idag har vi 165 nöjda kunder från Ytterby till Marstrand och vår väntelista växer varje månad.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra julen skottade vi snö åt en 91-årig änka i centrum som inte hade någon familj kvar. Hon bjöd på kaffe och pepparkakor efteråt och berättade om sitt liv. Det är sådana stunder som påminner mig om varför vi finns — inte bara för att städa och fixa, utan för att bygga gemenskap.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">30 år sedan kom jag till Kungälv som ung ingenjör på Volvo Lastvagnar. Jag skulle bara stanna några år - men Bohuskusten fångade mig. Klipporna vid Marstrand, tystnaden i Kärna, gemenskapen som bara finns i en mindre stad. Jag byggde mitt liv här.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">När jag gick i pension 2021 kunde jag inte sitta still. Istället startade jag Seniorbolaget med sex av mina närmaste vänner - alla med decenniers erfarenhet av hantverk. Idag har vi 165 nöjda kunder från Ytterby till Marstrand och vår väntelista växer varje månad.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra julen skottade vi snö åt en 91-årig änka i centrum som inte hade någon familj kvar. Hon bjöd på kaffe och pepparkakor efteråt och berättade om sitt liv. Det är sådana stunder som påminner mig om varför vi finns - inte bara för att städa och fixa, utan för att bygga gemenskap.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "I Kungälv känner alla varandra — det är därför vi aldrig slarvar."
+      "I Kungälv känner alla varandra - det är därför vi aldrig slarvar."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Michael Adielson, Kungälv
+      - Michael Adielson, Kungälv
     </footer>
   </blockquote>
   <!-- /wp:html -->

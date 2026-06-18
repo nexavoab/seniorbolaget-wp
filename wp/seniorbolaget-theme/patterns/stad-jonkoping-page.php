@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Roland och driver Seniorbolaget i Jönköping. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Roland och driver Seniorbolaget i Jönköping. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år drev jag byggföretag vid Vätterns strand. När jag sålde det 2020 trodde alla att jag skulle vila på hanen. Men småländsk envishet går inte att stänga av — jag ville fortsätta bidra.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">25 år drev jag byggföretag vid Vätterns strand. När jag sålde det 2020 trodde alla att jag skulle vila på hanen. Men småländsk envishet går inte att stänga av - jag ville fortsätta bidra.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Nu leder jag ett team av tio hantverkare som hjälpt nästan 300 familjer från Huskvarna till Bankeryd. Vi känner varje villaområde, varje flerfamiljshus, varje trädgård.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje kväll efter jobbet tar jag en promenad längs Munksjön. Där tänker jag på alla som tackat oss, alla hem vi gjort finare. Jag jobbar hårdare nu än någonsin — men det känns aldrig som jobb.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje kväll efter jobbet tar jag en promenad längs Munksjön. Där tänker jag på alla som tackat oss, alla hem vi gjort finare. Jag jobbar hårdare nu än någonsin - men det känns aldrig som jobb.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Småland är känt för kvalitet och sparsamhet — vi levererar båda."
+      "Småland är känt för kvalitet och sparsamhet - vi levererar båda."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Roland Rapp, Jönköping
+      - Roland Rapp, Jönköping
     </footer>
   </blockquote>
   <!-- /wp:html -->

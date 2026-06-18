@@ -44,9 +44,9 @@ body.page-id-98 main > h1.wp-block-post-title {
 				<span style="font-weight:600;">Anslut dig till 15+ framgångsrika franchisetagare</span>
 			</div>
 			
-			<h1 style="font-family:Rubik,sans-serif;color:#1F2937;font-size:clamp(2.25rem, 5vw, 3.25rem);font-weight:700;line-height:1.1;margin:0 0 1.25rem;">Starta eget med Seniorbolaget — trygghet och frihet</h1>
+			<h1 style="font-family:Rubik,sans-serif;color:#1F2937;font-size:clamp(2.25rem, 5vw, 3.25rem);font-weight:700;line-height:1.1;margin:0 0 1.25rem;">Starta eget med Seniorbolaget - trygghet och frihet</h1>
 			
-			<p style="font-family:Inter,sans-serif;color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:1.5rem;">Driv ditt eget företag med en etablerad affärsmodell, starkt varumärke och fullt stöd — gör skillnad för människor i din region.</p>
+			<p style="font-family:Inter,sans-serif;color:#4B5563;font-size:1.25rem;line-height:1.7;margin-bottom:1.5rem;">Driv ditt eget företag med en etablerad affärsmodell, starkt varumärke och fullt stöd - gör skillnad för människor i din region.</p>
 			
 			<!-- CTA + Trust -->
 			<div style="display:flex;flex-wrap:wrap;align-items:center;gap:16px;margin-bottom:2rem;">
@@ -226,7 +226,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="#facc15"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
 			</div>
-			<p style="font-family:Inter,sans-serif;font-size:1rem;color:#4B5563;line-height:1.7;margin:0 0 20px;font-style:italic;">"Efter 30 år i industrin ville jag göra något meningsfullt. Med Seniorbolaget driver jag nu ett företag som verkligen hjälper människor — och jag får bra stöd hela vägen."</p>
+			<p style="font-family:Inter,sans-serif;font-size:1rem;color:#4B5563;line-height:1.7;margin:0 0 20px;font-style:italic;">"Efter 30 år i industrin ville jag göra något meningsfullt. Med Seniorbolaget driver jag nu ett företag som verkligen hjälper människor - och jag får bra stöd hela vägen."</p>
 			<div style="display:flex;align-items:center;gap:12px;">
 				<div style="width:48px;height:48px;background:#C91C22;border-radius:50%;display:flex;align-items:center;justify-content:center;">
 					<span style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;color:#fff;">LE</span>
@@ -290,7 +290,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 				<span style="font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#fff;">1</span>
 			</div>
 			<h3 style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;color:#1F2937;margin:0 0 8px;">Kontakta oss</h3>
-			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#4B5563;margin:0;line-height:1.5;">Kostnadsfritt möte — ingen förpliktelse.</p>
+			<p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#4B5563;margin:0;line-height:1.5;">Kostnadsfritt möte - ingen förpliktelse.</p>
 		</div>
 		<div style="text-align:center;position:relative;z-index:1;">
 			<div style="width:64px;height:64px;background:#C91C22;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;">
@@ -421,7 +421,7 @@ body.page-id-98 main > h1.wp-block-post-title {
 <div class="wp-block-group alignfull has-background" style="background-color:#C91C22;padding-top:100px;padding-bottom:100px;">
 
 	<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Ta första steget — kostnadsfritt informationsmöte</h2>
+	<h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Ta första steget - kostnadsfritt informationsmöte</h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.9)"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->

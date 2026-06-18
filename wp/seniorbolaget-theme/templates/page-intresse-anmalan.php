@@ -254,7 +254,7 @@ get_header();
                     </div>
                 </div>
                 
-                <!-- Trust-signaler + telefonnummer — visas på mobil och desktop -->
+                <!-- Trust-signaler + telefonnummer - visas på mobil och desktop -->
                 <div class="trust-section" x-show="step < 5">
                     <div class="trust-bar">
                         <span class="trust-item"><span class="trust-check">✓</span> Svar inom 24h</span>

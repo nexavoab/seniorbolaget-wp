@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Milliana och driver Seniorbolaget i Landskrona. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Milliana och driver Seniorbolaget i Landskrona. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Jag jobbade på varvet i Landskrona i 20 år. När det lades ner kunde jag flytta — men varför? Det här är min hemstad, vid Öresund, med Ven synlig vid horisonten. Jag ville stanna och bygga något nytt.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Jag jobbade på varvet i Landskrona i 20 år. När det lades ner kunde jag flytta - men varför? Det här är min hemstad, vid Öresund, med Ven synlig vid horisonten. Jag ville stanna och bygga något nytt.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">2021 startade jag Seniorbolaget med samma arbetsmoral som på varvet: gör jobbet ordentligt, varje gång. Idag har vi 175 nöjda kunder från citadellet i centrum till villorna i Häljarp.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Landskrona har haft tuffa år, men staden reser sig. Varje gång jag hjälper en senior att bo kvar i sitt hem känns det som en liten seger — för personen, för familjen, för vår stad.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Landskrona har haft tuffa år, men staden reser sig. Varje gång jag hjälper en senior att bo kvar i sitt hem känns det som en liten seger - för personen, för familjen, för vår stad.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Landskrona är vår stad — vi tar hand om den och dess invånare."
+      "Landskrona är vår stad - vi tar hand om den och dess invånare."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Milliana Rosén, Landskrona
+      - Milliana Rosén, Landskrona
     </footer>
   </blockquote>
   <!-- /wp:html -->

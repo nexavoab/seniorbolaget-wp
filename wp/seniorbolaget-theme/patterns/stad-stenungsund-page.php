@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Mikael och driver Seniorbolaget i Stenungsund. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Mikael och driver Seniorbolaget i Stenungsund. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år jobbade jag på Preem-raffinaderiet vid Stenungsund — med ansvar för säkerhetssystem som skyddade hundratals kollegor. Ett misstag kunde kosta liv. Den inställningen präglade mig: precision, noggrannhet, inga genvägar. När jag gick i pension 2021 tog jag med mig allt jag lärt mig.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på sju erfarna hantverkare som hjälpt 145 familjer längs Bohuskusten. Från villorna vid Anrås udde till sjöbodarna på Tjörn och sommarstugorna på Orust — vi finns där skärgården behöver oss, med samma precision som skyddade raffinaderiet i decennier.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">35 år jobbade jag på Preem-raffinaderiet vid Stenungsund - med ansvar för säkerhetssystem som skyddade hundratals kollegor. Ett misstag kunde kosta liv. Den inställningen präglade mig: precision, noggrannhet, inga genvägar. När jag gick i pension 2021 tog jag med mig allt jag lärt mig.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag ett team på sju erfarna hantverkare som hjälpt 145 familjer längs Bohuskusten. Från villorna vid Anrås udde till sjöbodarna på Tjörn och sommarstugorna på Orust - vi finns där skärgården behöver oss, med samma precision som skyddade raffinaderiet i decennier.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Förra sommaren förberedde vi 23 sommarhus åt familjer som ärvt dem i generationer. En av dem, en sjökaptensfamilj på Orust, hade haft stugan sedan 1890-talet. När vi var klara sa sondottern med tårar i ögonen: 'Farfar hade varit stolt.' Det är för sådana ögonblick vi finns.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Bohusläns granitklippor tål allt — och vårt arbete håller lika länge."
+      "Bohusläns granitklippor tål allt - och vårt arbete håller lika länge."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Mikael Styrmark, Stenungsund
+      - Mikael Styrmark, Stenungsund
     </footer>
   </blockquote>
   <!-- /wp:html -->

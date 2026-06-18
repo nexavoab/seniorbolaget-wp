@@ -46,10 +46,10 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Stefan och driver Seniorbolaget i Falkenberg. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Stefan och driver Seniorbolaget i Falkenberg. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
+    <!-- TELEFON - extra stort -->
     <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
       📞 0704-41 25 72
     </a>
@@ -108,17 +108,17 @@
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
     <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Efter 25 år i Stockholm kom jag tillbaka till Falkenberg 2021. Jag saknade havet vid Skrea strand, lugnet i Glommen, gemenskapen som bara finns i en mindre stad.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">När jag startade Seniorbolaget var det för att ge tillbaka till samhället som format mig. Idag känner jag de flesta av mina 145 kunder vid namn — i Falkenberg är det så det fungerar.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">När jag startade Seniorbolaget var det för att ge tillbaka till samhället som format mig. Idag känner jag de flesta av mina 145 kunder vid namn - i Falkenberg är det så det fungerar.</p>
 <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje morgon när jag cyklar förbi Tullbron och ser Ätran glittra, tänker jag på alla som litar på oss. Det är en förmån att få hjälpa människor i sin egen hemstad.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "I Falkenberg känner alla varandra — och det märks i hur vi jobbar."
+      "I Falkenberg känner alla varandra - och det märks i hur vi jobbar."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Stefan Nilsson, Falkenberg
+      - Stefan Nilsson, Falkenberg
     </footer>
   </blockquote>
   <!-- /wp:html -->
@@ -251,7 +251,7 @@
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               <svg width="16" height="16" viewBox="0 0 24 24" fill="#C91C22"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
             </div>
-          <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#374151;line-height:1.7;margin:16px 0;font-style:italic;">"Målade om hela vardagsrummet. Snyggt och prydligt — precis som jag ville ha det."</p>
+          <p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#374151;line-height:1.7;margin:16px 0;font-style:italic;">"Målade om hela vardagsrummet. Snyggt och prydligt - precis som jag ville ha det."</p>
           <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;">
             <p style="font-family:Rubik,sans-serif;font-weight:600;font-size:0.875rem;color:#1F2937;margin:0;">Inger Bengtsson, Glommen</p>
             <span style="background:#FFF4F2;color:#C91C22;font-size:0.75rem;font-weight:600;padding:4px 10px;border-radius:50px;font-family:Inter,sans-serif;">Målning</span>
