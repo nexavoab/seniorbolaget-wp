@@ -79,6 +79,10 @@ Rollback:
    - `SENIORBOLAGET STAGING FOOTER LINK AFFORDANCE HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v16.php` om bara footer-link-patchen ska backas.
    - `SENIORBOLAGET STAGING FOOTER CONTRAST HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v17.php` om bara footer-contrast-patchen ska backas.
    - `SENIORBOLAGET STAGING MOBILE FOOTER LAYOUT HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v18.php` om bara mobile-footer-patchen ska backas.
+   - `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v19.php` om bara forsta emoji-patchen ska backas.
+   - `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY V21 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v20.php` om bara v21 ska backas.
+   - `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY V22 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v21.php` om bara v22 ska backas.
+   - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES V23 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v22.php` om bara v23 ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -140,6 +144,7 @@ Rollback:
 - File Manager: ta bort `SENIORBOLAGET STAGING FOOTER CONTRAST HOTFIX` eller aterstall `functions-after-v17.php`.
 - File Manager: ta bort `SENIORBOLAGET STAGING MOBILE FOOTER LAYOUT HOTFIX` eller aterstall `functions-after-v18.php`.
 - Om plugin-installning for formular/CTA andras: screenshot/export fore och restore efter.
+- File Manager: ta bort `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY V22 HOTFIX` eller aterstall `functions-after-v21.php`.
 
 ### Paket 3: Content + SEO
 
@@ -151,6 +156,7 @@ Rollback:
 - Git revert for templates/import/generator.
 - File Manager: ta bort `SENIORBOLAGET STAGING 404 SWEDISH COPY HOTFIX` eller aterstall `functions-after-v11.php`.
 - File Manager: ta bort `SENIORBOLAGET STAGING CONTENT SEO CLEANUP HOTFIX` eller aterstall `functions-after-v12.php`.
+- File Manager: ta bort `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES V23 HOTFIX` eller aterstall `functions-after-v22.php` for senaste neutralbildspasset.
 - SEO-plugin fore-kopia for canonical/noindex.
 
 ### Paket 4: Mobile + Performance + Security Light

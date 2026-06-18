@@ -1,0 +1,280 @@
+{
+  "checkedAt": "2026-06-18T11:15:41.858Z",
+  "token": "20260618-v22-1781781284919",
+  "total": 30,
+  "passed": 30,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-emoji-v22=20260618-v22-1781781284919-0",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/foretag/?sb-emoji-v22=20260618-v22-1781781284919-1",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Företagstjänster & B2B – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-emoji-v22=20260618-v22-1781781284919-2",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-emoji-v22=20260618-v22-1781781284919-3",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-emoji-v22=20260618-v22-1781781284919-4",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/?sb-emoji-v22=20260618-v22-1781781284919-5",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Borås – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/?sb-emoji-v22=20260618-v22-1781781284919-6",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Eskilstuna – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/?sb-emoji-v22=20260618-v22-1781781284919-7",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Falkenberg – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/?sb-emoji-v22=20260618-v22-1781781284919-8",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Göteborg – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/?sb-emoji-v22=20260618-v22-1781781284919-9",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Halmstad – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-emoji-v22=20260618-v22-1781781284919-10",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Helsingborg – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/?sb-emoji-v22=20260618-v22-1781781284919-11",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Jönköping – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/?sb-emoji-v22=20260618-v22-1781781284919-12",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Karlstad – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/?sb-emoji-v22=20260618-v22-1781781284919-13",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Kristianstad – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/?sb-emoji-v22=20260618-v22-1781781284919-14",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Kungälv – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-emoji-v22=20260618-v22-1781781284919-15",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Kungsbacka – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-emoji-v22=20260618-v22-1781781284919-16",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Laholm – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-emoji-v22=20260618-v22-1781781284919-17",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Landskrona – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/?sb-emoji-v22=20260618-v22-1781781284919-18",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Lerum – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-emoji-v22=20260618-v22-1781781284919-19",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Mölndal – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-emoji-v22=20260618-v22-1781781284919-20",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-emoji-v22=20260618-v22-1781781284919-21",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Örebro – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/?sb-emoji-v22=20260618-v22-1781781284919-22",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Skövde – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/?sb-emoji-v22=20260618-v22-1781781284919-23",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Stenungsund – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-emoji-v22=20260618-v22-1781781284919-24",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Sundsvall – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-emoji-v22=20260618-v22-1781781284919-25",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-emoji-v22=20260618-v22-1781781284919-26",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Trelleborg – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-emoji-v22=20260618-v22-1781781284919-27",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Trollhättan – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/?sb-emoji-v22=20260618-v22-1781781284919-28",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Ulricehamn – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/?sb-emoji-v22=20260618-v22-1781781284919-29",
+      "ok": true,
+      "hits": [],
+      "policyHotfix": "applied",
+      "textHitCount": 0,
+      "title": "Hushållsnära tjänster i Varberg – Seniorbolaget",
+      "v21PolicyHotfix": "applied"
+    }
+  ]
+}

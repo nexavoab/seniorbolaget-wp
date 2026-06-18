@@ -1,0 +1,1588 @@
+{
+  "checkedAt": "2026-06-18T11:04:17.279Z",
+  "total": 30,
+  "passed": 3,
+  "failed": 27,
+  "failures": [
+    {
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-emoji-v20=202606181303-850552",
+      "policyHotfix": "applied",
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📞"
+          ],
+          "text": "📞 Ring oss: 010-175 19 00"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-emoji-v20=202606181303-19526",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Åmål"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/?sb-emoji-v20=202606181303-975389",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Borås"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/?sb-emoji-v20=202606181303-234676",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Eskilstuna"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/?sb-emoji-v20=202606181303-27033",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Falkenberg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/?sb-emoji-v20=202606181303-457467",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Göteborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/?sb-emoji-v20=202606181303-673956",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Halmstad"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-emoji-v20=202606181303-855150",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Helsingborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/?sb-emoji-v20=202606181303-166678",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Jönköping"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/?sb-emoji-v20=202606181303-289418",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Karlstad"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/?sb-emoji-v20=202606181303-324798",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Kristianstad"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/?sb-emoji-v20=202606181303-575430",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Kungälv"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-emoji-v20=202606181303-853732",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Kungsbacka"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-emoji-v20=202606181303-102237",
+      "policyHotfix": "applied",
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Laholm/Båstad"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-emoji-v20=202606181303-348775",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Landskrona"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/?sb-emoji-v20=202606181303-887029",
+      "policyHotfix": "applied",
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Lerum/Partille"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-emoji-v20=202606181303-843519",
+      "policyHotfix": "applied",
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Mölndal/Härryda"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-emoji-v20=202606181303-943922",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Nässjö"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-emoji-v20=202606181303-743975",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Örebro"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/?sb-emoji-v20=202606181303-403192",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Skövde, Tibro, Hjo & Karlsborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/?sb-emoji-v20=202606181303-971986",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Stenungsund"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-emoji-v20=202606181303-157883",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Sundsvall"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-emoji-v20=202606181303-738724",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Torsby"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-emoji-v20=202606181303-775152",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Trelleborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-emoji-v20=202606181303-197936",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Trollhättan"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/?sb-emoji-v20=202606181303-469016",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Ulricehamn"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/?sb-emoji-v20=202606181303-893315",
+      "policyHotfix": "applied",
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Varberg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "hitCount": 0,
+      "hits": [],
+      "policyHotfix": "applied",
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-emoji-v20=202606181303-166948"
+    },
+    {
+      "hitCount": 0,
+      "hits": [],
+      "policyHotfix": "applied",
+      "title": "Företagstjänster & B2B – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/foretag/?sb-emoji-v20=202606181303-460025"
+    },
+    {
+      "hitCount": 0,
+      "hits": [],
+      "policyHotfix": "applied",
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-emoji-v20=202606181303-637519"
+    },
+    {
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📞"
+          ],
+          "text": "📞 Ring oss: 010-175 19 00"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-emoji-v20=202606181303-850552"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Åmål"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-emoji-v20=202606181303-19526"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Borås"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Borås – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/?sb-emoji-v20=202606181303-975389"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Eskilstuna"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Eskilstuna – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/?sb-emoji-v20=202606181303-234676"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Falkenberg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Falkenberg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/?sb-emoji-v20=202606181303-27033"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Göteborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Göteborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/?sb-emoji-v20=202606181303-457467"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Halmstad"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Halmstad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/?sb-emoji-v20=202606181303-673956"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Helsingborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Helsingborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-emoji-v20=202606181303-855150"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Jönköping"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Jönköping – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/?sb-emoji-v20=202606181303-166678"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Karlstad"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Karlstad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/?sb-emoji-v20=202606181303-289418"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Kristianstad"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Kristianstad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/?sb-emoji-v20=202606181303-324798"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Kungälv"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Kungälv – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/?sb-emoji-v20=202606181303-575430"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Kungsbacka"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Kungsbacka – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-emoji-v20=202606181303-853732"
+    },
+    {
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Laholm/Båstad"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Laholm – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-emoji-v20=202606181303-102237"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Landskrona"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Landskrona – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-emoji-v20=202606181303-348775"
+    },
+    {
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Lerum/Partille"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Lerum – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/?sb-emoji-v20=202606181303-887029"
+    },
+    {
+      "hitCount": 1,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Mölndal/Härryda"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Mölndal – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-emoji-v20=202606181303-843519"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Nässjö"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-emoji-v20=202606181303-943922"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Örebro"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Örebro – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-emoji-v20=202606181303-743975"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Skövde, Tibro, Hjo & Karlsborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Skövde – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/?sb-emoji-v20=202606181303-403192"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Stenungsund"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Stenungsund – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/?sb-emoji-v20=202606181303-971986"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Sundsvall"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Sundsvall – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-emoji-v20=202606181303-157883"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Torsby"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-emoji-v20=202606181303-738724"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Trelleborg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Trelleborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-emoji-v20=202606181303-775152"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Trollhättan"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Trollhättan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-emoji-v20=202606181303-197936"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Ulricehamn"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Ulricehamn – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/?sb-emoji-v20=202606181303-469016"
+    },
+    {
+      "hitCount": 4,
+      "hits": [
+        {
+          "chars": [
+            "📍"
+          ],
+          "text": "📍 Varberg"
+        },
+        {
+          "chars": [
+            "🧹"
+          ],
+          "text": "🧹 Hemstädning"
+        },
+        {
+          "chars": [
+            "🌿"
+          ],
+          "text": "🌿 Trädgård"
+        },
+        {
+          "chars": [
+            "🔨"
+          ],
+          "text": "🔨 Snickeri"
+        }
+      ],
+      "policyHotfix": "applied",
+      "title": "Hushållsnära tjänster i Varberg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/?sb-emoji-v20=202606181303-893315"
+    }
+  ]
+}

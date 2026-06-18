@@ -350,7 +350,9 @@
         decodeImageValue(image.getAttribute('srcset') || '')
       ].join(' ');
 
-      if (!/(bild\s+kommer\s+snart|foto\s+(kommer|uppdateras)|uppdateras\s+snart)/i.test(haystack)) return;
+      var hasComingSoonCopy = /(bild\s+kommer\s+snart|foto\s+(kommer|uppdateras)|uppdateras\s+snart)/i.test(haystack);
+      var isKnownBrokenFranchiseImage = /franchisee_(laholm-bastad|landskrona|nassjo|sundsvall|torsby|trelleborg|trollhattan)/i.test(haystack);
+      if (!hasComingSoonCopy && !isKnownBrokenFranchiseImage) return;
 
       image.src = neutralServiceImageSrc(index);
       image.alt = 'Seniorbolaget, hushållsnära tjänster';
@@ -539,6 +541,34 @@
     }
   }
 
+  function normalizeDecorativeEmojiText() {
+    var decorative = /^(?:\s|&nbsp;)*(?:📍|📞|🏢|👴|🧹|🌿|🔨|🎨|🖌️|🖌|⭐)\s*/;
+
+    function cleanNode(node) {
+      if (!node) return;
+      if (node.nodeType === 3) {
+        if (decorative.test(node.nodeValue || '')) {
+          node.nodeValue = node.nodeValue.replace(decorative, '');
+        }
+        return;
+      }
+      if (node.nodeType !== 1 || /script|style|noscript/i.test(node.tagName || '')) return;
+      Array.from(node.childNodes).forEach(cleanNode);
+    }
+
+    [
+      document.querySelector('.wp-site-blocks'),
+      document.querySelector('main'),
+      document.getElementById('sb-fab-menu'),
+      document.getElementById('sb-bs-panel'),
+      document.querySelector('.sb-bs-panel'),
+      document.querySelector('footer'),
+      document.body
+    ].forEach(function(root) {
+      cleanNode(root);
+    });
+  }
+
   function repair404SwedishText() {
     if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
     var is404 = document.body.classList.contains('error404') || /404|sidan hittades inte/i.test(document.title || '');
@@ -591,6 +621,7 @@
     repairContactDuplicateHeading();
     repairCtaFocusState();
     repairFabMenuHandler();
+    normalizeDecorativeEmojiText();
     repair404SwedishText();
   }
 

@@ -4,21 +4,27 @@ Date: 2026-06-18
 
 ## Current status
 
-Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v19.php`.
+Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v23.php`.
 
 Current verified live scope:
 
 - city contact rendering
 - launch trust copy/stat cleanup
 - neutral city images, no public `kommer snart`
+- v23 neutral replacements for verified broken `franchisee_*` city images
 - logo/form labels
 - care-context copy cleanup
 - 404 Swedish copy
 - content/SEO cleanup for markdown table, punctuation and staging noindex sample
 - CTA/FAB focus behavior
 - footer link affordance, contrast and mobile stacking
+- decorative emoji/icon-prefix policy across home, company, interest, contact and city pages
 
-Latest proof: `STAGING-UX-A11Y-V19-PROOF.md`
+Latest proofs:
+
+- `STAGING-EMOJI-POLICY-V22-PROOF.md`
+- `STAGING-NEUTRAL-CITY-IMAGES-PROOF.md`
+- `STAGING-UX-A11Y-V19-PROOF.md`
 
 Latest crawl: `STAGING-CRAWL-75.md`, 75/75 direct 200.
 

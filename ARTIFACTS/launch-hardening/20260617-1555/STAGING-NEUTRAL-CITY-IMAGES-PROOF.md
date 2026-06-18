@@ -45,6 +45,34 @@ Efter anvandarnoteringen om att `kommer snart` fortfarande syntes nagonstans kor
 - 12 neutrala ersattningsbilder renderade.
 - Ingen `kommer snart`-traff i synlig text, `alt`, `src`, `currentSrc` eller `srcset`.
 
+## Ny efter-verifiering v23
+
+Efter ytterligare anvandarnotering om neutrala bilder scannades ortssidorna igen. v22b visade att sju orter fortfarande hade trasiga `franchisee_*`-bilder med 0x0 dimensioner:
+
+- `laholm`
+- `landskrona`
+- `nassjo`
+- `sundsvall`
+- `torsby`
+- `trelleborg`
+- `trollhattan`
+
+v23 lagger ett staging-only neutralbildsblock ovanpa tidigare patchar och ersatter dessa verifierat trasiga filnamn med samma neutrala SVG-bildsystem.
+
+`rendered-city-neutral-images-v23-focused.json`:
+
+- 26/26 ortssidor passerade.
+- `totalCityImageIssues=0`.
+- `pagesWithComingSoonText=[]`.
+- Inga kvarvarande placeholder-/coming-soon-/missing-bildnamn i ortsbildsscope.
+- Inga kvarvarande `franchisee_*`-bilder med 0x0 dimensioner i ortsbildsscope.
+
+Staging snapshot:
+
+- `filemanager-functions-deploy-20260618-0925/functions-after-v23.php`
+- Nytt block: `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES V23 HOTFIX START 2026-06-18`.
+- Rollback for v23: aterstall `functions-after-v22.php` eller ta bort v23-blocket och rensa cache.
+
 ## Screenshots
 
 - `filemanager-functions-deploy-20260618-0925/screenshots-neutral-v9/amal-mobile-390x844.png`
