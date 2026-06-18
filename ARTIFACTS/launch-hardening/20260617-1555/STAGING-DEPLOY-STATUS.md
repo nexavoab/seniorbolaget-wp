@@ -4,9 +4,9 @@ Date: 2026-06-18
 
 ## Current status
 
-Live staging is not updated with the launch-hardening source changes yet.
+Live staging is updated for city contact rendering through a staging-only File Manager patch.
 
-Read-only checks against staging showed old city contact content still present:
+Initial read-only checks against staging showed old city contact content still present:
 
 | URL | Expected source change | Live staging status |
 | --- | --- | --- |
@@ -27,11 +27,21 @@ The zip contains the WordPress theme folder `seniorbolaget-theme/` and includes 
 - `seniorbolaget-theme/patterns/stad-torsby-page.php`
 - `seniorbolaget-theme/patterns/stad-orebro-page.php`
 
+## Deployed staging patch
+
+Because the city pages are saved WordPress page content, uploading only the theme source is not sufficient to update the visible city contact details. The applied staging fix is a marked `wp_footer` runtime patch in:
+
+`seniorbolaget.se/staging/wp-content/themes/seniorbolaget-theme/functions.php`
+
+Deploy proof:
+
+`ARTIFACTS/launch-hardening/20260617-1555/STAGING-FILEMANAGER-DEPLOY-PROOF.md`
+
 ## Blocker
 
-`https://staging.seniorbolaget.se/wp-admin/` redirects to the WordPress login page. There is no authenticated admin session available in the in-app browser.
+Resolved: user logged in through One.com/WP admin and One.com File Manager was used for staging-only deployment.
 
-The repo does not contain a staging deployment workflow, staging WP-CLI alias, or documented SFTP/hosting deploy command. Previous staging changes in the project documentation were made manually through WordPress admin/WPCode and One.com cache clearing.
+The repo still does not contain a staging deployment workflow, staging WP-CLI alias, or documented SFTP/hosting deploy command. The live staging update was performed manually through One.com File Manager with local before/after artifacts.
 
 ## Safe deployment path
 
