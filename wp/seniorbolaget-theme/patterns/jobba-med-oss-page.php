@@ -33,7 +33,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 	<div class="wp-block-buttons" style="margin-bottom:1.5rem">
 		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Anmäl ditt intresse</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Anmäl ditt intresse</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
@@ -335,7 +335,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"vit","textColor":"rod","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.25rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.25rem;font-weight:700;">Anmäl intresse</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.25rem;font-weight:700;">Anmäl intresse</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

@@ -215,7 +215,7 @@
             <div class="gdpr-check">
                 <input type="checkbox" id="gdpr" x-model="formData.gdprConsent">
                 <label for="gdpr" class="gdpr-text">
-                    Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy" target="_blank">integritetspolicy</a>.
+                    Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy/" target="_blank">integritetspolicy</a>.
                 </label>
             </div>
             

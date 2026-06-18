@@ -231,7 +231,7 @@ get_header();
                     </div>
                     <div class="gdpr-check">
                         <input type="checkbox" id="gdpr" x-model="formData.gdprConsent">
-                        <label for="gdpr" class="gdpr-text">Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy" target="_blank">integritetspolicy</a>.</label>
+                        <label for="gdpr" class="gdpr-text">Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy/" target="_blank">integritetspolicy</a>.</label>
                     </div>
                     <button class="submit-btn" @click="submitForm()" :disabled="!canSubmit() || isSubmitting" type="button">
                         <span x-show="isSubmitting" class="spinner"></span>

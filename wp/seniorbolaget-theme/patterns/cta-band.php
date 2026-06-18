@@ -30,7 +30,7 @@
 				<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"var:preset|spacing|sm","margin":{"top":"var:preset|spacing|lg"}}}} -->
 				<div class="wp-block-buttons">
 					<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}}},"className":"is-style-fill"} -->
-					<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/kontakt" style="border-radius:50px;padding:1rem 2.5rem">Kontakta oss</a></div>
+					<div class="wp-block-button is-style-fill"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/kontakt/" style="border-radius:50px;padding:1rem 2.5rem">Kontakta oss</a></div>
 					<!-- /wp:button -->
 				</div>
 				<!-- /wp:buttons -->
