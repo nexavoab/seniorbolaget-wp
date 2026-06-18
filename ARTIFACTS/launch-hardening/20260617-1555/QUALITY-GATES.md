@@ -16,6 +16,7 @@ Bevis:
 
 - URL-lista, statuskod, final URL, redirect count.
 - Sammanfattning: antal URL, antal 200, antal 3xx, antal 4xx/5xx.
+- 2026-06-18: `node scripts/quality-gate-staging-crawl.mjs https://staging.seniorbolaget.se/sitemap_index.xml 75 ARTIFACTS/launch-hardening/20260617-1555 600` -> 75/75 direct 200, se `STAGING-CRAWL-75.md` och `staging-crawl-75.json`.
 
 ## Gate 2: Content-lint
 
@@ -127,4 +128,3 @@ Acceptans:
 - Inget mixed content.
 - Headers dokumenterade: CSP, XFO, XCTO, Referrer-Policy, Permissions-Policy, HSTS.
 - noindex/canonical-policy kontrollerad mot beslut.
-
