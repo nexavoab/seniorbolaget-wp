@@ -1,0 +1,169 @@
+{
+  "checkedAt": "2026-06-18T10:16:52.285Z",
+  "environment": "staging",
+  "pages": [
+    {
+      "canonical": null,
+      "contactContentHeadings": [
+        "Vad kostar hemstädning 2026? – Priser per stad",
+        "Vad kostar hemstädning 2026?",
+        "Prisjämförelse per stad 2026",
+        "Vad påverkar priset?",
+        "Så fungerar RUT-avdraget för städning",
+        "Är hemstädning värt pengarna?",
+        "Vanliga frågor om hemstädningspriser",
+        "Boka hemstädning med fast senior – utan bindningstid",
+        "Redo att komma igång?"
+      ],
+      "dataset": {
+        "contentSeoCleanup": "applied",
+        "contentSeoCleanupCounts": "tables:0,care:0,typography:0,contact:0"
+      },
+      "duplicateHelpingContentHeadingCount": 0,
+      "forbiddenCareElements": [],
+      "h1": "Vad kostar hemstädning 2026? – Priser per stad",
+      "hasEmDash": false,
+      "priceTableCount": 1,
+      "rawMarkdownPipe": false,
+      "robotsMeta": "noindex, nofollow",
+      "spaceBeforeCommaHits": 0,
+      "tableCount": 1,
+      "title": "Vad kostar hemstädning 2026? – Priser per stad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/2026/03/02/vad-kostar-hemstadning-2026-priser-per-stad/?sb-content-v14=1781777797737"
+    },
+    {
+      "canonical": null,
+      "contactContentHeadings": [
+        "RUT- och ROT-avdrag förklarat",
+        "Våra tjänster",
+        "Prisexempel",
+        "Få en kostnadsfri offert"
+      ],
+      "dataset": {
+        "contentSeoCleanup": "applied",
+        "contentSeoCleanupCounts": "tables:0,care:0,typography:0,contact:0"
+      },
+      "duplicateHelpingContentHeadingCount": 0,
+      "forbiddenCareElements": [],
+      "h1": null,
+      "hasEmDash": false,
+      "priceTableCount": 0,
+      "rawMarkdownPipe": false,
+      "robotsMeta": "noindex, nofollow",
+      "spaceBeforeCommaHits": 0,
+      "tableCount": 4,
+      "title": "Priser – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/priser/?sb-content-v14=1781777797737"
+    },
+    {
+      "canonical": null,
+      "contactContentHeadings": [
+        "Hur kan vi hjälpa dig?",
+        "Välj vad du behöver hjälp med",
+        "Möt teamet bakom Seniorbolaget",
+        "Vanliga frågor om kontakt"
+      ],
+      "dataset": {
+        "contentSeoCleanup": "applied",
+        "contentSeoCleanupCounts": "tables:0,care:0,typography:0,contact:0"
+      },
+      "duplicateHelpingContentHeadingCount": 1,
+      "forbiddenCareElements": [],
+      "h1": "Hur kan vi hjälpa dig?",
+      "hasEmDash": false,
+      "priceTableCount": 0,
+      "rawMarkdownPipe": false,
+      "robotsMeta": "noindex, nofollow",
+      "spaceBeforeCommaHits": 0,
+      "tableCount": 0,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-content-v14=1781777797737"
+    },
+    {
+      "canonical": null,
+      "contactContentHeadings": [
+        "Hushållsnära tjänster av erfarna seniorer",
+        "Våra tjänster",
+        "Vår process i tre steg",
+        "Fyra skäl att anlita en senior",
+        "Vad säger våra kunder om oss",
+        "Vanliga frågor",
+        "Vill du bli franchisetagare?"
+      ],
+      "dataset": {
+        "contentSeoCleanup": "applied",
+        "contentSeoCleanupCounts": "tables:0,care:0,typography:0,contact:0"
+      },
+      "duplicateHelpingContentHeadingCount": 0,
+      "forbiddenCareElements": [],
+      "h1": "Hushållsnära tjänster av erfarna seniorer",
+      "hasEmDash": false,
+      "priceTableCount": 0,
+      "rawMarkdownPipe": false,
+      "robotsMeta": "noindex, nofollow",
+      "spaceBeforeCommaHits": 0,
+      "tableCount": 0,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-content-v14=1781777797737"
+    },
+    {
+      "canonical": null,
+      "contactContentHeadings": [
+        "Hemstädning, trädgård & hantverkstjänster i Åmål",
+        "Så fungerar det",
+        "Vad våra kunder säger",
+        "Vill du jobba hos Seniorbolaget i Åmål?",
+        "Vanliga frågor"
+      ],
+      "dataset": {
+        "contentSeoCleanup": "applied",
+        "contentSeoCleanupCounts": "tables:0,care:0,typography:10,contact:0"
+      },
+      "duplicateHelpingContentHeadingCount": 0,
+      "forbiddenCareElements": [],
+      "h1": "Hemstädning, trädgård & hantverkstjänster i Åmål",
+      "hasEmDash": false,
+      "priceTableCount": 0,
+      "rawMarkdownPipe": false,
+      "robotsMeta": "noindex, nofollow",
+      "spaceBeforeCommaHits": 0,
+      "tableCount": 0,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-content-v14=1781777797737"
+    },
+    {
+      "canonical": null,
+      "contactContentHeadings": [
+        "Hemstädning, trädgård & hantverkstjänster i Örebro",
+        "Så fungerar det",
+        "Vad våra kunder säger",
+        "Vill du jobba hos Seniorbolaget i Örebro?",
+        "Vanliga frågor"
+      ],
+      "dataset": {
+        "contentSeoCleanup": "applied",
+        "contentSeoCleanupCounts": "tables:0,care:0,typography:0,contact:0"
+      },
+      "duplicateHelpingContentHeadingCount": 0,
+      "forbiddenCareElements": [],
+      "h1": "Hemstädning, trädgård & hantverkstjänster i Örebro",
+      "hasEmDash": false,
+      "priceTableCount": 0,
+      "rawMarkdownPipe": false,
+      "robotsMeta": "noindex, nofollow",
+      "spaceBeforeCommaHits": 0,
+      "tableCount": 0,
+      "title": "Hushållsnära tjänster i Örebro – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-content-v14=1781777797737"
+    }
+  ],
+  "aggregate": {
+    "pagesChecked": 6,
+    "rawMarkdownPipeFailures": [],
+    "emDashFailures": [],
+    "spaceBeforeCommaFailures": [],
+    "contactDuplicateFailures": [],
+    "forbiddenCareFailures": [],
+    "noindexMissing": []
+  }
+}

@@ -176,7 +176,7 @@
   }
 
   function isMarkdownSeparatorLine(line) {
-    return /^\s*\|?\s*:?-{2,}:?\s*(?:\|\s*:?-{2,}:?\s*)+\|?\s*$/.test(String(line || ''));
+    return /^\s*\|?\s*:?[-—–]{2,}:?\s*(?:\|\s*:?[-—–]{2,}:?\s*)+\|?\s*$/.test(String(line || ''));
   }
 
   function markdownLinesFromParagraph(paragraph) {
@@ -411,6 +411,7 @@
     var replacements = [
       [/Privat hemtjänst/g, 'Hemnära stöd'],
       [/Ledsagning/g, 'Praktisk hjälp'],
+      [/^Omsorg$/g, 'Vardagshjälp'],
       [/Omsorg • Hemnära stöd • Praktisk hjälp/g, 'Vardagshjälp • Hemnära stöd • Praktisk hjälp'],
       [/omsorg och precision/g, 'omtanke och noggrannhet'],
       [/med omsorg och precision/g, 'med omtanke och noggrannhet'],
@@ -422,7 +423,7 @@
       acceptNode: function(node) {
         var parent = node.parentElement;
         if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
-        return /(Privat hemtjänst|Ledsagning|omsorg och precision|vård och omsorg|hjälpa med medicin)/i.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+        return /(Privat hemtjänst|Ledsagning|^Omsorg$|Omsorg • Hemnära stöd • Praktisk hjälp|omsorg och precision|vård och omsorg|hjälpa med medicin)/i.test((node.nodeValue || '').trim()) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
       }
     });
     var nodes = [];
@@ -434,6 +435,37 @@
         value = value.replace(pair[0], pair[1]);
       });
       node.nodeValue = value;
+    });
+  }
+
+  function repairVisibleContentTypography() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return /(—|\s,)/.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      node.nodeValue = (node.nodeValue || '')
+        .replace(/^\s*—\s*$/g, '')
+        .replace(/\s+—\s+/g, ' ')
+        .replace(/\s+,/g, ',');
+    });
+  }
+
+  function repairContactDuplicateHeading() {
+    if (!/\/kontakt\/?$/i.test(window.location.pathname || '')) return;
+
+    Array.from(document.querySelectorAll('main h2, .wp-site-blocks h2')).forEach(function(heading) {
+      if (textOf(heading) !== 'Hur kan vi hjälpa dig?') return;
+      heading.textContent = 'Välj vad du behöver hjälp med';
+      heading.setAttribute('data-sb-contact-heading-repaired', 'true');
     });
   }
 
@@ -485,6 +517,8 @@
     repairLogoHomeLinks();
     repairInjectedContactFormLabels();
     repairCareContextCopy();
+    repairVisibleContentTypography();
+    repairContactDuplicateHeading();
     repair404SwedishText();
   }
 
