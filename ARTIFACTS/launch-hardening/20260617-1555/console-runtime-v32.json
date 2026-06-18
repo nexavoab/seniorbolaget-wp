@@ -1,0 +1,33 @@
+{
+  "url": "https://staging.seniorbolaget.se/?sb-console-v32=20260618",
+  "consoleStartIso": "2026-06-18T14:24:12.405Z",
+  "freshLogCount": 0,
+  "badCount": 0,
+  "bad": [],
+  "scriptOrder": [
+    {
+      "defer": false,
+      "i": 65,
+      "id": "wp-hooks-js",
+      "src": "https://staging.seniorbolaget.se/wp-includes/js/dist/hooks.min.js"
+    },
+    {
+      "defer": false,
+      "i": 66,
+      "id": "wp-i18n-js",
+      "src": "https://staging.seniorbolaget.se/wp-includes/js/dist/i18n.min.js"
+    },
+    {
+      "defer": false,
+      "i": 67,
+      "id": "wp-i18n-js-after",
+      "src": ""
+    },
+    {
+      "defer": false,
+      "i": 68,
+      "id": "elementor-common-js-translations",
+      "src": ""
+    }
+  ]
+}

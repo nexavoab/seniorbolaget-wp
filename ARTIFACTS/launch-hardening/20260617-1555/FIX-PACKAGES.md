@@ -188,6 +188,12 @@ Verifiering:
 - Runtime technical sample: console errors, failed requests, mixed content, headers.
 - Ren browser context for consent/cookies.
 
+Status 2026-06-18:
+
+- `LH-P1-011` verifierad med `STAGING-PERFORMANCE-FONTS-CLS-V30-PROOF.md`; intresseanmälan CLS 0.917 -> 0.000, home score/LCP kraftigt förbättrad med residual home CLS 0.122 dokumenterad till hero-blocket.
+- `LH-P2-011` verifierad; Google Fonts stylesheet/resource/font-face references borttagna i live sample home/intresse/priser.
+- `LH-P2-003`, `LH-P2-005`, `LH-P2-006` och `LH-P2-012` verifierade med `STAGING-SECURITY-COOKIE-LANDMARK-V32-PROOF.md`: cookie CSS positionerad, staging-HSTS medvetet ej aktiverad enligt prod-policy, CSP `worker-src` satt, landmarks normaliserade och console runtime rent efter v32.
+
 Rollback:
 
 - Se `ROLLBACK.md`, Paket 4.

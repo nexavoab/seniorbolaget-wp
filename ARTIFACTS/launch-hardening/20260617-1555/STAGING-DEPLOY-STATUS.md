@@ -4,7 +4,7 @@ Date: 2026-06-18
 
 ## Current status
 
-Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v24.php`.
+Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v32.php`.
 
 Current verified live scope:
 
@@ -17,15 +17,20 @@ Current verified live scope:
 - 404 Swedish copy
 - content/SEO cleanup for markdown table, punctuation and staging noindex sample
 - content wording cleanup for visible `lösning`/snickeri regression
+- font request cleanup, logo dimensions and mobile CLS reservation
+- CSP `worker-src`, cookie first-impression placement, landmark normalization and WordPress i18n script-order cleanup
 - CTA/FAB focus behavior
 - footer link affordance, contrast and mobile stacking
 - decorative emoji/icon-prefix policy across home, company, interest, contact and city pages
 
 Latest proofs:
 
+- `PROOFS-LAUNCH-HARDENING.md`
 - `STAGING-EMOJI-POLICY-V22-PROOF.md`
 - `STAGING-NEUTRAL-CITY-IMAGES-PROOF.md`
 - `STAGING-CONTENT-WORDING-V24-PROOF.md`
+- `STAGING-PERFORMANCE-FONTS-CLS-V30-PROOF.md`
+- `STAGING-SECURITY-COOKIE-LANDMARK-V32-PROOF.md`
 - `STAGING-HEADERS-TTFB-V1-PROOF.md`
 - `STAGING-UX-A11Y-V19-PROOF.md`
 

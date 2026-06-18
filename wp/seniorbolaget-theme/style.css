@@ -44,6 +44,106 @@ header.wp-block-template-part {
     box-shadow: 0 1px 12px rgba(0,0,0,0.06);
 }
 
+.sb-logo img {
+    aspect-ratio: 175 / 56 !important;
+    display: block !important;
+    height: 56px !important;
+    max-width: 175px !important;
+    object-fit: contain !important;
+    width: 175px !important;
+}
+
+.sb-footer-logo {
+    aspect-ratio: 149 / 36 !important;
+    display: block !important;
+    height: 36px !important;
+    max-width: 190px !important;
+    object-fit: contain !important;
+    width: 149px !important;
+}
+
+@media (max-width: 700px) {
+    body.home .sb-hero-section {
+        min-height: 672px !important;
+    }
+
+    body.home .sb-hero-section > div {
+        min-height: 672px !important;
+        transform: none !important;
+    }
+
+    body.home .sb-hero-section *,
+    body.is-wizard-page .wizard-container * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    body.is-wizard-page .wizard-container {
+        min-height: 1000px !important;
+    }
+
+    body.is-wizard-page .wizard-container[x-cloak] {
+        display: block !important;
+        visibility: hidden !important;
+    }
+}
+
+/* ===== COMPLIANZ COOKIE BANNER ===== */
+.cmplz-cookiebanner.banner-1 {
+    bottom: clamp(16px, 3vw, 32px) !important;
+    box-shadow: 0 18px 50px rgba(17, 24, 39, 0.18) !important;
+    left: auto !important;
+    max-height: min(560px, calc(100vh - 32px)) !important;
+    max-width: calc(100vw - 32px) !important;
+    right: clamp(16px, 3vw, 32px) !important;
+    top: auto !important;
+    transform: none !important;
+    width: min(526px, calc(100vw - 32px)) !important;
+}
+
+.cmplz-cookiebanner.banner-1 .cmplz-body {
+    max-height: min(300px, 42vh) !important;
+}
+
+@media (max-width: 700px) {
+    .cmplz-cookiebanner.banner-1 {
+        bottom: 12px !important;
+        grid-gap: 8px !important;
+        left: 12px !important;
+        max-height: 46vh !important;
+        max-width: none !important;
+        padding: 12px 14px !important;
+        right: 12px !important;
+        width: auto !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-header {
+        grid-template-columns: 1fr auto !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-title {
+        grid-column-start: 1 !important;
+        justify-self: start !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-close {
+        grid-column-start: 2 !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-body {
+        max-height: 18vh !important;
+        min-width: 0 !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-buttons {
+        gap: 8px !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-btn {
+        min-height: 44px !important;
+    }
+}
+
 /* ===== 65+ TILLGÄNGLIGHET — MIN FONTSTORLEK ===== */
 body {
     font-size: 1rem; /* 16px minimum */
@@ -625,9 +725,9 @@ main a:not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.
 
     .sb-footer-logo {
         display: block !important;
-        height: auto !important;
+        height: 36px !important;
         max-width: 190px !important;
-        width: 190px !important;
+        width: 149px !important;
     }
 
     .sb-footer-col-links-wrapper {

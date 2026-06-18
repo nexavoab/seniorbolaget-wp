@@ -1,0 +1,61 @@
+{
+  "mobileCookieState": {
+    "bannerComputed": {
+      "bottom": "12px",
+      "left": "12px",
+      "maxHeight": "388.306px",
+      "position": "fixed",
+      "right": "12px",
+      "top": "auto",
+      "transform": "none"
+    },
+    "bannerHidden": true,
+    "bannerRect": {
+      "bottom": 844,
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "bannerText": "Hantera samtycke Vi använder cookies för att ge dig en bra upplevelse på seniorbolaget.se. Vissa cookies är nödvändiga för att sajten ska fungera, andra hjälper oss att förstå hur ",
+    "hasBanner": true,
+    "heroRect": {
+      "height": 672,
+      "width": 375,
+      "x": 0,
+      "y": 116
+    },
+    "stylePresent": true,
+    "url": "https://staging.seniorbolaget.se/?sb-cookie-visual-v31=20260618b",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "desktopCookieState": {
+    "bannerComputed": {
+      "bottom": "32px",
+      "left": "auto",
+      "maxHeight": "560px",
+      "position": "fixed",
+      "right": "32px",
+      "top": "auto",
+      "transform": "none"
+    },
+    "bannerHidden": true,
+    "bannerRect": {
+      "bottom": 900,
+      "height": 0,
+      "width": 0,
+      "x": 0,
+      "y": 0
+    },
+    "hasBanner": true,
+    "stylePresent": true,
+    "url": "https://staging.seniorbolaget.se/?sb-cookie-visual-v31-desktop=20260618b",
+    "viewport": {
+      "height": 900,
+      "width": 1280
+    }
+  }
+}

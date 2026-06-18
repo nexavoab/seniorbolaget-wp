@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T11:35:34.048Z",
+  "generatedAt": "2026-06-18T14:32:40.203Z",
   "sitemap": "https://staging.seniorbolaget.se/sitemap_index.xml",
   "limit": 75,
   "checked": 75,
@@ -14,7 +14,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 358628,
-      "ms": 289
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/kontorsstadning-hur-fungerar-det-for-foretag/",
@@ -25,7 +25,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 355886,
-      "ms": 260
+      "ms": 33
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/stadning-for-brf-vad-galler-och-vad-kostar-det/",
@@ -36,7 +36,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 355938,
-      "ms": 244
+      "ms": 33
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/varens-10-viktigaste-hemjobb-med-och-utan-avdrag/",
@@ -47,7 +47,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 356192,
-      "ms": 234
+      "ms": 32
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/stadning-infor-forsaljning-checklista-for-snabbare-och-dyrare-affar/",
@@ -58,7 +58,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 356482,
-      "ms": 400
+      "ms": 41
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/hur-malar-jag-ett-rum-sjalv-eller-nar-lonar-det-sig-att-anlita/",
@@ -69,7 +69,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 357878,
-      "ms": 248
+      "ms": 30
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/kombinera-rot-och-rut-maximera-ditt-avdrag/",
@@ -80,7 +80,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 358800,
-      "ms": 231
+      "ms": 24
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/rot-for-bostadsratt-vad-far-du-gora/",
@@ -91,7 +91,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 363053,
-      "ms": 253
+      "ms": 30
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/hur-malar-jag-om-huset-med-rot-avdrag/",
@@ -102,7 +102,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 359474,
-      "ms": 237
+      "ms": 34
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/koksrenovering-med-rot-steg-for-steg/",
@@ -113,7 +113,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 357950,
-      "ms": 278
+      "ms": 30
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/badrumsrenovering-med-rot-vad-kostar-det/",
@@ -124,7 +124,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 357622,
-      "ms": 240
+      "ms": 212
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/hur-mycket-rut-avdrag-har-jag-kvar-kolla-ditt-saldo/",
@@ -135,7 +135,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 362173,
-      "ms": 242
+      "ms": 30
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/vilka-tjanster-ingar-i-rut-avdraget-komplett-lista-2026/",
@@ -146,7 +146,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 363060,
-      "ms": 252
+      "ms": 32
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/stadning-med-rut-sa-fungerar-det-steg-for-steg/",
@@ -157,7 +157,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 363694,
-      "ms": 241
+      "ms": 32
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/rut-for-pensionarer-vad-galler/",
@@ -168,7 +168,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 352964,
-      "ms": 284
+      "ms": 32
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/rot-avdraget-2026-regler-och-vad-som-galler-nu/",
@@ -179,7 +179,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 356018,
-      "ms": 236
+      "ms": 31
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/vad-raknas-som-rot-avdrag-komplett-lista-med-exempel/",
@@ -190,7 +190,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 354513,
-      "ms": 239
+      "ms": 31
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/fonsterbyte-med-rot-avdrag-sparar-du-pengar/",
@@ -201,7 +201,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 353283,
-      "ms": 240
+      "ms": 37
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/hur-far-jag-bort-ogras-5-metoder-som-funkar/",
@@ -212,7 +212,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 356347,
-      "ms": 264
+      "ms": 37
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/infor-husflytt-vad-behover-stadas-och-fixas/",
@@ -223,7 +223,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 353932,
-      "ms": 271
+      "ms": 36
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/sasongsbemannad-fastighetsservice-vad-ingar/",
@@ -234,7 +234,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 353508,
-      "ms": 243
+      "ms": 30
     },
     {
       "url": "https://staging.seniorbolaget.se/2026/03/02/anlita-personal-via-bemanningsforetag-fordelar-och-kostnader/",
@@ -245,7 +245,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 354336,
-      "ms": 258
+      "ms": 29
     },
     {
       "url": "https://staging.seniorbolaget.se/",
@@ -256,7 +256,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 413825,
-      "ms": 279
+      "ms": 105
     },
     {
       "url": "https://staging.seniorbolaget.se/guider/",
@@ -267,7 +267,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 344619,
-      "ms": 235
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/bemanning/",
@@ -278,7 +278,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 348825,
-      "ms": 264
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/anvandarvillkor/",
@@ -289,7 +289,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 335487,
-      "ms": 234
+      "ms": 43
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/",
@@ -300,7 +300,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 373401,
-      "ms": 238
+      "ms": 46
     },
     {
       "url": "https://staging.seniorbolaget.se/cookie-policy-eu/",
@@ -311,7 +311,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 342203,
-      "ms": 261
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/integritetspolicy/",
@@ -322,7 +322,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 342130,
-      "ms": 254
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/intresseanmalan/",
@@ -333,7 +333,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 361339,
-      "ms": 237
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/snickeri/",
@@ -344,7 +344,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 403796,
-      "ms": 246
+      "ms": 46
     },
     {
       "url": "https://staging.seniorbolaget.se/kontakt/",
@@ -355,7 +355,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 366800,
-      "ms": 233
+      "ms": 43
     },
     {
       "url": "https://staging.seniorbolaget.se/hemstadning/",
@@ -366,7 +366,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 395562,
-      "ms": 266
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/",
@@ -377,7 +377,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372639,
-      "ms": 259
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/",
@@ -388,7 +388,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 373596,
-      "ms": 233
+      "ms": 48
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/",
@@ -399,7 +399,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372845,
-      "ms": 226
+      "ms": 129
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/",
@@ -410,7 +410,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 373545,
-      "ms": 251
+      "ms": 66
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/",
@@ -421,7 +421,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372745,
-      "ms": 233
+      "ms": 54
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/",
@@ -432,7 +432,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372896,
-      "ms": 258
+      "ms": 54
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/",
@@ -443,7 +443,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372853,
-      "ms": 236
+      "ms": 54
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/",
@@ -454,7 +454,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 373525,
-      "ms": 253
+      "ms": 55
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/",
@@ -465,7 +465,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372940,
-      "ms": 243
+      "ms": 55
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/",
@@ -476,7 +476,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372848,
-      "ms": 243
+      "ms": 53
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/",
@@ -487,7 +487,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372740,
-      "ms": 288
+      "ms": 47
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/",
@@ -498,7 +498,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 370725,
-      "ms": 263
+      "ms": 43
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/",
@@ -509,7 +509,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372850,
-      "ms": 256
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/",
@@ -520,7 +520,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 370699,
-      "ms": 267
+      "ms": 188
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/",
@@ -531,7 +531,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 370813,
-      "ms": 237
+      "ms": 53
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/",
@@ -542,7 +542,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372731,
-      "ms": 262
+      "ms": 55
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/",
@@ -553,7 +553,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372693,
-      "ms": 250
+      "ms": 55
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/",
@@ -564,7 +564,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372893,
-      "ms": 235
+      "ms": 55
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/",
@@ -575,7 +575,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372787,
-      "ms": 239
+      "ms": 50
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/",
@@ -586,7 +586,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372653,
-      "ms": 235
+      "ms": 43
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/",
@@ -597,7 +597,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372847,
-      "ms": 263
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/",
@@ -608,7 +608,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372922,
-      "ms": 236
+      "ms": 45
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/",
@@ -619,7 +619,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372850,
-      "ms": 250
+      "ms": 40
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/",
@@ -630,7 +630,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 372707,
-      "ms": 549
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/bli-franchisetagare/",
@@ -640,8 +640,8 @@
       "contentType": "text/html; charset=UTF-8",
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
-      "bytes": 419697,
-      "ms": 294
+      "bytes": 421535,
+      "ms": 2079
     },
     {
       "url": "https://staging.seniorbolaget.se/jobba-med-oss/",
@@ -652,7 +652,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 381701,
-      "ms": 294
+      "ms": 40
     },
     {
       "url": "https://staging.seniorbolaget.se/malning/",
@@ -663,7 +663,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 402347,
-      "ms": 242
+      "ms": 47
     },
     {
       "url": "https://staging.seniorbolaget.se/vardagshjalp/",
@@ -674,7 +674,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 412816,
-      "ms": 235
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/tradgard/",
@@ -685,7 +685,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 403160,
-      "ms": 244
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/cookies/",
@@ -696,7 +696,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 335569,
-      "ms": 238
+      "ms": 43
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/",
@@ -707,7 +707,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 373321,
-      "ms": 274
+      "ms": 41
     },
     {
       "url": "https://staging.seniorbolaget.se/priser/",
@@ -718,7 +718,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 366595,
-      "ms": 257
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/rekrytering/",
@@ -729,7 +729,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 354300,
-      "ms": 236
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/brf/",
@@ -740,7 +740,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 365648,
-      "ms": 253
+      "ms": 43
     },
     {
       "url": "https://staging.seniorbolaget.se/har-finns-vi/",
@@ -751,7 +751,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 357031,
-      "ms": 271
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/om-oss/",
@@ -762,7 +762,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 354208,
-      "ms": 259
+      "ms": 41
     },
     {
       "url": "https://staging.seniorbolaget.se/foretag/",
@@ -773,7 +773,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 363495,
-      "ms": 255
+      "ms": 41
     },
     {
       "url": "https://staging.seniorbolaget.se/privat/",
@@ -784,7 +784,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 362857,
-      "ms": 241
+      "ms": 41
     },
     {
       "url": "https://staging.seniorbolaget.se/category/rut-guider/",
@@ -795,7 +795,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 351179,
-      "ms": 255
+      "ms": 44
     },
     {
       "url": "https://staging.seniorbolaget.se/category/rot-guider/",
@@ -806,7 +806,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 352307,
-      "ms": 295
+      "ms": 32
     },
     {
       "url": "https://staging.seniorbolaget.se/category/hemguider/",
@@ -817,7 +817,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 347886,
-      "ms": 244
+      "ms": 42
     },
     {
       "url": "https://staging.seniorbolaget.se/category/bemanning-foretag/",
@@ -828,7 +828,7 @@
       "xRobotsTag": "noindex, nofollow",
       "retries": 0,
       "bytes": 346538,
-      "ms": 237
+      "ms": 29
     }
   ]
 }

@@ -84,6 +84,11 @@ Rollback:
    - `SENIORBOLAGET STAGING DECORATIVE EMOJI POLICY V22 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v21.php` om bara v22 ska backas.
    - `SENIORBOLAGET STAGING NEUTRAL CITY IMAGES V23 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v22.php` om bara v23 ska backas.
    - `SENIORBOLAGET STAGING CONTENT WORDING V24 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v23.php` om bara v24 ska backas.
+   - `SENIORBOLAGET STAGING FONT PERFORMANCE V25 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v24.php` om hela font/logo/CLS-paketet ska backas.
+   - `SENIORBOLAGET STAGING LOGO DIMENSIONS V25 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v24.php` om hela font/logo/CLS-paketet ska backas.
+   - `SENIORBOLAGET STAGING LATE FONT CLEANUP V26 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v25.php` om bara v26 ska backas.
+   - `SENIORBOLAGET STAGING GOOGLE FONT LINK STRIP V28 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v27.php` om bara v28 ska backas.
+   - `SENIORBOLAGET STAGING MOBILE CLS RESERVATION V30 HOTFIX START 2026-06-18` till `END`, eller aterstall `functions-after-v29.php` om bara v30 ska backas.
 4. Spara.
 5. Rensa One.com Performance Cache/CDN.
 6. Kor post-check pa ortssidor, `/foretag/`, startsidan, neutralbildsscan och 75-URL crawl.
@@ -170,5 +175,10 @@ Rollback:
 - Git revert for CSS/JS/templates.
 - WPCode/header-snippet fore-kopia.
 - File Manager: ta bort `SENIORBOLAGET STAGING MOBILE FOOTER LAYOUT HOTFIX` eller aterstall `functions-after-v18.php`.
+- File Manager: aterstall `functions-after-v29.php` for att backa bara v30 x-cloak/CLS-reservation.
+- File Manager: aterstall `functions-after-v28.php` for att backa v29/v30 CLS-reservationer.
+- File Manager: aterstall `functions-after-v24.php` for att backa hela v25-v30 font/logo/CLS-paketet.
+- File Manager: aterstall `functions-after-v31.php` for att backa bara v32 WordPress i18n script-order-blocket.
+- File Manager: aterstall `functions-after-v30.php` for att backa v31/v32 CSP, cookie first impression, landmark normalization och i18n script-order-paketet.
 - Hosting/server-header rollback bara efter dokumenterad fore-konfiguration.
 - HSTS ska inte aktiveras med preload i denna fas; prod-beslut kravs innan deploy.

@@ -38,19 +38,11 @@ add_action( 'after_setup_theme', 'seniorbolaget_setup' );
  * Enqueue scripts and styles.
  */
 function seniorbolaget_scripts() {
-	// Inter från Google Fonts
-	wp_enqueue_style(
-		'seniorbolaget-fonts',
-		'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
-		array(),
-		null
-	);
-
 	// Tema-stilar
 	wp_enqueue_style(
 		'seniorbolaget-style',
 		get_stylesheet_uri(),
-		array( 'seniorbolaget-fonts' ),
+		array(),
 		SENIORBOLAGET_VERSION
 	);
 
@@ -611,6 +603,62 @@ function seniorbolaget_conditional_wpautop($content) {
     return wpautop($content);
 }
 add_action( 'wp_enqueue_scripts', 'seniorbolaget_scripts' );
+
+/**
+ * Remove frontend Google Font payloads that are not needed for the launch theme.
+ */
+function seniorbolaget_unused_google_font_handles() {
+	return array(
+		'seniorbolaget-fonts',
+		'elementor-gf-roboto',
+		'elementor-gf-robotoslab',
+	);
+}
+
+function seniorbolaget_dequeue_unused_google_fonts() {
+	foreach ( seniorbolaget_unused_google_font_handles() as $handle ) {
+		wp_dequeue_style( $handle );
+		wp_deregister_style( $handle );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'seniorbolaget_dequeue_unused_google_fonts', 100 );
+add_action( 'wp_print_styles', 'seniorbolaget_dequeue_unused_google_fonts', 1000 );
+
+function seniorbolaget_remove_unused_google_font_styles( $html, $handle ) {
+	if ( in_array( $handle, seniorbolaget_unused_google_font_handles(), true ) ) {
+		return '';
+	}
+
+	return $html;
+}
+add_filter( 'style_loader_tag', 'seniorbolaget_remove_unused_google_font_styles', 100, 2 );
+
+function seniorbolaget_is_google_font_url( $url ) {
+	$url = is_array( $url ) && isset( $url['href'] ) ? $url['href'] : $url;
+
+	return is_string( $url ) && (
+		false !== strpos( $url, 'fonts.googleapis.com' )
+		|| false !== strpos( $url, 'fonts.gstatic.com' )
+	);
+}
+
+function seniorbolaget_remove_google_font_resource_hints( $urls, $relation_type ) {
+	if ( ! in_array( $relation_type, array( 'dns-prefetch', 'preconnect' ), true ) ) {
+		return $urls;
+	}
+
+	return array_values( array_filter( $urls, function ( $url ) {
+		return ! seniorbolaget_is_google_font_url( $url );
+	} ) );
+}
+add_filter( 'wp_resource_hints', 'seniorbolaget_remove_google_font_resource_hints', 100, 2 );
+
+function seniorbolaget_remove_google_font_preloads( $preloads ) {
+	return array_values( array_filter( $preloads, function ( $preload ) {
+		return ! seniorbolaget_is_google_font_url( $preload );
+	} ) );
+}
+add_filter( 'wp_preload_resources', 'seniorbolaget_remove_google_font_preloads', 100 );
 
 /**
  * Enqueue editor styles.

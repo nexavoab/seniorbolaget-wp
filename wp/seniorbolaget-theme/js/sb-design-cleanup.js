@@ -371,6 +371,29 @@
       if (!link.getAttribute('aria-label')) {
         link.setAttribute('aria-label', 'Seniorbolaget startsida');
       }
+
+      var image = link.querySelector('img');
+      if (image) {
+        image.setAttribute('width', '175');
+        image.setAttribute('height', '56');
+        image.setAttribute('loading', 'eager');
+        image.setAttribute('fetchpriority', 'high');
+        image.setAttribute('decoding', 'async');
+      }
+    });
+  }
+
+  function repairLogoDimensions() {
+    var headerLogo = document.querySelector('a.sb-logo img');
+    var headerSrc = headerLogo ? (headerLogo.currentSrc || headerLogo.getAttribute('src') || '') : '';
+
+    Array.from(document.querySelectorAll('img.sb-footer-logo')).forEach(function(image) {
+      if (!image.getAttribute('src') && headerSrc) {
+        image.setAttribute('src', headerSrc);
+      }
+      image.setAttribute('width', '149');
+      image.setAttribute('height', '36');
+      image.setAttribute('decoding', 'async');
     });
   }
 
@@ -646,6 +669,7 @@
     improveLocationPlaceholders();
     improveComingSoonImages();
     repairLogoHomeLinks();
+    repairLogoDimensions();
     repairInjectedContactFormLabels();
     repairCareContextCopy();
     repairVisibleContentTypography();
