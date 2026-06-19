@@ -46,6 +46,7 @@ The two remaining decisions are review/testimonial-related and intentionally lef
 - `STAGING-CONTENT-WORDING-V24-PROOF.md`
 - `STAGING-PERFORMANCE-FONTS-CLS-V30-PROOF.md`
 - `STAGING-SECURITY-COOKIE-LANDMARK-V32-PROOF.md`
+- `STAGING-FORM-TEST-V34-PROOF.md`
 - `STAGING-HEADERS-TTFB-V1-PROOF.md`
 
 ## Final gates
@@ -84,10 +85,11 @@ Use `ROLLBACK.md`.
 
 Fast rollback for the latest staging deploy:
 
-1. Restore `functions-after-v31.php` to roll back only v32 i18n script-order.
-2. Restore `functions-after-v30.php` to roll back v31/v32 security, cookie, landmark and i18n package.
-3. Clear One.com/WordPress cache.
-4. Re-run HTTP, console, crawl and screenshot checks.
+1. Restore `functions-editor-after-v32-readback.php` to roll back v33/v34 form routing and contact handler.
+2. Restore `functions-after-v31.php` to roll back only v32 i18n script-order.
+3. Restore `functions-after-v30.php` to roll back v31/v32 security, cookie, landmark and i18n package.
+4. Clear One.com/WordPress cache.
+5. Re-run HTTP, console, crawl, screenshot and form checks.
 
 ## Production launch runbook
 

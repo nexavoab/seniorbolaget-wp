@@ -1,10 +1,10 @@
 # Staging deploy status
 
-Date: 2026-06-18
+Date: 2026-06-19
 
 ## Current status
 
-Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v32.php`.
+Live staging is updated through staging-only One.com File Manager patches up to `functions-after-v34.php`.
 
 Current verified live scope:
 
@@ -19,6 +19,7 @@ Current verified live scope:
 - content wording cleanup for visible `lösning`/snickeri regression
 - font request cleanup, logo dimensions and mobile CLS reservation
 - CSP `worker-src`, cookie first-impression placement, landmark normalization and WordPress i18n script-order cleanup
+- staging form test routing to `wasim.bitar@seniorbolaget.se` and repaired `/kontakt/` tab form handler
 - CTA/FAB focus behavior
 - footer link affordance, contrast and mobile stacking
 - decorative emoji/icon-prefix policy across home, company, interest, contact and city pages
@@ -31,6 +32,7 @@ Latest proofs:
 - `STAGING-CONTENT-WORDING-V24-PROOF.md`
 - `STAGING-PERFORMANCE-FONTS-CLS-V30-PROOF.md`
 - `STAGING-SECURITY-COOKIE-LANDMARK-V32-PROOF.md`
+- `STAGING-FORM-TEST-V34-PROOF.md`
 - `STAGING-HEADERS-TTFB-V1-PROOF.md`
 - `STAGING-UX-A11Y-V19-PROOF.md`
 

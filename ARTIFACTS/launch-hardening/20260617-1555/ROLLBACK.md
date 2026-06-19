@@ -180,5 +180,6 @@ Rollback:
 - File Manager: aterstall `functions-after-v24.php` for att backa hela v25-v30 font/logo/CLS-paketet.
 - File Manager: aterstall `functions-after-v31.php` for att backa bara v32 WordPress i18n script-order-blocket.
 - File Manager: aterstall `functions-after-v30.php` for att backa v31/v32 CSP, cookie first impression, landmark normalization och i18n script-order-paketet.
+- File Manager: aterstall `functions-editor-after-v32-readback.php` for att backa v33/v34 staging form mail routing och kontaktformular-handler.
 - Hosting/server-header rollback bara efter dokumenterad fore-konfiguration.
 - HSTS ska inte aktiveras med preload i denna fas; prod-beslut kravs innan deploy.

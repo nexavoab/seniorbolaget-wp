@@ -1,0 +1,140 @@
+{
+  "generatedAt": "2026-06-19T04:54:30.725Z",
+  "base": "https://staging.seniorbolaget.se",
+  "recipient": "wasim.bitar@seniorbolaget.se",
+  "preflight": [
+    {
+      "path": "/wp-admin/admin-ajax.php",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "json": {
+        "success": false,
+        "data": {
+          "message": "Vänligen fyll i alla obligatoriska fält."
+        }
+      },
+      "body": "{\"success\":false,\"data\":{\"message\":\"V\\u00e4nligen fyll i alla obligatoriska f\\u00e4lt.\"}}"
+    },
+    {
+      "path": "/wp-admin/admin-ajax.php",
+      "status": 200,
+      "contentType": "application/json; charset=UTF-8",
+      "json": {
+        "success": false,
+        "data": {
+          "message": "Vänligen fyll i alla fält."
+        }
+      },
+      "body": "{\"success\":false,\"data\":{\"message\":\"V\\u00e4nligen fyll i alla f\\u00e4lt.\"}}"
+    },
+    {
+      "path": "/wp-admin/admin-ajax.php",
+      "status": 403,
+      "contentType": "application/json; charset=UTF-8",
+      "json": {
+        "success": false,
+        "data": {
+          "message": "Sakerhetsverifiering misslyckades. Ladda om sidan och forsok igen."
+        }
+      },
+      "body": "{\"success\":false,\"data\":{\"message\":\"Sakerhetsverifiering misslyckades. Ladda om sidan och forsok igen.\"}}"
+    }
+  ],
+  "results": [
+    {
+      "id": "interest-wizard",
+      "submittedTo": "/wp-admin/admin-ajax.php",
+      "status": 200,
+      "success": true,
+      "response": {
+        "success": true,
+        "data": {
+          "message": "Förfrågan skickad!"
+        }
+      },
+      "payloadSummary": {
+        "action": "seniorbolaget_wizard",
+        "type": null,
+        "name": "TEST Codex Intresseanmälan 2026-06-19 06:53 CEST",
+        "email": null,
+        "phone": "070-000 00 01"
+      }
+    },
+    {
+      "id": "job-wizard",
+      "submittedTo": "/wp-admin/admin-ajax.php",
+      "status": 200,
+      "success": true,
+      "response": {
+        "success": true,
+        "data": {
+          "message": "Ansökan skickad!"
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_job_application",
+        "type": null,
+        "name": "TEST Codex Jobbansökan 2026-06-19 06:53 CEST",
+        "email": "wasim.bitar@seniorbolaget.se",
+        "phone": "070-000 00 02"
+      }
+    },
+    {
+      "id": "contact-boka",
+      "submittedTo": "/wp-admin/admin-ajax.php",
+      "status": 403,
+      "success": false,
+      "response": {
+        "success": false,
+        "data": {
+          "message": "Sakerhetsverifiering misslyckades. Ladda om sidan och forsok igen."
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_contact_inquiry",
+        "type": "boka",
+        "name": "TEST Codex Kontakt Boka 2026-06-19 06:53 CEST",
+        "email": null,
+        "phone": "070-000 00 03"
+      }
+    },
+    {
+      "id": "contact-jobba",
+      "submittedTo": "/wp-admin/admin-ajax.php",
+      "status": 403,
+      "success": false,
+      "response": {
+        "success": false,
+        "data": {
+          "message": "Sakerhetsverifiering misslyckades. Ladda om sidan och forsok igen."
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_contact_inquiry",
+        "type": "jobba",
+        "name": "TEST Codex Kontakt Jobba 2026-06-19 06:53 CEST",
+        "email": null,
+        "phone": "070-000 00 04"
+      }
+    },
+    {
+      "id": "contact-allman",
+      "submittedTo": "/wp-admin/admin-ajax.php",
+      "status": 403,
+      "success": false,
+      "response": {
+        "success": false,
+        "data": {
+          "message": "Sakerhetsverifiering misslyckades. Ladda om sidan och forsok igen."
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_contact_inquiry",
+        "type": "allman",
+        "name": "TEST Codex Kontakt Allmän 2026-06-19 06:53 CEST",
+        "email": "wasim.bitar@seniorbolaget.se",
+        "phone": null
+      }
+    }
+  ]
+}
