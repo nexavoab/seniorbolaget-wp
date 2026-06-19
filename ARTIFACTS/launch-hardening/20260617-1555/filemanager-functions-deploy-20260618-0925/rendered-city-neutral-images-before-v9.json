@@ -1,0 +1,370 @@
+{
+  "generatedAt": "2026-06-18T09:31:36.315Z",
+  "total": 26,
+  "badPageCount": 4,
+  "totalBadImgs": 12,
+  "results": [
+    {
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        }
+      ],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 3,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "amal",
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "boras",
+      "title": "Hushållsnära tjänster i Borås – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        }
+      ],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 3,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "eskilstuna",
+      "title": "Hushållsnära tjänster i Eskilstuna – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "falkenberg",
+      "title": "Hushållsnära tjänster i Falkenberg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        }
+      ],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 3,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "goteborg",
+      "title": "Hushållsnära tjänster i Göteborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "halmstad",
+      "title": "Hushållsnära tjänster i Halmstad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "helsingborg",
+      "title": "Hushållsnära tjänster i Helsingborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "jonkoping",
+      "title": "Hushållsnära tjänster i Jönköping – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        },
+        {
+          "alt": "Bild kommer snart",
+          "height": 150,
+          "srcStart": "data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%20400%20300%22%20preserveAspectRatio%3D%22xMidYMid%20slice%22%3E%",
+          "width": 200
+        }
+      ],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 3,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "karlstad",
+      "title": "Hushållsnära tjänster i Karlstad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "kristianstad",
+      "title": "Hushållsnära tjänster i Kristianstad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "kungalv",
+      "title": "Hushållsnära tjänster i Kungälv – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "kungsbacka",
+      "title": "Hushållsnära tjänster i Kungsbacka – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "laholm",
+      "title": "Laholm – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "landskrona",
+      "title": "Hushållsnära tjänster i Landskrona – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "lerum",
+      "title": "Lerum – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "molndal",
+      "title": "Mölndal – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "nassjo",
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "orebro",
+      "title": "Hushållsnära tjänster i Örebro – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "skovde",
+      "title": "Hushållsnära tjänster i Skövde – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "stenungsund",
+      "title": "Hushållsnära tjänster i Stenungsund – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "sundsvall",
+      "title": "Hushållsnära tjänster i Sundsvall – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "torsby",
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "trelleborg",
+      "title": "Hushållsnära tjänster i Trelleborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "trollhattan",
+      "title": "Hushållsnära tjänster i Trollhättan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "ulricehamn",
+      "title": "Hushållsnära tjänster i Ulricehamn – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/?sb-neutral-scan=202606181233"
+    },
+    {
+      "badImgCount": 0,
+      "badImgs": [],
+      "cityHotfix": "applied",
+      "dataSvgImgs": 0,
+      "hasVisibleComingSoonText": false,
+      "launchHotfix": "applied",
+      "slug": "varberg",
+      "title": "Hushållsnära tjänster i Varberg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/?sb-neutral-scan=202606181233"
+    }
+  ]
+}

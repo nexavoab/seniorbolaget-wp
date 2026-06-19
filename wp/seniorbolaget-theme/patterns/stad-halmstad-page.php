@@ -46,12 +46,12 @@
     
     <!-- Personlig välkomsthälsning -->
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;color:#374151;line-height:1.7;margin:0 0 28px;max-width:520px;">
-      Välkommen! Jag är Jenny och driver Seniorbolaget i Halmstad. Vi hjälper dig med allt från städning till trädgård — alltid med omtanke och kvalitet.
+      Välkommen! Jag är Jenny och driver Seniorbolaget i Halmstad. Vi hjälper dig med allt från städning till trädgård - alltid med omtanke och kvalitet.
     </p>
     
-    <!-- TELEFON — extra stort -->
-    <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
-      📞 0704-41 25 72
+    <!-- TELEFON - extra stort -->
+    <a href="tel:0707252447" style="display:inline-flex;align-items:center;gap:10px;font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#C91C22;text-decoration:none;margin-bottom:12px;">
+      📞 0707-25 24 47
     </a>
     
     <!-- Sekundär: Mail-knapp -->
@@ -107,18 +107,18 @@
 
   <!-- wp:html -->
   <div style="margin-bottom:2rem;">
-    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Efter 20 år som projektledare med deadlines och stress insåg jag att livet handlar om mer än tidsplaner. 2018 blev jag en av Seniorbolagets första franchisetagare — och har aldrig ångrat det.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag det största teamet i Halland med över 380 nöjda kunder. Från villorna i Tylösand till lägenheterna vid Norre Katts park — vi finns där Halmstadsborna behöver oss.</p>
-<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje kund får mitt mobilnummer. Det är mitt löfte. När fru Larsson i Getinge ringer klockan sju på morgonen för att berätta att allt blev perfekt — då vet jag att jag valt rätt.</p>
+    <p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Efter 20 år som projektledare med deadlines och stress insåg jag att livet handlar om mer än tidsplaner. 2018 blev jag en av Seniorbolagets första franchisetagare - och har aldrig ångrat det.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Idag leder jag det största teamet i Halland med över 380 nöjda kunder. Från villorna i Tylösand till lägenheterna vid Norre Katts park - vi finns där Halmstadsborna behöver oss.</p>
+<p style="font-family:Inter,sans-serif;font-size:1rem;line-height:1.8;color:#374151;margin:0 0 1rem;">Varje kund får mitt mobilnummer. Det är mitt löfte. När fru Larsson i Getinge ringer klockan sju på morgonen för att berätta att allt blev perfekt - då vet jag att jag valt rätt.</p>
   </div>
   
   <!-- Citat -->
   <blockquote style="border-left:4px solid #C91C22;padding:16px 0 16px 24px;margin:0;background:#FAFAF8;border-radius:0 12px 12px 0;">
     <p style="font-family:Inter,sans-serif;font-size:1.125rem;font-style:italic;color:#374151;line-height:1.7;margin:0;">
-      "Vi bygger förtroende — ett rent hem och en välskött trädgård i taget."
+      "Vi bygger förtroende - ett rent hem och en välskött trädgård i taget."
     </p>
     <footer style="font-family:Rubik,sans-serif;font-size:0.875rem;color:#6B7280;margin-top:12px;">
-      — Jenny Skogh, Halmstad
+      - Jenny Skogh, Halmstad
     </footer>
   </blockquote>
   <!-- /wp:html -->
@@ -282,16 +282,16 @@
 
   <!-- wp:html -->
   <div style="display:flex;gap:12px;flex-wrap:wrap;justify-content:center;">
-    <a href="/privat/hemstad" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
+    <a href="/privat/hemstad/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
       🏠 Hemstädning (RUT 50%)
     </a>
-    <a href="/privat/tradgard" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
+    <a href="/privat/tradgard/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
       🌿 Trädgård (RUT)
     </a>
-    <a href="/privat/malning-tapetsering" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
+    <a href="/privat/malning-tapetsering/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
       🖌 Målning (ROT 30%)
     </a>
-    <a href="/privat/snickeri" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
+    <a href="/privat/snickeri/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:12px 24px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:500;color:#374151;text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:border-color 0.2s;">
       🔨 Snickeri (ROT)
     </a>
   </div>
@@ -316,8 +316,8 @@
     
     <p style="font-family:Rubik,sans-serif;font-size:1.25rem;font-weight:600;color:#fff;margin:0 0 8px;">Jenny Skogh</p>
     
-    <a href="tel:0704412572" style="display:block;font-family:Rubik,sans-serif;font-size:1.75rem;font-weight:700;color:#fff;text-decoration:none;margin-bottom:8px;">
-      📞 0704-41 25 72
+    <a href="tel:0707252447" style="display:block;font-family:Rubik,sans-serif;font-size:1.75rem;font-weight:700;color:#fff;text-decoration:none;margin-bottom:8px;">
+      📞 0707-25 24 47
     </a>
     
     <p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.85);margin:0 0 32px;">
@@ -325,7 +325,7 @@
     </p>
     
     <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="tel:0704412572" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;border-radius:50px;padding:14px 32px;font-family:Rubik,sans-serif;font-weight:600;font-size:1rem;text-decoration:none;">
+      <a href="tel:0707252447" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;border-radius:50px;padding:14px 32px;font-family:Rubik,sans-serif;font-weight:600;font-size:1rem;text-decoration:none;">
         Ring nu
       </a>
       <a href="mailto:halmstad@seniorbolaget.se" style="display:inline-flex;align-items:center;gap:8px;background:transparent;color:#fff;border:2px solid #fff;border-radius:50px;padding:14px 32px;font-family:Rubik,sans-serif;font-weight:600;font-size:1rem;text-decoration:none;">
@@ -345,7 +345,7 @@
      ======================================== -->
 <!-- wp:html -->
 <div class="seniorbolaget-sticky-cta">
-  <a href="tel:0704412572">
+  <a href="tel:0707252447">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
       <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/>
     </svg>

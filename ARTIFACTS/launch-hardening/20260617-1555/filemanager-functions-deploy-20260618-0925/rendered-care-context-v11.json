@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-06-18T09:55:37.237Z",
+  "total": 7,
+  "passed": 7,
+  "failed": 0,
+  "totalHits": 0,
+  "failures": [],
+  "results": [
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        true
+      ],
+      "title": "Hemstädning med RUT-avdrag – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/hemstadning/?sb-care-v11=202606181318",
+      "ok": true
+    },
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        false
+      ],
+      "title": "Hushållsnära tjänster i Helsingborg – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-care-v11=202606181318",
+      "ok": true
+    },
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        false
+      ],
+      "title": "Hushållsnära tjänster i Kungsbacka – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-care-v11=202606181318",
+      "ok": true
+    },
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        false
+      ],
+      "title": "Mölndal – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-care-v11=202606181318",
+      "ok": true
+    },
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        false
+      ],
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-care-v11=202606181318",
+      "ok": true
+    },
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        false
+      ],
+      "title": "Priser – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/priser/?sb-care-v11=202606181318",
+      "ok": true
+    },
+    {
+      "careHotfix": "applied",
+      "hitCount": 0,
+      "hits": [],
+      "replacementSamples": [
+        false,
+        true
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-care-v11=202606181318",
+      "ok": true
+    }
+  ]
+}

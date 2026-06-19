@@ -13,11 +13,11 @@
 <div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:60px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:60px;padding-left:clamp(24px, 5vw, 80px)">
 
 	<!-- wp:heading {"textAlign":"center","level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(1.75rem, 4vw, 2.5rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Kontakta oss — vi svarar inom 24 timmar</h1>
+	<h1 class="wp-block-heading has-text-align-center" style="color:#1F2937;font-size:clamp(1.75rem, 4vw, 2.5rem);font-weight:700;line-height:1.1;margin-bottom:1rem">Kontakta oss - vi svarar inom 24 timmar</h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","style":{"typography":{"fontSize":"1.25rem","lineHeight":"1.6"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;line-height:1.6;margin-bottom:1.5rem">Hjälp av erfarna seniorer som förstår din vardag. Ring, maila eller fyll i en förfrågan — vi hjälper dig hitta rätt tjänst.</p>
+	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;line-height:1.6;margin-bottom:1.5rem">Hjälp av erfarna seniorer som förstår din vardag. Ring, maila eller fyll i en förfrågan - vi hjälper dig hitta rätt tjänst.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- Trust-rad direkt under hero -->
@@ -52,7 +52,7 @@
 			<h2 style="font-family:Rubik,sans-serif;font-size:1.5rem;font-weight:700;color:#fff;margin:0 0 4px;">Redo att boka?</h2>
 			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:0;">Skicka en förfrågan så kontaktar vi dig inom 24 timmar.</p>
 		</div>
-		<a href="/intresse-anmalan" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;font-family:Inter,sans-serif;font-size:1.125rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);transition:transform 0.2s;">
+		<a href="/intresse-anmalan/" style="display:inline-flex;align-items:center;gap:8px;background:#fff;color:#C91C22;font-family:Inter,sans-serif;font-size:1.125rem;font-weight:700;padding:16px 32px;border-radius:50px;text-decoration:none;box-shadow:0 4px 12px rgba(0,0,0,0.15);transition:transform 0.2s;">
 			Skicka förfrågan
 			<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
 		</a>
@@ -109,7 +109,7 @@
 				<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
 			</div>
 			<h3 style="font-family:Rubik,sans-serif;font-size:1.125rem;font-weight:600;color:#1F2937;margin:0 0 12px;">Hitta lokal kontakt</h3>
-			<a href="/har-finns-vi" style="font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:#C91C22;text-decoration:none;">Se alla 26 städer →</a>
+			<a href="/har-finns-vi/" style="font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:#C91C22;text-decoration:none;">Se alla 26 städer →</a>
 			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:12px 0 0;">Från Sundsvall till Skåne</p>
 		</div>
 		
@@ -188,14 +188,14 @@
 				Finns ni i min stad?
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
 			</summary>
-			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:16px 0 0;line-height:1.6;">Vi finns på 26 orter runt om i Sverige, från Sundsvall i norr till Skåne i söder. <a href="/har-finns-vi" style="color:#C91C22;font-weight:600;">Se alla våra orter här →</a></p>
+			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:16px 0 0;line-height:1.6;">Vi finns på 26 orter runt om i Sverige, från Sundsvall i norr till Skåne i söder. <a href="/har-finns-vi/" style="color:#C91C22;font-weight:600;">Se alla våra orter här →</a></p>
 		</details>
 		<details style="background:#FAFAF8;border-radius:12px;padding:20px 24px;cursor:pointer;">
 			<summary style="font-family:Rubik,sans-serif;font-size:1rem;font-weight:600;color:#1F2937;list-style:none;display:flex;justify-content:space-between;align-items:center;">
 				Vilka tjänster erbjuder ni?
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
 			</summary>
-			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:16px 0 0;line-height:1.6;">Vi erbjuder hemstädning, trädgårdsskötsel, målning/tapetsering och snickeri — allt utfört av erfarna seniorer med yrkesstolthet.</p>
+			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#4B5563;margin:16px 0 0;line-height:1.6;">Vi erbjuder hemstädning, trädgårdsskötsel, målning/tapetsering och snickeri - allt utfört av erfarna seniorer med yrkesstolthet.</p>
 		</details>
 	</div>
 	<style>
@@ -222,15 +222,15 @@
 
 	<!-- wp:html -->
 	<div style="display:flex;flex-wrap:wrap;justify-content:center;gap:12px;max-width:800px;margin:0 auto;">
-		<a href="/har-finns-vi/goteborg" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Göteborg</a>
-		<a href="/har-finns-vi/stockholm" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Malmö</a>
-		<a href="/har-finns-vi/helsingborg" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Helsingborg</a>
-		<a href="/har-finns-vi/jonkoping" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Jönköping</a>
-		<a href="/har-finns-vi/orebro" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Örebro</a>
-		<a href="/har-finns-vi/sundsvall" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Sundsvall</a>
+		<a href="/har-finns-vi/goteborg/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Göteborg</a>
+		<a href="/har-finns-vi/stockholm/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Malmö</a>
+		<a href="/har-finns-vi/helsingborg/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Helsingborg</a>
+		<a href="/har-finns-vi/jonkoping/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Jönköping</a>
+		<a href="/har-finns-vi/orebro/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Örebro</a>
+		<a href="/har-finns-vi/sundsvall/" style="background:#fff;border:1.5px solid #e5e7eb;border-radius:50px;padding:10px 20px;font-family:Inter,sans-serif;font-size:0.9375rem;font-weight:600;color:#1F2937;text-decoration:none;transition:all 0.2s;">Sundsvall</a>
 	</div>
 	<div style="text-align:center;margin-top:24px;">
-		<a href="/har-finns-vi" style="font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:#C91C22;text-decoration:none;">Visa alla 26 städer →</a>
+		<a href="/har-finns-vi/" style="font-family:Inter,sans-serif;font-size:1rem;font-weight:600;color:#C91C22;text-decoration:none;">Visa alla 26 städer →</a>
 	</div>
 	<style>
 	div[style*="flex-wrap:wrap"] a:hover {

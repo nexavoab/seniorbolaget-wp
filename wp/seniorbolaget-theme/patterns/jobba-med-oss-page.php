@@ -13,7 +13,7 @@
 <div class="wp-block-group alignfull" style="background-color:#FFF4F2;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
 	<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Jobba med Seniorbolaget — aktiv vardag med mening</h1>
+	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Jobba med Seniorbolaget - aktiv vardag med mening</h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
@@ -26,14 +26,14 @@
 
 	<!-- wp:html -->
 	<p style="font-family:Inter,sans-serif;font-size:1.1rem;color:#1F2937;text-align:left;margin-bottom:12px;font-weight:500;">
-	  Gör skillnad, ha roligt och tjäna extra — anmäl dig idag!
+	  Gör skillnad, ha roligt och tjäna extra - anmäl dig idag!
 	</p>
 	<!-- /wp:html -->
 
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 	<div class="wp-block-buttons" style="margin-bottom:1.5rem">
 		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Anmäl ditt intresse</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Anmäl ditt intresse</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
@@ -90,7 +90,7 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"1.25rem"},"spacing":{"margin":{"bottom":"3rem"}}}} -->
-	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;margin-bottom:3rem">Timlön med semesterersättning — ett bra tillskott till pensionen.</p>
+	<p class="has-text-align-center" style="color:#4B5563;font-size:1.25rem;margin-bottom:3rem">Timlön med semesterersättning - ett bra tillskott till pensionen.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:html -->
@@ -111,7 +111,7 @@
 			<p style="font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:8px 0 0;">beroende på kompetens</p>
 		</div>
 	</div>
-	<p style="text-align:center;font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:24px 0 0;">Du väljer själv hur mycket du vill jobba — ingen minsta arbetstid.</p>
+	<p style="text-align:center;font-family:Inter,sans-serif;font-size:0.9375rem;color:#6B7280;margin:24px 0 0;">Du väljer själv hur mycket du vill jobba - ingen minsta arbetstid.</p>
 	<style>
 	@media (max-width: 768px) {
 		div[style*="grid-template-columns:repeat(3,1fr)"] { grid-template-columns: 1fr !important; }
@@ -159,7 +159,7 @@
 				<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
 			</div>
 			<h3 style="font-family:Rubik,sans-serif;font-size:1.25rem;font-weight:600;color:#1F2937;margin:0 0 10px;">Extra inkomst</h3>
-			<p style="font-family:Inter,sans-serif;font-size:1.0625rem;color:#4B5563;margin:0;line-height:1.6;">Du får timlön med semesterersättning — ett bra tillskott till pensionen.</p>
+			<p style="font-family:Inter,sans-serif;font-size:1.0625rem;color:#4B5563;margin:0;line-height:1.6;">Du får timlön med semesterersättning - ett bra tillskott till pensionen.</p>
 		</div>
 		<div style="background:#fff;border-radius:16px;padding:28px;box-shadow:0 2px 12px rgba(0,0,0,0.04);">
 			<div style="width:56px;height:56px;background:#FFF4F2;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:18px;">
@@ -243,7 +243,7 @@
 				Måste jag vara pensionär?
 				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
 			</summary>
-			<p style="font-family:Inter,sans-serif;font-size:1.0625rem;color:#4B5563;margin:18px 0 0;line-height:1.7;">Nej, men vi söker främst seniorer 55+. Vi värdesätter livserfarenhet och yrkesbakgrund — inte exakt ålder.</p>
+			<p style="font-family:Inter,sans-serif;font-size:1.0625rem;color:#4B5563;margin:18px 0 0;line-height:1.7;">Nej, men vi söker främst seniorer 55+. Vi värdesätter livserfarenhet och yrkesbakgrund - inte exakt ålder.</p>
 		</details>
 		<details style="background:#fff;border-radius:12px;padding:22px 26px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,0.04);">
 			<summary style="font-family:Rubik,sans-serif;font-size:1.125rem;font-weight:600;color:#1F2937;list-style:none;display:flex;justify-content:space-between;align-items:center;">
@@ -325,7 +325,7 @@
 <div class="wp-block-group alignfull has-background" style="background-color:#C91C22;padding-top:100px;padding-bottom:100px;">
 
 	<!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-	<h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Ta steget — anmäl ditt intresse idag</h2>
+	<h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Ta steget - anmäl ditt intresse idag</h2>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.9)"},"typography":{"fontSize":"1.25rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
@@ -335,13 +335,13 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"vit","textColor":"rod","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.25rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.25rem;font-weight:700;">Anmäl intresse</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-color has-vit-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.25rem;font-weight:700;">Anmäl intresse</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->
 
 	<!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.8)"},"typography":{"fontSize":"1rem"},"spacing":{"margin":{"top":"1.5rem"}}}} -->
-	<p class="has-text-align-center" style="color:rgba(255,255,255,0.8);font-size:1rem;margin-top:1.5rem;">Eller ring oss på 010-175 19 00 — så berättar vi mer.</p>
+	<p class="has-text-align-center" style="color:rgba(255,255,255,0.8);font-size:1rem;margin-top:1.5rem;">Eller ring oss på 010-175 19 00 - så berättar vi mer.</p>
 	<!-- /wp:paragraph -->
 
 </div>

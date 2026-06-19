@@ -176,7 +176,7 @@
   }
 
   function isMarkdownSeparatorLine(line) {
-    return /^\s*\|?\s*:?-{2,}:?\s*(?:\|\s*:?-{2,}:?\s*)+\|?\s*$/.test(String(line || ''));
+    return /^\s*\|?\s*:?[-—–]{2,}:?\s*(?:\|\s*:?[-—–]{2,}:?\s*)+\|?\s*$/.test(String(line || ''));
   }
 
   function markdownLinesFromParagraph(paragraph) {
@@ -291,6 +291,373 @@
     });
   }
 
+  function decodeImageValue(value) {
+    try {
+      return decodeURIComponent(String(value || ''));
+    } catch (error) {
+      return String(value || '');
+    }
+  }
+
+  function buildNeutralServiceSvg(variant) {
+    var accent = ['#C91C22', '#3F7D4F', '#D18A24'][variant % 3];
+    var foreground = [
+      '<path d="M72 162l78-62 78 62" fill="none" stroke="#C91C22" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>',
+      '<rect x="92" y="156" width="116" height="74" rx="10" fill="#ffffff" stroke="#E6D8CB" stroke-width="4"/>',
+      '<rect x="136" y="184" width="28" height="46" rx="4" fill="#EFE2D7"/>',
+      '<circle cx="286" cy="166" r="33" fill="#E7F1E6" stroke="#BFD7BD" stroke-width="4"/>',
+      '<path d="M286 137v90M256 168c23 3 43-5 60-24M258 190c24 1 44-5 62-22" fill="none" stroke="#3F7D4F" stroke-width="5" stroke-linecap="round"/>'
+    ];
+
+    if (variant % 3 === 1) {
+      foreground = [
+        '<path d="M92 212c34-62 68-88 104-78 32 9 45 43 30 78H92z" fill="#E7F1E6" stroke="#BFD7BD" stroke-width="4"/>',
+        '<path d="M128 204c22-38 52-58 90-62M158 218c-2-44 12-78 42-104" fill="none" stroke="#3F7D4F" stroke-width="7" stroke-linecap="round"/>',
+        '<rect x="246" y="134" width="72" height="88" rx="14" fill="#ffffff" stroke="#E6D8CB" stroke-width="4"/>',
+        '<path d="M262 178h40M282 158v40" stroke="#C91C22" stroke-width="8" stroke-linecap="round"/>'
+      ];
+    } else if (variant % 3 === 2) {
+      foreground = [
+        '<rect x="82" y="146" width="116" height="78" rx="12" fill="#ffffff" stroke="#E6D8CB" stroke-width="4"/>',
+        '<path d="M110 178h58M110 200h42" stroke="#C91C22" stroke-width="8" stroke-linecap="round"/>',
+        '<path d="M248 122l54 54M302 122l-54 54" stroke="#D18A24" stroke-width="12" stroke-linecap="round"/>',
+        '<circle cx="275" cy="199" r="28" fill="#E7F1E6" stroke="#BFD7BD" stroke-width="4"/>',
+        '<path d="M261 199l10 10 22-24" fill="none" stroke="#3F7D4F" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>'
+      ];
+    }
+
+    return [
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Seniorbolaget">',
+      '<rect width="400" height="300" fill="#FAF7F2"/>',
+      '<circle cx="338" cy="58" r="72" fill="' + accent + '" opacity="0.10"/>',
+      '<circle cx="62" cy="252" r="92" fill="#EFE7DC" opacity="0.72"/>',
+      '<path d="M0 242c46-16 82-17 130-4 63 17 116 15 178-7 39-14 70-17 92-12v81H0z" fill="#F0E8DD"/>',
+      foreground.join(''),
+      '</svg>'
+    ].join('');
+  }
+
+  function neutralServiceImageSrc(index) {
+    return 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(buildNeutralServiceSvg(index));
+  }
+
+  function improveComingSoonImages() {
+    var index = 0;
+    Array.from(document.querySelectorAll('img')).forEach(function(image) {
+      var haystack = [
+        image.getAttribute('alt') || '',
+        decodeImageValue(image.getAttribute('src') || ''),
+        decodeImageValue(image.getAttribute('srcset') || '')
+      ].join(' ');
+
+      var hasComingSoonCopy = /(bild\s+kommer\s+snart|foto\s+(kommer|uppdateras)|uppdateras\s+snart)/i.test(haystack);
+      var isKnownBrokenFranchiseImage = /franchisee_(laholm-bastad|landskrona|nassjo|sundsvall|torsby|trelleborg|trollhattan)/i.test(haystack);
+      if (!hasComingSoonCopy && !isKnownBrokenFranchiseImage) return;
+
+      image.src = neutralServiceImageSrc(index);
+      image.alt = 'Seniorbolaget, hushållsnära tjänster';
+      image.removeAttribute('srcset');
+      image.classList.add('sb-neutral-service-image');
+      image.setAttribute('data-sb-neutral-service-image', 'true');
+      index += 1;
+    });
+  }
+
+  function repairLogoHomeLinks() {
+    Array.from(document.querySelectorAll('a.sb-logo')).forEach(function(link) {
+      if (!link.getAttribute('href')) {
+        link.setAttribute('href', '/');
+      }
+      if (!link.getAttribute('aria-label')) {
+        link.setAttribute('aria-label', 'Seniorbolaget startsida');
+      }
+
+      var image = link.querySelector('img');
+      if (image) {
+        image.setAttribute('width', '175');
+        image.setAttribute('height', '56');
+        image.setAttribute('loading', 'eager');
+        image.setAttribute('fetchpriority', 'high');
+        image.setAttribute('decoding', 'async');
+      }
+    });
+  }
+
+  function repairLogoDimensions() {
+    var headerLogo = document.querySelector('a.sb-logo img');
+    var headerSrc = headerLogo ? (headerLogo.currentSrc || headerLogo.getAttribute('src') || '') : '';
+
+    Array.from(document.querySelectorAll('img.sb-footer-logo')).forEach(function(image) {
+      if (!image.getAttribute('src') && headerSrc) {
+        image.setAttribute('src', headerSrc);
+      }
+      image.setAttribute('width', '149');
+      image.setAttribute('height', '36');
+      image.setAttribute('decoding', 'async');
+    });
+  }
+
+  function repairInjectedContactFormLabels() {
+    Array.from(document.querySelectorAll('input[type="checkbox"][name="sb_gdpr"]')).forEach(function(input, index) {
+      var label = input.closest('label');
+      if (label) return;
+
+      var id = input.getAttribute('id') || 'sb-gdpr-consent-' + index;
+      input.setAttribute('id', id);
+
+      var sibling = input.nextElementSibling;
+      if (sibling && sibling.tagName && sibling.tagName.toLowerCase() === 'span') {
+        var replacement = document.createElement('label');
+        replacement.setAttribute('for', id);
+        replacement.className = sibling.className || '';
+        replacement.setAttribute('style', sibling.getAttribute('style') || 'font-size:13px;line-height:1.4;color:#555;');
+        while (sibling.firstChild) replacement.appendChild(sibling.firstChild);
+        sibling.parentNode.replaceChild(replacement, sibling);
+        return;
+      }
+
+      if (!input.getAttribute('aria-label')) {
+        input.setAttribute('aria-label', 'Jag godkänner behandling av personuppgifter');
+      }
+    });
+
+    Array.from(document.querySelectorAll('input[name="sb_website"]')).forEach(function(input) {
+      input.setAttribute('tabindex', '-1');
+      input.setAttribute('aria-hidden', 'true');
+      if (input.parentElement) {
+        input.parentElement.setAttribute('aria-hidden', 'true');
+      }
+    });
+  }
+
+  function repairCareContextCopy() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+
+    var replacements = [
+      [/Privat hemtjänst/g, 'Hemnära stöd'],
+      [/Ledsagning/g, 'Praktisk hjälp'],
+      [/^Omsorg$/g, 'Vardagshjälp'],
+      [/Omsorg • Hemnära stöd • Praktisk hjälp/g, 'Vardagshjälp • Hemnära stöd • Praktisk hjälp'],
+      [/omsorg och precision/g, 'omtanke och noggrannhet'],
+      [/med omsorg och precision/g, 'med omtanke och noggrannhet'],
+      [/vård och omsorg/g, 'service och kundnära arbete'],
+      [/hjälpa med medicin/g, 'hjälpa med praktiska vardagsbestyr']
+    ];
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return /(Privat hemtjänst|Ledsagning|^Omsorg$|Omsorg • Hemnära stöd • Praktisk hjälp|omsorg och precision|vård och omsorg|hjälpa med medicin)/i.test((node.nodeValue || '').trim()) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      var value = node.nodeValue || '';
+      replacements.forEach(function(pair) {
+        value = value.replace(pair[0], pair[1]);
+      });
+      node.nodeValue = value;
+    });
+  }
+
+  function repairVisibleContentTypography() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return /(—|\s,)/.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      node.nodeValue = (node.nodeValue || '')
+        .replace(/^\s*—\s*$/g, '')
+        .replace(/\s+—\s+/g, ' ')
+        .replace(/\s+,/g, ',');
+    });
+  }
+
+  function repairContentWording() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+
+    var replacements = [
+      [/skräddarsydda lösningar/g, 'anpassade snickeriarbeten'],
+      [/anpassada lösningar/g, 'anpassade snickeriarbeten'],
+      [/Vi anpassar lösningen efter dig\./g, 'Vi anpassar arbetet efter dig.'],
+      [/så hittar rätt lösning vi en lösning som passar dig perfekt\./g, 'så hittar vi rätt tjänst för ditt uppdrag.'],
+      [/så hittar vi rätt lösning som passar dig\./g, 'så hittar vi rätt tjänst som passar dig.']
+    ];
+
+    var matcher = /(skräddarsydda lösningar|anpassada lösningar|Vi anpassar lösningen efter dig\.|så hittar rätt lösning vi en lösning som passar dig perfekt\.|så hittar vi rätt lösning som passar dig\.)/;
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return matcher.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      var value = node.nodeValue || '';
+      replacements.forEach(function(pair) {
+        value = value.replace(pair[0], pair[1]);
+      });
+      node.nodeValue = value;
+    });
+  }
+
+  function repairContactDuplicateHeading() {
+    if (!/\/kontakt\/?$/i.test(window.location.pathname || '')) return;
+
+    Array.from(document.querySelectorAll('main h2, .wp-site-blocks h2')).forEach(function(heading) {
+      if (textOf(heading) !== 'Hur kan vi hjälpa dig?') return;
+      heading.textContent = 'Välj vad du behöver hjälp med';
+      heading.setAttribute('data-sb-contact-heading-repaired', 'true');
+    });
+  }
+
+  function setFocusableState(container, enabled) {
+    Array.from(container.querySelectorAll('a, button, input, select, textarea, [tabindex]')).forEach(function(control) {
+      if (!control.hasAttribute('data-sb-original-tabindex')) {
+        control.setAttribute('data-sb-original-tabindex', control.getAttribute('tabindex') || '');
+      }
+
+      if (enabled) {
+        var original = control.getAttribute('data-sb-original-tabindex') || '';
+        if (original) control.setAttribute('tabindex', original);
+        else control.removeAttribute('tabindex');
+      } else {
+        control.setAttribute('tabindex', '-1');
+      }
+    });
+  }
+
+  function elementIntersectsViewport(element) {
+    var style = window.getComputedStyle(element);
+    var rect = element.getBoundingClientRect();
+    return style.display !== 'none' &&
+      style.visibility !== 'hidden' &&
+      Number(style.opacity || 1) !== 0 &&
+      rect.width > 0 &&
+      rect.height > 0 &&
+      rect.bottom > 0 &&
+      rect.top < window.innerHeight - 4 &&
+      rect.right > 0 &&
+      rect.left < window.innerWidth;
+  }
+
+  function repairCtaFocusState() {
+    Array.from(document.querySelectorAll('#sb-bs-panel, .sb-bs-panel')).forEach(function(panel) {
+      var open = elementIntersectsViewport(panel);
+      panel.setAttribute('aria-hidden', open ? 'false' : 'true');
+      setFocusableState(panel, open);
+    });
+
+    Array.from(document.querySelectorAll('#sb-fab-menu')).forEach(function(menu) {
+      var open = menu.classList.contains('open');
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+      setFocusableState(menu, open);
+    });
+  }
+
+  function repairFabMenuHandler() {
+    var menu = document.getElementById('sb-fab-menu');
+    var button = document.getElementById('sb-fab-btn');
+    if (!menu || !button) return;
+
+    if (!window.sbFab || !window.sbFab.__sbRepaired) {
+      window.sbFab = function() {
+        var open = !menu.classList.contains('open');
+        menu.classList.toggle('open', open);
+        button.classList.toggle('open', open);
+        button.setAttribute('aria-expanded', open ? 'true' : 'false');
+        menu.setAttribute('aria-hidden', open ? 'false' : 'true');
+        setFocusableState(menu, open);
+      };
+      window.sbFab.__sbRepaired = true;
+    }
+
+    if (!button.getAttribute('onclick') && button.getAttribute('data-sb-fab-click-repaired') !== 'true') {
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+        window.sbFab();
+      });
+      button.setAttribute('data-sb-fab-click-repaired', 'true');
+    }
+  }
+
+  function normalizeDecorativeEmojiText() {
+    var decorative = /^(?:\s|&nbsp;)*(?:📍|📞|🏢|👴|🧹|🌿|🔨|🎨|🖌️|🖌|⭐)\s*/;
+
+    function cleanNode(node) {
+      if (!node) return;
+      if (node.nodeType === 3) {
+        if (decorative.test(node.nodeValue || '')) {
+          node.nodeValue = node.nodeValue.replace(decorative, '');
+        }
+        return;
+      }
+      if (node.nodeType !== 1 || /script|style|noscript/i.test(node.tagName || '')) return;
+      Array.from(node.childNodes).forEach(cleanNode);
+    }
+
+    [
+      document.querySelector('.wp-site-blocks'),
+      document.querySelector('main'),
+      document.getElementById('sb-fab-menu'),
+      document.getElementById('sb-bs-panel'),
+      document.querySelector('.sb-bs-panel'),
+      document.querySelector('footer'),
+      document.body
+    ].forEach(function(root) {
+      cleanNode(root);
+    });
+  }
+
+  function repair404SwedishText() {
+    if (!document.body || !document.createTreeWalker || !window.NodeFilter) return;
+    var is404 = document.body.classList.contains('error404') || /404|sidan hittades inte/i.test(document.title || '');
+    if (!is404) return;
+
+    var replacements = [
+      [/soka istallet/g, 'söka istället'],
+      [/Sok/g, 'Sök'],
+      [/besok nagon/g, 'besök någon'],
+      [/vara populara/g, 'våra populära'],
+      [/Hemstadning/g, 'Hemstädning'],
+      [/Foretag/g, 'Företag'],
+      [/Vardagshjalp/g, 'Vardagshjälp'],
+      [/Tillbaka til /g, 'Tillbaka till ']
+    ];
+
+    var walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT, {
+      acceptNode: function(node) {
+        var parent = node.parentElement;
+        if (!parent || parent.closest('script, style, noscript, svg, #wpadminbar')) return NodeFilter.FILTER_REJECT;
+        return /(soka istallet|Sok|besok nagon|vara populara|Hemstadning|Foretag|Vardagshjalp|Tillbaka til )/.test(node.nodeValue || '') ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_SKIP;
+      }
+    });
+    var nodes = [];
+    while (walker.nextNode()) nodes.push(walker.currentNode);
+
+    nodes.forEach(function(node) {
+      var value = node.nodeValue || '';
+      replacements.forEach(function(pair) {
+        value = value.replace(pair[0], pair[1]);
+      });
+      node.nodeValue = value;
+    });
+  }
+
   function run() {
     colorRedHeadingOnDarkSections();
     fixRedTextOnRedCards();
@@ -300,6 +667,18 @@
     hideVisiblePlaceholderWarnings();
     convertPriceMarkdownTables();
     improveLocationPlaceholders();
+    improveComingSoonImages();
+    repairLogoHomeLinks();
+    repairLogoDimensions();
+    repairInjectedContactFormLabels();
+    repairCareContextCopy();
+    repairVisibleContentTypography();
+    repairContactDuplicateHeading();
+    repairCtaFocusState();
+    repairFabMenuHandler();
+    normalizeDecorativeEmojiText();
+    repairContentWording();
+    repair404SwedishText();
   }
 
   if (document.readyState === 'loading') {
@@ -309,4 +688,8 @@
   }
 
   window.addEventListener('load', run);
+  window.addEventListener('resize', run);
+  document.addEventListener('click', function() {
+    window.setTimeout(run, 0);
+  });
 })();

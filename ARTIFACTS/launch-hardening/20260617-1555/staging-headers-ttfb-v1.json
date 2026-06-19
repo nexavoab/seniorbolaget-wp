@@ -1,0 +1,59 @@
+{
+  "checkedAt": "2026-06-18T13:37:36",
+  "results": [
+    {
+      "url": "https://staging.seniorbolaget.se/",
+      "run": 1,
+      "raw": "time_starttransfer=0.074209;time_total=0.122682;http_code=200;url_effective=https://staging.seniorbolaget.se/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/",
+      "run": 2,
+      "raw": "time_starttransfer=0.082142;time_total=0.124952;http_code=200;url_effective=https://staging.seniorbolaget.se/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/",
+      "run": 3,
+      "raw": "time_starttransfer=0.081487;time_total=0.124875;http_code=200;url_effective=https://staging.seniorbolaget.se/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/",
+      "run": 1,
+      "raw": "time_starttransfer=0.073508;time_total=0.118647;http_code=200;url_effective=https://staging.seniorbolaget.se/intresseanmalan/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/",
+      "run": 2,
+      "raw": "time_starttransfer=0.072354;time_total=0.113054;http_code=200;url_effective=https://staging.seniorbolaget.se/intresseanmalan/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/",
+      "run": 3,
+      "raw": "time_starttransfer=0.089012;time_total=0.134654;http_code=200;url_effective=https://staging.seniorbolaget.se/intresseanmalan/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/priser/",
+      "run": 1,
+      "raw": "time_starttransfer=0.076696;time_total=0.118405;http_code=200;url_effective=https://staging.seniorbolaget.se/priser/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/priser/",
+      "run": 2,
+      "raw": "time_starttransfer=0.087826;time_total=0.127688;http_code=200;url_effective=https://staging.seniorbolaget.se/priser/"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/priser/",
+      "run": 3,
+      "raw": "time_starttransfer=0.075021;time_total=0.116776;http_code=200;url_effective=https://staging.seniorbolaget.se/priser/"
+    }
+  ],
+  "headers": [
+    "HTTP/1.1 200 OK",
+    "Server: Apache",
+    "Content-Security-Policy: default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data:; font-src 'self' https: data:",
+    "X-Robots-Tag: noindex, nofollow",
+    "Cache-Control: max-age=0",
+    "X-Varnish: 53277887447 53387363528",
+    "Age: 154"
+  ]
+}

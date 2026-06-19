@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-06-18T10:03:43.617Z",
+  "page": "404",
+  "environment": "staging",
+  "url": "https://staging.seniorbolaget.se/den-har-sidan-finns-inte-aaaoe-20260618-v12/?sb-content-v12=1781776973329",
+  "renderedDomCheck": {
+    "badHits": [],
+    "bodyClass": "error404 logged-in admin-bar no-customize-support wp-custom-logo wp-embed-responsive wp-theme-seniorbolaget-theme elementor-default elementor-kit-485 dialog-body dialog-buttons-body dialog-container dialog-buttons-container cmplz-functional cmplz-eu cmplz-optin",
+    "dataset": {
+      "careContextHotfix": null,
+      "cityContactHotfix": null,
+      "conversionA11yHotfix": "applied",
+      "launchTrustHotfix": "applied",
+      "neutralCityImagesHotfix": null,
+      "swedish404Hotfix": "applied"
+    },
+    "goodHits": [
+      "söka istället",
+      "Sök",
+      "besök någon",
+      "våra populära",
+      "Hemstädning",
+      "Företag",
+      "Vardagshjälp"
+    ],
+    "sampleText": "Om WordPress Seniorbolaget Redigera webbplats 6 6 uppdateringar tillgängliga 0 0 kommentarer inväntar granskning Nytt Rank Math SEO Rensa Performance Cache WPCode Imagify Hej, wasim.bitar@seniorbolaget.se Sök Hem › Hoppa till innehåll Privat Företag Om oss Nyheter Här finns vi Boka hjälp Sidan du letar efter finns inte. Prova att söka istället: Sök Eller besök någon av våra populära sidor: Hemstädning | Företag | Vardagshjälp | Kontakt 404 Hoppsan, sidan hittas inte Det verkar som att sidan du letar efter inte finns, har flyttats eller tagits bort. Men vi hjälper gärna dig vidare! Tillbaka till startsidan Tillbaka till startsidan Kontakta oss Kontakta oss Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta, hjälp för dig och mening för dem. KONTAKT 010-175 19 00 Mån–Fre 08:00–17:00 info@seniorbolaget.se Box 2069, 436 02 Hovås Godkänd för RUT & ROT TJÄNSTER Vardagshjälp Hemstädning Trädgård Målning & tapetsering Snickeri SIDOR Om oss Intresseanmälan Franchise Jobba med oss Kontakt FRANCHISETAGARE Bli franchisetagare Kontakta HQ © 2026 Seniorbolaget. · Integritetspolicy · Cookies ✓ Ansvarsförsäkrade ★★★★★ Tusentals nöjda kunder i Sverige ✓ Kollektivavtal Franchis",
+    "snippets": [
+      "ns vi Boka hjälp Sidan du letar efter finns inte. Prova att söka istället: Sök Eller besök någon av våra populära sidor: Hemstädning ",
+      "ance Cache WPCode Imagify Hej, wasim.bitar@seniorbolaget.se Sök Hem › Hoppa till innehåll Privat Företag Om oss Nyheter Här",
+      " letar efter finns inte. Prova att söka istället: Sök Eller besök någon av våra populära sidor: Hemstädning | Företag | Vardagshjäl",
+      "nns inte. Prova att söka istället: Sök Eller besök någon av våra populära sidor: Hemstädning | Företag | Vardagshjälp | Kontakt 404 H",
+      "öka istället: Sök Eller besök någon av våra populära sidor: Hemstädning | Företag | Vardagshjälp | Kontakt 404 Hoppsan, sidan hitta",
+      "bitar@seniorbolaget.se Sök Hem › Hoppa till innehåll Privat Företag Om oss Nyheter Här finns vi Boka hjälp Sidan du letar efter",
+      "besök någon av våra populära sidor: Hemstädning | Företag | Vardagshjälp | Kontakt 404 Hoppsan, sidan hittas inte Det verkar som att"
+    ],
+    "title": "Sidan hittades inte (404) – Seniorbolaget",
+    "url": "https://staging.seniorbolaget.se/den-har-sidan-finns-inte-aaaoe-20260618-v12/?sb-content-v12=1781776973329"
+  },
+  "consoleErrors": [
+    {
+      "level": "error",
+      "message": "ReferenceError: wp is not defined\n    at wp-i18n-js-after:2:1",
+      "timestamp": "2026-06-18T10:02:55.768Z",
+      "url": "wp-i18n-js-after"
+    },
+    {
+      "level": "error",
+      "message": "ReferenceError: wp is not defined\n    at elementor-common-js-translations:5:2\n    at elementor-common-js-translations:6:4",
+      "timestamp": "2026-06-18T10:02:55.770Z",
+      "url": "elementor-common-js-translations"
+    }
+  ],
+  "expectedResult": "badHits empty, swedish404Hotfix applied, goodHits present"
+}

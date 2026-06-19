@@ -38,19 +38,11 @@ add_action( 'after_setup_theme', 'seniorbolaget_setup' );
  * Enqueue scripts and styles.
  */
 function seniorbolaget_scripts() {
-	// Inter från Google Fonts
-	wp_enqueue_style(
-		'seniorbolaget-fonts',
-		'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap',
-		array(),
-		null
-	);
-
 	// Tema-stilar
 	wp_enqueue_style(
 		'seniorbolaget-style',
 		get_stylesheet_uri(),
-		array( 'seniorbolaget-fonts' ),
+		array(),
 		SENIORBOLAGET_VERSION
 	);
 
@@ -613,6 +605,62 @@ function seniorbolaget_conditional_wpautop($content) {
 add_action( 'wp_enqueue_scripts', 'seniorbolaget_scripts' );
 
 /**
+ * Remove frontend Google Font payloads that are not needed for the launch theme.
+ */
+function seniorbolaget_unused_google_font_handles() {
+	return array(
+		'seniorbolaget-fonts',
+		'elementor-gf-roboto',
+		'elementor-gf-robotoslab',
+	);
+}
+
+function seniorbolaget_dequeue_unused_google_fonts() {
+	foreach ( seniorbolaget_unused_google_font_handles() as $handle ) {
+		wp_dequeue_style( $handle );
+		wp_deregister_style( $handle );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'seniorbolaget_dequeue_unused_google_fonts', 100 );
+add_action( 'wp_print_styles', 'seniorbolaget_dequeue_unused_google_fonts', 1000 );
+
+function seniorbolaget_remove_unused_google_font_styles( $html, $handle ) {
+	if ( in_array( $handle, seniorbolaget_unused_google_font_handles(), true ) ) {
+		return '';
+	}
+
+	return $html;
+}
+add_filter( 'style_loader_tag', 'seniorbolaget_remove_unused_google_font_styles', 100, 2 );
+
+function seniorbolaget_is_google_font_url( $url ) {
+	$url = is_array( $url ) && isset( $url['href'] ) ? $url['href'] : $url;
+
+	return is_string( $url ) && (
+		false !== strpos( $url, 'fonts.googleapis.com' )
+		|| false !== strpos( $url, 'fonts.gstatic.com' )
+	);
+}
+
+function seniorbolaget_remove_google_font_resource_hints( $urls, $relation_type ) {
+	if ( ! in_array( $relation_type, array( 'dns-prefetch', 'preconnect' ), true ) ) {
+		return $urls;
+	}
+
+	return array_values( array_filter( $urls, function ( $url ) {
+		return ! seniorbolaget_is_google_font_url( $url );
+	} ) );
+}
+add_filter( 'wp_resource_hints', 'seniorbolaget_remove_google_font_resource_hints', 100, 2 );
+
+function seniorbolaget_remove_google_font_preloads( $preloads ) {
+	return array_values( array_filter( $preloads, function ( $preload ) {
+		return ! seniorbolaget_is_google_font_url( $preload );
+	} ) );
+}
+add_filter( 'wp_preload_resources', 'seniorbolaget_remove_google_font_preloads', 100 );
+
+/**
  * Enqueue editor styles.
  */
 function seniorbolaget_editor_styles() {
@@ -657,6 +705,142 @@ function seniorbolaget_register_stad_patterns() {
         ));
     }
 }
+
+add_action('wp_ajax_sb_contact_inquiry_v33', 'seniorbolaget_contact_inquiry_submit');
+add_action('wp_ajax_nopriv_sb_contact_inquiry_v33', 'seniorbolaget_contact_inquiry_submit');
+add_action('admin_post_sb_contact_inquiry_v33', 'seniorbolaget_contact_inquiry_submit');
+add_action('admin_post_nopriv_sb_contact_inquiry_v33', 'seniorbolaget_contact_inquiry_submit');
+
+function seniorbolaget_contact_inquiry_submit() {
+    $type = sanitize_key($_POST['type'] ?? 'allman');
+    $name = sanitize_text_field($_POST['name'] ?? '');
+    $phone = sanitize_text_field($_POST['phone'] ?? '');
+    $email = sanitize_email($_POST['email'] ?? '');
+    $service = sanitize_text_field($_POST['service'] ?? '');
+    $city = sanitize_text_field($_POST['stad'] ?? '');
+    $message = sanitize_textarea_field($_POST['message'] ?? '');
+
+    $type_names = [
+        'boka' => 'Boka en tjänst',
+        'jobba' => 'Jobba med oss',
+        'allman' => 'Allmän fråga',
+    ];
+    $type_name = $type_names[$type] ?? 'Kontaktformulär';
+
+    if (empty($name)) {
+        wp_send_json_error(['message' => 'Vänligen fyll i namn.'], 400);
+    }
+
+    if (($type === 'boka' || $type === 'jobba') && (empty($phone) || empty($city))) {
+        wp_send_json_error(['message' => 'Vänligen fyll i telefon och stad.'], 400);
+    }
+
+    if ($type === 'allman' && (empty($email) || empty($message))) {
+        wp_send_json_error(['message' => 'Vänligen fyll i e-post och meddelande.'], 400);
+    }
+
+    $body = "NYTT MEDDELANDE FRÅN KONTAKTSIDAN\n";
+    $body .= "=================================\n\n";
+    $body .= "Formulär: {$type_name}\n";
+    $body .= "Namn: {$name}\n";
+
+    if (!empty($phone)) {
+        $body .= "Telefon: {$phone}\n";
+    }
+
+    if (!empty($email)) {
+        $body .= "E-post: {$email}\n";
+    }
+
+    if (!empty($service)) {
+        $body .= "Tjänst: {$service}\n";
+    }
+
+    if (!empty($city)) {
+        $body .= "Stad: {$city}\n";
+    }
+
+    if (!empty($message)) {
+        $body .= "\nMeddelande:\n{$message}\n";
+    }
+
+    $body .= "\n--------------------------------\n";
+    $body .= "Skickat från kontaktformulär\n";
+    $body .= "Tidpunkt: " . current_time('Y-m-d H:i:s') . "\n";
+
+    $headers = [
+        'Content-Type: text/plain; charset=UTF-8',
+        'From: Seniorbolaget <no-reply@seniorbolaget.se>',
+    ];
+
+    if (!empty($email)) {
+        $headers[] = 'Reply-To: ' . $name . ' <' . $email . '>';
+    }
+
+    $sent = wp_mail(
+        seniorbolaget_form_mail_recipient(),
+        "[Kontakt] {$type_name} - {$name}",
+        $body,
+        $headers
+    );
+
+    if ($sent) {
+        wp_send_json_success(['message' => 'Meddelande skickat!']);
+    }
+
+    error_log('Seniorbolaget contact form: Failed to send email for ' . $name . ' (' . $type . ')');
+    wp_send_json_error(['message' => 'Kunde inte skicka meddelandet. Ring oss på 010-175 19 00.'], 500);
+}
+
+function seniorbolaget_contact_form_submit_script() {
+    if (!is_page('kontakt')) {
+        return;
+    }
+    ?>
+    <script id="seniorbolaget-contact-form-submit-fix-v33">
+    window.sbSubmitForm = async function(e, type) {
+        e.preventDefault();
+        var form = e.target;
+        var btn = document.getElementById('btn-' + type);
+        var success = document.getElementById('success-' + type);
+        var origText = btn ? btn.textContent : '';
+
+        if (btn) {
+            btn.textContent = 'Skickar...';
+            btn.disabled = true;
+        }
+
+        var formData = new FormData(form);
+        formData.append('action', 'sb_contact_inquiry_v33');
+        formData.append('type', type);
+
+        try {
+            var response = await fetch('/wp-admin/admin-ajax.php', {
+                method: 'POST',
+                body: formData
+            });
+            var result = await response.json();
+
+            if (!response.ok || !result.success) {
+                throw new Error((result.data && result.data.message) || 'Kunde inte skicka formuläret.');
+            }
+
+            form.style.display = 'none';
+            if (success) {
+                success.style.display = 'block';
+            }
+        } catch (error) {
+            if (btn) {
+                btn.textContent = origText;
+                btn.disabled = false;
+            }
+            alert(error.message || 'Kunde inte skicka formuläret.');
+        }
+    };
+    </script>
+    <?php
+}
+add_action('wp_footer', 'seniorbolaget_contact_form_submit_script', 1000);
 add_action('init', 'seniorbolaget_register_stad_patterns', 20);
 
 // Manuell registrering av info-sidor (om oss, jobba, franchise, etc.)
@@ -691,6 +875,18 @@ function seniorbolaget_register_info_patterns() {
     }
 }
 add_action('init', 'seniorbolaget_register_info_patterns', 20);
+
+if (!function_exists('seniorbolaget_form_mail_recipient')) {
+    function seniorbolaget_form_mail_recipient() {
+        $host = isset($_SERVER['HTTP_HOST']) ? strtolower(wp_unslash($_SERVER['HTTP_HOST'])) : '';
+
+        if (strpos($host, 'staging.seniorbolaget.se') !== false) {
+            return 'wasim.bitar@seniorbolaget.se';
+        }
+
+        return 'info@seniorbolaget.se';
+    }
+}
 
 /**
  * AJAX handler för intresseanmälan-wizard
@@ -784,7 +980,7 @@ function seniorbolaget_wizard_submit() {
     $body .= "Tidpunkt: " . current_time('Y-m-d H:i:s') . "\n";
     
     // Email headers
-    $to = 'info@seniorbolaget.se';
+    $to = seniorbolaget_form_mail_recipient();
     $subject = "[Ny förfrågan] {$service_name} - {$city}";
     $headers = [
         'Content-Type: text/plain; charset=UTF-8',

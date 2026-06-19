@@ -1,0 +1,51 @@
+{
+  "checkedAt": "2026-06-18T11:34:37.460Z",
+  "total": 4,
+  "passed": 4,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-wording-v24=1781782467039",
+      "ok": true,
+      "badWordingHits": [],
+      "careHits": [],
+      "goodWordingHits": [
+        "Berätta för oss vad du behöver hjälp med, så hittar vi rätt tjänst som passar dig."
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "wordingV24Hotfix": "ready"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/snickeri/?sb-wording-v24=1781782467039",
+      "ok": true,
+      "badWordingHits": [],
+      "careHits": [],
+      "goodWordingHits": [
+        "Bygg- och montering av hyllsystem, garderober och anpassade snickeriarbeten.",
+        "Varje uppdrag är unikt. Vi anpassar arbetet efter dig.",
+        "Berätta för oss vad du behöver hjälp med, så hittar vi rätt tjänst för ditt uppdrag."
+      ],
+      "title": "Snickeri & byggtjänster – Seniorbolaget",
+      "wordingV24Hotfix": "ready"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/priser/?sb-wording-v24=1781782467039",
+      "ok": true,
+      "badWordingHits": [],
+      "careHits": [],
+      "goodWordingHits": [],
+      "title": "Priser – Seniorbolaget",
+      "wordingV24Hotfix": "ready"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/foretag/?sb-wording-v24=1781782467039",
+      "ok": true,
+      "badWordingHits": [],
+      "careHits": [],
+      "goodWordingHits": [],
+      "title": "Företagstjänster & B2B – Seniorbolaget",
+      "wordingV24Hotfix": "ready"
+    }
+  ]
+}

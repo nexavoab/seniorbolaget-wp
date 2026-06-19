@@ -1,0 +1,150 @@
+{
+  "checkedAt": "2026-06-18T10:30:23.947Z",
+  "environment": "staging",
+  "closed": {
+    "bottomSheet": {
+      "ariaHidden": "true",
+      "className": "sb-bs-panel",
+      "focusables": [
+        {
+          "href": "/intresseanmalan/",
+          "tabindex": "-1",
+          "tag": "a",
+          "text": "Boka hjälp"
+        },
+        {
+          "href": "/jobba-med-oss/",
+          "tabindex": "-1",
+          "tag": "a",
+          "text": "Jobba med oss"
+        },
+        {
+          "href": "/bli-franchisetagare/",
+          "tabindex": "-1",
+          "tag": "a",
+          "text": "Bli franchisetagare"
+        },
+        {
+          "href": null,
+          "tabindex": "-1",
+          "tag": "button",
+          "text": "Stäng"
+        }
+      ],
+      "rect": {
+        "bottom": 1220,
+        "height": 376,
+        "left": 0,
+        "right": 375,
+        "top": 844,
+        "width": 375
+      },
+      "selector": "#sb-bs-panel, .sb-bs-panel"
+    },
+    "datasets": {
+      "ctaFocus": "applied",
+      "fabHandler": "ready"
+    },
+    "fabButton": {
+      "ariaHidden": null,
+      "className": "",
+      "focusables": [],
+      "rect": {
+        "bottom": 820,
+        "height": 56,
+        "left": 295,
+        "right": 351,
+        "top": 764,
+        "width": 56
+      },
+      "selector": "#sb-fab-btn"
+    },
+    "fabMenu": {
+      "ariaHidden": "true",
+      "className": "",
+      "focusables": [
+        {
+          "href": "/bli-franchisetagare/",
+          "tabindex": "-1",
+          "tag": "a",
+          "text": "🏢 Bli franchisetagare"
+        },
+        {
+          "href": "/jobba-med-oss/",
+          "tabindex": "-1",
+          "tag": "a",
+          "text": "👴 Jobba med oss"
+        },
+        {
+          "href": "/intresseanmalan/",
+          "tabindex": "-1",
+          "tag": "a",
+          "text": "🧹 Boka hjälp"
+        }
+      ],
+      "rect": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0
+      },
+      "selector": "#sb-fab-menu"
+    },
+    "hasSbFab": false,
+    "url": "https://staging.seniorbolaget.se/?sb-cta-v16=1781778620008",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  },
+  "open": {
+    "datasets": {
+      "ctaFocus": "applied",
+      "fabHandler": "applied"
+    },
+    "fabButton": {
+      "ariaExpanded": "true",
+      "text": "Boka hjälp"
+    },
+    "fabMenu": {
+      "ariaHidden": "false",
+      "className": "open",
+      "focusables": [
+        {
+          "href": "/bli-franchisetagare/",
+          "tabindex": null,
+          "tag": "a",
+          "text": "🏢 Bli franchisetagare"
+        },
+        {
+          "href": "/jobba-med-oss/",
+          "tabindex": null,
+          "tag": "a",
+          "text": "👴 Jobba med oss"
+        },
+        {
+          "href": "/intresseanmalan/",
+          "tabindex": null,
+          "tag": "a",
+          "text": "🧹 Boka hjälp"
+        }
+      ],
+      "rect": {
+        "bottom": 0,
+        "height": 0,
+        "left": 0,
+        "right": 0,
+        "top": 0,
+        "width": 0
+      }
+    },
+    "hasSbFab": false,
+    "url": "https://staging.seniorbolaget.se/?sb-cta-v16=1781778620008",
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  }
+}

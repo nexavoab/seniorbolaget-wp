@@ -69,7 +69,8 @@
                 <p class="wizard-subtitle">Välj din ort</p>
             </div>
             
-            <input type="text" class="city-search" placeholder="Sök ort..." x-model="citySearch" @input="filterCities()">
+            <label class="screen-reader-text" for="sb-city-search">Sök ort</label>
+            <input id="sb-city-search" type="text" class="city-search" placeholder="Sök ort..." x-model="citySearch" @input="filterCities()">
             
             <div class="city-list" x-html="renderCities()"></div>
         </div>
@@ -86,8 +87,8 @@
             <!-- Hemstädning fields -->
             <div x-show="formData.service === 'hemstadning'">
                 <div class="form-group">
-                    <label class="form-label">Bostadsyta (kvm)</label>
-                    <input type="number" class="form-input" placeholder="T.ex. 85" x-model="formData.area" min="1">
+                    <label class="form-label" for="sb-area">Bostadsyta (kvm)</label>
+                    <input id="sb-area" type="number" class="form-input" placeholder="T.ex. 85" x-model="formData.area" min="1">
                 </div>
                 
                 <div class="form-group">
@@ -124,8 +125,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label class="form-label">Övrigt <span class="form-label-optional">(valfritt)</span></label>
-                    <textarea class="form-input form-textarea" placeholder="Något mer vi bör veta?" x-model="formData.notes"></textarea>
+                    <label class="form-label" for="sb-notes-hemstadning">Övrigt <span class="form-label-optional">(valfritt)</span></label>
+                    <textarea id="sb-notes-hemstadning" class="form-input form-textarea" placeholder="Något mer vi bör veta?" x-model="formData.notes"></textarea>
                 </div>
             </div>
             
@@ -137,16 +138,16 @@
                 </div>
                 
                 <div class="form-group">
-                    <label class="form-label">Övrigt <span class="form-label-optional">(valfritt)</span></label>
-                    <textarea class="form-input form-textarea" placeholder="Beskriv gärna mer om din trädgård..." x-model="formData.notes"></textarea>
+                    <label class="form-label" for="sb-notes-tradgard">Övrigt <span class="form-label-optional">(valfritt)</span></label>
+                    <textarea id="sb-notes-tradgard" class="form-input form-textarea" placeholder="Beskriv gärna mer om din trädgård..." x-model="formData.notes"></textarea>
                 </div>
             </div>
             
             <!-- Snickeri/Målning fields -->
             <div x-show="formData.service === 'snickeri' || formData.service === 'malning'">
                 <div class="form-group">
-                    <label class="form-label">Beskriv uppdraget</label>
-                    <textarea class="form-input form-textarea" placeholder="Vad behöver göras?" x-model="formData.description" required></textarea>
+                    <label class="form-label" for="sb-description">Beskriv uppdraget</label>
+                    <textarea id="sb-description" class="form-input form-textarea" placeholder="Vad behöver göras?" x-model="formData.description" required></textarea>
                 </div>
                 
                 <div class="form-group">
@@ -168,8 +169,8 @@
                 </div>
                 
                 <div class="form-group">
-                    <label class="form-label">Övrigt <span class="form-label-optional">(valfritt)</span></label>
-                    <textarea class="form-input form-textarea" placeholder="Något mer vi bör veta?" x-model="formData.notes"></textarea>
+                    <label class="form-label" for="sb-notes-work">Övrigt <span class="form-label-optional">(valfritt)</span></label>
+                    <textarea id="sb-notes-work" class="form-input form-textarea" placeholder="Något mer vi bör veta?" x-model="formData.notes"></textarea>
                 </div>
             </div>
             
@@ -188,13 +189,13 @@
             <div x-show="errorMsg" class="error-msg" x-text="errorMsg"></div>
             
             <div class="form-group">
-                <label class="form-label">Förnamn</label>
-                <input type="text" class="form-input" placeholder="Ditt förnamn" x-model="formData.name" required>
+                <label class="form-label" for="sb-name">Förnamn</label>
+                <input id="sb-name" type="text" class="form-input" placeholder="Ditt förnamn" x-model="formData.name" required>
             </div>
             
             <div class="form-group">
-                <label class="form-label">Telefonnummer</label>
-                <input type="tel" class="form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
+                <label class="form-label" for="sb-phone">Telefonnummer</label>
+                <input id="sb-phone" type="tel" class="form-input" placeholder="070-123 45 67" x-model="formData.phone" required>
             </div>
             
             <div class="form-group">
@@ -214,7 +215,7 @@
             <div class="gdpr-check">
                 <input type="checkbox" id="gdpr" x-model="formData.gdprConsent">
                 <label for="gdpr" class="gdpr-text">
-                    Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy" target="_blank">integritetspolicy</a>.
+                    Jag godkänner att Seniorbolaget kontaktar mig och lagrar mina uppgifter enligt deras <a href="/integritetspolicy/" target="_blank">integritetspolicy</a>.
                 </label>
             </div>
             

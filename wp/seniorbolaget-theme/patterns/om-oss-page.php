@@ -17,18 +17,18 @@
 	<!-- /wp:paragraph -->
 
 	<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
-	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Seniorbolaget — erfarenhet är skillnaden</h1>
+	<h1 class="wp-block-heading" style="color:#1F2937;font-size:clamp(2rem, 5vw, 3rem);font-weight:700;line-height:1.1;margin-bottom:1.5rem">Seniorbolaget - erfarenhet är skillnaden</h1>
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.375rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-	<p style="color:#4B5563;font-size:1.375rem;line-height:1.7;margin-bottom:2rem">Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta — hjälp för dig, meningsfull sysselsättning för dem.</p>
+	<p style="color:#4B5563;font-size:1.375rem;line-height:1.7;margin-bottom:2rem">Vi matchar privatpersoner och företag med erfarna seniorer. Dubbel nytta - hjälp för dig, meningsfull sysselsättning för dem.</p>
 	<!-- /wp:paragraph -->
 
 	<!-- CTA direkt i hero -->
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 	<div class="wp-block-buttons" style="margin-bottom:1.5rem">
 		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Kontakta oss</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Kontakta oss</a></div>
 		<!-- /wp:button -->
 		<!-- wp:button {"textColor":"rod","style":{"border":{"radius":"50px","width":"2px","color":"#C91C22"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600","fontSize":"1.125rem"}},"className":"is-style-outline"} -->
 		<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-rod-color has-text-color wp-element-button" href="tel:0101751900" style="border-color:#C91C22;border-width:2px;border-radius:50px;padding:1rem 2rem;font-weight:600;font-size:1.125rem">Ring 010-175 19 00</a></div>
@@ -91,7 +91,7 @@
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:1rem">Det som först var ett litet initiativ inom hantverk, trädgård och städ växte snabbt — både tack vare engagerade kunder och alla fantastiska seniorer som ville vara med och göra skillnad.</p>
+			<p style="color:#4B5563;font-size:1.125rem;line-height:1.7;margin-bottom:1rem">Det som först var ett litet initiativ inom hantverk, trädgård och städ växte snabbt - både tack vare engagerade kunder och alla fantastiska seniorer som ville vara med och göra skillnad.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1.125rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
@@ -100,8 +100,8 @@
 
 			<!-- wp:html -->
 			<blockquote style="border-left:4px solid #C91C22;padding-left:24px;margin:0;font-style:italic;background:#FFF4F2;padding:24px;border-radius:0 12px 12px 0;">
-				<p style="font-family:Inter,sans-serif;font-size:1.25rem;color:#1F2937;line-height:1.6;margin:0 0 8px;">"Vi vet att erfarenhet verkligen gör skillnad. Det är den grunden vi står på — och den som bär oss framåt."</p>
-				<cite style="font-family:Inter,sans-serif;font-size:1rem;color:#6B7280;font-style:normal;">— Henrik Bergeld, VD Seniorbolaget</cite>
+				<p style="font-family:Inter,sans-serif;font-size:1.25rem;color:#1F2937;line-height:1.6;margin:0 0 8px;">"Vi vet att erfarenhet verkligen gör skillnad. Det är den grunden vi står på - och den som bär oss framåt."</p>
+				<cite style="font-family:Inter,sans-serif;font-size:1rem;color:#6B7280;font-style:normal;">- Henrik Bergeld, VD Seniorbolaget</cite>
 			</blockquote>
 			<!-- /wp:html -->
 
@@ -159,7 +159,7 @@
 				<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.375rem;font-weight:600;margin-bottom:0.75rem">Full trygghet</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"1.0625rem","lineHeight":"1.6"}}} -->
-				<p style="color:#4B5563;font-size:1.0625rem;line-height:1.6">Alla medarbetare och uppdrag är försäkrade. Vi skapar trygghet varje dag — både för kunder och för våra seniorer.</p>
+				<p style="color:#4B5563;font-size:1.0625rem;line-height:1.6">Alla medarbetare och uppdrag är försäkrade. Vi skapar trygghet varje dag - både för kunder och för våra seniorer.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -179,7 +179,7 @@
 				<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.375rem;font-weight:600;margin-bottom:0.75rem">Äkta omtanke</h3>
 				<!-- /wp:heading -->
 				<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"1.0625rem","lineHeight":"1.6"}}} -->
-				<p style="color:#4B5563;font-size:1.0625rem;line-height:1.6">Seniorbolaget är mer än ett företag — det är en plats där erfarenhet möter omtanke, och där varje dag räknas.</p>
+				<p style="color:#4B5563;font-size:1.0625rem;line-height:1.6">Seniorbolaget är mer än ett företag - det är en plats där erfarenhet möter omtanke, och där varje dag räknas.</p>
 				<!-- /wp:paragraph -->
 			</div>
 			<!-- /wp:group -->
@@ -212,8 +212,8 @@
 			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:8px 0 0;">Städer</p>
 		</div>
 		<div>
-			<p style="font-family:Rubik,sans-serif;font-size:3rem;font-weight:700;color:#fff;margin:0;">17</p>
-			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:8px 0 0;">År i branschen</p>
+			<p style="font-family:Rubik,sans-serif;font-size:clamp(1.5rem,3vw,2.25rem);font-weight:700;color:#fff;margin:0;">Sedan 2008</p>
+			<p style="font-family:Inter,sans-serif;font-size:1rem;color:rgba(255,255,255,0.9);margin:8px 0 0;">I branschen</p>
 		</div>
 	</div>
 	<style>
@@ -242,10 +242,10 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"},"style":{"spacing":{"blockGap":"16px"}}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hjälp</a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka hjälp</a></div>
 		<!-- /wp:button -->
 		<!-- wp:button {"textColor":"vit","style":{"border":{"radius":"50px","width":"2px","color":"#ffffff"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"600"}},"className":"is-style-outline"} -->
-		<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-vit-color has-text-color wp-element-button" href="/jobba-med-oss" style="border-color:#ffffff;border-width:2px;border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:600;">Jobba med oss</a></div>
+		<div class="wp-block-button is-style-outline"><a class="wp-block-button__link has-vit-color has-text-color wp-element-button" href="/jobba-med-oss/" style="border-color:#ffffff;border-width:2px;border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:600;">Jobba med oss</a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

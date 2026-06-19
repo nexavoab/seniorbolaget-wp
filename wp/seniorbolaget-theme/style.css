@@ -1,7 +1,7 @@
 /*
 Theme Name: Seniorbolaget
 Theme URI: https://seniorbolaget.se
-Description: WordPress block theme för Seniorbolaget — hemtjänster med hjärta.
+Description: WordPress block theme för Seniorbolaget — hushållsnära tjänster med hjärta.
 Version: 1.0.0
 Requires at least: 6.4
 Tested up to: 6.7
@@ -42,6 +42,106 @@ header.wp-block-template-part {
     backdrop-filter: blur(8px);
     background: rgba(255,255,255,0.95) !important;
     box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+}
+
+.sb-logo img {
+    aspect-ratio: 175 / 56 !important;
+    display: block !important;
+    height: 56px !important;
+    max-width: 175px !important;
+    object-fit: contain !important;
+    width: 175px !important;
+}
+
+.sb-footer-logo {
+    aspect-ratio: 149 / 36 !important;
+    display: block !important;
+    height: 36px !important;
+    max-width: 190px !important;
+    object-fit: contain !important;
+    width: 149px !important;
+}
+
+@media (max-width: 700px) {
+    body.home .sb-hero-section {
+        min-height: 672px !important;
+    }
+
+    body.home .sb-hero-section > div {
+        min-height: 672px !important;
+        transform: none !important;
+    }
+
+    body.home .sb-hero-section *,
+    body.is-wizard-page .wizard-container * {
+        animation-duration: 0.001ms !important;
+        transition-duration: 0.001ms !important;
+    }
+
+    body.is-wizard-page .wizard-container {
+        min-height: 1000px !important;
+    }
+
+    body.is-wizard-page .wizard-container[x-cloak] {
+        display: block !important;
+        visibility: hidden !important;
+    }
+}
+
+/* ===== COMPLIANZ COOKIE BANNER ===== */
+.cmplz-cookiebanner.banner-1 {
+    bottom: clamp(16px, 3vw, 32px) !important;
+    box-shadow: 0 18px 50px rgba(17, 24, 39, 0.18) !important;
+    left: auto !important;
+    max-height: min(560px, calc(100vh - 32px)) !important;
+    max-width: calc(100vw - 32px) !important;
+    right: clamp(16px, 3vw, 32px) !important;
+    top: auto !important;
+    transform: none !important;
+    width: min(526px, calc(100vw - 32px)) !important;
+}
+
+.cmplz-cookiebanner.banner-1 .cmplz-body {
+    max-height: min(300px, 42vh) !important;
+}
+
+@media (max-width: 700px) {
+    .cmplz-cookiebanner.banner-1 {
+        bottom: 12px !important;
+        grid-gap: 8px !important;
+        left: 12px !important;
+        max-height: 46vh !important;
+        max-width: none !important;
+        padding: 12px 14px !important;
+        right: 12px !important;
+        width: auto !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-header {
+        grid-template-columns: 1fr auto !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-title {
+        grid-column-start: 1 !important;
+        justify-self: start !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-close {
+        grid-column-start: 2 !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-body {
+        max-height: 18vh !important;
+        min-width: 0 !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-buttons {
+        gap: 8px !important;
+    }
+
+    .cmplz-cookiebanner.banner-1 .cmplz-btn {
+        min-height: 44px !important;
+    }
 }
 
 /* ===== 65+ TILLGÄNGLIGHET — MIN FONTSTORLEK ===== */
@@ -513,7 +613,14 @@ body {
 }
 
 .sb-footer,
-.sb-footer * {
+footer.wp-block-template-part {
+    background: #1F2937 !important;
+}
+
+.sb-footer,
+.sb-footer *,
+footer.wp-block-template-part,
+footer.wp-block-template-part * {
     opacity: 1 !important;
 }
 
@@ -527,17 +634,38 @@ body {
 .sb-footer-email,
 .sb-footer-badge,
 .sb-footer-bottom,
-.sb-footer-bottom a {
+.sb-footer-bottom a,
+footer.wp-block-template-part p,
+footer.wp-block-template-part a,
+footer.wp-block-template-part span,
+footer.wp-block-template-part li {
     color: #FFFFFF !important;
 }
 
-.sb-footer a {
+.sb-footer a,
+footer a:not(.wp-block-button__link) {
+    text-decoration-line: underline !important;
     text-decoration-thickness: 1px !important;
     text-underline-offset: 0.18em !important;
 }
 
-.sb-footer-bottom a {
+.sb-footer-bottom a,
+footer a:not(.wp-block-button__link) {
     text-decoration: underline !important;
+}
+
+.entry-content a:not(.wp-block-button__link),
+.wp-block-post-content a:not(.wp-block-button__link),
+main a:not(.wp-block-button__link):not(.wp-block-navigation-item__content):not(.service-card-cta):not(.sb-mobile-link) {
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.18em !important;
+}
+
+.service-card a.read-more-link {
+    text-decoration-line: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.18em !important;
 }
 
 .sb-stats-section p,
@@ -547,6 +675,15 @@ body {
 .sb-service-strip p {
     color: var(--sb-red-readable-soft) !important;
     opacity: 1 !important;
+}
+
+.has-rod-background-color p,
+.has-rod-background-color span,
+.has-rod-background-color li,
+.has-rod-background-color h1,
+.has-rod-background-color h2,
+.has-rod-background-color h3 {
+    color: #FFFFFF !important;
 }
 
 .wiz-step-label,
@@ -588,9 +725,9 @@ body {
 
     .sb-footer-logo {
         display: block !important;
-        height: auto !important;
+        height: 36px !important;
         max-width: 190px !important;
-        width: 190px !important;
+        width: 149px !important;
     }
 
     .sb-footer-col-links-wrapper {

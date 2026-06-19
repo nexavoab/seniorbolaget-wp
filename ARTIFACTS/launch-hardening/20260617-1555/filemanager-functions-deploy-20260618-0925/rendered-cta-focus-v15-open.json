@@ -1,0 +1,43 @@
+{
+  "dataset": "applied",
+  "fabButton": {
+    "ariaExpanded": "false",
+    "text": "Boka hjälp"
+  },
+  "fabMenu": {
+    "ariaHidden": "true",
+    "className": "",
+    "focusables": [
+      {
+        "href": "/bli-franchisetagare/",
+        "tabindex": "-1",
+        "tag": "a",
+        "text": "🏢 Bli franchisetagare"
+      },
+      {
+        "href": "/jobba-med-oss/",
+        "tabindex": "-1",
+        "tag": "a",
+        "text": "👴 Jobba med oss"
+      },
+      {
+        "href": "/intresseanmalan/",
+        "tabindex": "-1",
+        "tag": "a",
+        "text": "🧹 Boka hjälp"
+      }
+    ],
+    "rect": {
+      "bottom": 0,
+      "height": 0,
+      "left": 0,
+      "right": 0,
+      "top": 0,
+      "width": 0
+    }
+  },
+  "manualOpen": {
+    "hasButton": true,
+    "hasSbFab": false
+  }
+}

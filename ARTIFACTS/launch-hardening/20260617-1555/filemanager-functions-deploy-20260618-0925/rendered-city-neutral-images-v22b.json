@@ -1,0 +1,751 @@
+{
+  "checkedAt": "2026-06-18T11:18:57.396Z",
+  "token": "20260618-neutral-v22b-1781781477531",
+  "criteria": "Flags visible kommer snart text, placeholder/coming/missing image src or alt, or zero natural dimensions. Does not fail ordinary lazy-loaded images with valid dimensions.",
+  "total": 26,
+  "passed": 19,
+  "failed": 7,
+  "totalBadImgs": 21,
+  "pagesWithComingSoonText": [],
+  "failures": [
+    {
+      "slug": "laholm",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-12",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Laholm/Båstad",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Laholm/Båstad",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Laholm/Båstad",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Laholm – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "landskrona",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-13",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Landskrona",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Landskrona",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Landskrona",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Landskrona – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "nassjo",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-16",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Nässjö",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Nässjö",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Nässjö",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "sundsvall",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-20",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Sundsvall",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Sundsvall",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Sundsvall",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Sundsvall – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "torsby",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-21",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Torsby",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Torsby",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Torsby",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "trelleborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-22",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Trelleborg",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Trelleborg",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Trelleborg",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Trelleborg – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "trollhattan",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-23",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Trollhättan",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Trollhättan",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Trollhättan",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Trollhättan – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    }
+  ],
+  "results": [
+    {
+      "slug": "amal",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-0",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "applied",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Åmål – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "boras",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/boras/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-1",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Borås – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "eskilstuna",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/eskilstuna/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-2",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "applied",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Eskilstuna – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "falkenberg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/falkenberg/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-3",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Falkenberg – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "goteborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/goteborg/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-4",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "applied",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Göteborg – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "halmstad",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/halmstad/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-5",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Halmstad – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "helsingborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/helsingborg/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-6",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Helsingborg – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "jonkoping",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/jonkoping/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-7",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Jönköping – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "karlstad",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/karlstad/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-8",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "applied",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Karlstad – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "kristianstad",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kristianstad/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-9",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Kristianstad – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "kungalv",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungalv/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-10",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Kungälv – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "kungsbacka",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/kungsbacka/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-11",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Kungsbacka – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "laholm",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/laholm/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-12",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Laholm/Båstad",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Laholm/Båstad",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Laholm/Båstad",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_laholm-bastad.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Laholm – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "landskrona",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/landskrona/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-13",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Landskrona",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Landskrona",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Landskrona",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_landskrona.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Landskrona – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "lerum",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/lerum/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-14",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Lerum – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "molndal",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/molndal/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-15",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Mölndal – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "nassjo",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/nassjo/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-16",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Nässjö",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Nässjö",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Nässjö",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_nassjo.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Nässjö – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "orebro",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/orebro/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-17",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Örebro – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "skovde",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/skovde/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-18",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Skövde – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "stenungsund",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/stenungsund/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-19",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Stenungsund – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "sundsvall",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/sundsvall/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-20",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Sundsvall",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Sundsvall",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Sundsvall",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_sundsvall.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Sundsvall – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "torsby",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/torsby/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-21",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Torsby",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Torsby",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Torsby",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_torsby.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Torsby – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "trelleborg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trelleborg/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-22",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Trelleborg",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Trelleborg",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Trelleborg",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trelleborg.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Trelleborg – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "trollhattan",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/trollhattan/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-23",
+      "ok": false,
+      "badImgCount": 3,
+      "badImgs": [
+        {
+          "alt": "Franchisetagare i Trollhättan",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Kontakt i Trollhättan",
+          "complete": true,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg?media=1781781265",
+          "width": 0
+        },
+        {
+          "alt": "Franchisetagare i Trollhättan",
+          "complete": false,
+          "height": 0,
+          "src": "https://usercontent.one/wp/staging.seniorbolaget.se/wp-content/uploads/2026/02/franchisee_trollhattan.jpg?media=1781781265",
+          "width": 0
+        }
+      ],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Trollhättan – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "ulricehamn",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/ulricehamn/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-24",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Ulricehamn – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    },
+    {
+      "slug": "varberg",
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/varberg/?sb-neutral-v22b=20260618-neutral-v22b-1781781477531-25",
+      "ok": true,
+      "badImgCount": 0,
+      "badImgs": [],
+      "hasVisibleComingSoonText": false,
+      "imageCount": 10,
+      "neutralHotfix": "ready",
+      "neutralImgCount": 8,
+      "title": "Hushållsnära tjänster i Varberg – Seniorbolaget",
+      "visibleComingSoonMatches": []
+    }
+  ]
+}

@@ -38,7 +38,7 @@
 				</div>
 				<!-- /wp:html -->
 				<!-- wp:paragraph {"style":{"typography":{"fontSize":"var:preset|font-size|md","lineHeight":"1.7","fontStyle":"italic"}}} -->
-				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Äntligen kan jag slappna av hemma. Städaren som kommer till mig är så noggrann och trevlig — det är verkligen skillnad mot att försöka hinna med allt själv."</p>
+				<p style="font-size:var(--wp--preset--font-size--md);line-height:1.7;font-style:italic">"Äntligen kan jag slappna av hemma. Städaren som kommer till mig är så noggrann och trevlig - det är verkligen skillnad mot att försöka hinna med allt själv."</p>
 				<!-- /wp:paragraph -->
 				<!-- wp:group {"style":{"spacing":{"margin":{"top":"24px"}}},"layout":{"type":"flex","flexWrap":"nowrap","verticalAlignment":"center"}} -->
 				<div class="wp-block-group" style="margin-top:24px">

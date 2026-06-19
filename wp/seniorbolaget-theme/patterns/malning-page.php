@@ -23,7 +23,7 @@
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontWeight":"600","textTransform":"uppercase","letterSpacing":"0.05em","fontSize":"0.875rem"},"color":{"text":"var:preset|color|rod"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:var(--wp--preset--color--rod);font-size:0.875rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem">✓ ROT-avdrag — du betalar bara 70%</p>
+			<p style="color:var(--wp--preset--color--rod);font-size:0.875rem;font-weight:600;letter-spacing:0.05em;text-transform:uppercase;margin-bottom:1rem">✓ ROT-avdrag - du betalar bara 70%</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:heading {"level":1,"style":{"typography":{"fontWeight":"700","lineHeight":"1.1","fontSize":"clamp(2rem, 5vw, 3rem)"},"color":{"text":"#1F2937"},"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
@@ -48,7 +48,7 @@
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"},"style":{"spacing":{"margin":{"bottom":"1.5rem"}}}} -->
 			<div class="wp-block-buttons" style="margin-bottom:1.5rem">
 				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Boka målning</a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Boka målning</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -56,7 +56,7 @@
 			<!-- wp:html -->
 			<p style="font-size:0.875rem;color:#6B7280;margin-top:0.75rem;margin-bottom:0;">
 				<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#6B7280" stroke-width="2" style="vertical-align:middle;margin-right:4px;"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.68A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
-				Eller ring <strong style="color:#1F2937;">010-175 19 00</strong> — inget åtagande, bara ett samtal.
+				Eller ring <strong style="color:#1F2937;">010-175 19 00</strong> - inget åtagande, bara ett samtal.
 			</p>
 			<!-- /wp:html -->
 
@@ -97,7 +97,7 @@
 <!-- /wp:group -->
 
 
-<!-- VAD INGÅR SECTION — Bento Grid -->
+<!-- VAD INGÅR SECTION - Bento Grid -->
 <!-- wp:group {"align":"full","style":{"color":{"background":"#FAFAF8"},"spacing":{"padding":{"top":"80px","bottom":"80px","left":"clamp(24px, 5vw, 80px)","right":"clamp(24px, 5vw, 80px)"},"margin":{"top":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-group alignfull" style="background-color:#FAFAF8;margin-top:0;padding-top:80px;padding-right:clamp(24px, 5vw, 80px);padding-bottom:80px;padding-left:clamp(24px, 5vw, 80px)">
 
@@ -108,7 +108,7 @@
 	<!-- wp:html -->
 	<div class="seniorbolaget-bento" style="display:grid;grid-template-columns:repeat(4,1fr);grid-template-rows:auto auto;gap:16px;max-width:1100px;margin:0 auto;">
 
-	  <!-- Stort kort — Innerväggs- & taksmålning (2 kolumner) -->
+	  <!-- Stort kort - Innerväggs- & taksmålning (2 kolumner) -->
 	  <div style="grid-column:span 2;background:#fff;border-radius:20px;padding:36px;box-shadow:0 2px 16px rgba(0,0,0,0.06);display:flex;flex-direction:column;gap:16px;">
 	    <div style="width:48px;height:48px;background:#FFF4F2;border-radius:12px;display:flex;align-items:center;justify-content:center;">
 	      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
@@ -119,7 +119,7 @@
 	    </div>
 	  </div>
 
-	  <!-- Litet kort — Tapetsering -->
+	  <!-- Litet kort - Tapetsering -->
 	  <div style="background:#FFF4F2;border-radius:20px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:12px;">
 	    <div style="width:44px;height:44px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;">
 	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18"/></svg>
@@ -128,7 +128,7 @@
 	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Klassisk tapet eller modern. Vi hanterar alla typer med precision.</p>
 	  </div>
 
-	  <!-- Litet kort — Fasadmålning -->
+	  <!-- Litet kort - Fasadmålning -->
 	  <div style="background:#FAFAF8;border-radius:20px;padding:28px;box-shadow:0 2px 16px rgba(0,0,0,0.04);display:flex;flex-direction:column;gap:12px;">
 	    <div style="width:44px;height:44px;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;">
 	      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><rect x="2" y="6" width="20" height="16" rx="2"/><path d="M12 2v4M6 6V4M18 6V4"/></svg>
@@ -137,16 +137,16 @@
 	    <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:#6B7280;margin:0;line-height:1.5;">Utvändig målning som skyddar och pryder. Hållbart resultat.</p>
 	  </div>
 
-	  <!-- Bred rad — Touch-ups & renovering (3 kolumner) -->
+	  <!-- Bred rad - Touch-ups & renovering (3 kolumner) -->
 	  <div style="grid-column:span 3;background:linear-gradient(135deg,#C91C22 0%,#a01519 100%);border-radius:20px;padding:28px 36px;display:flex;align-items:center;justify-content:space-between;gap:24px;">
 	    <div>
 	      <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:1.1rem;color:#fff;margin:0 0 6px;">Touch-ups &amp; renovering</p>
-	      <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.85);margin:0;">Mindre lagningar eller fullständig omlackering — inget är för litet eller för stort.</p>
+	      <p style="font-family:Inter,sans-serif;font-size:0.875rem;color:rgba(255,255,255,0.85);margin:0;">Mindre lagningar eller fullständig omlackering - inget är för litet eller för stort.</p>
 	    </div>
 	    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.586 7.586"/></svg>
 	  </div>
 
-	  <!-- Litet kort — ROT-avdrag badge -->
+	  <!-- Litet kort - ROT-avdrag badge -->
 	  <div style="background:#1F2937;border-radius:20px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;">
 	    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#C91C22" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
 	    <p style="font-family:Rubik,sans-serif;font-weight:700;font-size:0.9375rem;color:#fff;margin:0;">ROT-avdrag ✓</p>
@@ -186,17 +186,17 @@
 			<!-- /wp:heading -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-			<p style="color:#4B5563;font-size:1rem;line-height:1.7;margin-bottom:1rem">ROT-avdraget innebär att du som privatperson kan få 30% skattereduktion på arbetskostnaden för reparation, ombyggnad och tillbyggnad — inklusive målning och tapetsering.</p>
+			<p style="color:#4B5563;font-size:1rem;line-height:1.7;margin-bottom:1rem">ROT-avdraget innebär att du som privatperson kan få 30% skattereduktion på arbetskostnaden för reparation, ombyggnad och tillbyggnad - inklusive målning och tapetsering.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:paragraph {"style":{"typography":{"fontSize":"1rem","lineHeight":"1.7"},"color":{"text":"#4B5563"},"spacing":{"margin":{"bottom":"2rem"}}}} -->
-			<p style="color:#4B5563;font-size:1rem;line-height:1.7;margin-bottom:2rem">Vi sköter all administration åt dig — avdraget dras direkt på fakturan så du slipper krångel med Skatteverket.</p>
+			<p style="color:#4B5563;font-size:1rem;line-height:1.7;margin-bottom:2rem">Vi sköter all administration åt dig - avdraget dras direkt på fakturan så du slipper krångel med Skatteverket.</p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"left"}} -->
 			<div class="wp-block-buttons">
 				<!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2rem","right":"2rem"}},"typography":{"fontWeight":"600"}}} -->
-				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Räkna ut din kostnad</a></div>
+				<div class="wp-block-button"><a class="wp-block-button__link has-rod-background-color has-vit-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2rem;font-weight:600">Räkna ut din kostnad</a></div>
 				<!-- /wp:button -->
 			</div>
 			<!-- /wp:buttons -->
@@ -271,7 +271,7 @@
 						</li>
 						<li style="display:flex;align-items:flex-start;gap:12px;">
 							<span style="min-width:28px;height:28px;background:#C91C22;color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:0.875rem;">3</span>
-							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Du behöver inte göra <strong>någonting</strong> — vi sköter hela processen</span>
+							<span style="color:#4B5563;font-size:0.9375rem;padding-top:4px;">Du behöver inte göra <strong>någonting</strong> - vi sköter hela processen</span>
 						</li>
 					</ol>
 				</div>
@@ -361,7 +361,7 @@
 				<!-- wp:group {"style":{"spacing":{"blockGap":"0.5rem"}},"layout":{"type":"constrained"}} -->
 				<div class="wp-block-group">
 					<!-- wp:heading {"level":3,"style":{"typography":{"fontSize":"1.125rem","fontWeight":"600"},"color":{"text":"#1F2937"}}} -->
-					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Klart i tid — utan stress</h3>
+					<h3 class="wp-block-heading" style="color:#1F2937;font-size:1.125rem;font-weight:600">Klart i tid - utan stress</h3>
 					<!-- /wp:heading -->
 					<!-- wp:paragraph {"style":{"color":{"text":"#4B5563"},"typography":{"fontSize":"0.9375rem"}}} -->
 					<p style="color:#4B5563;font-size:0.9375rem">Vi respekterar din tid och ditt hem.</p>
@@ -391,17 +391,17 @@
 <div class="wp-block-group alignfull has-background" style="background-color:#4A5568;padding-top:100px;padding-bottom:100px;">
 
   <!-- wp:heading {"textAlign":"center","level":2,"style":{"typography":{"fontSize":"clamp(1.75rem,4vw,2.5rem)","fontWeight":"700"},"color":{"text":"#ffffff"},"spacing":{"margin":{"bottom":"1rem"}}}} -->
-  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Fräscha upp ditt hem — vi fixar måleriet</h2>
+  <h2 class="wp-block-heading has-text-align-center" style="color:#fff;font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;margin-bottom:1rem;">Fräscha upp ditt hem - vi fixar måleriet</h2>
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"rgba(255,255,255,0.85)"},"typography":{"fontSize":"1.125rem"},"spacing":{"margin":{"bottom":"2.5rem"}}}} -->
-  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem;">Boka målning idag. Vi matchar dig med rätt senior — och ROT-avdraget sköter vi åt dig.</p>
+  <p class="has-text-align-center" style="color:rgba(255,255,255,0.85);font-size:1.125rem;margin-bottom:2.5rem;">Boka målning idag. Vi matchar dig med rätt senior - och ROT-avdraget sköter vi åt dig.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
   <div class="wp-block-buttons">
     <!-- wp:button {"backgroundColor":"rod","textColor":"vit","style":{"border":{"radius":"50px"},"spacing":{"padding":{"top":"1rem","bottom":"1rem","left":"2.5rem","right":"2.5rem"}},"typography":{"fontSize":"1.125rem","fontWeight":"700"}}} -->
-    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka målning</a></div>
+    <div class="wp-block-button"><a class="wp-block-button__link has-vit-color has-rod-background-color has-text-color has-background wp-element-button" href="/intresse-anmalan/" style="border-radius:50px;padding:1rem 2.5rem;font-size:1.125rem;font-weight:700;">Boka målning</a></div>
     <!-- /wp:button -->
   </div>
   <!-- /wp:buttons -->
@@ -413,7 +413,7 @@
 </div>
 <!-- /wp:group -->
 
-<!-- KONTAKTBLOCK — Har du frågor? -->
+<!-- KONTAKTBLOCK - Har du frågor? -->
 <!-- wp:group {"style":{"spacing":{"padding":{"top":"60px","bottom":"60px"}}},"backgroundColor":"ljusgra","layout":{"type":"constrained","contentSize":"640px"}} -->
 <div class="wp-block-group has-ljusgra-background-color has-background" style="padding-top:60px;padding-bottom:60px;">
 
@@ -422,7 +422,7 @@
   <!-- /wp:heading -->
 
   <!-- wp:paragraph {"align":"center","style":{"color":{"text":"#6B7280"},"typography":{"fontSize":"1rem"},"spacing":{"margin":{"top":"0.75rem","bottom":"2rem"}}}} -->
-  <p class="has-text-align-center" style="color:#6B7280;font-size:1rem;margin-top:0.75rem;margin-bottom:2rem;">Ring eller mejla oss — vi svarar snabbt och utan krångel.</p>
+  <p class="has-text-align-center" style="color:#6B7280;font-size:1rem;margin-top:0.75rem;margin-bottom:2rem;">Ring eller mejla oss - vi svarar snabbt och utan krångel.</p>
   <!-- /wp:paragraph -->
 
   <!-- wp:html -->
@@ -444,7 +444,7 @@
 <!-- STICKY FLOATING CTA -->
 <!-- wp:html -->
 <div class="seniorbolaget-sticky-cta">
-  <a href="/intresse-anmalan">
+  <a href="/intresse-anmalan/">
     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
     Boka målning
   </a>

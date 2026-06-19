@@ -1,0 +1,2044 @@
+{
+  "checkedAt": "2026-06-18T10:31:56.037Z",
+  "environment": "staging",
+  "results": [
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 6674,
+        "height": 1151,
+        "left": 0,
+        "right": 345,
+        "top": 5523,
+        "width": 345
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 714,
+            "height": 627,
+            "left": -8,
+            "right": 353,
+            "top": 86,
+            "width": 360
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2268,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2232,
+            "width": 36
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2382,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2346,
+            "width": 36
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2514,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2478,
+            "width": 36
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 4021,
+            "height": 258,
+            "left": 352,
+            "right": 678,
+            "top": 3763,
+            "width": 326
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 375,
+            "right": 655,
+            "top": 3786,
+            "width": 280
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3801,
+            "height": 15,
+            "left": 375,
+            "right": 390,
+            "top": 3786,
+            "width": 15
+          },
+          "tag": "svg"
+        }
+      ],
+      "scrollWidth": 345,
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v16=1781778692112-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 2214,
+        "height": 1151,
+        "left": 0,
+        "right": 345,
+        "top": 1063,
+        "width": 345
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 1063,
+            "height": 993,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "wizard-inner",
+          "id": "",
+          "rect": {
+            "bottom": 1031,
+            "height": 961,
+            "left": -8,
+            "right": 353,
+            "top": 70,
+            "width": 360
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1892,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 1604,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123
+          },
+          "tag": "a"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 1676,
+            "width": 123
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 44,
+            "left": 292,
+            "right": 376,
+            "top": 1676,
+            "width": 84
+          },
+          "tag": "a"
+        }
+      ],
+      "scrollWidth": 345,
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v16=1781778694187-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 3703,
+        "height": 1151,
+        "left": 0,
+        "right": 345,
+        "top": 2552,
+        "width": 345
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1317,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1289,
+            "width": 204
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1316,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1291,
+            "width": 204
+          },
+          "tag": "input"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3381,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 3078,
+            "width": 123
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 3094,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 3078,
+            "width": 123
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 3209,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 3108,
+            "width": 123
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3155,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3108,
+            "width": 123
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3155,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3108,
+            "width": 123
+          },
+          "tag": "a"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3209,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 3165,
+            "width": 123
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3209,
+            "height": 44,
+            "left": 292,
+            "right": 376,
+            "top": 3165,
+            "width": 84
+          },
+          "tag": "a"
+        }
+      ],
+      "scrollWidth": 345,
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v16=1781778696036-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1117,
+          "height": 376,
+          "left": 0,
+          "right": 345,
+          "top": 741,
+          "width": 345
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 6782,
+        "height": 1151,
+        "left": 0,
+        "right": 345,
+        "top": 5631,
+        "width": 345
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 373,
+            "right": 557,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 429,
+            "left": 206,
+            "right": 364,
+            "top": 2662,
+            "width": 158
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 429,
+            "left": 388,
+            "right": 547,
+            "top": 2662,
+            "width": 158
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2725,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2695,
+            "width": 92
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2725,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2695,
+            "width": 92
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2986,
+            "height": 245,
+            "left": 421,
+            "right": 514,
+            "top": 2741,
+            "width": 92
+          },
+          "tag": "p"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3058,
+            "height": 52,
+            "left": 421,
+            "right": 514,
+            "top": 3006,
+            "width": 92
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3032,
+            "height": 26,
+            "left": 421,
+            "right": 514,
+            "top": 3006,
+            "width": 92
+          },
+          "tag": "p"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3058,
+            "height": 22,
+            "left": 421,
+            "right": 514,
+            "top": 3036,
+            "width": 92
+          },
+          "tag": "p"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3704,
+            "height": 453,
+            "left": 24,
+            "right": 364,
+            "top": 3251,
+            "width": 340
+          },
+          "tag": "div"
+        }
+      ],
+      "scrollWidth": 345,
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v16=1781778697931-360",
+      "viewport": {
+        "height": 741,
+        "width": 360
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 6461,
+        "height": 1151,
+        "left": 0,
+        "right": 375,
+        "top": 5309,
+        "width": 375
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 697,
+            "height": 594,
+            "left": -8,
+            "right": 382,
+            "top": 103,
+            "width": 390
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2239,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2203,
+            "width": 36
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2353,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2317,
+            "width": 36
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-step-badge",
+          "id": "",
+          "rect": {
+            "bottom": 2485,
+            "height": 36,
+            "left": -2,
+            "right": 34,
+            "top": 2449,
+            "width": 36
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3854,
+            "height": 258,
+            "left": 362,
+            "right": 688,
+            "top": 3596,
+            "width": 326
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 385,
+            "right": 665,
+            "top": 3619,
+            "width": 280
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3634,
+            "height": 15,
+            "left": 385,
+            "right": 400,
+            "top": 3619,
+            "width": 15
+          },
+          "tag": "svg"
+        }
+      ],
+      "scrollWidth": 375,
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v16=1781778701034-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 2214,
+        "height": 1151,
+        "left": 0,
+        "right": 375,
+        "top": 1063,
+        "width": 375
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 1063,
+            "height": 993,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "wizard-inner",
+          "id": "",
+          "rect": {
+            "bottom": 1031,
+            "height": 961,
+            "left": -8,
+            "right": 382,
+            "top": 70,
+            "width": 390
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1892,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 1604,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 1589,
+            "width": 123
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1666,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 1618,
+            "width": 123
+          },
+          "tag": "a"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1720,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 1676,
+            "width": 123
+          },
+          "tag": "li"
+        }
+      ],
+      "scrollWidth": 375,
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v16=1781778702953-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 3639,
+        "height": 1151,
+        "left": 0,
+        "right": 375,
+        "top": 2488,
+        "width": 375
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1305,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1277,
+            "width": 204
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1304,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1279,
+            "width": 204
+          },
+          "tag": "input"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3317,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 3013,
+            "width": 123
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 3029,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 3013,
+            "width": 123
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 3145,
+            "height": 102,
+            "left": 292,
+            "right": 415,
+            "top": 3043,
+            "width": 123
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3043,
+            "width": 123
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3091,
+            "height": 48,
+            "left": 292,
+            "right": 415,
+            "top": 3043,
+            "width": 123
+          },
+          "tag": "a"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3145,
+            "height": 44,
+            "left": 292,
+            "right": 415,
+            "top": 3101,
+            "width": 123
+          },
+          "tag": "li"
+        }
+      ],
+      "scrollWidth": 375,
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v16=1781778704803-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1220,
+          "height": 376,
+          "left": 0,
+          "right": 375,
+          "top": 844,
+          "width": 375
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 0,
+          "height": 0,
+          "left": 0,
+          "right": 0,
+          "top": 0,
+          "width": 0
+        }
+      },
+      "footerRect": {
+        "bottom": 6714,
+        "height": 1151,
+        "left": 0,
+        "right": 375,
+        "top": 5562,
+        "width": 375
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "display-name",
+          "id": "",
+          "rect": {
+            "bottom": 32,
+            "height": 19,
+            "left": 402,
+            "right": 587,
+            "top": 14,
+            "width": 185
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3039,
+            "height": 429,
+            "left": 388,
+            "right": 547,
+            "top": 2611,
+            "width": 158
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2674,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2644,
+            "width": 92
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2674,
+            "height": 31,
+            "left": 421,
+            "right": 514,
+            "top": 2644,
+            "width": 92
+          },
+          "tag": "span"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2935,
+            "height": 245,
+            "left": 421,
+            "right": 514,
+            "top": 2690,
+            "width": 92
+          },
+          "tag": "p"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3006,
+            "height": 52,
+            "left": 421,
+            "right": 514,
+            "top": 2955,
+            "width": 92
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2980,
+            "height": 26,
+            "left": 421,
+            "right": 514,
+            "top": 2955,
+            "width": 92
+          },
+          "tag": "p"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3006,
+            "height": 22,
+            "left": 421,
+            "right": 514,
+            "top": 2984,
+            "width": 92
+          },
+          "tag": "p"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 6391,
+            "height": 303,
+            "left": 292,
+            "right": 415,
+            "top": 6088,
+            "width": 123
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 6104,
+            "height": 16,
+            "left": 292,
+            "right": 415,
+            "top": 6088,
+            "width": 123
+          },
+          "tag": "h4"
+        }
+      ],
+      "scrollWidth": 375,
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v16=1781778706521-390",
+      "viewport": {
+        "height": 844,
+        "width": 390
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 828,
+          "height": 170,
+          "left": 1035,
+          "right": 1241,
+          "top": 658,
+          "width": 206
+        }
+      },
+      "footerRect": {
+        "bottom": 5555,
+        "height": 674,
+        "left": 0,
+        "right": 1265,
+        "top": 4880,
+        "width": 1265
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "sb-hero-section",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 1273,
+            "top": 70,
+            "width": 1280
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 690,
+            "height": 620,
+            "left": -8,
+            "right": 1273,
+            "top": 70,
+            "width": 1280
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 691,
+            "height": 581,
+            "left": -8,
+            "right": 880,
+            "top": 109,
+            "width": 888
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-marquee-track",
+          "id": "",
+          "rect": {
+            "bottom": 3545,
+            "height": 319,
+            "left": -66,
+            "right": 4859,
+            "top": 3226,
+            "width": 4925
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-review-card",
+          "id": "",
+          "rect": {
+            "bottom": 3521,
+            "height": 279,
+            "left": 1267,
+            "right": 1645,
+            "top": 3242,
+            "width": 378
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-stars",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1296,
+            "right": 1616,
+            "top": 3271,
+            "width": 320
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1296,
+            "right": 1314,
+            "top": 3271,
+            "width": 18
+          },
+          "tag": "svg"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1297,
+            "right": 1312,
+            "top": 3272,
+            "width": 15
+          },
+          "tag": "polygon"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3289,
+            "height": 18,
+            "left": 1317,
+            "right": 1335,
+            "top": 3271,
+            "width": 18
+          },
+          "tag": "svg"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3286,
+            "height": 14,
+            "left": 1318,
+            "right": 1333,
+            "top": 3272,
+            "width": 15
+          },
+          "tag": "polygon"
+        }
+      ],
+      "scrollWidth": 1265,
+      "url": "https://staging.seniorbolaget.se/?sb-ux-v16=1781778708373-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 828,
+          "height": 170,
+          "left": 1035,
+          "right": 1241,
+          "top": 658,
+          "width": 206
+        }
+      },
+      "footerRect": {
+        "bottom": 1484,
+        "height": 674,
+        "left": 0,
+        "right": 1265,
+        "top": 809,
+        "width": 1265
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "wizard-container",
+          "id": "",
+          "rect": {
+            "bottom": 809,
+            "height": 739,
+            "left": -8,
+            "right": 1273,
+            "top": 70,
+            "width": 1280
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer",
+          "id": "",
+          "rect": {
+            "bottom": 1447,
+            "height": 638,
+            "left": 0,
+            "right": 1313,
+            "top": 809,
+            "width": 1313
+          },
+          "tag": "footer"
+        },
+        {
+          "cls": "sb-footer-col-links-wrapper",
+          "id": "",
+          "rect": {
+            "bottom": 1333,
+            "height": 467,
+            "left": 524,
+            "right": 1304,
+            "top": 865,
+            "width": 780
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1333,
+            "height": 467,
+            "left": 1066,
+            "right": 1304,
+            "top": 865,
+            "width": 239
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 881,
+            "height": 16,
+            "left": 1066,
+            "right": 1304,
+            "top": 865,
+            "width": 239
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 950,
+            "height": 55,
+            "left": 1066,
+            "right": 1304,
+            "top": 895,
+            "width": 239
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 917,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 895,
+            "width": 239
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 950,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 927,
+            "width": 239
+          },
+          "tag": "li"
+        }
+      ],
+      "scrollWidth": 1265,
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-ux-v16=1781778710307-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 828,
+          "height": 170,
+          "left": 1035,
+          "right": 1241,
+          "top": 658,
+          "width": 206
+        }
+      },
+      "footerRect": {
+        "bottom": 3262,
+        "height": 674,
+        "left": 0,
+        "right": 1265,
+        "top": 2588,
+        "width": 1265
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1244,
+            "height": 27,
+            "left": -9999,
+            "right": -9795,
+            "top": 1217,
+            "width": 204
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 1243,
+            "height": 25,
+            "left": -9999,
+            "right": -9795,
+            "top": 1219,
+            "width": 204
+          },
+          "tag": "input"
+        },
+        {
+          "cls": "sb-footer",
+          "id": "",
+          "rect": {
+            "bottom": 3226,
+            "height": 638,
+            "left": 0,
+            "right": 1313,
+            "top": 2588,
+            "width": 1313
+          },
+          "tag": "footer"
+        },
+        {
+          "cls": "sb-footer-col-links-wrapper",
+          "id": "",
+          "rect": {
+            "bottom": 3111,
+            "height": 467,
+            "left": 524,
+            "right": 1304,
+            "top": 2644,
+            "width": 780
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 3111,
+            "height": 467,
+            "left": 1066,
+            "right": 1304,
+            "top": 2644,
+            "width": 239
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 2659,
+            "height": 16,
+            "left": 1066,
+            "right": 1304,
+            "top": 2644,
+            "width": 239
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 2728,
+            "height": 55,
+            "left": 1066,
+            "right": 1304,
+            "top": 2673,
+            "width": 239
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2696,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 2673,
+            "width": 239
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 2728,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 2706,
+            "width": 239
+          },
+          "tag": "li"
+        }
+      ],
+      "scrollWidth": 1265,
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-ux-v16=1781778712198-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    },
+    {
+      "bottomSheet": {
+        "ariaHidden": "true",
+        "rect": {
+          "bottom": 1276,
+          "height": 376,
+          "left": 0,
+          "right": 1265,
+          "top": 900,
+          "width": 1265
+        }
+      },
+      "datasets": {
+        "ctaFocus": "applied",
+        "fabHandler": "ready"
+      },
+      "fabMenu": {
+        "ariaHidden": "true",
+        "className": "",
+        "rect": {
+          "bottom": 828,
+          "height": 170,
+          "left": 1035,
+          "right": 1241,
+          "top": 658,
+          "width": 206
+        }
+      },
+      "footerRect": {
+        "bottom": 4615,
+        "height": 674,
+        "left": 0,
+        "right": 1265,
+        "top": 3940,
+        "width": 1265
+      },
+      "footerVisible": true,
+      "hiddenFocusable": [],
+      "horizontalOverflow": false,
+      "overflowing": [
+        {
+          "cls": "sb-footer",
+          "id": "",
+          "rect": {
+            "bottom": 4578,
+            "height": 638,
+            "left": 0,
+            "right": 1313,
+            "top": 3940,
+            "width": 1313
+          },
+          "tag": "footer"
+        },
+        {
+          "cls": "sb-footer-col-links-wrapper",
+          "id": "",
+          "rect": {
+            "bottom": 4464,
+            "height": 467,
+            "left": 524,
+            "right": 1304,
+            "top": 3996,
+            "width": 780
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 4464,
+            "height": 467,
+            "left": 1066,
+            "right": 1304,
+            "top": 3996,
+            "width": 239
+          },
+          "tag": "div"
+        },
+        {
+          "cls": "sb-footer-heading",
+          "id": "",
+          "rect": {
+            "bottom": 4012,
+            "height": 16,
+            "left": 1066,
+            "right": 1304,
+            "top": 3996,
+            "width": 239
+          },
+          "tag": "h4"
+        },
+        {
+          "cls": "sb-footer-links",
+          "id": "",
+          "rect": {
+            "bottom": 4081,
+            "height": 55,
+            "left": 1066,
+            "right": 1304,
+            "top": 4026,
+            "width": 239
+          },
+          "tag": "ul"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 4048,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 4026,
+            "width": 239
+          },
+          "tag": "li"
+        },
+        {
+          "cls": "",
+          "id": "",
+          "rect": {
+            "bottom": 4081,
+            "height": 22,
+            "left": 1066,
+            "right": 1304,
+            "top": 4058,
+            "width": 239
+          },
+          "tag": "li"
+        }
+      ],
+      "scrollWidth": 1265,
+      "url": "https://staging.seniorbolaget.se/har-finns-vi/amal/?sb-ux-v16=1781778714045-1280",
+      "viewport": {
+        "height": 900,
+        "width": 1280
+      }
+    }
+  ],
+  "aggregate": {
+    "pagesChecked": 12,
+    "horizontalOverflow": [],
+    "missingFooter": [],
+    "hiddenFocusableFailures": []
+  }
+}

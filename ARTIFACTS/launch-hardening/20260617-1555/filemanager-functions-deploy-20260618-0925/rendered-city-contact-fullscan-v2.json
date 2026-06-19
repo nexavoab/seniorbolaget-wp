@@ -1,0 +1,658 @@
+{
+  "generatedAt": "2026-06-18T07:33:27.588Z",
+  "count": 26,
+  "failureCount": 0,
+  "failures": [],
+  "results": [
+    {
+      "applied": "applied",
+      "city": "Borås",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "boras",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511834",
+          "text": "Ring oss → 0721-511 834"
+        },
+        {
+          "href": "tel:0721511834",
+          "text": "0721-511 834"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Eskilstuna",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "eskilstuna",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511815",
+          "text": "Ring oss → 0721-511 815"
+        },
+        {
+          "href": "tel:0721511815",
+          "text": "0721-511 815"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Falkenberg",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "falkenberg",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511827",
+          "text": "Ring oss → 0721-511 827"
+        },
+        {
+          "href": "tel:0721511827",
+          "text": "0721-511 827"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Göteborg SV",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "goteborg",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0704412572",
+          "text": "Ring oss → 0704-41 25 72"
+        },
+        {
+          "href": "tel:0704412572",
+          "text": "0704-41 25 72"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Halmstad",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "halmstad",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0707252447",
+          "text": "Ring oss → 0707-25 24 47"
+        },
+        {
+          "href": "tel:0707252447",
+          "text": "0707-25 24 47"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Helsingborg",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "helsingborg",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511805",
+          "text": "Ring oss → 0721-511 805"
+        },
+        {
+          "href": "tel:0721511805",
+          "text": "0721-511 805"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Jönköping",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "jonkoping",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511834",
+          "text": "Ring oss → 0721-511 834"
+        },
+        {
+          "href": "tel:0721511834",
+          "text": "0721-511 834"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Karlstad",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "karlstad",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:054560160",
+          "text": "Ring oss → 054-560 160"
+        },
+        {
+          "href": "tel:054560160",
+          "text": "054-560 160"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Kristianstad",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "kristianstad",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0720619521",
+          "text": "Ring oss → 0720-61 95 21"
+        },
+        {
+          "href": "tel:0720619521",
+          "text": "0720-61 95 21"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Kungsbacka",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "kungsbacka",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511825",
+          "text": "Ring oss → 0721-511 825"
+        },
+        {
+          "href": "tel:0721511825",
+          "text": "0721-511 825"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Kungälv",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "kungalv",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511814",
+          "text": "Ring oss → 0721-511 814"
+        },
+        {
+          "href": "tel:0721511814",
+          "text": "0721-511 814"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Laholm / Båstad",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "laholm",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0707252447",
+          "text": "Ring oss → 0707-25 24 47"
+        },
+        {
+          "href": "tel:0707252447",
+          "text": "0707-25 24 47"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Landskrona",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "landskrona",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511805",
+          "text": "Ring oss → 0721-511 805"
+        },
+        {
+          "href": "tel:0721511805",
+          "text": "0721-511 805"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Lerum / Partille",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "lerum",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0707252372",
+          "text": "Ring oss → 0707-25 23 72"
+        },
+        {
+          "href": "tel:0707252372",
+          "text": "0707-25 23 72"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Mölndal / Härryda",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "molndal",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0707581391",
+          "text": "Ring oss → 0707-58 13 91"
+        },
+        {
+          "href": "tel:0707581391",
+          "text": "0707-58 13 91"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Nässjö",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "nassjo",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511829",
+          "text": "Ring Lennart → 0721-511 829"
+        },
+        {
+          "href": "tel:0721511829",
+          "text": "0721-511 829"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Örebro",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "orebro",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511817",
+          "text": "Ring oss → 0721-511 817"
+        },
+        {
+          "href": "tel:0721511817",
+          "text": "0721-511 817"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Skövde",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "skovde",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0720619509",
+          "text": "Ring Stefan → 0720-61 95 09"
+        },
+        {
+          "href": "tel:0720619509",
+          "text": "0720-61 95 09"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Stenungsund",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "stenungsund",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0736247356",
+          "text": "Ring oss → 0736-247 356"
+        },
+        {
+          "href": "tel:0736247356",
+          "text": "0736-247 356"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Sundsvall",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "sundsvall",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511806",
+          "text": "Ring oss → 0721-511 806"
+        },
+        {
+          "href": "tel:0721511806",
+          "text": "0721-511 806"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Torsby",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "torsby",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:054560160",
+          "text": "Ring oss → 054-560 160"
+        },
+        {
+          "href": "tel:054560160",
+          "text": "054-560 160"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Trelleborg",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "trelleborg",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511826",
+          "text": "Ring oss → 0721-511 826"
+        },
+        {
+          "href": "tel:0721511826",
+          "text": "0721-511 826"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Trollhättan",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "trollhattan",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0720619520",
+          "text": "Ring oss → 0720-61 95 20"
+        },
+        {
+          "href": "tel:0720619520",
+          "text": "0720-61 95 20"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Ulricehamn",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "ulricehamn",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0720619516",
+          "text": "Ring oss → 0720-61 95 16"
+        },
+        {
+          "href": "tel:0720619516",
+          "text": "0720-61 95 16"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Varberg",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "varberg",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511827",
+          "text": "Ring oss → 0721-511 827"
+        },
+        {
+          "href": "tel:0721511827",
+          "text": "0721-511 827"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    },
+    {
+      "applied": "applied",
+      "city": "Åmål",
+      "hasMarker": true,
+      "hasName": true,
+      "hasOldPhone": false,
+      "hasPhoneByDigits": true,
+      "hasPhoneText": true,
+      "slug": "amal",
+      "telExpected": true,
+      "telLinks": [
+        {
+          "href": "tel:0721511812",
+          "text": "Ring oss → 0721-511 812"
+        },
+        {
+          "href": "tel:0721511812",
+          "text": "0721-511 812"
+        },
+        {
+          "href": "tel:0101751900",
+          "text": "010-175 19 00"
+        }
+      ]
+    }
+  ]
+}

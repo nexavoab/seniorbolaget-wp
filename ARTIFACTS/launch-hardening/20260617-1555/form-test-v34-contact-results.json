@@ -1,0 +1,66 @@
+{
+  "generatedAt": "2026-06-19T04:56:47.806Z",
+  "recipient": "wasim.bitar@seniorbolaget.se",
+  "pageCheck": {
+    "status": 200,
+    "hasNewAction": true,
+    "hasScript": true,
+    "hasOldAction": true
+  },
+  "results": [
+    {
+      "id": "contact-boka",
+      "status": 200,
+      "success": true,
+      "response": {
+        "success": true,
+        "data": {
+          "message": "Meddelande skickat!"
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_contact_inquiry_v33",
+        "type": "boka",
+        "name": "TEST Codex Kontakt Boka 2026-06-19 06:57 CEST",
+        "email": null,
+        "phone": "070-000 00 03"
+      }
+    },
+    {
+      "id": "contact-jobba",
+      "status": 200,
+      "success": true,
+      "response": {
+        "success": true,
+        "data": {
+          "message": "Meddelande skickat!"
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_contact_inquiry_v33",
+        "type": "jobba",
+        "name": "TEST Codex Kontakt Jobba 2026-06-19 06:57 CEST",
+        "email": null,
+        "phone": "070-000 00 04"
+      }
+    },
+    {
+      "id": "contact-allman",
+      "status": 200,
+      "success": true,
+      "response": {
+        "success": true,
+        "data": {
+          "message": "Meddelande skickat!"
+        }
+      },
+      "payloadSummary": {
+        "action": "sb_contact_inquiry_v33",
+        "type": "allman",
+        "name": "TEST Codex Kontakt Allmän 2026-06-19 06:57 CEST",
+        "email": "wasim.bitar@seniorbolaget.se",
+        "phone": null
+      }
+    }
+  ]
+}

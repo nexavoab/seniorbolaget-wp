@@ -1,0 +1,268 @@
+{
+  "checkedAt": "2026-06-18T10:34:49.629Z",
+  "environment": "staging",
+  "pages": [
+    {
+      "contrastFailures": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "p",
+          "text": "Franchisetagare logga in"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "a",
+          "text": "Franchisetagare logga in"
+        }
+      ],
+      "contrastSamples": 33,
+      "linkFailures": [],
+      "linkSamples": 17,
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer",
+      "url": "https://staging.seniorbolaget.se/?sb-a11y-v17=1781778881028",
+      "worstContrast": 1
+    },
+    {
+      "contrastFailures": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "p",
+          "text": "Franchisetagare logga in"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "a",
+          "text": "Franchisetagare logga in"
+        }
+      ],
+      "contrastSamples": 25,
+      "linkFailures": [],
+      "linkSamples": 17,
+      "title": "Intresseanmälan – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-a11y-v17=1781778881028",
+      "worstContrast": 1
+    },
+    {
+      "contrastFailures": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "p",
+          "text": "Franchisetagare logga in"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "a",
+          "text": "Franchisetagare logga in"
+        }
+      ],
+      "contrastSamples": 25,
+      "linkFailures": [],
+      "linkSamples": 17,
+      "title": "Kontakta Seniorbolaget, ring eller boka online",
+      "url": "https://staging.seniorbolaget.se/kontakt/?sb-a11y-v17=1781778881028",
+      "worstContrast": 1
+    },
+    {
+      "contrastFailures": [
+        {
+          "color": "rgb(255, 255, 255)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "p",
+          "text": "Franchisetagare logga in"
+        },
+        {
+          "color": "rgba(255, 255, 255, 0.85)",
+          "contrast": 1,
+          "effectiveBackground": {
+            "a": 1,
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "tag": "a",
+          "text": "Franchisetagare logga in"
+        }
+      ],
+      "contrastSamples": 26,
+      "linkFailures": [],
+      "linkSamples": 17,
+      "title": "Vad kostar hemstädning 2026? – Priser per stad – Seniorbolaget",
+      "url": "https://staging.seniorbolaget.se/2026/03/02/vad-kostar-hemstadning-2026-priser-per-stad/?sb-a11y-v17=1781778881028",
+      "worstContrast": 1
+    }
+  ],
+  "aggregate": {
+    "pagesChecked": 4,
+    "linkFailurePages": [],
+    "contrastFailurePages": [
+      {
+        "url": "https://staging.seniorbolaget.se/?sb-a11y-v17=1781778881028",
+        "failures": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "p",
+            "text": "Franchisetagare logga in"
+          },
+          {
+            "color": "rgba(255, 255, 255, 0.85)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "a",
+            "text": "Franchisetagare logga in"
+          }
+        ],
+        "worstContrast": 1
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-a11y-v17=1781778881028",
+        "failures": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "p",
+            "text": "Franchisetagare logga in"
+          },
+          {
+            "color": "rgba(255, 255, 255, 0.85)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "a",
+            "text": "Franchisetagare logga in"
+          }
+        ],
+        "worstContrast": 1
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/kontakt/?sb-a11y-v17=1781778881028",
+        "failures": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "p",
+            "text": "Franchisetagare logga in"
+          },
+          {
+            "color": "rgba(255, 255, 255, 0.85)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "a",
+            "text": "Franchisetagare logga in"
+          }
+        ],
+        "worstContrast": 1
+      },
+      {
+        "url": "https://staging.seniorbolaget.se/2026/03/02/vad-kostar-hemstadning-2026-priser-per-stad/?sb-a11y-v17=1781778881028",
+        "failures": [
+          {
+            "color": "rgb(255, 255, 255)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "p",
+            "text": "Franchisetagare logga in"
+          },
+          {
+            "color": "rgba(255, 255, 255, 0.85)",
+            "contrast": 1,
+            "effectiveBackground": {
+              "a": 1,
+              "b": 255,
+              "g": 255,
+              "r": 255
+            },
+            "tag": "a",
+            "text": "Franchisetagare logga in"
+          }
+        ],
+        "worstContrast": 1
+      }
+    ]
+  }
+}

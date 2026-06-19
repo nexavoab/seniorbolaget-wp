@@ -1,0 +1,89 @@
+{
+  "checkedAt": "2026-06-18T11:38:58.161Z",
+  "total": 5,
+  "passed": 5,
+  "failed": 0,
+  "failures": [],
+  "results": [
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-hero-check=1781782726290-0",
+      "ok": true,
+      "h1s": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "heroSubCount": 1,
+      "heroSubLike": [
+        "Erfarna seniorer som utför vardagsarbeten med omtanke och noggrannhet"
+      ],
+      "heroTitleCount": 1,
+      "heroTitleLike": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-hero-check=1781782729157-1",
+      "ok": true,
+      "h1s": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "heroSubCount": 1,
+      "heroSubLike": [
+        "Erfarna seniorer som utför vardagsarbeten med omtanke och noggrannhet"
+      ],
+      "heroTitleCount": 1,
+      "heroTitleLike": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-hero-check=1781782731299-2",
+      "ok": true,
+      "h1s": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "heroSubCount": 1,
+      "heroSubLike": [
+        "Erfarna seniorer som utför vardagsarbeten med omtanke och noggrannhet"
+      ],
+      "heroTitleCount": 1,
+      "heroTitleLike": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-hero-check=1781782734076-3",
+      "ok": true,
+      "h1s": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "heroSubCount": 1,
+      "heroSubLike": [
+        "Erfarna seniorer som utför vardagsarbeten med omtanke och noggrannhet"
+      ],
+      "heroTitleCount": 1,
+      "heroTitleLike": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer"
+    },
+    {
+      "url": "https://staging.seniorbolaget.se/?sb-hero-check=1781782736118-4",
+      "ok": true,
+      "h1s": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "heroSubCount": 1,
+      "heroSubLike": [
+        "Erfarna seniorer som utför vardagsarbeten med omtanke och noggrannhet"
+      ],
+      "heroTitleCount": 1,
+      "heroTitleLike": [
+        "Hushållsnära tjänster av erfarna seniorer"
+      ],
+      "title": "Seniorbolaget – Hushållsnära tjänster av erfarna seniorer"
+    }
+  ]
+}

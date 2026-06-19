@@ -1,0 +1,74 @@
+[
+  {
+    "Url": "https://staging.seniorbolaget.se/?sb-runtime-v30=2026061801",
+    "Status": 200,
+    "Length": 414212,
+    "MixedContentLinks": 0,
+    "GoogleFontRefs": 0,
+    "FontHandles": 0,
+    "HasV30": true,
+    "XRobots": [
+      "noindex, nofollow"
+    ],
+    "ContentType": [
+      "text/html; charset=UTF-8"
+    ],
+    "CacheControl": [
+      "max-age=0"
+    ],
+    "Age": [
+      "0"
+    ],
+    "XVarnish": [
+      "53685813761"
+    ]
+  },
+  {
+    "Url": "https://staging.seniorbolaget.se/intresseanmalan/?sb-runtime-v30=2026061801",
+    "Status": 200,
+    "Length": 362337,
+    "MixedContentLinks": 0,
+    "GoogleFontRefs": 0,
+    "FontHandles": 0,
+    "HasV30": true,
+    "XRobots": [
+      "noindex, nofollow"
+    ],
+    "ContentType": [
+      "text/html; charset=UTF-8"
+    ],
+    "CacheControl": [
+      "max-age=0"
+    ],
+    "Age": [
+      "0"
+    ],
+    "XVarnish": [
+      "53441598095"
+    ]
+  },
+  {
+    "Url": "https://staging.seniorbolaget.se/priser/?sb-runtime-v30=2026061801",
+    "Status": 200,
+    "Length": 367593,
+    "MixedContentLinks": 0,
+    "GoogleFontRefs": 0,
+    "FontHandles": 0,
+    "HasV30": true,
+    "XRobots": [
+      "noindex, nofollow"
+    ],
+    "ContentType": [
+      "text/html; charset=UTF-8"
+    ],
+    "CacheControl": [
+      "max-age=0"
+    ],
+    "Age": [
+      "0"
+    ],
+    "XVarnish": [
+      "53680275859"
+    ]
+  }
+]
